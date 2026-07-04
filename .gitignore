@@ -8,19 +8,13 @@ __pycache__/
 # Cache
 cache/
 
-# Debug/test files
-debug_*.py
-test_*.py
-verify_*.py
-check_*.py
-analyze_*.py
-find_*.py
-fetch_*.py
-crossref_*.py
-export_*.py
-generate_*.py
-ig_enrich*.py
-run_pilot.py
+# Test/build artifacts
+maps_test.*
+scan_test.*
+scan_targets.csv
+scan_progress.json
+scan_discoveries.json
+nbhood_scan.py
 
 # OSM temp
 osm_data.json
