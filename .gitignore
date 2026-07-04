@@ -1,0 +1,28 @@
+# Databases
+*.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Cache
+cache/
+
+# Debug/test files
+debug_*.py
+test_*.py
+verify_*.py
+check_*.py
+analyze_*.py
+find_*.py
+fetch_*.py
+crossref_*.py
+export_*.py
+generate_*.py
+ig_enrich*.py
+run_pilot.py
+
+# OSM temp
+osm_data.json
+osm_shops.json
+osm_test.json
