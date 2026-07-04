@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PV Business Gap Map — Quadrant Scanner</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #1a1a2e; color: #eee; }
+.header { padding: 16px 20px; background: #16213e; }
+.header h1 { font-size: 20px; margin-bottom: 4px; }
+.header p { font-size: 13px; opacity: 0.7; }
+.controls { padding: 10px 20px; background: #0f3460; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 13px; }
+.controls label { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.controls input[type="checkbox"] { cursor: pointer; }
+.controls select { padding: 4px 8px; border-radius: 4px; border: none; font-size: 12px; }
+.info { padding: 8px 20px; background: #0f3460; font-size: 12px; opacity: 0.8; border-top: 1px solid #1a1a2e; }
+#map { height: calc(100vh - 140px); width: 100%; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.count-badge { background: #e94560; color: white; padding: 1px 7px; border-radius: 8px; font-size: 11px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Puerto Viejo — Business Gap Scanner</h1>
+<p>450 businesses mapped. Scan quadrant by quadrant for gaps.</p>
+</div>
+
+<div class="controls">
+<label><input type="checkbox" id="showGrid" checked> 1 km grid</label>
+<select id="gridSize">
+<option value="0.5">0.5 km</option>
+<option value="1" selected>1 km</option>
+<option value="2">2 km</option>
+</select>
+<label><input type="checkbox" id="showIG" checked> With Instagram</label>
+<label><input type="checkbox" id="showNoIG" checked> Without Instagram</label>
+<label><input type="checkbox" id="showRadius" checked> 5 km radius</label>
+<div class="legend">
+<span class="legend-item"><span class="dot" style="background:#2ecc71"></span> Has Instagram</span>
+<span class="legend-item"><span class="dot" style="background:#e74c3c"></span> No Instagram</span>
+<span class="legend-item"><span class="dot" style="background:#f39c12;width:14px;height:14px;border-radius:2px"></span> Grid cell</span>
+</div>
+</div>
+
+<div class="info" id="info">Click a grid cell to see its businesses.</div>
+
+<div id="map"></div>
+
+<script>
+fetch('businesses.json')
+  .then(r => r.json())
+  .then(data => {
+    window.businesses = data;
+    initMap(data);
+  });
+
+const CAT_COLORS = {
+  hotel: '#e74c3c', hostel: '#e67e22', vacation_rental: '#f39c12',
+  restaurant: '#2ecc71', shopping: '#3498db', services: '#9b59b6',
+  tour_company: '#1abc9c', real_estate: '#34495e',
+};
+
+let map, gridLayer, markers = [], gridLines = [], radiusCircle;
+let gridVisible = true, showIG = true, showNoIG = true, gridKm = 1;
+
+function initMap(data) {
+  map = L.map('map', { zoomControl: true }).setView([9.6554, -82.7533], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OSM', maxZoom: 18,
+  }).addTo(map);
+
+  // Origin marker
+  L.marker([9.6554, -82.7533], {
+    icon: L.divIcon({ className: '', html: '<div style="background:#e94560;color:white;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;">★</div>', iconSize: [18,18], iconAnchor: [9,9] })
+  }).addTo(map).bindTooltip('Origin (Puerto Viejo center)', {direction:'top'});
+
+  // Radius circle
+  radiusCircle = L.circle([9.6554, -82.7533], { radius: 5000, color: '#e94560', fillColor: '#e94560', fillOpacity: 0.03, weight: 1.5, dashArray: '4,8' }).addTo(map);
+
+  // Add businesses
+  window.businesses = data;
+  updateMarkers(data);
+  drawGrid(9.6554, -82.7533, gridKm);
+
+  // Events
+  document.getElementById('showGrid').addEventListener('change', toggleGrid);
+  document.getElementById('gridSize').addEventListener('change', changeGrid);
+  document.getElementById('showIG').addEventListener('change', toggleFilters);
+  document.getElementById('showNoIG').addEventListener('change', toggleFilters);
+  document.getElementById('showRadius').addEventListener('change', toggleRadius);
+}
+
+function updateMarkers(items) {
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  items.forEach(b => {
+    const lat = parseFloat(b.latitude), lon = parseFloat(b.longitude);
+    if (!lat || !lon) return;
+    if (!showIG && b.instagram_handle) return;
+    if (!showNoIG && !b.instagram_handle) return;
+
+    const hasIG = !!b.instagram_handle;
+    const color = hasIG ? '#2ecc71' : '#e74c3c';
+    const size = hasIG ? 6 : 5;
+    const opacity = hasIG ? 0.7 : 0.5;
+
+    const m = L.circleMarker([lat, lon], {
+      radius: size, fillColor: color, color: '#fff', weight: 1, fillOpacity: opacity
+    }).bindPopup(
+      `<strong>${esc(b.business_name || '?')}</strong><br>` +
+      `${b.category || ''} · ${b.area || ''}` +
+      (b.instagram_handle ? `<br>📷 @${esc(b.instagram_handle)}` : '<br><span style="color:#e74c3c">No Instagram</span>') +
+      (b.distance_km ? `<br>📏 ${parseFloat(b.distance_km).toFixed(1)} km` : '')
+    );
+    markers.push(m);
+    m.addTo(map);
+  });
+}
+
+function drawGrid(centerLat, centerLon, km) {
+  gridLines.forEach(l => map.removeLayer(l));
+  gridLines = [];
+
+  const degPerKm = 0.009;
+  const step = km * degPerKm;
+  const totalKm = 6;
+  const steps = Math.ceil(totalKm / km);
+
+  for (let i = -steps; i <= steps; i++) {
+    const lat = centerLat + i * step;
+    const lon = centerLon + i * step;
+    // Horizontal line
+    gridLines.push(L.polyline([
+      [lat, centerLon - steps * step],
+      [lat, centerLon + steps * step]
+    ], { color: '#f39c12', weight: 1, opacity: 0.3 }).addTo(map));
+    // Vertical line
+    gridLines.push(L.polyline([
+      [centerLat - steps * step, lon],
+      [centerLat + steps * step, lon]
+    ], { color: '#f39c12', weight: 1, opacity: 0.3 }).addTo(map));
+  }
+
+  // Add quadrant labels
+  for (let i = -steps; i < steps; i++) {
+    for (let j = -steps; j < steps; j++) {
+      const lat = centerLat + (i + 0.5) * step;
+      const lon = centerLon + (j + 0.5) * step;
+      const dist = Math.sqrt((i * km) ** 2 + (j * km) ** 2);
+      if (dist > 5.5) continue;
+
+      // Count businesses in this cell
+      const count = (window.businesses || []).filter(b => {
+        const bl = parseFloat(b.latitude), bn = parseFloat(b.longitude);
+        return bl && bn &&
+          bl > centerLat + i * step && bl <= centerLat + (i + 1) * step &&
+          bn > centerLon + j * step && bn <= centerLon + (j + 1) * step;
+      }).length;
+
+      const label = L.marker([lat, lon], {
+        icon: L.divIcon({
+          className: '',
+          html: `<div style="background:rgba(0,0,0,0.6);color:${count > 5 ? '#2ecc71' : count > 0 ? '#f39c12' : '#e74c3c'};padding:1px 6px;border-radius:4px;font-size:11px;font-weight:bold;white-space:nowrap;border:1px solid rgba(255,255,255,0.2)">${count} biz</div>`,
+          iconSize: [0, 0],
+          iconAnchor: [0, 0],
+        }),
+        interactive: false,
+      });
+      gridLines.push(label);
+      label.addTo(map);
+    }
+  }
+
+  gridVisible = true;
+}
+
+function toggleGrid() {
+  gridVisible = !gridVisible;
+  gridLines.forEach(l => {
+    if (gridVisible) map.addLayer(l);
+    else map.removeLayer(l);
+  });
+}
+
+function changeGrid(e) {
+  gridKm = parseFloat(e.target.value);
+  drawGrid(9.6554, -82.7533, gridKm);
+  updateMarkers(window.businesses || []);
+}
+
+function toggleFilters() {
+  showIG = document.getElementById('showIG').checked;
+  showNoIG = document.getElementById('showNoIG').checked;
+  updateMarkers(window.businesses || []);
+}
+
+function toggleRadius() {
+  if (radiusCircle._map) map.removeLayer(radiusCircle);
+  else radiusCircle.addTo(map);
+}
+
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+</script>
+</body>
+</html>
