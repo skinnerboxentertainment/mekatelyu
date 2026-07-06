@@ -1,0 +1,86 @@
+[
+  {
+    "strategy": "website_crawl",
+    "business": "El Faro 13",
+    "url": "https://www.hostelworld.com/es/albergues/p/100822/el-faro-13-de-puerto-viejo/",
+    "found": "hostelworld"
+  },
+  {
+    "strategy": "website_crawl",
+    "business": "Hotel Cariblue",
+    "url": "https://www.cariblue.com/",
+    "found": "caribluehotel"
+  },
+  {
+    "strategy": "website_crawl",
+    "business": "Ecotourism and Conservation Association of Talamanca",
+    "url": "https://ateccr.org/",
+    "found": "atec_ong"
+  },
+  {
+    "strategy": "website_crawl",
+    "business": "Refugio de animales Jaguar",
+    "url": "https://www.jaguarrescue.foundation/",
+    "found": "jaguarrescuecentercr"
+  },
+  {
+    "strategy": "website_crawl",
+    "business": "Hotel Villas y Glamping M&A",
+    "url": "https://villasmya.com/",
+    "found": "villasmya"
+  },
+  {
+    "strategy": "ddg_search",
+    "business": "Watuza",
+    "query": "site:instagram.com \"Watuza\" Puerto Viejo",
+    "found": "cafeteriawatuza"
+  },
+  {
+    "strategy": "verify",
+    "handle": "cafeteriawatuza",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "hostelworld",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "caribluehotel",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "lecameleonhotel",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "cafericocostarica",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "atec_ong",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "jaguarrescuecentercr",
+    "working": true,
+    "reason": "confirmed"
+  },
+  {
+    "strategy": "verify",
+    "handle": "villasmya",
+    "working": true,
+    "reason": "confirmed"
+  }
+]

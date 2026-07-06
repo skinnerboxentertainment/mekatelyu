@@ -1,0 +1,32 @@
+business_name,category,latitude,longitude,phone,website,instagram,facebook,google_maps_cid,source,confidence,notes
+Watuza,cafe; restaurant,9.6574,-82.7550,,,,,,codex_web_discovery,high,Official current website identifies an operating Puerto Viejo cafe/Caribbean restaurant near the MEPE bus terminal. Coordinates are approximate from the stated landmark; name absent from the 450-row master after normalized-name and alias review.
+El Faro 13,hostel,9.6560711,-82.7479054,,https://www.hostelworld.com/es/albergues/p/100822/el-faro-13-de-puerto-viejo/,,,,codex_verified,medium,Hostelworld listing confirms property and location; booking/listing URL only.
+Hotel Los Sueños,hostel,9.6548104,-82.7550824,,www.hotellossuenos.com,,,,osm_tags,medium,Contact data from OSM tags
+Villa Bukë,hostel,9.6551613,-82.7720541,,https://www.casasdelcaribe.com/alquiler/villa-playa-negra-villa-buke-con-piscina-tropical-414491.html,,,,codex_verified,medium,Current Casas del Caribe listing for Villa Buke; direct phone hidden behind contact widget.
+Beach Hut,hotel,9.6577326,-82.752862,2750-0895,,,,,osm_tags,medium,Contact data from OSM tags
+Cabinas El Tesoro,hotel,9.6535176,-82.7409774,+506 2750 0128,,,,,codex_verified,medium,OpenAlfa directory lists phone and cabinaseltesoro@puertoviejo.net; likely legacy listing.
+Cabinas Orange Green,hotel,9.6593823,-82.7492074,44016057,,,,,osm_tags,medium,Contact data from OSM tags
+Cabinas Wray,hotel,9.6526418,-82.762185,506 8740 2102,,,,,osm_tags,medium,Contact data from OSM tags
+Casa Badawi,hotel,9.6567388,-82.7486162,+50687047926,https://airbnb.co.cr/h/casabadawi,,,,osm_tags,medium,Contact data from OSM tags
+Casa Trinidad,hotel,9.6568213,-82.7488544,,,,,,osm_tags,medium,Contact data from OSM tags
+Casa Tuareg,hotel,9.6563765,-82.748938,,,,,,osm_tags,medium,Contact data from OSM tags
+Harmony: Mini Casa Rodante by Aptos Casa Caribe,hotel,9.6500053,-82.7613801,+506 8873 3707,https://www.aptocasacaribecr.com/,,,,osm_tags,medium,Contact data from OSM tags
+Hotel Cariblue,hotel,9.6504068,-82.7394595,2750-0035,https://www.cariblue.com/,,,,osm_tags,medium,Contact data from OSM tags
+Hotel Posada Nena,hotel,9.6567029,-82.7513293,27502064,https://www.posadanena.com/,,,,osm_tags,medium,Contact data from OSM tags
+Hotel Sunshine Caribe,hotel,9.6526495,-82.7577571,,https://www.booking.com/hotel/cr/sunshine-caribe.en-gb.html,,,,osm_tags,medium,Contact data from OSM tags
+Lapalapa Beach Front Hotel,hotel,9.6446765,-82.7282387,+506 88178041,,,,,osm_tags,medium,Contact data from OSM tags
+Las Mariposas,hotel,9.6446176,-82.7194702,,https://www.facebook.com/CabinasLasMariposas,,,,osm_tags,medium,Contact data from OSM tags
+Le Cameleon Boutique Hotel,hotel,9.6441813,-82.7284542,+506 2750 3096,https://www.lecameleonhotel.com/,lecameleonhotel,https://www.facebook.com/114755642575,,codex_verified,high,"Official site confirms phone, WhatsApp +506 8740 9666, website, and @lecameleonhotel social handles."
+Paula's and Daniel's Homestay,hotel,9.6566042,-82.744193,+50683044376,,,,,osm_tags,medium,Contact data from OSM tags
+Totem Hotel Resort & Restaurant,hotel,9.6462422,-82.7322216,2750-0758,http://www.totemhotel.com/es/,,,,osm_tags,medium,Contact data from OSM tags
+Vista Verde,hotel,9.6579171,-82.7487996,,https://www.booking.com/hotel/cr/vista-verde.en-gb.html?aid=356980,,,,osm_tags,medium,Contact data from OSM tags
+Café Rico,restaurant,9.6572005,-82.7527989,+506 2750 0510,https://cometocaferico.com/,cafericocostarica,http://www.facebook.com/pages/Cafe-rico-Puerto-viejo/608600996195818,,codex_verified,high,"Official site confirms address, phone, and website; Puerto Viejo Satellite confirms social handles."
+Chili Rojo,restaurant,9.6571363,-82.7541491,+506 2750 0421,https://www.tripadvisor.com/Restaurant_Review-g309265-d1509837-Reviews-Chile_Rojo-Puerto_Viejo_de_Talamanca_Province_of_Limon.html,,,,codex_verified,medium,Current claimed Tripadvisor listing confirms Puerto Viejo address and phone.
+Restaurante Cariblue,restaurant,9.6514247,-82.7382801,+506 2750 0035,https://cariblue.com/service/restaurante/,,,,codex_verified,high,Official Cariblue site confirms Cocles restaurant and contact; current site calls it La Jungla.
+Río Negro,restaurant,9.6439079,-82.7320862,+506 2750 0155,,,,,osm_tags,medium,Contact data from OSM tags
+Jungle Air Parapente,shopping,9.6577124,-82.7552944,+506 8403 8717,,,,,osm_tags,medium,Contact data from OSM tags
+Panadería Francés,shopping,9.6447588,-82.7289754,84983901,alain01barisy@gmail.com,,,,osm_tags,medium,Contact data from OSM tags
+Ecotourism and Conservation Association of Talamanca,tour_company,9.6571815,-82.7542969,+506 2750 0398,https://ateccr.org/,,,,codex_verified,high,"Official ATEC site confirms organization, phone, website, and Puerto Viejo operation."
+Refugio de animales Jaguar,tour_company,9.6420923,-82.7232243,+5062750-0710,https://www.jaguarrescue.foundation/,,,,osm_tags,medium,Contact data from OSM tags
+Hotel Villas y Glamping M&A,vacation_rental,9.6344826,-82.7396265,+506 6351 7444,https://villasmya.com/,,,,codex_verified,high,"Official site confirms name, Playa Cocles/Calle El Tucán location, phone, and website."
+Yerbas Concepto Culinario,vegan cafe; bakery; coworking,9.6592,-82.7505,,,,,,codex_web_discovery,high,Current directory plus Wanderlog and Instagram evidence; address says on Ruta 256 opposite Amimodo. Coordinates use the known Amimodo landmark and are therefore approximate. Recent Google-review excerpts span May 2025-Jan 2026; name absent from master.
