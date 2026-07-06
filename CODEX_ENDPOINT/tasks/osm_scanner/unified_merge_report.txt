@@ -1,0 +1,32 @@
+Unified Master Merge Report
+==================================================
+
+Total records: 754
+
+Sources:
+  PVS Master: 450
+  PVS Cache: 139
+  Grid Scan: 134
+  OSM Additions: 31
+
+Field completeness:
+  latitude                 :  481/754 ( 63.8%)
+  longitude                :  481/754 ( 63.8%)
+  google_maps_cid          :  457/754 ( 60.6%)
+  phone                    :  521/754 ( 69.1%)
+  instagram_handle         :  361/754 ( 47.9%)
+  facebook_url             :  328/754 ( 43.5%)
+  website                  :   98/754 ( 13.0%)
+  email                    :    6/754 (  0.8%)
+  whatsapp                 :   68/754 (  9.0%)
+  booking_url              :  171/754 ( 22.7%)
+  tripadvisor_url          :   57/754 (  7.6%)
+  operating_status         :  620/754 ( 82.2%)
+  description_full         :  478/754 ( 63.4%)
+
+Enrichment applied:
+  IG refills from cache: 0
+  Emails from websites:  6
+  IG from websites:      0
+  FB from websites:      0
+  WhatsApp from websites: 0
