@@ -184,29 +184,31 @@ function drawGrid(centerLat, centerLon, km) {
       const cellCount = cellBiz.length;
       const cellIG = cellBiz.filter(b => b.instagram_handle).length;
 
-      // Clickable rectangle
-      const cKey = i + ',' + j;
-      const rect = L.rectangle([[cellLat1, cellLon1], [cellLat2, cellLon2]], {
-        color: '#f39c12', weight: 1, opacity: 0.25, fillColor: '#f39c12', fillOpacity: 0.04,
-        interactive: true,
-      }).addTo(map);
-      rect.on('click', function() { showCell(cellBiz, cKey, cellCount, cellIG); });
-      rect.on('mouseover', function() { this.setStyle({ fillOpacity: 0.12, opacity: 0.7 }); });
-      rect.on('mouseout', function() { this.setStyle({ fillOpacity: 0.04, opacity: 0.25 }); });
-      gridLines.push(rect);
+      if (cellCount > 0) {
+        // Clickable rectangle
+        const cKey = i + ',' + j;
+        const rect = L.rectangle([[cellLat1, cellLon1], [cellLat2, cellLon2]], {
+          color: '#f39c12', weight: 1, opacity: 0.25, fillColor: '#f39c12', fillOpacity: 0.04,
+          interactive: true,
+        }).addTo(map);
+        rect.on('click', function() { showCell(cellBiz, cKey, cellCount, cellIG); });
+        rect.on('mouseover', function() { this.setStyle({ fillOpacity: 0.12, opacity: 0.7 }); });
+        rect.on('mouseout', function() { this.setStyle({ fillOpacity: 0.04, opacity: 0.25 }); });
+        gridLines.push(rect);
 
-      // Label
-      const label = L.marker([lat, lon], {
-        icon: L.divIcon({
-          className: '',
-          html: `<div style="background:rgba(0,0,0,0.6);color:${cellCount > 5 ? '#2ecc71' : cellCount > 0 ? '#f39c12' : '#e74c3c'};padding:1px 6px;border-radius:4px;font-size:11px;font-weight:bold;white-space:nowrap;border:1px solid rgba(255,255,255,0.2)">${cellCount} biz</div>`,
-          iconSize: [0, 0],
-          iconAnchor: [0, 0],
-        }),
-        interactive: false,
-      });
-      gridLines.push(label);
-      label.addTo(map);
+        // Label
+        const label = L.marker([lat, lon], {
+          icon: L.divIcon({
+            className: '',
+            html: `<div style="background:rgba(0,0,0,0.6);color:${cellCount > 5 ? '#2ecc71' : '#f39c12'};padding:1px 6px;border-radius:4px;font-size:11px;font-weight:bold;white-space:nowrap;border:1px solid rgba(255,255,255,0.2)">${cellCount} biz</div>`,
+            iconSize: [0, 0],
+            iconAnchor: [0, 0],
+          }),
+          interactive: false,
+        });
+        gridLines.push(label);
+        label.addTo(map);
+      }
     }
   }
 
