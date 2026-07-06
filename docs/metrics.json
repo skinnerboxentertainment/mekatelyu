@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-07-06",
+  "records_total": 754,
+  "records_mapped": 481,
+  "google_maps_cids": 457,
+  "phones": 521,
+  "instagram_handles": 361,
+  "instagram_pct": 47.9,
+  "facebook_urls": 328,
+  "whatsapp_numbers": 68,
+  "websites": 98,
+  "emails": 6,
+  "with_category": 620,
+  "with_area": 620,
+  "sources": [
+    "PVS crawl",
+    "OpenStreetMap",
+    "Google Maps grid scan",
+    "SQLite cache",
+    "Playwright Instagram checks"
+  ],
+  "screenshot_evidence": 255
+}

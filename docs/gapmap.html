@@ -28,7 +28,7 @@ body { font-family: sans-serif; background: #1a1a2e; color: #eee; }
 
 <div class="header">
 <h1>Puerto Viejo — Business Gap Scanner</h1>
-<p>450 businesses mapped. Scan quadrant by quadrant for gaps.</p>
+<p id="headerSub">- businesses mapped. Scan quadrant by quadrant for gaps.</p>
 </div>
 
 <div class="controls">
@@ -50,7 +50,14 @@ body { font-family: sans-serif; background: #1a1a2e; color: #eee; }
 
 <div class="info" id="info">Click a grid cell to see its businesses.</div>
 
-<div id="map"></div>
+<div style="display:flex; gap:10px; height: calc(100vh - 140px);">
+<div id="map" style="flex:1; height:100%;"></div>
+<div id="cellPanel" style="width:260px; background:#16213e; padding:12px; overflow-y:auto; font-size:12px; display:none; border-left:1px solid #0f3460;">
+  <div style="font-weight:600; margin-bottom:8px; font-size:14px;" id="cellTitle">Cell</div>
+  <div id="cellStats"></div>
+  <div id="cellBusinesses" style="margin-top:8px;"></div>
+</div>
+</div>
 
 <script>
 fetch('businesses.json')
@@ -87,6 +94,10 @@ function initMap(data) {
   window.businesses = data;
   updateMarkers(data);
   drawGrid(9.6554, -82.7533, gridKm);
+
+  // Update header with dynamic count
+  const mapped = data.filter(b => b.latitude && b.longitude).length;
+  document.getElementById('headerSub').textContent = `${mapped} businesses mapped. Scan quadrant by quadrant for gaps.`;
 
   // Events
   document.getElementById('showGrid').addEventListener('change', toggleGrid);
@@ -164,10 +175,27 @@ function drawGrid(centerLat, centerLon, km) {
           bn > centerLon + j * step && bn <= centerLon + (j + 1) * step;
       }).length;
 
+      const cellLat1 = centerLat + i * step, cellLat2 = centerLat + (i + 1) * step;
+      const cellLon1 = centerLon + j * step, cellLon2 = centerLon + (j + 1) * step;
+      const cellBiz = (window.businesses || []).filter(b => {
+        const bl = parseFloat(b.latitude), bn = parseFloat(b.longitude);
+        return bl && bn && bl > cellLat1 && bl <= cellLat2 && bn > cellLon1 && bn <= cellLon2;
+      });
+      const cellCount = cellBiz.length;
+      const cellIG = cellBiz.filter(b => b.instagram_handle).length;
+
+      // Clickable rectangle
+      const rect = L.rectangle([[cellLat1, cellLon1], [cellLat2, cellLon2]], {
+        color: '#f39c12', weight: 1, opacity: 0.3, fillColor: '#f39c12', fillOpacity: 0.05,
+      }).addTo(map);
+      rect.on('click', () => showCell(cellBiz, `${i},${j}`, cellCount, cellIG));
+      gridLines.push(rect);
+
+      // Label
       const label = L.marker([lat, lon], {
         icon: L.divIcon({
           className: '',
-          html: `<div style="background:rgba(0,0,0,0.6);color:${count > 5 ? '#2ecc71' : count > 0 ? '#f39c12' : '#e74c3c'};padding:1px 6px;border-radius:4px;font-size:11px;font-weight:bold;white-space:nowrap;border:1px solid rgba(255,255,255,0.2)">${count} biz</div>`,
+          html: `<div style="background:rgba(0,0,0,0.6);color:${cellCount > 5 ? '#2ecc71' : cellCount > 0 ? '#f39c12' : '#e74c3c'};padding:1px 6px;border-radius:4px;font-size:11px;font-weight:bold;white-space:nowrap;border:1px solid rgba(255,255,255,0.2)">${cellCount} biz</div>`,
           iconSize: [0, 0],
           iconAnchor: [0, 0],
         }),
@@ -204,6 +232,16 @@ function toggleFilters() {
 function toggleRadius() {
   if (radiusCircle._map) map.removeLayer(radiusCircle);
   else radiusCircle.addTo(map);
+}
+
+function showCell(biz, id, total, igCount) {
+  const panel = document.getElementById('cellPanel');
+  panel.style.display = 'block';
+  document.getElementById('cellTitle').textContent = 'Cell ' + id + ' — ' + total + ' businesses';
+  document.getElementById('cellStats').innerHTML = '<div style="display:flex;gap:10px;margin-bottom:6px;"><span>📷 ' + igCount + ' with IG</span><span style="color:#e74c3c;">❌ ' + (total - igCount) + ' without</span></div>';
+  document.getElementById('cellBusinesses').innerHTML = biz.map(function(b) {
+    return '<div style="padding:4px 0;border-bottom:1px solid #0f3460;"><div style="font-weight:500;">' + esc(b.business_name || '?') + '</div><div style="font-size:11px;color:#888;">' + (b.category || '') + (b.area ? ' · ' + b.area : '') + (b.instagram_handle ? ' · 📷 @' + esc(b.instagram_handle) : '') + '</div></div>';
+  }).join('') || '<div style="color:#888;">No businesses with coordinates in this cell.</div>';
 }
 
 function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
