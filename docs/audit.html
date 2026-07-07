@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PV Business Audit — Instagram Review</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #1a1a2e; color: #eee; }
+.header { padding: 16px 24px; background: #16213e; display: flex; justify-content: space-between; align-items: center; }
+.header h1 { font-size: 18px; }
+.header .stats { font-size: 13px; opacity: 0.7; }
+.controls { padding: 10px 24px; background: #0f3460; display: flex; gap: 12px; align-items: center; font-size: 13px; flex-wrap: wrap; }
+.controls button { padding: 6px 14px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; }
+.controls .btn-export { background: #3498db; color: #fff; }
+.controls .btn-reset { background: #e74c3c; color: #fff; }
+.controls .btn-clear { background: #555; color: #fff; }
+.controls .filter-btn { padding: 4px 10px; border-radius: 12px; border: 1px solid #555; background: transparent; color: #aaa; cursor: pointer; font-size: 11px; }
+.controls .filter-btn.active { background: #e94560; color: #fff; border-color: #e94560; }
+#grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 8px; padding: 12px 24px; }
+.card { background: #16213e; border-radius: 6px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; border-left: 3px solid #555; transition: border-color 0.2s; }
+.card.pending { border-left-color: #f39c12; }
+.card.approved { border-left-color: #2ecc71; }
+.card.rejected { border-left-color: #e74c3c; opacity: 0.6; }
+.card .info { flex: 1; min-width: 0; }
+.card .biz-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; color: #ddd; }
+.card .biz-name:hover { color: #3498db; }
+.card .handle { font-size: 11px; color: #e1306c; margin-top: 2px; cursor: pointer; }
+.card .handle:hover { text-decoration: underline; }
+.card .actions { display: flex; gap: 4px; flex-shrink: 0; }
+.card .actions button { width: 32px; height: 32px; border: none; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+.card .actions .btn-up { background: #2ecc71; color: #fff; opacity: 0.3; }
+.card .actions .btn-up.active { opacity: 1; }
+.card .actions .btn-up:hover { opacity: 0.8; }
+.card .actions .btn-down { background: #e74c3c; color: #fff; opacity: 0.3; }
+.card .actions .btn-down.active { opacity: 1; }
+.card .actions .btn-down:hover { opacity: 0.8; }
+.card .actions .btn-open { background: #3498db; color: #fff; opacity: 0.6; font-size: 14px; text-decoration: none; }
+.card .actions .btn-open:hover { opacity: 1; }
+.card .badge { font-size: 10px; padding: 2px 6px; border-radius: 8px; }
+.card .badge.hotel { background: #e74c3c33; color: #e74c3c; }
+.card .badge.restaurant { background: #2ecc7133; color: #2ecc71; }
+.card .badge.service { background: #9b59b633; color: #9b59b6; }
+.card .badge.shop { background: #3498db33; color: #3498db; }
+.card .badge.tour { background: #1abc9c33; color: #1abc9c; }
+.card .badge.hostel { background: #e67e2233; color: #e67e22; }
+.card .badge.rental { background: #f39c1233; color: #f39c12; }
+.panel { display: none; position: fixed; bottom: 0; left: 0; right: 0; height: 50vh; background: #0a0a1a; border-top: 2px solid #0f3460; z-index: 100; }
+.panel.open { display: flex; flex-direction: column; }
+.panel .bar { padding: 8px 16px; background: #16213e; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+.panel .bar button { background: #e74c3c; color: #fff; border: none; padding: 4px 12px; border-radius: 4px; cursor: pointer; }
+.panel iframe { flex: 1; border: none; background: #fff; }
+.empty { text-align: center; padding: 60px 20px; color: #555; font-size: 14px; }
+.toast { position: fixed; bottom: 20px; right: 20px; background: #2ecc71; color: #fff; padding: 10px 20px; border-radius: 6px; font-size: 13px; z-index: 200; display: none; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Puerto Viejo — Instagram Audit</h1>
+  <div class="stats" id="stats">0 / 0 reviewed</div>
+</div>
+<div class="controls">
+  <button class="btn-export" onclick="exportResults()">Export CSV</button>
+  <button class="btn-reset" onclick="resetAll()">Reset All</button>
+  <span style="opacity:0.5">|</span>
+  <span>Filter:</span>
+  <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">All <span id="cAll">0</span></button>
+  <button class="filter-btn" data-filter="pending" onclick="setFilter('pending')">Pending <span id="cPending">0</span></button>
+  <button class="filter-btn" data-filter="approved" onclick="setFilter('approved')">Approved <span id="cApproved">0</span></button>
+  <button class="filter-btn" data-filter="rejected" onclick="setFilter('rejected')">Rejected <span id="cRejected">0</span></button>
+</div>
+<div id="grid"></div>
+<div class="empty" id="empty">No entries match the current filter.</div>
+<div class="panel" id="panel">
+  <div class="bar">
+    <span id="panelTitle">Instagram</span>
+    <button onclick="closePanel()">Close</button>
+  </div>
+  <iframe id="panelFrame" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+let data = [];
+let filter = 'all';
+
+function loadData() {
+  // The data is embedded in a JSON script tag at build time.
+  // For now, we fetch it from a static JSON file or embedded variable.
+}
+</script>
+<script src="audit_data.js"></script>
+<script>
+const STORAGE_KEY = 'pv_ig_audit';
+
+function getVerdicts() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch { return {}; }
+}
+
+function setVerdict(id, v) {
+  const vv = getVerdicts();
+  vv[id] = v;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(vv));
+  updateCard(id);
+  updateStats();
+}
+
+function resetAll() {
+  if (!confirm('Reset all verdicts?')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  data.forEach(d => updateCard(d.id));
+  updateStats();
+}
+
+function exportResults() {
+  const vv = getVerdicts();
+  let csv = 'id,business_name,handle,verdict\n';
+  data.forEach(d => {
+    csv += d.id + ',"' + d.biz.replace(/"/g,'""') + '",' + d.handle + ',' + (vv[d.id] || 'pending') + '\n';
+  });
+  const blob = new Blob([csv], {type: 'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'ig_audit_results.csv';
+  a.click();
+  toast('Exported ' + data.length + ' rows');
+}
+
+function openIG(handle) {
+  const url = 'https://www.instagram.com/' + handle + '/';
+  const panel = document.getElementById('panel');
+  document.getElementById('panelTitle').textContent = '@' + handle;
+  document.getElementById('panelFrame').src = url;
+  panel.classList.add('open');
+}
+
+function closePanel() {
+  document.getElementById('panel').classList.remove('open');
+  document.getElementById('panelFrame').src = '';
+}
+
+function updateCard(id) {
+  const vv = getVerdicts();
+  const v = vv[id] || 'pending';
+  const card = document.querySelector('.card[data-id="' + id + '"]');
+  if (!card) return;
+  card.className = 'card ' + v;
+  card.querySelector('.btn-up').classList.toggle('active', v === 'approved');
+  card.querySelector('.btn-down').classList.toggle('active', v === 'rejected');
+}
+
+function updateStats() {
+  const vv = getVerdicts();
+  const total = data.length;
+  const done = Object.keys(vv).length;
+  const approved = Object.values(vv).filter(v => v === 'approved').length;
+  const rejected = Object.values(vv).filter(v => v === 'rejected').length;
+  const pending = total - done;
+  document.getElementById('stats').textContent = approved + ' approved, ' + rejected + ' rejected, ' + pending + ' pending';
+  document.getElementById('cAll').textContent = total;
+  document.getElementById('cPending').textContent = pending;
+  document.getElementById('cApproved').textContent = approved;
+  document.getElementById('cRejected').textContent = rejected;
+  renderGrid();
+}
+
+function setFilter(f) {
+  filter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === f));
+  renderGrid();
+}
+
+function classify(biz) {
+  const lower = biz.toLowerCase();
+  if (lower.includes('hotel') || lower.includes('lodge') || lower.includes('inn') || lower.includes('b&b') || lower.includes('vacation') || lower.includes('villa') || lower.includes('cabin') || lower.includes('apartment') || lower.includes('bungalow') || lower.includes('retreat') || lower.includes('resort') || lower.includes('hostel') || lower.includes('ecolodge')) return 'hotel';
+  if (lower.includes('restaurant') || lower.includes('caf') || lower.includes('bar') || lower.includes('grill') || lower.includes('pizz') || lower.includes('bakery') || lower.includes('soda') || lower.includes('food') || lower.includes('comida')) return 'restaurant';
+  if (lower.includes('spa') || lower.includes('salon') || lower.includes('tattoo') || lower.includes('gym') || lower.includes('vet') || lower.includes('clinic') || lower.includes('farmacia') || lower.includes('pharmacy') || lower.includes('laundry') || lower.includes('school') || lower.includes('tour') || lower.includes('surf') || lower.includes('rental') || lower.includes('shuttle') || lower.includes('real estate') || lower.includes('atm') || lower.includes('bank') || lower.includes('bus stop') || lower.includes('police')) return 'service';
+  if (lower.includes('shop') || lower.includes('store') || lower.includes('market') || lower.includes('super') || lower.includes('boutique') || lower.includes('tienda')) return 'shop';
+  if (lower.includes('tour') || lower.includes('adventure') || lower.includes('paraglid') || lower.includes('dive') || lower.includes('horse')) return 'tour';
+  return 'hotel';
+}
+
+function renderGrid() {
+  const grid = document.getElementById('grid');
+  const empty = document.getElementById('empty');
+  const vv = getVerdicts();
+  let visible = data;
+  if (filter === 'pending') visible = data.filter(d => !vv[d.id]);
+  else if (filter === 'approved') visible = data.filter(d => vv[d.id] === 'approved');
+  else if (filter === 'rejected') visible = data.filter(d => vv[d.id] === 'rejected');
+  
+  if (visible.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  
+  grid.innerHTML = visible.map(d => {
+    const v = vv[d.id] || 'pending';
+    const cat = classify(d.biz);
+    return '<div class="card ' + v + '" data-id="' + d.id + '">' +
+      '<div class="info">' +
+        '<div class="biz-name" onclick="openIG(\'' + d.handle + '\')" title="' + d.biz.replace(/'/g,'&apos;') + '">' + esc(d.biz) + '</div>' +
+        '<div class="handle" onclick="openIG(\'' + d.handle + '\')">@' + d.handle + ' <span class="badge ' + cat + '">' + cat + '</span></div>' +
+      '</div>' +
+      '<div class="actions">' +
+        '<button class="btn-up ' + (v==='approved'?'active':'') + '" onclick="setVerdict(\'' + d.id + '\',\'approved\')" title="Approve">&#x1F44D;</button>' +
+        '<button class="btn-down ' + (v==='rejected'?'active':'') + '" onclick="setVerdict(\'' + d.id + '\',\'rejected\')" title="Reject">&#x1F44E;</button>' +
+        '<a class="btn-open" href="https://www.instagram.com/' + d.handle + '/" target="_blank" title="Open in new tab">&#x2197;</a>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.display = 'block';
+  setTimeout(() => t.style.display = 'none', 2000);
+}
+
+// Init
+loadData();
+updateStats();
+</script>
+</body>
+</html>
