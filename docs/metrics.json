@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-07-06",
-  "records_total": 754,
-  "records_mapped": 481,
-  "google_maps_cids": 457,
-  "phones": 523,
-  "instagram_handles": 361,
-  "instagram_pct": 47.9,
-  "facebook_urls": 329,
-  "whatsapp_numbers": 89,
-  "websites": 98,
-  "emails": 6,
-  "with_category": 620,
-  "with_area": 620,
+  "generated_at": "2026-07-07",
+  "records_total": 750,
+  "records_mapped": 606,
+  "google_maps_cids": 699,
+  "phones": 611,
+  "instagram_handles": 384,
+  "instagram_pct": 51.2,
+  "facebook_urls": 359,
+  "whatsapp_numbers": 106,
+  "websites": 191,
+  "emails": 75,
+  "with_category": 619,
+  "with_area": 619,
   "sources": [
     "PVS crawl",
     "OpenStreetMap",
     "Google Maps grid scan",
     "SQLite cache",
-    "Playwright Instagram checks"
-  ],
-  "screenshot_evidence": 255
+    "Playwright Instagram checks",
+    "Stealth Maps search",
+    "Website crawl"
+  ]
 }
