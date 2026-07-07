@@ -1,4 +1,4 @@
-# Puerto Viejo Business Discovery — v2.0
+# Puerto Viejo Business Discovery — codename Paradisio
 
 **750 businesses within 5 km of Puerto Viejo de Talamanca, Costa Rica.**  
 A verified, multi-source local business directory with Instagram handles, phone numbers, WhatsApp, Booking.com links, Facebook pages, Google Maps CIDs, and geographic coordinates.

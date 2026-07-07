@@ -1,4 +1,4 @@
-# Puerto Viejo Business Discovery — Agent Context
+# Puerto Viejo Business Discovery — codename Paradisio
 
 ## Purpose
 
