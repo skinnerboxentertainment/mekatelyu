@@ -99,10 +99,10 @@ function initMap(data) {
   // Radius circle
   radiusCircle = L.circle([9.6554, -82.7533], { radius: 5000, color: '#e94560', fillColor: '#e94560', fillOpacity: 0.03, weight: 1.5, dashArray: '4,8' }).addTo(map);
 
-  // Add businesses
+  // Add businesses (grid first so markers sit on top)
   window.businesses = data;
-  updateMarkers(data);
   drawGrid(9.6554, -82.7533, gridKm);
+  updateMarkers(data);
 
   // Update header with dynamic count
   const mapped = data.filter(b => b.latitude && b.longitude).length;
@@ -196,11 +196,9 @@ function drawGrid(centerLat, centerLon, km) {
         // Clickable rectangle — markers are brought to front, so rectangles don't block marker clicks
         const rect = L.rectangle([[cellLat1, cellLon1], [cellLat2, cellLon2]], {
           color: '#f39c12', weight: 1, opacity: 0.25, fillColor: '#f39c12', fillOpacity: 0.04,
-          interactive: true,
+          interactive: false,
         }).addTo(map);
         rect.on('click', function() { showCell(cellBiz, cKey, cellCount, cellIG); });
-        rect.on('mouseover', function() { this.setStyle({ fillOpacity: 0.12, opacity: 0.7 }); });
-        rect.on('mouseout', function() { this.setStyle({ fillOpacity: 0.04, opacity: 0.25 }); });
         gridLines.push(rect);
 
         // Label indicator
