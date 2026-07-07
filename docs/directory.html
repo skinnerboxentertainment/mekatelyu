@@ -235,11 +235,16 @@ function init() {
   initMap();
   applyFilters();
 
-  // If ?id= is set, scroll to and highlight that business
+  // If ?id= is set, scroll to and open drawer for that business
   if (urlId) {
     var target = businesses.find(function(b) { return b.id === urlId; });
-    if (target && target.latitude && target.longitude) {
-      setTimeout(function() { focusMap(parseFloat(target.latitude), parseFloat(target.longitude), null); }, 500);
+    if (target) {
+      setTimeout(function() {
+        openDrawer(target);
+        if (target.latitude && target.longitude) {
+          focusMap(parseFloat(target.latitude), parseFloat(target.longitude), null);
+        }
+      }, 500);
     }
   }
 
