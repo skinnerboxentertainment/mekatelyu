@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <meta name="description" content="Kalunay Hostel — hostel in Puerto Viejo, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
+<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body>
 <div class="container">
@@ -26,10 +27,10 @@
 <div class="amenities"><span class="amenity-chip">Wi-Fi gratis</span> <span class="amenity-chip">Desayuno pago</span> <span class="amenity-chip">Estacionamiento gratuito</span> <span class="amenity-chip">Piscina</span> <span class="amenity-chip">Aire acondicionado</span> <span class="amenity-chip">Restaurante</span></div>
 </header>
 <div class="biz-main hide-mobile">
-<a href="https://wa.me/50627503168?text=Hola Kalunay Hostel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener">Message on WhatsApp</a>
+<a href="https://wa.me/50627503168?text=Hola Kalunay Hostel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">Message on WhatsApp</a>
 </div>
 <div class="biz-content">
-<div class="biz-links"><a href="tel:+506 2750 3168" class="secondary-link" target="_blank" rel="noopener">Call</a> <a href="https://instagram.com/kalunayhostel" class="secondary-link" target="_blank" rel="noopener">Instagram</a> <a href="https://www.facebook.com/KalunayHostel/" class="secondary-link" target="_blank" rel="noopener">Facebook</a> <a href="https://www.booking.com/hotel/cr/kalunai-hostel.html?aid=1284953" class="secondary-link" target="_blank" rel="noopener">Booking.com</a> <a href="https://www.google.com/maps?cid=13549549945867962662" class="secondary-link" target="_blank" rel="noopener">Google Maps</a></div>
+<div class="biz-links"><a href="tel:+506 2750 3168" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Call">Call</a> <a href="https://instagram.com/kalunayhostel" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Instagram">Instagram</a> <a href="https://www.facebook.com/KalunayHostel/" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Facebook">Facebook</a> <a href="https://www.booking.com/hotel/cr/kalunai-hostel.html?aid=1284953" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Booking.com">Booking.com</a> <a href="https://www.google.com/maps?cid=13549549945867962662" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Google Maps">Google Maps</a></div>
 <div class="biz-map">
 <div id="map-kalunay-hostel-puerto-viejo" class="map-container"></div>
 <p class="map-note"><a href="https://www.google.com/maps?cid=13549549945867962662" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="qr-preview-text">
 <strong>QR code ready</strong>
 <p>Print this QR sticker and put it on your door. Every scan opens your page and WhatsApp.</p>
-<a href="../qr/kalunay-hostel-puerto-viejo.png" class="qr-download-link" download>Download QR PNG &rarr;</a>
+<a href="../qr/kalunay-hostel-puerto-viejo.png" class="qr-download-link" download data-plausible-event="QRDownload">Download QR PNG &rarr;</a>
 </div>
 </div>
 </div>
@@ -68,9 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </footer>
 </div>
 <div class="sticky-bar">
-<a href="https://wa.me/50627503168?text=Hola Kalunay Hostel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener">Message on WhatsApp</a>
-<a href="tel:+50627503168" class="secondary-btn">Call</a>
-<a href="https://instagram.com/kalunayhostel" class="secondary-btn">IG</a>
+<a href="https://wa.me/50627503168?text=Hola Kalunay Hostel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">Message on WhatsApp</a>
+<a href="tel:+50627503168" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>
+<a href="https://instagram.com/kalunayhostel" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Instagram">IG</a>
 </div>
 </body>
 </html>

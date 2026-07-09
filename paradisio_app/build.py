@@ -323,6 +323,7 @@ def render_index_html(businesses, metrics):
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
+<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body>
 <div class="container">
@@ -383,6 +384,7 @@ const BUSINESSES = {json.dumps(businesses, ensure_ascii=False)};
 const CATEGORIES = {categories_json};
 const AREAS = {areas_json};
 </script>
+<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
 <script src="static/app.js"></script>
@@ -445,7 +447,10 @@ def render_business_html(biz):
     pc = biz["primary_contact"]
     sl = biz["secondary_links"]
     badges_html = " ".join(f'<span class="badge badge-{b.lower().replace(" ","-")}">{b}</span>' for b in biz["badges"])
-    links_html = " ".join(f'<a href="{l["url"]}" class="secondary-link" target="_blank" rel="noopener">{l["label"]}</a>' for l in sl)
+    links_html = " ".join(
+        f'<a href="{l["url"]}" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="{l["label"]}">{l["label"]}</a>'
+        for l in sl
+    )
     scores = biz["scores"]
 
     map_html = ""
@@ -477,19 +482,20 @@ document.addEventListener('DOMContentLoaded', function() {{
 <div class="qr-preview-text">
 <strong>QR code ready</strong>
 <p>Print this QR sticker and put it on your door. Every scan opens your page and WhatsApp.</p>
-<a href="../qr/{slug}.png" class="qr-download-link" download>Download QR PNG &rarr;</a>
+<a href="../qr/{slug}.png" class="qr-download-link" download data-plausible-event="QRDownload">Download QR PNG &rarr;</a>
 </div>
 </div>
 </div>"""
 
+    channel_type = pc["type"]
     inline_cta = f"""<div class="biz-main hide-mobile">
-<a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener">{pc["label"]}</a>
+<a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
 </div>"""
 
     sticky_cta = f"""<div class="sticky-bar">
-<a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener">{pc["label"]}</a>
-{'<a href="tel:' + biz['channels']['phone_normalized'] + '" class="secondary-btn">Call</a>' if biz['channels']['phone_normalized'] and pc['type'] != 'Call' else ''}
-{'<a href="https://instagram.com/' + biz['channels']['instagram'] + '" class="secondary-btn">IG</a>' if biz['channels']['instagram'] and pc['type'] != 'Instagram' else ''}
+<a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
+{'<a href="tel:' + biz['channels']['phone_normalized'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>' if biz['channels']['phone_normalized'] and pc['type'] != 'Call' else ''}
+{'<a href="https://instagram.com/' + biz['channels']['instagram'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Instagram">IG</a>' if biz['channels']['instagram'] and pc['type'] != 'Instagram' else ''}
 </div>"""
 
     return f"""<!DOCTYPE html>
@@ -502,6 +508,7 @@ document.addEventListener('DOMContentLoaded', function() {{
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <meta name="description" content="{biz["name"]} — {biz["category"]} in {biz["area"]}, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
+<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body>
 <div class="container">
