@@ -14,6 +14,20 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent / "docs" / "paradisio_app"
 CSV_PATH = BASE_DIR.parent / "pv_master_unified.csv"
 MAPS_ENRICH_PATH = OUTPUT_DIR / "data" / "maps_enrich.json"
 CLASSIFIEDS_PATH = BASE_DIR / "data" / "classifieds.json"
+LOCALES_DIR = BASE_DIR / "data" / "locales"
+
+
+def load_locales():
+    locales = {}
+    for path in LOCALES_DIR.glob("*.json"):
+        lang = path.stem
+        with open(path, encoding="utf-8") as f:
+            locales[lang] = json.load(f)
+    return locales
+
+
+LOCALES = load_locales()
+LOCALE_NAMES = {lang: data.get("lang.name_en", lang) for lang, data in LOCALES.items()}
 
 
 def load_classifieds():
@@ -35,9 +49,11 @@ def nav_html(current, depth=0):
     for key, label in NAV_PAGES.items():
         href = {"directory": f"{prefix}index.html", "classifieds": f"{prefix}classifieds/index.html", "post": "mailto:paradisio@example.com?subject=Post%20ad&body=Category:%0ATitle:%0APrice:%0AArea:%0AContact:%0ADescription:"}.get(key, "#")
         active = "nav-active" if key == current else ""
-        en_label = {"directory": "Directory", "classifieds": "Board", "post": "Post"}.get(key, label)
-        es_label = {"directory": "Directorio", "classifieds": "Tablon", "post": "Publicar"}.get(key, label)
-        links += f'<a href="{href}" class="{active}" lang="en">{en_label}</a>'
+        en = {"directory": "Directory", "classifieds": "Board", "post": "Post"}.get(key, label)
+        links += f'<a href="{href}" class="{active}" data-i18n="nav.{key}">{en}</a>'
+    # Language switcher
+    lang_opts = "".join(f'<button class="lang-btn" data-lang="{l}" data-i18n="lang.name_{l}">{LOCALES.get(l,{}).get("lang."+l, l.upper())}</button>' for l in ["en","es","de"])
+    links += f'<span class="lang-switcher">{lang_opts}</span>'
     return f'<nav class="site-nav">{links}</nav>'
 
 
@@ -356,7 +372,7 @@ def cat_grid_html(categories):
     tiles = ""
     for key, en, es in CAT_SHORTCUTS:
         c = counts.get(key, 0)
-        tiles += f'<a href="#" class="cat-tile" data-category="{key}"><div>{en}</div><span class="cat-count">{c} businesses</span></a>'
+        tiles += f'<a href="#" class="cat-tile" data-category="{key}"><div data-i18n="home.cat_{key}">{en}</div><span class="cat-count" data-i18n="home.cat_count">{c} businesses</span></a>'
     return f'<div class="cat-grid">{tiles}</div>'
 
 
@@ -392,43 +408,43 @@ def render_index_html(businesses, metrics):
 <div class="container">
 <div class="masthead">
 <h1>Paradisio</h1>
-<p class="tagline">Find Puerto Viejo businesses with confidence.</p>
-<p class="subtitle">{total} local businesses &middot; WhatsApp, Instagram, maps &amp; more</p>
+<p class="tagline" data-i18n="home.tagline">Find Puerto Viejo businesses with confidence.</p>
+<p class="subtitle" data-i18n="home.subtitle">{total} local businesses &middot; WhatsApp, Instagram, maps &amp; more</p>
 </div>
 {cat_grid}
 <div class="stats-bar">
-<span class="stat"><strong>{total}</strong> businesses</span>
-<span class="stat"><strong>{with_wp}</strong> with WhatsApp</span>
-<span class="stat"><strong>{with_ig}</strong> with Instagram</span>
-<span class="stat"><strong>{with_phone}</strong> with Phone</span>
+<span class="stat"><strong>{total}</strong> <span data-i18n="home.stats_businesses">businesses</span></span>
+<span class="stat"><strong>{with_wp}</strong> <span data-i18n="home.stats_whatsapp">with WhatsApp</span></span>
+<span class="stat"><strong>{with_ig}</strong> <span data-i18n="home.stats_instagram">with Instagram</span></span>
+<span class="stat"><strong>{with_phone}</strong> <span data-i18n="home.stats_phone">with Phone</span></span>
 </div>
 <p class="updated hide-mobile">Updated {date}</p>
 <div class="controls">
-<input type="text" id="search" class="search-input" placeholder="Search businesses..." autofocus>
+<input type="text" id="search" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="Search businesses..." autofocus>
 <div class="view-toggle">
-<button id="view-list" class="view-btn active">List</button>
-<button id="view-map" class="view-btn">Map</button>
+<button id="view-list" class="view-btn active" data-i18n="list.view">List</button>
+<button id="view-map" class="view-btn" data-i18n="map.view">Map</button>
 </div>
 <div class="filters">
 <select id="category-filter" class="filter-select">
-<option value="">All Categories</option>
+<option value="" data-i18n="filter.all_categories">All Categories</option>
 </select>
 <select id="area-filter" class="filter-select">
-<option value="">All Areas</option>
+<option value="" data-i18n="filter.all_areas">All Areas</option>
 </select>
 <select id="channel-filter" class="filter-select">
-<option value="">Any Contact</option>
-<option value="whatsapp">Has WhatsApp</option>
-<option value="instagram">Has Instagram</option>
-<option value="phone">Has Phone</option>
-<option value="website">Has Website</option>
-<option value="booking">Has Booking.com</option>
-<option value="maps">On Google Maps</option>
+<option value="" data-i18n="filter.any_contact">Any Contact</option>
+<option value="whatsapp" data-i18n="filter.has_whatsapp">Has WhatsApp</option>
+<option value="instagram" data-i18n="filter.has_instagram">Has Instagram</option>
+<option value="phone" data-i18n="filter.has_phone">Has Phone</option>
+<option value="website" data-i18n="filter.has_website">Has Website</option>
+<option value="booking" data-i18n="filter.has_booking">Has Booking.com</option>
+<option value="maps" data-i18n="filter.on_maps">On Google Maps</option>
 </select>
 <select id="sort-filter" class="filter-select">
-<option value="name">Sort: Name</option>
-<option value="contactability">Sort: Best Contact</option>
-<option value="completeness">Sort: Most Complete</option>
+<option value="name" data-i18n="filter.sort_name">Sort: Name</option>
+<option value="contactability" data-i18n="filter.sort_contact">Sort: Best Contact</option>
+<option value="completeness" data-i18n="filter.sort_complete">Sort: Most Complete</option>
 </select>
 </div>
 <div id="stats-line" class="stats-line"></div>
@@ -448,8 +464,12 @@ const BUSINESSES = {json.dumps(businesses, ensure_ascii=False)};
 const CATEGORIES = {categories_json};
 const AREAS = {areas_json};
 </script>
+<script>
+const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
+</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+<script src="static/i18n.js"></script>
 <script src="static/app.js"></script>
 </body>
 </html>"""
@@ -573,6 +593,10 @@ document.addEventListener('DOMContentLoaded', function() {{
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <meta name="description" content="{biz["name"]} — {biz["category"]} in {biz["area"]}, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
+<script>
+const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
+</script>
+<script src="../static/i18n.js"></script>
 <script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -670,6 +694,10 @@ def render_classifieds_index(ads):
 <title>Classifieds — Paradisio Puerto Viejo</title>
 <link rel="stylesheet" href="../static/tokens.css">
 <link rel="stylesheet" href="../static/styles.css">
+<script>
+const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
+</script>
+<script src="../static/i18n.js"></script>
 <script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -732,6 +760,10 @@ def render_classified_listing(ad):
 <title>{ad["title"]} — Paradisio Classifieds</title>
 <link rel="stylesheet" href="../static/tokens.css">
 <link rel="stylesheet" href="../static/styles.css">
+<script>
+const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
+</script>
+<script src="../static/i18n.js"></script>
 <script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -856,10 +888,13 @@ def main():
     static_src = STATIC_DIR / "tokens.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "tokens.css")
+    static_src = STATIC_DIR / "i18n.js"
+    if static_src.exists():
+        shutil.copy2(static_src, OUTPUT_DIR / "static" / "i18n.js")
     static_src = STATIC_DIR / "styles.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "styles.css")
-    print(f"  static/ — tokens.css, app.js, classifieds.js, styles.css")
+    print(f"  static/ — tokens.css, i18n.js, app.js, classifieds.js, styles.css")
 
     print(f"\nDone. Output: {OUTPUT_DIR}")
 
