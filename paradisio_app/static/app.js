@@ -96,21 +96,16 @@
             el.addEventListener("click", function (e) {
                 e.stopPropagation();
                 var field = this.getAttribute("data-clear");
-                if (field === "category") catFilter.value = "";
-                if (field === "area") areaFilter.value = "";
-                if (field === "channel") channelFilter.value = "";
-                displayCount = PAGE_SIZE;
-                render();
+                var target = field === "category" ? catFilter : field === "area" ? areaFilter : channelFilter;
+                if (target) { target.value = ""; target.dispatchEvent(new Event("change")); }
             });
         });
         var clearAll = document.getElementById("clear-all-filters");
         if (clearAll) {
             clearAll.addEventListener("click", function () {
-                catFilter.value = "";
-                areaFilter.value = "";
-                channelFilter.value = "";
+                catFilter.value = ""; areaFilter.value = ""; channelFilter.value = "";
                 displayCount = PAGE_SIZE;
-                render();
+                catFilter.dispatchEvent(new Event("change"));
             });
         }
     }
@@ -173,7 +168,7 @@
         loadMoreDiv.innerHTML = '<div class="load-more-bar"><span class="load-more-text">Showing ' + showing + ' of ' + total + '</span><button class="load-more-btn" id="load-more-btn">Load ' + Math.min(remaining, PAGE_SIZE) + ' more (' + remaining + ' remaining)</button></div>';
         document.getElementById("load-more-btn").addEventListener("click", function () {
             displayCount += PAGE_SIZE;
-            render();
+            renderList();
         });
     }
 
@@ -202,7 +197,7 @@
                     e.preventDefault();
                     catFilter.value = ""; areaFilter.value = ""; channelFilter.value = "";
                     displayCount = PAGE_SIZE;
-                    render();
+                    catFilter.dispatchEvent(new Event("change"));
                 });
             }
         } else {
