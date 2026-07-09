@@ -1,0 +1,7924 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-09T20:06:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 383293764,
+      "lat": 9.6564943,
+      "lon": -82.7535654,
+      "tags": {
+        "is_in": "Talamanca, Limón",
+        "name": "Puerto Viejo",
+        "place": "neighbourhood",
+        "wikidata": "Q3109610",
+        "wikipedia": "en:Puerto Viejo de Talamanca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 440687355,
+      "lat": 9.6531516,
+      "lon": -82.7544408,
+      "tags": {
+        "amenity": "reception_desk",
+        "name": "Coco Loco Lodge",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 440803297,
+      "lat": 9.658987,
+      "lon": -82.750817,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-06",
+        "name": "El Sendero"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326976627,
+      "lat": 9.651895,
+      "lon": -82.7389236,
+      "tags": {
+        "name": "Hotel La Isla Inn",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q112020943"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326976877,
+      "lat": 9.6504068,
+      "lon": -82.7394595,
+      "tags": {
+        "name": "Hotel Cariblue",
+        "phone": "2750-0035",
+        "source": "KG Ground Survey 2015;http://www.cariblue.com/index.php",
+        "tourism": "hotel",
+        "website": "https://www.cariblue.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326977663,
+      "lat": 9.6514247,
+      "lon": -82.7382801,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurante Cariblue",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326980307,
+      "lat": 9.64974,
+      "lon": -82.73665,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Costa de Papito",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326980422,
+      "lat": 9.6487368,
+      "lon": -82.735038,
+      "tags": {
+        "name": "Cabinas Rio Cocles",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1326984444,
+      "lat": 9.6535176,
+      "lon": -82.7409774,
+      "tags": {
+        "name": "Cabinas El Tesoro",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328123925,
+      "lat": 9.6569312,
+      "lon": -82.7552227,
+      "tags": {
+        "name": "Hotel Maritza",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328124386,
+      "lat": 9.6563655,
+      "lon": -82.7548601,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurante Isma",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328125027,
+      "lat": 9.6564823,
+      "lon": -82.7547211,
+      "tags": {
+        "name": "Backpacker Sunrise",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328127610,
+      "lat": 9.6561414,
+      "lon": -82.7523137,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurante Miss Sam"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328128773,
+      "lat": 9.6567503,
+      "lon": -82.7540817,
+      "tags": {
+        "addr:postcode": "70403",
+        "check_date": "2024-04-24",
+        "name": "Red Monkey",
+        "shop": "alcohol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328129657,
+      "lat": 9.6572236,
+      "lon": -82.754042,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurante El Dorado"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328134077,
+      "lat": 9.6573819,
+      "lon": -82.7536162,
+      "tags": {
+        "amenity": "pub",
+        "name": "GLOW"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1328135975,
+      "lat": 9.6555628,
+      "lon": -82.7541784,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "name": "Pollo Rapido",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1366284653,
+      "lat": 9.6577124,
+      "lon": -82.7552944,
+      "tags": {
+        "addr:street": "Calle 215",
+        "check_date": "2024-04-23",
+        "name": "Jungle Air Parapente",
+        "old_name": "Reefrunners Diving",
+        "phone": "+506 8403 8717",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1366285722,
+      "lat": 9.6577884,
+      "lon": -82.7525543,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-04-23",
+        "cuisine": "caribbean;international",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "KoKi Beach",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:twint": "yes",
+        "payment:visa": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1405888918,
+      "lat": 9.6537948,
+      "lon": -82.7585358,
+      "tags": {
+        "designation": "hotel - cabinas",
+        "name": "Kaya's Place",
+        "source": "www.kayasplace.com",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1405925928,
+      "lat": 9.6584271,
+      "lon": -82.7825122,
+      "tags": {
+        "building": "yes",
+        "name": "Maitri Park residential community and property sales",
+        "website": "http://www.maitripark.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1405985810,
+      "lat": 9.6558109,
+      "lon": -82.7555686,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "shopping",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1405997609,
+      "lat": 9.6584991,
+      "lon": -82.7522316,
+      "tags": {
+        "amenity": "bar",
+        "name": "Stanford Lazy Mon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1406006905,
+      "lat": 9.6571363,
+      "lon": -82.7541491,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Chili Rojo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1406007925,
+      "lat": 9.6577207,
+      "lon": -82.7541115,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2026-04-01",
+        "name": "Nanku",
+        "phone": "+506 88354041"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1437582103,
+      "lat": 9.6552395,
+      "lon": -82.7522134,
+      "tags": {
+        "man_made": "tower",
+        "name": "ICE"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445515856,
+      "lat": 9.6533189,
+      "lon": -82.7684784,
+      "tags": {
+        "name": "Ferretería San Franciaco",
+        "shop": "doityourself"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445518223,
+      "lat": 9.6580098,
+      "lon": -82.7551136,
+      "tags": {
+        "amenity": "bar",
+        "name": "Johnny's Place"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445519340,
+      "lat": 9.6578056,
+      "lon": -82.7549653,
+      "tags": {
+        "amenity": "bank",
+        "name": "exchange"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445597384,
+      "lat": 9.6577184,
+      "lon": -82.7549894,
+      "tags": {
+        "designation": "506 2750 0235",
+        "name": "Cabinas Los Almendros",
+        "source": "cabinaslosalmendros.com",
+        "tourism": "motel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445598475,
+      "lat": 9.6571815,
+      "lon": -82.7542969,
+      "tags": {
+        "designation": "ATEC",
+        "name": "Ecotourism and Conservation Association of Talamanca",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1445607294,
+      "lat": 9.6504566,
+      "lon": -82.7596226,
+      "tags": {
+        "name": "nature park - Vivero",
+        "tourism": "viewpoint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1617141222,
+      "lat": 9.6585688,
+      "lon": -82.7506613,
+      "tags": {
+        "name": "Jordan's Jacuzzi Suites",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1650639049,
+      "lat": 9.6548104,
+      "lon": -82.7550824,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 211",
+        "name": "Hotel Los Sueños",
+        "source": "www.hotellossuenos.com",
+        "tourism": "hostel",
+        "website": "www.hotellossuenos.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1651821752,
+      "lat": 9.6579828,
+      "lon": -82.7494002,
+      "tags": {
+        "name": "Bungalows CALALÚ",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1651825799,
+      "lat": 9.6562905,
+      "lon": -82.7527317,
+      "tags": {
+        "name": "Cabinas & Caribbean House MOR",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1672105230,
+      "lat": 9.6446176,
+      "lon": -82.7194702,
+      "tags": {
+        "name": "Las Mariposas",
+        "tourism": "guest_house",
+        "website": "https://www.facebook.com/CabinasLasMariposas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1672108043,
+      "lat": 9.6433437,
+      "lon": -82.7209457,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "Templo Evangélico",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1681021025,
+      "lat": 9.6571165,
+      "lon": -82.7545751,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Saturday feria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1681021044,
+      "lat": 9.6590538,
+      "lon": -82.7501517,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "designation": "fine food",
+        "name": "El Paso",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2059419966,
+      "lat": 9.6551251,
+      "lon": -82.8001427,
+      "tags": {
+        "name": "Hone Creek",
+        "place": "hamlet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2266582600,
+      "lat": 9.6462422,
+      "lon": -82.7322216,
+      "tags": {
+        "name": "Totem Hotel Resort & Restaurant",
+        "phone": "2750-0758",
+        "source": "http://www.totemhotel.com/es",
+        "tourism": "hotel",
+        "website": "http://www.totemhotel.com/es/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2267890565,
+      "lat": 9.6521348,
+      "lon": -82.7517995,
+      "tags": {
+        "name": "Casa Camarona Lodge",
+        "phone": "2750-0151",
+        "source": "http://www.casacamarona.co.cr/place.shtml",
+        "tourism": "hotel",
+        "website": "www.casacamarona.co.cr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2518620020,
+      "lat": 9.6420923,
+      "lon": -82.7232243,
+      "tags": {
+        "email": "info@jaguarrescue.foundation",
+        "name": "Refugio de animales Jaguar",
+        "name:en": "Jaguar Rescue Center",
+        "opening_hours": "Mo-Sa 09:30-11:30",
+        "phone": "+5062750-0710",
+        "tourism": "attraction",
+        "website": "https://www.jaguarrescue.foundation/",
+        "wikidata": "Q6122901"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2588508694,
+      "lat": 9.6566299,
+      "lon": -82.7559073,
+      "tags": {
+        "bench": "yes",
+        "bin": "yes",
+        "description": "Bus to Limón, San José; Bus to Sixaola",
+        "highway": "bus_stop",
+        "local_ref": "MEPE",
+        "name": "Bus to Sixaola",
+        "name:es": "Autotransportes Mepe",
+        "operator": "Mepe",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2607873323,
+      "lat": 9.665407,
+      "lon": -82.7823455,
+      "tags": {
+        "building": "house",
+        "building:levels": "2",
+        "name": "Casa Jessica"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2791783328,
+      "lat": 9.6534909,
+      "lon": -82.7406628,
+      "tags": {
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Tasty Waves Cantina",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2837668438,
+      "lat": 9.6563914,
+      "lon": -82.7454319,
+      "tags": {
+        "addr:city": "Puerto Viejo de Talamanca",
+        "addr:housenumber": "71",
+        "addr:street": "Avenida 71",
+        "name": "Hotel Blue Conga",
+        "phone": "+506 2750 0681",
+        "smoking": "outside",
+        "tourism": "hotel",
+        "website": "http://www.hotelblueconga.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2970999814,
+      "lat": 9.6538172,
+      "lon": -82.7411612,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "OM",
+        "website": "http://ompuertoviejo.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3247914025,
+      "lat": 9.6367003,
+      "lon": -82.7099847,
+      "tags": {
+        "name": "Casa chiquita",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3301252847,
+      "lat": 9.6204604,
+      "lon": -82.7352903,
+      "tags": {
+        "name": "Finca Ardilla",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3340998037,
+      "lat": 9.6484084,
+      "lon": -82.8012063,
+      "tags": {
+        "name": "Patiño",
+        "place": "neighbourhood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3341008097,
+      "lat": 9.6471897,
+      "lon": -82.787487,
+      "tags": {
+        "name": "Hotel Creek",
+        "place": "hamlet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3341008519,
+      "lat": 9.6437829,
+      "lon": -82.7305611,
+      "tags": {
+        "name": "Cocles",
+        "place": "hamlet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3437766787,
+      "lat": 9.6564372,
+      "lon": -82.7461056,
+      "tags": {
+        "addr:city": "Puerto Viejo de Talamanca",
+        "addr:postcode": "70403",
+        "name": "Aiyana Lodge",
+        "smoking": "no",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3882236337,
+      "lat": 9.6473518,
+      "lon": -82.7816296,
+      "tags": {
+        "name": "Hotel Hawa",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3882236338,
+      "lat": 9.648193,
+      "lon": -82.7777331,
+      "tags": {
+        "name": "Kinawe Cabinas",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3882236339,
+      "lat": 9.6536799,
+      "lon": -82.7671737,
+      "tags": {
+        "name": "Cabinas WB",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3977112327,
+      "lat": 9.65566,
+      "lon": -82.7552988,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "name": "Coco's Tienda",
+        "shop": "clothes",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982520250,
+      "lat": 9.6497813,
+      "lon": -82.7377092,
+      "tags": {
+        "addr:city": "Talamanca",
+        "addr:postcode": "70403",
+        "email": "info@azania-costarica.com",
+        "fax": "2750-0371",
+        "name": "Azania Bungalow",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "2750-0540",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "www.azania-costarica.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982520251,
+      "lat": 9.65031,
+      "lon": -82.73703,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Azania Bungalows",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982520777,
+      "lat": 9.6577326,
+      "lon": -82.752862,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Beach Hut",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "2750-0895",
+        "source": "KG Ground Survey 2011",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982521401,
+      "lat": 9.6521579,
+      "lon": -82.7400186,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "email": "cabinaseltesoro@puertoviejo.net",
+        "fax": "2750-0756",
+        "name": "Cabinas El Tesoro",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "2750-0128",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "www.cabinaseltesoro.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982521414,
+      "lat": 9.6555932,
+      "lon": -82.7534924,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Cabinas Guana Art Shop",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982521431,
+      "lat": 9.658485,
+      "lon": -82.750892,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Cabinas Las Olas",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522202,
+      "lat": 9.6567029,
+      "lon": -82.7513293,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "description": "Formerly Cabinas Tropical",
+        "name": "Hotel Posada Nena",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "27502064",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "https://www.posadanena.com/",
+        "wikidata": "Q111151370"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522221,
+      "lat": 9.6570158,
+      "lon": -82.7486276,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Calalu Cabinas",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522223,
+      "lat": 9.6570239,
+      "lon": -82.7457109,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Camarona Caribbean Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522779,
+      "lat": 9.6372342,
+      "lon": -82.7336467,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Casa Planet Harley",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522797,
+      "lat": 9.6530722,
+      "lon": -82.7535229,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Cashew Hill Jungle Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522828,
+      "lat": 9.6563199,
+      "lon": -82.7698681,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Chimuri Beach Cottages",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982522845,
+      "lat": 9.653914,
+      "lon": -82.762306,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Coco Congo",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982523361,
+      "lat": 9.6380968,
+      "lon": -82.7371152,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "El Tucan Jungle Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982523368,
+      "lat": 9.6588858,
+      "lon": -82.7488707,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Escape Caribeño",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982523416,
+      "lat": 9.6352661,
+      "lon": -82.7346106,
+      "tags": {
+        "addr:city": "Talamanca",
+        "addr:street": "Calle El Parque",
+        "name": "Geckoes Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "506 2750 0908",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "https://www.geckoeslodge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982523652,
+      "lat": 9.6313346,
+      "lon": -82.7279752,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Hotel Bugabutik",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "note_1": "300 m Este 350 m Sur de la Cancha de Futbol de Cocles",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982523996,
+      "lat": 9.6416088,
+      "lon": -82.7192014,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Hotel Kasha",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524309,
+      "lat": 9.6575633,
+      "lon": -82.7718941,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "check_date": "2024-04-23",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Hotel Perla Negra Beachfront",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:twint": "yes",
+        "payment:visa": "yes",
+        "phone": "+506 8621 0247",
+        "tourism": "hotel",
+        "website": "https://www.booking.com/hotel/cr/perla-negra-beachfront-puerto-viejo.html",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524334,
+      "lat": 9.6378305,
+      "lon": -82.7181137,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Hotel Punta Cocles",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524335,
+      "lat": 9.6424719,
+      "lon": -82.721147,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Hotel Punta Cocles",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524550,
+      "lat": 9.6380604,
+      "lon": -82.7061664,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Italia Villas",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524857,
+      "lat": 9.639525,
+      "lon": -82.7132813,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Jardín Miraflores Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524880,
+      "lat": 9.6393668,
+      "lon": -82.7092864,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Hotel La Kukula Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982524890,
+      "lat": 9.6430773,
+      "lon": -82.7234076,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "La Caracola",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525284,
+      "lat": 9.6441813,
+      "lon": -82.7284542,
+      "tags": {
+        "addr:city": "Talamanca",
+        "internet_access": "wlan",
+        "name": "Le Cameleon Boutique Hotel",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q111151375"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525296,
+      "lat": 9.6428984,
+      "lon": -82.7264451,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Los Continentes",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "506 2759 9263",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "www.loscontinentes.net"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525318,
+      "lat": 9.6567721,
+      "lon": -82.7705055,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Magic Moon",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525786,
+      "lat": 9.6376526,
+      "lon": -82.7131081,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Namuwoki Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "506 2750 0278",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "https://www.namuwoki.com/",
+        "wikidata": "Q111151379"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525850,
+      "lat": 9.6432097,
+      "lon": -82.7326822,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Physis Caribbean Bed & Breakfast",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "506 8866 4405",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "https://www.physiscaribbean.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525854,
+      "lat": 9.6518452,
+      "lon": -82.7602863,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Pizote Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982525856,
+      "lat": 9.6391334,
+      "lon": -82.7100134,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Playa Chiquita Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982527498,
+      "lat": 9.6563923,
+      "lon": -82.7546815,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "name": "Sunrise Backpackers Hostel",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982527545,
+      "lat": 9.6380977,
+      "lon": -82.7125281,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Tierra de Suenos Lodge",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "phone": "705 797 4940",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982527859,
+      "lat": 9.6378865,
+      "lon": -82.7078186,
+      "tags": {
+        "addr:city": "Talamanca",
+        "email": "info@costaricatreehouse.com",
+        "fax": "2750-0261",
+        "name": "Tree House Lodge",
+        "phone": "2750-0706",
+        "source": "KG Ground Survey 2011",
+        "tourism": "hotel",
+        "website": "https://www.costaricatreehouse.com/",
+        "wikidata": "Q111151386"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3982527873,
+      "lat": 9.6374191,
+      "lon": -82.7375214,
+      "tags": {
+        "addr:city": "Talamanca",
+        "name": "Vago's Place",
+        "note": "Hotel data current in 2011. Contains good contact information. Duplicates and \"no longer there\" are possible.",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3983042866,
+      "lat": 9.6566883,
+      "lon": -82.7540063,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2024-04-26",
+        "healthcare": "dentist",
+        "name": "Caribe Dental",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "operator": "Pablo Montero",
+        "phone": "+506 8819 9975"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3983084317,
+      "lat": 9.6575118,
+      "lon": -82.7532126,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "name": "Ivonitos Place",
+        "shop": "bakery",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3983181041,
+      "lat": 9.6588036,
+      "lon": -82.7494491,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "name": "MaNú",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3983183963,
+      "lat": 9.6529892,
+      "lon": -82.7422068,
+      "tags": {
+        "name": "La Perla del Caribe",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3983214517,
+      "lat": 9.6384635,
+      "lon": -82.7115568,
+      "tags": {
+        "name": "El Nido",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3987140462,
+      "lat": 9.6401424,
+      "lon": -82.7340345,
+      "tags": {
+        "name": "El Tucan Jungle Lodge",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3991447657,
+      "lat": 9.6571842,
+      "lon": -82.7754376,
+      "tags": {
+        "name": "Casa Vikingo",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4048703619,
+      "lat": 9.6387511,
+      "lon": -82.7126925,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Duende Gourmet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4166767157,
+      "lat": 9.6434529,
+      "lon": -82.7190681,
+      "tags": {
+        "name": "Angelika´s Guest House",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4280070083,
+      "lat": 9.6556068,
+      "lon": -82.751525,
+      "tags": {
+        "name": "Blue Butterfly ",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4295516750,
+      "lat": 9.641022,
+      "lon": -82.727066,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:postcode": "70403",
+        "addr:street": "Calle Olé Caribe",
+        "description": "Cabinas y Restaurante",
+        "name": "Cabinas Olé Caribe",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4376741477,
+      "lat": 9.6421153,
+      "lon": -82.7233277,
+      "tags": {
+        "attraction": "animal",
+        "description": "Entrance and Gift Shop",
+        "name": "Jaguar Rescue Center",
+        "opening_hours": "Mo-Sa 09:30-12:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4401290093,
+      "lat": 9.6499184,
+      "lon": -82.7363438,
+      "tags": {
+        "check_date": "2024-09-27",
+        "internet_access": "wlan",
+        "name": "Playa 506",
+        "name:en": "Playa 506",
+        "name:es": "Playa 506",
+        "tourism": "hostel",
+        "website": "https://playa506.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4529204867,
+      "lat": 9.6446765,
+      "lon": -82.7282387,
+      "tags": {
+        "addr:city": "Cocles",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Lapalapa Beach Front Hotel",
+        "operator": "Vamos a Lapalapa",
+        "phone": "+506 88178041",
+        "rooms": "18",
+        "smoking": "no",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4535138003,
+      "lat": 9.637877,
+      "lon": -82.7117231,
+      "tags": {
+        "amenity": "ice_cream",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Alice",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4547656184,
+      "lat": 9.6377108,
+      "lon": -82.7097659,
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "name": "Shawandha Lodge",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4567703850,
+      "lat": 9.657228,
+      "lon": -82.7547346,
+      "tags": {
+        "name": "Planeta Verde",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4567895616,
+      "lat": 9.6538056,
+      "lon": -82.7584749,
+      "tags": {
+        "amenity": "restaurant",
+        "craft": "brewery",
+        "name": "BriBri Springs Brewery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4582852589,
+      "lat": 9.6572005,
+      "lon": -82.7527989,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café Rico"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4791578816,
+      "lat": 9.6350194,
+      "lon": -82.7129835,
+      "tags": {
+        "name": "Jungle Green House",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4818339796,
+      "lat": 9.6558024,
+      "lon": -82.7545306,
+      "tags": {
+        "email": "namujabones@gmail.com",
+        "name": "Namú ecotienda orgánica",
+        "opening_hours": "Mo-Fr 09:00-16:30; Sa 07:30-12:30",
+        "phone": "+50688862133",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4825417407,
+      "lat": 9.6587873,
+      "lon": -82.7485545,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "description": "Italian pastry and bakery",
+        "name": "Tiaré",
+        "opening_hours": "Tu-Su 07:30-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4844221721,
+      "lat": 9.6574732,
+      "lon": -82.7536737,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "La Esquina Boruca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4844506121,
+      "lat": 9.6562118,
+      "lon": -82.755865,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2024-04-24",
+        "name": "Lecheria Las Lapas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4845907621,
+      "lat": 9.6560898,
+      "lon": -82.753399,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "caribbean",
+        "name": "Soda Caribbean"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4887947801,
+      "lat": 9.6550794,
+      "lon": -82.7547189,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "ciclo puerto",
+        "name:es": "Soda Tayito",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4974208421,
+      "lat": 9.6465106,
+      "lon": -82.7829716,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Solo Bueno"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4974354424,
+      "lat": 9.6576052,
+      "lon": -82.7552791,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "Ocho Nani",
+        "name:es": "Ocho Nani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4974356321,
+      "lat": 9.6573083,
+      "lon": -82.7538382,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tamara Caribbean Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4974356322,
+      "lat": 9.6573429,
+      "lon": -82.7548578,
+      "tags": {
+        "name": "Centro de Carnes Canada",
+        "shop": "butcher"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4989023422,
+      "lat": 9.6387519,
+      "lon": -82.7171333,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Casa Merlin Lodge",
+        "tourism": "hotel",
+        "website": "https://www.casa-merlin.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5023169321,
+      "lat": 9.6560326,
+      "lon": -82.7543898,
+      "tags": {
+        "addr:street": "Calle 213",
+        "name": "Beta life eco hostel",
+        "name:es": "Beta life eco hostel",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5069266422,
+      "lat": 9.6578238,
+      "lon": -82.7473249,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "La Ruka Hostel",
+        "name:en": "La Ruka Hostel",
+        "name:es": "La Ruka Hostel",
+        "tourism": "hostel",
+        "wikidata": "Q111115719"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5088744621,
+      "lat": 9.6563104,
+      "lon": -82.7550068,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Panadería y Cafetería"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5092177476,
+      "lat": 9.6548312,
+      "lon": -82.7546097,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "bicycle_rental": "shop",
+        "name": "M'Shell",
+        "shop": "rental"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5156170083,
+      "lat": 9.6515433,
+      "lon": -82.7621103,
+      "tags": {
+        "name": "Turrialbeño",
+        "place": "neighbourhood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5156170084,
+      "lat": 9.6488412,
+      "lon": -82.7619104,
+      "tags": {
+        "name": "Pan Dulce",
+        "place": "neighbourhood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5156192532,
+      "lat": 9.6520614,
+      "lon": -82.796297,
+      "tags": {
+        "name": "Barrio Unido",
+        "place": "neighbourhood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5156192551,
+      "lat": 9.6576628,
+      "lon": -82.796902,
+      "tags": {
+        "name": "El Coquito",
+        "place": "neighbourhood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5354936821,
+      "lat": 9.6465403,
+      "lon": -82.7328508,
+      "tags": {
+        "name": "Pipa Lodge",
+        "phone": "61868771",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5355038921,
+      "lat": 9.6584886,
+      "lon": -82.7521221,
+      "tags": {
+        "name": "The Lazy Loft Beach Hostel",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5516905322,
+      "lat": 9.6551805,
+      "lon": -82.7523597,
+      "tags": {
+        "name": "Jacaranda",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5529550724,
+      "lat": 9.6392054,
+      "lon": -82.732026,
+      "tags": {
+        "name": "Maya Hostel",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5620598821,
+      "lat": 9.6566557,
+      "lon": -82.7433858,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Vía 256",
+        "guest_house": "hostel",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Selina Puerto Viejo",
+        "operator": "Selina",
+        "tourism": "hostel",
+        "website": "https://www.selina.com/costa-rica/puerto-viejo/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5670822421,
+      "lat": 9.6431403,
+      "lon": -82.7232322,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "argentinian",
+        "name": "El Rincon Porteño"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5718556722,
+      "lat": 9.6565428,
+      "lon": -82.7555551,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date:currency:XBT": "2024-12-21",
+        "cuisine": "breakfast",
+        "currency:XBT": "yes",
+        "internet_access": "wlan",
+        "name": "Port Vell",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "yes",
+        "payment:onchain": "yes",
+        "survey:date": "2022-10-13"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5759354214,
+      "lat": 9.6509528,
+      "lon": -82.7623817,
+      "tags": {
+        "name": "One Love Hostel",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5759355425,
+      "lat": 9.6531646,
+      "lon": -82.7625155,
+      "tags": {
+        "name": "La Negrita",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5830993640,
+      "lat": 9.6497657,
+      "lon": -82.7640957,
+      "tags": {
+        "charge": "5$",
+        "description": "Plant Nursery and Botanical Garden",
+        "fee": "yes",
+        "garden:type": "botanical",
+        "leisure": "garden",
+        "name": "Finca la Isla Permaculture Farm, Plant Nursery and Botanical Garden",
+        "website": "https://www.costaricaorganicsfarm.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5961436115,
+      "lat": 9.6579171,
+      "lon": -82.7487996,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Vista Verde",
+        "tourism": "hotel",
+        "website": "https://www.booking.com/hotel/cr/vista-verde.en-gb.html?aid=356980"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6026149031,
+      "lat": 9.6576237,
+      "lon": -82.7552321,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2024-04-23",
+        "name": "Ocho nani",
+        "opening_hours": "Tu-Su 13:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6090254902,
+      "lat": 9.6401688,
+      "lon": -82.7154033,
+      "tags": {
+        "name": "Casa Cerise",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6175117986,
+      "lat": 9.634586,
+      "lon": -82.7278696,
+      "tags": {
+        "addr:street": "Calle Margarita",
+        "name": "Home Naranjo",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6175117987,
+      "lat": 9.6345445,
+      "lon": -82.7278628,
+      "tags": {
+        "name": "Casa Naranjo",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6208826828,
+      "lat": 9.6556132,
+      "lon": -82.7731058,
+      "tags": {
+        "name": "Puerto Viejo Club & Casitas",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6243523685,
+      "lat": 9.658849,
+      "lon": -82.7486778,
+      "tags": {
+        "name": "Oasis",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6254326085,
+      "lat": 9.6560711,
+      "lon": -82.7479054,
+      "tags": {
+        "name": "El Faro 13",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6345616586,
+      "lat": 9.6442474,
+      "lon": -82.7331469,
+      "tags": {
+        "name": "Super Negro",
+        "name:en": "Super Negro",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6363826085,
+      "lat": 9.6434769,
+      "lon": -82.7293552,
+      "tags": {
+        "addr:street": "Ruta Nacional 256",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "internet_access": "wlan",
+        "name": "Pecora nera"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6525667985,
+      "lat": 9.6565743,
+      "lon": -82.7412058,
+      "tags": {
+        "name": "Mirador Piedra Cocles",
+        "name:en": "Cocles Rock Viewpoint",
+        "name:es": "Mirador Piedra Cocles",
+        "tourism": "viewpoint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6528763987,
+      "lat": 9.654207,
+      "lon": -82.7622681,
+      "tags": {
+        "bench": "yes",
+        "highway": "bus_stop",
+        "name": "parada a Sixaloa",
+        "name:en": "stop to Sixaloa",
+        "name:fr": "arrêt pour Sixaloa",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6737200861,
+      "lat": 9.6569866,
+      "lon": -82.7470951,
+      "tags": {
+        "air_conditioning": "yes",
+        "internet_access": "wlan",
+        "name": "La Tica y la Gata",
+        "rooms": "9",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6807012085,
+      "lat": 9.6567089,
+      "lon": -82.7534834,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "name": "La Casita de Monli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813175185,
+      "lat": 9.653791,
+      "lon": -82.7585949,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Playa negra brewing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6828947285,
+      "lat": 9.6586875,
+      "lon": -82.7486454,
+      "tags": {
+        "leisure": "fitness_centre",
+        "name": "Carribean fitness center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6873490086,
+      "lat": 9.6428023,
+      "lon": -82.7234691,
+      "tags": {
+        "highway": "bus_stop",
+        "name": "Jaguar rescue center"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7003228785,
+      "lat": 9.6556024,
+      "lon": -82.7538449,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 69",
+        "email": "guarana@hotelguarana.com",
+        "name": "Cabinas Guarana",
+        "phone": "2750 0244",
+        "tourism": "hostel",
+        "website": "https://www.hotelguarana.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7003228885,
+      "lat": 9.655749,
+      "lon": -82.7540007,
+      "tags": {
+        "name": "Cabinas guarana",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7108211723,
+      "lat": 9.6447588,
+      "lon": -82.7289754,
+      "tags": {
+        "addr:street": "Cocles",
+        "description": "Pan artesanal, francés",
+        "name": "Panadería Francés",
+        "phone": "84983901",
+        "shop": "bakery",
+        "website": "alain01barisy@gmail.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7108234285,
+      "lat": 9.6445669,
+      "lon": -82.7299041,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La NENA"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7307558786,
+      "lat": 9.6562175,
+      "lon": -82.7538684,
+      "tags": {
+        "addr:street": "Puerto Viejo de Limón, esquinero de renta car ALAMO",
+        "amenity": "motorcycle_rental",
+        "check_date": "2024-04-26",
+        "name": "CicloCocles"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7353258985,
+      "lat": 9.6480516,
+      "lon": -82.7624995,
+      "tags": {
+        "name": "Casa del Chocolate",
+        "name:de": "Schokoladenmuseum",
+        "name:en": "Chocolate Shop",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7622606006,
+      "lat": 9.6439079,
+      "lon": -82.7320862,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-04",
+        "cuisine": "italian;burger",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Río Negro",
+        "outdoor_seating": "yes",
+        "phone": "+506 2750 0155",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8037699785,
+      "lat": 9.6566042,
+      "lon": -82.744193,
+      "tags": {
+        "air_conditioning": "yes",
+        "description": "8500-11500 colon per night, kitchen included",
+        "internet_access": "wlan",
+        "name": "Paula's and Daniel's Homestay",
+        "opening_hours": "24/7",
+        "phone": "+50683044376",
+        "shower": "yes",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8038294585,
+      "lat": 9.6567629,
+      "lon": -82.7440002,
+      "tags": {
+        "name": "Paula's and Daniel's Juice Bar",
+        "shop": "beverages"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8043098115,
+      "lat": 9.6445339,
+      "lon": -82.7269843,
+      "tags": {
+        "craft": "photographer",
+        "email": "info@visual-pacific.com",
+        "name": "Visual Pacific",
+        "website": "https://visual-pacific.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8252161921,
+      "lat": 9.6487716,
+      "lon": -82.7409611,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Calle Azania",
+        "name": "Hotel Terrazas del Caribe",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8252343912,
+      "lat": 9.6593927,
+      "lon": -82.787194,
+      "tags": {
+        "name": "Sonora Jungle Beach Retreat",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8385923091,
+      "lat": 9.6566213,
+      "lon": -82.7544509,
+      "tags": {
+        "description": "Caminatas en el Parque Nacional Cahuita, Territorio indígena Bribri, Proyecto Ara Punta Uva, Refugio Silvestre Manzanillo. Certificado ante del ICT. Sin fines de lucro.",
+        "name": "Asociación de Guías de Turismo del Caribe Sur (AGUISUR)",
+        "office": "guide",
+        "phone": "+506 8309 8393",
+        "website": "https://www.facebook.com/aguisur.guias.5/about?lst=100014814311163%3A100053752664134%3A1597215351"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8388892150,
+      "lat": 9.6562101,
+      "lon": -82.7548218,
+      "tags": {
+        "description": "Tours ecológicos, ofrecemos tours de aventura, cultura, vida silvestre y educación.",
+        "name": "Asociación Talamanqueña de Ecoturismo y Conservación (ATEC)",
+        "office": "guide",
+        "phone": "+506 2750 0398",
+        "website": "https://ateccr.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8416668962,
+      "lat": 9.6171242,
+      "lon": -82.768208,
+      "tags": {
+        "description": "Centro Administrativo del Territorio Indígena Bribri de Kéköldi",
+        "name": "Këköldi",
+        "place": "village"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8416668963,
+      "lat": 9.6170422,
+      "lon": -82.7699981,
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "school",
+        "name": "Escuela Këköldi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8423016583,
+      "lat": 9.646846,
+      "lon": -82.7462345,
+      "tags": {
+        "ele": "210",
+        "name": "Cerro Pirripli",
+        "natural": "peak"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8433845976,
+      "lat": 9.6173666,
+      "lon": -82.7689494,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Calle Këköldi",
+        "amenity": "townhall",
+        "name": "Asociación de Desarrollo Integral de la Reserva Indígena Bribri de Keköldi",
+        "townhall:type": "city"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8435176635,
+      "lat": 9.636715,
+      "lon": -82.7234327,
+      "tags": {
+        "addr:city": "Cahuita",
+        "name": "Villas Lomas del Caribe",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8561037520,
+      "lat": 9.6434257,
+      "lon": -82.7263676,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Zaika Indian Cuisine Bar & Grill"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8599964717,
+      "lat": 9.6560345,
+      "lon": -82.7982712,
+      "tags": {
+        "addr:postcode": "70401",
+        "addr:street": "Hone Creek",
+        "name": "Súper Negro",
+        "name:en": "Super Black",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8699640687,
+      "lat": 9.6532291,
+      "lon": -82.7654998,
+      "tags": {
+        "name": "Chilamate",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8818653727,
+      "lat": 9.6572947,
+      "lon": -82.753583,
+      "tags": {
+        "contact:facebook": "https://www.facebook.com/www.cho.co.cr",
+        "contact:instagram": "https://www.instagram.com/cho.co.cr/",
+        "contact:whatsapp": "+506 6363 4274",
+        "email": "info@cho.co.cr",
+        "name": "Choco",
+        "phone": "+506 600 7258",
+        "shop": "chocolate",
+        "website": "https://cho.co.cr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8895194176,
+      "lat": 9.656102,
+      "lon": -82.7421064,
+      "tags": {
+        "name": "Selina Hostel Puerto Viejo",
+        "phone": "+50688727230",
+        "tourism": "hostel",
+        "website": "https://selina.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9201484617,
+      "lat": 9.6339681,
+      "lon": -82.7076861,
+      "tags": {
+        "name": "CHOCORART",
+        "tourism": "attraction"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9201485320,
+      "lat": 9.655493,
+      "lon": -82.7658154,
+      "tags": {
+        "name": "Playa Negra",
+        "natural": "beach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9210957917,
+      "lat": 9.6570165,
+      "lon": -82.7540614,
+      "tags": {
+        "amenity": "ice_cream",
+        "name": "Heladería Sweet Moments"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9222580517,
+      "lat": 9.6436501,
+      "lon": -82.7234025,
+      "tags": {
+        "name": "Increíble vista detrás",
+        "name:es": "Increíble vista detrás una increíble panadería!",
+        "tourism": "viewpoint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9223929617,
+      "lat": 9.643105,
+      "lon": -82.7232987,
+      "tags": {
+        "name": "El Rincón del Pan",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9238245617,
+      "lat": 9.6376352,
+      "lon": -82.7087995,
+      "tags": {
+        "amenity": "cafe",
+        "name": "GypSea Café"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9301707463,
+      "lat": 9.6568213,
+      "lon": -82.7488544,
+      "tags": {
+        "addr:postcode": "70403",
+        "email": "psalmeron1969@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Casa Trinidad",
+        "operator": "+50687047926",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9301729773,
+      "lat": 9.6563765,
+      "lon": -82.748938,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "Calle 221",
+        "email": "psalmeron1969@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Casa Tuareg",
+        "operator": "+50687047926",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9301734897,
+      "lat": 9.6567388,
+      "lon": -82.7486162,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "BADAWI STREET",
+        "description": "Casa Badawi, es tu puerta al Paraíso, en el centro de Puerto Viejo en una calle muy tranquila a 400 m de la playa de Salsa Brava, muy cerca de restaurantes, supermercados etc. Construida en madera, elevada del suelo al estilo caribeño, con un techo de pal",
+        "email": "psalmeron1969@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Casa Badawi",
+        "operator": "+50687047926",
+        "phone": "+50687047926",
+        "tourism": "chalet",
+        "website": "https://airbnb.co.cr/h/casabadawi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9380660626,
+      "lat": 9.6569348,
+      "lon": -82.7532327,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Soda Elisabeth"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9402764006,
+      "lat": 9.6482268,
+      "lon": -82.7405805,
+      "tags": {
+        "name": "Jungle Beach Bungalow",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9431511913,
+      "lat": 9.6593823,
+      "lon": -82.7492074,
+      "tags": {
+        "name": "Cabinas Orange Green",
+        "phone": "44016057",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9438457057,
+      "lat": 9.6344826,
+      "lon": -82.7396265,
+      "tags": {
+        "addr:city": "Puerto Viejo de Talamanca",
+        "addr:postcode": "70403",
+        "addr:street": "CALLE EL TUCAN",
+        "name": "Hotel Villas y Glamping M&A",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9438497898,
+      "lat": 9.6448173,
+      "lon": -82.7342104,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Vía 256",
+        "name": "Súper Cocles",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9438567912,
+      "lat": 9.6551413,
+      "lon": -82.7532075,
+      "tags": {
+        "amenity": "school",
+        "name": "Spanish School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9483310263,
+      "lat": 9.6136341,
+      "lon": -82.7298334,
+      "tags": {
+        "email": "hello@fincalashormigas.com",
+        "guest_house": "agritourism",
+        "internet_access": "no",
+        "name": "Finca Las Hormigas",
+        "phone": "+506 8800 4474",
+        "tourism": "guest_house",
+        "website": "https://www.fincalashormigas.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10106863237,
+      "lat": 9.6575838,
+      "lon": -82.7979967,
+      "tags": {
+        "addr:housenumber": "36",
+        "addr:street": "Parada Gasolinera",
+        "currency:XBT": "yes",
+        "name": "Frutas del Caribe",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "yes",
+        "payment:onchain": "yes",
+        "shop": "greengrocer",
+        "survey:date": "2024-12-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10126771730,
+      "lat": 9.6527167,
+      "lon": -82.7397655,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2022-10-24",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Reggae Chill"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10129220097,
+      "lat": 9.644249,
+      "lon": -82.7310012,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Soda Monarca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10129220098,
+      "lat": 9.6442066,
+      "lon": -82.7311168,
+      "tags": {
+        "name": "Panaderia Tradicional",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10129220099,
+      "lat": 9.6445656,
+      "lon": -82.7297491,
+      "tags": {
+        "name": "Ferrecocles",
+        "shop": "hardware"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10155691413,
+      "lat": 9.6443965,
+      "lon": -82.7334393,
+      "tags": {
+        "name": "Super Pirikiki.",
+        "opening_hours": "Su-Sa 07:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10155695597,
+      "lat": 9.643164,
+      "lon": -82.7333523,
+      "tags": {
+        "addr:city": "Cocles, Talamanca",
+        "addr:housenumber": "Contiguo al Super Negro 120 metros oeste final de calle porton azul",
+        "addr:postcode": "70403",
+        "air_conditioning": "no",
+        "email": "info@relaxnaturalvillage.com",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Hotel Relax Natural Village",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+50627568160",
+        "start_date": "2015/12/20",
+        "tourism": "hotel",
+        "website": "https://www.relaxnaturalvillage.com/Home/fbclid/IwY2xjawEWYSlleHRuA2FlbQIxMQABHYRFDn7k8N8BHS0pMRZ6KVt4IIGHpj2ORE-ckK3EavXrO91Q2OEZ6eMFBg_aem_yaDRDsWWbouWura_47sXmQ",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10254105324,
+      "lat": 9.6569665,
+      "lon": -82.7555291,
+      "tags": {
+        "check_date": "2024-04-24",
+        "name": "Puerto Viejo Bike Rentals",
+        "shop": "bicycle",
+        "website": "https://puertoviejobikerentals.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10254105325,
+      "lat": 9.6581874,
+      "lon": -82.7520586,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Joe Caribbean Food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10254105338,
+      "lat": 9.6563546,
+      "lon": -82.750528,
+      "tags": {
+        "name": "Hotel Indalo",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10254105339,
+      "lat": 9.657691,
+      "lon": -82.7501328,
+      "tags": {
+        "name": "Olinca Boutique Hotel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10538296209,
+      "lat": 9.657612,
+      "lon": -82.7519744,
+      "tags": {
+        "name": "Backpackers Puerto Viejo",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10541840009,
+      "lat": 9.6526495,
+      "lon": -82.7577571,
+      "tags": {
+        "air_conditioning": "yes",
+        "check_date": "2023-01-11",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hotel Sunshine Caribe",
+        "name:en": "Hotel Sunshine Caribe",
+        "reservation": "yes",
+        "tourism": "hotel",
+        "website": "https://www.booking.com/hotel/cr/sunshine-caribe.en-gb.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10571482543,
+      "lat": 9.6577132,
+      "lon": -82.7490971,
+      "tags": {
+        "name": "Monte Sol",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10573779556,
+      "lat": 9.6569001,
+      "lon": -82.7546627,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cocomar Comida Caribeña",
+        "phone": "27503227"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10585473906,
+      "lat": 9.657644,
+      "lon": -82.7516632,
+      "tags": {
+        "name": "La Tribu - solo para mujeres",
+        "name:en": "La Tribu",
+        "tourism": "hostel",
+        "website": "https://www.booking.com/Share-hIg8kn7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10585948806,
+      "lat": 9.6564853,
+      "lon": -82.7518408,
+      "tags": {
+        "name": "Casa Wolaba",
+        "tourism": "hostel",
+        "website": "https://www.hostelworld.com/st/hostels/p/309603/Casa-Wolaba/ https://www.hostelworld.com/st/hostels/p/309603/Casa-Wolaba/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10608649891,
+      "lat": 9.6564184,
+      "lon": -82.7538408,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "amenity": "cafe",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Bread & Chocolate",
+        "opening_hours": "Tu-Sa 06:30-18:30; Su 06:30-14:30",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:twint": "yes",
+        "payment:visa": "yes",
+        "website": "https://www.breadandchocolatecr.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10611887036,
+      "lat": 9.6523137,
+      "lon": -82.7649806,
+      "tags": {
+        "check_date": "2023-02-06",
+        "name": "Soul Zen Massage",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "shop": "massage",
+        "source": "survey",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10712586724,
+      "lat": 9.6579689,
+      "lon": -82.7458301,
+      "tags": {
+        "name": "Casitas La Playa",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11018295705,
+      "lat": 9.6557741,
+      "lon": -82.7547579,
+      "tags": {
+        "name": "ciclo cocles",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11018382006,
+      "lat": 9.6481339,
+      "lon": -82.7905342,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Apetito Express"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11018406105,
+      "lat": 9.6493702,
+      "lon": -82.7760926,
+      "tags": {
+        "amenity": "police",
+        "name": "policía"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11066022119,
+      "lat": 9.6500053,
+      "lon": -82.7613801,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "Calle Los Turrialbeños",
+        "air_conditioning": "yes",
+        "description": "Harmony, nuestra mini casa sobre ruedas, es un alojamiento excepcional e único, con concepto que hará de tus vacaciones en el Caribe de Costa Rica una experiencia inolvidable.",
+        "email": "aptoscasacaribecr@gmail.com",
+        "guest_house": "house",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Harmony: Mini Casa Rodante by Aptos Casa Caribe",
+        "operator": "Inversiones PJ Kuanza S.A",
+        "payment:american_express": "yes",
+        "payment:apple_pay": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:diners_club": "yes",
+        "payment:discover_card": "yes",
+        "payment:jcb": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:paypal": "yes",
+        "payment:tab_for_bussinees": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "phone": "+506 8873 3707",
+        "rooms": "2",
+        "tourism": "guest_house",
+        "website": "https://www.aptocasacaribecr.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11230028637,
+      "lat": 9.6551613,
+      "lon": -82.7720541,
+      "tags": {
+        "name": "Villa Bukë",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11233656338,
+      "lat": 9.6566863,
+      "lon": -82.7702891,
+      "tags": {
+        "amenity": "bar",
+        "cuisine": "american;local",
+        "name": "Soda Fiquiimu",
+        "name:en": "Soda Riquisimo",
+        "name:es": "Soda Riquisimo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11483567369,
+      "lat": 9.6572598,
+      "lon": -82.7522685,
+      "tags": {
+        "addr:housenumber": "217 y 219",
+        "addr:postcode": "70403",
+        "addr:street": "Avenida 69",
+        "name": "El Clan",
+        "name:es": "El Clan Hostel",
+        "tourism": "hotel",
+        "website": "https://www.elclanhostel.com/en/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11845709569,
+      "lat": 9.6552424,
+      "lon": -82.7690251,
+      "tags": {
+        "name": "Saranda",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11846010172,
+      "lat": 9.657063,
+      "lon": -82.755454,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Ditown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11847863891,
+      "lat": 9.6567677,
+      "lon": -82.7558186,
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Bus to San Jose",
+        "operator": "Mepe",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11847863892,
+      "lat": 9.6568271,
+      "lon": -82.7556813,
+      "tags": {
+        "name": "Bustickets Mepe",
+        "opening_hours": "Mo-Su 07:00-16:45",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11847863893,
+      "lat": 9.6568652,
+      "lon": -82.7556471,
+      "tags": {
+        "name": "Interbus",
+        "opening_hours": "08:00-18:00",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11848761601,
+      "lat": 9.6574401,
+      "lon": -82.7549364,
+      "tags": {
+        "amenity": "cafe",
+        "email": "comoenmicasacostarica@gmail.com",
+        "level": "1",
+        "name": "Como en mi Casa",
+        "opening_hours": "Mo, We-Su 07:15-17:00",
+        "phone": "6069 6337"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850746472,
+      "lat": 9.6569004,
+      "lon": -82.7541777,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-06",
+        "cuisine": "hawaiian;indian",
+        "description": "Second floor, Avenida 71 between Sloth Toes and Cafe Viejo, Limón, Puerto Viejo de Talamanca, 70403",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "no",
+        "level": "1",
+        "name": "Stashu‘s con fusion",
+        "opening_hours": "Mo-Tu,Th-Su 16:30-22:00; We off",
+        "phone": "+506 8385 6887",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://stashusconfusion.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850746473,
+      "lat": 9.6569358,
+      "lon": -82.7555565,
+      "tags": {
+        "check_date": "2024-04-24",
+        "craft": "photographer",
+        "name": "Elena de Luca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850746475,
+      "lat": 9.6574938,
+      "lon": -82.7544689,
+      "tags": {
+        "amenity": "dancing_school",
+        "check_date": "2024-04-24",
+        "name": "Vol‘Air"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850746476,
+      "lat": 9.6563213,
+      "lon": -82.7540946,
+      "tags": {
+        "check_date": "2024-04-26",
+        "name": "Best Travel Puerto Viejo",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850746477,
+      "lat": 9.656416,
+      "lon": -82.754159,
+      "tags": {
+        "check_date": "2024-04-26",
+        "name": "Tienda Caribe",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11860526777,
+      "lat": 9.6564159,
+      "lon": -82.7541589,
+      "tags": {
+        "check_date": "2024-04-26",
+        "name": "Tienda Caribe",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11980030048,
+      "lat": 9.6535412,
+      "lon": -82.7980426,
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "government": "healthcare",
+        "name": "CCSS - Área de Salud Talamanca",
+        "office": "government"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12088112561,
+      "lat": 9.6442808,
+      "lon": -82.7329389,
+      "tags": {
+        "addr:city": "Cocles, Talamanca",
+        "addr:housenumber": "Ruta 36 contiguo al Super Negro",
+        "addr:postcode": "70403",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Farmacia Don Manuel",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12346752901,
+      "lat": 9.6521074,
+      "lon": -82.7389469,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Isla Cocteles"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12350761900,
+      "lat": 9.6444422,
+      "lon": -82.7197417,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Da Lime Beach Club & Restaurant",
+        "opening_hours": "Mo-Su 11:00-17:00",
+        "phone": "+50627500131"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12397182060,
+      "lat": 9.6564271,
+      "lon": -82.7546477,
+      "tags": {
+        "check_date": "2024-12-04",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "only",
+        "level": "0",
+        "name": "Rios Vegan Food",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su off",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12397224715,
+      "lat": 9.6565116,
+      "lon": -82.7558203,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2024-12-05",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Gelateria Deelite",
+        "opening_hours": "Mo-Fr 11:00-21:00; Sa-Su 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12398915766,
+      "lat": 9.6587587,
+      "lon": -82.7504111,
+      "tags": {
+        "amenity": "ice_cream",
+        "check_date": "2024-12-05",
+        "name": "Frio Divino"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12398915767,
+      "lat": 9.6587504,
+      "lon": -82.7504797,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "check_date": "2024-12-05",
+        "name": "Ecobikes del Caribe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12398915768,
+      "lat": 9.6587397,
+      "lon": -82.7505555,
+      "tags": {
+        "check_date": "2024-12-05",
+        "name": "Hotel Mandacaru",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12398915769,
+      "lat": 9.6589731,
+      "lon": -82.750556,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-12-05",
+        "name": "Amimodo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12399596913,
+      "lat": 9.6588229,
+      "lon": -82.750128,
+      "tags": {
+        "check_date": "2024-12-05",
+        "name": "Lizard King Resort",
+        "phone": "+506 2750 0614",
+        "tourism": "hotel",
+        "website": "https://lizardkinghotel.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12401138960,
+      "lat": 9.6589439,
+      "lon": -82.7505901,
+      "tags": {
+        "check_date": "2024-12-06",
+        "name": "Explorades Outdoors",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12401138961,
+      "lat": 9.6589248,
+      "lon": -82.7506486,
+      "tags": {
+        "amenity": "motorcycle_rental",
+        "check_date": "2024-12-06",
+        "name": "Cocles Bikeshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12406761188,
+      "lat": 9.6526418,
+      "lon": -82.762185,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Cabinas Wray",
+        "phone": "506 8740 2102",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12406761189,
+      "lat": 9.6507855,
+      "lon": -82.763219,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "VIllas Allen",
+        "phone": "506 2756 8327",
+        "tourism": "chalet",
+        "website": "https://www.villasallen.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12440931973,
+      "lat": 9.6379564,
+      "lon": -82.7113265,
+      "tags": {
+        "check_date:currency:XBT": "2024-12-21",
+        "currency:XBT": "yes",
+        "name": "Casa Mandala",
+        "payment:lightning": "yes",
+        "payment:onchain": "yes",
+        "shop": "gift",
+        "website": "https://www.facebook.com/casamandala.costarica/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12442373311,
+      "lat": 9.6428901,
+      "lon": -82.720446,
+      "tags": {
+        "bar": "yes",
+        "name": "Hotel Aguas Claras",
+        "phone": "+1 844-828-4277",
+        "tourism": "hotel",
+        "website": "https://hotelaguasclaras.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12449719087,
+      "lat": 9.655541,
+      "lon": -82.7554111,
+      "tags": {
+        "name": "Panaiera",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12542884901,
+      "lat": 9.6496543,
+      "lon": -82.7750879,
+      "tags": {
+        "addr:housenumber": "256",
+        "addr:street": "Vía 256",
+        "amenity": "restaurant",
+        "cuisine": "caribbean",
+        "internet_access": "wlan",
+        "name": "Puerto Viejo de Talamanca",
+        "opening_hours": "We,Fr-Sa,Th,Mo,Su 11:00-22:00",
+        "phone": "+506 8447-7485",
+        "website": "https://www.facebook.com/cholasplace"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12831286101,
+      "lat": 9.6572996,
+      "lon": -82.7523353,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "Avenida 69",
+        "amenity": "bar",
+        "check_date:currency:XBT": "2025-12-25",
+        "contact:email": "greenjaguar.pv@gmail.com",
+        "contact:facebook": "https://www.facebook.com/thegreenjaguarpv/",
+        "contact:instagram": "https://www.instagram.com/greenjaguar.pv/",
+        "currency:XBT": "yes",
+        "name": "Green Jaguar",
+        "opening_hours": "Mo-Sa 07:00-23:00",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "yes",
+        "phone": "+506 6062 9988",
+        "website:menu": "https://drive.google.com/drive/folders/1YGPRX6L5YPnJnV79P5EujzNoXKCbPDss"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13358045132,
+      "lat": 9.6379847,
+      "lon": -82.7105711,
+      "tags": {
+        "addr:city": "Talamanca",
+        "addr:postcode": "70403",
+        "addr:street": "Calle Playa Chiquita",
+        "email": "info@tierradesuenoslodge.com",
+        "internet_access": "yes",
+        "name": "Tierra de Sueños Lodge",
+        "phone": "+50627500378",
+        "rooms": "6",
+        "tourism": "hotel",
+        "website": "www. tierradesuenoslodge.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13409773052,
+      "lat": 9.6543169,
+      "lon": -82.7450134,
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:housenumber": "800 metros sur de la entrada",
+        "addr:street": "Calle Lunatica",
+        "air_conditioning": "yes",
+        "brand": "Casa Black Chaini",
+        "email": "casablackchaini@gmail.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Casa Black Chaini",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+506 50090917",
+        "tourism": "hotel",
+        "website": "https://es-l.airbnb.com/rooms/871892847445141449?guests=1&adults=1&s=67&unique_share_id=fcd2cb90-b7a9-4204-b186-49f85771031d"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13418565821,
+      "lat": 9.6561617,
+      "lon": -82.7550881,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Farmacia Caribe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13462702670,
+      "lat": 9.6585203,
+      "lon": -82.7483919,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Washboard",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13699131786,
+      "lat": 9.6579959,
+      "lon": -82.7544526,
+      "tags": {
+        "access": "yes",
+        "dog": "no",
+        "indoor": "no",
+        "leisure": "playground",
+        "name": "Delfina Park",
+        "opening_hours": "Mo-Su 11:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13699376740,
+      "lat": 9.6541471,
+      "lon": -82.7665844,
+      "tags": {
+        "amenity": "post_office",
+        "name": "Correos de Costa Rica"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13853504276,
+      "lat": 9.646,
+      "lon": -82.747,
+      "tags": {
+        "ele": "196.85",
+        "man_made": "survey_point",
+        "name": "Inu",
+        "operator": "Instituto Geográfico Nacional de Costa Rica",
+        "source": "Instituto Geográfico Nacional de Costa Rica",
+        "start_date": "1960s",
+        "survey_point:purpose": "spatial"
+      }
+    },
+    {
+      "type": "way",
+      "id": 12418281,
+      "center": {
+        "lat": 9.6563673,
+        "lon": -82.7388214
+      },
+      "tags": {
+        "name": "Piedra Cocles",
+        "name:en": "Cocles Rock",
+        "name:es": "Piedra Cocles",
+        "natural": "coastline",
+        "place": "islet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564919,
+      "center": {
+        "lat": 9.650503,
+        "lon": -82.7921854
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564920,
+      "center": {
+        "lat": 9.6578029,
+        "lon": -82.7526618
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Avenida 71",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564922,
+      "center": {
+        "lat": 9.6574422,
+        "lon": -82.7519031
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 219",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564926,
+      "center": {
+        "lat": 9.6569316,
+        "lon": -82.7531303
+      },
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Calle 217",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564928,
+      "center": {
+        "lat": 9.6562295,
+        "lon": -82.753786
+      },
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Calle 215",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564929,
+      "center": {
+        "lat": 9.658211,
+        "lon": -82.7548999
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Avenida 73A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564930,
+      "center": {
+        "lat": 9.6546951,
+        "lon": -82.7528574
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Plaza Deportes Puerto Viejo",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564931,
+      "center": {
+        "lat": 9.6564242,
+        "lon": -82.7693483
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Playa Negra",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33564932,
+      "center": {
+        "lat": 9.6565497,
+        "lon": -82.7739114
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle El Vivero",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37592861,
+      "center": {
+        "lat": 9.6573011,
+        "lon": -82.7552264
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Avenida 73",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37593235,
+      "center": {
+        "lat": 9.6566644,
+        "lon": -82.7532563
+      },
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Avenida 69",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37593236,
+      "center": {
+        "lat": 9.6554967,
+        "lon": -82.7527022
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Avenida 67",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37593237,
+      "center": {
+        "lat": 9.6575386,
+        "lon": -82.7514688
+      },
+      "tags": {
+        "alt_name": "Calle Julio Vargas",
+        "highway": "residential",
+        "name": "Calle 219A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48768269,
+      "center": {
+        "lat": 9.6544427,
+        "lon": -82.7555636
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 209",
+        "source": "KG Ground Survey 2015",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48768270,
+      "center": {
+        "lat": 9.6565831,
+        "lon": -82.7469649
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Lunatica",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 126913627,
+      "center": {
+        "lat": 9.6579872,
+        "lon": -82.7549662
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 215A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 195511065,
+      "center": {
+        "lat": 9.6818124,
+        "lon": -82.821559
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Carbón 2",
+        "noname": "yes",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 195511066,
+      "center": {
+        "lat": 9.6671881,
+        "lon": -82.8138132
+      },
+      "tags": {
+        "name": "Río Hone",
+        "waterway": "river"
+      }
+    },
+    {
+      "type": "way",
+      "id": 198033010,
+      "center": {
+        "lat": 9.6373461,
+        "lon": -82.7133335
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Selvatica",
+        "noname": "yes",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 233266503,
+      "center": {
+        "lat": 9.6438105,
+        "lon": -82.7201156
+      },
+      "tags": {
+        "ele": "3",
+        "highway": "service",
+        "name": "Calle Caracola",
+        "oneway": "no",
+        "service": "Calle_de_servicio",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 252550903,
+      "center": {
+        "lat": 9.6424655,
+        "lon": -82.727975
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Victoria",
+        "noname": "yes",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 252550920,
+      "center": {
+        "lat": 9.6637981,
+        "lon": -82.8182102
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Buenavista",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 256664763,
+      "center": {
+        "lat": 9.6586163,
+        "lon": -82.7731944
+      },
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "horse": "yes",
+        "motor_vehicle": "yes",
+        "name": "Calle Playa Negra",
+        "service": "dirt_beach_road",
+        "source": "local_knowledge",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 302018820,
+      "center": {
+        "lat": 9.6624504,
+        "lon": -82.7988947
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "60",
+        "name": "Corredor Caribe",
+        "ref": "36",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 302018821,
+      "center": {
+        "lat": 9.6580052,
+        "lon": -82.7974485
+      },
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Corredor Caribe",
+        "ref": "36",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318388375,
+      "center": {
+        "lat": 9.6366715,
+        "lon": -82.7098508
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Shawandha",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318388805,
+      "center": {
+        "lat": 9.6364411,
+        "lon": -82.7071904
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Mar y Luz",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318459561,
+      "center": {
+        "lat": 9.6560161,
+        "lon": -82.7551175
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Avenida 71",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318459562,
+      "center": {
+        "lat": 9.6558559,
+        "lon": -82.7558514
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 211",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318459603,
+      "center": {
+        "lat": 9.6531586,
+        "lon": -82.7428978
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "sidewalk": "no",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 323324458,
+      "center": {
+        "lat": 9.6321494,
+        "lon": -82.7332693
+      },
+      "tags": {
+        "highway": "tertiary",
+        "name": "Calle El Parque"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351392,
+      "center": {
+        "lat": 9.6545105,
+        "lon": -82.8011953
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Buenavista",
+        "noname": "yes",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351436,
+      "center": {
+        "lat": 9.6544758,
+        "lon": -82.7992081
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Plaza Deportes Hone Creek",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351470,
+      "center": {
+        "lat": 9.6531665,
+        "lon": -82.7982621
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Clínica CCSS Dra. Rosa León Chang",
+        "operator": "CCSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q5174896"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351471,
+      "center": {
+        "lat": 9.6527393,
+        "lon": -82.7989763
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "amenity": "school",
+        "grades": "0-6",
+        "name": "Escuela Hone Creek",
+        "operator": "MEP",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351516,
+      "center": {
+        "lat": 9.6472723,
+        "lon": -82.7978671
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Patiño",
+        "noname": "yes",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351566,
+      "center": {
+        "lat": 9.6473563,
+        "lon": -82.7913041
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Patiño",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327351912,
+      "center": {
+        "lat": 9.6511222,
+        "lon": -82.762706
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Los Turrialbeños",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327352304,
+      "center": {
+        "lat": 9.6542574,
+        "lon": -82.7521753
+      },
+      "tags": {
+        "landuse": "cemetery",
+        "name": "Cementerio Puerto Viejo",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327352382,
+      "center": {
+        "lat": 9.644707,
+        "lon": -82.7313134
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Cocles",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327352383,
+      "center": {
+        "lat": 9.6450421,
+        "lon": -82.7301471
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Plaza Deportes Cocles",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603767,
+      "center": {
+        "lat": 9.6567789,
+        "lon": -82.7545685
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo de Talamanca",
+        "building": "yes",
+        "name": "Value Market",
+        "operator": "Inversiones C.C. Caribe Sur Ltda",
+        "shop": "convenience",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603772,
+      "center": {
+        "lat": 9.6549066,
+        "lon": -82.7536609
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 67",
+        "building": "yes",
+        "name": "Vida"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603774,
+      "center": {
+        "lat": 9.6587263,
+        "lon": -82.750481
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "alt_name": "The Lotus Garden",
+        "building": "yes",
+        "cuisine": "asian",
+        "name": "Lotus Garden",
+        "source": "Web developer of the business website",
+        "was:amenity": "restaurant",
+        "website": "https://www.lotusgardencr.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603775,
+      "center": {
+        "lat": 9.6578888,
+        "lon": -82.7521587
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "alt_name": "supermarket",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "name": "Diamante",
+        "shop": "supermarket",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603776,
+      "center": {
+        "lat": 9.6570166,
+        "lon": -82.7544381
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Avenida 71",
+        "building": "public",
+        "country": "CR",
+        "name": "Casa de la Cultura Marcus Garvey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603777,
+      "center": {
+        "lat": 9.6552692,
+        "lon": -82.7540731
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "building": "yes",
+        "name": "Megasuper Puerto Viejo",
+        "shop": "supermarket",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603778,
+      "center": {
+        "lat": 9.6577778,
+        "lon": -82.7553238
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Puerto Pirata Tiki Bar & Restaurante"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603781,
+      "center": {
+        "lat": 9.6572446,
+        "lon": -82.7538476
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Talamanca Adventures",
+        "shop": "travel_agency",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603784,
+      "center": {
+        "lat": 9.6576015,
+        "lon": -82.7551863
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Madre Tierra",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603788,
+      "center": {
+        "lat": 9.6591388,
+        "lon": -82.7500768
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "check_date": "2025-11-18",
+        "name": "Cabinas Yucca",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q112020931"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603794,
+      "center": {
+        "lat": 9.6572373,
+        "lon": -82.7542004
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Salsa Brava",
+        "shop": "sports",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603796,
+      "center": {
+        "lat": 9.6575221,
+        "lon": -82.753075
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "thai",
+        "name": "Chile Rojo",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603799,
+      "center": {
+        "lat": 9.6572594,
+        "lon": -82.7546499
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "Multicentro Puerto Viejo",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603801,
+      "center": {
+        "lat": 9.6586843,
+        "lon": -82.7496408
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Exotic Boutique Hotel",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603807,
+      "center": {
+        "lat": 9.6575246,
+        "lon": -82.7534107
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Princesa del Mar",
+        "phone": "2750 3195",
+        "phone_1": "8730 3173",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603808,
+      "center": {
+        "lat": 9.6569466,
+        "lon": -82.7547434
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "Calle 215",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "caribbean",
+        "name": "Cocomar",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603809,
+      "center": {
+        "lat": 9.6575344,
+        "lon": -82.7550129
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "building": "yes",
+        "name": "Dragon Fly",
+        "phone": "2750 0728",
+        "shop": "motorcycle",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603814,
+      "center": {
+        "lat": 9.6551431,
+        "lon": -82.7537537
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "San Gabriel",
+        "phone": "2750 0848",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331603818,
+      "center": {
+        "lat": 9.6568741,
+        "lon": -82.7542023
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-04-24",
+        "cuisine": "italian;pizza",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Restaurante Cafe Viejo",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:twint": "yes",
+        "payment:visa": "yes",
+        "website": "https://cafeviejo.com/",
+        "website:menu": "https://cafeviejo.com/cartaeng/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706934,
+      "center": {
+        "lat": 9.6558507,
+        "lon": -82.7550703
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Terraventuras",
+        "shop": "travel_agency",
+        "source": "KG Ground Survey 2015",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706937,
+      "center": {
+        "lat": 9.6546417,
+        "lon": -82.7562159
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "school",
+        "name": "Liceo Rural de Puerto Viejo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706939,
+      "center": {
+        "lat": 9.6554236,
+        "lon": -82.7554213
+      },
+      "tags": {
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Black Beach",
+        "shop": "alcohol",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706942,
+      "center": {
+        "lat": 9.6561009,
+        "lon": -82.7558499
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "La Misión",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706945,
+      "center": {
+        "lat": 9.6559137,
+        "lon": -82.7545081
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "building": "retail",
+        "name": "Puerto Viejo Shops #2",
+        "source": "KG Ground Survey 2016"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706958,
+      "center": {
+        "lat": 9.6555978,
+        "lon": -82.7544124
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Church of God of Prophecy",
+        "religion": "christian",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706961,
+      "center": {
+        "lat": 9.6560044,
+        "lon": -82.7549463
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Cabinas Grant",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706965,
+      "center": {
+        "lat": 9.6543392,
+        "lon": -82.7536105
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "school",
+        "name": "Escuela Puerto Viejo",
+        "operator": "MEP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706966,
+      "center": {
+        "lat": 9.6552089,
+        "lon": -82.7554779
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Calle 211",
+        "amenity": "veterinary",
+        "building": "yes",
+        "name": "Central de Mascotas",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706972,
+      "center": {
+        "lat": 9.6558307,
+        "lon": -82.754128
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 69",
+        "building": "yes",
+        "name": "Lulu Berlu Art Gallery",
+        "shop": "art",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706974,
+      "center": {
+        "lat": 9.6557117,
+        "lon": -82.7551685
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Super Old Harbour",
+        "shop": "supermarket",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332706995,
+      "center": {
+        "lat": 9.6572011,
+        "lon": -82.7507448
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Hotel Tamara",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332707002,
+      "center": {
+        "lat": 9.6551319,
+        "lon": -82.7554149
+      },
+      "tags": {
+        "amenity": "bank",
+        "brand": "Banco Nacional de Costa Rica",
+        "name": "Banco Nacional",
+        "official_name": "Banco Nacional de Costa Rica",
+        "opening_hours": "Mo-Fr 09:00-16:20",
+        "short_name": "BNCR"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332707008,
+      "center": {
+        "lat": 9.6562537,
+        "lon": -82.7558065
+      },
+      "tags": {
+        "building": "yes",
+        "check_date": "2024-04-24",
+        "disused:amenity": "pub",
+        "name": "Mango Sunset",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332707012,
+      "center": {
+        "lat": 9.6571613,
+        "lon": -82.7551498
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:postcode": "70403",
+        "addr:street": "Avenida 73",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "catholic",
+        "name": "Iglesia Sagrado Corazón de Jesús",
+        "religion": "christian",
+        "service_times": "Domingos 3:00 pm",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332707013,
+      "center": {
+        "lat": 9.6559655,
+        "lon": -82.7506001
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 219A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346086798,
+      "center": {
+        "lat": 9.6565442,
+        "lon": -82.7513212
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 219"
+      }
+    },
+    {
+      "type": "way",
+      "id": 346086799,
+      "center": {
+        "lat": 9.6580726,
+        "lon": -82.7506652
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Avenida 67"
+      }
+    },
+    {
+      "type": "way",
+      "id": 349575186,
+      "center": {
+        "lat": 9.656669,
+        "lon": -82.7458466
+      },
+      "tags": {
+        "highway": "service",
+        "name": "Calle Rosa",
+        "name:en": "Entrance Aiyana Lodge, Blue Conga, Lunatica",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 358575143,
+      "center": {
+        "lat": 9.61012,
+        "lon": -82.7444071
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle El Parque",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390078108,
+      "center": {
+        "lat": 9.64832,
+        "lon": -82.7373779
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Olingo",
+        "noname": "yes",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390078109,
+      "center": {
+        "lat": 9.6493598,
+        "lon": -82.7388988
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Azania",
+        "noname": "yes",
+        "sidewalk": "no",
+        "surface": "compacted"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390078112,
+      "center": {
+        "lat": 9.6431987,
+        "lon": -82.7326733
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Finca Chica",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390105925,
+      "center": {
+        "lat": 9.6389679,
+        "lon": -82.7294685
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Berto",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390105926,
+      "center": {
+        "lat": 9.6356854,
+        "lon": -82.727272
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Chilamate",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390105927,
+      "center": {
+        "lat": 9.6308137,
+        "lon": -82.723697
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Olé Caribe",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390105929,
+      "center": {
+        "lat": 9.6390522,
+        "lon": -82.7183352
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Merlín",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731933,
+      "center": {
+        "lat": 9.6785457,
+        "lon": -82.8064045
+      },
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Corredor Caribe",
+        "ref": "36",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731938,
+      "center": {
+        "lat": 9.663331,
+        "lon": -82.7993446
+      },
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Corredor Caribe",
+        "ref": "36",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731939,
+      "center": {
+        "lat": 9.6585052,
+        "lon": -82.7983653
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "amenity": "fuel",
+        "building": "roof",
+        "name": "Gasolinera Hone Creek",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731940,
+      "center": {
+        "lat": 9.6556959,
+        "lon": -82.7981198
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "branch": "Hone Creek #4181",
+        "brand": "Palí",
+        "brand:wikidata": "Q1064887",
+        "building": "yes",
+        "name": "Palí",
+        "shop": "supermarket",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731941,
+      "center": {
+        "lat": 9.6550977,
+        "lon": -82.7976358
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Iglesia De Dios",
+        "religion": "christian",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394731942,
+      "center": {
+        "lat": 9.6538659,
+        "lon": -82.797001
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "El Colono",
+        "shop": "doityourself",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740919,
+      "center": {
+        "lat": 9.6508548,
+        "lon": -82.7757829
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740921,
+      "center": {
+        "lat": 9.6542208,
+        "lon": -82.7663725
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "sushi",
+        "name": "Koi Dorado"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740922,
+      "center": {
+        "lat": 9.6549253,
+        "lon": -82.7659694
+      },
+      "tags": {
+        "amenity": "bar",
+        "building": "yes",
+        "name": "The Point",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740923,
+      "center": {
+        "lat": 9.6543207,
+        "lon": -82.7632123
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740924,
+      "center": {
+        "lat": 9.6544839,
+        "lon": -82.7595562
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740926,
+      "center": {
+        "lat": 9.6537685,
+        "lon": -82.7585364
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "regional_and_american",
+        "name": "Kayas Place - Dulce's Restaurant",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740927,
+      "center": {
+        "lat": 9.655145,
+        "lon": -82.7559368
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740928,
+      "center": {
+        "lat": 9.6553428,
+        "lon": -82.755477
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Avenida 71",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "BCR",
+        "brand:wikidata": "Q6951632",
+        "brand:wikipedia": "es:Banco de Costa Rica",
+        "building": "yes",
+        "name": "BCR",
+        "official_name": "Banco de Costa Rica"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740930,
+      "center": {
+        "lat": 9.6563765,
+        "lon": -82.7546382
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "The Lion Fish",
+        "phone": "2750 2143",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394740931,
+      "center": {
+        "lat": 9.656441,
+        "lon": -82.7545802
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Not Couture",
+        "shop": "clothes",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420631,
+      "center": {
+        "lat": 9.6570795,
+        "lon": -82.7539736
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Bikini Bar Restaurant & Hostel",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420633,
+      "center": {
+        "lat": 9.657141,
+        "lon": -82.7539181
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Luna May",
+        "shop": "clothes",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420635,
+      "center": {
+        "lat": 9.6573213,
+        "lon": -82.753737
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Tienda del mar",
+        "shop": "yes",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420637,
+      "center": {
+        "lat": 9.6574218,
+        "lon": -82.7539747
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "breakfast;burger;caribbean",
+        "internet_access": "wlan",
+        "name": "Soda Riquísimo",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420639,
+      "center": {
+        "lat": 9.6575713,
+        "lon": -82.753972
+      },
+      "tags": {
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Hot Rocks Bar & Eats",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420640,
+      "center": {
+        "lat": 9.6578986,
+        "lon": -82.7549951
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Pan Pay",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420642,
+      "center": {
+        "lat": 9.6578281,
+        "lon": -82.7550575
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 73",
+        "building": "yes",
+        "fax": "2750 0931",
+        "name": "Leon y Asociados",
+        "office": "lawyer",
+        "phone": "2750 0930",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395420644,
+      "center": {
+        "lat": 9.6545601,
+        "lon": -82.7550306
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 211",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395423817,
+      "center": {
+        "lat": 9.6547989,
+        "lon": -82.7546442
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Cabinas Lika",
+        "phone": "2760 0209",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395427648,
+      "center": {
+        "lat": 9.6561138,
+        "lon": -82.7537905
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "cuisine": "burger",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Soulsurfer",
+        "opening_hours": "Tu-Su 16:30-21:00",
+        "outdoor_seating": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "limited",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395431944,
+      "center": {
+        "lat": 9.6572412,
+        "lon": -82.7523235
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 69",
+        "building": "yes",
+        "name": "Casa Verde Lodge",
+        "phone": "506 2750 0015",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395436760,
+      "center": {
+        "lat": 9.6553388,
+        "lon": -82.7533013
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 67",
+        "building": "yes",
+        "email": "info@hotel-puravida.com",
+        "internet_access": "wlan",
+        "name": "Hotel Pura Vida",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+506 2750-0002",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "https://www.hotel-puravida.com/en/",
+        "wikidata": "Q111885173"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395437001,
+      "center": {
+        "lat": 9.6559888,
+        "lon": -82.75214
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 67",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "regional",
+        "name": "Lidia's Place",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395437844,
+      "center": {
+        "lat": 9.6548004,
+        "lon": -82.7539682
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Shekiná",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395437845,
+      "center": {
+        "lat": 9.6556606,
+        "lon": -82.7547134
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 213",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395437846,
+      "center": {
+        "lat": 9.6550205,
+        "lon": -82.7537631
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "name": "San Gabriel",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395437847,
+      "center": {
+        "lat": 9.65507,
+        "lon": -82.7542106
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "bicycle_rental",
+        "building": "yes",
+        "name": "Ciclo la Plaza",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395441839,
+      "center": {
+        "lat": 9.6555681,
+        "lon": -82.7548108
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "french",
+        "name": "Sel & Sucre",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395441841,
+      "center": {
+        "lat": 9.6562845,
+        "lon": -82.7555841
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Outback-Jack's",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395441843,
+      "center": {
+        "lat": 9.6564612,
+        "lon": -82.7553809
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "building": "yes",
+        "name": "PC Caribe Reparacion",
+        "phone": "6018 0708",
+        "shop": "electronics",
+        "source": "KG Ground Survey 2015",
+        "website": "pccaribe.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395441846,
+      "center": {
+        "lat": 9.6566409,
+        "lon": -82.755646
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "amenity": "internet_cafe",
+        "building": "yes",
+        "name": "Soda las Delicias",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395441847,
+      "center": {
+        "lat": 9.6567565,
+        "lon": -82.7557149
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 213",
+        "building": "yes",
+        "name": "Bazar Priscila",
+        "shop": "convenience",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395442985,
+      "center": {
+        "lat": 9.6568752,
+        "lon": -82.7546187
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "Calle 215",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "italian_pizza",
+        "name": "Pizzeria Boruca",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395445002,
+      "center": {
+        "lat": 9.6560832,
+        "lon": -82.7538854
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "amenity": "car_rental",
+        "building": "yes",
+        "check_date": "2024-04-26",
+        "name": "Alamo",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395445005,
+      "center": {
+        "lat": 9.6558883,
+        "lon": -82.7532261
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "building": "yes",
+        "name": "Ciclo Deportivo",
+        "shop": "bicycle",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395445006,
+      "center": {
+        "lat": 9.6558089,
+        "lon": -82.7531563
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "building": "yes",
+        "name": "Cabinas Jacaranda",
+        "phone": "2750 0069",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "website": "www.cabinasjacaranda.net"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395445007,
+      "center": {
+        "lat": 9.6558537,
+        "lon": -82.7535554
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Calle 215",
+        "building": "yes",
+        "name": "Lavanderia el Sol",
+        "shop": "laundry",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395449604,
+      "center": {
+        "lat": 9.6571503,
+        "lon": -82.7534541
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Hotel Puerto Viejo",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q111115717"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395449606,
+      "center": {
+        "lat": 9.6575067,
+        "lon": -82.7532074
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Lungo Mare Souvenir",
+        "shop": "gift",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395449609,
+      "center": {
+        "lat": 9.6574686,
+        "lon": -82.753016
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Samoa",
+        "shop": "clothes",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453148,
+      "center": {
+        "lat": 9.6580855,
+        "lon": -82.7521655
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "bicycle_rental",
+        "building": "yes",
+        "name": "Gallo Bikes & Motos",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453149,
+      "center": {
+        "lat": 9.6580722,
+        "lon": -82.7519858
+      },
+      "tags": {
+        "alt_name": "Calle Julio Vargas",
+        "highway": "service",
+        "name": "Calle 219A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453150,
+      "center": {
+        "lat": 9.6582194,
+        "lon": -82.7519502
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "name": "Black & White"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453151,
+      "center": {
+        "lat": 9.6582581,
+        "lon": -82.7519091
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Marisquería Puerto Viejo",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453152,
+      "center": {
+        "lat": 9.6583661,
+        "lon": -82.7518194
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "cuisine": "hawaiian",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Honua Poke"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453153,
+      "center": {
+        "lat": 9.6584408,
+        "lon": -82.7517696
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Roots",
+        "shop": "ice_cream",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453154,
+      "center": {
+        "lat": 9.658552,
+        "lon": -82.7517057
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Nema Bar Restaurante",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453155,
+      "center": {
+        "lat": 9.6589091,
+        "lon": -82.7510414
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Salsa Brava",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395453156,
+      "center": {
+        "lat": 9.6589549,
+        "lon": -82.7507617
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-12-06",
+        "name": "Chill & Cheese",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458619,
+      "center": {
+        "lat": 9.6586657,
+        "lon": -82.7511255
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "name": "Lizard King Resort",
+        "source": "KG Ground Survey 2015",
+        "was:tourism": "hotel",
+        "website": "https://lizardkinghotel.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458620,
+      "center": {
+        "lat": 9.6588421,
+        "lon": -82.7499705
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "De Gustibus Panaderia",
+        "name:en": "De Gustibus Bakery",
+        "name:es": "De Gustibus Panaderia",
+        "opening_hours": "Mo-Tu,Th-Su 06:45-18:00; We off",
+        "shop": "bakery",
+        "source": "KG Ground Survey 2015",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458621,
+      "center": {
+        "lat": 9.6587087,
+        "lon": -82.7493311
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Coconut Grove Cabinas",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458623,
+      "center": {
+        "lat": 9.6584299,
+        "lon": -82.74827
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "building": "yes",
+        "name": "Cabinas Kiré",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458624,
+      "center": {
+        "lat": 9.6576484,
+        "lon": -82.7462258
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Super Bryany",
+        "shop": "convenience",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458625,
+      "center": {
+        "lat": 9.6580667,
+        "lon": -82.7460948
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "building": "yes",
+        "name": "Rocking J's",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q111115720"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458626,
+      "center": {
+        "lat": 9.653672,
+        "lon": -82.7409403
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "sandwich;cake;ice_cream;coffee_shop",
+        "internet_access": "wlan",
+        "name": "Caribeans",
+        "name:en": "Caribeans chocolate factory, tours, coffee shop",
+        "opening_hours": "Mo-Sa 09:00-18:00",
+        "phone": "27568434",
+        "source": "KG Ground Survey 2015",
+        "website": "http://caribeanscr.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458629,
+      "center": {
+        "lat": 9.650329,
+        "lon": -82.7372505
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Cabinas Garibaldi",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458630,
+      "center": {
+        "lat": 9.6505666,
+        "lon": -82.7372912
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Sol del Caribe",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458631,
+      "center": {
+        "lat": 9.646771,
+        "lon": -82.7353184
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "sidewalk": "no",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458632,
+      "center": {
+        "lat": 9.6461582,
+        "lon": -82.7349732
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458633,
+      "center": {
+        "lat": 9.6450416,
+        "lon": -82.7334805
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458636,
+      "center": {
+        "lat": 9.6440227,
+        "lon": -82.7319916
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395458637,
+      "center": {
+        "lat": 9.6443658,
+        "lon": -82.7303573
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462139,
+      "center": {
+        "lat": 9.6444765,
+        "lon": -82.7296721
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Restaurant Bamboocha",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462140,
+      "center": {
+        "lat": 9.6396191,
+        "lon": -82.71106
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Vía 256",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462141,
+      "center": {
+        "lat": 9.6449303,
+        "lon": -82.7307092
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Vía 256",
+        "amenity": "school",
+        "grades": "0-6",
+        "name": "Escuela Río Negro",
+        "operator": "MEP",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462143,
+      "center": {
+        "lat": 9.6438177,
+        "lon": -82.7279262
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Le Numu",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462144,
+      "center": {
+        "lat": 9.6430419,
+        "lon": -82.7224916
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Super Villa Del Caribe",
+        "shop": "convenience",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395462147,
+      "center": {
+        "lat": 9.6372347,
+        "lon": -82.707475
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "school",
+        "name": "Escuela Playa Chiquita",
+        "source": "KG Ground Survey 2015"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396106357,
+      "center": {
+        "lat": 9.6426569,
+        "lon": -82.7357742
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle El Tucán",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396333275,
+      "center": {
+        "lat": 9.6547751,
+        "lon": -82.778557
+      },
+      "tags": {
+        "highway": "residential",
+        "motor_vehicle": "yes",
+        "name": "Calle Makua",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396333308,
+      "center": {
+        "lat": 9.6590115,
+        "lon": -82.7853011
+      },
+      "tags": {
+        "alt_name": "Calle Sonora",
+        "highway": "residential",
+        "name": "Calle Sonora",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396333406,
+      "center": {
+        "lat": 9.6558762,
+        "lon": -82.7848304
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Mishka",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396333790,
+      "center": {
+        "lat": 9.6444504,
+        "lon": -82.7528394
+      },
+      "tags": {
+        "bicycle": "no",
+        "highway": "path",
+        "horse": "no",
+        "name": "Calle Reserva Indígena",
+        "sac_scale": "mountain_hiking",
+        "trail_visibility": "intermediate"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396690088,
+      "center": {
+        "lat": 9.6475462,
+        "lon": -82.7505513
+      },
+      "tags": {
+        "highway": "path",
+        "name": "Calle Reserva Indígena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 396690095,
+      "center": {
+        "lat": 9.6397784,
+        "lon": -82.7487919
+      },
+      "tags": {
+        "bicycle": "no",
+        "highway": "path",
+        "horse": "no",
+        "name": "Calle Reserva Indígena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411530602,
+      "center": {
+        "lat": 9.654287,
+        "lon": -82.7532309
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 213"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413725558,
+      "center": {
+        "lat": 9.6484432,
+        "lon": -82.7319028
+      },
+      "tags": {
+        "name": "Playa Cocles",
+        "natural": "beach",
+        "tourism": "attraction",
+        "wikidata": "Q23746447"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413725564,
+      "center": {
+        "lat": 9.6735117,
+        "lon": -82.7955973
+      },
+      "tags": {
+        "name": "Río Hone",
+        "waterway": "river"
+      }
+    },
+    {
+      "type": "way",
+      "id": 430273621,
+      "center": {
+        "lat": 9.6438185,
+        "lon": -82.7330148
+      },
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "service",
+        "horse": "yes",
+        "lanes": "1",
+        "maxspeed": "20",
+        "motor_vehicle": "yes",
+        "name": "Camino hasta Relax Natural Village",
+        "oneway": "no",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 445083233,
+      "center": {
+        "lat": 9.6500794,
+        "lon": -82.8013048
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "restaurant",
+        "building": "yes",
+        "denomination": "catholic",
+        "name": "El Ranchón"
+      }
+    },
+    {
+      "type": "way",
+      "id": 445088421,
+      "center": {
+        "lat": 9.6504252,
+        "lon": -82.8014827
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "Servicentro Zúñiga",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 453278564,
+      "center": {
+        "lat": 9.6381399,
+        "lon": -82.7120992
+      },
+      "tags": {
+        "building": "yes",
+        "information": "office",
+        "name": "Tourist Information",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458822180,
+      "center": {
+        "lat": 9.6386115,
+        "lon": -82.7127994
+      },
+      "tags": {
+        "building": "yes",
+        "name": "El Duende Super Gourmet",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458849846,
+      "center": {
+        "lat": 9.6590421,
+        "lon": -82.7493863
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-12-04",
+        "cuisine": "regional",
+        "diet:vegan": "only",
+        "name": "Jammin Vegan Restaurant",
+        "opening_hours": "Tu-Sa 14:00-21:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862614,
+      "center": {
+        "lat": 9.6449063,
+        "lon": -82.7322085
+      },
+      "tags": {
+        "name": "Río Negro",
+        "waterway": "river"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862616,
+      "center": {
+        "lat": 9.644703,
+        "lon": -82.7400484
+      },
+      "tags": {
+        "name": "Rio Cocles",
+        "waterway": "river"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862618,
+      "center": {
+        "lat": 9.6437337,
+        "lon": -82.7223067
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "Villas del Caribe Beach",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862620,
+      "center": {
+        "lat": 9.6406598,
+        "lon": -82.7113964
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Playa Chiquita Paradise"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862621,
+      "center": {
+        "lat": 9.6397167,
+        "lon": -82.7118716
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Playa Chiquita",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862622,
+      "center": {
+        "lat": 9.6413962,
+        "lon": -82.7112535
+      },
+      "tags": {
+        "name": "Playa Chiquita",
+        "natural": "beach"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862713,
+      "center": {
+        "lat": 9.6429913,
+        "lon": -82.7284175
+      },
+      "tags": {
+        "building": "yes",
+        "email": "info@caribetown.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Caribe Town Resort",
+        "phone": "506 2750 2034",
+        "source": "survey",
+        "tourism": "hotel",
+        "website": "https://www.caribetown.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862716,
+      "center": {
+        "lat": 9.6536743,
+        "lon": -82.7418008
+      },
+      "tags": {
+        "highway": "service",
+        "name": "Calle La Perla del Caribe",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862718,
+      "center": {
+        "lat": 9.6390039,
+        "lon": -82.713464
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "international",
+        "name": "DIWO",
+        "opening_hours": "We-Mo 17:30-21:30",
+        "outdoor_seating": "yes",
+        "source": "KG Ground Survey 2015",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862724,
+      "center": {
+        "lat": 9.6374854,
+        "lon": -82.7097376
+      },
+      "tags": {
+        "addr:city": "Talamanca",
+        "building": "yes",
+        "name": "Shawandha Lodge",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hotel",
+        "wikidata": "Q111151381"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458862736,
+      "center": {
+        "lat": 9.6382842,
+        "lon": -82.7123176
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Pura Gula",
+        "opening_hours": "Mo-Su 18:00-22:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463367147,
+      "center": {
+        "lat": 9.6497282,
+        "lon": -82.8018637
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "Taller Gabriel",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "way",
+      "id": 486564865,
+      "center": {
+        "lat": 9.6365517,
+        "lon": -82.7122332
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Mónica",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 500512351,
+      "center": {
+        "lat": 9.6585684,
+        "lon": -82.7735177
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo de Talamanca",
+        "breakfast": "yes",
+        "name": "Hotel Banana Azul",
+        "phone": "+011-506-2750-2035",
+        "source": "local_knowledge",
+        "tourism": "hotel",
+        "website": "https://www.bananaazul.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 500512356,
+      "center": {
+        "lat": 9.6657456,
+        "lon": -82.7810823
+      },
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "horse": "yes",
+        "motor_vehicle": "yes",
+        "name": "Calle Playa Negra",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 500512359,
+      "center": {
+        "lat": 9.662539,
+        "lon": -82.7886076
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Banana"
+      }
+    },
+    {
+      "type": "way",
+      "id": 500512364,
+      "center": {
+        "lat": 9.6587797,
+        "lon": -82.7740586
+      },
+      "tags": {
+        "building": "hotel",
+        "building:levels": "2",
+        "name": "Casa Las Brisas",
+        "source": "local_knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 500976743,
+      "center": {
+        "lat": 9.658111,
+        "lon": -82.7730921
+      },
+      "tags": {
+        "name": "Natural Puerto Viejo",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 501018996,
+      "center": {
+        "lat": 9.6567825,
+        "lon": -82.7738589
+      },
+      "tags": {
+        "building": "hotel",
+        "name": "Cabinas Gacu",
+        "phone": "27500900",
+        "source": "local_knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 501018997,
+      "center": {
+        "lat": 9.6564491,
+        "lon": -82.773986
+      },
+      "tags": {
+        "building": "hotel",
+        "name": "Be my Guest Cabinas",
+        "source": "local_knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 522953925,
+      "center": {
+        "lat": 9.6563482,
+        "lon": -82.7516461
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Hostel Kinkajou",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531145424,
+      "center": {
+        "lat": 9.6572516,
+        "lon": -82.7556261
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Parque de Puerto Viejo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531148447,
+      "center": {
+        "lat": 9.6475942,
+        "lon": -82.7859936
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle El Renuevo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531148457,
+      "center": {
+        "lat": 9.6491868,
+        "lon": -82.8024725
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "childcare",
+        "building": "yes",
+        "check_date": "2026-05-30",
+        "name": "CECUDI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531148633,
+      "center": {
+        "lat": 9.6452027,
+        "lon": -82.8009949
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle José Pizarro",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531148635,
+      "center": {
+        "lat": 9.647189,
+        "lon": -82.8010883
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "amenity": "school",
+        "name": "Escuela Patiño",
+        "operator": "MEP"
+      }
+    },
+    {
+      "type": "way",
+      "id": 544135141,
+      "center": {
+        "lat": 9.6554987,
+        "lon": -82.7873491
+      },
+      "tags": {
+        "name": "Quebrada Hotel",
+        "waterway": "stream"
+      }
+    },
+    {
+      "type": "way",
+      "id": 551245277,
+      "center": {
+        "lat": 9.659619,
+        "lon": -82.797545
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "catholic",
+        "name": "Iglesia de San José",
+        "religion": "christian",
+        "service_times": "Segundo martes de cada mes a las 5:00 pm"
+      }
+    },
+    {
+      "type": "way",
+      "id": 551260921,
+      "center": {
+        "lat": 9.6523024,
+        "lon": -82.7977503
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "building": "yes",
+        "name": "Súper Hone Creek",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 551301176,
+      "center": {
+        "lat": 9.6494125,
+        "lon": -82.8022773
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Ruta Nacional 36",
+        "building": "yes",
+        "government": "healthcare",
+        "name": "Ministerio de Salud - Área Rectora de Salud Talamanca",
+        "office": "government",
+        "official_name": "Área Rectora de Salud de Talamanca"
+      }
+    },
+    {
+      "type": "way",
+      "id": 614114490,
+      "center": {
+        "lat": 9.6531629,
+        "lon": -82.7636727
+      },
+      "tags": {
+        "name": "Quebrada Honta Bridge",
+        "waterway": "stream"
+      }
+    },
+    {
+      "type": "way",
+      "id": 631279936,
+      "center": {
+        "lat": 9.6579213,
+        "lon": -82.7487978
+      },
+      "tags": {
+        "building": "house",
+        "name": "Hotel Vista Verde"
+      }
+    },
+    {
+      "type": "way",
+      "id": 663302735,
+      "center": {
+        "lat": 9.656306,
+        "lon": -82.7724021
+      },
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "maxspeed": "20",
+        "name": "Calle Perla Negra",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 668985832,
+      "center": {
+        "lat": 9.6575213,
+        "lon": -82.7535037
+      },
+      "tags": {
+        "building": "yes",
+        "craft": "photographer",
+        "name": "Visual Pacific",
+        "website": "https://visual-pacific.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 683753769,
+      "center": {
+        "lat": 9.6528591,
+        "lon": -82.7581185
+      },
+      "tags": {
+        "highway": "service",
+        "name": "Calle Pan Dulce",
+        "service": "driveway",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720107465,
+      "center": {
+        "lat": 9.6452534,
+        "lon": -82.7188842
+      },
+      "tags": {
+        "name": "Arrecife Coralino de Punta Cócles",
+        "natural": "reef"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776356431,
+      "center": {
+        "lat": 9.6414973,
+        "lon": -82.7232042
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Villas del Caribe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776631299,
+      "center": {
+        "lat": 9.6505498,
+        "lon": -82.73837
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Cariblue",
+        "sidewalk": "no",
+        "surface": "compacted"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776631301,
+      "center": {
+        "lat": 9.6424811,
+        "lon": -82.7239139
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Jaguar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776634844,
+      "center": {
+        "lat": 9.6563626,
+        "lon": -82.7490162
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 221"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776636840,
+      "center": {
+        "lat": 9.6570428,
+        "lon": -82.7745056
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Coco"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776636841,
+      "center": {
+        "lat": 9.6549335,
+        "lon": -82.7719955
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle El Jardín"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776636843,
+      "center": {
+        "lat": 9.6505334,
+        "lon": -82.7794875
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Cacao"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776636845,
+      "center": {
+        "lat": 9.6530971,
+        "lon": -82.7654716
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Casa Amma"
+      }
+    },
+    {
+      "type": "way",
+      "id": 788946596,
+      "center": {
+        "lat": 9.6426269,
+        "lon": -82.8075156
+      },
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Corredor Caribe",
+        "ref": "36",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887571419,
+      "center": {
+        "lat": 9.6588844,
+        "lon": -82.7505805
+      },
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Avenida 71",
+        "oneway": "no",
+        "ref": "256",
+        "source": "KG Ground Survey 2015",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887571420,
+      "center": {
+        "lat": 9.6576605,
+        "lon": -82.7510103
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 221"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887571421,
+      "center": {
+        "lat": 9.6581661,
+        "lon": -82.7501132
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Avenida 67A"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887587115,
+      "center": {
+        "lat": 9.6408549,
+        "lon": -82.7263725
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Olé Caribe",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887598887,
+      "center": {
+        "lat": 9.6581595,
+        "lon": -82.7745765
+      },
+      "tags": {
+        "alt_name": "Calle Sonora",
+        "highway": "residential",
+        "name": "Calle Banana",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887598889,
+      "center": {
+        "lat": 9.6594314,
+        "lon": -82.7801202
+      },
+      "tags": {
+        "alt_name": "Calle Sonora",
+        "highway": "residential",
+        "name": "Calle Banana"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887598890,
+      "center": {
+        "lat": 9.6611744,
+        "lon": -82.7843631
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Pitaya"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906378536,
+      "center": {
+        "lat": 9.60536,
+        "lon": -82.7332531
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Toro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906378544,
+      "center": {
+        "lat": 9.6174144,
+        "lon": -82.7699597
+      },
+      "tags": {
+        "leisure": "pitch",
+        "name": "Plaz aDeportes Këköldi",
+        "sport": "soccer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906378545,
+      "center": {
+        "lat": 9.6110785,
+        "lon": -82.7705823
+      },
+      "tags": {
+        "highway": "unclassified",
+        "name": "Calle Reserva Keköldi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906677184,
+      "center": {
+        "lat": 9.635048,
+        "lon": -82.7084636
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Mango",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907077488,
+      "center": {
+        "lat": 9.6481796,
+        "lon": -82.7885792
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Quebrada Hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907077494,
+      "center": {
+        "lat": 9.6461284,
+        "lon": -82.7833461
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Rincón"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907077498,
+      "center": {
+        "lat": 9.6442631,
+        "lon": -82.7887808
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Reserva Keköldi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907077500,
+      "center": {
+        "lat": 9.6446994,
+        "lon": -82.7977672
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Rogelio López"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907077505,
+      "center": {
+        "lat": 9.6534169,
+        "lon": -82.7987112
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "leisure": "park",
+        "name": "Parque de Hone Creek"
+      }
+    },
+    {
+      "type": "way",
+      "id": 907103780,
+      "center": {
+        "lat": 9.662105,
+        "lon": -82.8033877
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Brisas del Río"
+      }
+    },
+    {
+      "type": "way",
+      "id": 994051686,
+      "center": {
+        "lat": 9.6371911,
+        "lon": -82.7502134
+      },
+      "tags": {
+        "bicycle": "no",
+        "highway": "path",
+        "horse": "no",
+        "name": "Calle Reserva Indígena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1008256273,
+      "center": {
+        "lat": 9.6574669,
+        "lon": -82.749258
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Badawi Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1021707868,
+      "center": {
+        "lat": 9.652939,
+        "lon": -82.760036
+      },
+      "tags": {
+        "highway": "service",
+        "name": "Calle Pizote",
+        "service": "driveway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1023348183,
+      "center": {
+        "lat": 9.6552943,
+        "lon": -82.7555852
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Avenida 71",
+        "building": "yes",
+        "name": "Correos de Costa Rica - Talamanca",
+        "operator": "Correos de Costa Rica",
+        "operator:wikidata": "Q5172894",
+        "operator:wikipedia": "en:Correos de Costa Rica",
+        "was:amenity": "post_office"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1023487461,
+      "center": {
+        "lat": 9.6344098,
+        "lon": -82.7399588
+      },
+      "tags": {
+        "amenity": "parking",
+        "name": "P"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1038116175,
+      "center": {
+        "lat": 9.656034,
+        "lon": -82.7549225
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:postcode": "70403",
+        "addr:street": "100 meters East of the Banco de Costa Rica, next to Grant cabins Central Ave. Puerto Viejo, Talamanca.",
+        "amenity": "car_rental",
+        "branch": "Adobe Car Rental in Puerto Viejo Costa Rica",
+        "brand": "Adobe Rent a Car",
+        "building:levels": "1",
+        "description": "At Adobe, we know that taking a trip requires budgeting. That’s why we offer a wide range of vehicles to choose from. Enjoy mini, economy, compact, and intermediate sedans. \n\nOr if you need more power, lift, or both, we’ve got 4×2 and 4×4 SUVs, pickups, a",
+        "email": "puertoviejo@adobecar.com",
+        "image": "https://www.adobecar.com/wp-content/uploads/2022/10/MAPA-682x280-PUERTO-VIEJO.jpg",
+        "name": "Adobe Rent a Car, Puerto Viejo",
+        "opening_hours": "Mo-Sa 08:00-17:00",
+        "operator": "Adobe Rent a Car",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "(506) 2750-0715",
+        "website": "https://www.adobecar.com/en/rent-a-car-in-puerto-viejo-costa-rica/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179040,
+      "center": {
+        "lat": 9.6376462,
+        "lon": -82.7131197
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Namuwoki Lodge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179043,
+      "center": {
+        "lat": 9.6348367,
+        "lon": -82.7144806
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Selvatica"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179045,
+      "center": {
+        "lat": 9.6378526,
+        "lon": -82.7132548
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Namuwoki Lodge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179048,
+      "center": {
+        "lat": 9.6379375,
+        "lon": -82.7134304
+      },
+      "tags": {
+        "building": "yes",
+        "name": "2"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179049,
+      "center": {
+        "lat": 9.6379877,
+        "lon": -82.7133507
+      },
+      "tags": {
+        "building": "yes",
+        "name": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179050,
+      "center": {
+        "lat": 9.6380794,
+        "lon": -82.713452
+      },
+      "tags": {
+        "building": "yes",
+        "name": "10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179051,
+      "center": {
+        "lat": 9.6382147,
+        "lon": -82.7134542
+      },
+      "tags": {
+        "building": "yes",
+        "name": "11"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179052,
+      "center": {
+        "lat": 9.6383245,
+        "lon": -82.7134622
+      },
+      "tags": {
+        "building": "yes",
+        "name": "15"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179053,
+      "center": {
+        "lat": 9.6384356,
+        "lon": -82.7134784
+      },
+      "tags": {
+        "building": "yes",
+        "name": "16"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179054,
+      "center": {
+        "lat": 9.6380613,
+        "lon": -82.7135843
+      },
+      "tags": {
+        "building": "yes",
+        "name": "13"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179055,
+      "center": {
+        "lat": 9.6381975,
+        "lon": -82.7135897
+      },
+      "tags": {
+        "building": "yes",
+        "name": "12"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179056,
+      "center": {
+        "lat": 9.6383007,
+        "lon": -82.7135964
+      },
+      "tags": {
+        "building": "yes",
+        "name": "18"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179057,
+      "center": {
+        "lat": 9.6384131,
+        "lon": -82.7136031
+      },
+      "tags": {
+        "building": "yes",
+        "name": "17"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179058,
+      "center": {
+        "lat": 9.6378723,
+        "lon": -82.7135884
+      },
+      "tags": {
+        "building": "yes",
+        "name": "3"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179059,
+      "center": {
+        "lat": 9.6377666,
+        "lon": -82.7136057
+      },
+      "tags": {
+        "building": "yes",
+        "name": "4"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179060,
+      "center": {
+        "lat": 9.6377388,
+        "lon": -82.7135025
+      },
+      "tags": {
+        "building": "yes",
+        "name": "5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179061,
+      "center": {
+        "lat": 9.6376,
+        "lon": -82.7132195
+      },
+      "tags": {
+        "building": "yes",
+        "name": "9"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179062,
+      "center": {
+        "lat": 9.6377731,
+        "lon": -82.7129245
+      },
+      "tags": {
+        "building": "yes",
+        "name": "14"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179063,
+      "center": {
+        "lat": 9.6376924,
+        "lon": -82.7134354
+      },
+      "tags": {
+        "building": "yes",
+        "name": "6"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179064,
+      "center": {
+        "lat": 9.6376184,
+        "lon": -82.7133926
+      },
+      "tags": {
+        "building": "yes",
+        "name": "7"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1062179065,
+      "center": {
+        "lat": 9.6375497,
+        "lon": -82.7133349
+      },
+      "tags": {
+        "building": "yes",
+        "name": "8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077486939,
+      "center": {
+        "lat": 9.6445959,
+        "lon": -82.7198548
+      },
+      "tags": {
+        "building": "apartments",
+        "building:flats": "5",
+        "name": "La Caracola"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077488885,
+      "center": {
+        "lat": 9.6572352,
+        "lon": -82.7534776
+      },
+      "tags": {
+        "building": "retail",
+        "building:levels": "1",
+        "image": "https://www.instagram.com/p/CLDeY4MB8-d/",
+        "name": "Biomercado",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077489659,
+      "center": {
+        "lat": 9.6578441,
+        "lon": -82.7552487
+      },
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "check_date": "2024-04-23",
+        "diet:vegetarian": "only",
+        "name": "Grow"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083853986,
+      "center": {
+        "lat": 9.6072594,
+        "lon": -82.7262378
+      },
+      "tags": {
+        "highway": "track",
+        "name": "Calle Toro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084287444,
+      "center": {
+        "lat": 9.6513089,
+        "lon": -82.7688234
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Pamela Robinson"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084287447,
+      "center": {
+        "lat": 9.6482393,
+        "lon": -82.7730528
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle El Tanque",
+        "surface": "pebblestone"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084289988,
+      "center": {
+        "lat": 9.6545538,
+        "lon": -82.7665852
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:postcode": "70403",
+        "addr:street": "Vía 256",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Policía Turística de Puerto Viejo",
+        "opening_hours": "24/7",
+        "operator": "Public Force of Costa Rica",
+        "operator:en": "Public Force of Costa Rica",
+        "operator:es": "Fuerza Pública de Costa Rica",
+        "operator:wikidata": "Q2333698"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084291447,
+      "center": {
+        "lat": 9.6556395,
+        "lon": -82.7695652
+      },
+      "tags": {
+        "highway": "service",
+        "name": "Calle Tortuga Verde",
+        "service": "driveway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084291450,
+      "center": {
+        "lat": 9.655744,
+        "lon": -82.7716944
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Perla Negra"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084950540,
+      "center": {
+        "lat": 9.652772,
+        "lon": -82.7985029
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "building": "yes",
+        "government": "healthcare",
+        "name": "CCSS - Sucursal Talamanca",
+        "office": "government"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084956144,
+      "center": {
+        "lat": 9.6446858,
+        "lon": -82.7369293
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Tía Seidy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1121093071,
+      "center": {
+        "lat": 9.6556749,
+        "lon": -82.7505888
+      },
+      "tags": {
+        "name": "Hostel Kalunai",
+        "tourism": "hostel",
+        "wikidata": "Q111115714"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1121093072,
+      "center": {
+        "lat": 9.6557888,
+        "lon": -82.750748
+      },
+      "tags": {
+        "name": "Roca Mar Apart Hotel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1121093073,
+      "center": {
+        "lat": 9.6560364,
+        "lon": -82.7509773
+      },
+      "tags": {
+        "check_date": "2024-12-04",
+        "name": "Umami Hotel Garden Spa",
+        "tourism": "hotel",
+        "website": "https://www.umamihotel.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122307565,
+      "center": {
+        "lat": 9.6578659,
+        "lon": -82.7875061
+      },
+      "tags": {
+        "alt_name": "Calle Sonora",
+        "highway": "residential",
+        "name": "Calle Sonora",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122529624,
+      "center": {
+        "lat": 9.6522303,
+        "lon": -82.7684237
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Pamela Robinson"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122529630,
+      "center": {
+        "lat": 9.6323213,
+        "lon": -82.7273248
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Chilamate",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122529631,
+      "center": {
+        "lat": 9.6300752,
+        "lon": -82.7248261
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Chilamate",
+        "noname": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122532023,
+      "center": {
+        "lat": 9.6528191,
+        "lon": -82.7996506
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Buenavista",
+        "noname": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122791649,
+      "center": {
+        "lat": 9.6429929,
+        "lon": -82.7352408
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle Arcoiris",
+        "name:en": "Rainbow Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1214908917,
+      "center": {
+        "lat": 9.6560366,
+        "lon": -82.775999
+      },
+      "tags": {
+        "highway": "residential",
+        "motor_vehicle": "yes",
+        "name": "Calle Vikingo",
+        "surface": "gravel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308512019,
+      "center": {
+        "lat": 9.6589415,
+        "lon": -82.7496517
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 67A",
+        "air_conditioning": "yes",
+        "bar": "yes",
+        "building": "yes",
+        "diet:meat": "yes",
+        "diet:mediterranean": "yes",
+        "diet:vegan": "yes",
+        "name": "Restaurante Minerva",
+        "opening_hours": "Tu-Su 12:00-22:00",
+        "phone": "+506 7007 9263",
+        "was:amenity": "restaurant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341240878,
+      "center": {
+        "lat": 9.6537202,
+        "lon": -82.7615006
+      },
+      "tags": {
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Centro Médico Aruma",
+        "phone": "506 8655 5082"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341240879,
+      "center": {
+        "lat": 9.6543877,
+        "lon": -82.7661495
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Súper sk",
+        "shop": "convenience"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1490271567,
+      "center": {
+        "lat": 9.6566122,
+        "lon": -82.7521827
+      },
+      "tags": {
+        "leisure": "swimming_pool",
+        "name": "Casa Verde"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748277,
+      "center": {
+        "lat": 9.6640956,
+        "lon": -82.772693
+      },
+      "tags": {
+        "lifeguard": "no",
+        "name": "Playa Negra",
+        "natural": "beach",
+        "supervised": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748278,
+      "center": {
+        "lat": 9.6544479,
+        "lon": -82.7551901
+      },
+      "tags": {
+        "name": "Quebrada Joe Gyal Bridge",
+        "waterway": "stream"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748279,
+      "center": {
+        "lat": 9.6526265,
+        "lon": -82.7551103
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 209",
+        "source": "KG Ground Survey 2015",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748280,
+      "center": {
+        "lat": 9.6535408,
+        "lon": -82.7553472
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "residential",
+        "layer": "1",
+        "name": "Calle 209",
+        "source": "KG Ground Survey 2015",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748281,
+      "center": {
+        "lat": 9.6537532,
+        "lon": -82.7525925
+      },
+      "tags": {
+        "name": "Quebrada Joe Gyal Bridge",
+        "waterway": "stream"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748282,
+      "center": {
+        "lat": 9.6537753,
+        "lon": -82.7541839
+      },
+      "tags": {
+        "layer": "-1",
+        "name": "Quebrada Joe Gyal Bridge",
+        "tunnel": "culvert",
+        "waterway": "stream"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748283,
+      "center": {
+        "lat": 9.6535723,
+        "lon": -82.7528838
+      },
+      "tags": {
+        "highway": "residential",
+        "name": "Calle 213"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1508748284,
+      "center": {
+        "lat": 9.6538769,
+        "lon": -82.752857
+      },
+      "tags": {
+        "bridge": "yes",
+        "highway": "residential",
+        "layer": "1",
+        "name": "Calle 213"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2083772,
+      "center": {
+        "lat": 10.4171166,
+        "lon": -82.5674347
+      },
+      "tags": {
+        "border_type": "eez",
+        "boundary": "maritime",
+        "name": "Costa Rica (EEZ)",
+        "name:en": "Costa Rica (EEZ)",
+        "name:es": "Costa Rica (EEZ)",
+        "type": "boundary"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5708170,
+      "center": {
+        "lat": 9.4213957,
+        "lon": -83.0201014
+      },
+      "tags": {
+        "admin_level": "6",
+        "alt_name": "Cantón de Talamanca",
+        "boundary": "administrative",
+        "description": "Talamanca: recibe su nombre de la villa de Talamanca en Madrid, España, en honor a la cual el conquistador Diego de Sojo y Peñaranda fundó, en Costa Rica, la ciudad de Santiago de Talamanca en 1605.",
+        "name": "Talamanca",
+        "type": "boundary",
+        "wikidata": "Q2669009",
+        "wikipedia": "es:Cantón de Talamanca"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5709983,
+      "center": {
+        "lat": 9.5578888,
+        "lon": -82.6701039
+      },
+      "tags": {
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Sixaola",
+        "postal_code": "70402",
+        "type": "boundary",
+        "wikidata": "Q1759580"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 5710008,
+      "center": {
+        "lat": 9.6797786,
+        "lon": -82.7722403
+      },
+      "tags": {
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Cahuita",
+        "postal_code": "70403",
+        "type": "boundary",
+        "wikidata": "Q1025795"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 7557830,
+      "center": {
+        "lat": 9.6549062,
+        "lon": -82.7544012
+      },
+      "tags": {
+        "addr:city": "Puerto Viejo",
+        "addr:street": "Avenida 69",
+        "building": "yes",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Pagalu Hostel",
+        "source": "KG Ground Survey 2015",
+        "tourism": "hostel",
+        "type": "multipolygon",
+        "wikidata": "Q111115716"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 11805965,
+      "center": {
+        "lat": 9.6032284,
+        "lon": -82.641802
+      },
+      "tags": {
+        "boundary": "protected_area",
+        "name": "Refugio Nacional de Vida Silvestre Gandoca - Manzanillo, Jairo Mora Sandoval",
+        "operator": "Área de Conservación La Amistad Caribe (ACLAC)",
+        "protect_class": "4",
+        "ref:CR:SINAC": "V03",
+        "source": "SINAC (Sistema Nacional de Áreas de Conservación) - 2019",
+        "start_date": "1985",
+        "type": "boundary",
+        "wikidata": "Q1493383"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12332475,
+      "center": {
+        "lat": 9.6373582,
+        "lon": -82.7985331
+      },
+      "tags": {
+        "boundary": "aboriginal_lands",
+        "name": "Territorio Indígena Bribri de Kéköldi",
+        "population": "1000",
+        "type": "boundary",
+        "wikidata": "Q21006678",
+        "wikipedia": "en:Kéköldi"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12582073,
+      "center": {
+        "lat": 9.7807782,
+        "lon": -82.7338359
+      },
+      "tags": {
+        "boundary": "national_park",
+        "name": "Parque nacional Cahuita",
+        "opening_hours": "07:00-16:00",
+        "operator": "Área de Conservación La Amistad Caribe (ACLAC)",
+        "protect_class": "2",
+        "ref:CR:SINAC": "P16",
+        "source": "SINAC (Sistema Nacional de Áreas de Conservación) - 2019",
+        "start_date": "1970",
+        "type": "boundary",
+        "wikidata": "Q2546988",
+        "wikipedia": "es:Parque nacional Cahuita"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 19784218,
+      "center": {
+        "lat": 9.6516846,
+        "lon": -82.7985777
+      },
+      "tags": {
+        "addr:city": "Cahuita",
+        "addr:street": "Corredor Caribe",
+        "amenity": "courthouse",
+        "building": "yes",
+        "name": "Fiscalía Adjunta de Asuntos Indígenas",
+        "operator": "Poder Judicial",
+        "operator:wikidata": "Q7644938",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 20248839,
+      "center": {
+        "lat": 9.655762,
+        "lon": -82.7564642
+      },
+      "tags": {
+        "access": "yes",
+        "historic": "wreck",
+        "name": "El Barco con Arbol",
+        "seamark:type": "wreck",
+        "seamark:wreck:category": "hull_showing",
+        "type": "multipolygon",
+        "wreck:visible_at_low_tide": "yes"
+      }
+    }
+  ]
+}
