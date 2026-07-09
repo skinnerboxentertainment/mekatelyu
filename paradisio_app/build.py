@@ -598,6 +598,7 @@ def render_classifieds_index(ads):
         cat = ad["category"]
         categories.setdefault(cat, []).append(ad)
     cats_json = json.dumps({k: len(v) for k, v in categories.items()})
+    labels_json = json.dumps(CAT_LABELS)
     ads_json = json.dumps(ads, ensure_ascii=False)
 
     cat_links = "".join(
@@ -654,6 +655,7 @@ def render_classifieds_index(ads):
 <script>
 const CLASSIFIEDS = {ads_json};
 const CL_CATEGORIES = {cats_json};
+const CL_LABELS = {labels_json};
 </script>
 <script src="../static/classifieds.js"></script>
 </body>

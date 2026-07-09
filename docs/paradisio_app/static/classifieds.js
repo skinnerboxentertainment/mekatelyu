@@ -34,7 +34,7 @@
                 cats[ad.category] = (cats[ad.category] || 0) + 1;
             });
             Object.keys(cats).sort().forEach(function (cat) {
-                var label = (CL_CATEGORIES[cat] || cat) + " (" + cats[cat] + ")";
+                var label = (CL_LABELS[cat] || cat) + " (" + cats[cat] + ")";
                 html += "<h2 class='cl-cat-heading'>" + label + "</h2><div class='cl-grid'>";
                 CLASSIFIEDS.filter(function (ad) { return ad.category === cat; }).forEach(function (ad) {
                     html += renderCard(ad);
