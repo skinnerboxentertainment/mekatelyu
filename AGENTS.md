@@ -1,16 +1,18 @@
-# Puerto Viejo Business Discovery — codename Paradisio
+# Paradisio — Puerto Viejo Business Board
 
 ## Purpose
 
-Build and maintain a business directory of ~450 businesses within 5 km of
-Puerto Viejo de Talamanca, Costa Rica, enriched with Instagram handles,
-phone, WhatsApp, Booking.com, and Facebook data.
+A persistent web directory of ~750 businesses within 5 km of Puerto Viejo
+de Talamanca, Costa Rica, with classifieds, QR codes, Maps enrichment,
+WhatsApp/Instagram routing, and interactive maps. Built as a static site
+on GitHub Pages. Zero infrastructure.
 
 ## Canonical files
 
 | File | Purpose |
 |------|---------|
-| `pv_within_5km_enriched_b.csv` | Master dataset (450 records, 32 cols) |
+| `pv_master_unified.csv` | Master dataset (750 records, 34 cols) |
+| `paradisio_app/build.py` | Static app generator |
 | `pvscraper/` | Reusable PVS crawl + parse module |
 | `codex_bridge.py` | Thin wrapper to delegate tasks to Codex CLI (v2 session-aware) |
 | `CODEX_ENDPOINT/` | IPC hub: v2 session-based bidirectional protocol |

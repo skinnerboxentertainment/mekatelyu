@@ -8,9 +8,14 @@
 | 750 business pages | Done | Full detail pages with contact routing |
 | Search + filters | Done | Category, area, text, contact-channel filters |
 | Pagination | Done | 50 at a time, load more, resets on filter change |
-| Maps (Leaflet/OSM) | Done | Interactive pins on 606 business pages |
+| Cluster map (homepage) | Done | Leaflet + markercluster toggle, filter-aware |
+| Maps (Leaflet/OSM) per page | Done | Interactive pins on 606 business pages |
 | Mobile-first CSS | Done | 4 viewports, sticky CTA bar, safe-area padding |
+| Design token system | Done | CSS custom properties (tokens.css) |
 | Display name cleanup | Done | 380+ location suffixes stripped |
+| Contact labels | Done | Human-readable: Verified/Strong/Partial/Limited |
+| Trust signals | Done | Source badges, claimed/unclaimed status |
+| Subcategory/cuisine | Done | Extracted from Maps + business names |
 | QR generator | Done | 750 print-ready PNGs + redirect pages + gallery |
 | QR on business pages | Done | Preview image + download link per business |
 | Maps enrichment crawl | Done | 699 CIDs scanned — 640 ratings, 544 phones, 414 websites, 203 check-in/out, 215 amenities, 105 addresses |
@@ -18,6 +23,11 @@
 | Amenities on biz pages | Done | Filtered, deduplicated chips on 215 pages |
 | Addresses on biz pages | Done | Maps address on 105 pages |
 | Hours on biz pages | Done | Check-in/out on 203 pages |
+| Classifieds board | Done | 15 seed listings, 8 categories, search, detail pages |
+| Multi-language | Done | EN/ES/DE with client-side switcher, locale JSON files |
+| GitHub Discussions | Done | Forum + issue templates (bugs, ideas, classifieds) |
+| OSM cross-ref (v2) | Done | 418 candidates found, 155 truly new |
+| GoatCounter analytics | Live | Pageview tracking on all pages |
 | GitHub Pages | Live | https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/ |
 
 ## Coverage (from the data)
@@ -43,18 +53,19 @@
 
 | # | Idea | What's needed |
 |---|------|--------------|
-| 2 | Premium listings ($100/$200) | Payments (SINPE), analytics, featured placement logic |
-| 3 | QR affiliate network | Affiliate tracking, commission payouts, sales materials |
-| 4 | AI service upsells (WhatsApp auto-reply, IG content pack, menu translation) | OpenAI integration per service |
-| 5 | Middleman fees (10-20% on transport, tours, dining) | Concierge ops, dispute handling |
-| 6 | Instagram capture engine (event detection, dashboards) | Scraping pipeline + analytics backend |
-| 7 | Quarterly print magazine | Layout, print vendor, distribution |
-| 8 | Creative layer (artists, musicians, photographers) | Profile type expansion, curation |
-| 9 | Community layer (Reddit, Discord, blog) | Seeding, moderation, content ops |
-| 10 | Town API (intent router for Puerto Viejo) | Query wrapper around existing JSON data |
-| 11 | WhatsApp concierge (traveler-facing assistant) | WhatsApp Business API or web launcher |
-| 12 | Refreshable scanner (port to other towns) | Run proven method on a second town |
-| 13 | Craigslist classifieds (rooms, jobs, gigs, for sale) | Data model + rendering (same pattern as directory) |
+| 1 | v2 CID re-scan (699 CIDs + 155 OSM) | Full text capture + category-aware parsing |
+| 2 | Classifieds posting flow | Web3Forms + WhatsApp-first submission form |
+| 3 | Premium listings ($100/$200) | Payments (SINPE), analytics, featured placement logic |
+| 4 | QR affiliate network | Affiliate tracking, commission payouts, sales materials |
+| 5 | AI service upsells (WhatsApp auto-reply, IG content pack, menu translation) | OpenAI integration per service |
+| 6 | Middleman fees (10-20% on transport, tours, dining) | Concierge ops, dispute handling |
+| 7 | Instagram capture engine (event detection, dashboards) | Scraping pipeline + analytics backend |
+| 8 | Quarterly print magazine | Layout, print vendor, distribution |
+| 9 | Creative layer (artists, musicians, photographers) | Profile type expansion, curation |
+| 10 | Community layer (Reddit, Discord, blog) | Seeding, moderation, content ops |
+| 11 | Town API (intent router for Puerto Viejo) | Query wrapper around existing JSON data |
+| 12 | WhatsApp concierge (traveler-facing assistant) | WhatsApp Business API or web launcher |
+| 13 | Refreshable scanner (port to other towns) | Run proven method on a second town |
 | 14 | Puerto Viejo Economic Tarot (data-art oracle) | Static microsite with archetype cards |
 
 ## The Flywheel
