@@ -1,0 +1,271 @@
+Deep CID Inspection: Black Bamboo (9649993079907777710)
+============================================================
+
+1. FULL VISIBLE TEXT: 3620 chars, 176 lines
+
+  business_name: Hoteles cercanos
+  rating: 4.7
+  subcategory: Bed & Breakfast
+  phone: 8417 5543
+  website: Booking.com
+  plus_code: M742+8M Puerto Viejo de Talamanca, Limón
+  check_in: 3:00 p.
+  check_out: 11:00 a.
+  amenities:
+    - Aire acondicionado
+    - Estacionamiento gratuito
+    - Estacionamientos
+    - Gimnasio
+    - Incluye desayuno
+    - Piscina al aire libre
+    - Restaurante
+    - Restaurantes
+    - Transporte desde/hacia el aeropuerto
+    - Transporte público
+    - Wi-Fi gratis
+  prices:
+    - CRC 51,422
+    - CRC 51,768
+    - CRC 51,422
+    - Más precios desde CRC 51,766
+    - CRC 49,113
+  review_count: 264
+  nearby_businesses:
+    - Black Bamboo
+    - Black Bamboo
+    - Hotel Indalo
+    - Street View
+
+
+2. JSON-LD STRUCTURED DATA: 0 blocks
+
+
+3. META TAGS: 18 found
+  Description: Busca negocios locales, consulta mapas y consigue información sobre rutas en Google Maps.
+  : Google Maps
+  og:title: Google Maps
+  : https://maps.google.com/maps/api/staticmap?center=9.3388455%2C-83.7337724&zoom=10&size=900x900&langu
+  og:image: https://maps.google.com/maps/api/staticmap?center=9.3388455%2C-83.7337724&zoom=10&size=900x900&langu
+  og:image:width: 900
+  og:image:height: 900
+  : Find local businesses, view maps and get driving directions in Google Maps.
+  og:description: Find local businesses, view maps and get driving directions in Google Maps.
+  og:site_name: Google Maps
+  twitter:card: summary
+  : Anm+hhtuh7NJguqSnXHEAIqqMaV+GXCks8WYXHJKF7l6AeYMj+wO+fi9OdDqFnJTg9t0492DykVxx4jpvFbxnA8AAABseyJvcmln
+  viewport: initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no
+  google: notranslate
+  referrer: origin
+
+
+4. VISIBLE HTML (first 1000 chars):
+<div class="m6QErb DxyBCb kA9KIf dS8AEf XiKgde " tabindex="-1" style=""><div class="ZKCDEc"><div class="RZ66Rb FgCUCc"><button class="aoRNLd kn2E5e NMjTrf lvtCsd " aria-label="Foto de Black Bamboo" jslog="15130; track:click; mutable:true;metadata:WyIwYWhVS0V3akEtWUdiNU1XVkF4VnRqWWtFSFg3VkpnOFF6Q2NJUlNnWCJd" jsaction="pane.wfvdle13.heroHeaderImage"><img decoding="async" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHnWac8wQZ28gudagn3zrZWRmr_Ts-BldPlMJIb7xZ9ic7-JJ3FKkHwb2rxeq5-IQGO2Sfiptuv_JF2q3R-eV8Nl9BSfsoNYk_WHCLvYrSPWF6Jc3Wg8B6tRQ95BsOzaghNekN1xsqYgPyU=w426-h240-k-no" style="position: absolute; top: 50%; left: 50%; width: 426px; height: 240px; transform: translateY(-50%) translateX(-50%);"></button></div><div class="jwfPme"><div class="rlmNhf" style="bottom: 15px; right: 15px;"><button aria-haspopup="dialog" class="fT414d plVN2c " aria-label="GRAN OFERTA·Desde&nbsp;CRC&nbsp;51,422 por noche.·29%&nbsp;menos que el precio habitual" jsaction="pane.wfvdle14" jslog="75844; track:c
+
+=== SUMMARY ===
+
+CAPTURED (11 fields):
+  - rating
+  - subcategory
+  - phone
+  - website
+  - plus_code
+  - check_in
+  - check_out
+  - amenities
+  - prices
+  - review_count
+  - nearby_businesses
+
+AVAILABLE ON MAPS PAGE BUT NOT EXTRACTED (13 fields):
+  - hours_of_operation (daily open/close times)
+  - photo URLs and image references
+  - business description text (from Maps)
+  - price_level ($/$$/$$$)
+  - popular times
+  - menu links (restaurants)
+  - delivery / takeout ordering links
+  - social media links from profile
+  - business attributes (outdoor seating, vegan options, etc.)
+  - full HTML DOM structure
+  - JSON-LD / structured data
+  - review snippets / user reviews
+  - latitude/longitude alternate sources
+
+
+5. ALL VISIBLE TEXT LINES (raw):
+  [  0] Arrastra para cambiar.
+  [  1] Arrastra para cambiar, haz clic para eliminar.
+  [  2] Hoteles cercanos
+  [  3] Restaurantes
+  [  4] Cosas que hacer
+  [  5] Bares
+  [  6] Cafés
+  [  7] Farmacias
+  [  8] Estacionamientos
+  [  9] Guardado
+  [ 10] Recientes
+  [ 11] Black Bamboo
+  [ 12] Obtener app
+  [ 13] 29% menos que el precio habitual
+  [ 14] EXCELENTE OFERTA
+  [ 15] CRC 51,422
+  [ 16] Ver fotos
+  [ 17] Black Bamboo
+  [ 18] 4.7
+  [ 19] Bed & Breakfast
+  [ 20] Descripción general
+  [ 21] Precios
+  [ 22] Acerca de
+  [ 23] Indicaciones
+  [ 24] Guardar
+  [ 25] Cerca
+  [ 26] Compartir
+  [ 27] Comprueba la disponibilidad
+  [ 28] Comparar precios
+  [ 29] Solo cancelación gratuita
+  [ 30] Entrada/Salida
+  [ 31] dom, 12 jul
+  [ 32] lun, 13 jul
+  [ 33] Todas las opciones
+  [ 34] Booking.com
+  [ 35] CRC 51,768
+  [ 36] Ver habitaciones
+  [ 37] Agoda
+  [ 38] CRC 51,422
+  [ 39] Wi-Fi gratis
+  [ 40] Ver habitaciones
+  [ 41] Más precios desde CRC 51,766
+  [ 42] Camino de la Bakery 600m suroeste (hay que avanzar 400m más a partir de la ubicación, Limón, Puerto Viejo de Talamanca, 70403
+  [ 43] blackbamboobb.com
+  [ 44] 8417 5543
+  [ 45] M742+8M Puerto Viejo de Talamanca, Limón
+  [ 46] Hora de entrada: 3:00 p.m.
+  [ 47] Hora de salida: 11:00 a.m.
+  [ 48] Sugerir una edición
+  [ 49] Fotos
+  [ 50] Agregar fotos y videos
+  [ 51] Hoteles similares cercanos
+  [ 52] CRC 49,113
+  [ 53] Hotel Indalo
+  [ 54] 4.6
+  [ 55] (264)
+  [ 56] A 0.3 km
+  [ 57] CRC 33,896
+  [ 58] CASA BOHÖ
+  [ 59] 4.7
+  [ 60] (116)
+  [ 61] A 0.2 km
+  [ 62] CRC 56,837
+  [ 63] Hotel Escape Caribeño
+  [ 64] 4.5
+  [ 65] (321)
+  [ 66] Incluye desayuno
+  [ 67] A 0.3 km
+  [ 68] CRC 43,363
+  [ 69] Hotel Tropical, Puerto Viejo, Caribe Sur
+  [ 70] 4.4
+  [ 71] (158)
+  [ 72] A 0.4 km
+  [ 73] CRC 40,268
+  [ 74] La Tica y La Gata
+  [ 75] 4.8
+  [ 76] (276)
+  [ 77] A 0.4 km
+  [ 78] CRC 39,768
+  [ 79] Lizard King Hotel & Suites
+  [ 80] 3.7
+  [ 81] (272)
+  [ 82] A 0.4 km
+  [ 83] Bungalows Calalú
+  [ 84] 4.4
+  [ 85] (148)
+  [ 86] A 0.3 km
+  [ 87] Sueño Grande B&B at the Beach
+  [ 88] 4.7
+  [ 89] (109)
+  [ 90] A 0.3 km
+  [ 91] Ver más hoteles cercanos
+  [ 92] Alquileres de vacaciones cerca de mí
+  [ 93] CRC 31,636
+  [ 94] Bob Marley Room, beautiful cabin surrounded by Jungle - Entire Place
+  [ 95] 1 habitación • 1 baño • Alojamiento para 2
+  [ 96] A 0.5 km
+  [ 97] CRC 45,449
+  [ 98] Comfortable 3rd floor apartment surrounded by the beauty sounds of the jungle.
+  [ 99] 1 habitación • 1 baño • Alojamiento para 2
+  [100] A 0.2 km
+  [101] CRC 26,192
+  [102] Cabinas Montesol - Double Room
+  [103] 1 habitación • 1 baño • Alojamiento para 4
+  [104] A 0.2 km
+  [105] CRC 36,359
+  [106] MODERNO EN RUSTICO .....
+  [107] 1 habitación • 1 baño • Alojamiento para 2
+  [108] A 0.3 km
+  [109] CRC 48,535
+  [110] Elena Brown - One-Bedroom Apartment
+  [111] 1 habitación • 1 baño • Alojamiento para 4
+  [112] A 0.3 km
+  [113] CRC 45,449
+  [114] Kingston Casitas Private 3rd Flr, 5 with AC, Free Bikes…
+  [115] Alojamiento para 2
+  [116] A 0.75 km
+  [117] CRC 65,383
+  [118] 104 - Beachfront Cozy Room Down Town Puerto Viejo
+  [119] 1 habitación • 1 baño • Alojamiento para 2
+  [120] A 0.4 km
+  [121] CRC 45,449
+  [122] Kingston Casitas Private 1st Flr 1 Accessible , with AC, Free Bikes…
+  [123] Alojamiento para 2
+  [124] A 0.75 km
+  [125] CRC 45,449
+  [126] Comfortable first Flr apartment surrounded by the beauty sounds of the jungle
+  [127] 1 habitación • 1 baño • Alojamiento para 2
+  [128] A 0.4 km
+  [129] CRC 45,449
+  [130] Kingston Casitas Private 1st Flr 2, with AC, Free Bikes…
+  [131] 1 habitación • 1 baño • Alojamiento para 2
+  [132] A 1 km
+  [133] Ver más propiedades
+  [134] Detalles del hotel
+  [135] Wi-Fi gratis
+  [136] Estacionamiento gratuito
+  [137] Piscina al aire libre
+  [138] Aire acondicionado
+  [139] Restaurante
+  [140] Transporte desde/hacia el aeropuerto
+  [141] Gimnasio
+  [142] Ver más servicios
+  [143] Escribir una opinión
+  [144] Información sobre estos datos
+  [145] Estás viendo una vista limitada de Google Maps.
+  [146] Más información
+  [147] Aprovecha al máximo Google Maps
+  [148] Acceder
+  [149] Contraer panel lateral
+  [150] Contraer panel lateral
+  [151] Acceder
+  [152] Capas
+  [153] Detalles del mapa
+  [154] Transporte público
+  [155] Tráfico
+  [156] Bicicleta
+  [157] Terreno
+  [158] Street View
+  [159] Incendios
+  [160] Calidad del aire
+  [161] Herramientas del mapa
+  [162] Duración del viaje
+  [163] Medición
+  [164] Tipo de mapa
+  [165] Predeterminado
+  [166] Satélite
+  [167] Vista con el globo terráqueo
+  [168] Etiquetas
+  [169] Datos del mapa © 2026
+  [170] Costa Rica
+  [171] Condiciones
+  [172] Privacidad
+  [173] Enviar comentarios sobre el producto
+  [174] 100 m
+  [175] <div id="XvQR9b"> <div class="wSgKnf"> <div> When you have eliminated the <strong>JavaScript</strong>, whatever remains must be an empty page. </div> <a class="hl4GXb" href="https://support.google.com/maps/?hl=es-419&amp;authuser=0&amp;p=no_javascript" target="_blank">Habilita JavaScript para ver Google Maps.</a> </div> </div>
