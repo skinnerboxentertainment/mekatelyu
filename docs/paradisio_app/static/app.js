@@ -272,40 +272,14 @@
     }
 
     // View toggle
-    viewList.addEventListener("click", function () { trackEvent("ViewToggle", { view: "list" }); switchView("list"); });
-    viewMap.addEventListener("click", function () { trackEvent("ViewToggle", { view: "map" }); switchView("map"); });
+    viewList.addEventListener("click", function () { switchView("list"); });
+    viewMap.addEventListener("click", function () { switchView("map"); });
 
-    function trackEvent(name, props) {
-        if (typeof plausible === "function") {
-            try { plausible(name, { props: props || {} }); } catch (e) {}
-        }
-    }
-
-    var searchTimeout = null;
-    searchInput.addEventListener("input", function () {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(function () {
-            var q = searchInput.value.trim();
-            if (q.length > 2) trackEvent("Search", { query: q });
-        }, 1000);
-        resetAndRender();
-    });
-    catFilter.addEventListener("change", function () {
-        if (catFilter.value) trackEvent("Filter", { category: catFilter.value });
-        resetAndRender();
-    });
-    areaFilter.addEventListener("change", function () {
-        if (areaFilter.value) trackEvent("Filter", { area: areaFilter.value });
-        resetAndRender();
-    });
-    channelFilter.addEventListener("change", function () {
-        if (channelFilter.value) trackEvent("Filter", { channel: channelFilter.value });
-        resetAndRender();
-    });
-    sortFilter.addEventListener("change", function () {
-        if (sortFilter.value) trackEvent("Sort", { sort: sortFilter.value });
-        resetAndRender();
-    });
+    searchInput.addEventListener("input", resetAndRender);
+    catFilter.addEventListener("change", resetAndRender);
+    areaFilter.addEventListener("change", resetAndRender);
+    channelFilter.addEventListener("change", resetAndRender);
+    sortFilter.addEventListener("change", resetAndRender);
 
     populateFilters();
     renderList();

@@ -323,7 +323,7 @@ def render_index_html(businesses, metrics):
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
-<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div class="container">
@@ -384,7 +384,6 @@ const BUSINESSES = {json.dumps(businesses, ensure_ascii=False)};
 const CATEGORIES = {categories_json};
 const AREAS = {areas_json};
 </script>
-<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
 <script src="static/app.js"></script>
@@ -508,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function() {{
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <meta name="description" content="{biz["name"]} — {biz["category"]} in {biz["area"]}, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
-<script defer data-domain="skinnerboxentertainment.github.io/mekatelyu" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div class="container">

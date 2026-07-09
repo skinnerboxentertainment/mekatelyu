@@ -74,7 +74,6 @@ def generate_qr(data, path):
 def generate_redirect_page(slug, business_name, area):
     """Generate a minimal landing page for QR scans (with tracking)."""
     biz_url = get_business_url(slug)
-    domain = BASE_URL.replace("https://", "").replace("http://", "").rstrip("/") if BASE_URL else "skinnerboxentertainment.github.io/mekatelyu"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,11 +82,10 @@ def generate_redirect_page(slug, business_name, area):
 <title>{business_name} — Paradisio</title>
 <meta http-equiv="refresh" content="0; url={biz_url}">
 <link rel="canonical" href="{biz_url}">
-<script defer data-domain="{domain}" src="https://plausible.io/js/script.tagged-events.js"></script>
-<script>plausible("QRScan", {{props:{{slug:"{slug}",business:"{business_name}"}}}})</script>
+<script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<p><a href="{biz_url}" data-plausible-event="QRScan" data-plausible-slug="{slug}">Open {business_name} on Paradisio &rarr;</a></p>
+<p><a href="{biz_url}">Open {business_name} on Paradisio &rarr;</a></p>
 </body>
 </html>"""
 
