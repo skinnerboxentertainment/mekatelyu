@@ -1,0 +1,126 @@
+DEEP CID SCRAPE: Caribeans Coffee and Chocolate (CID 8711730419987475064)
+URL: https://www.google.com/maps?cid=8711730419987475064
+Title: Caribeans Chocolate and Coffee - Google Maps
+============================================================
+
+VISIBLE TEXT: 1523 chars, 69 lines
+------------------------------------------------------------
+  [  0] Arrastra para cambiar.
+  [  1] Arrastra para cambiar, haz clic para eliminar.
+  [  2] Restaurantes cercanos
+  [  3] Hoteles
+  [  4] Cosas que hacer
+  [  5] Bares
+  [  6] Cafés
+  [  7] Para llevar
+  [  8] Tiendas de comestibles
+  [  9] Guardado
+  [ 10] Recientes
+  [ 11] Caribeans Chocolate and Coffee
+  [ 12] Obtener app
+  [ 13] Ver fotos
+  [ 14] Caribeans Chocolate and Coffee
+  [ 15] 4.6
+  [ 16] Cafetería
+  [ 17] Descripción general
+  [ 18] Acerca de
+  [ 19] Indicaciones
+  [ 20] Guardar
+  [ 21] Cerca
+  [ 22] Enviar al teléfono
+  [ 23] Compartir
+  [ 24] Next To Tasty Waves Playa Cocles, Puerto Viejo, Costa Rica, Puerto Viejo de Talamanca
+  [ 25] Abierto
+  [ 26] · Cierra a las 6 p.m.
+  [ 27] jueves
+  [ 28] 7:30 a.m.–6 p.m.
+  [ 29] Sugerir nuevos horarios
+  [ 30] caribeanschocolate.com
+  [ 31] 8973 0189
+  [ 32] M735+FH Puerto Viejo de Talamanca, Limón
+  [ 33] Sugerir una edición
+  [ 34] Fotos
+  [ 35] Agregar fotos y videos
+  [ 36] Escribir una opinión
+  [ 37] Información sobre estos datos
+  [ 38] Estás viendo una vista limitada de Google Maps.
+  [ 39] Más información
+  [ 40] Aprovecha al máximo Google Maps
+  [ 41] Acceder
+  [ 42] Contraer panel lateral
+  [ 43] Contraer panel lateral
+  [ 44] Acceder
+  [ 45] Capas
+  [ 46] Detalles del mapa
+  [ 47] Transporte público
+  [ 48] Tráfico
+  [ 49] Bicicleta
+  [ 50] Terreno
+  [ 51] Street View
+  [ 52] Incendios
+  [ 53] Calidad del aire
+  [ 54] Herramientas del mapa
+  [ 55] Duración del viaje
+  [ 56] Medición
+  [ 57] Tipo de mapa
+  [ 58] Predeterminado
+  [ 59] Satélite
+  [ 60] Vista con el globo terráqueo
+  [ 61] Etiquetas
+  [ 62] Datos del mapa © 2026
+  [ 63] Costa Rica
+  [ 64] Condiciones
+  [ 65] Privacidad
+  [ 66] Enviar comentarios sobre el producto
+  [ 67] 100 m
+  [ 68] <div id="XvQR9b"> <div class="wSgKnf"> <div> When you have eliminated the <strong>JavaScript</strong>, whatever remains must be an empty page. </div> <a class="hl4GXb" href="https://support.google.com/maps/?hl=es-419&amp;authuser=0&amp;p=no_javascript" target="_blank">Habilita JavaScript para ver Google Maps.</a> </div> </div>
+
+
+LINKS: 6 found
+------------------------------------------------------------
+  
+caribeanschocolate.com                                     http://www.caribeanschocolate.com/
+                                                              http://www.caribeanschocolate.com/
+                                                              tel:89730189
+  Información sobre estos datos                                https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=es-
+  Acceder                                                      https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https%3
+
+
+IMAGES: 10 found
+------------------------------------------------------------
+  [                                                            ] https://www.google.com/images/branding/mapslogo/1x/GoogleMaps_Logo_WithLightOutline.png
+  [                                                            ] https://www.google.com/images/branding/mapslogo/1x/GoogleMaps_Logo_WithDarkOutline.png
+  [                                                            ] https://lh3.googleusercontent.com/gps-cs-s/APNQkAG7MKQsE_kVtSbbKYaTcwdAKGmZhR2FGGGU0agP89b_rMhNnTCrK
+  [                                                            ] https://lh3.googleusercontent.com/gps-cs-s/APNQkAG7MKQsE_kVtSbbKYaTcwdAKGmZhR2FGGGU0agP89b_rMhNnTCrK
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8852!3i15501!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8853!3i15500!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8851!3i15500!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8853!3i15501!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8851!3i15501!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+  [                                                            ] https://www.google.com/maps/vt/pb=!1m5!1m4!1i14!2i8852!3i15500!4i128!2m2!1e1!3i1012!3m9!2ses-419!3sc
+
+
+JSON-LD: 0 blocks
+------------------------------------------------------------
+
+
+META TAGS: 18
+------------------------------------------------------------
+  Description               Busca negocios locales, consulta mapas y consigue información sobre rutas en Google Maps.
+                            Google Maps
+  og:title                  Google Maps
+                            https://maps.google.com/maps/api/staticmap?center=9.3388455%2C-83.7337724&zoom=10&size=900x900&language=en&sensor=false&
+  og:image                  https://maps.google.com/maps/api/staticmap?center=9.3388455%2C-83.7337724&zoom=10&size=900x900&language=en&sensor=false&
+  og:image:width            900
+  og:image:height           900
+                            Find local businesses, view maps and get driving directions in Google Maps.
+  og:description            Find local businesses, view maps and get driving directions in Google Maps.
+  og:site_name              Google Maps
+  twitter:card              summary
+                            Anm+hhtuh7NJguqSnXHEAIqqMaV+GXCks8WYXHJKF7l6AeYMj+wO+fi9OdDqFnJTg9t0492DykVxx4jpvFbxnA8AAABseyJvcmlnaW4iOiJodHRwczovL2dv
+  viewport                  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no
+  google                    notranslate
+  referrer                  origin
+  google-site-verification  ByHT0GXztW_RcGxS0o86DBf1WtNu02FfqlcT8njnSqU
+  google-site-verification  Diln__r3p9-tt39P2Cl2Amvx6oFB4PATnxuFBaw6ej8
+  google-site-verification  Q3PYRz1EUxp_7LF_eIg9Yh1cJa8_y9gnPgGfk4fDPes
