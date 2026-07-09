@@ -15,7 +15,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .controls { margin-bottom: 12px; }
 .search-input { width: 100%; padding: 14px 16px; font-size: 1rem; border: 2px solid #ddd; border-radius: 10px; outline: none; background: #fff; transition: border 0.15s; }
 .search-input:focus { border-color: #1a3a2a; }
+.view-toggle { display: flex; gap: 4px; margin-bottom: 8px; background: #e8e6e1; border-radius: 8px; padding: 3px; }
+.view-btn { flex: 1; text-align: center; padding: 8px; font-size: 0.85rem; border: none; border-radius: 6px; background: transparent; color: #666; cursor: pointer; min-height: 36px; font-weight: 500; transition: all 0.15s; }
+.view-btn.active { background: #fff; color: #1a3a2a; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.view-btn:active { opacity: 0.8; }
 .filters { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.map-view { display: none; height: 600px; border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+.map-view.active { display: block; }
+.map-view .leaflet-container { border-radius: 10px; }
 .filter-select { width: 100%; padding: 12px; font-size: 0.9rem; border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; min-height: 44px; }
 .stats-line { font-size: 0.78rem; color: #888; margin-top: 8px; min-height: 1.2em; }
 

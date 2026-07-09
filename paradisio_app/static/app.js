@@ -2,6 +2,11 @@
     var PAGE_SIZE = 50;
     var filtered = [];
     var displayCount = PAGE_SIZE;
+    var currentView = "list";
+    var map = null;
+    var markers = null;
+    var allMarkers = [];
+
     var searchInput = document.getElementById("search");
     var catFilter = document.getElementById("category-filter");
     var areaFilter = document.getElementById("area-filter");
@@ -11,6 +16,9 @@
     var statsLine = document.getElementById("stats-line");
     var chipsDiv = document.getElementById("filter-chips");
     var loadMoreDiv = document.getElementById("load-more");
+    var mapDiv = document.getElementById("map-container");
+    var viewList = document.getElementById("view-list");
+    var viewMap = document.getElementById("view-map");
 
     function populateFilters() {
         catFilter.innerHTML = '<option value="">All Categories</option>';
@@ -123,8 +131,16 @@
                 "</div>";
         }
 
+        var rating = "";
+        if (b.rating) {
+            var full = Math.floor(b.rating);
+            var half = b.rating % 1 >= 0.3 ? "&#189;" : "";
+            rating = '<div class="card-rating">' + "&#9733;".repeat(full) + half + " " + b.rating + "</div>";
+        }
+
         return '<a href="businesses/' + b.slug + '.html" class="result-card">' +
             '<div class="result-name">' + esc(b.name) + "</div>" +
+            rating +
             '<div class="result-meta">' +
             '<span>' + esc(b.category || "Uncategorized") + "</span>" +
             '<span>' + esc(b.area || "Unknown") + "</span>" +
@@ -148,11 +164,10 @@
         document.getElementById("load-more-btn").addEventListener("click", function () {
             displayCount += PAGE_SIZE;
             render();
-            window.scrollBy(0, 1);
         });
     }
 
-    function render() {
+    function renderList() {
         filtered = BUSINESSES.filter(matchBusiness).sort(sortResults);
         var total = filtered.length;
 
@@ -172,10 +187,93 @@
         renderLoadMore(total);
     }
 
+    function initMap() {
+        if (map) return;
+        map = L.map(mapDiv, { zoomControl: true, attributionControl: true }).setView([9.655, -82.753], 13);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 18,
+        }).addTo(map);
+
+        markers = L.markerClusterGroup({
+            maxClusterRadius: 50,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+        });
+
+        BUSINESSES.forEach(function (b) {
+            if (!b.lat || !b.lng) return;
+            var marker = L.marker([parseFloat(b.lat), parseFloat(b.lng)], {
+                title: b.name,
+            });
+            marker.bindPopup(
+                '<strong>' + esc(b.name) + '</strong><br>' +
+                esc(b.category || "Uncategorized") + " &middot; " + esc(b.area || "Unknown") +
+                (b.rating ? "<br>" + "&#9733;".repeat(Math.floor(b.rating)) + (b.rating % 1 >= 0.3 ? "&#189;" : "") + " " + b.rating : "") +
+                '<br><a href="businesses/' + b.slug + '.html" target="_blank">View page &rarr;</a>'
+            );
+            marker._biz = b;
+            allMarkers.push(marker);
+        });
+
+        markers.addLayers(allMarkers);
+        map.addLayer(markers);
+
+        if (allMarkers.length > 0) {
+            var group = L.featureGroup(allMarkers);
+            map.fitBounds(group.getBounds().pad(0.1));
+        }
+    }
+
+    function updateMap() {
+        if (!map) return;
+        markers.clearLayers();
+        var shown = BUSINESSES.filter(matchBusiness);
+        var visible = allMarkers.filter(function (m) {
+            var b = m._biz;
+            return shown.indexOf(b) !== -1;
+        });
+        markers.addLayers(visible);
+        if (visible.length > 0) {
+            var group = L.featureGroup(visible);
+            map.fitBounds(group.getBounds().pad(0.1));
+        }
+        statsLine.textContent = visible.length + " of " + BUSINESSES.length + " on map";
+    }
+
+    function switchView(view) {
+        currentView = view;
+        if (view === "map") {
+            resultsDiv.style.display = "none";
+            loadMoreDiv.style.display = "none";
+            mapDiv.classList.add("active");
+            viewList.classList.remove("active");
+            viewMap.classList.add("active");
+            initMap();
+            setTimeout(function () { map && map.invalidateSize(); }, 100);
+            updateMap();
+        } else {
+            resultsDiv.style.display = "";
+            loadMoreDiv.style.display = "";
+            mapDiv.classList.remove("active");
+            viewList.classList.add("active");
+            viewMap.classList.remove("active");
+            var total = BUSINESSES.filter(matchBusiness).length;
+            renderList();
+        }
+    }
+
     function resetAndRender() {
         displayCount = PAGE_SIZE;
-        render();
+        if (currentView === "map") {
+            updateMap();
+        } else {
+            renderList();
+        }
     }
+
+    // View toggle
+    viewList.addEventListener("click", function () { switchView("list"); });
+    viewMap.addEventListener("click", function () { switchView("map"); });
 
     searchInput.addEventListener("input", resetAndRender);
     catFilter.addEventListener("change", resetAndRender);
@@ -184,5 +282,12 @@
     sortFilter.addEventListener("change", resetAndRender);
 
     populateFilters();
-    render();
+    renderList();
+
+    // Recalc map size on orientation change
+    window.addEventListener("resize", function () {
+        if (currentView === "map" && map) {
+            map.invalidateSize();
+        }
+    });
 })();

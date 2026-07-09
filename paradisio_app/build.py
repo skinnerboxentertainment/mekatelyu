@@ -320,6 +320,9 @@ def render_index_html(businesses, metrics):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paradisio — Puerto Viejo Business Board</title>
 <link rel="stylesheet" href="static/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
 </head>
 <body>
 <div class="container">
@@ -337,6 +340,10 @@ def render_index_html(businesses, metrics):
 </header>
 <div class="controls">
 <input type="text" id="search" class="search-input" placeholder="Search businesses..." autofocus>
+<div class="view-toggle">
+<button id="view-list" class="view-btn active">List</button>
+<button id="view-map" class="view-btn">Map</button>
+</div>
 <div class="filters">
 <select id="category-filter" class="filter-select">
 <option value="">All Categories</option>
@@ -366,6 +373,7 @@ def render_index_html(businesses, metrics):
 <div class="loading">Loading directory...</div>
 </div>
 <div id="load-more" class="load-more"></div>
+<div id="map-container" class="map-view"></div>
 <footer class="footer">
 <p>A Paradisio project &middot; Data from Puerto Viejo Satellite, OSM, Google Maps, Instagram &middot; <a href="#" id="claim-link">Claim your business</a></p>
 </footer>
@@ -375,6 +383,8 @@ const BUSINESSES = {json.dumps(businesses, ensure_ascii=False)};
 const CATEGORIES = {categories_json};
 const AREAS = {areas_json};
 </script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
 <script src="static/app.js"></script>
 </body>
 </html>"""
