@@ -31,9 +31,10 @@ APP_DIR = PROJECT_ROOT / "docs" / "paradisio_app"
 BUSINESSES_JSON = APP_DIR / "data" / "businesses.json"
 QR_DIR = APP_DIR / "qr"
 
-# In production, set BASE_URL to the deployed GitHub Pages URL.
-# For local use, relative paths work from the app directory.
-BASE_URL = os.environ.get("PARADISIO_BASE_URL", "")
+# Production GitHub Pages URL. QR codes encode absolute URLs so phone scanners work.
+# Override with PARADISIO_BASE_URL env var for custom domains or local testing.
+DEFAULT_BASE_URL = "https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app"
+BASE_URL = os.environ.get("PARADISIO_BASE_URL", DEFAULT_BASE_URL)
 
 QR_SIZE = 300  # pixels at 300 DPI = 1 inch
 FILL_COLOR = "#1a3a2a"
