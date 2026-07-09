@@ -4,6 +4,10 @@
 A verified, multi-source local business directory with Instagram handles, phone numbers, WhatsApp, Booking.com links, Facebook pages, Google Maps CIDs, coordinates, star ratings, amenities, and classifieds.
 
 👉 **[Open Paradisio App](https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/)** — search, filter, map, WhatsApp contact, classifieds board
+
+<p align="center">
+  <img src="docs/paradisio_app/qr/paradisio-app.png" width="160" height="160" alt="QR Code — scan to open Paradisio">
+</p>
 📋 **[Interactive Directory](https://skinnerboxentertainment.github.io/mekatelyu/directory.html)** — classic map + list view
 🗺️ **[Gap Scanner Map](https://skinnerboxentertainment.github.io/mekatelyu/gapmap.html)** — visual grid analysis of coverage
 📊 **[Full Report](https://skinnerboxentertainment.github.io/mekatelyu/report.html)** — aggregate stats, charts, enrichment breakdown
