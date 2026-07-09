@@ -1,0 +1,38 @@
+{
+  "total": 750,
+  "with_whatsapp": 614,
+  "with_instagram": 452,
+  "with_instagram_verified": 223,
+  "with_phone": 611,
+  "with_website": 191,
+  "with_cid": 699,
+  "with_facebook": 361,
+  "with_booking": 171,
+  "with_email": 75,
+  "categories": {
+    "hotel": 169,
+    "vacation_rental": 145,
+    "Uncategorized": 131,
+    "restaurant": 118,
+    "services": 77,
+    "shopping": 52,
+    "tour_company": 31,
+    "hostel": 22,
+    "real_estate": 5
+  },
+  "areas": {
+    "Puerto Viejo": 218,
+    "Unknown": 131,
+    "Cahuita": 94,
+    "Cocles": 94,
+    "Playa Negra": 70,
+    "Playa Chiquita": 55,
+    "Manzanillo": 24,
+    "Punta Uva": 24,
+    "Hone Creek": 20,
+    "Bribri": 7,
+    "Sixaola": 7,
+    "Gandoca": 6
+  },
+  "generated": "2026-07-09 00:43"
+}

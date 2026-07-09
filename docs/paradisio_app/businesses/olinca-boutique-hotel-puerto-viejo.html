@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olinca Boutique Hotel — Puerto Viejo — Paradisio</title>
+<link rel="stylesheet" href="../static/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<meta name="description" content="Olinca Boutique Hotel — hotel in Puerto Viejo, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
+</head>
+<body>
+<div class="container">
+<header class="header biz-header">
+<a href="../index.html" class="back-link">&larr; Back to directory</a>
+<h1>Olinca Boutique Hotel</h1>
+<div class="biz-meta">
+<span class="biz-category">Hotel</span>
+<span class="biz-area">Puerto Viejo</span>
+<span class="biz-status status-active">Active</span>
+</div>
+<div class="badge-row"><span class="badge badge-whatsapp">WhatsApp</span> <span class="badge badge-instagram">Instagram</span> <span class="badge badge-booking">Booking</span> <span class="badge badge-map-verified">Map Verified</span> <span class="badge badge-phone">Phone</span> <span class="badge badge-fully-online">Fully Online</span></div>
+</header>
+<div class="biz-main hide-mobile">
+<a href="https://wa.me/50622295495?text=Hola Olinca Boutique Hotel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener">Message on WhatsApp</a>
+</div>
+<div class="biz-content">
+<div class="biz-links"><a href="tel:+506 2229 5495" class="secondary-link" target="_blank" rel="noopener">Call</a> <a href="https://instagram.com/olincaboutiquehotel" class="secondary-link" target="_blank" rel="noopener">Instagram</a> <a href="https://www.booking.com/hotel/cr/olica-boutique.html?aid=1284953" class="secondary-link" target="_blank" rel="noopener">Booking.com</a> <a href="https://www.google.com/maps?cid=17724938072232701259" class="secondary-link" target="_blank" rel="noopener">Google Maps</a></div>
+<div class="biz-map">
+<div id="map-olinca-boutique-hotel-puerto-viejo" class="map-container"></div>
+<p class="map-note"><a href="https://www.google.com/maps?cid=17724938072232701259" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map-olinca-boutique-hotel-puerto-viejo', { zoomControl: false, attributionControl: false }).setView([9.657426, -82.75013], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([9.657426, -82.75013]).addTo(map);
+});
+</script>
+<div class="biz-qr">
+<div class="qr-preview">
+<img src="../qr/olinca-boutique-hotel-puerto-viejo.png" alt="QR code for Olinca Boutique Hotel" width="120" height="120" loading="lazy">
+<div class="qr-preview-text">
+<strong>QR code ready</strong>
+<p>Print this QR sticker and put it on your door. Every scan opens your page and WhatsApp.</p>
+<a href="../qr/olinca-boutique-hotel-puerto-viejo.png" class="qr-download-link" download>Download QR PNG &rarr;</a>
+</div>
+</div>
+</div>
+<div class="biz-scores">
+<div class="score-bar"><span class="score-label">Contactability</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div><span class="score-num">85</span></div>
+<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div><span class="score-num">85</span></div>
+<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div><span class="score-num">90</span></div>
+</div>
+<div class="biz-desc">
+<p>Boutique hotel and restaurant with 18 suites and villas set around a pool. Suites available in double, triple and quad options, all with A/C and private bath as well as two bedroom villas with kitchen. Breakfast included. 4.6 / 5 rating on Google Maps  8.8 / 10 rating on Booking.com</p>
+</div>
+<div class="biz-claim">
+<p><strong>Is this your business?</strong></p>
+<a href="mailto:paradisio@example.com?subject=Claim%20olinca-boutique-hotel-puerto-viejo&body=I%20own%20Olinca Boutique Hotel%20in%20Puerto Viejo." class="claim-link">Claim or correct this page &rarr;</a>
+</div>
+<footer class="footer">
+<p><a href="../index.html">&larr; Back to directory</a></p>
+</footer>
+</div>
+<div class="sticky-bar">
+<a href="https://wa.me/50622295495?text=Hola Olinca Boutique Hotel, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener">Message on WhatsApp</a>
+<a href="tel:+50622295495" class="secondary-btn">Call</a>
+<a href="https://instagram.com/olincaboutiquehotel" class="secondary-btn">IG</a>
+</div>
+</body>
+</html>

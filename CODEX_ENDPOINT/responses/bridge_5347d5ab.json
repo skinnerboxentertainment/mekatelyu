@@ -1,0 +1,6 @@
+{
+  "status": "error",
+  "error": "Could not acquire lock for session 'e97a4ed7'",
+  "exit_code": 1,
+  "id": "5347d5ab"
+}

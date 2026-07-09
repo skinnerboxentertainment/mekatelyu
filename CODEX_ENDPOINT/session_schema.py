@@ -31,6 +31,7 @@ class EntryType(str, Enum):
     RESULT = "result"
     REVIEW = "review"
     REQUEST = "request"
+    RESPONSE = "response"
 
 
 STATUS_FROM_STATE = {
