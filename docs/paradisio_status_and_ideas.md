@@ -26,24 +26,27 @@
 | Classifieds board | Done | 15 seed listings, 8 categories, search, detail pages |
 | Multi-language | Done | EN/ES/DE with client-side switcher, locale JSON files |
 | GitHub Discussions | Done | Forum + issue templates (bugs, ideas, classifieds) |
-| OSM cross-ref (v2) | Done | 418 candidates found, 155 truly new |
+| OSM cross-ref (v2) | Done | 418 candidates found |
+| OSM CID resolution (authenticated) | Done | 418 searched, 407 CIDs found, 244 phones, 168 websites |
 | GoatCounter analytics | Live | Pageview tracking on all pages |
 | GitHub Pages | Live | https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/ |
 
 ## Coverage (from the data)
 
-| Channel | Count | % of 750 |
-|---------|------:|:--------:|
-| Google Maps CID | 699 | 93% |
-| WhatsApp | 614 | 82% |
-| Phone | 611 | 81% |
-| Instagram | 452 | 60% |
-| Instagram (verified) | 223 | 30% |
-| Facebook | 361 | 48% |
-| Website | 191 | 25% |
-| Booking.com | 171 | 23% |
-| Email | 75 | 10% |
-| Coordinates | 606 | 81% |
+*750 master records + 418 OSM candidates pending merge*
+
+| Channel | Current (750) | After OSM merge |
+|---------|:-------------:|:---------------:|
+| Google Maps CID | 699 | ~1,100 |
+| WhatsApp | 614 | — |
+| Phone | 611 | ~855 |
+| Instagram | 452 | — |
+| Instagram (verified) | 223 | — |
+| Facebook | 361 | — |
+| Website | 191 | ~359 |
+| Booking.com | 171 | — |
+| Email | 75 | — |
+| Coordinates | 606 | — |
 | **Rating (Maps enrich)** | **640** | **85%** |
 | **Amenities (Maps enrich)** | **215** | **29%** |
 | **Check-in/out (Maps enrich)** | **203** | **27%** |
@@ -53,7 +56,7 @@
 
 | # | Idea | What's needed |
 |---|------|--------------|
-| 1 | v2 CID re-scan (699 CIDs + 155 OSM) | Full text capture + category-aware parsing |
+| 1 | Merge OSM candidates + deep enrichment | ~200-250 validated new businesses to merge into master, then run maps_enrich.py for ratings/addresses/hours, rebuild app |
 | 2 | Classifieds posting flow | Web3Forms + WhatsApp-first submission form |
 | 3 | Premium listings ($100/$200) | Payments (SINPE), analytics, featured placement logic |
 | 4 | QR affiliate network | Affiliate tracking, commission payouts, sales materials |
