@@ -180,55 +180,237 @@ def extract_check_in_out(lines):
     return result if (result["check_in"] or result["check_out"]) else None
 
 
+AMENITY_BLACKLIST = {
+    "bares", "restaurantes", "restaurant", "cosas que hacer",
+    "farmacias", "estacionamientos", "cafes",
+    "terrazas del caribe hotel", "lotus garden",
+    "koki beach restaurant & bar", "casa ambar",
+    "chill and cheese snackbar", "the goddess garden eco resort",
+    "beach break bar & restaurant",
+}
+
+
+AMENITY_KEYWORDS = [
+    "wifi", "wi-fi", "estacionamiento gratuito", "free parking",
+    "parking", "piscina", "pool", "aire acondicionado", "air conditioning",
+    "desayuno incluido", "desayuno", "breakfast",
+    "gimnasio", "gym", "spa",
+    "mascotas", "pet friendly", "pets allowed", "se permiten mascotas",
+    "accesible", "wheelchair", "silla de ruedas",
+    "lavanderia", "laundry",
+    "cocina", "kitchen", "refrigerador", "fridge",
+    "servicio en la habitacion", "room service",
+    "transporte desde/hacia el aeropuerto", "airport shuttle",
+    "piscina al aire libre", "outdoor pool",
+    "restaurante en el hotel", "restaurant on site",
+    "bar", "centro de negocios", "business center",
+    "libre de humo", "non-smoking",
+    "terraza", "patio", "jardin", "garden",
+    "vista al mar", "ocean view", "frente a la playa", "beachfront",
+    "hamacas", "hammock",
+    "caja de seguridad", "safe",
+    "agua caliente", "hot water",
+    "ventilador", "fan",
+    "cunas", "cribs",
+    "estacionamiento gratuito", "free parking",
+    "wifi gratis", "free wifi",
+]
+
+
+AMENITY_NOISE_PATTERNS = [
+    r"\d+\s*habitaciones?", r"\d+\s*bedroom", r"\d\s*br\b",
+    r"beachfront", r"garden view", r"ocean view", r"\bview\b",
+    r"deluxe", r"\bsuite\b", r"\bapartment\b",
+    r"\dpax", r"\d\s*guest", r"\bhouse\b", r"\bvilla\b",
+    r"\u00b7",  # middle dot separator
+    r"-\s*\d+\s*(pax|bed|bedroom|guest|person)",
+    r"\d\s*-\s*bedroom",
+]
+
+
 def extract_amenities(lines):
-    amenity_kws = [
-        "wifi", "wi-fi", "estacionamiento", "parking", "piscina", "pool",
-        "aire acondicionado", "air conditioning", "ac",
-        "restaurante", "restaurant", "desayuno", "breakfast",
-        "gimnasio", "gym", "transporte", "transport",
-        "mascotas", "pets", "pet friendly",
-        "accesible", "wheelchair", "spa", "lavanderia", "laundry",
-        "servicio en la habitacion", "room service",
-        "cocina", "kitchen", "fridge", "refrigerador",
-    ]
     found = []
     seen = set()
     for line in lines:
         ls = line.lower().strip()
-        for kw in amenity_kws:
-            if kw in ls and ls not in seen and len(ls) < 60:
+        if not ls or ls in UI_NOISE or ls in AMENITY_BLACKLIST:
+            continue
+        if len(ls) > 45:
+            continue
+        if any(re.search(p, ls) for p in AMENITY_NOISE_PATTERNS):
+            continue
+        # Skip business names (capitalized multi-word sequences that aren't amenity-focused)
+        if re.match(r"^[A-Z][a-z]+(?: [A-Z][a-z]+){2,5}$", line.strip()):
+            # Only skip if it doesn't start with a known amenity prefix
+            if not any(ls.startswith(kw) for kw in ("wi-fi", "wifi", "incluye", "desayuno", "estacionamiento", "piscina", "aire acondicionado", "accesible", "se permiten", "transporte", "spa")):
+                continue
+        for kw in AMENITY_KEYWORDS:
+            if kw in ls and ls not in seen:
                 seen.add(ls)
                 found.append(line.strip())
                 break
-    return {"value": found[:10], "count": len(found), "confidence": 0.7} if found else None
+    return {"value": found[:12], "count": len(found), "confidence": 0.7} if found else None
+
+
+UI_NOISE = {
+    "hoteles cercanos", "restaurantes cercanos", "cosas que hacer",
+    "acerca de", "indicaciones", "guardado", "recientes", "compartir",
+    "cerca", "fotos y videos", "opiniones", "agregar la informacion que falta",
+    "sugerir una edicion", "actualizaciones de los visitantes",
+    "menu y platos destacados", "alquileres de vacaciones cerca de mi",
+    "ver mas propiedades", "resultados web", "street view",
+    "aprovecha al maximo google maps", "acceder", "capas",
+    "detalles del mapa", "herramientas del mapa", "tipo de mapa",
+    "predeterminado", "satelite", "etiquetas", "incendios",
+    "calidad del aire", "duracion del viaje", "medicion",
+    "hoteles similares cercanos", "tambien te puede interesar",
+    "farmacias", "bares", "cafes", "estaciones de transporte publico",
+    "cajeros automaticos", "transporte publico",
+}
 
 
 def extract_subcategory(lines, category):
     kws = CATEGORY_SUBCATEGORIES.get(category, [])
+    # Score each candidate line: prefer exact matches, penalize length
+    scored = []
     for line in lines:
         ls = line.lower().strip()
+        if not ls or ls in UI_NOISE:
+            continue
+        if len(ls) > 35:
+            continue
+        # Skip if line is clearly a business name (multiple capitalized words + type suffix)
+        if re.match(r"^[A-Z][a-z]+ [A-Z][a-z]+ (Lodge|Hotel|Hostel|Inn|Resort|Retreat|Casitas|Cabinas|Villas|Bungalows|Apartments|House|Place|Restaurant|Bar|Cafe|Tours)$", line.strip()):
+            continue
+        best_score = 0
         for kw in kws:
-            if kw in ls and len(ls) < 40:
-                return {"value": line.strip(), "confidence": 0.6, "evidence": line.strip()}
-    return None
+            if ls == kw:
+                best_score = 10  # exact match
+            elif ls.startswith(kw) or ls.endswith(kw):
+                best_score = 8
+            elif kw in ls:
+                best_score = 5
+        if best_score >= 5:
+            scored.append((line.strip(), best_score, len(ls)))
+    if not scored:
+        return None
+    # Pick highest score, then shortest line
+    scored.sort(key=lambda x: (-x[1], x[2]))
+    best = scored[0][0]
+    return {"value": best, "confidence": 0.6, "evidence": best}
 
 
-def extract_cuisine(lines):
-    cuisines = [
-        "italian", "italiano", "mexican", "mexicano", "japanese", "japones",
-        "chinese", "chino", "thai", "indian", "indio", "french", "frances",
-        "mediterranean", "mediterraneo", "seafood", "mariscos", "sushi",
-        "pizza", "burger", "hamburguesa", "vegan", "vegano", "vegetarian",
-        "vegetariano", "organic", "organico", "grill", "parrilla",
-        "caribbean", "caribeno", "casual", "fusion", "tradicional",
-        "costarican", "costarricense", "tipico", "local",
-    ]
+CUISINE_KEYWORDS = [
+    "italian", "italiano", "mexican", "mexicano", "japanese", "japones",
+    "chinese", "chino", "thai", "indian", "indio", "french", "frances",
+    "mediterranean", "mediterraneo", "seafood", "mariscos", "sushi",
+    "pizza", "burger", "hamburguesa", "vegan", "vegano", "vegetarian",
+    "vegetariano", "organic", "organico", "grill", "parrilla",
+    "caribbean", "caribeno", "fusion", "tradicional",
+    "costarican", "costarricense", "tipico", "local food",
+    "ice cream", "helado", "heladeria", "bakery", "panaderia",
+    "cocktail", "coctel", "brewery", "cerveza", "coffee", "cafe",
+    "brunch", "lunch", "dinner", "cena",
+    "steak", "asado", "pasta", "taco", "ceviche", "empanada",
+    "chocolate", "crepe", "gourmet", "bufet", "buffet",
+]
+
+CUISINE_NOISE_PATTERNS = [
+    r"local guide", r"\d+\s*habitaciones?", r"\d+\s*bedroom",
+    r"\d+\s*bañ", r"\d+\s*bath", r"\.\.\.", r"\u00b7", r"opinion",
+    r"fotos", r"hace \d+", r"alojamiento para",
+    r"\d\s*-\s*bedroom", r"\d\s*bdr", r"\d\s*br\b",
+    r"beachfront", r"garden view", r"ocean view", r"pool view",
+    r"jungle view", r"deluxe", r"standard", r"superior",
+    r"\broom\b", r"\bsuite\b", r"\bapartment\b", r"\bhouse\b",
+    r"\bvilla\b", r"\bbungalow\b", r"\bcabin\b", r"\bcasita\b",
+    r"-\s*one\b", r"-\s*two\b", r"-\s*three\b",
+    r"\dpax", r"\d\s*guest",
+]
+
+CUISINE_MAX_LEN = 35
+
+
+CUISINE_BLACKLIST = {
+    "caribbean surf school & shop",
+    "caribbeans beach cahuita",
+    "caribbean costa rica real estate",
+    "tienda caribbean moon",
+    "caribbean life",
+    "caribbean tours puerto viejo",
+    "the caribbean is waiting for you.",
+    "caribbeanbluemorpho.com",
+    "manzanillo caribbean resort",
+    "caribbean flow",
+    "caribbean blue morpho",
+    "caribbean comfort",
+    "caribbean courtyard villa",
+}
+
+
+KNOWN_BIZ_NAMES = None
+
+
+def load_biz_names():
+    global KNOWN_BIZ_NAMES
+    if KNOWN_BIZ_NAMES is not None:
+        return KNOWN_BIZ_NAMES
+    import csv
+    names = set()
+    with open(BASE / "pv_master_unified.csv", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            n = row.get("business_name", "").strip().lower()
+            if n:
+                names.add(n)
+    KNOWN_BIZ_NAMES = names
+    return names
+
+
+def extract_cuisine(lines, business_name=""):
+    biz_lower = business_name.lower().strip() if business_name else ""
+    biz_words = set(biz_lower.split()) if biz_lower else set()
+    known_names = load_biz_names()
+
+    scored = []
     for line in lines:
         ls = line.lower().strip()
-        for c in cuisines:
-            if c in ls and len(ls) < 40:
-                return {"value": line.strip(), "confidence": 0.5, "evidence": line.strip()}
-    return None
+        if len(ls) > CUISINE_MAX_LEN or not ls:
+            continue
+        # Skip noise patterns
+        if any(re.search(p, ls) for p in CUISINE_NOISE_PATTERNS):
+            continue
+        # Skip known business names
+        if ls in known_names:
+            continue
+        is_known_biz = False
+        for kn in known_names:
+            if len(kn) > 15 and kn in ls:
+                is_known_biz = True
+                break
+        if is_known_biz:
+            continue
+        # Check if line looks like a nearby listing
+        if re.search(r"\d+\s*(habitaci.n|bedroom|ba.o|bañ|bath|persona|guest)", ls):
+            continue
+        # Skip known false-positive cuisine lines
+        if ls in CUISINE_BLACKLIST:
+            continue
+        # Check if line looks like a named business/place (capitalized multi-word)
+        if re.match(r"^[A-Z][a-z]+(?: [A-Z][a-z]+){1,5}$", line.strip()):
+            continue
+        for kw in CUISINE_KEYWORDS:
+            if kw in ls:
+                # Priority: short lines with exact-ish matches are better than long partial matches
+                kw_ratio = len(kw) / max(len(ls), 1)
+                confidence = 0.6 if kw_ratio > 0.4 else 0.5
+                if kw_ratio > 0.3:
+                    scored.append((line.strip(), confidence, kw_ratio))
+                break
+    if not scored:
+        return None
+    scored.sort(key=lambda x: (-x[2], -x[1]))
+    best = scored[0]
+    return {"value": best[0], "confidence": best[1], "evidence": best[0]}
 
 
 def process_record(record, category):
@@ -268,7 +450,7 @@ def process_record(record, category):
         parsed["fields"]["amenities"] = r
     if r := extract_subcategory(lines, category):
         parsed["fields"]["subcategory"] = r
-    if r := extract_cuisine(lines):
+    if r := extract_cuisine(lines, name):
         parsed["fields"]["cuisine"] = r
 
     # Check-in/out (lodging-specific)
