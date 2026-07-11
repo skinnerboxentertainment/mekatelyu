@@ -42,6 +42,9 @@ def load_classifieds():
 
 NAV_PAGES = {"directory": "Directory", "classifieds": "Classifieds", "post": "Post Ad"}
 
+# Configure your email here for the claim form
+CLAIM_EMAIL = "paradisio@example.com"  # TODO: replace with your actual email
+
 
 def nav_html(current, depth=0):
     prefix = "../" if depth > 0 else ""
@@ -477,7 +480,7 @@ def render_index_html(businesses, metrics):
 <div id="load-more" class="load-more"></div>
 <div id="map-container" class="map-view"></div>
 <footer class="footer">
-<p>A Paradisio project &middot; Data from Puerto Viejo Satellite, OSM, Google Maps, Instagram &middot; <a href="#" id="claim-link">Claim your business</a></p>
+<p>A Paradisio project &middot; Data from Puerto Viejo Satellite, OSM, Google Maps, Instagram &middot; <a href="claim.html">Claim your business</a> &middot; <a href="classifieds/index.html">Classifieds</a></p>
 </footer>
 </div>
 <script>
@@ -577,6 +580,89 @@ def biz_freshness(biz):
     if not vd:
         return ""
     return f'<div class="biz-freshness">Data captured {vd[:10]}</div>'
+
+
+def render_claim_page():
+    nav = nav_html("directory", depth=0)
+    email = CLAIM_EMAIL
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claim Your Business — Paradisio</title>
+<link rel="stylesheet" href="static/tokens.css">
+<link rel="stylesheet" href="static/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
+</head>
+<body>
+{nav}
+<div class="container claim-page">
+<h1>Claim or Correct Your Business Listing</h1>
+<p>Is your business listed on Paradisio? Fill out this form to claim ownership, update your hours, contact info, photos, or description. We review every submission.</p>
+
+<form action="https://formsubmit.co/{email}" method="POST" class="claim-form">
+  <input type="hidden" name="_subject" value="Paradisio claim/correction">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="true">
+
+  <fieldset>
+    <legend>Your Business</legend>
+    <label>Business name *<br><input type="text" name="business_name" required placeholder="e.g. Amimodo Beach Rooms"></label>
+    <label>Business area<br><input type="text" name="business_area" placeholder="e.g. Puerto Viejo, Playa Cocles"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Contact</legend>
+    <label>Your name *<br><input type="text" name="claimant_name" required placeholder="Full name"></label>
+    <label>Your email *<br><input type="email" name="claimant_email" required placeholder="you@example.com"></label>
+    <label>Your phone<br><input type="tel" name="claimant_phone" placeholder="+506 8888 8888"></label>
+    <label>Relationship to business<br>
+      <select name="relationship">
+        <option value="owner">Owner</option>
+        <option value="manager">Manager</option>
+        <option value="employee">Employee</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Corrections or Updates</legend>
+    <p>Only fill in the fields you want to change:</p>
+    <label>Phone<br><input type="tel" name="phone" placeholder="+506 2750 0000"></label>
+    <label>WhatsApp<br><input type="tel" name="whatsapp" placeholder="+506 8888 8888"></label>
+    <label>Website<br><input type="url" name="website" placeholder="https://example.com"></label>
+    <label>Instagram<br><input type="text" name="instagram" placeholder="@yourhandle or https://instagram.com/..."></label>
+    <label>Facebook<br><input type="url" name="facebook" placeholder="https://facebook.com/..."></label>
+    <label>Opening hours<br><textarea name="hours" rows="2" placeholder="Mon-Fri 9am-5pm, Sat 10am-2pm"></textarea></label>
+    <label>Description<br><textarea name="description" rows="3" placeholder="Short description of your business"></textarea></label>
+    <label>Category<br>
+      <select name="category">
+        <option value="">— No change —</option>
+        <option>Hotel</option>
+        <option>Hostel</option>
+        <option>Restaurant</option>
+        <option>Tour Company</option>
+        <option>Services</option>
+        <option>Shopping</option>
+        <option>Vacation Rental</option>
+      </select>
+    </label>
+    <label>Additional notes<br><textarea name="notes" rows="3" placeholder="Anything else we should know?"></textarea></label>
+  </fieldset>
+
+  <button type="submit" class="primary-cta">Submit for Review</button>
+  <p class="form-note">We'll review your submission and update the listing within 1-3 days.</p>
+</form>
+</div>
+<footer class="footer">
+<p><a href="index.html">&larr; Back to directory</a></p>
+</footer>
+</body>
+</html>"""
 
 
 def render_business_html(biz):
@@ -692,7 +778,7 @@ const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
 </div>
 <div class="biz-claim">
 <p><strong>Is this your business?</strong></p>
-<a href="mailto:paradisio@example.com?subject=Claim%20{biz['slug']}&body=I%20own%20{biz['name']}%20in%20{biz['area']}." class="claim-link">Claim or correct this page &rarr;</a>
+<a href="../claim.html?biz={biz['slug']}" class="claim-link">Claim or correct this page &rarr;</a>
 </div>
 <footer class="footer">
 <p><a href="../index.html">&larr; Back to directory</a></p>
@@ -917,6 +1003,11 @@ def main():
     with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(index_html)
     print(f"  index.html — entry point")
+
+    claim_html = render_claim_page()
+    with open(OUTPUT_DIR / "claim.html", "w", encoding="utf-8") as f:
+        f.write(claim_html)
+    print(f"  claim.html — business claim/correction form")
 
     # Classifieds
     classifieds = load_classifieds()
