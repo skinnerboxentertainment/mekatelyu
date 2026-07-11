@@ -986,13 +986,14 @@ def main():
     for b in businesses:
         cat = b["category"] or "Uncategorized"
         ar = b["area"] or "Unknown"
-        # Check subcategory enrichment to split services
+        # Check subcategory enrichment to split services into wellness/nightlife/transport
         if cat.lower() == "services":
             cid = b["channels"].get("google_maps_cid", "")
             subcat = enrich_lookup.get(cid, "")
             for kw, group in SUBCAT_TO_GROUP.items():
                 if kw in subcat:
                     cat = group.title()
+                    b["category"] = cat  # Update business category so filters work
                     break
         categories[cat] = categories.get(cat, 0) + 1
         areas[ar] = areas.get(ar, 0) + 1
