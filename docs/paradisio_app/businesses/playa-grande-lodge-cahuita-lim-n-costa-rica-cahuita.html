@@ -45,7 +45,17 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-content">
 <div class="biz-links"><a href="tel:+506 2755 0250" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Call">Call</a> <a href="https://www.facebook.com/Playa-Grande-Lodge-223636637680516/" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Facebook">Facebook</a> <a href="https://www.google.com/maps?cid=8354222119223173690" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Google Maps">Google Maps</a></div>
-
+<div class="biz-map">
+<div id="map-playa-grande-lodge-cahuita-lim-n-costa-rica-cahuita" class="map-container"></div>
+<p class="map-note"><a href="https://www.google.com/maps?cid=8354222119223173690" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map-playa-grande-lodge-cahuita-lim-n-costa-rica-cahuita', { zoomControl: false, attributionControl: false }).setView([9.750639, -82.861683], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([9.750639, -82.861683]).addTo(map);
+});
+</script>
 <div class="biz-qr">
 <div class="qr-preview">
 <img src="../qr/playa-grande-lodge-cahuita-lim-n-costa-rica-cahuita.png" alt="QR code for Playa Grande Lodge" width="120" height="120" loading="lazy">
@@ -58,8 +68,8 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-scores">
 <div class="score-bar"><span class="score-label">Contactability</span><div class="bar"><div class="bar-fill" style="width:75%"></div></div><span class="score-num">75</span></div>
-<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:35%"></div></div><span class="score-num">35</span></div>
-<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:75%"></div></div><span class="score-num">75</span></div>
+<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:60%"></div></div><span class="score-num">60</span></div>
+<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div><span class="score-num">90</span></div>
 </div>
 <div class="biz-desc">
 <p>Playa Grande Lodge - Cahuita, Limón, Costa Rica provides kenaki lodge accommodations in Cahuita.</p>
@@ -74,7 +84,7 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="sticky-bar">
 <a href="https://wa.me/50627550250?text=Hola Playa Grande Lodge - Cahuita, Limón, Costa Rica, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">Message on WhatsApp</a>
-
+<a href="tel:+50627550250" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>
 
 </div>
 </body>

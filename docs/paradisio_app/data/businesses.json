@@ -11,7 +11,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0126",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550126",
       "whatsapp": "+50627550126",
       "instagram": "3_bamboo",
       "instagram_verified": false,
@@ -164,18 +164,18 @@
   },
   {
     "id": "479715b8a2d3",
-    "slug": "abba-home",
+    "slug": "abba-home-puerto-viejo",
     "name": "Abba Home",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.661169",
     "lng": "-82.7844491",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "83601553",
-      "phone_normalized": "",
-      "whatsapp": "83601553",
+      "phone_normalized": "+83601553",
+      "whatsapp": "+83601553",
       "instagram": "abbahome_puertoviejo",
       "instagram_verified": true,
       "facebook_url": "",
@@ -211,7 +211,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 75,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -407,7 +407,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6094 3361",
-      "phone_normalized": "",
+      "phone_normalized": "+50660943361",
       "whatsapp": "+50660943361",
       "instagram": "",
       "instagram_verified": false,
@@ -568,18 +568,18 @@
   },
   {
     "id": "053630ec77a3",
-    "slug": "alma-masajes",
+    "slug": "alma-masajes-playa-negra",
     "name": "ALMA Masajes",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6515636",
     "lng": "-82.754872",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "61591721",
-      "phone_normalized": "",
-      "whatsapp": "61591721",
+      "phone_normalized": "+61591721",
+      "whatsapp": "+61591721",
       "instagram": "alma.masajes.spa",
       "instagram_verified": true,
       "facebook_url": "",
@@ -615,7 +615,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 70,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -734,7 +734,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 4040 0005",
-      "phone_normalized": "",
+      "phone_normalized": "+50640400005",
       "whatsapp": "+50640400005",
       "instagram": "",
       "instagram_verified": false,
@@ -935,18 +935,18 @@
   },
   {
     "id": "e29ef6c5ecd6",
-    "slug": "alojamiento-kon-tiky",
+    "slug": "alojamiento-kon-tiky-playa-negra",
     "name": "Alojamiento kon-tiky",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6486768",
     "lng": "-82.7617116",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "83585999",
-      "phone_normalized": "",
-      "whatsapp": "83585999",
+      "phone_normalized": "+83585999",
+      "whatsapp": "+83585999",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -974,7 +974,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -1397,10 +1397,10 @@
   },
   {
     "id": "7f7fcb3bf9fb",
-    "slug": "apetito-express",
+    "slug": "apetito-express-playa-negra",
     "name": "Apetito Express",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6489408",
     "lng": "-82.7911629",
     "distance_km": "4.185",
@@ -1436,7 +1436,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -1465,10 +1465,10 @@
   },
   {
     "id": "dbba3e5e03bd",
-    "slug": "api-rescate",
+    "slug": "api-rescate-cocles",
     "name": "Api-Rescate",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.63182",
     "lng": "-82.7330943",
     "distance_km": "",
@@ -1500,7 +1500,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -1537,7 +1537,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8971-1436",
-      "phone_normalized": "",
+      "phone_normalized": "+50689711436",
       "whatsapp": "+50689711436",
       "instagram": "",
       "instagram_verified": false,
@@ -1610,18 +1610,18 @@
   },
   {
     "id": "057afad038a8",
-    "slug": "ariel-apartment-s",
+    "slug": "ariel-apartment-s-playa-negra",
     "name": "Ariel Apartment's",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.64799",
     "lng": "-82.7410782",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88002233",
-      "phone_normalized": "",
-      "whatsapp": "88002233",
+      "phone_normalized": "+88002233",
+      "whatsapp": "+88002233",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -1653,7 +1653,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -1785,7 +1785,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8808 6445",
-      "phone_normalized": "",
+      "phone_normalized": "+50688086445",
       "whatsapp": "+50688086445",
       "instagram": "aroma_cahuita",
       "instagram_verified": false,
@@ -1853,10 +1853,10 @@
   },
   {
     "id": "9b87471740eb",
-    "slug": "arrecife-el-chino",
+    "slug": "arrecife-el-chino-puerto-viejo",
     "name": "Arrecife El Chino",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6582325",
     "lng": "-82.7560996",
     "distance_km": "",
@@ -1888,7 +1888,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -2010,7 +2010,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8360 3018",
-      "phone_normalized": "",
+      "phone_normalized": "+50683603018",
       "whatsapp": "+50683603018",
       "instagram": "asante_cahuita",
       "instagram_verified": false,
@@ -2171,7 +2171,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755-0115",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550115",
       "whatsapp": "+50627550115",
       "instagram": "",
       "instagram_verified": false,
@@ -2663,7 +2663,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6057 0613",
-      "phone_normalized": "",
+      "phone_normalized": "+50660570613",
       "whatsapp": "+50660570613",
       "instagram": "babilonia",
       "instagram_verified": false,
@@ -3060,7 +3060,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2211 1111",
-      "phone_normalized": "",
+      "phone_normalized": "+50622111111",
       "whatsapp": "+50622111111",
       "instagram": "",
       "instagram_verified": false,
@@ -3546,7 +3546,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -3557,7 +3557,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Beach Hut provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -3576,10 +3576,10 @@
   },
   {
     "id": "adb23422109d",
-    "slug": "beach-trail",
+    "slug": "beach-trail-playa-negra",
     "name": "Beach Trail",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6490852",
     "lng": "-82.7346274",
     "distance_km": "",
@@ -3611,7 +3611,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -3638,18 +3638,18 @@
   },
   {
     "id": "b5dbc5873899",
-    "slug": "beauty-ritual-spa",
+    "slug": "beauty-ritual-spa-cocles",
     "name": "Beauty Ritual Spa",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6376573",
     "lng": "-82.7266873",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "83148943",
-      "phone_normalized": "",
-      "whatsapp": "83148943",
+      "phone_normalized": "+83148943",
+      "whatsapp": "+83148943",
       "instagram": "beautyritualspa",
       "instagram_verified": false,
       "facebook_url": "",
@@ -3685,7 +3685,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -3731,7 +3731,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8820 2410",
-      "phone_normalized": "",
+      "phone_normalized": "+50688202410",
       "whatsapp": "+50688202410",
       "instagram": "",
       "instagram_verified": false,
@@ -3795,18 +3795,18 @@
   },
   {
     "id": "c727a2e98da6",
-    "slug": "beraca",
+    "slug": "beraca-puerto-viejo",
     "name": "BERACA",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6564099",
     "lng": "-82.7538572",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27500258",
-      "phone_normalized": "",
-      "whatsapp": "27500258",
+      "phone_normalized": "+27500258",
+      "whatsapp": "+27500258",
       "instagram": "beraca",
       "instagram_verified": false,
       "facebook_url": "",
@@ -3838,7 +3838,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -4256,18 +4256,18 @@
   },
   {
     "id": "c9ba1784cecd",
-    "slug": "blessed-hands-massage-therapy",
+    "slug": "blessed-hands-massage-therapy-playa-negra",
     "name": "Blessed Hands Massage Therapy",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6490337",
     "lng": "-82.7381856",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "83226610",
-      "phone_normalized": "",
-      "whatsapp": "83226610",
+      "phone_normalized": "+83226610",
+      "whatsapp": "+83226610",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -4295,7 +4295,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -4569,18 +4569,18 @@
   },
   {
     "id": "1c3124b7886f",
-    "slug": "blue-dreams-hotel",
+    "slug": "blue-dreams-hotel-playa-negra",
     "name": "Blue Dreams Hotel",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.64408",
     "lng": "-82.727964",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27500501",
-      "phone_normalized": "",
-      "whatsapp": "27500501",
+      "phone_normalized": "+27500501",
+      "whatsapp": "+27500501",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/lecameleonhotel",
@@ -4616,7 +4616,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 30,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -4784,7 +4784,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8403 8662",
-      "phone_normalized": "",
+      "phone_normalized": "+50684038662",
       "whatsapp": "+50684038662",
       "instagram": "",
       "instagram_verified": false,
@@ -4852,7 +4852,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2751 0347",
-      "phone_normalized": "",
+      "phone_normalized": "+50627510347",
       "whatsapp": "+50627510347",
       "instagram": "bomberos_costa_rica",
       "instagram_verified": false,
@@ -5074,7 +5074,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0053",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550053",
       "whatsapp": "+50627550053",
       "instagram": "",
       "instagram_verified": false,
@@ -5135,10 +5135,10 @@
   },
   {
     "id": "3e9314e7337b",
-    "slug": "buddy-s-sloth-crossing",
+    "slug": "buddy-s-sloth-crossing-puerto-viejo",
     "name": "Buddy's Sloth Crossing",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6629375",
     "lng": "-82.7894375",
     "distance_km": "",
@@ -5174,7 +5174,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -5201,18 +5201,18 @@
   },
   {
     "id": "98e498425915",
-    "slug": "bugambilia-inn",
+    "slug": "bugambilia-inn-playa-negra",
     "name": "Bugambilia Inn",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6490458",
     "lng": "-82.7513695",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "84276818",
-      "phone_normalized": "",
-      "whatsapp": "84276818",
+      "phone_normalized": "+84276818",
+      "whatsapp": "+84276818",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -5240,7 +5240,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -5283,7 +5283,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0114",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550114",
       "whatsapp": "+50627550114",
       "instagram": "bungalowmalu",
       "instagram_verified": false,
@@ -5369,7 +5369,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0119",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550119",
       "whatsapp": "+50627550119",
       "instagram": "",
       "instagram_verified": false,
@@ -5618,7 +5618,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7004 0405",
-      "phone_normalized": "",
+      "phone_normalized": "+50670040405",
       "whatsapp": "+50670040405",
       "instagram": "bungalowslothcr",
       "instagram_verified": false,
@@ -5773,18 +5773,18 @@
   },
   {
     "id": "c09f9d6a98ff",
-    "slug": "caba-as-kiamimi",
+    "slug": "caba-as-kiamimi-puerto-viejo",
     "name": "Cabañas KiaMiMi",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6603717",
     "lng": "-82.7840054",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86092424",
-      "phone_normalized": "",
-      "whatsapp": "86092424",
+      "phone_normalized": "+86092424",
+      "whatsapp": "+86092424",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -5812,7 +5812,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -5843,18 +5843,18 @@
   },
   {
     "id": "e6d8bee6698b",
-    "slug": "cabina-trepazul",
+    "slug": "cabina-trepazul-playa-negra",
     "name": "Cabina trepazul",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6473033",
     "lng": "-82.7494328",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "64110306",
-      "phone_normalized": "",
-      "whatsapp": "64110306",
+      "phone_normalized": "+64110306",
+      "whatsapp": "+64110306",
       "instagram": "trepazul",
       "instagram_verified": false,
       "facebook_url": "",
@@ -5886,7 +5886,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -5926,7 +5926,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0057",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550057",
       "whatsapp": "+50627550057",
       "instagram": "algebra",
       "instagram_verified": false,
@@ -5993,7 +5993,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8375 0837",
-      "phone_normalized": "",
+      "phone_normalized": "+50683750837",
       "whatsapp": "+50683750837",
       "instagram": "",
       "instagram_verified": false,
@@ -6065,18 +6065,18 @@
   },
   {
     "id": "f6750662a3c3",
-    "slug": "cabinas-bambu",
+    "slug": "cabinas-bambu-playa-negra",
     "name": "Cabinas Bambu",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6518542",
     "lng": "-82.7625121",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88322639",
-      "phone_normalized": "",
-      "whatsapp": "88322639",
+      "phone_normalized": "+88322639",
+      "whatsapp": "+88322639",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -6108,7 +6108,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6151,8 +6151,8 @@
     "status": "active",
     "channels": {
       "phone": "27500425",
-      "phone_normalized": "",
-      "whatsapp": "27500425",
+      "phone_normalized": "+27500425",
+      "whatsapp": "+27500425",
       "instagram": "cabinascabletalamancacr",
       "instagram_verified": false,
       "facebook_url": "",
@@ -6232,7 +6232,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0131",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550131",
       "whatsapp": "+50627550131",
       "instagram": "",
       "instagram_verified": false,
@@ -6311,7 +6311,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8622 3931",
-      "phone_normalized": "",
+      "phone_normalized": "+50686223931",
       "whatsapp": "+50686223931",
       "instagram": "",
       "instagram_verified": false,
@@ -6374,7 +6374,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8996 2637",
-      "phone_normalized": "",
+      "phone_normalized": "+50689962637",
       "whatsapp": "+50689962637",
       "instagram": "cabinaselmango",
       "instagram_verified": false,
@@ -6459,7 +6459,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2754 1060",
-      "phone_normalized": "",
+      "phone_normalized": "+50627541060",
       "whatsapp": "+50627541060",
       "instagram": "cabinaselrinconcito",
       "instagram_verified": false,
@@ -6615,7 +6615,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0005",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550005",
       "whatsapp": "+50627550005",
       "instagram": "",
       "instagram_verified": false,
@@ -6778,7 +6778,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755-0256",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550256",
       "whatsapp": "+50627550256",
       "instagram": "cabinas_jenny",
       "instagram_verified": false,
@@ -6844,18 +6844,18 @@
   },
   {
     "id": "0d3b08923c61",
-    "slug": "cabinas-kiamimi",
+    "slug": "cabinas-kiamimi-puerto-viejo",
     "name": "Cabinas KiAMiMi",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6603717",
     "lng": "-82.7840054",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86092424",
-      "phone_normalized": "",
-      "whatsapp": "86092424",
+      "phone_normalized": "+86092424",
+      "whatsapp": "+86092424",
       "instagram": "cabinaskiamimi",
       "instagram_verified": false,
       "facebook_url": "",
@@ -6887,7 +6887,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 25,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6915,18 +6915,18 @@
   },
   {
     "id": "b969dfdfaa20",
-    "slug": "cabinas-kimimi",
+    "slug": "cabinas-kimimi-puerto-viejo",
     "name": "Cabinas KiMiMi",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6603717",
     "lng": "-82.7840054",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86092424",
-      "phone_normalized": "",
-      "whatsapp": "86092424",
+      "phone_normalized": "+86092424",
+      "whatsapp": "+86092424",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -6954,7 +6954,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -7060,18 +7060,18 @@
   },
   {
     "id": "e97c70cac539",
-    "slug": "cabinas-klamimi",
+    "slug": "cabinas-klamimi-puerto-viejo",
     "name": "Cabinas KlaMiMi",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6603717",
     "lng": "-82.7840054",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86092424",
-      "phone_normalized": "",
-      "whatsapp": "86092424",
+      "phone_normalized": "+86092424",
+      "whatsapp": "+86092424",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -7099,7 +7099,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -7636,7 +7636,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0110",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550110",
       "whatsapp": "+50627550110",
       "instagram": "",
       "instagram_verified": false,
@@ -7829,7 +7829,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -7840,7 +7840,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Orange Green provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -7869,7 +7869,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0435",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550435",
       "whatsapp": "+50627550435",
       "instagram": "cabinas_palmer_makanda",
       "instagram_verified": false,
@@ -8037,7 +8037,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7058 2207",
-      "phone_normalized": "",
+      "phone_normalized": "+50670582207",
       "whatsapp": "+50670582207",
       "instagram": "",
       "instagram_verified": false,
@@ -8108,7 +8108,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8858 8659",
-      "phone_normalized": "",
+      "phone_normalized": "+50688588659",
       "whatsapp": "+50688588659",
       "instagram": "",
       "instagram_verified": false,
@@ -8270,7 +8270,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0286",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550286",
       "whatsapp": "+50627550286",
       "instagram": "",
       "instagram_verified": false,
@@ -8370,7 +8370,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -8381,7 +8381,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Wray provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -8410,7 +8410,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2759 9121",
-      "phone_normalized": "",
+      "phone_normalized": "+50627599121",
       "whatsapp": "+50627599121",
       "instagram": "",
       "instagram_verified": false,
@@ -8476,18 +8476,18 @@
   },
   {
     "id": "d6088b31c8d4",
-    "slug": "cabinas-yemanya",
+    "slug": "cabinas-yemanya-playa-negra",
     "name": "Cabinas Yemanya",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6421556",
     "lng": "-82.7189254",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27500110",
-      "phone_normalized": "",
-      "whatsapp": "27500110",
+      "phone_normalized": "+27500110",
+      "whatsapp": "+27500110",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -8519,7 +8519,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9036,10 +9036,10 @@
   },
   {
     "id": "2f94d319fc5e",
-    "slug": "caf-jaguar-art-gallery",
+    "slug": "caf-jaguar-art-gallery-cocles",
     "name": "Café Jaguar & Art Gallery",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6393866",
     "lng": "-82.7137976",
     "distance_km": "",
@@ -9071,7 +9071,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -9155,7 +9155,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 50,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -9167,7 +9167,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Café Rico is a restaurant in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -9196,7 +9196,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755-1011",
-      "phone_normalized": "",
+      "phone_normalized": "+50627551011",
       "whatsapp": "+50627551011",
       "instagram": "",
       "instagram_verified": false,
@@ -9264,7 +9264,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0179",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550179",
       "whatsapp": "+50627550179",
       "instagram": "",
       "instagram_verified": false,
@@ -9349,7 +9349,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8827 2815",
-      "phone_normalized": "",
+      "phone_normalized": "+50688272815",
       "whatsapp": "+50688272815",
       "instagram": "cahuitalodge",
       "instagram_verified": false,
@@ -9432,7 +9432,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0244",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550244",
       "whatsapp": "+50627550244",
       "instagram": "",
       "instagram_verified": false,
@@ -9634,7 +9634,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8314 3297",
-      "phone_normalized": "",
+      "phone_normalized": "+50683143297",
       "whatsapp": "+50683143297",
       "instagram": "",
       "instagram_verified": false,
@@ -9708,7 +9708,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8342 7837",
-      "phone_normalized": "",
+      "phone_normalized": "+50683427837",
       "whatsapp": "+50683427837",
       "instagram": "",
       "instagram_verified": false,
@@ -9770,18 +9770,18 @@
   },
   {
     "id": "c670edb925f0",
-    "slug": "caribbean-blue-morpho-casitas",
+    "slug": "caribbean-blue-morpho-casitas-playa-negra",
     "name": "Caribbean Blue Morpho Casitas",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6534314",
     "lng": "-82.7783071",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89836677",
-      "phone_normalized": "",
-      "whatsapp": "89836677",
+      "phone_normalized": "+89836677",
+      "whatsapp": "+89836677",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -9813,7 +9813,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9857,7 +9857,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8673 2557",
-      "phone_normalized": "",
+      "phone_normalized": "+50686732557",
       "whatsapp": "+50686732557",
       "instagram": "",
       "instagram_verified": false,
@@ -10088,17 +10088,17 @@
   },
   {
     "id": "b4fc7e306de4",
-    "slug": "caribbean-hill-villas",
+    "slug": "caribbean-hill-villas-cocles",
     "name": "Caribbean Hill Villas",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.636673",
     "lng": "-82.7234956",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "60506088",
-      "phone_normalized": "",
+      "phone_normalized": "+60506088",
       "whatsapp": "+50664365454",
       "instagram": "",
       "instagram_verified": false,
@@ -10135,7 +10135,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -10834,18 +10834,18 @@
   },
   {
     "id": "fe3bb9c1d765",
-    "slug": "caribezen",
+    "slug": "caribezen-playa-negra",
     "name": "CaribeZen",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6489332",
     "lng": "-82.7700925",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88390992",
-      "phone_normalized": "",
-      "whatsapp": "88390992",
+      "phone_normalized": "+88390992",
+      "whatsapp": "+88390992",
       "instagram": "caribezen",
       "instagram_verified": false,
       "facebook_url": "",
@@ -10881,7 +10881,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -11174,10 +11174,10 @@
   },
   {
     "id": "55ea5fb6c85a",
-    "slug": "casa-alegra",
+    "slug": "casa-alegra-playa-negra",
     "name": "Casa Alegra",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6486486",
     "lng": "-82.7630898",
     "distance_km": "",
@@ -11209,7 +11209,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -11236,10 +11236,10 @@
   },
   {
     "id": "a0ba0d92d360",
-    "slug": "casa-alegre",
+    "slug": "casa-alegre-playa-negra",
     "name": "Casa Alegre",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6486486",
     "lng": "-82.7630898",
     "distance_km": "",
@@ -11271,7 +11271,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 25,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [],
     "intents": [
@@ -11306,8 +11306,8 @@
     "status": "active",
     "channels": {
       "phone": "88392644",
-      "phone_normalized": "",
-      "whatsapp": "88392644",
+      "phone_normalized": "+88392644",
+      "whatsapp": "+88392644",
       "instagram": "casaambar",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/habitatvacationrentals",
@@ -11387,18 +11387,18 @@
   },
   {
     "id": "75d839bc564d",
-    "slug": "casa-amma",
+    "slug": "casa-amma-playa-negra",
     "name": "Casa Amma",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6537062",
     "lng": "-82.7653354",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27500082",
-      "phone_normalized": "",
-      "whatsapp": "27500082",
+      "phone_normalized": "+27500082",
+      "whatsapp": "+27500082",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/motherskitchenusa",
@@ -11434,7 +11434,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -11465,18 +11465,18 @@
   },
   {
     "id": "1b19e93cddc9",
-    "slug": "casa-amor",
+    "slug": "casa-amor-playa-negra",
     "name": "Casa Amor",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6512099",
     "lng": "-82.7597737",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "84516101",
-      "phone_normalized": "",
-      "whatsapp": "84516101",
+      "phone_normalized": "+84516101",
+      "whatsapp": "+84516101",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -11504,7 +11504,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -11614,18 +11614,18 @@
   },
   {
     "id": "34dbcdf2701d",
-    "slug": "casa-antorcha",
+    "slug": "casa-antorcha-cocles",
     "name": "Casa Antorcha",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6307068",
     "lng": "-82.721682",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "83396582",
-      "phone_normalized": "",
-      "whatsapp": "83396582",
+      "phone_normalized": "+83396582",
+      "whatsapp": "+83396582",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -11653,7 +11653,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -11803,7 +11803,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -11814,7 +11814,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Badawi provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -12001,10 +12001,10 @@
   },
   {
     "id": "6853b38848af",
-    "slug": "casa-canopy",
+    "slug": "casa-canopy-cocles",
     "name": "Casa Canopy",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6313",
     "lng": "-82.712349",
     "distance_km": "",
@@ -12036,7 +12036,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -12069,10 +12069,10 @@
   },
   {
     "id": "e184b8c9c8d4",
-    "slug": "casa-chilamate-day-house",
+    "slug": "casa-chilamate-day-house-playa-negra",
     "name": "Casa Chilamate Day House",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6530399",
     "lng": "-82.7654953",
     "distance_km": "",
@@ -12112,7 +12112,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "Map Verified",
@@ -12666,10 +12666,10 @@
   },
   {
     "id": "efdbc3e37874",
-    "slug": "casa-del-caribe-b-b",
+    "slug": "casa-del-caribe-b-b-playa-negra",
     "name": "Casa del Caribe B&B",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.642733",
     "lng": "-82.7328715",
     "distance_km": "",
@@ -12701,7 +12701,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -13261,10 +13261,10 @@
   },
   {
     "id": "1d08e92e0b5f",
-    "slug": "casa-lily",
+    "slug": "casa-lily-cocles",
     "name": "Casa Lily",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6394816",
     "lng": "-82.7084826",
     "distance_km": "",
@@ -13296,7 +13296,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -13560,7 +13560,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8914 7675",
-      "phone_normalized": "",
+      "phone_normalized": "+50689147675",
       "whatsapp": "+50689147675",
       "instagram": "",
       "instagram_verified": false,
@@ -13623,7 +13623,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8327 9335",
-      "phone_normalized": "",
+      "phone_normalized": "+50683279335",
       "whatsapp": "+50683279335",
       "instagram": "",
       "instagram_verified": false,
@@ -13778,7 +13778,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0390",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550390",
       "whatsapp": "+50627550390",
       "instagram": "",
       "instagram_verified": false,
@@ -13860,8 +13860,8 @@
     "status": "active",
     "channels": {
       "phone": "88392644",
-      "phone_normalized": "",
-      "whatsapp": "88392644",
+      "phone_normalized": "+88392644",
+      "whatsapp": "+88392644",
       "instagram": "casamargarita",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/habitatvacationrentals",
@@ -14176,18 +14176,18 @@
   },
   {
     "id": "eb9df4ac6165",
-    "slug": "casa-miluca",
+    "slug": "casa-miluca-playa-negra",
     "name": "Casa Miluca",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6549173",
     "lng": "-82.7722464",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89536016",
-      "phone_normalized": "",
-      "whatsapp": "89536016",
+      "phone_normalized": "+89536016",
+      "whatsapp": "+89536016",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -14215,7 +14215,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -14243,10 +14243,10 @@
   },
   {
     "id": "f313df34b3ac",
-    "slug": "casa-miluco",
+    "slug": "casa-miluco-playa-negra",
     "name": "Casa Miluco",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6519228",
     "lng": "-82.7490513",
     "distance_km": "",
@@ -14278,7 +14278,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -14478,7 +14478,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6008 9241",
-      "phone_normalized": "",
+      "phone_normalized": "+50660089241",
       "whatsapp": "+50660089241",
       "instagram": "",
       "instagram_verified": false,
@@ -14536,10 +14536,10 @@
   },
   {
     "id": "214562bc1d77",
-    "slug": "casa-naranjo",
+    "slug": "casa-naranjo-cocles",
     "name": "Casa Naranjo",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6348876",
     "lng": "-82.7277314",
     "distance_km": "3.573",
@@ -14571,7 +14571,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 25,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [],
     "intents": [
@@ -14662,18 +14662,18 @@
   },
   {
     "id": "36ccf33c791b",
-    "slug": "casa-olingo",
+    "slug": "casa-olingo-playa-negra",
     "name": "Casa Olingo",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6485145",
     "lng": "-82.737029",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87011895",
-      "phone_normalized": "",
-      "whatsapp": "87011895",
+      "phone_normalized": "+87011895",
+      "whatsapp": "+87011895",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -14701,7 +14701,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -14808,10 +14808,10 @@
   },
   {
     "id": "673d2d7f938a",
-    "slug": "casa-pallaita",
+    "slug": "casa-pallaita-playa-negra",
     "name": "Casa Pallaita",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6494503",
     "lng": "-82.7518005",
     "distance_km": "",
@@ -14847,7 +14847,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -14881,10 +14881,10 @@
   },
   {
     "id": "93f4b65a740b",
-    "slug": "casa-pallalita",
+    "slug": "casa-pallalita-playa-negra",
     "name": "Casa Pallalita",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6494503",
     "lng": "-82.7518005",
     "distance_km": "",
@@ -14920,7 +14920,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 30,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Has Website"
@@ -14947,10 +14947,10 @@
   },
   {
     "id": "97c18c4a5c48",
-    "slug": "casa-palliata",
+    "slug": "casa-palliata-playa-negra",
     "name": "Casa Palliata",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6479989",
     "lng": "-82.7520805",
     "distance_km": "",
@@ -14986,7 +14986,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -15014,10 +15014,10 @@
   },
   {
     "id": "4467a62b15dc",
-    "slug": "casa-pallita",
+    "slug": "casa-pallita-playa-negra",
     "name": "Casa Pallita",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6494503",
     "lng": "-82.7518005",
     "distance_km": "",
@@ -15053,7 +15053,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 30,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Has Website"
@@ -15318,10 +15318,10 @@
   },
   {
     "id": "5e849c1658c0",
-    "slug": "casa-shanti",
+    "slug": "casa-shanti-cocles",
     "name": "Casa Shanti",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6341174",
     "lng": "-82.7176406",
     "distance_km": "",
@@ -15353,7 +15353,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -15451,18 +15451,18 @@
   },
   {
     "id": "5b2a9e04d1e1",
-    "slug": "casa-tia-zeidy",
+    "slug": "casa-tia-zeidy-playa-negra",
     "name": "casa tia zeidy",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6454227",
     "lng": "-82.736209",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87713361",
-      "phone_normalized": "",
-      "whatsapp": "87713361",
+      "phone_normalized": "+87713361",
+      "whatsapp": "+87713361",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -15490,7 +15490,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -15529,8 +15529,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "87047926",
-      "phone_normalized": "",
-      "whatsapp": "87047926",
+      "phone_normalized": "+87047926",
+      "whatsapp": "+87047926",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -15558,7 +15558,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -15568,7 +15568,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Trinidad provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -15597,8 +15597,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "87181566",
-      "phone_normalized": "",
-      "whatsapp": "87181566",
+      "phone_normalized": "+87181566",
+      "whatsapp": "+87181566",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -15626,7 +15626,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -15636,7 +15636,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Tuareg provides bed & breakfast accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -15657,18 +15657,18 @@
   },
   {
     "id": "58a231fa2210",
-    "slug": "casa-vacacional-happy-day-beach-house",
+    "slug": "casa-vacacional-happy-day-beach-house-puerto-viejo",
     "name": "Casa vacacional happy day beach house",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6576684",
     "lng": "-82.7446919",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89518604",
-      "phone_normalized": "",
-      "whatsapp": "89518604",
+      "phone_normalized": "+89518604",
+      "whatsapp": "+89518604",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -15696,7 +15696,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -15735,7 +15735,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8870 8120",
-      "phone_normalized": "",
+      "phone_normalized": "+50688708120",
       "whatsapp": "+50688708120",
       "instagram": "",
       "instagram_verified": false,
@@ -15887,10 +15887,10 @@
   },
   {
     "id": "fa3968ada971",
-    "slug": "casa-vosi",
+    "slug": "casa-vosi-playa-negra",
     "name": "Casa Vosi",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6433157",
     "lng": "-82.7355551",
     "distance_km": "",
@@ -15922,7 +15922,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -16121,7 +16121,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8396 5978",
-      "phone_normalized": "",
+      "phone_normalized": "+50683965978",
       "whatsapp": "+50683965978",
       "instagram": "casasdelmarmanzanillo",
       "instagram_verified": false,
@@ -16260,10 +16260,10 @@
   },
   {
     "id": "2809cbc3643c",
-    "slug": "casas-sloth-butterfly",
+    "slug": "casas-sloth-butterfly-playa-negra",
     "name": "Casas Sloth & Butterfly",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6547925",
     "lng": "-82.7501871",
     "distance_km": "",
@@ -16295,7 +16295,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -16391,10 +16391,10 @@
   },
   {
     "id": "99f7b4ddb367",
-    "slug": "casita-tucan",
+    "slug": "casita-tucan-cocles",
     "name": "Casita Tucan",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.631913",
     "lng": "-82.7166009",
     "distance_km": "",
@@ -16426,7 +16426,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -16453,17 +16453,17 @@
   },
   {
     "id": "8cfd1a2604c0",
-    "slug": "casitas-bats",
+    "slug": "casitas-bats-cocles",
     "name": "Casitas Batsú",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6361824",
     "lng": "-82.7141838",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+34644446723",
-      "phone_normalized": "",
+      "phone_normalized": "+34644446723",
       "whatsapp": "+34644446723",
       "instagram": "",
       "instagram_verified": false,
@@ -16496,7 +16496,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -16526,10 +16526,10 @@
   },
   {
     "id": "67eba06b5e47",
-    "slug": "casitas-del-bosque",
+    "slug": "casitas-del-bosque-puerto-viejo",
     "name": "Casitas del Bosque",
-    "category": "",
-    "area": "Unknown",
+    "category": "hotel",
+    "area": "Puerto Viejo",
     "lat": "",
     "lng": "",
     "distance_km": "",
@@ -16556,11 +16556,11 @@
     "scores": {
       "contactability": 0,
       "visibility": 0,
-      "completeness": 20
+      "completeness": 40
     },
     "badges": [],
     "intents": [
-      "other"
+      "stay"
     ],
     "description": "Casitas del Bosque is located in Puerto Viejo.",
     "verified_date": "",
@@ -17164,7 +17164,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8346.4298",
-      "phone_normalized": "",
+      "phone_normalized": "+50683464298",
       "whatsapp": "+50683464298",
       "instagram": "centrodecarnescanada",
       "instagram_verified": false,
@@ -17237,7 +17237,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0129",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550129",
       "whatsapp": "+50627550129",
       "instagram": "",
       "instagram_verified": false,
@@ -17846,7 +17846,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8950 2546",
-      "phone_normalized": "",
+      "phone_normalized": "+50689502546",
       "whatsapp": "+50689502546",
       "instagram": "chaos_paradise2011",
       "instagram_verified": false,
@@ -18016,7 +18016,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8396 3247",
-      "phone_normalized": "",
+      "phone_normalized": "+50683963247",
       "whatsapp": "+50683963247",
       "instagram": "",
       "instagram_verified": false,
@@ -18125,7 +18125,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 25,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -18135,7 +18135,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Chili Rojo is a restaurant in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -18471,17 +18471,17 @@
   },
   {
     "id": "44eb64a2fa14",
-    "slug": "chocorart",
+    "slug": "chocorart-puerto-viejo",
     "name": "CHOCORART",
-    "category": "",
-    "area": "Unknown",
+    "category": "shopping",
+    "area": "Puerto Viejo",
     "lat": "",
     "lng": "",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 8786 2229",
-      "phone_normalized": "",
+      "phone_normalized": "+50687862229",
       "whatsapp": "+50687862229",
       "instagram": "",
       "instagram_verified": false,
@@ -18510,7 +18510,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 0,
-      "completeness": 40
+      "completeness": 60
     },
     "badges": [
       "WhatsApp",
@@ -18518,7 +18518,7 @@
       "Phone"
     ],
     "intents": [
-      "other"
+      "shop"
     ],
     "description": "CHOCORART is located in Puerto Viejo.",
     "verified_date": "",
@@ -18612,17 +18612,17 @@
   },
   {
     "id": "4f3ae2359a8a",
-    "slug": "cirrus-sky-paragliding-cr",
+    "slug": "cirrus-sky-paragliding-cr-playa-negra",
     "name": "Cirrus Sky Paragliding CR",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6483809",
     "lng": "-82.7338131",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "71091388",
-      "phone_normalized": "",
+      "phone_normalized": "+71091388",
       "whatsapp": "+50671091388",
       "instagram": "",
       "instagram_verified": false,
@@ -18659,7 +18659,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 75,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -18700,7 +18700,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0303",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550303",
       "whatsapp": "+50627550303",
       "instagram": "ciudad_perdida_ecolodge",
       "instagram_verified": false,
@@ -18854,7 +18854,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8457 9613",
-      "phone_normalized": "",
+      "phone_normalized": "+50684579613",
       "whatsapp": "+50684579613",
       "instagram": "",
       "instagram_verified": false,
@@ -19078,7 +19078,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7222 6452",
-      "phone_normalized": "",
+      "phone_normalized": "+50672226452",
       "whatsapp": "+50689702308",
       "instagram": "",
       "instagram_verified": false,
@@ -19624,7 +19624,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2754 1057",
-      "phone_normalized": "",
+      "phone_normalized": "+50627541057",
       "whatsapp": "+50627541057",
       "instagram": "colibrilodgegandoca",
       "instagram_verified": false,
@@ -19875,7 +19875,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6203 0798",
-      "phone_normalized": "",
+      "phone_normalized": "+50662030798",
       "whatsapp": "+50662030798",
       "instagram": "coloresrestaurantandbeachloung",
       "instagram_verified": false,
@@ -20223,13 +20223,13 @@
     "name": "Congo Bongo EcoVillage",
     "category": "hotel",
     "area": "Manzanillo",
-    "lat": "",
-    "lng": "",
+    "lat": "9.6275396",
+    "lng": "-82.6633071",
     "distance_km": "",
     "status": "active",
     "channels": {
       "phone": "+506 2759 9016",
-      "phone_normalized": "",
+      "phone_normalized": "+50627599016",
       "whatsapp": "+50689574177",
       "instagram": "congobongocr",
       "instagram_verified": false,
@@ -20269,14 +20269,15 @@
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 40,
-      "completeness": 85
+      "visibility": 65,
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Map Verified",
       "Has Website",
-      "Phone"
+      "Phone",
+      "Fully Online"
     ],
     "intents": [
       "stay"
@@ -20321,7 +20322,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8335 2099",
-      "phone_normalized": "",
+      "phone_normalized": "+50683352099",
       "whatsapp": "+50683352099",
       "instagram": "",
       "instagram_verified": false,
@@ -20464,7 +20465,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8686 6886",
-      "phone_normalized": "",
+      "phone_normalized": "+50686866886",
       "whatsapp": "+50686866886",
       "instagram": "coralvetcr",
       "instagram_verified": false,
@@ -20694,7 +20695,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2751 0141",
-      "phone_normalized": "",
+      "phone_normalized": "+50627510141",
       "whatsapp": "+50627510141",
       "instagram": "",
       "instagram_verified": false,
@@ -20761,10 +20762,10 @@
   },
   {
     "id": "1181fc184d3f",
-    "slug": "cubali-beach",
+    "slug": "cubali-beach-playa-negra",
     "name": "Cubali Beach",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6421444",
     "lng": "-82.7165005",
     "distance_km": "",
@@ -20796,7 +20797,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -20823,17 +20824,17 @@
   },
   {
     "id": "93e17befda6e",
-    "slug": "da-lime-beach-club-restaurant-at-hotel-aguas-claras",
+    "slug": "da-lime-beach-club-restaurant-at-hotel-aguas-claras-playa-negra",
     "name": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6443438",
     "lng": "-82.7196505",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 2750 0131",
-      "phone_normalized": "",
+      "phone_normalized": "+50627500131",
       "whatsapp": "+50627500131",
       "instagram": "hotelaguasclaras",
       "instagram_verified": true,
@@ -20878,7 +20879,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 50,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -21296,18 +21297,18 @@
   },
   {
     "id": "7052c140b68b",
-    "slug": "doctah-herbalist",
+    "slug": "doctah-herbalist-cocles",
     "name": "Doctah Herbalist",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6330449",
     "lng": "-82.7182417",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "70618099",
-      "phone_normalized": "",
-      "whatsapp": "70618099",
+      "phone_normalized": "+70618099",
+      "whatsapp": "+70618099",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -21335,7 +21336,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -21364,17 +21365,17 @@
   },
   {
     "id": "f86705f81534",
-    "slug": "douglas-ville-guest-house",
+    "slug": "douglas-ville-guest-house-playa-negra",
     "name": "Douglas Ville guest house",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6538097",
     "lng": "-82.7541907",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 8875 8494",
-      "phone_normalized": "",
+      "phone_normalized": "+50688758494",
       "whatsapp": "+50688758494",
       "instagram": "",
       "instagram_verified": true,
@@ -21403,7 +21404,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -21789,7 +21790,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -21800,7 +21801,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Ecotourism and Conservation Association of Talamanca runs tours and activities in the Puerto Viejo area.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -21829,7 +21830,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8721 3949",
-      "phone_normalized": "",
+      "phone_normalized": "+50687213949",
       "whatsapp": "+50687213949",
       "instagram": "",
       "instagram_verified": false,
@@ -21958,18 +21959,18 @@
   },
   {
     "id": "4f87255ecb5a",
-    "slug": "el-chilamate",
+    "slug": "el-chilamate-playa-negra",
     "name": "El Chilamate",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6530399",
     "lng": "-82.7654953",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "84629244",
-      "phone_normalized": "",
-      "whatsapp": "84629244",
+      "phone_normalized": "+84629244",
+      "whatsapp": "+84629244",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -21997,7 +21998,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -22025,18 +22026,18 @@
   },
   {
     "id": "430c575f4980",
-    "slug": "el-chilamate-holiday-house",
+    "slug": "el-chilamate-holiday-house-playa-negra",
     "name": "El Chilamate Holiday House",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6530399",
     "lng": "-82.7654953",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "84629244",
-      "phone_normalized": "",
-      "whatsapp": "84629244",
+      "phone_normalized": "+84629244",
+      "whatsapp": "+84629244",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -22064,7 +22065,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -22186,7 +22187,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2759 9036",
-      "phone_normalized": "",
+      "phone_normalized": "+50627599036",
       "whatsapp": "+50627599036",
       "instagram": "",
       "instagram_verified": false,
@@ -22261,7 +22262,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0431",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550431",
       "whatsapp": "+50627550431",
       "instagram": "",
       "instagram_verified": false,
@@ -22401,7 +22402,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6410 0334",
-      "phone_normalized": "",
+      "phone_normalized": "+50664100334",
       "whatsapp": "+50664100334",
       "instagram": "",
       "instagram_verified": false,
@@ -22480,7 +22481,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2750.0356",
-      "phone_normalized": "",
+      "phone_normalized": "+50627500356",
       "whatsapp": "+50627500356",
       "instagram": "elduendegourmet",
       "instagram_verified": false,
@@ -22553,7 +22554,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0113",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550113",
       "whatsapp": "+50627550113",
       "instagram": "",
       "instagram_verified": false,
@@ -22633,8 +22634,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "27500018",
-      "phone_normalized": "",
-      "whatsapp": "27500018",
+      "phone_normalized": "+27500018",
+      "whatsapp": "+27500018",
       "instagram": "hostelworld",
       "instagram_verified": true,
       "facebook_url": "https://www.facebook.com/hostelworld",
@@ -22674,7 +22675,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -22685,7 +22686,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Faro 13 provides hostel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -23024,10 +23025,10 @@
   },
   {
     "id": "bc504658efc3",
-    "slug": "el-ranch-n",
+    "slug": "el-ranch-n-playa-negra",
     "name": "El Ranchón",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6497903",
     "lng": "-82.8017025",
     "distance_km": "5.323",
@@ -23063,7 +23064,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -23493,10 +23494,10 @@
   },
   {
     "id": "612801ee2719",
-    "slug": "el-tucan-jungle-lodge",
+    "slug": "el-tucan-jungle-lodge-cocles",
     "name": "El Tucan Jungle Lodge",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6399049",
     "lng": "-82.7348632",
     "distance_km": "2.562",
@@ -23532,7 +23533,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -23982,10 +23983,10 @@
   },
   {
     "id": "4916f427e986",
-    "slug": "escuela-hone-creek",
+    "slug": "escuela-hone-creek-playa-negra",
     "name": "Escuela Hone Creek",
     "category": "Transport",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6527766",
     "lng": "-82.7989983",
     "distance_km": "5.046",
@@ -24021,7 +24022,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -24050,10 +24051,10 @@
   },
   {
     "id": "a05af8d62784",
-    "slug": "escuela-k-k-ldi",
+    "slug": "escuela-k-k-ldi-punta-uva",
     "name": "Escuela Këköldi",
     "category": "Transport",
-    "area": "Unknown",
+    "area": "Punta Uva",
     "lat": "9.6170132",
     "lng": "-82.7700212",
     "distance_km": "4.614",
@@ -24085,7 +24086,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -24112,10 +24113,10 @@
   },
   {
     "id": "d7e53250054d",
-    "slug": "escuela-pati-o",
+    "slug": "escuela-pati-o-playa-negra",
     "name": "Escuela Patiño",
     "category": "Transport",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6471373",
     "lng": "-82.8010532",
     "distance_km": "5.343",
@@ -24147,7 +24148,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -24184,8 +24185,8 @@
     "status": "active",
     "channels": {
       "phone": "27500686",
-      "phone_normalized": "",
-      "whatsapp": "27500686",
+      "phone_normalized": "+27500686",
+      "whatsapp": "+27500686",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/casitasmaryluz",
@@ -24427,7 +24428,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6411 3165",
-      "phone_normalized": "",
+      "phone_normalized": "+50664113165",
       "whatsapp": "+50664113165",
       "instagram": "exoticobeach",
       "instagram_verified": false,
@@ -24506,18 +24507,18 @@
   },
   {
     "id": "1e9ab5a1289a",
-    "slug": "explora-caribe-cr",
+    "slug": "explora-caribe-cr-playa-negra",
     "name": "Explora Caribe CR",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6545763",
     "lng": "-82.7865127",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "62043386",
-      "phone_normalized": "",
-      "whatsapp": "62043386",
+      "phone_normalized": "+62043386",
+      "whatsapp": "+62043386",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -24545,7 +24546,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -24737,7 +24738,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2750 0696",
-      "phone_normalized": "",
+      "phone_normalized": "+50627500696",
       "whatsapp": "+50627500696",
       "instagram": "faithglampingdomecr",
       "instagram_verified": false,
@@ -25057,7 +25058,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0505",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550505",
       "whatsapp": "+50627550505",
       "instagram": "",
       "instagram_verified": false,
@@ -25129,7 +25130,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0210",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550210",
       "whatsapp": "+50627550210",
       "instagram": "",
       "instagram_verified": false,
@@ -25266,10 +25267,10 @@
   },
   {
     "id": "15a91386bd24",
-    "slug": "finca-ardilla",
+    "slug": "finca-ardilla-playa-chiquita",
     "name": "Finca Ardilla",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Chiquita",
     "lat": "9.6203232",
     "lng": "-82.7353536",
     "distance_km": "4.303",
@@ -25309,7 +25310,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -25352,10 +25353,10 @@
   },
   {
     "id": "f77f993bdd40",
-    "slug": "finca-darai",
+    "slug": "finca-darai-cocles",
     "name": "Finca Darai",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6320105",
     "lng": "-82.7381005",
     "distance_km": "",
@@ -25387,7 +25388,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -25577,17 +25578,17 @@
   },
   {
     "id": "558eb4ca26c5",
-    "slug": "finca-la-isla-permaculture-farm",
+    "slug": "finca-la-isla-permaculture-farm-playa-negra",
     "name": "Finca la Isla Permaculture Farm",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6495033",
     "lng": "-82.7641365",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 8886 8530",
-      "phone_normalized": "",
+      "phone_normalized": "+50688868530",
       "whatsapp": "+50688868530",
       "instagram": "",
       "instagram_verified": false,
@@ -25616,7 +25617,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -25644,10 +25645,10 @@
   },
   {
     "id": "4cf578c7ad8e",
-    "slug": "finca-las-hormigas",
+    "slug": "finca-las-hormigas-punta-uva",
     "name": "Finca Las Hormigas",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Punta Uva",
     "lat": "9.6136146",
     "lng": "-82.7297125",
     "distance_km": "5.254",
@@ -25687,7 +25688,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -25882,17 +25883,17 @@
   },
   {
     "id": "c634c07b4d16",
-    "slug": "fisioterapia-agustin-cuya",
+    "slug": "fisioterapia-agustin-cuya-cocles",
     "name": "FISIOTERAPIA Agustin cuya",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6354416",
     "lng": "-82.7293933",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "63763084",
-      "phone_normalized": "",
+      "phone_normalized": "+63763084",
       "whatsapp": "+50663763084",
       "instagram": "",
       "instagram_verified": false,
@@ -25925,7 +25926,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -26107,18 +26108,18 @@
   },
   {
     "id": "7f5e22689c11",
-    "slug": "fruit-houses",
+    "slug": "fruit-houses-cocles",
     "name": "Fruit Houses",
-    "category": "",
-    "area": "Unknown",
+    "category": "hotel",
+    "area": "Cocles",
     "lat": "9.6302683",
     "lng": "-82.7339791",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87335734",
-      "phone_normalized": "",
-      "whatsapp": "87335734",
+      "phone_normalized": "+87335734",
+      "whatsapp": "+87335734",
       "instagram": "houses",
       "instagram_verified": false,
       "facebook_url": "",
@@ -26150,7 +26151,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -26159,7 +26160,7 @@
       "Fully Online"
     ],
     "intents": [
-      "other"
+      "stay"
     ],
     "description": "Fruit Houses is located in Puerto Viejo.",
     "verified_date": "",
@@ -26190,7 +26191,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6238 3809",
-      "phone_normalized": "",
+      "phone_normalized": "+50662383809",
       "whatsapp": "+50662383809",
       "instagram": "",
       "instagram_verified": false,
@@ -26262,7 +26263,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8762 8848",
-      "phone_normalized": "",
+      "phone_normalized": "+50687628848",
       "whatsapp": "+50687628848",
       "instagram": "gandocatours",
       "instagram_verified": false,
@@ -26509,10 +26510,10 @@
   },
   {
     "id": "84b3dc29aa41",
-    "slug": "geckoes-lodge",
+    "slug": "geckoes-lodge-cocles",
     "name": "Geckoes Lodge",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6358975",
     "lng": "-82.7345013",
     "distance_km": "2.980",
@@ -26552,7 +26553,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -26886,10 +26887,10 @@
   },
   {
     "id": "a3fa32b712c6",
-    "slug": "global-stones-finca-conservaci-n",
+    "slug": "global-stones-finca-conservaci-n-cocles",
     "name": "Global Stones finca conservación",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6372916",
     "lng": "-82.7415327",
     "distance_km": "",
@@ -26921,7 +26922,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -26958,7 +26959,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0070",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550070",
       "whatsapp": "+50627550070",
       "instagram": "",
       "instagram_verified": false,
@@ -27268,7 +27269,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6184 2373",
-      "phone_normalized": "",
+      "phone_normalized": "+50661842373",
       "whatsapp": "+50661842373",
       "instagram": "greenlapasvillage",
       "instagram_verified": false,
@@ -27736,7 +27737,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 1225",
-      "phone_normalized": "",
+      "phone_normalized": "+50627551225",
       "whatsapp": "+50627551225",
       "instagram": "hostelhakunamatata",
       "instagram_verified": false,
@@ -27930,7 +27931,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -27942,7 +27943,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Harmony: Mini Casa Rodante by Aptos Casa Caribe provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -27961,17 +27962,17 @@
   },
   {
     "id": "2273c7a10f6b",
-    "slug": "hawaiian-massage",
+    "slug": "hawaiian-massage-playa-negra",
     "name": "Hawaiian Massage",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6516248",
     "lng": "-82.7396558",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88002367",
-      "phone_normalized": "",
+      "phone_normalized": "+88002367",
       "whatsapp": "+50688002367",
       "instagram": "",
       "instagram_verified": false,
@@ -28004,7 +28005,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -28216,18 +28217,18 @@
   },
   {
     "id": "a4c6cc0d95df",
-    "slug": "hidden-viewpoint",
+    "slug": "hidden-viewpoint-playa-negra",
     "name": "Hidden Viewpoint",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6423125",
     "lng": "-82.7475625",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87855007",
-      "phone_normalized": "",
-      "whatsapp": "87855007",
+      "phone_normalized": "+87855007",
+      "whatsapp": "+87855007",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -28255,7 +28256,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -28284,10 +28285,10 @@
   },
   {
     "id": "48dd2c7e8fa7",
-    "slug": "home-naranjo",
+    "slug": "home-naranjo-cocles",
     "name": "Home Naranjo",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6348876",
     "lng": "-82.7277314",
     "distance_km": "3.570",
@@ -28319,7 +28320,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -28419,10 +28420,10 @@
   },
   {
     "id": "1528a93299c5",
-    "slug": "hospedaje-dos-sue-os",
+    "slug": "hospedaje-dos-sue-os-puerto-viejo",
     "name": "Hospedaje Dos Sueños",
-    "category": "",
-    "area": "Unknown",
+    "category": "hotel",
+    "area": "Puerto Viejo",
     "lat": "",
     "lng": "",
     "distance_km": "",
@@ -28449,11 +28450,11 @@
     "scores": {
       "contactability": 0,
       "visibility": 0,
-      "completeness": 20
+      "completeness": 40
     },
     "badges": [],
     "intents": [
-      "other"
+      "stay"
     ],
     "description": "Hospedaje Dos Sueños is located in Puerto Viejo.",
     "verified_date": "",
@@ -28857,7 +28858,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7291 2426",
-      "phone_normalized": "",
+      "phone_normalized": "+50672912426",
       "whatsapp": "+50672912426",
       "instagram": "",
       "instagram_verified": false,
@@ -29030,7 +29031,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8484 4586",
-      "phone_normalized": "",
+      "phone_normalized": "+50684844586",
       "whatsapp": "+50684844586",
       "instagram": "",
       "instagram_verified": false,
@@ -29148,7 +29149,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -29159,7 +29160,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Cariblue provides hotel accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -29508,7 +29509,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0055",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550055",
       "whatsapp": "+50627550055",
       "instagram": "",
       "instagram_verified": false,
@@ -29589,7 +29590,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8518 0187",
-      "phone_normalized": "",
+      "phone_normalized": "+50685180187",
       "whatsapp": "+50685180187",
       "instagram": "villasloscielosdelcaribe",
       "instagram_verified": false,
@@ -29673,8 +29674,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "27500369",
-      "phone_normalized": "",
-      "whatsapp": "27500369",
+      "phone_normalized": "+27500369",
+      "whatsapp": "+27500369",
       "instagram": "hls",
       "instagram_verified": false,
       "facebook_url": "",
@@ -29710,7 +29711,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -29722,7 +29723,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Los Sueños provides pagalú hostel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -29959,7 +29960,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 30,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -29969,7 +29970,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Posada Nena provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -30077,10 +30078,10 @@
   },
   {
     "id": "279ba40cc0c6",
-    "slug": "hotel-punta-cocles",
+    "slug": "hotel-punta-cocles-cocles",
     "name": "Hotel Punta Cocles",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.63743",
     "lng": "-82.7139568",
     "distance_km": "3.759",
@@ -30120,7 +30121,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -30237,18 +30238,18 @@
   },
   {
     "id": "ac7fbd41d694",
-    "slug": "hotel-rustika-lodge",
+    "slug": "hotel-rustika-lodge-puerto-viejo",
     "name": "Hotel Rustika Lodge",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6552385",
     "lng": "-82.7691739",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "21027351",
-      "phone_normalized": "",
-      "whatsapp": "21027351",
+      "phone_normalized": "+21027351",
+      "whatsapp": "+21027351",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -30276,7 +30277,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -30315,8 +30316,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "27500401",
-      "phone_normalized": "",
-      "whatsapp": "27500401",
+      "phone_normalized": "+27500401",
+      "whatsapp": "+27500401",
       "instagram": "hotel_sunshine_caribe_cr",
       "instagram_verified": false,
       "facebook_url": "",
@@ -30352,7 +30353,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 25,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -30362,7 +30363,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Sunshine Caribe provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -30524,7 +30525,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 75,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -30537,7 +30538,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Villas y Glamping M&A provides vacation_rental accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -30579,7 +30580,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0214",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550214",
       "whatsapp": "+50627550214",
       "instagram": "",
       "instagram_verified": false,
@@ -30639,10 +30640,10 @@
   },
   {
     "id": "f342de1a1190",
-    "slug": "iglesia-cristiana-casa-de-restauracion",
+    "slug": "iglesia-cristiana-casa-de-restauracion-cocles",
     "name": "Iglesia Cristiana Casa De Restauracion",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.638081",
     "lng": "-82.725894",
     "distance_km": "",
@@ -30678,7 +30679,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -31054,7 +31055,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0168",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550168",
       "whatsapp": "+50627550168",
       "instagram": "",
       "instagram_verified": false,
@@ -31331,10 +31332,10 @@
   },
   {
     "id": "99c6c5c67113",
-    "slug": "italia-villas",
+    "slug": "italia-villas-playa-negra",
     "name": "Italia Villas",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.654266",
     "lng": "-82.7653176",
     "distance_km": "5.469",
@@ -31366,7 +31367,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -31396,18 +31397,18 @@
   },
   {
     "id": "8f8fcf50b46d",
-    "slug": "izzy-rides-cr",
+    "slug": "izzy-rides-cr-cocles",
     "name": "Izzy Rides CR",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6375578",
     "lng": "-82.7185952",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88992942",
-      "phone_normalized": "",
-      "whatsapp": "88992942",
+      "phone_normalized": "+88992942",
+      "whatsapp": "+88992942",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -31439,7 +31440,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -31871,10 +31872,10 @@
   },
   {
     "id": "31c97b1efdbc",
-    "slug": "jungalow",
+    "slug": "jungalow-puerto-viejo",
     "name": "Jungalow",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6600126",
     "lng": "-82.7816274",
     "distance_km": "",
@@ -31906,7 +31907,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -31933,10 +31934,10 @@
   },
   {
     "id": "053550471431",
-    "slug": "jungalow-tropical-caribe-o",
+    "slug": "jungalow-tropical-caribe-o-cocles",
     "name": "Jungalow Tropical Caribeño",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.631909",
     "lng": "-82.733771",
     "distance_km": "",
@@ -31968,7 +31969,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -31995,18 +31996,18 @@
   },
   {
     "id": "c91678db0645",
-    "slug": "jungla-del-caribe-o",
+    "slug": "jungla-del-caribe-o-playa-negra",
     "name": "Jungla del Caribeño",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6522063",
     "lng": "-82.7541479",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "60264782",
-      "phone_normalized": "",
-      "whatsapp": "60264782",
+      "phone_normalized": "+60264782",
+      "whatsapp": "+60264782",
       "instagram": "jungla",
       "instagram_verified": false,
       "facebook_url": "",
@@ -32038,7 +32039,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -32117,7 +32118,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -32129,7 +32130,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Jungle Air Parapente is a shopping in Puerto Viejo. Open now.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -32158,7 +32159,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8315 7245",
-      "phone_normalized": "",
+      "phone_normalized": "+50683157245",
       "whatsapp": "+50683157245",
       "instagram": "",
       "instagram_verified": false,
@@ -32215,17 +32216,17 @@
   },
   {
     "id": "9e5670ad4898",
-    "slug": "ka-namu",
+    "slug": "ka-namu-playa-negra",
     "name": "Ka Namu",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6531231",
     "lng": "-82.7543983",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89781035",
-      "phone_normalized": "",
+      "phone_normalized": "+89781035",
       "whatsapp": "+50687896070",
       "instagram": "",
       "instagram_verified": false,
@@ -32262,7 +32263,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 30,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -32384,10 +32385,10 @@
   },
   {
     "id": "c9876992dd9f",
-    "slug": "katuk",
+    "slug": "katuk-playa-negra",
     "name": "Katuk",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6512745",
     "lng": "-82.7426186",
     "distance_km": "",
@@ -32423,7 +32424,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -32548,7 +32549,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 4350 0806",
-      "phone_normalized": "",
+      "phone_normalized": "+50643500806",
       "whatsapp": "+50643500806",
       "instagram": "kanikapartahotel",
       "instagram_verified": false,
@@ -32631,7 +32632,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0485",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550485",
       "whatsapp": "+50689192967",
       "instagram": "kenakilodge",
       "instagram_verified": false,
@@ -32709,10 +32710,10 @@
   },
   {
     "id": "6d0d99d17088",
-    "slug": "kinawe-cabinas",
+    "slug": "kinawe-cabinas-playa-negra",
     "name": "Kinawe Cabinas",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.652121",
     "lng": "-82.7625165",
     "distance_km": "2.815",
@@ -32748,7 +32749,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -33014,10 +33015,10 @@
   },
   {
     "id": "199993724113",
-    "slug": "k-luxury-caribbean",
+    "slug": "k-luxury-caribbean-playa-negra",
     "name": "Kä Luxury Caribbean",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6410909",
     "lng": "-82.7348344",
     "distance_km": "",
@@ -33049,7 +33050,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -33076,18 +33077,18 @@
   },
   {
     "id": "33d78e8dfafc",
-    "slug": "la-caracola",
+    "slug": "la-caracola-playa-negra",
     "name": "La Caracola",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6451373",
     "lng": "-82.7198014",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87103205",
-      "phone_normalized": "",
-      "whatsapp": "87103205",
+      "phone_normalized": "+87103205",
+      "whatsapp": "+87103205",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -33115,7 +33116,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -33159,7 +33160,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0326",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550326",
       "whatsapp": "+50627550326",
       "instagram": "",
       "instagram_verified": false,
@@ -33379,7 +33380,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8801-2963",
-      "phone_normalized": "",
+      "phone_normalized": "+50688012963",
       "whatsapp": "+50688012963",
       "instagram": "la_casa_del_mango",
       "instagram_verified": false,
@@ -33687,18 +33688,18 @@
   },
   {
     "id": "e4f159c801cc",
-    "slug": "la-chascona",
+    "slug": "la-chascona-playa-negra",
     "name": "LA CHASCONA",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6460963",
     "lng": "-82.7424391",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "60567859",
-      "phone_normalized": "",
-      "whatsapp": "60567859",
+      "phone_normalized": "+60567859",
+      "whatsapp": "+60567859",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -33726,7 +33727,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -34023,7 +34024,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8311 4971",
-      "phone_normalized": "",
+      "phone_normalized": "+50683114971",
       "whatsapp": "+50683114971",
       "instagram": "fundacioncahuitapfc",
       "instagram_verified": false,
@@ -34172,17 +34173,17 @@
   },
   {
     "id": "32e15f16c0df",
-    "slug": "la-isla-permaculture-farm",
+    "slug": "la-isla-permaculture-farm-playa-negra",
     "name": "La Isla Permaculture Farm",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6495033",
     "lng": "-82.7641365",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 8886 8530",
-      "phone_normalized": "",
+      "phone_normalized": "+50688868530",
       "whatsapp": "+50688868530",
       "instagram": "",
       "instagram_verified": false,
@@ -34211,7 +34212,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -34408,10 +34409,10 @@
   },
   {
     "id": "f74396711a7a",
-    "slug": "la-loma-de-burrito",
+    "slug": "la-loma-de-burrito-playa-chiquita",
     "name": "La loma de burrito",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Chiquita",
     "lat": "9.6290705",
     "lng": "-82.722262",
     "distance_km": "",
@@ -34447,7 +34448,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -34648,18 +34649,18 @@
   },
   {
     "id": "a810914efaba",
-    "slug": "la-paloma-studio-en-cocl-s-con-cocina-a",
+    "slug": "la-paloma-studio-en-cocl-s-con-cocina-a-playa-negra",
     "name": "La Paloma Studio en Coclès con cocina a",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6433356",
     "lng": "-82.7384602",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "63692978",
-      "phone_normalized": "",
-      "whatsapp": "63692978",
+      "phone_normalized": "+63692978",
+      "whatsapp": "+63692978",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -34687,7 +34688,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -34882,17 +34883,17 @@
   },
   {
     "id": "9ef777277376",
-    "slug": "la-pecora-nera-ristorante",
+    "slug": "la-pecora-nera-ristorante-playa-negra",
     "name": "La Pecora Nera Ristorante",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6435375",
     "lng": "-82.7294006",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+506 8402 4027",
-      "phone_normalized": "",
+      "phone_normalized": "+50684024027",
       "whatsapp": "+50684024027",
       "instagram": "",
       "instagram_verified": false,
@@ -34929,7 +34930,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 25,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -34968,8 +34969,8 @@
     "status": "active",
     "channels": {
       "phone": "84632276",
-      "phone_normalized": "",
-      "whatsapp": "84632276",
+      "phone_normalized": "+84632276",
+      "whatsapp": "+84632276",
       "instagram": "laperladelcaribe",
       "instagram_verified": false,
       "facebook_url": "",
@@ -35213,7 +35214,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8428 5077",
-      "phone_normalized": "",
+      "phone_normalized": "+50684285077",
       "whatsapp": "+50684285077",
       "instagram": "laranadecahuitalodge",
       "instagram_verified": false,
@@ -35466,10 +35467,10 @@
   },
   {
     "id": "c564e4a108b5",
-    "slug": "la-selva-pv-events",
+    "slug": "la-selva-pv-events-playa-negra",
     "name": "La Selva PV Events",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6514016",
     "lng": "-82.7523366",
     "distance_km": "",
@@ -35505,7 +35506,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Has Website"
@@ -35542,7 +35543,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8471 5831",
-      "phone_normalized": "",
+      "phone_normalized": "+50684715831",
       "whatsapp": "+50684715831",
       "instagram": "ecolodge_lashamana",
       "instagram_verified": false,
@@ -36048,7 +36049,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8759 1675",
-      "phone_normalized": "",
+      "phone_normalized": "+50687591675",
       "whatsapp": "+50687591675",
       "instagram": "",
       "instagram_verified": false,
@@ -36243,7 +36244,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -36252,7 +36253,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Lapalapa Beach Front Hotel provides hotel accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -36271,10 +36272,10 @@
   },
   {
     "id": "00f056556e35",
-    "slug": "lapaluna",
+    "slug": "lapaluna-puerto-viejo",
     "name": "Lapaluna",
-    "category": "",
-    "area": "Unknown",
+    "category": "restaurant",
+    "area": "Puerto Viejo",
     "lat": "",
     "lng": "",
     "distance_km": "",
@@ -36306,11 +36307,11 @@
     "scores": {
       "contactability": 15,
       "visibility": 0,
-      "completeness": 30
+      "completeness": 50
     },
     "badges": [],
     "intents": [
-      "other"
+      "eat"
     ],
     "description": "Lapaluna is located in Puerto Viejo.",
     "verified_date": "",
@@ -36426,8 +36427,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "83933939",
-      "phone_normalized": "",
-      "whatsapp": "83933939",
+      "phone_normalized": "+83933939",
+      "whatsapp": "+83933939",
       "instagram": "lasmariposas",
       "instagram_verified": false,
       "facebook_url": "",
@@ -36463,7 +36464,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -36475,7 +36476,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Las Mariposas provides caribe azul tucán cabin accommodations in Playa Chiquita. Open now.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -36721,7 +36722,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -36732,7 +36733,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Le Cameleon Boutique Hotel provides hotel accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -37012,7 +37013,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 1180",
-      "phone_normalized": "",
+      "phone_normalized": "+50627551180",
       "whatsapp": "+50627551180",
       "instagram": "",
       "instagram_verified": false,
@@ -37892,8 +37893,8 @@
     "status": "active",
     "channels": {
       "phone": "87027163",
-      "phone_normalized": "",
-      "whatsapp": "87027163",
+      "phone_normalized": "+87027163",
+      "whatsapp": "+87027163",
       "instagram": "magicmoonbeachhouse",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/magicmooncr",
@@ -38045,7 +38046,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8774 1940",
-      "phone_normalized": "",
+      "phone_normalized": "+50687741940",
       "whatsapp": "+50687741940",
       "instagram": "manzanilloresortcr",
       "instagram_verified": false,
@@ -38292,7 +38293,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8703 3928",
-      "phone_normalized": "",
+      "phone_normalized": "+50687033928",
       "whatsapp": "+50687033928",
       "instagram": "",
       "instagram_verified": false,
@@ -38536,7 +38537,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2759-0673",
-      "phone_normalized": "",
+      "phone_normalized": "+50627590673",
       "whatsapp": "+50627590673",
       "instagram": "",
       "instagram_verified": false,
@@ -38612,7 +38613,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8532 6251",
-      "phone_normalized": "",
+      "phone_normalized": "+50685326251",
       "whatsapp": "+50685326251",
       "instagram": "",
       "instagram_verified": false,
@@ -39076,7 +39077,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -39087,7 +39088,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Mi Casa Hostel y Hotel El Tesoro provides detalles del hotel accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -39108,18 +39109,18 @@
   },
   {
     "id": "b940277441ab",
-    "slug": "mishka-lodge",
+    "slug": "mishka-lodge-playa-negra",
     "name": "Mishka Lodge",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.654644",
     "lng": "-82.784708",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89466270",
-      "phone_normalized": "",
-      "whatsapp": "89466270",
+      "phone_normalized": "+89466270",
+      "whatsapp": "+89466270",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -39151,7 +39152,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -39257,18 +39258,18 @@
   },
   {
     "id": "87df24f28367",
-    "slug": "morpho-casitas",
+    "slug": "morpho-casitas-playa-negra",
     "name": "Morpho Casitas",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6534314",
     "lng": "-82.7783071",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89836677",
-      "phone_normalized": "",
-      "whatsapp": "89836677",
+      "phone_normalized": "+89836677",
+      "whatsapp": "+89836677",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -39300,7 +39301,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -39339,7 +39340,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6137 5040",
-      "phone_normalized": "",
+      "phone_normalized": "+50661375040",
       "whatsapp": "+50661375040",
       "instagram": "mulata.cr",
       "instagram_verified": false,
@@ -39401,10 +39402,10 @@
   },
   {
     "id": "c255bd006c10",
-    "slug": "namu-garden-hotel-spa",
+    "slug": "namu-garden-hotel-spa-playa-negra",
     "name": "Namu Garden Hotel & Spa",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6531231",
     "lng": "-82.7543983",
     "distance_km": "",
@@ -39436,7 +39437,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 25,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [],
     "intents": [
@@ -39723,18 +39724,18 @@
   },
   {
     "id": "0811bc780fbf",
-    "slug": "nana-s-place-beach-house",
+    "slug": "nana-s-place-beach-house-playa-chiquita",
     "name": "Nana's Place Beach House",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Chiquita",
     "lat": "9.6295989",
     "lng": "-82.7310521",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "87820610",
-      "phone_normalized": "",
-      "whatsapp": "87820610",
+      "phone_normalized": "+87820610",
+      "whatsapp": "+87820610",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -39762,7 +39763,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -39867,18 +39868,18 @@
   },
   {
     "id": "104b960a4885",
-    "slug": "nao",
+    "slug": "nao-playa-negra",
     "name": "NAO",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6538697",
     "lng": "-82.7447763",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86684190",
-      "phone_normalized": "",
-      "whatsapp": "86684190",
+      "phone_normalized": "+86684190",
+      "whatsapp": "+86684190",
       "instagram": "nao_cr",
       "instagram_verified": false,
       "facebook_url": "",
@@ -39910,7 +39911,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -40030,7 +40031,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8628 2663",
-      "phone_normalized": "",
+      "phone_normalized": "+50686282663",
       "whatsapp": "12133143400",
       "instagram": "natureobservatorio",
       "instagram_verified": false,
@@ -40106,7 +40107,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0045",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550045",
       "whatsapp": "+50627550045",
       "instagram": "",
       "instagram_verified": false,
@@ -40169,7 +40170,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0570",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550570",
       "whatsapp": "+50627550570",
       "instagram": "",
       "instagram_verified": false,
@@ -40316,7 +40317,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 1166",
-      "phone_normalized": "",
+      "phone_normalized": "+50627551166",
       "whatsapp": "+50627551166",
       "instagram": "",
       "instagram_verified": false,
@@ -40640,7 +40641,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2751-1087",
-      "phone_normalized": "",
+      "phone_normalized": "+50627511087",
       "whatsapp": "+50627511087",
       "instagram": "",
       "instagram_verified": false,
@@ -41537,7 +41538,7 @@
     "status": "active",
     "channels": {
       "phone": "8008000722",
-      "phone_normalized": "",
+      "phone_normalized": "+8008000722",
       "whatsapp": "+50663646771",
       "instagram": "palisupermarketcr",
       "instagram_verified": false,
@@ -41607,18 +41608,18 @@
   },
   {
     "id": "08ac8d895b25",
-    "slug": "paloma-studio",
+    "slug": "paloma-studio-playa-negra",
     "name": "Paloma Studio",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6433356",
     "lng": "-82.7384602",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "63692978",
-      "phone_normalized": "",
-      "whatsapp": "63692978",
+      "phone_normalized": "+63692978",
+      "whatsapp": "+63692978",
       "instagram": "palomastudiocr",
       "instagram_verified": false,
       "facebook_url": "",
@@ -41650,7 +41651,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 25,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -41805,7 +41806,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 30,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -41814,7 +41815,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Panadería Francés is a shopping in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -41843,7 +41844,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8738 4860",
-      "phone_normalized": "",
+      "phone_normalized": "+50687384860",
       "whatsapp": "+50687384860",
       "instagram": "",
       "instagram_verified": false,
@@ -41910,7 +41911,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2101 5327",
-      "phone_normalized": "",
+      "phone_normalized": "+50621015327",
       "whatsapp": "+50621015327",
       "instagram": "papaya_wildlife_lodge",
       "instagram_verified": false,
@@ -42046,17 +42047,17 @@
   },
   {
     "id": "b15aae738ed0",
-    "slug": "paragliding-cr",
+    "slug": "paragliding-cr-playa-negra",
     "name": "Paragliding CR",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6483809",
     "lng": "-82.7338131",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "71091388",
-      "phone_normalized": "",
+      "phone_normalized": "+71091388",
       "whatsapp": "+50671091388",
       "instagram": "",
       "instagram_verified": false,
@@ -42093,7 +42094,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 40,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -42122,10 +42123,10 @@
   },
   {
     "id": "30c3a28fd042",
-    "slug": "paraiso-bohemio",
+    "slug": "paraiso-bohemio-puerto-viejo",
     "name": "Paraiso Bohemio",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6655692",
     "lng": "-82.7824679",
     "distance_km": "",
@@ -42157,7 +42158,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -42194,7 +42195,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7117 2345",
-      "phone_normalized": "",
+      "phone_normalized": "+50671172345",
       "whatsapp": "+50671172345",
       "instagram": "",
       "instagram_verified": false,
@@ -42268,7 +42269,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8939 9823",
-      "phone_normalized": "",
+      "phone_normalized": "+50689399823",
       "whatsapp": "+50689399823",
       "instagram": "passionfruitecolodge",
       "instagram_verified": false,
@@ -42461,7 +42462,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 30,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -42471,7 +42472,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Paula's and Daniel's Homestay provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -42980,10 +42981,10 @@
   },
   {
     "id": "11ee9cd417f2",
-    "slug": "pipa-s-beach",
+    "slug": "pipa-s-beach-puerto-viejo",
     "name": "Pipa's Beach",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6583645",
     "lng": "-82.7722893",
     "distance_km": "",
@@ -43015,7 +43016,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -43052,7 +43053,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0146",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550146",
       "whatsapp": "+50627550146",
       "instagram": "",
       "instagram_verified": false,
@@ -43126,7 +43127,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0179",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550179",
       "whatsapp": "+50627550179",
       "instagram": "pizzeriacahuita",
       "instagram_verified": false,
@@ -43367,10 +43368,10 @@
   },
   {
     "id": "b45bc66d3d1c",
-    "slug": "playa-chiquita-paradise",
+    "slug": "playa-chiquita-paradise-cocles",
     "name": "Playa Chiquita Paradise",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.63743",
     "lng": "-82.713957",
     "distance_km": "4.831",
@@ -43410,7 +43411,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -43439,10 +43440,10 @@
   },
   {
     "id": "66b4c9b63d85",
-    "slug": "playa-cocles",
+    "slug": "playa-cocles-playa-negra",
     "name": "Playa Cocles",
     "category": "tour_company",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6476617",
     "lng": "-82.732354",
     "distance_km": "2.425",
@@ -43474,7 +43475,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -43501,10 +43502,10 @@
   },
   {
     "id": "abd073e6b5fc",
-    "slug": "playa-estiven",
+    "slug": "playa-estiven-playa-negra",
     "name": "Playa Estiven",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6426057",
     "lng": "-82.7150137",
     "distance_km": "",
@@ -43536,7 +43537,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -43567,13 +43568,13 @@
     "name": "Playa Grande Lodge",
     "category": "hotel",
     "area": "Cahuita",
-    "lat": "",
-    "lng": "",
+    "lat": "9.750639",
+    "lng": "-82.861683",
     "distance_km": "",
     "status": "active",
     "channels": {
       "phone": "+506 2755 0250",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550250",
       "whatsapp": "+50627550250",
       "instagram": "",
       "instagram_verified": false,
@@ -43605,8 +43606,8 @@
     ],
     "scores": {
       "contactability": 75,
-      "visibility": 35,
-      "completeness": 75
+      "visibility": 60,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -43737,7 +43738,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0127",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550127",
       "whatsapp": "+50627550127",
       "instagram": "playanegraguesthouse.cahuita",
       "instagram_verified": false,
@@ -43798,10 +43799,10 @@
   },
   {
     "id": "ab7fc3821864",
-    "slug": "polic-a",
+    "slug": "polic-a-playa-negra",
     "name": "policía",
     "category": "Transport",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6545344",
     "lng": "-82.7665758",
     "distance_km": "2.608",
@@ -43837,7 +43838,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -44277,10 +44278,10 @@
   },
   {
     "id": "d126783e9685",
-    "slug": "puerto-viejo-de-talamanca",
+    "slug": "puerto-viejo-de-talamanca-playa-negra",
     "name": "Puerto Viejo de Talamanca",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6540146",
     "lng": "-82.7549412",
     "distance_km": "2.493",
@@ -44320,7 +44321,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -45342,10 +45343,10 @@
   },
   {
     "id": "2e69d381c8c4",
-    "slug": "pure-life-sanctuary",
+    "slug": "pure-life-sanctuary-cocles",
     "name": "Pure Life Sanctuary",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6337043",
     "lng": "-82.7337504",
     "distance_km": "",
@@ -45381,7 +45382,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -45573,10 +45574,10 @@
   },
   {
     "id": "51820891daac",
-    "slug": "quinta-guarumo",
+    "slug": "quinta-guarumo-playa-negra",
     "name": "Quinta Guarumo",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6473051",
     "lng": "-82.7424407",
     "distance_km": "",
@@ -45612,7 +45613,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -45806,7 +45807,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8874 9992",
-      "phone_normalized": "",
+      "phone_normalized": "+50688749992",
       "whatsapp": "+50688749992",
       "instagram": "",
       "instagram_verified": false,
@@ -45923,7 +45924,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 50,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -45935,7 +45936,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Refugio de animales Jaguar runs tours and activities in the Cocles area.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -46279,18 +46280,18 @@
   },
   {
     "id": "c5b6ae2ebc35",
-    "slug": "repazul",
+    "slug": "repazul-puerto-viejo",
     "name": "Repazul",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6580734",
     "lng": "-82.7733018",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27502035",
-      "phone_normalized": "",
-      "whatsapp": "27502035",
+      "phone_normalized": "+27502035",
+      "whatsapp": "+27502035",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://facebook.com/BananaAzul",
@@ -46330,7 +46331,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -46369,7 +46370,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0057",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550057",
       "whatsapp": "+50627550057",
       "instagram": "",
       "instagram_verified": false,
@@ -46556,7 +46557,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 100
     },
     "badges": [
       "WhatsApp",
@@ -46568,7 +46569,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find pizza at Restaurante Cariblue, a restaurant in Cocles. Open now.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -46758,18 +46759,18 @@
   },
   {
     "id": "59cc09c5e457",
-    "slug": "retiro-verde",
+    "slug": "retiro-verde-cocles",
     "name": "RETIRO VERDE",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6371979",
     "lng": "-82.7387421",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "88247367",
-      "phone_normalized": "",
-      "whatsapp": "88247367",
+      "phone_normalized": "+88247367",
+      "whatsapp": "+88247367",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -46801,7 +46802,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -46903,18 +46904,18 @@
   },
   {
     "id": "3b7e4423b521",
-    "slug": "rico-tico-tours",
+    "slug": "rico-tico-tours-puerto-viejo",
     "name": "Rico Tico Tours",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6619045",
     "lng": "-82.7885904",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "71115089",
-      "phone_normalized": "",
-      "whatsapp": "71115089",
+      "phone_normalized": "+71115089",
+      "whatsapp": "+71115089",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -46946,7 +46947,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -47059,18 +47060,18 @@
   },
   {
     "id": "e20ab301c20d",
-    "slug": "rio-home",
+    "slug": "rio-home-playa-negra",
     "name": "Rio Home",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6438612",
     "lng": "-82.7321521",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "85824000",
-      "phone_normalized": "",
-      "whatsapp": "85824000",
+      "phone_normalized": "+85824000",
+      "whatsapp": "+85824000",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -47102,7 +47103,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 30,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -47209,18 +47210,18 @@
   },
   {
     "id": "70988880b144",
-    "slug": "river-box-cocles",
+    "slug": "river-box-cocles-playa-negra",
     "name": "River Box Cocles",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.643901",
     "lng": "-82.7357371",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "63801253",
-      "phone_normalized": "",
-      "whatsapp": "63801253",
+      "phone_normalized": "+63801253",
+      "whatsapp": "+63801253",
       "instagram": "riverboxcocles",
       "instagram_verified": false,
       "facebook_url": "",
@@ -47252,7 +47253,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -47298,7 +47299,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8893 2252",
-      "phone_normalized": "",
+      "phone_normalized": "+50688932252",
       "whatsapp": "+50688932252",
       "instagram": "",
       "instagram_verified": false,
@@ -47660,18 +47661,18 @@
   },
   {
     "id": "1d401d977b82",
-    "slug": "rustika-lodge",
+    "slug": "rustika-lodge-puerto-viejo",
     "name": "Rustika Lodge",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6552385",
     "lng": "-82.7691739",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "21027351",
-      "phone_normalized": "",
-      "whatsapp": "21027351",
+      "phone_normalized": "+21027351",
+      "whatsapp": "+21027351",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -47699,7 +47700,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47770,7 +47771,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 30,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -47780,7 +47781,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Río Negro is a restaurant in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -48336,7 +48337,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8807 6663",
-      "phone_normalized": "",
+      "phone_normalized": "+50688076663",
       "whatsapp": "+50688076663",
       "instagram": "",
       "instagram_verified": false,
@@ -48479,7 +48480,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0581",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550581",
       "whatsapp": "+50627550581",
       "instagram": "",
       "instagram_verified": false,
@@ -48532,10 +48533,10 @@
   },
   {
     "id": "166ed6d80dcb",
-    "slug": "selina-hostel-puerto-viejo",
+    "slug": "selina-hostel-puerto-viejo-puerto-viejo",
     "name": "Selina Hostel Puerto Viejo",
     "category": "hostel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6566085",
     "lng": "-82.7433642",
     "distance_km": "1.200",
@@ -48575,7 +48576,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -48833,18 +48834,18 @@
   },
   {
     "id": "bdc6b4b7fc7b",
-    "slug": "shenanigans-eat-drink-dink-drive",
+    "slug": "shenanigans-eat-drink-dink-drive-cocles",
     "name": "Shenanigans–Eat Drink Dink Drive",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6393957",
     "lng": "-82.71685",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89568669",
-      "phone_normalized": "",
-      "whatsapp": "89568669",
+      "phone_normalized": "+89568669",
+      "whatsapp": "+89568669",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/WahooVacations",
@@ -48880,7 +48881,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -48911,10 +48912,10 @@
   },
   {
     "id": "9c87a46bb48a",
-    "slug": "shenanigans-fat-drink-dink-drive",
+    "slug": "shenanigans-fat-drink-dink-drive-playa-negra",
     "name": "Shenanigans–Fat Drink Dink Drive",
-    "category": "",
-    "area": "Unknown",
+    "category": "restaurant",
+    "area": "Playa Negra",
     "lat": "9.6529399",
     "lng": "-82.7736678",
     "distance_km": "",
@@ -48946,11 +48947,11 @@
     "scores": {
       "contactability": 0,
       "visibility": 25,
-      "completeness": 35
+      "completeness": 55
     },
     "badges": [],
     "intents": [
-      "other"
+      "eat"
     ],
     "description": "Shenanigans–Fat Drink Dink Drive is located in Puerto Viejo.",
     "verified_date": "",
@@ -48981,7 +48982,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8450 9411",
-      "phone_normalized": "",
+      "phone_normalized": "+50684509411",
       "whatsapp": "+50684509411",
       "instagram": "shiosai_cabins",
       "instagram_verified": false,
@@ -49050,10 +49051,10 @@
   },
   {
     "id": "c309555bec31",
-    "slug": "siren-sanctuary",
+    "slug": "siren-sanctuary-cocles",
     "name": "Siren Sanctuary",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6368821",
     "lng": "-82.7136277",
     "distance_km": "",
@@ -49093,7 +49094,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "Map Verified",
@@ -49121,10 +49122,10 @@
   },
   {
     "id": "c8928f62c1e6",
-    "slug": "sloth-crossing",
+    "slug": "sloth-crossing-puerto-viejo",
     "name": "Sloth Crossing",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6629375",
     "lng": "-82.7894375",
     "distance_km": "",
@@ -49156,7 +49157,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 25,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [],
     "intents": [
@@ -49258,18 +49259,18 @@
   },
   {
     "id": "1b7da47702f4",
-    "slug": "sloth-massage",
+    "slug": "sloth-massage-puerto-viejo",
     "name": "Sloth Massage",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6564261",
     "lng": "-82.7434598",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "61236473",
-      "phone_normalized": "",
-      "whatsapp": "61236473",
+      "phone_normalized": "+61236473",
+      "whatsapp": "+61236473",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -49297,7 +49298,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -49336,7 +49337,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2750 0775",
-      "phone_normalized": "",
+      "phone_normalized": "+50627500775",
       "whatsapp": "+50627500775",
       "instagram": "sloth.sanctuary.costa.rica",
       "instagram_verified": false,
@@ -49487,7 +49488,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0109",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550109",
       "whatsapp": "+50627550109",
       "instagram": "",
       "instagram_verified": false,
@@ -49713,7 +49714,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0233",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550233",
       "whatsapp": "+50627550233",
       "instagram": "",
       "instagram_verified": false,
@@ -49783,7 +49784,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 7040 6944",
-      "phone_normalized": "",
+      "phone_normalized": "+50670406944",
       "whatsapp": "+50670406944",
       "instagram": "",
       "instagram_verified": false,
@@ -49924,18 +49925,18 @@
   },
   {
     "id": "ff93cd9a2332",
-    "slug": "soda-shekina",
+    "slug": "soda-shekina-playa-negra",
     "name": "Soda Shekina",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6548801",
     "lng": "-82.7539308",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27500549",
-      "phone_normalized": "",
-      "whatsapp": "27500549",
+      "phone_normalized": "+27500549",
+      "whatsapp": "+27500549",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -49967,7 +49968,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -50078,18 +50079,18 @@
   },
   {
     "id": "1cf637f2d23d",
-    "slug": "soda-t-teres",
+    "slug": "soda-t-teres-cocles",
     "name": "Soda Títeres",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6394455",
     "lng": "-82.7132345",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "64393820",
-      "phone_normalized": "",
-      "whatsapp": "64393820",
+      "phone_normalized": "+64393820",
+      "whatsapp": "+64393820",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -50121,7 +50122,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -50161,7 +50162,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2754 1071",
-      "phone_normalized": "",
+      "phone_normalized": "+50627541071",
       "whatsapp": "+50627541071",
       "instagram": "",
       "instagram_verified": false,
@@ -50214,10 +50215,10 @@
   },
   {
     "id": "cca8f7ce013e",
-    "slug": "solo-bueno",
+    "slug": "solo-bueno-playa-negra",
     "name": "Solo Bueno",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6465454",
     "lng": "-82.7828012",
     "distance_km": "3.418",
@@ -50253,7 +50254,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -50799,10 +50800,10 @@
   },
   {
     "id": "b9483547a75e",
-    "slug": "spiral",
+    "slug": "spiral-puerto-viejo",
     "name": "Spiral",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.663423",
     "lng": "-82.7795402",
     "distance_km": "",
@@ -50834,7 +50835,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -50871,7 +50872,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0216",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550216",
       "whatsapp": "+50670331040",
       "instagram": "sport_body_gym",
       "instagram_verified": false,
@@ -51136,7 +51137,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0349",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550349",
       "whatsapp": "+50627550349",
       "instagram": "",
       "instagram_verified": false,
@@ -52372,18 +52373,18 @@
   },
   {
     "id": "78339b13812c",
-    "slug": "talamanca-organica-cacao-fine-chocolate",
+    "slug": "talamanca-organica-cacao-fine-chocolate-cocles",
     "name": "Talamanca Organica Cacao & Fine Chocolate",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6355926",
     "lng": "-82.7186266",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "85632790",
-      "phone_normalized": "",
-      "whatsapp": "85632790",
+      "phone_normalized": "+85632790",
+      "whatsapp": "+85632790",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -52411,7 +52412,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -52440,10 +52441,10 @@
   },
   {
     "id": "e5ee144a6f18",
-    "slug": "talamanca-viewpoint",
+    "slug": "talamanca-viewpoint-puerto-viejo",
     "name": "Talamanca Viewpoint",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6565112",
     "lng": "-82.7411367",
     "distance_km": "",
@@ -52475,7 +52476,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -52502,10 +52503,10 @@
   },
   {
     "id": "240280521d91",
-    "slug": "taller-gabriel",
+    "slug": "taller-gabriel-puerto-viejo",
     "name": "Taller Gabriel",
     "category": "shopping",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.655235",
     "lng": "-82.7537536",
     "distance_km": "5.388",
@@ -52545,7 +52546,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -52584,7 +52585,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8499 7131",
-      "phone_normalized": "",
+      "phone_normalized": "+50684997131",
       "whatsapp": "+50684997131",
       "instagram": "tarponville_fishing_lodge",
       "instagram_verified": false,
@@ -52825,10 +52826,10 @@
   },
   {
     "id": "b2213a875b71",
-    "slug": "tattoo-studio-33",
+    "slug": "tattoo-studio-33-puerto-viejo",
     "name": "Tattoo Studio 33",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6552364",
     "lng": "-82.7417082",
     "distance_km": "",
@@ -52860,7 +52861,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -52891,8 +52892,8 @@
     "name": "Terminal de Buses Sixaola",
     "category": "Transport",
     "area": "Sixaola",
-    "lat": "",
-    "lng": "",
+    "lat": "9.5023603",
+    "lng": "-82.6137275",
     "distance_km": "",
     "status": "active",
     "channels": {
@@ -52921,8 +52922,8 @@
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 35,
-      "completeness": 55
+      "visibility": 60,
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -53045,17 +53046,17 @@
   },
   {
     "id": "cae5f285e03e",
-    "slug": "the-amazing-treehouse-and-nature",
+    "slug": "the-amazing-treehouse-and-nature-playa-negra",
     "name": "The Amazing Treehouse and Nature",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6521592",
     "lng": "-82.7473802",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "86282663",
-      "phone_normalized": "",
+      "phone_normalized": "+86282663",
       "whatsapp": "12133143400",
       "instagram": "",
       "instagram_verified": false,
@@ -53092,7 +53093,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -53123,18 +53124,18 @@
   },
   {
     "id": "cc184b427728",
-    "slug": "the-bush",
+    "slug": "the-bush-cocles",
     "name": "The Bush",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6330449",
     "lng": "-82.7182417",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "70618099",
-      "phone_normalized": "",
-      "whatsapp": "70618099",
+      "phone_normalized": "+70618099",
+      "whatsapp": "+70618099",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -53162,7 +53163,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -53190,18 +53191,18 @@
   },
   {
     "id": "9e8ab7bcef1f",
-    "slug": "the-bush-doctah-herbalist",
+    "slug": "the-bush-doctah-herbalist-cocles",
     "name": "The Bush Doctah Herbalist",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6330449",
     "lng": "-82.7182417",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "70618099",
-      "phone_normalized": "",
-      "whatsapp": "70618099",
+      "phone_normalized": "+70618099",
+      "whatsapp": "+70618099",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -53229,7 +53230,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 25,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -53411,18 +53412,18 @@
   },
   {
     "id": "2aa37609b492",
-    "slug": "the-reillder-castillo-project",
+    "slug": "the-reillder-castillo-project-puerto-viejo",
     "name": "The Reillder Castillo Project",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6583737",
     "lng": "-82.7547956",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "61911289",
-      "phone_normalized": "",
-      "whatsapp": "61911289",
+      "phone_normalized": "+61911289",
+      "whatsapp": "+61911289",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/profile.php",
@@ -53458,7 +53459,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -53501,7 +53502,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 6008 9241",
-      "phone_normalized": "",
+      "phone_normalized": "+50660089241",
       "whatsapp": "+50660089241",
       "instagram": "",
       "instagram_verified": false,
@@ -53885,7 +53886,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8805 1273",
-      "phone_normalized": "",
+      "phone_normalized": "+50688051273",
       "whatsapp": "+50688051273",
       "instagram": "",
       "instagram_verified": false,
@@ -54032,7 +54033,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 2755 0105",
-      "phone_normalized": "",
+      "phone_normalized": "+50627550105",
       "whatsapp": "+50627550105",
       "instagram": "",
       "instagram_verified": false,
@@ -54132,7 +54133,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -54143,7 +54144,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Totem Hotel Resort & Restaurant provides hotel accommodations in Cocles.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -54316,17 +54317,17 @@
   },
   {
     "id": "fff0d839285b",
-    "slug": "treetop-mansion",
+    "slug": "treetop-mansion-playa-negra",
     "name": "TreeTop Mansion",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6447043",
     "lng": "-82.7404511",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+17863276706",
-      "phone_normalized": "",
+      "phone_normalized": "+17863276706",
       "whatsapp": "+17863276706",
       "instagram": "",
       "instagram_verified": false,
@@ -54359,7 +54360,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -54542,18 +54543,18 @@
   },
   {
     "id": "7ca02da02df4",
-    "slug": "tribu-functional-training",
+    "slug": "tribu-functional-training-puerto-viejo",
     "name": "TRIBU functional training",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6559184",
     "lng": "-82.7467873",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "89106979",
-      "phone_normalized": "",
-      "whatsapp": "89106979",
+      "phone_normalized": "+89106979",
+      "whatsapp": "+89106979",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -54581,7 +54582,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -54615,10 +54616,10 @@
   },
   {
     "id": "d52c32c8b2ec",
-    "slug": "tropical-getaway-casa-de-amor",
+    "slug": "tropical-getaway-casa-de-amor-cocles",
     "name": "Tropical Getaway \"Casa de Amor",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6337969",
     "lng": "-82.7183725",
     "distance_km": "",
@@ -54650,7 +54651,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -54677,10 +54678,10 @@
   },
   {
     "id": "8888bb95ceaa",
-    "slug": "tropical-getaway-dream-house",
+    "slug": "tropical-getaway-dream-house-playa-negra",
     "name": "Tropical Getaway \"Dream House\"",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6450827",
     "lng": "-82.7401256",
     "distance_km": "",
@@ -54712,7 +54713,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -54801,10 +54802,10 @@
   },
   {
     "id": "05591e4de148",
-    "slug": "tubolwak-lodge-y-garden",
+    "slug": "tubolwak-lodge-y-garden-cocles",
     "name": "Tubolwak Lodge y Garden",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6328434",
     "lng": "-82.7166267",
     "distance_km": "",
@@ -54840,7 +54841,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -55133,10 +55134,10 @@
   },
   {
     "id": "4001000f087d",
-    "slug": "vago-s-place",
+    "slug": "vago-s-place-playa-chiquita",
     "name": "Vago's Place",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Chiquita",
     "lat": "9.6299075",
     "lng": "-82.7214034",
     "distance_km": "2.589",
@@ -55168,7 +55169,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "Map Verified"
@@ -55584,8 +55585,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "88363738",
-      "phone_normalized": "",
-      "whatsapp": "88363738",
+      "phone_normalized": "+88363738",
+      "whatsapp": "+88363738",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -55617,7 +55618,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -55628,7 +55629,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Bukë provides hostel accommodations in Playa Negra.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -55799,18 +55800,18 @@
   },
   {
     "id": "7a36221ec6f5",
-    "slug": "villa-cerise",
+    "slug": "villa-cerise-playa-negra",
     "name": "Villa Cerise",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6400625",
     "lng": "-82.7155625",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "27503096",
-      "phone_normalized": "",
-      "whatsapp": "27503096",
+      "phone_normalized": "+27503096",
+      "whatsapp": "+27503096",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -55838,7 +55839,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -55881,8 +55882,8 @@
     "status": "active",
     "channels": {
       "phone": "83268355",
-      "phone_normalized": "",
-      "whatsapp": "83268355",
+      "phone_normalized": "+83268355",
+      "whatsapp": "+83268355",
       "instagram": "villadelmar",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/uvabluevillas",
@@ -56116,18 +56117,18 @@
   },
   {
     "id": "18a289f79627",
-    "slug": "villa-kandulu",
+    "slug": "villa-kandulu-playa-negra",
     "name": "Villa Kandulu",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6547145",
     "lng": "-82.7451559",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "64259581",
-      "phone_normalized": "",
-      "whatsapp": "64259581",
+      "phone_normalized": "+64259581",
+      "whatsapp": "+64259581",
       "instagram": "kandulu",
       "instagram_verified": false,
       "facebook_url": "",
@@ -56163,7 +56164,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -56194,10 +56195,10 @@
   },
   {
     "id": "75b18981a629",
-    "slug": "villa-khal",
+    "slug": "villa-khal-puerto-viejo",
     "name": "Villa Khalú",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6579672",
     "lng": "-82.7785969",
     "distance_km": "",
@@ -56229,7 +56230,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -56357,7 +56358,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8370 1469",
-      "phone_normalized": "",
+      "phone_normalized": "+50683701469",
       "whatsapp": "+50683701469",
       "instagram": "",
       "instagram_verified": false,
@@ -56485,18 +56486,18 @@
   },
   {
     "id": "5b0998d59c17",
-    "slug": "villa-miagoa",
+    "slug": "villa-miagoa-cocles",
     "name": "Villa Miagoa",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6393753",
     "lng": "-82.7095963",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "60089241",
-      "phone_normalized": "",
-      "whatsapp": "60089241",
+      "phone_normalized": "+60089241",
+      "whatsapp": "+60089241",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "https://www.facebook.com/profile.php",
@@ -56532,7 +56533,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -56642,17 +56643,17 @@
   },
   {
     "id": "3d6343b612bb",
-    "slug": "villa-selva-luna",
+    "slug": "villa-selva-luna-cocles",
     "name": "Villa Selva Luna",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Cocles",
     "lat": "9.6356919",
     "lng": "-82.7153429",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "+4915116128430",
-      "phone_normalized": "",
+      "phone_normalized": "+4915116128430",
       "whatsapp": "+4915116128430",
       "instagram": "",
       "instagram_verified": false,
@@ -56681,7 +56682,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -56786,10 +56787,10 @@
   },
   {
     "id": "e9bf4df28528",
-    "slug": "villa-tropical",
+    "slug": "villa-tropical-playa-negra",
     "name": "Villa Tropical",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6518604",
     "lng": "-82.7486714",
     "distance_km": "",
@@ -56821,7 +56822,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -57199,10 +57200,10 @@
   },
   {
     "id": "8f84af8d32f3",
-    "slug": "villas-caranda",
+    "slug": "villas-caranda-puerto-viejo",
     "name": "Villas caranda",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Puerto Viejo",
     "lat": "9.6573326",
     "lng": "-82.7880516",
     "distance_km": "",
@@ -57234,7 +57235,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -57614,18 +57615,18 @@
   },
   {
     "id": "344b5dfe0035",
-    "slug": "villas-kandulu",
+    "slug": "villas-kandulu-playa-negra",
     "name": "Villas Kandulu",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6547145",
     "lng": "-82.7451559",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "64259581",
-      "phone_normalized": "",
-      "whatsapp": "64259581",
+      "phone_normalized": "+64259581",
+      "whatsapp": "+64259581",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -57657,7 +57658,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -57943,18 +57944,18 @@
   },
   {
     "id": "18141fd8fe10",
-    "slug": "villas-moonlight",
+    "slug": "villas-moonlight-playa-negra",
     "name": "Villas Moonlight",
     "category": "hotel",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6494818",
     "lng": "-82.7535372",
     "distance_km": "",
     "status": "unknown",
     "channels": {
       "phone": "22016245",
-      "phone_normalized": "",
-      "whatsapp": "22016245",
+      "phone_normalized": "+22016245",
+      "whatsapp": "+22016245",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -57982,7 +57983,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -58356,10 +58357,10 @@
   },
   {
     "id": "43c6160c4c4c",
-    "slug": "vindas",
+    "slug": "vindas-playa-negra",
     "name": "Vindas",
     "category": "restaurant",
-    "area": "Unknown",
+    "area": "Playa Negra",
     "lat": "9.6425611",
     "lng": "-82.7173137",
     "distance_km": "",
@@ -58395,7 +58396,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -58434,8 +58435,8 @@
     "status": "needs_verification",
     "channels": {
       "phone": "27500501",
-      "phone_normalized": "",
-      "whatsapp": "27500501",
+      "phone_normalized": "+27500501",
+      "whatsapp": "+27500501",
       "instagram": "",
       "instagram_verified": false,
       "facebook_url": "",
@@ -58467,7 +58468,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 25,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -58477,7 +58478,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Vista Verde provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -58851,7 +58852,7 @@
     "scores": {
       "contactability": 30,
       "visibility": 80,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "Instagram",
@@ -58861,7 +58862,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find capuchino at Watuza, a cafetería in Puerto Viejo. Open now.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -58970,7 +58971,7 @@
     "status": "active",
     "channels": {
       "phone": "+506 8908 5447",
-      "phone_normalized": "",
+      "phone_normalized": "+50689085447",
       "whatsapp": "+50689085447",
       "instagram": "",
       "instagram_verified": false,
@@ -59086,7 +59087,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "Map Verified",
@@ -59095,7 +59096,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find vegana at Yerbas Concepto Culinario, a cafetería in Puerto Viejo. Open now.",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"

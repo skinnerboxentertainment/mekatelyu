@@ -45,7 +45,17 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-content">
 <div class="biz-links"><a href="https://www.google.com/maps?cid=12283987889434351587" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Google Maps">Google Maps</a></div>
-
+<div class="biz-map">
+<div id="map-terminal-de-buses-sixaola-sixaola-lim-n-costa-rica-sixaola" class="map-container"></div>
+<p class="map-note"><a href="https://www.google.com/maps?cid=12283987889434351587" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map-terminal-de-buses-sixaola-sixaola-lim-n-costa-rica-sixaola', { zoomControl: false, attributionControl: false }).setView([9.5023603, -82.6137275], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([9.5023603, -82.6137275]).addTo(map);
+});
+</script>
 <div class="biz-qr">
 <div class="qr-preview">
 <img src="../qr/terminal-de-buses-sixaola-sixaola-lim-n-costa-rica-sixaola.png" alt="QR code for Terminal de Buses Sixaola" width="120" height="120" loading="lazy">
@@ -58,8 +68,8 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-scores">
 <div class="score-bar"><span class="score-label">Contactability</span><div class="bar"><div class="bar-fill" style="width:0%"></div></div><span class="score-num">0</span></div>
-<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:35%"></div></div><span class="score-num">35</span></div>
-<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:55%"></div></div><span class="score-num">55</span></div>
+<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:60%"></div></div><span class="score-num">60</span></div>
+<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:70%"></div></div><span class="score-num">70</span></div>
 </div>
 <div class="biz-desc">
 <p>Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica offers services in Sixaola.</p>

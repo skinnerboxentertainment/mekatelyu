@@ -27,7 +27,7 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 <span class="biz-area">Manzanillo</span>
 <span class="biz-status status-active">Active</span>
 </div>
-<div class="badge-row"><span class="badge badge-whatsapp">WhatsApp</span> <span class="badge badge-map-verified">Map Verified</span> <span class="badge badge-has-website">Has Website</span> <span class="badge badge-phone">Phone</span></div>
+<div class="badge-row"><span class="badge badge-whatsapp">WhatsApp</span> <span class="badge badge-map-verified">Map Verified</span> <span class="badge badge-has-website">Has Website</span> <span class="badge badge-phone">Phone</span> <span class="badge badge-fully-online">Fully Online</span></div>
 <div class="biz-rating">&#9733;&#9733;&#9733;&#9733;&#189; 4.8</div>
 <div class="biz-addr">L2340QSdavida · <span class="plus-code">L2340QSdavida</span></div>
 <div class="biz-hours"><span class="biz-check">In 2:00 p.m. / Out 10:00 a.m.</span></div>
@@ -45,7 +45,17 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-content">
 <div class="biz-links"><a href="tel:+506 2759 9016" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Call">Call</a> <a href="https://instagram.com/congobongocr" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Instagram">Instagram</a> <a href="https://www.facebook.com/CongoBongoCR" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Facebook">Facebook</a> <a href="https://www.congo-bongo.com/" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Website">Website</a> <a href="https://www.google.com/maps?cid=9322669409493347402" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="Google Maps">Google Maps</a></div>
-
+<div class="biz-map">
+<div id="map-congo-bongo-ecovillage-manzanillo-lim-n-costa-rica-manzanillo" class="map-container"></div>
+<p class="map-note"><a href="https://www.google.com/maps?cid=9322669409493347402" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map-congo-bongo-ecovillage-manzanillo-lim-n-costa-rica-manzanillo', { zoomControl: false, attributionControl: false }).setView([9.6275396, -82.6633071], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([9.6275396, -82.6633071]).addTo(map);
+});
+</script>
 <div class="biz-qr">
 <div class="qr-preview">
 <img src="../qr/congo-bongo-ecovillage-manzanillo-lim-n-costa-rica-manzanillo.png" alt="QR code for Congo Bongo EcoVillage" width="120" height="120" loading="lazy">
@@ -58,8 +68,8 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="biz-scores">
 <div class="score-bar"><span class="score-label">Contactability</span><div class="bar"><div class="bar-fill" style="width:100%"></div></div><span class="score-num">100</span></div>
-<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:40%"></div></div><span class="score-num">40</span></div>
-<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div><span class="score-num">85</span></div>
+<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:65%"></div></div><span class="score-num">65</span></div>
+<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:100%"></div></div><span class="score-num">100</span></div>
 </div>
 <div class="biz-desc">
 <p>Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica provides cabinas heliconia accommodations in Manzanillo.</p>
@@ -74,7 +84,7 @@ const LOCALE_DATA = {"de": {"nav.directory": "Verzeichnis", "nav.classifieds": "
 </div>
 <div class="sticky-bar">
 <a href="https://wa.me/50689574177?text=Hola Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias." class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">Message on WhatsApp</a>
-
+<a href="tel:+50627599016" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>
 <a href="https://instagram.com/congobongocr" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Instagram">IG</a>
 </div>
 </body>

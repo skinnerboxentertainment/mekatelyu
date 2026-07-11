@@ -43,7 +43,7 @@ def load_classifieds():
 NAV_PAGES = {"directory": "Directory", "classifieds": "Classifieds", "post": "Post Ad"}
 
 # Configure your email here for the claim form
-CLAIM_EMAIL = "paradisio@example.com"  # TODO: replace with your actual email
+CLAIM_EMAIL = "skinnerboxentertainment@gmail.com"
 
 
 def nav_html(current, depth=0):
