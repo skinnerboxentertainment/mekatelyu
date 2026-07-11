@@ -299,7 +299,7 @@
         tile.addEventListener("click", function (e) {
             e.preventDefault();
             var cat = this.getAttribute("data-category");
-            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "services", "nightlife": "restaurant", "transport": "services" };
+            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "Wellness", "nightlife": "Nightlife", "transport": "Transport" };
             var mapped = mapping[cat] || cat;
             if (catFilter) { catFilter.value = mapped; }
             displayCount = PAGE_SIZE;
@@ -312,7 +312,7 @@
     function updateActiveTile() {
         var active = catFilter ? catFilter.value : "";
         document.querySelectorAll(".cat-tile").forEach(function (t) {
-            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "services", "nightlife": "restaurant", "transport": "services" };
+            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "Wellness", "nightlife": "Nightlife", "transport": "Transport" };
             var cat = t.getAttribute("data-category");
             var mapped = mapping[cat] || cat;
             if (active && mapped === active) {
