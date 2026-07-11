@@ -393,7 +393,7 @@ def cat_grid_html(categories):
     tiles = ""
     for key, en, es in CAT_SHORTCUTS:
         c = counts.get(key, 0)
-        tiles += f'<a href="#" class="cat-tile" data-category="{key}"><div data-i18n="home.cat_{key}">{en}</div><span class="cat-count" data-i18n="home.cat_count">{c} businesses</span></a>'
+        tiles += f'<a href="#" class="cat-tile" data-category="{key}"><div data-i18n="home.cat_{key}">{en}</div><span class="cat-count">{c} businesses</span></a>'
     return f'<div class="cat-grid">{tiles}</div>'
 
 
@@ -430,7 +430,7 @@ def render_index_html(businesses, metrics):
 <div class="masthead">
 <h1>Paradisio</h1>
 <p class="tagline" data-i18n="home.tagline">Find Puerto Viejo businesses with confidence.</p>
-<p class="subtitle" data-i18n="home.subtitle">{total} local businesses &middot; WhatsApp, Instagram, maps &amp; more</p>
+<p class="subtitle"><strong>{total}</strong> <span data-i18n="home.subtitle">local businesses &middot; WhatsApp, Instagram, maps &amp; more</span></p>
 </div>
 {cat_grid}
 <div class="stats-bar">
