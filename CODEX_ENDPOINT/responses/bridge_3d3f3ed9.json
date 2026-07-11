@@ -1,9 +1,0 @@
-{
-  "status": "ok",
-  "exit_code": 0,
-  "stdout": "Hello from Paradisio.",
-  "stderr": "Reading prompt from stdin...\nOpenAI Codex v0.144.0-alpha.4\n--------\nworkdir: C:\\Users\\oscar\\AI WORKBENCH\\Mekatelyu\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: danger-full-access\nreasoning effort: low\nreasoning summaries: none\nsession id: 019f4edb-f8a8-7d51-ba13-ce3d361fb6f8\n--------\nuser\nsay hello from paradisio\ncodex\nHello from Paradisio.\ntokens used\n11,901",
-  "elapsed": 6.71,
-  "id": "3d3f3ed9",
-  "task_preview": "say hello from paradisio"
-}

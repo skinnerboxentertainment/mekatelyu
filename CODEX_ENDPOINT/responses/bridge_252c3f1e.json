@@ -1,6 +1,0 @@
-{
-  "status": "error",
-  "error": "Schema validation failed: 1 validation error for Session\nconversation.0.from\n  Field required [type=missing, input_value={'id': 'e0000', 'turn': 0...': None, 'metadata': {}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/missing",
-  "exit_code": 1,
-  "id": "252c3f1e"
-}

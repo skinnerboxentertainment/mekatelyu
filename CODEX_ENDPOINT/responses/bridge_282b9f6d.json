@@ -1,9 +1,0 @@
-{
-  "status": "ok",
-  "exit_code": 0,
-  "stdout": "probe_ok",
-  "stderr": "Reading prompt from stdin...\nOpenAI Codex v0.142.5\n--------\nworkdir: C:\\Users\\oscar\\AI WORKBENCH\\Mekatelyu\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: danger-full-access\nreasoning effort: low\nreasoning summaries: none\nsession id: 019f4554-94ec-75e3-b243-430ef6316648\n--------\nuser\nprobe_ok\ncodex\nprobe_ok\ntokens used\n8,095",
-  "elapsed": 14.99,
-  "id": "282b9f6d",
-  "task_preview": "probe_ok"
-}

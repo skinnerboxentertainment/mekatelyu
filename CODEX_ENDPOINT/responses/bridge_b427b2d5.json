@@ -1,6 +1,0 @@
-{
-  "status": "error",
-  "error": "Path validation errors: artifact path 'CODEX_ENDPOINT/tasks/ca82e984/artifacts/ux_crops/' not under allowed roots",
-  "exit_code": 1,
-  "id": "b427b2d5"
-}

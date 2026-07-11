@@ -1,6 +1,0 @@
-{
-  "status": "error",
-  "error": "Session state is 'running_codex', expected 'awaiting_codex'",
-  "exit_code": 1,
-  "id": "421b8618"
-}

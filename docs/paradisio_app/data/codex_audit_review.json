@@ -1,0 +1,154 @@
+{
+  "summary": "The existing audit evaluates all 772 app entries with heuristic checks for category alignment, contact/CID/website/area completeness, name and description quality, enrichment-subcategory conflicts, and exact duplicate names, then derives a penalty-based score. The report is internally complete (772 audit entries for 772 CSV rows and 772 app records), but its 87.2 average score overstates data quality because the dominant issue is merely absence of a website and several higher-risk integrity checks are absent. Independent checks found 45 distinct Google Maps CIDs reused by multiple app records (some clearly unrelated), 31 placeholder descriptions of the form 'Discovered via ...', two malformed website values, two concatenated multi-number WhatsApp values, 218 app records with a phone but no normalized phone, three closed/permanently closed listings still present, seven uncategorized entries, 144 entries without coordinates, 153 source rows without area, and duplicate entities that survive as distinct IDs/slugs. No coordinate pair was partial, nonnumeric, out of range, or outside the tested Caribbean Costa Rica bounding box.",
+  "gaps_found": [
+    {
+      "gap": "CID uniqueness and entity ownership are not checked; only CID absence is penalized. Forty-five distinct nonblank CIDs occur on multiple records, with some shared by obviously unrelated businesses.",
+      "impact": "Google Maps links and CID-keyed enrichment can point to the wrong business, propagate another entity's rating/details, and make incorrect records score better merely because a CID is present."
+    },
+    {
+      "gap": "Duplicate detection uses only exact normalized app names and does not compare CIDs, coordinates, aliases, near-duplicate names, or source-to-app identity changes.",
+      "impact": "Duplicate entities such as Cafe Rico/Café Rico, Chile Rojo/Chili Rojo, Hotel Rustika Lodge/Rustika Lodge, and multiple KiMiMi spellings remain undetected; transformed names also create the Geckoes Lodge collision."
+    },
+    {
+      "gap": "The audit does not validate field formats or channel semantics (URL scheme/type, email placed in website, phone normalization, WhatsApp cardinality/digit structure, or generated contact URLs).",
+      "impact": "Users can receive broken links or messages routed to invalid destinations even when the audit awards completeness points."
+    },
+    {
+      "gap": "Coordinate presence, numeric validity, geographic bounds, distance/geofilter consistency, and map eligibility are not audited.",
+      "impact": "The 144 app entries without coordinates cannot participate fully in map experiences, yet this does not reduce their audit score or surface remediation work."
+    },
+    {
+      "gap": "Operating status is ignored.",
+      "impact": "Closed or permanently closed businesses can remain user-visible without being prioritized as critical issues."
+    },
+    {
+      "gap": "Description checks cover only length and six phrases, missing provenance placeholders and broad template repetition. Thirty-one descriptions are only 'Discovered via ...'.",
+      "impact": "Non-user-facing provenance text passes as acceptable content and inflates scores; repeated or low-information descriptions reduce directory usefulness and search quality."
+    },
+    {
+      "gap": "The name-location test is substring-based and labels every occurrence a removable suffix without checking position or whether the location is part of the official identity.",
+      "impact": "Many of the 79 flags are likely false positives (for example Cahuita Inn, Puerto Viejo Club, Servicentro Hone Creek, and Banco de Costa Rica Cahuita), creating risky rename recommendations."
+    },
+    {
+      "gap": "Category inference relies on substring keyword counts in name plus enrichment subcategory, with overlapping categories and order-dependent ties; it does not use description, authoritative taxonomy, or confidence thresholds.",
+      "impact": "False mismatches can be produced by incidental words, while real errors with no recognized keyword are missed. CID contamination can also make the enrichment subcategory itself unreliable."
+    },
+    {
+      "gap": "The score is not calibrated to issue severity: every issue costs 15 points, missing CID is penalized twice, phone/WhatsApp and website add bonuses, and absence of website accounts for 573 of 626 flagged entries.",
+      "impact": "The ranking mixes cosmetic, completeness, routing, and identity failures; serious wrong-CID or closed-status problems can score highly while website absence dominates workload."
+    },
+    {
+      "gap": "The audit does not systematically reconcile source fields with generated app fields or report transformation losses/mutations.",
+      "impact": "Regressions introduced during build—category remapping, name cleaning, status defaults, dropped normalization, or channel placement—can go unnoticed despite row-count parity."
+    },
+    {
+      "gap": "Suggested fixes are incomplete: uncategorized entries without a keyword hit receive no category recommendation, and category aliases/casing are inconsistent.",
+      "impact": "The action list is not sufficient to resolve all flagged records and may introduce taxonomy inconsistency (for example services versus Wellness/Transport/Nightlife)."
+    }
+  ],
+  "additional_issues": [
+    {
+      "business_name": "Blue Dreams Hotel / Le Cameleon Boutique Hotel / Le Caméléon / Vista Verde",
+      "issue": "Four distinct records share Google Maps CID 4837747133838124638, including different names, categories, and areas.",
+      "severity": "critical"
+    },
+    {
+      "business_name": "Casitas Mar y Luz / Estrellas Cabinas / Hidden Jungle Beach House / Hotel Posada Nena",
+      "issue": "Four apparently distinct lodging records share Google Maps CID 8515965990195848246.",
+      "severity": "critical"
+    },
+    {
+      "business_name": "Hotel Punta Cocles / Playa Chiquita Paradise / Uva Blue Jungle Villas / Villa del Mar / Villa Laurel",
+      "issue": "Five different records share Google Maps CID 9838950680602433731.",
+      "severity": "critical"
+    },
+    {
+      "business_name": "Clínica de Especialidades Médicas San Gabriel / Taller Gabriel",
+      "issue": "A medical clinic and a shopping-category workshop share Google Maps CID 13864196564288057579, indicating likely entity misassignment.",
+      "severity": "critical"
+    },
+    {
+      "business_name": "Pan Pay / Panadería Francés",
+      "issue": "Two records share CID 1569445318757953644; Panadería Francés also stores an email address (alain01barisy@gmail.com) in the website field.",
+      "severity": "high"
+    },
+    {
+      "business_name": "Centro Médico Aruma",
+      "issue": "WhatsApp contains two concatenated international numbers: +50686555082+50684480274.",
+      "severity": "high"
+    },
+    {
+      "business_name": "Dragonfly Beach Retreat",
+      "issue": "WhatsApp contains two concatenated international numbers: +50661287817+16479208454.",
+      "severity": "high"
+    },
+    {
+      "business_name": "Hotel Los Sueños",
+      "issue": "Website lacks an HTTP/HTTPS scheme (www.hotellossuenos.com), so generated linking behavior may be invalid.",
+      "severity": "medium"
+    },
+    {
+      "business_name": "Geckoes Lodge",
+      "issue": "Two app records have the exact same name and CID but different IDs, slugs, categories, areas, coordinates, and descriptions; this is a likely duplicate entity rather than just a duplicate label.",
+      "severity": "high"
+    },
+    {
+      "business_name": "The Amazing Treehouse and Nature",
+      "issue": "Two records share the same name and description; one is categorized restaurant with coordinates/CID and the other is uncategorized without coordinates/CID.",
+      "severity": "high"
+    },
+    {
+      "business_name": "Lapalapa Beach Front Hotel / Totem Hotel Resort & Restaurant / Samurai Fusion",
+      "issue": "These records are still included in app data with permanently_closed or closed status and are not flagged by the audit.",
+      "severity": "high"
+    },
+    {
+      "business_name": "Beach Hut and 30 other records",
+      "issue": "Description is only a provenance placeholder beginning 'Discovered via ...'; 31 app records have this pattern and none are identified by the current generic-description rules.",
+      "severity": "medium"
+    },
+    {
+      "business_name": "218 records with phone values",
+      "issue": "The generated app channel has a raw phone but an empty phone_normalized value, reducing reliable tel/WhatsApp normalization and indicating source/build inconsistency.",
+      "severity": "medium"
+    },
+    {
+      "business_name": "144 records without coordinates",
+      "issue": "Both latitude and longitude are absent, preventing map placement; the current audit does not flag or score this.",
+      "severity": "medium"
+    }
+  ],
+  "methodology_evaluation": {
+    "strengths": [
+      "Processes all 772 generated app records and produces a per-entry action list plus aggregate summary.",
+      "Is deterministic, read-only with respect to source data, easy to rerun, and sorts low scores first for triage.",
+      "Covers several useful baseline dimensions: contactability, missing CID/website/area, empty/short descriptions, exact duplicate names, name length, and some category/subcategory conflicts.",
+      "Separates issues from suggested fixes and preserves business name, category, area, and a compact score in each result.",
+      "The generated app has complete coordinate pairs where coordinates exist, and all numeric pairs passed range and regional bounding-box checks in this independent review."
+    ],
+    "weaknesses": [
+      "Heuristics are not validated against labeled examples, so precision/recall and score meaning are unknown.",
+      "Issue weights and bonuses are arbitrary and allow double-counting, especially for missing CID and reachability.",
+      "Exact-name duplicate detection is too narrow for entity resolution and misses the more dangerous duplicate-CID problem.",
+      "Keyword substring matching has overlapping categories, order-dependent ties, weak alias normalization, and no confidence or evidence field.",
+      "Location detection conflates any location occurrence with a suffix and recommends destructive name stripping without establishing the canonical name.",
+      "It audits generated app content but does not compare most values back to the master CSV or verify build transformations.",
+      "It omits format, referential-integrity, coordinate/map, operating-status, source-freshness, and user-facing link tests.",
+      "The report records issue strings rather than stable issue codes and structured evidence, making longitudinal comparisons and automated remediation harder."
+    ]
+  },
+  "recommendations": [
+    "Treat CID ownership as the first remediation priority: group every nonblank CID, review all 45 reused-CID groups, select the canonical entity, and remove or correct contaminated CIDs before trusting CID-keyed enrichment.",
+    "Replace exact-name duplicate detection with entity resolution using normalized name, CID, coordinates/proximity, phone, website domain, Instagram handle, and alias similarity; classify likely duplicates separately from confirmed shared-location businesses.",
+    "Add schema and format validation for URLs, emails, Costa Rican/international phones, single WhatsApp destinations, CIDs, IDs/slugs, coordinates, dates, statuses, and generated primary/secondary links.",
+    "Add explicit source-to-app reconciliation keyed by a stable source record ID, with field-level counts and allowed transformation rules; row-count equality alone is insufficient.",
+    "Introduce severity-based gates independent of the presentation score: critical for wrong/shared identity routing, high for closed listings or invalid primary contact, medium for map/content gaps, and low for cosmetic naming concerns.",
+    "Audit coordinate presence and distance/geofilter consistency, and clearly mark map-ineligible entries; retain the current numeric/range checks, which passed for all populated coordinate pairs.",
+    "Detect placeholder and duplicated descriptions using provenance-pattern rules and normalized-text frequency; replace 'Discovered via ...' text with useful public descriptions or leave it explicitly unavailable.",
+    "Validate canonical business names against authoritative evidence before stripping location terms; change the rule to detect terminal boilerplate only and emit a review suggestion rather than an automatic rename instruction.",
+    "Normalize category taxonomy once and use controlled values consistently; make category recommendations evidence-based and include a confidence score plus matched signals.",
+    "Exclude closed/permanently closed records from normal discovery or display a prominent closure state, and add freshness checks for unknown/needs_verification statuses and old verified dates.",
+    "Add stable issue codes, structured evidence (field, observed value, expected rule), and per-check aggregate counts so audit changes can be regression-tested over time.",
+    "Create automated QA fixtures for known failures in this dataset, including shared unrelated CIDs, duplicate aliases, email-in-website, scheme-less website, concatenated WhatsApp numbers, closed status, placeholder description, missing coordinates, and uncategorized records."
+  ]
+}

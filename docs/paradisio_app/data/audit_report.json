@@ -1,0 +1,7849 @@
+{
+  "summary": {
+    "total_entries": 772,
+    "entries_with_issues": 626,
+    "entries_under_60": 14,
+    "entries_under_40": 6,
+    "duplicate_names": 2,
+    "average_score": 87.2
+  },
+  "duplicates": [
+    {
+      "name": "geckoes lodge",
+      "count": 2
+    },
+    {
+      "name": "the amazing treehouse and nature",
+      "count": 2
+    }
+  ],
+  "entries": [
+    {
+      "business_name": "Casa Firefly Boutique Retreat",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 30,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'shopping'",
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'shopping'"
+      ]
+    },
+    {
+      "business_name": "Casitas del Bosque",
+      "category": "",
+      "area": "Unknown",
+      "score": 30,
+      "issues": [
+        "No category assigned",
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hospedaje Dos Sueños",
+      "category": "",
+      "area": "Unknown",
+      "score": 30,
+      "issues": [
+        "No category assigned",
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lapaluna",
+      "category": "",
+      "area": "Unknown",
+      "score": 30,
+      "issues": [
+        "No category assigned",
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Servicentro Hone Creek",
+      "category": "services",
+      "area": "Hone Creek",
+      "score": 30,
+      "issues": [
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed",
+        "Name contains location suffix: hone creek"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "The Amazing Treehouse and Nature",
+      "category": "",
+      "area": "Unknown",
+      "score": 30,
+      "issues": [
+        "No category assigned",
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Assign category 'tour_company' based on name"
+      ]
+    },
+    {
+      "business_name": "Lapalapa Beach Front Hotel",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 40,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ginger and Cacao",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 45,
+      "issues": [
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Los Proyectos Moderno",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 45,
+      "issues": [
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cahuita National Park Hotel",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 50,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "La Ceiba Nature Reserve",
+      "category": "hotel",
+      "area": "Punta Uva",
+      "score": 50,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'tour_company'",
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Playa Negra Guesthouse",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 50,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed",
+        "Name contains location suffix: playa negra"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Super Negro Hone Creek",
+      "category": "shopping",
+      "area": "Hone Creek",
+      "score": 50,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed",
+        "Name contains location suffix: hone creek"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Vista Verde",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 55,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'Nightlife'",
+        "Description too short (23 chars)",
+        "Subcategory 'Bar' suggests Nightlife/Bar but category is 'hotel'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'Nightlife'",
+        "Change category to 'Nightlife' or 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Aloe Boutique",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 60,
+      "issues": [
+        "No website listed",
+        "Description too short (22 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Catholic Church",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 60,
+      "issues": [
+        "No website listed",
+        "Description too short (21 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cosmos Puerto Viejo Tattoo",
+      "category": "Nightlife",
+      "area": "Puerto Viejo",
+      "score": 60,
+      "issues": [
+        "Category mismatch: 'Nightlife' but name/subcategory suggests 'services'",
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Nightlife' to 'services'",
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Le Caméléon",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 60,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'Nightlife'",
+        "No website listed",
+        "Subcategory 'Bar' suggests Nightlife/Bar but category is 'hotel'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'Nightlife'",
+        "Change category to 'Nightlife' or 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "McCloud's Munchies",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 60,
+      "issues": [
+        "No website listed",
+        "Description too short (19 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Almonds and Corals Boutique Hotel",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Beach Hut",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Big Tree Wildlife Refuge",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Boca Chica Bar Restaurante y Piscina",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "No phone, WhatsApp, or CID — unreachable",
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bungalows Ache",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Algebra",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas El Imperio",
+      "category": "hotel",
+      "area": "Sixaola",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas El Rinconcito",
+      "category": "hotel",
+      "area": "Gandoca",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Orange Green",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Tito",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Wray",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Magdalena",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Trinidad",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Tuareg",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casas del Caribe",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casas Del Mar",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Arbol Jungle Houses",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Colibri Rojo",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "FerreCocles",
+      "category": "shopping",
+      "area": "Cocles",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Hotel Kasha",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jungle Dreamz",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Casa de las Flores Hotel",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Naturama Store",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (20 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "New Caribe Point",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Oasi Apartments",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pangea Lodge",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Proyecto Educativo Semillas de Paz",
+      "category": "services",
+      "area": "Playa Chiquita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Red Monkey Liquor Store",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 65,
+      "issues": [
+        "No website listed",
+        "Description too short (21 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Riverside Cabins and Houses",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Se Ua Bed and Breakfast",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Secret Garden",
+      "category": "hostel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda y Cabinas Kaniki",
+      "category": "hotel",
+      "area": "Gandoca",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Suizo Loco Lodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tarponville Fishing Lodge",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "TKD Caribe",
+      "category": "services",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Topos Tree House",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Mango",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Mena Apartments",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 65,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Congo Cahuita",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Centro Educativo Playa Chiquita Punta Uva",
+      "category": "services",
+      "area": "Playa Chiquita",
+      "score": 70,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "Name contains location suffix: punta uva"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "CHOCORART",
+      "category": "",
+      "area": "Unknown",
+      "score": 70,
+      "issues": [
+        "No category assigned",
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Earth to Skin",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 70,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "La Casita de Cocles",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "La Fundación Cahuita Playing for Change",
+      "category": "services",
+      "area": "Cahuita",
+      "score": 70,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Namu Garden Hotel & Spa",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 70,
+      "issues": [
+        "Category mismatch: 'restaurant' but name/subcategory suggests 'hotel'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'restaurant' to 'hotel'"
+      ]
+    },
+    {
+      "business_name": "Pan Pay",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 70,
+      "issues": [
+        "Category mismatch: 'restaurant' but name/subcategory suggests 'shopping'",
+        "Description too short (21 chars)"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'restaurant' to 'shopping'"
+      ]
+    },
+    {
+      "business_name": "Playa Cocles",
+      "category": "tour_company",
+      "area": "Unknown",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Club",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Multicentro",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Police Town Station",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Samasati Yoga and Wellness Retreat",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 70,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'Wellness'",
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'Wellness'"
+      ]
+    },
+    {
+      "business_name": "Shenanigans–Fat Drink Dink Drive",
+      "category": "",
+      "area": "Unknown",
+      "score": 70,
+      "issues": [
+        "No category assigned",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Assign category 'restaurant' based on name"
+      ]
+    },
+    {
+      "business_name": "Super Cocles",
+      "category": "shopping",
+      "area": "Cocles",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Super Negro Cahuita",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Super Negro Cocles",
+      "category": "shopping",
+      "area": "Cocles",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Super Punta Uva",
+      "category": "shopping",
+      "area": "Punta Uva",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: punta uva"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Talamanca Viewpoint",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Terminal de Buses Sixaola",
+      "category": "Transport",
+      "area": "Sixaola",
+      "score": 70,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: sixaola"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Tourist Police",
+      "category": "Transport",
+      "area": "Cahuita",
+      "score": 70,
+      "issues": [
+        "Category mismatch: 'Transport' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Transport' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Alamo Enterprise Car Rental",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'tour_company' but name/subcategory suggests 'services'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'tour_company' to 'services'"
+      ]
+    },
+    {
+      "business_name": "Banco de Costa Rica Cahuita",
+      "category": "services",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Banco de Costa Rica Puerto Viejo",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Best Travel Puerto Viejo",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Bio Mercado Puerto Viejo",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Black Shack Surf School",
+      "category": "Transport",
+      "area": "Cocles",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'Transport' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Transport' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Bomberos Bribri",
+      "category": "Transport",
+      "area": "Bribri",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: bribri"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Bungalows Punta Uva",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: punta uva"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cabañas Cocles",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cabinas Iguana Cahuita",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cacao Huasi",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'restaurant' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'restaurant' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Cahuita Bus Station",
+      "category": "tour_company",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cahuita Inn",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cahuita Lodge",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Casa de la Cultura",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'shopping'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'shopping'"
+      ]
+    },
+    {
+      "business_name": "Casa Luce",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Casa Mambo Cahuita",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Casa Verde Cahuita",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Chamber of Tourism and Commerce Caribe Sur",
+      "category": "Transport",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'Transport' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Transport' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Clinica Dental OCI Cahuita",
+      "category": "services",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Clínica de Especialidades Médicas San Gabriel",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'shopping'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'shopping'"
+      ]
+    },
+    {
+      "business_name": "Clínica de Medicina Integral Bribri",
+      "category": "Transport",
+      "area": "Bribri",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: bribri"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Colibri Lodge Gandoca",
+      "category": "hotel",
+      "area": "Gandoca",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: gandoca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Container House Cahuita",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Da Lime Beach Club and Restaurant",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'restaurant' but name/subcategory suggests 'hotel'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'restaurant' to 'hotel'"
+      ]
+    },
+    {
+      "business_name": "Douglasville Guesthouse",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Escuela Hone Creek",
+      "category": "Transport",
+      "area": "Unknown",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: hone creek"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Farmacia Quiribri Cahuita",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Finca La Isla Botanical Garden",
+      "category": "tour_company",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'tour_company' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'tour_company' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Flor del Caribe",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Fruit Houses",
+      "category": "",
+      "area": "Unknown",
+      "score": 75,
+      "issues": [
+        "No category assigned",
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Gandoca Tours",
+      "category": "tour_company",
+      "area": "Gandoca",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: gandoca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Hone Creek Clinic",
+      "category": "services",
+      "area": "Hone Creek",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: hone creek"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Hotel Puerto Viejo",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Interbus office",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Subcategory 'Caribe Shuttle Tour Desk' suggests Transport but category is 'tour_company'"
+      ],
+      "suggested_fixes": [
+        "Change category to 'Transport'"
+      ]
+    },
+    {
+      "business_name": "Kaya's Place",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'restaurant'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "La Rana De Cahuita",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Laboratorio Bioclinic",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'shopping'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'shopping'"
+      ]
+    },
+    {
+      "business_name": "Lilan Nature",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Manzanillo Caribbean Resort",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: manzanillo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Mendez Barber Shop",
+      "category": "Nightlife",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'Nightlife' but name/subcategory suggests 'services'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Nightlife' to 'services'"
+      ]
+    },
+    {
+      "business_name": "Mercadito Puerto Viejo",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Namu Garden Hotel and Spa",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Subcategory 'Bar' suggests Nightlife/Bar but category is 'hotel'"
+      ],
+      "suggested_fixes": [
+        "Change category to 'Nightlife' or 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "NAO",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name is very short"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ocean View Lodge Cahuita",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Parqueo Sixaola",
+      "category": "Transport",
+      "area": "Sixaola",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: sixaola"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Pizzeria Cahuita",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Playa Negra Brewing",
+      "category": "restaurant",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: playa negra"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Bike Rentals",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Dogs",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Farmers and Artisans Market",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Pharmacy",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Police Station",
+      "category": "Transport",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Pura Ride by Ciclo Cocles",
+      "category": "Transport",
+      "area": "Cocles",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "River Box Cocles",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Talamanca Chocolate",
+      "category": "tour_company",
+      "area": "Playa Negra",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Talamanca Organica Cacao & Fine Chocolate",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Tico Surf and Skate",
+      "category": "Transport",
+      "area": "Cocles",
+      "score": 75,
+      "issues": [
+        "Category mismatch: 'Transport' but name/subcategory suggests 'tour_company'",
+        "No website listed"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Transport' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Value Mart Puerto Viejo",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Wildlife Lodge Cahuita",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 75,
+      "issues": [
+        "No website listed",
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Baya Baya Café",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Lika",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Punta Cocles",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 80,
+      "issues": [
+        "Category mismatch: 'hotel' but name/subcategory suggests 'restaurant'",
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'hotel' to 'restaurant'",
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Joe Snack Point",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Las Casitas de Playa Negra",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 80,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'restaurant'",
+        "Name contains location suffix: playa negra"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'restaurant'",
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Mi Casa Hostel y Hotel El Tesoro",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Reggaeland",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sweet Moments",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tienda Caribe",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 80,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Api-Rescate",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Arrecife El Chino",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "BAC Credomatic ATM",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Beach Trail",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "BOA Coworking",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bohemian Monkey",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Buddy's Sloth Crossing",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Jenny",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Palmer Makanda",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Café Gustitos",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Café Jaguar & Art Gallery",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Calipso",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cantik at Home",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Alegra",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Alegre",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Badawi",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Canopy",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa De La Trepada",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa del Caribe B&B",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Eden Jungle Apartments",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Jeffrey",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Lily",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Lucas",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Luna Beach House",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Matix",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Miluco",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Modí",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Naranjo",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Ocelote",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Shanti",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Theia",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Vosi",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casas Sloth & Butterfly",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casita Kreyol",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casita Tucan",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chaman Mercadito",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Clan Vibes Club",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Correos de CR",
+      "category": "Transport",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cubali Beach",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "David Valley Houses",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ecotourism and Conservation Association of Talamanca",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Escondido Retreat",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Escuela Këköldi",
+      "category": "Transport",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Escuela Patiño",
+      "category": "Transport",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Darai",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Flor de China",
+      "category": "shopping",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Global Stones finca conservación",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Corner",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Harmony: Mini Casa Rodante by Aptos Casa Caribe",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Home Naranjo",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Cariblue",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Los Sueños",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Posada Nena",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Sunshine Caribe",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Iglesia Cristiana Casa De Restauracion",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Italia Villas",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jungalow",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jungalow Tropical Caribeño",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jungle Air Parapente",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kä Luxury Caribbean",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La loma de burrito",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Pitaya",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Prometida",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Las Mariposas",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Le Cameleon Boutique Hotel",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Subcategory 'Bar' suggests Nightlife/Bar but category is 'hotel'"
+      ],
+      "suggested_fixes": [
+        "Change category to 'Nightlife' or 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Lizzie 1872",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Luna May",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Main Bus Stop",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mega Super",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mixta Comida y Cócteles",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Nature Observatorio",
+      "category": "tour_company",
+      "area": "Manzanillo",
+      "score": 85,
+      "issues": [
+        "Missing Google Maps CID — no enrichment possible"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Old Harbour Gym",
+      "category": "Wellness",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Panadería Francés",
+      "category": "shopping",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Paraiso Bohemio",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Paula's and Daniel's Homestay",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pidiendo Cacao",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pipa's Beach",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Playa Estiven",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pura Bali Villas",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pura Vida Vegana",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Quinta Guarumo",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Refugio de animales Jaguar",
+      "category": "tour_company",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Reggae Bar",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rhodes Island Cabinas",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Roberto's Restaurant and Tours",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Roots Family Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Río Negro",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Selvin's Restaurant and Cabinas",
+      "category": "restaurant",
+      "area": "Punta Uva",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sloth Crossing",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Smile Jungle Hostel",
+      "category": "hostel",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Chang",
+      "category": "restaurant",
+      "area": "Sixaola",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Spiral",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Super Banana Gourmet Market",
+      "category": "shopping",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Super Vaz 2",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tattoo Studio 33",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Mimosas Container Homes",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Totem Hotel Resort & Restaurant",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "Description too short (23 chars)"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Treevana",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tropical Getaway \"Casa de Amor",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tropical Getaway \"Dream House\"",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Troy's Place",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tubolwak Lodge y Garden",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Vago's Place",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Khalú",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Tropical",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Wolaba",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas caranda",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas de la Luz",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Serenidad",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Vindas",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Wanderlust",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 85,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "7 Ice Creams",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Adobe EasyCar Rent a Car",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Aldina's Guest House",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Alloro Jungle Villas",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Almacen San Francisco",
+      "category": "shopping",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Aloha Skincare and Wellness",
+      "category": "Wellness",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Alojamiento kon-tiky",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Aloki Village",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ambar Tattoo Space",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Amimodo Beach Rooms",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Amimodo Restaurant",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Apetito Express",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Aroma Coffee Bar and Breakfast",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Arrecife Hotel y Restaurante",
+      "category": "restaurant",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Asante Bistro & Café",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Atlantida Lodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Automotriz Danny",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Awa Beach Boutique Hotel",
+      "category": "hotel",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Azania Bungalows",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Azania Oasis",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Babilonia",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bambu Store",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bambutel",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Banana Azul",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Banco Nacional",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Be My Guest Cabinas",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Beach Break Restaurant",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bendita Comida",
+      "category": "restaurant",
+      "area": "Bribri",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "BERACA",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Black Bamboo",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Blessed Hands Massage Therapy",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Blessed House",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bloom Cafe & Donas",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Blossom Paradise Retreat",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bread and Chocolate",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bread What What",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Brigitte's Ranch",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bugambilia Inn",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bungalow Malú Lodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bungalows Calalú",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Bungalows Sloth",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabañas KiaMiMi",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabina trepazul",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Arrecife",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Caribe Luna",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas El Mango",
+      "category": "hotel",
+      "area": "Bribri",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Guarana",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Jacaranda",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas KiAMiMi",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas KiMiMi",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Kinawe",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas KlaMiMi",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Kuákua",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Mitchaelles",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Monte Sol",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Mor",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Nirvana Ecolodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Ole Caribe",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Smith",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Surf Side",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas YaMann",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cacao Trails Bole",
+      "category": "tour_company",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Café del Mar",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Canto del Mar Guest House",
+      "category": "hotel",
+      "area": "Gandoca",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Blue House",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Coconut",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Comfort",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Courtyard Villa",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Dental",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Horse Riding Club",
+      "category": "tour_company",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Love Tattoo",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Town Resort",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caripro Apartments",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Ackee",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Amor",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Ana Kimba",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Antorcha",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Arlecchino",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Black Chaini",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Bohö",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Conley Del Mar",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Corazon del Mar",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa de la Musa",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Galim Beach House",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Kinkaju",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Mandala",
+      "category": "shopping",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Marcellino",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Merlin Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Miluca",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Moabi",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Namaitamí",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Olingo",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Osos Caribeños",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Roble de Playa Negra",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "Name contains location suffix: playa negra"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "casa tia zeidy",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa vacacional happy day beach house",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Viva",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Wolaba",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casas La Selvatica",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casitas La Playa",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casitas Las Flores",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casitas Mar y Luz",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Central de Mascotas",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Centro de Carnes Canada",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Centro Médico Aruma",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cerrajería Paris",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cervecera Tierra y Libertad",
+      "category": "shopping",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chao's Paradise",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chile Verde",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chill and Cheese Snackbar",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chinuk Boutique Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chiquita Escondida",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ciclo Tuanis",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ciudad Perdida Ecolodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Clinica Veterinaria Green Vet",
+      "category": "Transport",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Clínica Dental Yani",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Clínica Veterinaria Arroyo y Solano",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cocomar Comida Caribeña",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Coconut Grove Apartamentos",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Coldwell Banker Caribe",
+      "category": "real_estate",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Colibri Ecolodge",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Colina Secreta",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Colores Restaurant and Beach Lounge",
+      "category": "restaurant",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Conga Boutique Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Coral Vet",
+      "category": "Transport",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Dano's Cabano",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "DiTown Shop",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Doctah Herbalist",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Douglas Ville guest house",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Dragonfly Beach Retreat",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ecolavacar del Caribe",
+      "category": "Transport",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Chante de Moncho",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Chilamate",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Chilamate Holiday House",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Clan Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Colibri Lodge",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Diamante",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Duende Gourmet",
+      "category": "shopping",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Encanto Hotel",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Nido Jungle Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Pampa Asador",
+      "category": "restaurant",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Ranchón",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Sabor Tico",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Sendero Beach Club",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Sol del Caribe",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Tucan Jungle Lodge",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Tucán Feliz",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Electro Office",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Elena De Luca Studio",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Evia Life Resort",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Exotic Lodge",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Exotico Beach",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Explora Caribe CR",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Exploradores Outdoors",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Eñe Spanish Teachers",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Faith Glamping Dome",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Family Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Farmacia Caribe",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Farmacia Don Manuel",
+      "category": "shopping",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Farmacia San Gabriel",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Don Litos",
+      "category": "vacation_rental",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca la Isla Permaculture Farm",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Valeria Treehouses",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Fusión Restaurante",
+      "category": "restaurant",
+      "area": "Sixaola",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Gigi Beach",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Goddess Garden",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Jaguar Irish Gastro Pub",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Jungle House",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Lapa's Village",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Property Management",
+      "category": "real_estate",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Green Water SUP Tours",
+      "category": "tour_company",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Grow Beachfront Restaurant",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "GypSea Café",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hakuna Matata Hostel",
+      "category": "hostel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Happy House Manzanillo",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "Name contains location suffix: manzanillo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Hidden Viewpoint",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hostal Cecilia",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel and Hostel Agapi",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Boutique D'Angelo",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Bugabutik",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Cabinas Nadine",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Casa Vito",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Hawa",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Infiniti",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel La Diosa",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Los Cielos del Caribe",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Mandacarú",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel One Love",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Pura Vida",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Rustika Lodge",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hungry Lion's Jamaican Restaurant",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Iguana Lodge",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Il Fiore Rosso",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Indalo Hotel Boutique",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Indulgence Spa",
+      "category": "Wellness",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Info Boutique",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Iriria Specialty Coffee Shop",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Island City Wingz N Tingz",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jaguar Inn Bungalows",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jaguar Rescue Center",
+      "category": "tour_company",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Juice for Life Wolaba",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Jungla del Caribeño",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kalunay Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kañik Apart Hotel",
+      "category": "vacation_rental",
+      "area": "Manzanillo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kenaki Lodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kinawe Cabinas",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kinkaju Tours",
+      "category": "tour_company",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Kona Wellness Shala",
+      "category": "Wellness",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Caracola",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Casa de Rolando",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Casa Del Mango",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "LA CHASCONA",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Costa de Papito",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Esquina Boruca Pizzeria",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Finca Chica",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Isla Inn",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Isla Permaculture Farm",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Kukula Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Magia Bungalows",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Paloma Studio en Coclès con cocina a",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Parada Cafeteria",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Paz del Caribe",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Ruedita",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Ruka Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Tica y La Gata",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Tinta Tropical",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Tribu",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Laboratorio Clínico Leysa",
+      "category": "Transport",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lalola Villa",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lanna Ban Hotel",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lavandería La Estrella",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Librería Caribe",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lizard King Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Los Delfines Lodge",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lulu's Place",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Luna Caribeña Village",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Madre Selva Jungle Hostel",
+      "category": "hostel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mar Verde Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Marea Santa",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Marfi Inn",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Maritza Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mayela Public Parking",
+      "category": "Transport",
+      "area": "Sixaola",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mecca",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mulata",
+      "category": "shopping",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Namuwoki Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Namú Ecotienda Orgánica",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Nana's Place Beach House",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Nanku",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Oasis Beachfront Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ocean's Breeze Apartment and Rooms",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ocho Nani",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Octo Salon",
+      "category": "services",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Old Harbour Supermarket",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Olguita's Place",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Olinca Boutique Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Olivia del Caribe",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Orgánico Punta Riel",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Otra Vez",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Our Beachfront Bungalow",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pachamama Jungle River Lodge",
+      "category": "hotel",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pagalu Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Paloma Studio",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Papaya Wildlife Lodge",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Paradise Comida Caribeña",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Passion Fruit Ecolodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Passion Fruit Store",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "PC Caribe Soluciones Informáticas",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pecora Nera",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Perla Negra Beachfront",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Physis Caribbean Bed & Breakfast",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pipa Lodge",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Piscina Natural",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pizzeria Pulcinella",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Playa Grande Lodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "policía",
+      "category": "Transport",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pure Love Liberation",
+      "category": "Transport",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rancho Tranquilo",
+      "category": "hotel",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Redfrogteam Guardianes de la Naturaleza",
+      "category": "tour_company",
+      "area": "Bribri",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Reggae Chill",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Restaurante Bananas",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ride the Rainforest",
+      "category": "tour_company",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rocking J's Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Roly Caribbean Food",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rustika Lodge",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Samoa Boutique",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Saranda Hotel Boutique",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sea Breeze Events",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'restaurant'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Shawandha Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Shiosai Retreat Cabins",
+      "category": "hotel",
+      "area": "Gandoca",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sloth House 2",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sloth Massage",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sloth Sanctuary",
+      "category": "tour_company",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sobre las Olas by Gondwana",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Kawe",
+      "category": "restaurant",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Marta",
+      "category": "restaurant",
+      "area": "Sixaola",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Playa Chiquita",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "Name contains location suffix: playa chiquita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Solo Bueno",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sonora Jungle Retreat",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soul Rebel Hostel",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soulsurfer",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Spanish by the Sea",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Spanish School Pura Vida",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Spicy Coconut",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sport Body Gym",
+      "category": "Wellness",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sueño Grande Bed and Breakfast",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sunshine Caribe",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Super SK",
+      "category": "shopping",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Surya Spa",
+      "category": "Wellness",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Sushi Wave",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Svastha Yoga & Ayurveda Café",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Terrazas del Caribe",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Bush",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Bush Doctah Herbalist",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Point Smash Burgers",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Three Monkeys",
+      "category": "vacation_rental",
+      "area": "Cahuita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tienda del Mar",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tierra de Suenos Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Todo Es Posible",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tree House Lodge",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tres Lodge",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "TRIBU functional training",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Umami Hotel Garden Spa",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Uva Blue Jungle Villas",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Veronica's Place Cooking Class",
+      "category": "services",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Aragon",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Aurora",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Casa Azul y Arena Blanca Apartamentos",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Cerise",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa del Mito",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Elita",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Selva Luna",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Soleil et Paquerette",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Ande",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Diwo",
+      "category": "vacation_rental",
+      "area": "Hone Creek",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Itaita",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Lomas del Caribe",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Luna Africana by Palmer",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Mapache del Caribe",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Moonlight",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Roca del Caribe",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Ríos del Caribe",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Vol'Air Dance Studio",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Wabi Sabi",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Washboard",
+      "category": "services",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Yoshi's on the Beach",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Yucca Beachfront Hotel",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Zaika Bar & Grill",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 90,
+      "issues": [
+        "No website listed"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ara Manzanillo",
+      "category": "tour_company",
+      "area": "Manzanillo",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: manzanillo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "AroCocles",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: cocles"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "ATEC",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 95,
+      "issues": [
+        "Name is very short"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Blue Dreams Hotel",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'restaurant' but name/subcategory suggests 'hotel'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'restaurant' to 'hotel'"
+      ]
+    },
+    {
+      "business_name": "Cabinas Cable Talamanca",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Cabinas Talamanca",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: talamanca"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Casa Ambar",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'Nightlife'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'Nightlife'"
+      ]
+    },
+    {
+      "business_name": "Centro Educativo Complementaria Cahuita",
+      "category": "Transport",
+      "area": "Cahuita",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: cahuita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Colono Hone Creek",
+      "category": "shopping",
+      "area": "Hone Creek",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: hone creek"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "El Jardin de Playa Negra",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: playa negra"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "OIJ",
+      "category": "Transport",
+      "area": "Bribri",
+      "score": 95,
+      "issues": [
+        "Name is very short"
+      ],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Playa Chiquita Paradise",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: playa chiquita"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo de Talamanca",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Puerto Viejo Golf Carts",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Punta Uva Dive Center",
+      "category": "tour_company",
+      "area": "Punta Uva",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: punta uva"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "RISE Puerto Viejo",
+      "category": "real_estate",
+      "area": "Puerto Viejo",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Selina Hostel Puerto Viejo",
+      "category": "hostel",
+      "area": "Unknown",
+      "score": 95,
+      "issues": [
+        "Name contains location suffix: puerto viejo"
+      ],
+      "suggested_fixes": [
+        "Strip location suffix from business name"
+      ]
+    },
+    {
+      "business_name": "Surf Meds Caribe",
+      "category": "services",
+      "area": "Cocles",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'services' but name/subcategory suggests 'tour_company'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'services' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Surf the Jungle Surf School Adventures",
+      "category": "Transport",
+      "area": "Puerto Viejo",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'Transport' but name/subcategory suggests 'tour_company'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'Transport' to 'tour_company'"
+      ]
+    },
+    {
+      "business_name": "Villa del Mar",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'restaurant'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "Villa Laurel",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 95,
+      "issues": [
+        "Category mismatch: 'vacation_rental' but name/subcategory suggests 'restaurant'"
+      ],
+      "suggested_fixes": [
+        "Consider changing category from 'vacation_rental' to 'restaurant'"
+      ]
+    },
+    {
+      "business_name": "3 Bamboo Ecolodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Abba Home",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "ALMA Masajes",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Angler's Lair",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ariel Apartment's",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Azul Bar and Grill",
+      "category": "restaurant",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Beauty Ritual Spa",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Bambu",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Los Almendros",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Popular",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cabinas Yemanya",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cafe Rico",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cafe Viejo",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Café Rico",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Blue Morpho Casitas",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribbean Hill Villas",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Fun Tours",
+      "category": "tour_company",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Shuttle",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribe Sur Real Estate",
+      "category": "real_estate",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Caribeans Coffee and Chocolate",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "CaribeZen",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cariblue Beach and Jungle Resort",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Amma",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Chilamate Day House",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Cielo",
+      "category": "vacation_rental",
+      "area": "Punta Uva",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Dolce Vita",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Jungle Love",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Margarita",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Mariposa",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Pallaita",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Pallalita",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Palliata",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Pallita",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Rio Restaurant & Bar",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casa Selva",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casitas Batsú",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Casitas Joanna",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ceibo Adventure",
+      "category": "tour_company",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Century 21 Caribe",
+      "category": "real_estate",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chile Rojo",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chili Rojo",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Chimuri Beach Retreat",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cirrus Sky Paragliding CR",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Como en la Gloria",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Como En Mi Casa Art Cafe",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Congo Bongo EcoVillage",
+      "category": "hotel",
+      "area": "Manzanillo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cool and Calm Cafe",
+      "category": "restaurant",
+      "area": "Manzanillo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Cruz Roja",
+      "category": "Transport",
+      "area": "Bribri",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "De Gustibus Bakery",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Dragón",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Faro 13",
+      "category": "hostel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Puente-The Bridge",
+      "category": "Transport",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Refugio Grill",
+      "category": "restaurant",
+      "area": "Punta Uva",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "El Rincon Porteño",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Escape Caribeño",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Estrellas Cabinas",
+      "category": "vacation_rental",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Ardilla",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Las Hormigas",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Finca Tierra",
+      "category": "tour_company",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "FISIOTERAPIA Agustin cuya",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Gecko Trail",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Geckoes Lodge",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Geckoes Lodge",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Gelateria Deelite",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Gigi O Restaurant",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Habitat Vacation Rentals",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hawaiian Massage",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hidden Garden Ethnobotanical Sanctuary",
+      "category": "tour_company",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hidden Jungle Beach House",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hot Rocks",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Aguas Claras",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Tropical",
+      "category": "hotel",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Hotel Villas y Glamping M&A",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Izzy Rides CR",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Johnny's Place",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Ka Namu",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Katuk",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "KOKi Beach",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Casa del Coral",
+      "category": "Transport",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Casita de Monli",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Leyenda de L'Antico Forno en El Establo de Bruce",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Nena",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Pecora Nera Ristorante",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Perla del Caribe",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Selva PV Events",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "La Shamana Ecolodge",
+      "category": "hotel",
+      "area": "Cahuita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Las Palomas",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Lidia's Place",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Los Continentes",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Madre Tierra",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Magic Moon Beach House",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mariscos Mopri",
+      "category": "shopping",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Maxi's Restaurant",
+      "category": "restaurant",
+      "area": "Manzanillo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Mishka Lodge",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Morpho Casitas",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pali Supermarket",
+      "category": "shopping",
+      "area": "Hone Creek",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Paragliding CR",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Playa 506",
+      "category": "hostel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Port Vell",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Puerto Pirata",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pura Gula Restaurant",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pure Jungle Spa",
+      "category": "Wellness",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Pure Life Sanctuary",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Que Quilombo",
+      "category": "restaurant",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Relax Natural Village",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Repazul",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Restaurante Bar Tamara",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Restaurante Cariblue",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Restaurante Nema",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Restaurante Riquísimo",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "RETIRO VERDE",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rico Tico Tours",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Rio Home",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Salsa Brava Beach Bar",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Samurai Fusion",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Satta Lodge",
+      "category": "hotel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Shenanigans–Eat Drink Dink Drive",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Siren Sanctuary",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "SOCA Restaurant",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Shekina",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Shekiná",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Soda Títeres",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Stashu's Con Fusion",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Taller Gabriel",
+      "category": "shopping",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tasty Dayz Hostel",
+      "category": "hostel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Tasty Waves Cantina",
+      "category": "restaurant",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Amazing Treehouse and Nature",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "The Reillder Castillo Project",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "TreeTop Mansion",
+      "category": "restaurant",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Up! House",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Abejita",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Bukë",
+      "category": "hostel",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Cabú",
+      "category": "vacation_rental",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Kandulu",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Miagoa",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villa Rameen",
+      "category": "vacation_rental",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Allen",
+      "category": "hotel",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Banana Verde",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas del Caribe",
+      "category": "hotel",
+      "area": "Playa Chiquita",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Kandulu",
+      "category": "hotel",
+      "area": "Unknown",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Villas Piña",
+      "category": "vacation_rental",
+      "area": "Playa Negra",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Watuza",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "We Do Laundry",
+      "category": "services",
+      "area": "Hone Creek",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Yerbas Concepto Culinario",
+      "category": "restaurant",
+      "area": "Puerto Viejo",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    },
+    {
+      "business_name": "Yuyo Huelal Totga",
+      "category": "hostel",
+      "area": "Cocles",
+      "score": 100,
+      "issues": [],
+      "suggested_fixes": []
+    }
+  ]
+}
