@@ -3546,7 +3546,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -3557,7 +3557,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -4568,7 +4568,7 @@
     "cuisine": ""
   },
   {
-    "id": "2c5fcb89340f",
+    "id": "1c3124b7886f",
     "slug": "blue-dreams-hotel",
     "name": "Blue Dreams Hotel",
     "category": "restaurant",
@@ -4587,7 +4587,7 @@
       "website": "https://www.lecameleonhotel.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "4837747133838124638",
+      "google_maps_cid": "",
       "email": "https:reservations@lecameleonhotel.com"
     },
     "primary_contact": {
@@ -4610,20 +4610,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=4837747133838124638"
+        "url": "https://www.google.com/maps/search/9.64408,-82.727964"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 75
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -4633,25 +4631,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.3,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio",
-      "Bar"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -6155,7 +6140,7 @@
     "cuisine": ""
   },
   {
-    "id": "50352774dd25",
+    "id": "3f5ab9e3ab19",
     "slug": "cabinas-cable-talamanca-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
     "name": "Cabinas Cable Talamanca",
     "category": "vacation_rental",
@@ -6174,7 +6159,7 @@
       "website": "http://www.cabinastalamanca.com/",
       "booking_url": "https://www.booking.com/hotel/cr/cabinas-cable-talamanca.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "1496101248030016772",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -6201,21 +6186,19 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1496101248030016772"
+        "url": "https://www.google.com/maps/search/9.649739,-82.762613"
       }
     ],
     "scores": {
       "contactability": 95,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -6225,25 +6208,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.1,
-    "maps_address": "M752+87 Puerto Viejo de Talamanca, Limón",
+    "rating": null,
+    "maps_address": null,
     "subcategory": null,
-    "check_in": "2:00 p.m.",
-    "check_out": "12:00 p.m.",
-    "amenities": [
-      "Incluye desayuno",
-      "Wi-Fi gratis",
-      "Desayuno",
-      "Estacionamiento gratuito",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Gimnasio"
-    ],
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M752+87 Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -6869,7 +6843,7 @@
     "cuisine": ""
   },
   {
-    "id": "50e9660e1680",
+    "id": "0d3b08923c61",
     "slug": "cabinas-kiamimi",
     "name": "Cabinas KiAMiMi",
     "category": "hotel",
@@ -6888,7 +6862,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "1705549831231309538",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -6907,19 +6881,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1705549831231309538"
+        "url": "https://www.google.com/maps/search/9.6603717,-82.7840054"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -6929,22 +6901,20 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
-    "maps_address": "El acceso a las cabinas se debe recorrer como 2 kilometros en calle de lastre..…",
-    "subcategory": "Hotel",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M668+49 Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
-    "id": "3eab7c74767d",
+    "id": "b969dfdfaa20",
     "slug": "cabinas-kimimi",
     "name": "Cabinas KiMiMi",
     "category": "hotel",
@@ -6963,7 +6933,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "1705549831231309538",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -6978,17 +6948,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1705549831231309538"
+        "url": "https://www.google.com/maps/search/9.6603717,-82.7840054"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -6999,18 +6968,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
-    "maps_address": "El acceso a las cabinas se debe recorrer como 2 kilometros en calle de lastre..…",
-    "subcategory": "Hotel",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M668+49 Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -7092,7 +7059,7 @@
     "cuisine": ""
   },
   {
-    "id": "e73d16dd2fa3",
+    "id": "e97c70cac539",
     "slug": "cabinas-klamimi",
     "name": "Cabinas KlaMiMi",
     "category": "hotel",
@@ -7111,7 +7078,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "1705549831231309538",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -7126,17 +7093,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1705549831231309538"
+        "url": "https://www.google.com/maps/search/9.6603717,-82.7840054"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -7147,18 +7113,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
-    "maps_address": "El acceso a las cabinas se debe recorrer como 2 kilometros en calle de lastre..…",
-    "subcategory": "Hotel",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M668+49 Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -7865,7 +7829,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -7876,7 +7840,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -8406,7 +8370,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -8417,7 +8381,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -9135,7 +9099,7 @@
     "cuisine": "sushi"
   },
   {
-    "id": "cba3c05e99b7",
+    "id": "30f69ee8dc3e",
     "slug": "caf-rico-puerto-viejo",
     "name": "Café Rico",
     "category": "restaurant",
@@ -9154,7 +9118,7 @@
       "website": "https://cometocaferico.com/",
       "booking_url": "",
       "tripadvisor_url": "https://www.tripadvisor.com/Restaurant_Review-g309265-d3169883-Reviews-Cafe_Rico-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "5741623948918730601",
+      "google_maps_cid": "",
       "email": "https:info@cometocaferico.com"
     },
     "primary_contact": {
@@ -9185,18 +9149,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=5741623948918730601"
+        "url": "https://www.google.com/maps/search/9.6572005,-82.7527989"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 85,
-      "completeness": 100
+      "visibility": 50,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
       "Phone",
       "Fully Online"
@@ -9204,22 +9167,22 @@
     "intents": [
       "eat"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Cerrado",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Capuchino"
+    "cuisine": ""
   },
   {
     "id": "e50cf171f80d",
@@ -11272,7 +11235,7 @@
     "cuisine": ""
   },
   {
-    "id": "aa77dc90b4da",
+    "id": "a0ba0d92d360",
     "slug": "casa-alegre",
     "name": "Casa Alegre",
     "category": "restaurant",
@@ -11291,28 +11254,26 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "704176135278923927",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
       "type": "Map",
-      "label": "Open in Maps",
-      "url": "https://www.google.com/maps?cid=704176135278923927"
+      "label": "View Location",
+      "url": "https://www.google.com/maps/search/9.6486486,-82.7630898"
     },
     "secondary_links": [
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=704176135278923927"
+        "url": "https://www.google.com/maps/search/9.6486486,-82.7630898"
       }
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 45
     },
-    "badges": [
-      "Map Verified"
-    ],
+    "badges": [],
     "intents": [
       "eat"
     ],
@@ -11321,9 +11282,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -11842,7 +11803,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -11853,7 +11814,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -14214,7 +14175,7 @@
     "cuisine": ""
   },
   {
-    "id": "65571c912365",
+    "id": "eb9df4ac6165",
     "slug": "casa-miluca",
     "name": "Casa Miluca",
     "category": "restaurant",
@@ -14233,7 +14194,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "17469621114106254322",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -14248,17 +14209,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=17469621114106254322"
+        "url": "https://www.google.com/maps/search/9.6549173,-82.7722464"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -14269,18 +14229,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Bed & Breakfast",
-      "Desayuno incluido",
-      "Cocina",
-      "Incluye Wi-Fi y estacionamiento",
-      "El Jardin de Playa Negra"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -14581,7 +14535,7 @@
     "cuisine": ""
   },
   {
-    "id": "0856ab0db70a",
+    "id": "214562bc1d77",
     "slug": "casa-naranjo",
     "name": "Casa Naranjo",
     "category": "hotel",
@@ -14600,28 +14554,26 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "11804471412549390661",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
       "type": "Map",
-      "label": "Open in Maps",
-      "url": "https://www.google.com/maps?cid=11804471412549390661"
+      "label": "View Location",
+      "url": "https://www.google.com/maps/search/9.6348876,-82.7277314"
     },
     "secondary_links": [
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=11804471412549390661"
+        "url": "https://www.google.com/maps/search/9.6348876,-82.7277314"
       }
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 60
     },
-    "badges": [
-      "Map Verified"
-    ],
+    "badges": [],
     "intents": [
       "stay"
     ],
@@ -14632,7 +14584,7 @@
     },
     "rating": null,
     "maps_address": null,
-    "subcategory": "Hoteles",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -14928,7 +14880,7 @@
     "cuisine": ""
   },
   {
-    "id": "44e3cd5d8a0d",
+    "id": "93f4b65a740b",
     "slug": "casa-pallalita",
     "name": "Casa Pallalita",
     "category": "restaurant",
@@ -14947,7 +14899,7 @@
       "website": "https://br.bluepillow.com/search/627d265ddf4f49af9b34a708?dest=bkng&cat=House&lat=9.64945&lng=-82.7518&language=pt",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "12261963239237230570",
+      "google_maps_cid": "",
       "email": "https:angelin.sirbu@gmail.com"
     },
     "primary_contact": {
@@ -14962,16 +14914,15 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=12261963239237230570"
+        "url": "https://www.google.com/maps/search/9.6494503,-82.7518005"
       }
     ],
     "scores": {
       "contactability": 10,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 55
     },
     "badges": [
-      "Map Verified",
       "Has Website"
     ],
     "intents": [
@@ -14982,18 +14933,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Libre de humo"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -15068,7 +15013,7 @@
     "cuisine": ""
   },
   {
-    "id": "b09fade82e83",
+    "id": "4467a62b15dc",
     "slug": "casa-pallita",
     "name": "Casa Pallita",
     "category": "restaurant",
@@ -15087,7 +15032,7 @@
       "website": "https://br.bluepillow.com/search/627d265ddf4f49af9b34a708?dest=bkng&cat=House&lat=9.64945&lng=-82.7518&language=pt",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "12261963239237230570",
+      "google_maps_cid": "",
       "email": "https:angelin.sirbu@gmail.com"
     },
     "primary_contact": {
@@ -15102,16 +15047,15 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=12261963239237230570"
+        "url": "https://www.google.com/maps/search/9.6494503,-82.7518005"
       }
     ],
     "scores": {
       "contactability": 10,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 55
     },
     "badges": [
-      "Map Verified",
       "Has Website"
     ],
     "intents": [
@@ -15122,18 +15066,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Libre de humo"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -15620,7 +15558,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -15630,7 +15568,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -15688,7 +15626,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -15698,7 +15636,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -16917,7 +16855,7 @@
     "cuisine": ""
   },
   {
-    "id": "90408426fb31",
+    "id": "78ade5cfe3eb",
     "slug": "casitas-mar-y-luz-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
     "name": "Casitas Mar y Luz",
     "category": "hotel",
@@ -16936,7 +16874,7 @@
       "website": "",
       "booking_url": "https://www.booking.com/hotel/cr/casitas-mar-y-luz.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "8515965990195848246",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -16959,20 +16897,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8515965990195848246"
+        "url": "https://www.google.com/maps/search/9.63543,-82.708588"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -16982,21 +16918,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.2,
-    "maps_address": "R673MCgustavob",
-    "subcategory": "Detalles del hotel",
-    "check_in": "2:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Gimnasio"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "R673MCgustavob",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -17066,7 +16997,7 @@
     "cuisine": ""
   },
   {
-    "id": "cb347a794357",
+    "id": "3057c3e49b35",
     "slug": "ceibo-adventure-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
     "name": "Ceibo Adventure",
     "category": "tour_company",
@@ -17085,7 +17016,7 @@
       "website": "https://www.tripadvisor.ca/Attraction_Review-g309265-d25227055-Reviews-Ceibo_Adventure_Caribe-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
       "booking_url": "",
       "tripadvisor_url": "https://www.tkqlhce.com/click-2369666-12246271?url=https%3A%2F%2Fwww.tripadvisor.ca%2FAttraction_Review-g309265-d25227055-Reviews-Ceibo_Adventure_Caribe-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "10566257576749882719",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -17112,20 +17043,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=10566257576749882719"
+        "url": "https://www.google.com/maps/search/9.635477,-82.712717"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 80,
+      "visibility": 45,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "tour"
@@ -17135,19 +17064,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
     "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Desayuno incluido",
-      "Incluye desayuno y estacionamiento",
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Gimnasio"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -17469,7 +17391,7 @@
     "channels": {
       "phone": "+506 8655 5082",
       "phone_normalized": "+50686555082",
-      "whatsapp": "+50686555082+50684480274",
+      "whatsapp": "+50686555082",
       "instagram": "centromedicoaruma",
       "instagram_verified": true,
       "facebook_url": "https://www.facebook.com/centromedicoaruma",
@@ -17482,7 +17404,7 @@
     "primary_contact": {
       "type": "WhatsApp",
       "label": "Message on WhatsApp",
-      "url": "https://wa.me/50686555082+50684480274?text=Hola Centro Médico Aruma, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias."
+      "url": "https://wa.me/50686555082?text=Hola Centro Médico Aruma, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias."
     },
     "secondary_links": [
       {
@@ -18155,7 +18077,7 @@
     "cuisine": ""
   },
   {
-    "id": "cd8b710cf6b7",
+    "id": "5483361b9800",
     "slug": "chili-rojo-puerto-viejo",
     "name": "Chili Rojo",
     "category": "restaurant",
@@ -18174,7 +18096,7 @@
       "website": "https://www.tripadvisor.com/Restaurant_Review-g309265-d1509837-Reviews-Chile_Rojo-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "2449275981368445735",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -18197,43 +18119,38 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=2449275981368445735"
+        "url": "https://www.google.com/maps/search/9.6571363,-82.7541491"
       }
     ],
     "scores": {
       "contactability": 95,
-      "visibility": 60,
-      "completeness": 100
+      "visibility": 25,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
-    "maps_address": "Avenida 71 Next to koki beach, Puerto Viejo de Talamanca",
-    "subcategory": "sushi",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina asiática",
-      "Cocina panasiática"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": null,
-    "cuisine": "sushi"
+    "plus_code": "",
+    "cuisine": ""
   },
   {
     "id": "b4355d69eded",
@@ -20905,7 +20822,7 @@
     "cuisine": ""
   },
   {
-    "id": "32fcf3b09bd4",
+    "id": "93e17befda6e",
     "slug": "da-lime-beach-club-restaurant-at-hotel-aguas-claras",
     "name": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras",
     "category": "hotel",
@@ -20924,7 +20841,7 @@
       "website": "https://hotelaguasclaras.com/amenities/",
       "booking_url": "",
       "tripadvisor_url": "https://www.tripadvisor.com/Hotel_Review-g309265-d647188-Reviews-Hotel_Aguas_Claras-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "5875257995302760665",
+      "google_maps_cid": "",
       "email": "https:dana.cohen.pr@gmail.com"
     },
     "primary_contact": {
@@ -20955,18 +20872,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=5875257995302760665"
+        "url": "https://www.google.com/maps/search/9.6443438,-82.7196505"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 85,
+      "visibility": 50,
       "completeness": 75
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
       "Phone",
       "Fully Online"
@@ -20979,17 +20895,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Hoteles",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Ceviche"
+    "cuisine": ""
   },
   {
     "id": "4b82ed026df4",
@@ -21447,7 +21363,7 @@
     "cuisine": ""
   },
   {
-    "id": "23988a392eb2",
+    "id": "f86705f81534",
     "slug": "douglas-ville-guest-house",
     "name": "Douglas Ville guest house",
     "category": "restaurant",
@@ -21466,7 +21382,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "8689012956679917112",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -21481,17 +21397,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8689012956679917112"
+        "url": "https://www.google.com/maps/search/9.6538097,-82.7541907"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 70,
+      "visibility": 35,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -21502,18 +21417,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Gimnasio"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -21612,7 +21521,7 @@
     "channels": {
       "phone": "+506 6128 7817",
       "phone_normalized": "+50661287817",
-      "whatsapp": "+50661287817+16479208454",
+      "whatsapp": "+50661287817",
       "instagram": "",
       "instagram_verified": true,
       "facebook_url": "https://www.facebook.com/dragonflybeachretreat",
@@ -21625,7 +21534,7 @@
     "primary_contact": {
       "type": "WhatsApp",
       "label": "Message on WhatsApp",
-      "url": "https://wa.me/50661287817+16479208454?text=Hola Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias."
+      "url": "https://wa.me/50661287817?text=Hola Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias."
     },
     "secondary_links": [
       {
@@ -21828,7 +21737,7 @@
     "cuisine": ""
   },
   {
-    "id": "e0374dae25e6",
+    "id": "c14d9df7beef",
     "slug": "ecotourism-and-conservation-association-of-talamanca-puerto-viejo",
     "name": "Ecotourism and Conservation Association of Talamanca",
     "category": "tour_company",
@@ -21847,7 +21756,7 @@
       "website": "https://ateccr.org/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "11890875733593568965",
+      "google_maps_cid": "",
       "email": "https:ongatec@gmail.com"
     },
     "primary_contact": {
@@ -21874,41 +21783,39 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=11890875733593568965"
+        "url": "https://www.google.com/maps/search/9.6571815,-82.7542969"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
-      "completeness": 100
+      "visibility": 40,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "tour"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Escapade Tours",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "chocolate"
+    "cuisine": ""
   },
   {
     "id": "1fac53c5bf18",
@@ -22050,7 +21957,7 @@
     "cuisine": "casado"
   },
   {
-    "id": "9197d2330eab",
+    "id": "4f87255ecb5a",
     "slug": "el-chilamate",
     "name": "El Chilamate",
     "category": "restaurant",
@@ -22069,7 +21976,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "9842399411646961220",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -22084,17 +21991,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9842399411646961220"
+        "url": "https://www.google.com/maps/search/9.6530399,-82.7654953"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -22105,15 +22011,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina",
-      "aceptan mascotas"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -22121,7 +22024,7 @@
     "cuisine": ""
   },
   {
-    "id": "48ee29c30f22",
+    "id": "430c575f4980",
     "slug": "el-chilamate-holiday-house",
     "name": "El Chilamate Holiday House",
     "category": "restaurant",
@@ -22140,7 +22043,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "9842399411646961220",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -22155,17 +22058,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9842399411646961220"
+        "url": "https://www.google.com/maps/search/9.6530399,-82.7654953"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -22176,15 +22078,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "cocina",
-      "aceptan mascotas"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -22723,7 +22622,7 @@
     "cuisine": ""
   },
   {
-    "id": "e09fbb1caf0c",
+    "id": "d38ec5f6b782",
     "slug": "el-faro-13-puerto-viejo",
     "name": "El Faro 13",
     "category": "hostel",
@@ -22742,7 +22641,7 @@
       "website": "https://www.hostelworld.com/es/albergues/p/100822/el-faro-13-de-puerto-viejo/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "11584809782208466783",
+      "google_maps_cid": "",
       "email": "https:u002F16050649d85f0a6af342ff29b78dc7ef@o1047055.ingest.sentry.io"
     },
     "primary_contact": {
@@ -22769,44 +22668,34 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=11584809782208466783"
+        "url": "https://www.google.com/maps/search/9.6560711,-82.7479054"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
-      "completeness": 100
+      "visibility": 40,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.1,
+    "rating": null,
     "maps_address": null,
     "subcategory": null,
-    "check_in": "3:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Incluye desayuno",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Gimnasio",
-      "Bar"
-    ],
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -23527,7 +23416,7 @@
     "cuisine": "patacones"
   },
   {
-    "id": "3dbed6529ea0",
+    "id": "f28db5bd87ab",
     "slug": "el-sol-del-caribe-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
     "name": "El Sol del Caribe",
     "category": "restaurant",
@@ -23546,7 +23435,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "https://www.anrdoezrs.net/links/2369666/type/dlg/https://www.tripadvisor.com/Restaurant_Review-g309265-d7176583-Reviews-Restaurante_El_Sol_Del_Caribe-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "1216870082731283437",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -23569,20 +23458,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1216870082731283437"
+        "url": "https://www.google.com/maps/search/9.650412,-82.737255"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 80,
+      "visibility": 45,
       "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -23592,19 +23479,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
-    "maps_address": "M727+63 Puerto Viejo de Talamanca, Limón",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Cocina latinoamericana"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
-    "plus_code": "M727+63 Puerto Viejo de Talamanca, Limón",
-    "cuisine": "Cerveza"
+    "plus_code": "",
+    "cuisine": ""
   },
   {
     "id": "612801ee2719",
@@ -24288,7 +24173,7 @@
     "cuisine": ""
   },
   {
-    "id": "b7c9b2429ea1",
+    "id": "9ebc640d34e5",
     "slug": "estrellas-cabinas-puerto-viejo",
     "name": "Estrellas Cabinas",
     "category": "vacation_rental",
@@ -24307,7 +24192,7 @@
       "website": "http://www.casitasmaryluz.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "8515965990195848246",
+      "google_maps_cid": "",
       "email": "https:casitasmaryluz@gmail.com"
     },
     "primary_contact": {
@@ -24330,20 +24215,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8515965990195848246"
+        "url": "https://www.google.com/maps/search/9.652322,-82.749268"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -24353,21 +24236,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.2,
-    "maps_address": "R673MCgustavob",
-    "subcategory": "Detalles del hotel",
-    "check_in": "2:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Gimnasio"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "R673MCgustavob",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -25698,7 +25576,7 @@
     "cuisine": ""
   },
   {
-    "id": "5cbf403184a1",
+    "id": "558eb4ca26c5",
     "slug": "finca-la-isla-permaculture-farm",
     "name": "Finca la Isla Permaculture Farm",
     "category": "restaurant",
@@ -25717,7 +25595,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "7972003479335139796",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -25732,17 +25610,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=7972003479335139796"
+        "url": "https://www.google.com/maps/search/9.6495033,-82.7641365"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -25753,16 +25630,14 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Vivero Green Garden - Playa Negra"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -26633,7 +26508,7 @@
     "cuisine": ""
   },
   {
-    "id": "971b558a2d49",
+    "id": "84b3dc29aa41",
     "slug": "geckoes-lodge",
     "name": "Geckoes Lodge",
     "category": "hotel",
@@ -26652,7 +26527,7 @@
       "website": "http://www.geckoeslodge.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "11623096819320863549",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -26671,17 +26546,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=11623096819320863549"
+        "url": "https://www.google.com/maps/search/9.6358975,-82.7345013"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -26693,24 +26567,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Satta Lodge",
-    "check_in": "3:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Incluye desayuno",
-      "Wi-Fi gratis",
-      "Desayuno pago",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Transporte desde/hacia el aeropuerto",
-      "Gimnasio"
-    ],
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -27782,7 +27644,7 @@
     "cuisine": "vegetariano"
   },
   {
-    "id": "3f635f316049",
+    "id": "14e77ebcd480",
     "slug": "habitat-vacation-rentals-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
     "name": "Habitat Vacation Rentals",
     "category": "vacation_rental",
@@ -27801,7 +27663,7 @@
       "website": "http://habitatpuertoviejo.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "3099661925276096610",
+      "google_maps_cid": "",
       "email": "https:habitatpuertoviejo@gmail.com"
     },
     "primary_contact": {
@@ -27828,21 +27690,19 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=3099661925276096610"
+        "url": "https://www.google.com/maps/search/9.644206,-82.732803"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -27852,17 +27712,14 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 3.6,
+    "rating": null,
     "maps_address": null,
     "subcategory": null,
     "check_in": null,
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Incluye desayuno, Wi-Fi y estacionamiento",
-      "Incluye Wi-Fi y estacionamiento"
-    ],
+    "check_out": null,
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -28073,7 +27930,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -28085,7 +27942,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -29239,7 +29096,7 @@
     "cuisine": ""
   },
   {
-    "id": "0b8d813beb62",
+    "id": "8dba5e0521cc",
     "slug": "hotel-cariblue-cocles",
     "name": "Hotel Cariblue",
     "category": "hotel",
@@ -29258,7 +29115,7 @@
       "website": "https://www.cariblue.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "14658668036585456092",
+      "google_maps_cid": "",
       "email": "https:info@cariblue.com"
     },
     "primary_contact": {
@@ -29285,53 +29142,38 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=14658668036585456092"
+        "url": "https://www.google.com/maps/search/9.6504068,-82.7394595"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
-      "completeness": 100
+      "visibility": 40,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.2,
-    "maps_address": "M726+37 Cocles, Limón",
-    "subcategory": "Detalles del hotel",
-    "check_in": "3:00 p.m.",
-    "check_out": "12:00 p.m.",
-    "amenities": [
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Cocina en algunas habitaciones",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M726+37 Cocles, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -29836,7 +29678,7 @@
       "instagram": "hls",
       "instagram_verified": false,
       "facebook_url": "",
-      "website": "www.hotellossuenos.com",
+      "website": "https://www.hotellossuenos.com",
       "booking_url": "",
       "tripadvisor_url": "",
       "google_maps_cid": "6172303307990233309",
@@ -29858,7 +29700,7 @@
       },
       {
         "label": "Website",
-        "url": "www.hotellossuenos.com"
+        "url": "https://www.hotellossuenos.com"
       },
       {
         "label": "Google Maps",
@@ -29868,7 +29710,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -29880,7 +29722,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -30069,7 +29911,7 @@
     "cuisine": ""
   },
   {
-    "id": "0aac8a98b65a",
+    "id": "c1488c2276c4",
     "slug": "hotel-posada-nena-puerto-viejo",
     "name": "Hotel Posada Nena",
     "category": "hotel",
@@ -30088,7 +29930,7 @@
       "website": "https://www.posadanena.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "8515965990195848246",
+      "google_maps_cid": "",
       "email": "https:info@posadanena.com"
     },
     "primary_contact": {
@@ -30111,44 +29953,37 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8515965990195848246"
+        "url": "https://www.google.com/maps/search/9.6567029,-82.7513293"
       }
     ],
     "scores": {
       "contactability": 95,
-      "visibility": 65,
-      "completeness": 100
+      "visibility": 30,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.2,
-    "maps_address": "R673MCgustavob",
-    "subcategory": "Detalles del hotel",
-    "check_in": "2:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Gimnasio"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "R673MCgustavob",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -30241,7 +30076,7 @@
     "cuisine": ""
   },
   {
-    "id": "bac7ce5aa6c4",
+    "id": "279ba40cc0c6",
     "slug": "hotel-punta-cocles",
     "name": "Hotel Punta Cocles",
     "category": "hotel",
@@ -30260,7 +30095,7 @@
       "website": "https://uvabluevillas.com/en/4711180/check-availability",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "9838950680602433731",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -30279,17 +30114,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9838950680602433731"
+        "url": "https://www.google.com/maps/search/9.63743,-82.7139568"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -30301,29 +30135,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
-    "maps_address": "K9796FPsilviap",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "✔ Private Pools",
-      "✔ Tropical Gardens",
-      "Cocina",
-      "Wi-Fi gratis",
-      "Desayuno",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Transporte desde/hacia el aeropuerto"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "K9796FPsilviap",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -30483,7 +30304,7 @@
     "cuisine": ""
   },
   {
-    "id": "a71551fcbdad",
+    "id": "57b508040cc1",
     "slug": "hotel-sunshine-caribe-puerto-viejo",
     "name": "Hotel Sunshine Caribe",
     "category": "hotel",
@@ -30502,7 +30323,7 @@
       "website": "https://www.booking.com/hotel/cr/sunshine-caribe.en-gb.html",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "2012278593659589679",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -30525,42 +30346,33 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=2012278593659589679"
+        "url": "https://www.google.com/maps/search/9.6526495,-82.7577571"
       }
     ],
     "scores": {
       "contactability": 95,
-      "visibility": 60,
-      "completeness": 100
+      "visibility": 25,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.6,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Hotel",
-    "check_in": "2:00 p.m.",
-    "check_out": "12:00 p.m.",
-    "amenities": [
-      "Wi-Fi gratis",
-      "Incluye desayuno",
-      "Estacionamiento gratuito",
-      "Piscina",
-      "Aire acondicionado",
-      "Gimnasio"
-    ],
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -30712,7 +30524,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 75,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -30725,7 +30537,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -32305,7 +32117,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -32317,7 +32129,7 @@
     "intents": [
       "shop"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -32402,7 +32214,7 @@
     "cuisine": ""
   },
   {
-    "id": "47e133230275",
+    "id": "9e5670ad4898",
     "slug": "ka-namu",
     "name": "Ka Namu",
     "category": "restaurant",
@@ -32421,7 +32233,7 @@
       "website": "http://www.namuhotelpuertoviejo.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "18141110668997261824",
+      "google_maps_cid": "",
       "email": "https:reservations@namuhotelpuertoviejo.com"
     },
     "primary_contact": {
@@ -32444,20 +32256,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=18141110668997261824"
+        "url": "https://www.google.com/maps/search/9.6531231,-82.7543983"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 75
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -32467,28 +32277,15 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Namu Garden Hotel & Spa",
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio",
-      "Bar"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
-    "hours": "11 jul, 3:30 p.m. - 6:00 p.m.",
+    "hours": null,
     "plus_code": "",
     "cuisine": ""
   },
@@ -32911,7 +32708,7 @@
     "cuisine": ""
   },
   {
-    "id": "68bb410914d7",
+    "id": "6d0d99d17088",
     "slug": "kinawe-cabinas",
     "name": "Kinawe Cabinas",
     "category": "hotel",
@@ -32930,7 +32727,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "5826733614696332728",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -32945,17 +32742,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=5826733614696332728"
+        "url": "https://www.google.com/maps/search/9.652121,-82.7625165"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 70
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -32966,9 +32762,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Hotel",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -34375,7 +34171,7 @@
     "cuisine": ""
   },
   {
-    "id": "1d626a16f6bc",
+    "id": "32e15f16c0df",
     "slug": "la-isla-permaculture-farm",
     "name": "La Isla Permaculture Farm",
     "category": "restaurant",
@@ -34394,7 +34190,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "7972003479335139796",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -34409,17 +34205,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=7972003479335139796"
+        "url": "https://www.google.com/maps/search/9.6495033,-82.7641365"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -34430,16 +34225,14 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Vivero Green Garden - Playa Negra"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -35088,7 +34881,7 @@
     "cuisine": ""
   },
   {
-    "id": "e87cc174565a",
+    "id": "9ef777277376",
     "slug": "la-pecora-nera-ristorante",
     "name": "La Pecora Nera Ristorante",
     "category": "restaurant",
@@ -35107,7 +34900,7 @@
       "website": "https://puertoviejo.com/la-pecora-nera/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "16671506007035121722",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -35130,20 +34923,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=16671506007035121722"
+        "url": "https://www.google.com/maps/search/9.6435375,-82.7294006"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 75
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -35153,23 +34944,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Espagueti",
-      "Bar",
-      "restaurantes de alta cocina",
-      "Bárbara",
-      "Cocina latinoamericana"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Cerrado",
-    "hours": "· Abre a las 4:30 p.m.",
+    "open_status": null,
+    "hours": null,
     "plus_code": "",
-    "cuisine": "Italiana"
+    "cuisine": ""
   },
   {
     "id": "92a3956d26a8",
@@ -35680,7 +35465,7 @@
     "cuisine": ""
   },
   {
-    "id": "34f165849e08",
+    "id": "c564e4a108b5",
     "slug": "la-selva-pv-events",
     "name": "La Selva PV Events",
     "category": "restaurant",
@@ -35699,7 +35484,7 @@
       "website": "https://www.instagram.com/laselva_pv/?hl=es",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "8923069820182897353",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -35714,16 +35499,15 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8923069820182897353"
+        "url": "https://www.google.com/maps/search/9.6514016,-82.7523366"
       }
     ],
     "scores": {
       "contactability": 10,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
-      "Map Verified",
       "Has Website"
     ],
     "intents": [
@@ -35734,15 +35518,15 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 3.7,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Cerrado",
-    "hours": "· Abre a las 10:30 p.m.",
+    "open_status": null,
+    "hours": null,
     "plus_code": "",
     "cuisine": ""
   },
@@ -36423,7 +36207,7 @@
     "lat": "9.6446765",
     "lng": "-82.7282387",
     "distance_km": "2.995",
-    "status": "permanently_closed",
+    "status": "closed",
     "channels": {
       "phone": "+506 88178041",
       "phone_normalized": "+50688178041",
@@ -36459,7 +36243,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 25,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -36468,7 +36252,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -36546,7 +36330,7 @@
     "cuisine": ""
   },
   {
-    "id": "2a355ea21491",
+    "id": "03c90007b8a6",
     "slug": "las-casitas-de-playa-negra-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
     "name": "Las Casitas de Playa Negra",
     "category": "vacation_rental",
@@ -36565,7 +36349,7 @@
       "website": "http://hoteldetail.eu/las-casitas-de-playa-negra",
       "booking_url": "https://www.booking.com/hotel/cr/apartamentos-de-playa-puerto-viejo.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "8689012956679917112",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -36596,21 +36380,19 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8689012956679917112"
+        "url": "https://www.google.com/maps/search/9.651884,-82.758095"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -36620,18 +36402,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Wi-Fi gratis",
-      "Piscina",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Gimnasio"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -36687,7 +36463,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -36699,7 +36475,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -36893,7 +36669,7 @@
     "cuisine": ""
   },
   {
-    "id": "0051c8c5289b",
+    "id": "8541ac9d8264",
     "slug": "le-cameleon-boutique-hotel-cocles",
     "name": "Le Cameleon Boutique Hotel",
     "category": "hotel",
@@ -36912,7 +36688,7 @@
       "website": "https://www.lecameleonhotel.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "4837747133838124638",
+      "google_maps_cid": "",
       "email": "https:reservations@lecameleonhotel.com"
     },
     "primary_contact": {
@@ -36939,49 +36715,34 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=4837747133838124638"
+        "url": "https://www.google.com/maps/search/9.6441813,-82.7284542"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 75,
-      "completeness": 100
+      "visibility": 40,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.3,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio",
-      "Bar"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -37475,7 +37236,7 @@
     "cuisine": "ceviche"
   },
   {
-    "id": "534cdd770eef",
+    "id": "a7aaa2ae5ecb",
     "slug": "los-continentes-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
     "name": "Los Continentes",
     "category": "vacation_rental",
@@ -37494,7 +37255,7 @@
       "website": "https://cariblue.com/",
       "booking_url": "https://www.booking.com/hotel/cr/los-continentes.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "14658668036585456092",
+      "google_maps_cid": "",
       "email": "https:info@cariblue.com"
     },
     "primary_contact": {
@@ -37521,21 +37282,19 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=14658668036585456092"
+        "url": "https://www.google.com/maps/search/9.643081,-82.726538"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 80,
+      "visibility": 45,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -37545,29 +37304,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.2,
-    "maps_address": "M726+37 Cocles, Limón",
-    "subcategory": "Detalles del hotel",
-    "check_in": "3:00 p.m.",
-    "check_out": "12:00 p.m.",
-    "amenities": [
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Cocina en algunas habitaciones",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M726+37 Cocles, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -39330,7 +39076,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -39341,7 +39087,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -39510,7 +39256,7 @@
     "cuisine": "mexicana"
   },
   {
-    "id": "4161ca55453a",
+    "id": "87df24f28367",
     "slug": "morpho-casitas",
     "name": "Morpho Casitas",
     "category": "restaurant",
@@ -39529,7 +39275,7 @@
       "website": "https://www.caribbeanbluemorpho.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "15075381955885778012",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -39548,17 +39294,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=15075381955885778012"
+        "url": "https://www.google.com/maps/search/9.6534314,-82.7783071"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -39570,16 +39315,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Incluye desayuno, Wi-Fi y estacionamiento",
-      "Incluye Wi-Fi y estacionamiento",
-      "Casa Naranja El Jardin 6 Pax"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -39659,7 +39400,7 @@
     "cuisine": ""
   },
   {
-    "id": "37a9eeabd0b3",
+    "id": "c255bd006c10",
     "slug": "namu-garden-hotel-spa",
     "name": "Namu Garden Hotel & Spa",
     "category": "restaurant",
@@ -39678,28 +39419,26 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "18141110668997261824",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
       "type": "Map",
-      "label": "Open in Maps",
-      "url": "https://www.google.com/maps?cid=18141110668997261824"
+      "label": "View Location",
+      "url": "https://www.google.com/maps/search/9.6531231,-82.7543983"
     },
     "secondary_links": [
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=18141110668997261824"
+        "url": "https://www.google.com/maps/search/9.6531231,-82.7543983"
       }
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 45
     },
-    "badges": [
-      "Map Verified"
-    ],
+    "badges": [],
     "intents": [
       "eat"
     ],
@@ -39708,28 +39447,15 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Namu Garden Hotel & Spa",
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio",
-      "Bar"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
-    "hours": "11 jul, 3:30 p.m. - 6:00 p.m.",
+    "hours": null,
     "plus_code": "",
     "cuisine": ""
   },
@@ -41880,7 +41606,7 @@
     "cuisine": ""
   },
   {
-    "id": "01efeb4a7251",
+    "id": "08ac8d895b25",
     "slug": "paloma-studio",
     "name": "Paloma Studio",
     "category": "restaurant",
@@ -41899,7 +41625,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "3738318817422763383",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -41918,19 +41644,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=3738318817422763383"
+        "url": "https://www.google.com/maps/search/9.6433356,-82.7384602"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -41940,17 +41664,12 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.9,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Bed & Breakfast",
-      "Cocina",
-      "terraza",
-      "Maryel Barrantes"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -42042,7 +41761,7 @@
     "cuisine": "Bread & Chocolate"
   },
   {
-    "id": "3044dd0762c0",
+    "id": "a7ebde5d3366",
     "slug": "panader-a-franc-s-cocles",
     "name": "Panadería Francés",
     "category": "shopping",
@@ -42058,11 +41777,11 @@
       "instagram": "panadera",
       "instagram_verified": false,
       "facebook_url": "",
-      "website": "alain01barisy@gmail.com",
+      "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "1569445318757953644",
-      "email": ""
+      "google_maps_cid": "",
+      "email": "alain01barisy@gmail.com"
     },
     "primary_contact": {
       "type": "WhatsApp",
@@ -42079,47 +41798,38 @@
         "url": "https://instagram.com/panadera"
       },
       {
-        "label": "Website",
-        "url": "alain01barisy@gmail.com"
-      },
-      {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1569445318757953644"
+        "url": "https://www.google.com/maps/search/9.6447588,-82.7289754"
       }
     ],
     "scores": {
-      "contactability": 95,
-      "visibility": 60,
-      "completeness": 100
+      "contactability": 85,
+      "visibility": 30,
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
-      "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "shop"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.3,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Tiendas de comestibles",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Un rico desayuno típico"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Bread & Chocolate"
+    "cuisine": ""
   },
   {
     "id": "9464399d332a",
@@ -42335,7 +42045,7 @@
     "cuisine": "Pizza"
   },
   {
-    "id": "b41692b8c887",
+    "id": "b15aae738ed0",
     "slug": "paragliding-cr",
     "name": "Paragliding CR",
     "category": "restaurant",
@@ -42354,7 +42064,7 @@
       "website": "https://cirrusskyparaglidi.wixsite.com/cirrus-paragliding-c",
       "booking_url": "",
       "tripadvisor_url": "https://www.tripadvisor.com/Attraction_Review-g309265-d34340026-Reviews-Cirrus_Paragliding_Cr-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "906367207779863842",
+      "google_maps_cid": "",
       "email": "https:2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com"
     },
     "primary_contact": {
@@ -42377,20 +42087,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=906367207779863842"
+        "url": "https://www.google.com/maps/search/9.6483809,-82.7338131"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -42400,14 +42108,14 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -42705,7 +42413,7 @@
     "cuisine": ""
   },
   {
-    "id": "a35296e67f1e",
+    "id": "2de1d89a6189",
     "slug": "paula-s-and-daniel-s-homestay-puerto-viejo",
     "name": "Paula's and Daniel's Homestay",
     "category": "hotel",
@@ -42724,7 +42432,7 @@
       "website": "http://www.elclanhostel.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "5201679489523559249",
+      "google_maps_cid": "",
       "email": "https:admin@elclanhostel.com"
     },
     "primary_contact": {
@@ -42747,44 +42455,37 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=5201679489523559249"
+        "url": "https://www.google.com/maps/search/9.6566042,-82.744193"
       }
     ],
     "scores": {
       "contactability": 95,
-      "visibility": 65,
-      "completeness": 100
+      "visibility": 30,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.7,
-    "maps_address": "Detrás de Koki Beach Restaurant, Avenida 69 entre calles 217 y 219, Limón Province, Puerto Viejo de Talamanca, 70403",
-    "subcategory": "Albergue",
-    "check_in": "2:00 p.m.",
-    "check_out": "11:00 a.m.",
-    "amenities": [
-      "Wi-Fi gratis",
-      "Incluye Wi-Fi",
-      "Incluye Wi-Fi y estacionamiento",
-      "Incluye desayuno, Wi-Fi y estacionamiento"
-    ],
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
+    "check_in": null,
+    "check_out": null,
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
-    "plus_code": "F1345OImarioz",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -43665,7 +43366,7 @@
     "cuisine": ""
   },
   {
-    "id": "8bfa78c609a4",
+    "id": "b45bc66d3d1c",
     "slug": "playa-chiquita-paradise",
     "name": "Playa Chiquita Paradise",
     "category": "restaurant",
@@ -43684,7 +43385,7 @@
       "website": "https://uvabluevillas.com/en/4711180/check-availability",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "9838950680602433731",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -43703,17 +43404,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9838950680602433731"
+        "url": "https://www.google.com/maps/search/9.63743,-82.713957"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -43725,29 +43425,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
-    "maps_address": "K9796FPsilviap",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "✔ Private Pools",
-      "✔ Tropical Gardens",
-      "Cocina",
-      "Wi-Fi gratis",
-      "Desayuno",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Transporte desde/hacia el aeropuerto"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "K9796FPsilviap",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -43959,7 +43646,7 @@
     "cuisine": ""
   },
   {
-    "id": "85702935d470",
+    "id": "d6ca813fb2b9",
     "slug": "playa-negra-brewing-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
     "name": "Playa Negra Brewing",
     "category": "restaurant",
@@ -43978,7 +43665,7 @@
       "website": "",
       "booking_url": "https://www.booking.com/hotel/cr/kaya-s-place.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "8816532573875491055",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -44005,20 +43692,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8816532573875491055"
+        "url": "https://www.google.com/maps/search/9.653931,-82.758651"
       }
     ],
     "scores": {
       "contactability": 90,
-      "visibility": 75,
+      "visibility": 40,
       "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -44028,22 +43713,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 3.8,
-    "maps_address": "D8857LUvanessas",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Incluye desayuno y estacionamiento",
-      "Wi-Fi gratis",
-      "Piscina",
-      "Gimnasio"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
-    "plus_code": "D8857LUvanessas",
-    "cuisine": "Restaurante mexicano"
+    "plus_code": "",
+    "cuisine": ""
   },
   {
     "id": "6f755f62fb15",
@@ -44596,7 +44276,7 @@
     "cuisine": ""
   },
   {
-    "id": "435e392179b8",
+    "id": "d126783e9685",
     "slug": "puerto-viejo-de-talamanca",
     "name": "Puerto Viejo de Talamanca",
     "category": "restaurant",
@@ -44615,7 +44295,7 @@
       "website": "https://www.facebook.com/cholasplace",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "6047083801083296069",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -44634,17 +44314,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=6047083801083296069"
+        "url": "https://www.google.com/maps/search/9.6540146,-82.7549412"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -44656,9 +44335,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -46188,7 +45867,7 @@
     "cuisine": ""
   },
   {
-    "id": "46b968b8f5e0",
+    "id": "08f265215493",
     "slug": "refugio-de-animales-jaguar-cocles",
     "name": "Refugio de animales Jaguar",
     "category": "tour_company",
@@ -46207,7 +45886,7 @@
       "website": "https://www.jaguarrescue.foundation/",
       "booking_url": "",
       "tripadvisor_url": "https://www.tripadvisor.com/Attraction_Review-g309265-d1626282-Reviews-Jaguar_Rescue_Center-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "9435208628058025334",
+      "google_maps_cid": "",
       "email": "https:info@jaguarrescue.foundation"
     },
     "primary_contact": {
@@ -46238,18 +45917,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9435208628058025334"
+        "url": "https://www.google.com/maps/search/9.6420923,-82.7232243"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 85,
-      "completeness": 100
+      "visibility": 50,
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
-      "Map Verified",
       "Has Website",
       "Phone",
       "Fully Online"
@@ -46257,21 +45935,19 @@
     "intents": [
       "tour"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Casa Jaguar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "huérfanos"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Cerrado",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -46602,7 +46278,7 @@
     "cuisine": ""
   },
   {
-    "id": "a0d787103ce5",
+    "id": "c5b6ae2ebc35",
     "slug": "repazul",
     "name": "Repazul",
     "category": "restaurant",
@@ -46621,7 +46297,7 @@
       "website": "http://azulbeachclub.com/",
       "booking_url": "",
       "tripadvisor_url": "https://tripadvisor.com/Hotel_Review-g309265-d615680-Reviews-Hotel_Banana_Azul-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "2898935241958549311",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -46648,20 +46324,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=2898935241958549311"
+        "url": "https://www.google.com/maps/search/9.6580734,-82.7733018"
       }
     ],
     "scores": {
       "contactability": 85,
-      "visibility": 70,
+      "visibility": 35,
       "completeness": 75
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -46671,19 +46345,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.1,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Parrilla",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Azul Bar & Grill"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Parrilla"
+    "cuisine": ""
   },
   {
     "id": "1873a44afe92",
@@ -46884,7 +46556,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 100
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -46896,7 +46568,7 @@
     "intents": [
       "eat"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -47386,7 +47058,7 @@
     "cuisine": ""
   },
   {
-    "id": "b941aa38bb96",
+    "id": "e20ab301c20d",
     "slug": "rio-home",
     "name": "Rio Home",
     "category": "restaurant",
@@ -47405,7 +47077,7 @@
       "website": "https://www.casariocr.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "4666775397025577928",
+      "google_maps_cid": "",
       "email": "https:0c52cb89aa4d4154857a1584b6701db6@sentry.wixpress.com"
     },
     "primary_contact": {
@@ -47424,20 +47096,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=4666775397025577928"
+        "url": "https://www.google.com/maps/search/9.6438612,-82.7321521"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 65,
+      "visibility": 30,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
@@ -47447,19 +47117,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Casa Rio Restaurant + Bar"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Pizza"
+    "cuisine": ""
   },
   {
     "id": "946672fcfa0f",
@@ -47991,7 +47659,7 @@
     "cuisine": ""
   },
   {
-    "id": "95602fad9fe2",
+    "id": "1d401d977b82",
     "slug": "rustika-lodge",
     "name": "Rustika Lodge",
     "category": "hotel",
@@ -48010,7 +47678,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "17548818634857466246",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -48025,17 +47693,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=17548818634857466246"
+        "url": "https://www.google.com/maps/search/9.6552385,-82.7691739"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -48046,9 +47713,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.3,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Hotel",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -48059,7 +47726,7 @@
     "cuisine": ""
   },
   {
-    "id": "c8957e053137",
+    "id": "1be6d1bdb08b",
     "slug": "r-o-negro-cocles",
     "name": "Río Negro",
     "category": "restaurant",
@@ -48078,7 +47745,7 @@
       "website": "https://www.casariocr.com/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "4666775397025577928",
+      "google_maps_cid": "",
       "email": "https:0c52cb89aa4d4154857a1584b6701db6@sentry.wixpress.com"
     },
     "primary_contact": {
@@ -48097,42 +47764,38 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=4666775397025577928"
+        "url": "https://www.google.com/maps/search/9.6439079,-82.7320862"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 65,
-      "completeness": 90
+      "visibility": 30,
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "eat"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Casa Rio Restaurant + Bar"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Pizza"
+    "cuisine": ""
   },
   {
     "id": "adb65b912edd",
@@ -49247,7 +48910,7 @@
     "cuisine": "Cafetería"
   },
   {
-    "id": "3bfa445df2ee",
+    "id": "9c87a46bb48a",
     "slug": "shenanigans-fat-drink-dink-drive",
     "name": "Shenanigans–Fat Drink Dink Drive",
     "category": "",
@@ -49266,28 +48929,26 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "6047083801083296069",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
       "type": "Map",
-      "label": "Open in Maps",
-      "url": "https://www.google.com/maps?cid=6047083801083296069"
+      "label": "View Location",
+      "url": "https://www.google.com/maps/search/9.6529399,-82.7736678"
     },
     "secondary_links": [
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=6047083801083296069"
+        "url": "https://www.google.com/maps/search/9.6529399,-82.7736678"
       }
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 35
     },
-    "badges": [
-      "Map Verified"
-    ],
+    "badges": [],
     "intents": [
       "other"
     ],
@@ -49296,9 +48957,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.5,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -49459,7 +49120,7 @@
     "cuisine": ""
   },
   {
-    "id": "a7ed380d52b9",
+    "id": "c8928f62c1e6",
     "slug": "sloth-crossing",
     "name": "Sloth Crossing",
     "category": "restaurant",
@@ -49478,28 +49139,26 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "7100005996183210934",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
       "type": "Map",
-      "label": "Open in Maps",
-      "url": "https://www.google.com/maps?cid=7100005996183210934"
+      "label": "View Location",
+      "url": "https://www.google.com/maps/search/9.6629375,-82.7894375"
     },
     "secondary_links": [
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=7100005996183210934"
+        "url": "https://www.google.com/maps/search/9.6629375,-82.7894375"
       }
     ],
     "scores": {
       "contactability": 0,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 45
     },
-    "badges": [
-      "Map Verified"
-    ],
+    "badges": [],
     "intents": [
       "eat"
     ],
@@ -49508,16 +49167,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
-    "maps_address": "M676+56, Limón, Puerto Viejo de Talamanca",
-    "subcategory": "Restaurantes",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M676+56, Limón, Puerto Viejo de Talamanca",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -50264,7 +49923,7 @@
     "cuisine": "casados"
   },
   {
-    "id": "008e4a14ddfc",
+    "id": "ff93cd9a2332",
     "slug": "soda-shekina",
     "name": "Soda Shekina",
     "category": "restaurant",
@@ -50283,7 +49942,7 @@
       "website": "https://www.facebook.com/Shekinapuertoviejo/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "11963087103971381770",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -50302,17 +49961,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=11963087103971381770"
+        "url": "https://www.google.com/maps/search/9.6548801,-82.7539308"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -50324,17 +49982,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.6,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurante",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
-    "hours": "· Cierra a las 8:30 p.m.",
+    "open_status": null,
+    "hours": null,
     "plus_code": "",
-    "cuisine": "ceviche"
+    "cuisine": ""
   },
   {
     "id": "753538768c7d",
@@ -52638,7 +52296,7 @@
     "cuisine": "Helado"
   },
   {
-    "id": "4dc852a68353",
+    "id": "fdd7a5a6d336",
     "slug": "talamanca-chocolate-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
     "name": "Talamanca Chocolate",
     "category": "tour_company",
@@ -52657,7 +52315,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "https://www.kqzyfj.com/click-2369666-11552042?url=https%3A%2F%2Fwww.tripadvisor.com%2FAttraction_Review-g309265-d15874671-Reviews-Talamanca_Chocolate-Puerto_Viejo_de_Talamanca_Province_of_Limon.html",
-      "google_maps_cid": "1242408439996904931",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -52680,19 +52338,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=1242408439996904931"
+        "url": "https://www.google.com/maps/search/9.646921,-82.7623"
       }
     ],
     "scores": {
       "contactability": 75,
-      "visibility": 80,
+      "visibility": 45,
       "completeness": 90
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "tour"
@@ -52702,20 +52358,17 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "tour",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "barrita de chocolate",
-      "Increíble espacio frente al mar ."
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
-    "cuisine": "Chocolate artesanal"
+    "cuisine": ""
   },
   {
     "id": "78339b13812c",
@@ -52848,7 +52501,7 @@
     "cuisine": ""
   },
   {
-    "id": "31ca00355d40",
+    "id": "240280521d91",
     "slug": "taller-gabriel",
     "name": "Taller Gabriel",
     "category": "shopping",
@@ -52867,7 +52520,7 @@
       "website": "https://www.clinicasangabriel.net/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "13864196564288057579",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -52886,17 +52539,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=13864196564288057579"
+        "url": "https://www.google.com/maps/search/9.655235,-82.7537536"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -52908,9 +52560,9 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 3.8,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Farmacia",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
@@ -53470,62 +53122,7 @@
     "cuisine": ""
   },
   {
-    "id": "4f2471298b5f",
-    "slug": "the-amazing-treehouse-and-nature-1",
-    "name": "The Amazing Treehouse and Nature",
-    "category": "",
-    "area": "Unknown",
-    "lat": "",
-    "lng": "",
-    "distance_km": "",
-    "status": "unknown",
-    "channels": {
-      "phone": "",
-      "phone_normalized": "",
-      "whatsapp": "",
-      "instagram": "",
-      "instagram_verified": false,
-      "facebook_url": "",
-      "website": "",
-      "booking_url": "",
-      "tripadvisor_url": "",
-      "google_maps_cid": "",
-      "email": ""
-    },
-    "primary_contact": {
-      "type": "None",
-      "label": "No contact available",
-      "url": "#"
-    },
-    "secondary_links": [],
-    "scores": {
-      "contactability": 0,
-      "visibility": 0,
-      "completeness": 20
-    },
-    "badges": [],
-    "intents": [
-      "other"
-    ],
-    "description": "The Amazing Treehouse and Nature is located in Puerto Viejo.",
-    "verified_date": "",
-    "claim": {
-      "status": "unclaimed"
-    },
-    "rating": null,
-    "maps_address": null,
-    "subcategory": null,
-    "check_in": null,
-    "check_out": null,
-    "amenities": [],
-    "prices": [],
-    "open_status": null,
-    "hours": null,
-    "plus_code": "",
-    "cuisine": ""
-  },
-  {
-    "id": "f05827bca053",
+    "id": "cc184b427728",
     "slug": "the-bush",
     "name": "The Bush",
     "category": "restaurant",
@@ -53544,7 +53141,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "7437765293747491582",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -53559,17 +53156,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=7437765293747491582"
+        "url": "https://www.google.com/maps/search/9.6330449,-82.7182417"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -53580,20 +53176,20 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
   },
   {
-    "id": "75a083ca6dcf",
+    "id": "9e8ab7bcef1f",
     "slug": "the-bush-doctah-herbalist",
     "name": "The Bush Doctah Herbalist",
     "category": "restaurant",
@@ -53612,7 +53208,7 @@
       "website": "",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "7437765293747491582",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -53627,17 +53223,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=7437765293747491582"
+        "url": "https://www.google.com/maps/search/9.6330449,-82.7182417"
       }
     ],
     "scores": {
       "contactability": 70,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 55
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Phone"
     ],
     "intents": [
@@ -53648,14 +53243,14 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 5.0,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Restaurantes",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
     "plus_code": "",
     "cuisine": ""
@@ -54501,7 +54096,7 @@
     "lat": "9.6514598",
     "lng": "-82.7386057",
     "distance_km": "2.525",
-    "status": "permanently_closed",
+    "status": "closed",
     "channels": {
       "phone": "2750-0758",
       "phone_normalized": "+50627500758",
@@ -54537,7 +54132,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -54548,7 +54143,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -55456,7 +55051,7 @@
     "cuisine": ""
   },
   {
-    "id": "b9a095ab491c",
+    "id": "55b001a49de6",
     "slug": "uva-blue-jungle-villas-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiqui",
     "name": "Uva Blue Jungle Villas",
     "category": "vacation_rental",
@@ -55475,7 +55070,7 @@
       "website": "",
       "booking_url": "https://www.booking.com/hotel/cr/uva-blue-jungle-villas.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "9838950680602433731",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -55502,21 +55097,19 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9838950680602433731"
+        "url": "https://www.google.com/maps/search/9.637272,-82.71315"
       }
     ],
     "scores": {
       "contactability": 90,
-      "visibility": 85,
+      "visibility": 50,
       "completeness": 90
     },
     "badges": [
       "WhatsApp",
       "Instagram",
       "Booking",
-      "Map Verified",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "stay"
@@ -55526,29 +55119,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
-    "maps_address": "K9796FPsilviap",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "✔ Private Pools",
-      "✔ Tropical Gardens",
-      "Cocina",
-      "Wi-Fi gratis",
-      "Desayuno",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Transporte desde/hacia el aeropuerto"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "K9796FPsilviap",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -56037,7 +55617,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -56048,7 +55628,7 @@
     "intents": [
       "stay"
     ],
-    "description": "Discovered via codex_verified",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -56290,7 +55870,7 @@
     "cuisine": ""
   },
   {
-    "id": "85ca9a1208f4",
+    "id": "08d58ca665ce",
     "slug": "villa-del-mar-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
     "name": "Villa del Mar",
     "category": "vacation_rental",
@@ -56309,7 +55889,7 @@
       "website": "https://uvabluevillas.com/en/4711180/check-availability",
       "booking_url": "https://www.booking.com/hotel/cr/villa-mar.html?aid=1284953",
       "tripadvisor_url": "",
-      "google_maps_cid": "9838950680602433731",
+      "google_maps_cid": "",
       "email": "https:%20jane.smith@domain.com"
     },
     "primary_contact": {
@@ -56340,18 +55920,17 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=9838950680602433731"
+        "url": "https://www.google.com/maps/search/9.643667,-82.721763"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 80,
+      "visibility": 45,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
       "Booking",
-      "Map Verified",
       "Has Website",
       "Phone",
       "Fully Online"
@@ -56364,29 +55943,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.0,
-    "maps_address": "K9796FPsilviap",
-    "subcategory": "Restaurante",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "✔ Private Pools",
-      "✔ Tropical Gardens",
-      "Cocina",
-      "Wi-Fi gratis",
-      "Desayuno",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina",
-      "Aire acondicionado",
-      "Se permiten mascotas",
-      "Cocina en todas las habitaciones",
-      "Transporte desde/hacia el aeropuerto"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "K9796FPsilviap",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -58047,7 +57613,7 @@
     "cuisine": ""
   },
   {
-    "id": "889b8b2a4941",
+    "id": "344b5dfe0035",
     "slug": "villas-kandulu",
     "name": "Villas Kandulu",
     "category": "hotel",
@@ -58066,7 +57632,7 @@
       "website": "https://www.instagram.com/villaskandulucr/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "13333726585970395954",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -58085,17 +57651,16 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=13333726585970395954"
+        "url": "https://www.google.com/maps/search/9.6547145,-82.7451559"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 65
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
@@ -58107,16 +57672,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.9,
-    "maps_address": "M733+VW Puerto Viejo de Talamanca, Limón",
-    "subcategory": "Hotel",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
     "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
-    "plus_code": "M733+VW Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -58858,7 +58423,7 @@
     "cuisine": ""
   },
   {
-    "id": "998967d5f259",
+    "id": "63c96df44a1a",
     "slug": "vista-verde-puerto-viejo",
     "name": "Vista Verde",
     "category": "hotel",
@@ -58877,7 +58442,7 @@
       "website": "https://www.booking.com/hotel/cr/vista-verde.en-gb.html?aid=356980",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "4837747133838124638",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -58896,47 +58461,33 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=4837747133838124638"
+        "url": "https://www.google.com/maps/search/9.6579171,-82.7487996"
       }
     ],
     "scores": {
       "contactability": 80,
-      "visibility": 60,
-      "completeness": 90
+      "visibility": 25,
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
       "Phone"
     ],
     "intents": [
       "stay"
     ],
-    "description": "Discovered via osm_tags",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.3,
+    "rating": null,
     "maps_address": null,
-    "subcategory": "Bar",
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "Desayuno incluido",
-      "Wi-Fi gratis",
-      "Estacionamiento gratuito",
-      "Accesible",
-      "Piscina al aire libre",
-      "Aire acondicionado",
-      "Centro de negocios",
-      "Se permiten mascotas",
-      "Transporte desde/hacia el aeropuerto",
-      "Spa",
-      "Gimnasio",
-      "Bar"
-    ],
+    "amenities": [],
     "prices": [],
     "open_status": null,
     "hours": null,
@@ -59300,7 +58851,7 @@
     "scores": {
       "contactability": 30,
       "visibility": 80,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "Instagram",
@@ -59310,7 +58861,7 @@
     "intents": [
       "eat"
     ],
-    "description": "Discovered via codex_web_discovery",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
@@ -59328,7 +58879,7 @@
     "cuisine": "Capuchino"
   },
   {
-    "id": "73ebc17942c4",
+    "id": "d74ea1e545a2",
     "slug": "we-do-laundry-hone-creek-lim-n-costa-rica-hone-creek",
     "name": "We Do Laundry",
     "category": "services",
@@ -59347,7 +58898,7 @@
       "website": "https://www.instagram.com/washboard.cr/",
       "booking_url": "",
       "tripadvisor_url": "",
-      "google_maps_cid": "8840035579056537434",
+      "google_maps_cid": "",
       "email": ""
     },
     "primary_contact": {
@@ -59374,20 +58925,18 @@
       },
       {
         "label": "Google Maps",
-        "url": "https://www.google.com/maps?cid=8840035579056537434"
+        "url": "https://www.google.com/maps/search/9.657919,-82.797388"
       }
     ],
     "scores": {
       "contactability": 100,
-      "visibility": 60,
+      "visibility": 25,
       "completeness": 100
     },
     "badges": [
       "WhatsApp",
-      "Map Verified",
       "Has Website",
-      "Phone",
-      "Fully Online"
+      "Phone"
     ],
     "intents": [
       "service"
@@ -59397,20 +58946,16 @@
     "claim": {
       "status": "unclaimed"
     },
-    "rating": 4.6,
-    "maps_address": "M752+CJ Puerto Viejo de Talamanca, Limón",
-    "subcategory": "Jungle Laundry",
+    "rating": null,
+    "maps_address": null,
+    "subcategory": null,
     "check_in": null,
     "check_out": null,
-    "amenities": [
-      "wifi",
-      "Lavandería / Laundry Sweet Calypso",
-      "Jungle Laundry"
-    ],
+    "amenities": [],
     "prices": [],
-    "open_status": "Abierto",
+    "open_status": null,
     "hours": null,
-    "plus_code": "M752+CJ Puerto Viejo de Talamanca, Limón",
+    "plus_code": "",
     "cuisine": ""
   },
   {
@@ -59541,7 +59086,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 60,
-      "completeness": 90
+      "completeness": 80
     },
     "badges": [
       "Map Verified",
@@ -59550,7 +59095,7 @@
     "intents": [
       "eat"
     ],
-    "description": "Discovered via codex_web_discovery",
+    "description": "",
     "verified_date": "2026-07-06",
     "claim": {
       "status": "unclaimed"
