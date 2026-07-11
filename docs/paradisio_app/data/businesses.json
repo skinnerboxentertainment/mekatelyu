@@ -48,7 +48,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 35,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -59,7 +59,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "3 Bamboo Ecolodge - Cahuita, Limón, Costa Rica provides kenaki lodge accommodations in Cahuita.",
     "verified_date": "2025-09-14",
     "claim": {
       "status": "unclaimed"
@@ -211,7 +211,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 75,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -224,7 +224,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Abba Home is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -440,7 +440,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -450,7 +450,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Aldina's Guest House - Cahuita, Limón, Costa Rica provides albergue accommodations in Cahuita.",
     "verified_date": "2025-11-02",
     "claim": {
       "status": "unclaimed"
@@ -615,7 +615,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 70,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -628,7 +628,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "ALMA Masajes offers services in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -759,7 +759,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -768,7 +768,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Almonds and Corals Boutique Hotel - Manzanillo, Limón, Costa Rica provides hotel accommodations in Manzanillo.",
     "verified_date": "2025-09-06",
     "claim": {
       "status": "unclaimed"
@@ -974,7 +974,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -984,7 +984,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Alojamiento kon-tiky is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -1120,7 +1120,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 70,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -1132,7 +1132,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Ambar Tattoo Space offers services in Puerto Viejo. Open now.",
     "verified_date": "2026-03-12",
     "claim": {
       "status": "unclaimed"
@@ -1436,7 +1436,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -1446,7 +1446,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Apetito Express is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -1500,7 +1500,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -1508,7 +1508,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Api-Rescate is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -1578,7 +1578,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 50,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -1589,7 +1589,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Ara Manzanillo - Manzanillo, Limón, Costa Rica runs tours and activities in the Manzanillo area. Closed now.",
     "verified_date": "2025-09-22",
     "claim": {
       "status": "unclaimed"
@@ -1653,7 +1653,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -1664,7 +1664,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Ariel Apartment's is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -1822,7 +1822,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -1832,7 +1832,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find hamburguesa at Aroma Coffee Bar and Breakfast - Cahuita, Limón, Costa Rica, a restaurant in Cahuita. Open now.",
     "verified_date": "2025-10-01",
     "claim": {
       "status": "unclaimed"
@@ -1888,7 +1888,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -1896,7 +1896,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Arrecife El Chino is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -2043,7 +2043,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -2053,7 +2053,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cocktail at Asante Bistro & Café - Cahuita, Limón, Costa Rica, a restaurant in Cahuita. Closed now.",
     "verified_date": "2025-12-15",
     "claim": {
       "status": "unclaimed"
@@ -2204,7 +2204,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -2214,7 +2214,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Atlantida Lodge - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita. Open now.",
     "verified_date": "2025-09-28",
     "claim": {
       "status": "unclaimed"
@@ -2700,7 +2700,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -2710,7 +2710,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Babilonia - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-25",
     "claim": {
       "status": "unclaimed"
@@ -3089,7 +3089,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -3099,7 +3099,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Banco de Costa Rica Cahuita - Cahuita, Limón, Costa Rica offers banco in Cahuita. Open now.",
     "verified_date": "2025-08-17",
     "claim": {
       "status": "unclaimed"
@@ -3611,7 +3611,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -3619,7 +3619,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Beach Trail is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -3685,7 +3685,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -3697,7 +3697,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Beauty Ritual Spa offers services in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -3764,7 +3764,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -3774,7 +3774,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Bendita Comida - Bribri, Limón, Costa Rica is a restaurant in Bribri. Open now.",
     "verified_date": "2025-08-17",
     "claim": {
       "status": "unclaimed"
@@ -3838,7 +3838,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -3849,7 +3849,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find mariscos at BERACA, a soda beraca in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -4295,7 +4295,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -4305,7 +4305,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Blessed Hands Massage Therapy offers services in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -4616,7 +4616,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -4628,7 +4628,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Blue Dreams Hotel provides bar accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -4762,7 +4762,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Has Website"
@@ -4770,7 +4770,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Boca Chica Bar Restaurante y Piscina - Cahuita, Limón, Costa Rica is a restaurant in Cahuita.",
     "verified_date": "2025-07-30",
     "claim": {
       "status": "unclaimed"
@@ -4828,7 +4828,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -4838,7 +4838,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Bohemian Monkey - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-11-28",
     "claim": {
       "status": "unclaimed"
@@ -4900,7 +4900,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -4910,7 +4910,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Bomberos Bribri - Bribri, Limón, Costa Rica offers services in Bribri.",
     "verified_date": "2025-01-31",
     "claim": {
       "status": "unclaimed"
@@ -5118,7 +5118,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -5128,7 +5128,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Brigitte's Ranch - Cahuita, Limón, Costa Rica provides cabinas iguana cahuita accommodations in Cahuita.",
     "verified_date": "2025-09-22",
     "claim": {
       "status": "unclaimed"
@@ -5189,7 +5189,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -5197,7 +5197,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Buddy's Sloth Crossing is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -5255,7 +5255,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -5265,7 +5265,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Bugambilia Inn provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -5335,7 +5335,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -5345,7 +5345,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Bungalow Malú Lodge - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -5409,7 +5409,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -5418,7 +5418,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Bungalows Ache - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-26",
     "claim": {
       "status": "unclaimed"
@@ -5670,7 +5670,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -5680,7 +5680,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Bungalows Sloth - Manzanillo, Limón, Costa Rica provides hotel accommodations in Manzanillo.",
     "verified_date": "2025-09-21",
     "claim": {
       "status": "unclaimed"
@@ -5827,7 +5827,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -5837,7 +5837,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabañas KiaMiMi provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -5901,7 +5901,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -5912,7 +5912,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Cabina trepazul is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -5970,7 +5970,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -5979,7 +5979,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Algebra - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-19",
     "claim": {
       "status": "unclaimed"
@@ -6041,7 +6041,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6051,7 +6051,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Arrecife - Cahuita, Limón, Costa Rica provides cabinas tito accommodations in Cahuita.",
     "verified_date": "2026-02-16",
     "claim": {
       "status": "unclaimed"
@@ -6123,7 +6123,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -6134,7 +6134,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Bambu provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -6291,7 +6291,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6301,7 +6301,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Caribe Luna - Cahuita, Limón, Costa Rica provides cabinas tito accommodations in Cahuita.",
     "verified_date": "2025-09-28",
     "claim": {
       "status": "unclaimed"
@@ -6362,7 +6362,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -6371,7 +6371,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas El Imperio - Sixaola, Limón, Costa Rica provides hotel accommodations in Sixaola.",
     "verified_date": "2025-04-08",
     "claim": {
       "status": "unclaimed"
@@ -6437,7 +6437,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6447,7 +6447,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas El Mango - Bribri, Limón, Costa Rica provides hotel accommodations in Bribri.",
     "verified_date": "2025-10-03",
     "claim": {
       "status": "unclaimed"
@@ -6518,7 +6518,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -6527,7 +6527,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas El Rinconcito - Gandoca, Limón, Costa Rica provides hotel accommodations in Gandoca.",
     "verified_date": "2025-08-08",
     "claim": {
       "status": "unclaimed"
@@ -6670,7 +6670,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -6680,7 +6680,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Iguana Cahuita - Cahuita, Limón, Costa Rica provides cahuita lodge accommodations in Cahuita.",
     "verified_date": "2025-09-28",
     "claim": {
       "status": "unclaimed"
@@ -6841,7 +6841,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 0,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -6851,7 +6851,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Jenny - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-23",
     "claim": {
       "status": "unclaimed"
@@ -6913,7 +6913,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -6924,7 +6924,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas KiAMiMi provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -6984,7 +6984,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -6994,7 +6994,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas KiMiMi provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -7132,7 +7132,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -7142,7 +7142,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas KlaMiMi provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -7701,7 +7701,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -7711,7 +7711,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Nirvana Ecolodge - Cahuita, Limón, Costa Rica provides cabinas arrecife accommodations in Cahuita.",
     "verified_date": "2025-09-22",
     "claim": {
       "status": "unclaimed"
@@ -7942,7 +7942,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 0,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -7952,7 +7952,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Palmer Makanda - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-08-01",
     "claim": {
       "status": "unclaimed"
@@ -8102,7 +8102,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -8112,7 +8112,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Smith - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-08-03",
     "claim": {
       "status": "unclaimed"
@@ -8173,7 +8173,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -8183,7 +8183,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Surf Side - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-26",
     "claim": {
       "status": "unclaimed"
@@ -8335,7 +8335,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -8344,7 +8344,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Tito - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -8479,7 +8479,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -8489,7 +8489,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas YaMann - Manzanillo, Limón, Costa Rica provides cabinas yamann accommodations in Manzanillo.",
     "verified_date": "2025-09-22",
     "claim": {
       "status": "unclaimed"
@@ -8555,7 +8555,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -8567,7 +8567,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cabinas Yemanya provides cabinas yemanya accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -9107,7 +9107,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -9115,7 +9115,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find sushi at Café Jaguar & Art Gallery, a sushi in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -9262,7 +9262,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -9272,7 +9272,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Cahuita Bus Station - Cahuita, Limón, Costa Rica runs tours and activities in the Cahuita area.",
     "verified_date": "2025-06-20",
     "claim": {
       "status": "unclaimed"
@@ -9334,7 +9334,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9344,7 +9344,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cahuita Inn - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2025-12-29",
     "claim": {
       "status": "unclaimed"
@@ -9419,7 +9419,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9429,7 +9429,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cahuita Lodge - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-08-16",
     "claim": {
       "status": "unclaimed"
@@ -9498,7 +9498,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9507,7 +9507,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Cahuita National Park Hotel - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-07-26",
     "claim": {
       "status": "unclaimed"
@@ -9704,7 +9704,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9714,7 +9714,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Canto del Mar Guest House - Gandoca, Limón, Costa Rica provides sumaqtikaq lodge accommodations in Gandoca.",
     "verified_date": "2023-12-14",
     "claim": {
       "status": "unclaimed"
@@ -9778,7 +9778,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -9788,7 +9788,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Caribbean Blue House - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-08-29",
     "claim": {
       "status": "unclaimed"
@@ -9850,7 +9850,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -9861,7 +9861,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Caribbean Blue Morpho Casitas is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -9923,7 +9923,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -9933,7 +9933,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Caribbean Coconut - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2026-01-02",
     "claim": {
       "status": "unclaimed"
@@ -10172,7 +10172,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -10184,7 +10184,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Caribbean Hill Villas provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -10918,7 +10918,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -10930,7 +10930,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "CaribeZen is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -11246,7 +11246,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -11254,7 +11254,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Alegra is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -11308,7 +11308,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -11316,7 +11316,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Alegre is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -11473,7 +11473,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -11485,7 +11485,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Amma is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -11543,7 +11543,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -11553,7 +11553,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Amor is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -11692,7 +11692,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -11702,7 +11702,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Antorcha is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -12075,7 +12075,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -12083,7 +12083,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Canopy is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -12151,7 +12151,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -12160,7 +12160,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Chilamate Day House is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -12292,7 +12292,7 @@
     "scores": {
       "contactability": 5,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -12300,7 +12300,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Congo Cahuita - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-28",
     "claim": {
       "status": "unclaimed"
@@ -12740,7 +12740,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -12748,7 +12748,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa del Caribe B&B is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -12973,13 +12973,13 @@
     "scores": {
       "contactability": 20,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [],
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-08-20",
     "claim": {
       "status": "unclaimed"
@@ -13335,7 +13335,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -13343,7 +13343,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Lily is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -13397,7 +13397,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -13405,7 +13405,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Lucas - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2026-01-02",
     "claim": {
       "status": "unclaimed"
@@ -13624,7 +13624,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -13633,7 +13633,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Magdalena - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-08-07",
     "claim": {
       "status": "unclaimed"
@@ -13691,7 +13691,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -13701,7 +13701,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Mambo Cahuita - Cahuita, Limón, Costa Rica provides detalles del hotel accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -13850,7 +13850,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -13860,7 +13860,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Marcellino - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-24",
     "claim": {
       "status": "unclaimed"
@@ -14254,7 +14254,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -14264,7 +14264,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Miluca is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -14324,7 +14324,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -14332,7 +14332,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Miluco is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -14553,7 +14553,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -14563,7 +14563,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Namaitamí - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -14617,7 +14617,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -14625,7 +14625,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Naranjo provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -14749,7 +14749,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -14759,7 +14759,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Olingo is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -14895,7 +14895,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -14904,7 +14904,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Pallaita is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -14968,7 +14968,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -14977,7 +14977,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Pallalita is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15041,7 +15041,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -15050,7 +15050,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Palliata is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15108,7 +15108,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -15117,7 +15117,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Pallita is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15415,7 +15415,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -15423,7 +15423,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Shanti is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15552,7 +15552,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -15562,7 +15562,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "casa tia zeidy is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15758,7 +15758,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -15768,7 +15768,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa vacacional happy day beach house is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -15826,7 +15826,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -15836,7 +15836,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casa Verde Cahuita - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-07-18",
     "claim": {
       "status": "unclaimed"
@@ -15984,7 +15984,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -15992,7 +15992,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casa Vosi is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -16212,7 +16212,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -16221,7 +16221,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Casas Del Mar - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-16",
     "claim": {
       "status": "unclaimed"
@@ -16357,7 +16357,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -16365,7 +16365,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casas Sloth & Butterfly is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -16488,7 +16488,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -16496,7 +16496,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casita Tucan is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -16558,7 +16558,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -16569,7 +16569,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Casitas Batsú is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -16618,13 +16618,13 @@
     "scores": {
       "contactability": 0,
       "visibility": 0,
-      "completeness": 10
+      "completeness": 20
     },
     "badges": [],
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "Casitas del Bosque is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -17352,7 +17352,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -17363,7 +17363,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Centro Educativo Complementaria Cahuita - Cahuita, Limón, Costa Rica offers services in Cahuita. Open now.",
     "verified_date": "2025-09-19",
     "claim": {
       "status": "unclaimed"
@@ -17961,7 +17961,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -17971,7 +17971,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find parrilla at Chao's Paradise - Cahuita, Limón, Costa Rica, a bar in Cahuita. Open now.",
     "verified_date": "2025-06-28",
     "claim": {
       "status": "unclaimed"
@@ -18123,7 +18123,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -18133,7 +18133,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Chile Verde - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-21",
     "claim": {
       "status": "unclaimed"
@@ -18593,7 +18593,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 0,
-      "completeness": 30
+      "completeness": 40
     },
     "badges": [
       "WhatsApp",
@@ -18603,7 +18603,7 @@
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "CHOCORART is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -18742,7 +18742,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 75,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -18754,7 +18754,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Cirrus Sky Paragliding CR is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -18820,7 +18820,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -18830,7 +18830,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Ciudad Perdida Ecolodge - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2025-07-17",
     "claim": {
       "status": "unclaimed"
@@ -18970,7 +18970,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -18980,7 +18980,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Clinica Dental OCI Cahuita - Cahuita, Limón, Costa Rica offers dentista in Cahuita. Open now.",
     "verified_date": "2025-07-25",
     "claim": {
       "status": "unclaimed"
@@ -19194,7 +19194,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -19204,7 +19204,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Clínica de Medicina Integral Bribri - Bribri, Limón, Costa Rica offers services in Bribri. Open now.",
     "verified_date": "2025-10-02",
     "claim": {
       "status": "unclaimed"
@@ -19740,7 +19740,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -19750,7 +19750,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Colibri Lodge Gandoca - Gandoca, Limón, Costa Rica provides cabinas yamann accommodations in Gandoca.",
     "verified_date": "2025-10-04",
     "claim": {
       "status": "unclaimed"
@@ -19995,7 +19995,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -20005,7 +20005,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find patacones at Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica, a restaurant in Manzanillo. Open now.",
     "verified_date": "2025-09-11",
     "claim": {
       "status": "unclaimed"
@@ -20353,7 +20353,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -20364,7 +20364,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica provides cabinas heliconia accommodations in Manzanillo.",
     "verified_date": "2026-04-24",
     "claim": {
       "status": "unclaimed"
@@ -20437,7 +20437,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -20447,7 +20447,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Container House Cahuita - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-08-26",
     "claim": {
       "status": "unclaimed"
@@ -20507,7 +20507,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -20516,7 +20516,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find ceviche at Cool and Calm Cafe - Manzanillo, Limón, Costa Rica, a restaurant in Manzanillo. Open now.",
     "verified_date": "2025-09-05",
     "claim": {
       "status": "unclaimed"
@@ -20584,7 +20584,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -20594,7 +20594,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Coral Vet - Cahuita, Limón, Costa Rica offers services in Cahuita. Open now.",
     "verified_date": "2025-04-29",
     "claim": {
       "status": "unclaimed"
@@ -20814,7 +20814,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -20825,7 +20825,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Cruz Roja - Bribri, Limón, Costa Rica offers services in Bribri.",
     "verified_date": "2025-01-31",
     "claim": {
       "status": "unclaimed"
@@ -20879,7 +20879,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -20887,7 +20887,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Cubali Beach is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -20961,7 +20961,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 85,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -20974,7 +20974,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras provides hotel accommodations in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -21419,7 +21419,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -21429,7 +21429,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Doctah Herbalist is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -21487,7 +21487,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 70,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -21497,7 +21497,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Douglas Ville guest house is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -21947,7 +21947,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -21956,7 +21956,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Arbol Jungle Houses - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-22",
     "claim": {
       "status": "unclaimed"
@@ -22090,7 +22090,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -22100,7 +22100,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "El Chilamate is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -22161,7 +22161,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -22171,7 +22171,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "El Chilamate Holiday House is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -22316,7 +22316,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -22326,7 +22326,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Colibri Lodge - Manzanillo, Limón, Costa Rica provides hotel accommodations in Manzanillo.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -22391,7 +22391,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -22400,7 +22400,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Colibri Rojo - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-27",
     "claim": {
       "status": "unclaimed"
@@ -22539,7 +22539,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -22550,7 +22550,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find japonesa at El Dragón, a restaurante asiático in Puerto Viejo. Closed now.",
     "verified_date": "2026-03-22",
     "claim": {
       "status": "unclaimed"
@@ -22687,7 +22687,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -22697,7 +22697,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Encanto Hotel - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -23174,7 +23174,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -23184,7 +23184,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "El Ranchón is a restaurant in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -23647,7 +23647,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -23657,7 +23657,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "El Tucan Jungle Lodge provides bed & breakfast accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -24136,7 +24136,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -24146,7 +24146,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Escuela Hone Creek offers services in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -24200,7 +24200,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -24208,7 +24208,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Escuela Këköldi offers services in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -24262,7 +24262,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -24270,7 +24270,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Escuela Patiño offers services in Puerto Viejo. Open now.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -24586,7 +24586,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -24596,7 +24596,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Exotico Beach - Manzanillo, Limón, Costa Rica provides hotel d’ angelo accommodations in Manzanillo.",
     "verified_date": "2025-12-16",
     "claim": {
       "status": "unclaimed"
@@ -24667,7 +24667,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -24677,7 +24677,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Explora Caribe CR is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -24896,7 +24896,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -24906,7 +24906,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Faith Glamping Dome - Manzanillo, Limón, Costa Rica provides kañik apart hotel accommodations in Manzanillo.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -25061,7 +25061,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -25072,7 +25072,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Farmacia Caribe is a shopping in Puerto Viejo. Open now.",
     "verified_date": "2026-01-27",
     "claim": {
       "status": "unclaimed"
@@ -25212,7 +25212,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -25222,7 +25222,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Farmacia Quiribri Cahuita - Cahuita, Limón, Costa Rica is a shopping in Cahuita. Open now.",
     "verified_date": "2025-09-30",
     "claim": {
       "status": "unclaimed"
@@ -25284,7 +25284,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -25294,7 +25294,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Farmacia San Gabriel - Cahuita, Limón, Costa Rica is a shopping in Cahuita. Open now.",
     "verified_date": "2025-07-23",
     "claim": {
       "status": "unclaimed"
@@ -25431,7 +25431,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -25442,7 +25442,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Finca Ardilla provides lodge accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -25509,7 +25509,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -25517,7 +25517,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Finca Darai is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -25738,7 +25738,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -25748,7 +25748,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Finca la Isla Permaculture Farm is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -25812,7 +25812,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -25824,7 +25824,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Finca Las Hormigas provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -26050,7 +26050,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -26062,7 +26062,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "FISIOTERAPIA Agustin cuya is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -26275,7 +26275,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -26286,7 +26286,7 @@
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "Fruit Houses is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -26348,7 +26348,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -26358,7 +26358,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Fusión Restaurante - Sixaola, Limón, Costa Rica is a restaurant in Sixaola.",
     "verified_date": "2025-08-28",
     "claim": {
       "status": "unclaimed"
@@ -26424,7 +26424,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -26434,7 +26434,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Gandoca Tours - Gandoca, Limón, Costa Rica runs tours and activities in the Gandoca area.",
     "verified_date": "2025-10-01",
     "claim": {
       "status": "unclaimed"
@@ -26677,7 +26677,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -26688,7 +26688,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Geckoes Lodge provides satta lodge accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -27059,7 +27059,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -27067,7 +27067,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Global Stones finca conservación is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -27129,7 +27129,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -27139,7 +27139,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Goddess Garden - Cahuita, Limón, Costa Rica provides kenaki lodge accommodations in Cahuita.",
     "verified_date": "2025-09-26",
     "claim": {
       "status": "unclaimed"
@@ -27204,7 +27204,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -27212,7 +27212,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Green Corner - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -27439,7 +27439,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -27449,7 +27449,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Green Lapa's Village - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo. Open now.",
     "verified_date": "2025-12-18",
     "claim": {
       "status": "unclaimed"
@@ -27916,7 +27916,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -27926,7 +27926,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hakuna Matata Hostel - Cahuita, Limón, Costa Rica provides albergue accommodations in Cahuita.",
     "verified_date": "2025-11-15",
     "claim": {
       "status": "unclaimed"
@@ -27998,7 +27998,7 @@
     "scores": {
       "contactability": 30,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "Map Verified",
@@ -28007,7 +28007,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Happy House Manzanillo - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-13",
     "claim": {
       "status": "unclaimed"
@@ -28147,7 +28147,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -28159,7 +28159,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Hawaiian Massage offers services in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -28398,7 +28398,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -28408,7 +28408,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Hidden Viewpoint is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -28462,7 +28462,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -28470,7 +28470,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Home Naranjo provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -28592,13 +28592,13 @@
     "scores": {
       "contactability": 0,
       "visibility": 0,
-      "completeness": 10
+      "completeness": 20
     },
     "badges": [],
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "Hospedaje Dos Sueños is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -29033,7 +29033,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -29043,7 +29043,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Boutique D'Angelo - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-26",
     "claim": {
       "status": "unclaimed"
@@ -29206,7 +29206,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -29216,7 +29216,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Cabinas Nadine - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-02",
     "claim": {
       "status": "unclaimed"
@@ -29699,7 +29699,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -29709,7 +29709,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel La Diosa - Cahuita, Limón, Costa Rica provides bed & breakfast accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -29784,7 +29784,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -29794,7 +29794,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Los Cielos del Caribe - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -30285,7 +30285,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -30296,7 +30296,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Punta Cocles provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -30455,7 +30455,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -30465,7 +30465,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Hotel Rustika Lodge provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -30796,7 +30796,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -30806,7 +30806,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Hungry Lion's Jamaican Restaurant - Cahuita, Limón, Costa Rica is a bar in Cahuita.",
     "verified_date": "2025-02-06",
     "claim": {
       "status": "unclaimed"
@@ -30866,7 +30866,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -30874,7 +30874,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Iglesia Cristiana Casa De Restauracion is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -31271,7 +31271,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -31281,7 +31281,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Info Boutique - Cahuita, Limón, Costa Rica is a info boutique in Cahuita. Open now.",
     "verified_date": "2025-04-29",
     "claim": {
       "status": "unclaimed"
@@ -31554,7 +31554,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -31562,7 +31562,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Italia Villas provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -31627,7 +31627,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -31638,7 +31638,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Izzy Rides CR is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32094,7 +32094,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -32102,7 +32102,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Jungalow is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32156,7 +32156,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -32164,7 +32164,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Jungalow Tropical Caribeño is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32226,7 +32226,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -32237,7 +32237,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Jungla del Caribeño is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32375,7 +32375,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -32384,7 +32384,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Jungle Dreamz - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-08-04",
     "claim": {
       "status": "unclaimed"
@@ -32450,7 +32450,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -32462,7 +32462,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Ka Namu is a bar in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32626,7 +32626,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -32635,7 +32635,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cafetería at Katuk, a cafetería in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -32784,7 +32784,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -32794,7 +32794,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Kañik Apart Hotel - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-11-26",
     "claim": {
       "status": "unclaimed"
@@ -32871,7 +32871,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -32881,7 +32881,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Kenaki Lodge - Cahuita, Limón, Costa Rica provides kenaki lodge accommodations in Cahuita.",
     "verified_date": "2025-09-30",
     "claim": {
       "status": "unclaimed"
@@ -32951,7 +32951,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -32961,7 +32961,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Kinawe Cabinas provides hotel accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -33253,7 +33253,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -33261,7 +33261,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Kä Luxury Caribbean is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -33319,7 +33319,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -33329,7 +33329,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "La Caracola is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -33388,7 +33388,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -33397,7 +33397,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "La Casa de las Flores Hotel - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -33620,7 +33620,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -33630,7 +33630,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "La Casa Del Mango - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-25",
     "claim": {
       "status": "unclaimed"
@@ -33930,7 +33930,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -33940,7 +33940,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "LA CHASCONA is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -34264,7 +34264,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 0,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -34274,7 +34274,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "La Fundación Cahuita Playing for Change - Cahuita, Limón, Costa Rica offers services in Cahuita.",
     "verified_date": "2025-12-14",
     "claim": {
       "status": "unclaimed"
@@ -34415,7 +34415,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -34425,7 +34425,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "La Isla Permaculture Farm is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -34654,7 +34654,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -34662,7 +34662,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "La loma de burrito is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -34894,7 +34894,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -34904,7 +34904,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "La Paloma Studio en Coclès con cocina a is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -35136,7 +35136,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -35148,7 +35148,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find italiana at La Pecora Nera Ristorante, a bar in Puerto Viejo. Closed now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -35465,7 +35465,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -35475,7 +35475,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "La Rana De Cahuita - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-29",
     "claim": {
       "status": "unclaimed"
@@ -35720,7 +35720,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -35729,7 +35729,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "La Selva PV Events is a restaurant in Puerto Viejo. Closed now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -35799,7 +35799,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 40,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -35810,7 +35810,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "La Shamana Ecolodge - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2026-01-30",
     "claim": {
       "status": "unclaimed"
@@ -35984,7 +35984,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 70,
-      "completeness": 80
+      "completeness": 90
     },
     "badges": [
       "WhatsApp",
@@ -35996,7 +35996,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "La Tinta Tropical offers services in Puerto Viejo. Open now.",
     "verified_date": "2026-04-02",
     "claim": {
       "status": "unclaimed"
@@ -36293,7 +36293,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -36303,7 +36303,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Lalola Villa - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-23",
     "claim": {
       "status": "unclaimed"
@@ -36522,13 +36522,13 @@
     "scores": {
       "contactability": 15,
       "visibility": 0,
-      "completeness": 20
+      "completeness": 30
     },
     "badges": [],
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "Lapaluna is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -37280,7 +37280,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -37290,7 +37290,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Lilan Nature - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-26",
     "claim": {
       "status": "unclaimed"
@@ -38336,7 +38336,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -38346,7 +38346,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Manzanillo Caribbean Resort - Manzanillo, Limón, Costa Rica provides cabinas yamann accommodations in Manzanillo.",
     "verified_date": "2025-12-18",
     "claim": {
       "status": "unclaimed"
@@ -38575,7 +38575,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -38585,7 +38585,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Marfi Inn - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-21",
     "claim": {
       "status": "unclaimed"
@@ -38823,7 +38823,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -38834,7 +38834,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cerveza at Maxi's Restaurant - Manzanillo, Limón, Costa Rica, a restaurante familiar in Manzanillo. Open now.",
     "verified_date": "2025-09-23",
     "claim": {
       "status": "unclaimed"
@@ -38895,7 +38895,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -38905,7 +38905,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Mayela Public Parking - Sixaola, Limón, Costa Rica offers services in Sixaola. Open now.",
     "verified_date": "2025-10-05",
     "claim": {
       "status": "unclaimed"
@@ -39405,7 +39405,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -39416,7 +39416,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Mishka Lodge provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -39554,7 +39554,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -39565,7 +39565,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Morpho Casitas is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -39631,7 +39631,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -39641,7 +39641,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Mulata - Cahuita, Limón, Costa Rica is a boutique in Cahuita. Open now.",
     "verified_date": "2025-12-31",
     "claim": {
       "status": "unclaimed"
@@ -39695,7 +39695,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -39703,7 +39703,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Namu Garden Hotel & Spa provides bar accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -40036,7 +40036,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -40046,7 +40046,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Nana's Place Beach House is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -40184,7 +40184,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -40195,7 +40195,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "NAO is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -40341,7 +40341,7 @@
     "scores": {
       "contactability": 100,
       "visibility": 0,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -40351,7 +40351,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Nature Observatorio - Manzanillo, Limón, Costa Rica runs tours and activities in the Manzanillo area.",
     "verified_date": "2025-09-02",
     "claim": {
       "status": "unclaimed"
@@ -40405,7 +40405,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -40414,7 +40414,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "New Caribe Point - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-28",
     "claim": {
       "status": "unclaimed"
@@ -40468,7 +40468,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -40477,7 +40477,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Oasi Apartments - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-15",
     "claim": {
       "status": "unclaimed"
@@ -40623,7 +40623,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -40633,7 +40633,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Ocean View Lodge Cahuita - Cahuita, Limón, Costa Rica provides cahuita inn accommodations in Cahuita.",
     "verified_date": "2025-09-25",
     "claim": {
       "status": "unclaimed"
@@ -40951,7 +40951,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 40,
-      "completeness": 75
+      "completeness": 85
     },
     "badges": [
       "WhatsApp",
@@ -40962,7 +40962,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "OIJ - Bribri, Limón, Costa Rica offers services in Bribri.",
     "verified_date": "2025-01-31",
     "claim": {
       "status": "unclaimed"
@@ -41924,7 +41924,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -41935,7 +41935,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Paloma Studio is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -42162,7 +42162,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -42171,7 +42171,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Pangea Lodge - Manzanillo, Limón, Costa Rica provides vacation_rental accommodations in Manzanillo.",
     "verified_date": "2025-09-19",
     "claim": {
       "status": "unclaimed"
@@ -42233,7 +42233,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -42243,7 +42243,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Papaya Wildlife Lodge - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -42383,7 +42383,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 75,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -42395,7 +42395,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Paragliding CR is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -42449,7 +42449,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -42457,7 +42457,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Paraiso Bohemio is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -42519,7 +42519,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -42529,7 +42529,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Parqueo Sixaola - Sixaola, Limón, Costa Rica offers services in Sixaola. Open now.",
     "verified_date": "2025-10-05",
     "claim": {
       "status": "unclaimed"
@@ -42597,7 +42597,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -42607,7 +42607,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Passion Fruit Ecolodge - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-24",
     "claim": {
       "status": "unclaimed"
@@ -43314,7 +43314,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -43322,7 +43322,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Pipa's Beach is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -43380,7 +43380,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -43390,7 +43390,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Piscina Natural - Cahuita, Limón, Costa Rica provides cabinas arrecife accommodations in Cahuita.",
     "verified_date": "2025-08-28",
     "claim": {
       "status": "unclaimed"
@@ -43462,7 +43462,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -43472,7 +43472,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find pizza at Pizzeria Cahuita - Cahuita, Limón, Costa Rica, a restaurant in Cahuita. Open now.",
     "verified_date": "2025-12-29",
     "claim": {
       "status": "unclaimed"
@@ -43709,7 +43709,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -43720,7 +43720,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Playa Chiquita Paradise is a restaurant in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -43787,7 +43787,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -43795,7 +43795,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Playa Cocles runs tours and activities in the Puerto Viejo area.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -43849,7 +43849,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -43857,7 +43857,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Playa Estiven is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -43919,7 +43919,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -43929,7 +43929,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Playa Grande Lodge - Cahuita, Limón, Costa Rica provides kenaki lodge accommodations in Cahuita.",
     "verified_date": "2025-09-28",
     "claim": {
       "status": "unclaimed"
@@ -44090,7 +44090,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -44099,7 +44099,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Playa Negra Guesthouse - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-18",
     "claim": {
       "status": "unclaimed"
@@ -44157,7 +44157,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -44167,7 +44167,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "policía offers services in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -44640,7 +44640,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -44651,7 +44651,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Puerto Viejo de Talamanca is a restaurant in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -45534,7 +45534,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -45542,7 +45542,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Pura Vida Vegana - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-08-26",
     "claim": {
       "status": "unclaimed"
@@ -45702,7 +45702,7 @@
     "scores": {
       "contactability": 10,
       "visibility": 65,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified",
@@ -45711,7 +45711,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Pure Life Sanctuary is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -45933,7 +45933,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -45941,7 +45941,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Quinta Guarumo is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -46160,7 +46160,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -46170,7 +46170,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Redfrogteam Guardianes de la Naturaleza - Bribri, Limón, Costa Rica runs tours and activities in the Bribri area.",
     "verified_date": "2025-10-04",
     "claim": {
       "status": "unclaimed"
@@ -46317,7 +46317,7 @@
     "scores": {
       "contactability": 5,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified"
@@ -46325,7 +46325,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cerveza at Reggae Bar - Cahuita, Limón, Costa Rica, a bar in Cahuita. Open now.",
     "verified_date": "2025-09-25",
     "claim": {
       "status": "unclaimed"
@@ -46654,7 +46654,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 70,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -46666,7 +46666,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find parrilla at Repazul, a parrilla in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -46726,7 +46726,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -46736,7 +46736,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find parrilla at Restaurante Bananas - Cahuita, Limón, Costa Rica, a parrilla in Cahuita. Open now.",
     "verified_date": "2025-09-01",
     "claim": {
       "status": "unclaimed"
@@ -47129,7 +47129,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47140,7 +47140,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "RETIRO VERDE is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -47198,7 +47198,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -47206,7 +47206,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Rhodes Island Cabinas - Cahuita, Limón, Costa Rica provides cahuita lodge accommodations in Cahuita.",
     "verified_date": "2025-03-06",
     "claim": {
       "status": "unclaimed"
@@ -47274,7 +47274,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47286,7 +47286,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Rico Tico Tours runs tours and activities in the Puerto Viejo area. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -47430,7 +47430,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 65,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47442,7 +47442,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find pizza at Rio Home, a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -47584,7 +47584,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47595,7 +47595,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "River Box Cocles is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -47655,7 +47655,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -47664,7 +47664,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Riverside Cabins and Houses - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-16",
     "claim": {
       "status": "unclaimed"
@@ -47718,7 +47718,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -47726,7 +47726,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find ceviche at Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica, a restaurant in Cahuita. Open now.",
     "verified_date": "2025-08-05",
     "claim": {
       "status": "unclaimed"
@@ -48031,7 +48031,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -48041,7 +48041,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Rustika Lodge provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -48702,7 +48702,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -48711,7 +48711,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Se Ua Bed and Breakfast - Manzanillo, Limón, Costa Rica provides hotel accommodations in Manzanillo.",
     "verified_date": "2024-09-20",
     "claim": {
       "status": "unclaimed"
@@ -48841,7 +48841,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -48850,7 +48850,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Secret Garden - Cahuita, Limón, Costa Rica provides hostel accommodations in Cahuita.",
     "verified_date": "2025-09-20",
     "claim": {
       "status": "unclaimed"
@@ -48912,7 +48912,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -48923,7 +48923,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Selina Hostel Puerto Viejo provides albergue accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -49217,7 +49217,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -49229,7 +49229,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cafetería at Shenanigans–Eat Drink Dink Drive, a cafetería in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -49283,7 +49283,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 25
+      "completeness": 35
     },
     "badges": [
       "Map Verified"
@@ -49291,7 +49291,7 @@
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "Shenanigans–Fat Drink Dink Drive is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -49353,7 +49353,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -49363,7 +49363,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Shiosai Retreat Cabins - Gandoca, Limón, Costa Rica provides hotel accommodations in Gandoca.",
     "verified_date": "2025-11-27",
     "claim": {
       "status": "unclaimed"
@@ -49432,7 +49432,7 @@
     "scores": {
       "contactability": 25,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "Map Verified",
@@ -49441,7 +49441,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Siren Sanctuary is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -49495,7 +49495,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -49503,7 +49503,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Sloth Crossing is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -49638,7 +49638,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -49648,7 +49648,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Sloth Massage offers services in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -49714,7 +49714,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -49724,7 +49724,7 @@
     "intents": [
       "tour"
     ],
-    "description": "",
+    "description": "Sloth Sanctuary - Cahuita, Limón, Costa Rica runs tours and activities in the Cahuita area.",
     "verified_date": "2025-09-19",
     "claim": {
       "status": "unclaimed"
@@ -49861,7 +49861,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -49871,7 +49871,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find cerveza at Sobre las Olas by Gondwana - Cahuita, Limón, Costa Rica, a sushi in Cahuita. Open now.",
     "verified_date": "2025-09-26",
     "claim": {
       "status": "unclaimed"
@@ -50014,7 +50014,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -50022,7 +50022,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find parrilla at Soda Chang - Sixaola, Limón, Costa Rica, a parrilla in Sixaola. Open now.",
     "verified_date": "2025-07-01",
     "claim": {
       "status": "unclaimed"
@@ -50083,7 +50083,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -50093,7 +50093,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find casado at Soda Kawe - Cahuita, Limón, Costa Rica, a restaurant in Cahuita. Open now.",
     "verified_date": "2025-09-23",
     "claim": {
       "status": "unclaimed"
@@ -50153,7 +50153,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -50163,7 +50163,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find parrilla at Soda Marta - Sixaola, Limón, Costa Rica, a parrilla in Sixaola. Open now.",
     "verified_date": "2025-01-31",
     "claim": {
       "status": "unclaimed"
@@ -50308,7 +50308,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -50319,7 +50319,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find ceviche at Soda Shekina, a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -50463,7 +50463,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -50474,7 +50474,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find vegetarianos at Soda Títeres, a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -50528,7 +50528,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -50537,7 +50537,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica provides hotel accommodations in Gandoca.",
     "verified_date": "2025-04-09",
     "claim": {
       "status": "unclaimed"
@@ -50595,7 +50595,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 60
+      "completeness": 70
     },
     "badges": [
       "WhatsApp",
@@ -50605,7 +50605,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Find pizza at Solo Bueno, a restaurant in Puerto Viejo. Open now.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -51176,7 +51176,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -51184,7 +51184,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Spiral is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -51250,7 +51250,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -51260,7 +51260,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Sport Body Gym - Cahuita, Limón, Costa Rica offers beach gym in Cahuita. Open now.",
     "verified_date": "2025-07-05",
     "claim": {
       "status": "unclaimed"
@@ -51503,7 +51503,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -51512,7 +51512,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Suizo Loco Lodge - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-14",
     "claim": {
       "status": "unclaimed"
@@ -51791,7 +51791,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -51799,7 +51799,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Super Negro Cahuita - Cahuita, Limón, Costa Rica is a supermercado in Cahuita. Open now.",
     "verified_date": "2025-09-03",
     "claim": {
       "status": "unclaimed"
@@ -52138,7 +52138,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -52146,7 +52146,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Super Vaz 2 - Cahuita, Limón, Costa Rica is a supermercado in Cahuita. Open now.",
     "verified_date": "2025-08-15",
     "claim": {
       "status": "unclaimed"
@@ -52758,7 +52758,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -52768,7 +52768,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Talamanca Organica Cacao & Fine Chocolate is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -52822,7 +52822,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -52830,7 +52830,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Talamanca Viewpoint is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -52892,7 +52892,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 70
+      "completeness": 80
     },
     "badges": [
       "WhatsApp",
@@ -52903,7 +52903,7 @@
     "intents": [
       "shop"
     ],
-    "description": "",
+    "description": "Taller Gabriel is a shopping in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -52965,7 +52965,7 @@
     "scores": {
       "contactability": 90,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -52974,7 +52974,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica provides hotel accommodations in Manzanillo.",
     "verified_date": "2025-09-25",
     "claim": {
       "status": "unclaimed"
@@ -53208,7 +53208,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -53216,7 +53216,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Tattoo Studio 33 offers services in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53270,7 +53270,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -53278,7 +53278,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica offers services in Sixaola.",
     "verified_date": "2025-10-05",
     "claim": {
       "status": "unclaimed"
@@ -53440,7 +53440,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -53452,7 +53452,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "The Amazing Treehouse and Nature is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53501,13 +53501,13 @@
     "scores": {
       "contactability": 0,
       "visibility": 0,
-      "completeness": 10
+      "completeness": 20
     },
     "badges": [],
     "intents": [
       "other"
     ],
-    "description": "",
+    "description": "The Amazing Treehouse and Nature is located in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53565,7 +53565,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -53575,7 +53575,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "The Bush is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53633,7 +53633,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -53643,7 +53643,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "The Bush Doctah Herbalist is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53863,7 +53863,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 65,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -53875,7 +53875,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "The Reillder Castillo Project is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -53935,7 +53935,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 35,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -53945,7 +53945,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Three Monkeys - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2026-01-02",
     "claim": {
       "status": "unclaimed"
@@ -54319,7 +54319,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -54328,7 +54328,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "TKD Caribe - Cahuita, Limón, Costa Rica offers services in Cahuita.",
     "verified_date": "2025-09-07",
     "claim": {
       "status": "unclaimed"
@@ -54466,7 +54466,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 0,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -54475,7 +54475,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Topos Tree House - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-12-25",
     "claim": {
       "status": "unclaimed"
@@ -54602,7 +54602,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -54610,7 +54610,7 @@
     "intents": [
       "service"
     ],
-    "description": "",
+    "description": "Tourist Police - Cahuita, Limón, Costa Rica offers services in Cahuita.",
     "verified_date": "2022-05-26",
     "claim": {
       "status": "unclaimed"
@@ -54764,7 +54764,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -54775,7 +54775,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "TreeTop Mansion is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -54986,7 +54986,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -54996,7 +54996,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "TRIBU functional training is a restaurant in Puerto Viejo. Open now.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -55055,7 +55055,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -55063,7 +55063,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Tropical Getaway \"Casa de Amor provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -55117,7 +55117,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -55125,7 +55125,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Tropical Getaway \"Dream House\" is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -55179,7 +55179,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 35,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -55187,7 +55187,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Troy's Place - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-09-16",
     "claim": {
       "status": "unclaimed"
@@ -55245,7 +55245,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -55253,7 +55253,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Tubolwak Lodge y Garden provides lodge accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -55588,7 +55588,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 50
+      "completeness": 60
     },
     "badges": [
       "Map Verified"
@@ -55596,7 +55596,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Vago's Place provides cabaña accommodations in Puerto Viejo.",
     "verified_date": "2026-07-10",
     "claim": {
       "status": "unclaimed"
@@ -56258,7 +56258,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -56268,7 +56268,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Cerise provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -56597,7 +56597,7 @@
     "scores": {
       "contactability": 95,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -56609,7 +56609,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Kandulu provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -56663,7 +56663,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -56671,7 +56671,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Khalú provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -56816,7 +56816,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 0,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -56825,7 +56825,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Mango - Cahuita, Limón, Costa Rica provides vacation_rental accommodations in Cahuita.",
     "verified_date": "2025-06-19",
     "claim": {
       "status": "unclaimed"
@@ -56966,7 +56966,7 @@
     "scores": {
       "contactability": 85,
       "visibility": 60,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -56978,7 +56978,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Miagoa provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -57115,7 +57115,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -57125,7 +57125,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Selva Luna provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -57255,7 +57255,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -57263,7 +57263,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villa Tropical provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -57668,7 +57668,7 @@
     "scores": {
       "contactability": 0,
       "visibility": 60,
-      "completeness": 35
+      "completeness": 45
     },
     "badges": [
       "Map Verified"
@@ -57676,7 +57676,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villas caranda provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -58091,7 +58091,7 @@
     "scores": {
       "contactability": 80,
       "visibility": 60,
-      "completeness": 55
+      "completeness": 65
     },
     "badges": [
       "WhatsApp",
@@ -58102,7 +58102,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villas Kandulu provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -58417,7 +58417,7 @@
     "scores": {
       "contactability": 70,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "WhatsApp",
@@ -58427,7 +58427,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Villas Moonlight provides hotel accommodations in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -58830,7 +58830,7 @@
     "scores": {
       "contactability": 15,
       "visibility": 60,
-      "completeness": 45
+      "completeness": 55
     },
     "badges": [
       "Map Verified"
@@ -58838,7 +58838,7 @@
     "intents": [
       "eat"
     ],
-    "description": "",
+    "description": "Vindas is a restaurant in Puerto Viejo.",
     "verified_date": "",
     "claim": {
       "status": "unclaimed"
@@ -59458,7 +59458,7 @@
     "scores": {
       "contactability": 75,
       "visibility": 35,
-      "completeness": 65
+      "completeness": 75
     },
     "badges": [
       "WhatsApp",
@@ -59468,7 +59468,7 @@
     "intents": [
       "stay"
     ],
-    "description": "",
+    "description": "Wildlife Lodge Cahuita - Cahuita, Limón, Costa Rica provides hotel accommodations in Cahuita.",
     "verified_date": "2025-09-27",
     "claim": {
       "status": "unclaimed"
