@@ -20,3 +20,11 @@ nbhood_scan.py
 osm_data.json
 osm_shops.json
 osm_test.json
+
+# Chrome profile
+profiles/
+# Stealth screenshots
+stealth_screenshots/
+# Temp files
+.temp_*.py
+.checkpoint_*
