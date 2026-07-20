@@ -1,0 +1,2 @@
+# Optional local QA tooling; not required by the production artifact.
+playwright==1.55.0

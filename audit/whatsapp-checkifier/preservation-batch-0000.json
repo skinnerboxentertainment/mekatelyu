@@ -1,0 +1,42 @@
+[
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "match",
+    "display_name": "Hotel Pura Vida",
+    "confidence": 0.95,
+    "evidence_summary": "WhatsApp rendered the visible profile identity Hotel Pura Vida.",
+    "record_id": "6842e04670daa403",
+    "route": "https://wa.me/50685709768",
+    "screenshot_path": "screenshots/6842e04670daa403.jpg"
+  },
+  {
+    "render_state": "target_visible",
+    "identity_result": "unclear",
+    "display_name": "",
+    "confidence": 0.25,
+    "evidence_summary": "WhatsApp rendered only the formatted telephone number; no profile identity was visible.",
+    "record_id": "6bb12dc8f161373d",
+    "route": "https://wa.me/50683105061",
+    "screenshot_path": "screenshots/6bb12dc8f161373d.jpg"
+  },
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "probable_match",
+    "display_name": "Sonora Caribbean Jungle Retreat",
+    "confidence": 0.75,
+    "evidence_summary": "WhatsApp rendered the visible profile identity Sonora Caribbean Jungle Retreat.",
+    "record_id": "b33f2ba263bbaac0",
+    "route": "https://wa.me/50688011858",
+    "screenshot_path": "screenshots/b33f2ba263bbaac0.jpg"
+  },
+  {
+    "render_state": "target_visible",
+    "identity_result": "unclear",
+    "display_name": "",
+    "confidence": 0.25,
+    "evidence_summary": "WhatsApp rendered only the formatted telephone number; no profile identity was visible.",
+    "record_id": "fdb94ebb729fe7e0",
+    "route": "https://wa.me/50684962464",
+    "screenshot_path": "screenshots/fdb94ebb729fe7e0.jpg"
+  }
+]

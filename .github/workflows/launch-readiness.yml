@@ -1,0 +1,50 @@
+name: Launch readiness
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - "launch/**"
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-launch.txt
+
+      - name: Run launch-rule tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Verify source-data invariants
+        run: python scripts/verify_source_data.py
+
+      - name: Build reduced release
+        env:
+          PARADISIO_BUILD_DATE: "2026-08-01"
+        run: python paradisio_app/build.py
+
+      - name: Verify release artifact
+        run: python scripts/verify_release.py
+
+      - name: Upload verified candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: paradisio-reduced-release
+          path: release
+          if-no-files-found: error
+          retention-days: 14

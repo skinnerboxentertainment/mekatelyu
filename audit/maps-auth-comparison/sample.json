@@ -1,0 +1,92 @@
+[
+  {
+    "business_name": "Soul Rebel Hostel",
+    "area": "Puerto Viejo",
+    "category": "hostel",
+    "cid": "1470909826947842376",
+    "url": "https://www.google.com/maps?cid=1470909826947842376&hl=en",
+    "prior_text_length": 4047,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Rhodes Island Cabinas - Cahuita, Limón, Costa Rica",
+    "area": "Cahuita",
+    "category": "hotel",
+    "cid": "10690687264393434328",
+    "url": "https://www.google.com/maps?cid=10690687264393434328&hl=en",
+    "prior_text_length": 4005,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "RISE Puerto Viejo",
+    "area": "Puerto Viejo",
+    "category": "real_estate",
+    "cid": "10602615161199468109",
+    "url": "https://www.google.com/maps?cid=10602615161199468109&hl=en",
+    "prior_text_length": 3453,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Que Quilombo - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "area": "Playa Chiquita",
+    "category": "restaurant",
+    "cid": "16434729007440247088",
+    "url": "https://www.google.com/maps?cid=16434729007440247088&hl=en",
+    "prior_text_length": 4003,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Pura Ride by Ciclo Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "area": "Cocles",
+    "category": "services",
+    "cid": "5955362533549979086",
+    "url": "https://www.google.com/maps?cid=5955362533549979086&hl=en",
+    "prior_text_length": 3999,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Mariscos Mopri",
+    "area": "Puerto Viejo",
+    "category": "shopping",
+    "cid": "15490944357828439393",
+    "url": "https://www.google.com/maps?cid=15490944357828439393&hl=en",
+    "prior_text_length": 3975,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Ride the Rainforest - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "area": "Playa Chiquita",
+    "category": "tour_company",
+    "cid": "12629937482695022966",
+    "url": "https://www.google.com/maps?cid=12629937482695022966&hl=en",
+    "prior_text_length": 4011,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Alamo Enterprise Car Rental",
+    "area": "Puerto Viejo",
+    "category": "transport",
+    "cid": "7608545223870319936",
+    "url": "https://www.google.com/maps?cid=7608545223870319936&hl=en",
+    "prior_text_length": 3844,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Caribbean Comfort",
+    "area": "Puerto Viejo",
+    "category": "vacation_rental",
+    "cid": "9201616901711710091",
+    "url": "https://www.google.com/maps?cid=9201616901711710091&hl=en",
+    "prior_text_length": 3975,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  },
+  {
+    "business_name": "Hawaiian Massage",
+    "area": "Playa Negra",
+    "category": "wellness",
+    "cid": "16307257612295998249",
+    "url": "https://www.google.com/maps?cid=16307257612295998249&hl=en",
+    "prior_text_length": 3901,
+    "sample_reason": "representative positive CID near 4,000 captured characters"
+  }
+]

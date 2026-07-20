@@ -1,53 +1,48 @@
 # Paradisio — Puerto Viejo Business Board
 
-**750 businesses within 5 km of Puerto Viejo de Talamanca, Costa Rica.**  
-A verified, multi-source local business directory with Instagram handles, phone numbers, WhatsApp, Booking.com links, Facebook pages, Google Maps CIDs, coordinates, star ratings, amenities, and classifieds.
+**738 entity-resolved businesses across Puerto Viejo and Costa Rica's South Caribbean.**
+A multi-source local business directory with validated contact routing, maps, ratings, amenities, and one profile QR code per establishment.
 
-👉 **[Open Paradisio App](https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/)** — search, filter, map, WhatsApp contact, classifieds board
-
-<p align="center">
-  <img src="docs/paradisio_app/qr/paradisio-app.png" width="160" height="160" alt="QR Code — scan to open Paradisio">
-</p>
-📋 **[Interactive Directory](https://skinnerboxentertainment.github.io/mekatelyu/directory.html)** — classic map + list view
-🗺️ **[Gap Scanner Map](https://skinnerboxentertainment.github.io/mekatelyu/gapmap.html)** — visual grid analysis of coverage
-📊 **[Full Report](https://skinnerboxentertainment.github.io/mekatelyu/report.html)** — aggregate stats, charts, enrichment breakdown
+👉 **[Open Paradisio](https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/)** — search, filter, map, and open available contact channels
 
 ---
 
 ## Dataset
 
-**File:** `pv_master_unified.csv` — 750 records, 34 columns.
+**File:** `pv_master_unified.csv` — 738 records, 34 columns.
 
 ### Coverage
 
 | Field | Records | Coverage |
 |-------|---------|----------|
-| Business name | 750 | 100% |
-| Google Maps CID | 699 | 93% |
-| Coordinates | 606 | 81% |
-| Category | 619 | 83% |
-| Area | 619 | 83% |
-| Phone | 611 | 81% |
-| Instagram | 385 | 51% |
-| Facebook | 361 | 48% |
-| Website | 191 | 25% |
-| Booking.com | 171 | 23% |
-| WhatsApp | 106 | 14% |
-| Email | 75 | 10% |
-| TripAdvisor | 68 | 9% |
+| Business name | 738 | 100% |
+| Google Maps CID | 726 | 98% |
+| Coordinates | 598 | 81% |
+| Category | 738 | 100% |
+| Area | 738 | 100% |
+| Phone | 599 | 81% |
+| Instagram | 444 | 60% |
+| Facebook | 355 | 48% |
+| Website | 182 | 25% |
+| Booking.com | 170 | 23% |
+| WhatsApp | 175 | 24% |
+| Email | 72 | 10% |
+| TripAdvisor | 64 | 9% |
 
 ### Categories
 
 | Category | Count |
 |----------|-------|
-| Hotel | 169 |
-| Vacation Rental | 145 |
-| Restaurant | 118 |
-| Services | 77 |
-| Shopping | 52 |
-| Tour Company | 31 |
-| Hostel | 22 |
+| Hotel | 198 |
+| Restaurant | 192 |
+| Vacation Rental | 150 |
+| Services | 81 |
+| Shopping | 54 |
+| Tour Company | 27 |
+| Hostel | 23 |
 | Real Estate | 5 |
+| Wellness | 5 |
+| Transport | 3 |
 
 ### Areas
 
@@ -136,7 +131,7 @@ A verified, multi-source local business directory with Instagram handles, phone 
 | SQLite cache | 139 | SQLite dump + enrichment |
 | OSM additions | 31 | Overpass API |
 | Grid scan names | 134 | Screenshot + vision |
-| **Total unique** | **750** | Merge + dedup |
+| **Current canonical total** | **738** | Entity-resolved launch dataset |
 
 ---
 
@@ -144,29 +139,33 @@ A verified, multi-source local business directory with Instagram handles, phone 
 
 ```
 paradisio_app/              — Static web app generator (build.py, CSS, JS)
-pv_master_unified.csv       — Master dataset (750 records, 34 cols)
+pv_master_unified.csv       — Master dataset (738 records, 34 cols)
 pvscraper/                  — Reusable Python crawl + parse module
 stealth_search.py           — Maps-direct CID/coords/phone resolver
 website_crawl.py            — Business website social link extractor
 codex_bridge.py             — Thin wrapper for Codex CLI delegation
 CODEX_ENDPOINT/             — IPC hub for Codex task delegation
-docs/                       — GitHub Pages site
-  paradisio_app/            — Generated static app (750 business pages + classifieds)
-  index.html                — Landing page (redirects to app)
-  directory.html            — Classic interactive directory
-  report.html               — Analytical report
-  gapmap.html               — Grid-based gap scanner
-  audit.html                — Data audit dashboard
+release/                    — Ignored, reproducible launch artifact
+  paradisio_app/            — 738 business profiles and 738 QR codes
+audit/launch-readiness/     — Internal audit, remediation, and verification records
 ```
 
 ### GitHub Pages
 
 - **App:** `https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/` ← main entry
-- **Directory:** `https://skinnerboxentertainment.github.io/mekatelyu/directory.html`
-- **Report:** `https://skinnerboxentertainment.github.io/mekatelyu/report.html`
-- **Gap Map:** `https://skinnerboxentertainment.github.io/mekatelyu/gapmap.html`
-- **Audit:** `https://skinnerboxentertainment.github.io/mekatelyu/audit.html`
-- **QR Codes (print):** `https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/qr/index.html`
+- Each profile exposes its own downloadable QR code at `paradisio_app/qr/{slug}.png`.
+
+### Build and verify
+
+```powershell
+python -m pip install -r requirements-launch.txt
+python -m unittest discover -s tests -p "test_*.py" -v
+python scripts/verify_source_data.py
+python paradisio_app/build.py
+python scripts/verify_release.py
+```
+
+The generated candidate is written to ignored `release/`. CI uploads that exact directory as a review artifact but does not deploy it.
 
 ### Key Scripts
 
@@ -185,16 +184,15 @@ docs/                       — GitHub Pages site
 
 The Paradisio app (`paradisio_app/`) is a static, mobile-friendly web application that turns the dataset into a usable directory. Key features:
 
-- **750 business pages** with contact routing (WhatsApp > phone > Instagram > website > map)
+- **738 business profiles** with validated contact routing and one QR code per profile
 - **Search, filters, paginated results** — category, area, contact channel, text search
 - **Interactive cluster map** — toggle between list and map views
 - **Star ratings, hours, amenities** — enriched from Google Maps CID crawl
 - **Print-ready QR codes** for every business — download or print for stickers
-- **Classifieds board** — rooms for rent, jobs, gigs, for sale, services, events, rideshare
 - **Mobile-first responsive** — works on any device
-- **GoatCounter analytics** — pageview tracking
+- **Minimal public artifact** — no payment, administrative, invoice, claim, analytics, or classifieds surface in the reduced release
 
-Built with pure Python (stdlib) and vanilla HTML/CSS/JS. No frameworks, no database, no server. Runs entirely on GitHub Pages.
+Built with Python, `qrcode`/Pillow, and vanilla HTML/CSS/JS. No application server or database is required.
 
 ---
 

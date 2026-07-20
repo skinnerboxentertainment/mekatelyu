@@ -4,6 +4,8 @@
 # Python cache
 __pycache__/
 *.pyc
+.venv/
+release/
 
 # Cache
 cache/
@@ -23,8 +25,20 @@ osm_test.json
 
 # Chrome profile
 profiles/
+# Signed-in local Maps browser state; never commit cookies, tokens, history, or caches.
+audit/maps-cid-discovery/chrome-profile/
+audit/maps-cid-discovery/signed-profile/
 # Stealth screenshots
 stealth_screenshots/
 # Temp files
 .temp_*.py
 .checkpoint_*
+
+# Local WhatsApp visual-review evidence (may contain profile information)
+audit/whatsapp-checkifier/ledger.jsonl
+audit/whatsapp-checkifier/screenshots/
+audit/whatsapp-checkifier/*-evidence-batch.json
+audit/whatsapp-checkifier/*-progress.json
+audit/whatsapp-checkifier/*-errors.jsonl
+audit/whatsapp-checkifier/*-live-*.json
+audit/whatsapp-checkifier/server.*.log

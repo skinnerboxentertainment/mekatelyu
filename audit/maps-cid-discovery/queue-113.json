@@ -1,0 +1,906 @@
+[
+  {
+    "business_name": "Casitas Mar y Luz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Casitas Mar y Luz",
+    "area": "Playa Chiquita",
+    "category": "hotel",
+    "query": "Casitas Mar y Luz Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casitas%20Mar%20y%20Luz%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hotel Kasha - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Hotel Kasha",
+    "area": "Playa Chiquita",
+    "category": "hotel",
+    "query": "Hotel Kasha Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Kasha%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "La Ceiba Nature Reserve",
+    "area": "Punta Uva",
+    "category": "hotel",
+    "query": "La Ceiba Nature Reserve Punta Uva Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Ceiba%20Nature%20Reserve%20Punta%20Uva%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Samasati Yoga and Wellness Retreat - Hone Creek, Limón, Costa Rica",
+    "search_name": "Samasati Yoga and Wellness Retreat",
+    "area": "Hone Creek",
+    "category": "hotel",
+    "query": "Samasati Yoga and Wellness Retreat Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Samasati%20Yoga%20and%20Wellness%20Retreat%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Villa Mena Apartments - Hone Creek, Limón, Costa Rica",
+    "search_name": "Villa Mena Apartments",
+    "area": "Hone Creek",
+    "category": "hotel",
+    "query": "Villa Mena Apartments Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Mena%20Apartments%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Estrellas Cabinas",
+    "search_name": "Estrellas Cabinas",
+    "area": "Puerto Viejo",
+    "category": "vacation_rental",
+    "query": "Estrellas Cabinas Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20Cabinas%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas Cable Talamanca - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Cabinas Cable Talamanca",
+    "area": "Playa Negra",
+    "category": "vacation_rental",
+    "query": "Cabinas Cable Talamanca Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20Cable%20Talamanca%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Las Casitas de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Las Casitas de Playa Negra",
+    "area": "Playa Negra",
+    "category": "vacation_rental",
+    "query": "Las Casitas de Playa Negra Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Las%20Casitas%20de%20Playa%20Negra%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Los Continentes - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Los Continentes",
+    "area": "Cocles",
+    "category": "vacation_rental",
+    "query": "Los Continentes Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Continentes%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Habitat Vacation Rentals - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Habitat Vacation Rentals",
+    "area": "Cocles",
+    "category": "vacation_rental",
+    "query": "Habitat Vacation Rentals Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Habitat%20Vacation%20Rentals%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casas del Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Casas del Caribe",
+    "area": "Playa Chiquita",
+    "category": "vacation_rental",
+    "query": "Casas del Caribe Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casas%20del%20Caribe%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Uva Blue Jungle Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Uva Blue Jungle Villas",
+    "area": "Playa Chiquita",
+    "category": "vacation_rental",
+    "query": "Uva Blue Jungle Villas Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Uva%20Blue%20Jungle%20Villas%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Villa del Mar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Villa del Mar",
+    "area": "Playa Chiquita",
+    "category": "vacation_rental",
+    "query": "Villa del Mar Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Villa%20del%20Mar%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Big Tree Wildlife Refuge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Big Tree Wildlife Refuge",
+    "area": "Punta Uva",
+    "category": "vacation_rental",
+    "query": "Big Tree Wildlife Refuge Punta Uva Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Big%20Tree%20Wildlife%20Refuge%20Punta%20Uva%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Ginger and Cacao - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Ginger and Cacao",
+    "area": "Punta Uva",
+    "category": "vacation_rental",
+    "query": "Ginger and Cacao Punta Uva Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Ginger%20and%20Cacao%20Punta%20Uva%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Los Proyectos Moderno - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Los Proyectos Moderno",
+    "area": "Punta Uva",
+    "category": "vacation_rental",
+    "query": "Los Proyectos Moderno Punta Uva Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Proyectos%20Moderno%20Punta%20Uva%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Sol del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "El Sol del Caribe",
+    "area": "Cocles",
+    "category": "restaurant",
+    "query": "El Sol del Caribe Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Sol%20del%20Caribe%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Playa Negra Brewing - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Playa Negra Brewing",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Playa Negra Brewing Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Playa%20Negra%20Brewing%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Super Negro Hone Creek - Hone Creek, Limón, Costa Rica",
+    "search_name": "Super Negro Hone Creek",
+    "area": "Hone Creek",
+    "category": "shopping",
+    "query": "Super Negro Hone Creek Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Super%20Negro%20Hone%20Creek%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "We Do Laundry - Hone Creek, Limón, Costa Rica",
+    "search_name": "We Do Laundry",
+    "area": "Hone Creek",
+    "category": "services",
+    "query": "We Do Laundry Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=We%20Do%20Laundry%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Centro Educativo Playa Chiquita Punta Uva - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Centro Educativo Playa Chiquita Punta Uva",
+    "area": "Playa Chiquita",
+    "category": "services",
+    "query": "Centro Educativo Playa Chiquita Punta Uva Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Centro%20Educativo%20Playa%20Chiquita%20Punta%20Uva%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Proyecto Educativo Semillas de Paz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Proyecto Educativo Semillas de Paz",
+    "area": "Playa Chiquita",
+    "category": "services",
+    "query": "Proyecto Educativo Semillas de Paz Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Proyecto%20Educativo%20Semillas%20de%20Paz%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Ceibo Adventure - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Ceibo Adventure",
+    "area": "Playa Chiquita",
+    "category": "tour_company",
+    "query": "Ceibo Adventure Playa Chiquita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Ceibo%20Adventure%20Playa%20Chiquita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Talamanca Chocolate - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Talamanca Chocolate",
+    "area": "Playa Negra",
+    "category": "tour_company",
+    "query": "Talamanca Chocolate Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Talamanca%20Chocolate%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Servicentro Hone Creek - Hone Creek, Limón, Costa Rica",
+    "search_name": "Servicentro Hone Creek",
+    "area": "Hone Creek",
+    "category": "services",
+    "query": "Servicentro Hone Creek Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Servicentro%20Hone%20Creek%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Faro 13",
+    "search_name": "El Faro 13",
+    "area": "Puerto Viejo",
+    "category": "hostel",
+    "query": "El Faro 13 Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Faro%2013%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hotel Cariblue",
+    "search_name": "Hotel Cariblue",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Hotel Cariblue Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Cariblue%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hotel Posada Nena",
+    "search_name": "Hotel Posada Nena",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Hotel Posada Nena Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Posada%20Nena%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hotel Sunshine Caribe",
+    "search_name": "Hotel Sunshine Caribe",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Hotel Sunshine Caribe Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Sunshine%20Caribe%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Lapalapa Beach Front Hotel",
+    "search_name": "Lapalapa Beach Front Hotel",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Lapalapa Beach Front Hotel Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Lapalapa%20Beach%20Front%20Hotel%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Le Cameleon Boutique Hotel",
+    "search_name": "Le Cameleon Boutique Hotel",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Le Cameleon Boutique Hotel Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Le%20Cameleon%20Boutique%20Hotel%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Paula's and Daniel's Homestay",
+    "search_name": "Paula's and Daniel's Homestay",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Paula's and Daniel's Homestay Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Paula%27s%20and%20Daniel%27s%20Homestay%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Vista Verde",
+    "search_name": "Vista Verde",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Vista Verde Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Vista%20Verde%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Café Rico",
+    "search_name": "Café Rico",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Café Rico Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Rico%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Chili Rojo",
+    "search_name": "Chili Rojo",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Chili Rojo Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Chili%20Rojo%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Río Negro",
+    "search_name": "Río Negro",
+    "area": "Cocles",
+    "category": "restaurant",
+    "query": "Río Negro Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=R%C3%ADo%20Negro%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Panadería Francés",
+    "search_name": "Panadería Francés",
+    "area": "Cocles",
+    "category": "shopping",
+    "query": "Panadería Francés Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Panader%C3%ADa%20Franc%C3%A9s%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Ecotourism and Conservation Association of Talamanca",
+    "search_name": "Ecotourism and Conservation Association of Talamanca",
+    "area": "Puerto Viejo",
+    "category": "tour_company",
+    "query": "Ecotourism and Conservation Association of Talamanca Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Ecotourism%20and%20Conservation%20Association%20of%20Talamanca%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Refugio de animales Jaguar",
+    "search_name": "Refugio de animales Jaguar",
+    "area": "Cocles",
+    "category": "tour_company",
+    "query": "Refugio de animales Jaguar Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Refugio%20de%20animales%20Jaguar%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Blue Dreams Hotel",
+    "search_name": "Blue Dreams Hotel",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Blue Dreams Hotel Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Blue%20Dreams%20Hotel%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas KiAMiMi",
+    "search_name": "Cabinas KiAMiMi",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Cabinas KiAMiMi Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20KiAMiMi%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas KiMiMi",
+    "search_name": "Cabinas KiMiMi",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Cabinas KiMiMi Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20KiMiMi%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas KlaMiMi",
+    "search_name": "Cabinas KlaMiMi",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Cabinas KlaMiMi Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20KlaMiMi%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Alegre",
+    "search_name": "Casa Alegre",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Casa Alegre Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Alegre%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Miluca",
+    "search_name": "Casa Miluca",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Casa Miluca Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Miluca%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Pallalita",
+    "search_name": "Casa Pallalita",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Casa Pallalita Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Pallalita%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Pallita",
+    "search_name": "Casa Pallita",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Casa Pallita Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Pallita%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casitas del Bosque",
+    "search_name": "Casitas del Bosque",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Casitas del Bosque Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casitas%20del%20Bosque%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "CHOCORART",
+    "search_name": "CHOCORART",
+    "area": "Puerto Viejo",
+    "category": "shopping",
+    "query": "CHOCORART Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=CHOCORART%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras",
+    "search_name": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Da Lime Beach Club & Restaurant at Hotel Aguas Claras Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Da%20Lime%20Beach%20Club%20%26%20Restaurant%20at%20Hotel%20Aguas%20Claras%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Douglas Ville guest house",
+    "search_name": "Douglas Ville guest house",
+    "area": "Playa Negra",
+    "category": "vacation_rental",
+    "query": "Douglas Ville guest house Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Douglas%20Ville%20guest%20house%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Chilamate",
+    "search_name": "El Chilamate",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "El Chilamate Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Chilamate%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Chilamate Holiday House",
+    "search_name": "El Chilamate Holiday House",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "El Chilamate Holiday House Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Chilamate%20Holiday%20House%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Finca la Isla Permaculture Farm",
+    "search_name": "Finca la Isla Permaculture Farm",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Finca la Isla Permaculture Farm Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Finca%20la%20Isla%20Permaculture%20Farm%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hospedaje Dos Sueños",
+    "search_name": "Hospedaje Dos Sueños",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Hospedaje Dos Sueños Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hospedaje%20Dos%20Sue%C3%B1os%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Ka Namu",
+    "search_name": "Ka Namu",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Ka Namu Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Ka%20Namu%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Isla Permaculture Farm",
+    "search_name": "La Isla Permaculture Farm",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "La Isla Permaculture Farm Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Isla%20Permaculture%20Farm%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Pecora Nera Ristorante",
+    "search_name": "La Pecora Nera Ristorante",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "La Pecora Nera Ristorante Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Pecora%20Nera%20Ristorante%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Selva PV Events",
+    "search_name": "La Selva PV Events",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "La Selva PV Events Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Selva%20PV%20Events%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Lapaluna",
+    "search_name": "Lapaluna",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Lapaluna Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Lapaluna%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Morpho Casitas",
+    "search_name": "Morpho Casitas",
+    "area": "Playa Negra",
+    "category": "vacation_rental",
+    "query": "Morpho Casitas Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Morpho%20Casitas%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Namu Garden Hotel & Spa",
+    "search_name": "Namu Garden Hotel & Spa",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Namu Garden Hotel & Spa Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Namu%20Garden%20Hotel%20%26%20Spa%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Paloma Studio",
+    "search_name": "Paloma Studio",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Paloma Studio Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Paloma%20Studio%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Paragliding CR",
+    "search_name": "Paragliding CR",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Paragliding CR Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Paragliding%20CR%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Repazul",
+    "search_name": "Repazul",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Repazul Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Repazul%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Rio Home",
+    "search_name": "Rio Home",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Rio Home Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Rio%20Home%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Rustika Lodge",
+    "search_name": "Rustika Lodge",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Rustika Lodge Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Rustika%20Lodge%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Shenanigans–Fat Drink Dink Drive",
+    "search_name": "Shenanigans–Fat Drink Dink Drive",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Shenanigans–Fat Drink Dink Drive Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Shenanigans%E2%80%93Fat%20Drink%20Dink%20Drive%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Sloth Crossing",
+    "search_name": "Sloth Crossing",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Sloth Crossing Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Sloth%20Crossing%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Soda Shekina",
+    "search_name": "Soda Shekina",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Soda Shekina Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Soda%20Shekina%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "The Bush",
+    "search_name": "The Bush",
+    "area": "Cocles",
+    "category": "restaurant",
+    "query": "The Bush Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=The%20Bush%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "The Bush Doctah Herbalist",
+    "search_name": "The Bush Doctah Herbalist",
+    "area": "Cocles",
+    "category": "restaurant",
+    "query": "The Bush Doctah Herbalist Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=The%20Bush%20Doctah%20Herbalist%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Villas Kandulu",
+    "search_name": "Villas Kandulu",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Villas Kandulu Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Villas%20Kandulu%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Almonds and Corals Boutique Hotel - Manzanillo, Limón, Costa Rica",
+    "search_name": "Almonds and Corals Boutique Hotel",
+    "area": "Manzanillo",
+    "category": "hotel",
+    "query": "Almonds and Corals Boutique Hotel Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Almonds%20and%20Corals%20Boutique%20Hotel%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Boca Chica Bar Restaurante y Piscina - Cahuita, Limón, Costa Rica",
+    "search_name": "Boca Chica Bar Restaurante y Piscina",
+    "area": "Cahuita",
+    "category": "restaurant",
+    "query": "Boca Chica Bar Restaurante y Piscina Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Boca%20Chica%20Bar%20Restaurante%20y%20Piscina%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Bohemian Monkey - Cahuita, Limón, Costa Rica",
+    "search_name": "Bohemian Monkey",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "Bohemian Monkey Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Bohemian%20Monkey%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Bungalows Ache - Cahuita, Limón, Costa Rica",
+    "search_name": "Bungalows Ache",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Bungalows Ache Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Bungalows%20Ache%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas Algebra - Cahuita, Limón, Costa Rica",
+    "search_name": "Cabinas Algebra",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Cabinas Algebra Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20Algebra%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas El Imperio - Sixaola, Limón, Costa Rica",
+    "search_name": "Cabinas El Imperio",
+    "area": "Sixaola",
+    "category": "hotel",
+    "query": "Cabinas El Imperio Sixaola Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20El%20Imperio%20Sixaola%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas El Rinconcito - Gandoca, Limón, Costa Rica",
+    "search_name": "Cabinas El Rinconcito",
+    "area": "Gandoca",
+    "category": "hotel",
+    "query": "Cabinas El Rinconcito Gandoca Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20El%20Rinconcito%20Gandoca%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas Jenny - Cahuita, Limón, Costa Rica",
+    "search_name": "Cabinas Jenny",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Cabinas Jenny Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20Jenny%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas Palmer Makanda - Cahuita, Limón, Costa Rica",
+    "search_name": "Cabinas Palmer Makanda",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Cabinas Palmer Makanda Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20Palmer%20Makanda%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas Tito - Cahuita, Limón, Costa Rica",
+    "search_name": "Cabinas Tito",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Cabinas Tito Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20Tito%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",
+    "search_name": "Cahuita National Park Hotel",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Cahuita National Park Hotel Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cahuita%20National%20Park%20Hotel%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",
+    "search_name": "Casa Firefly Boutique Retreat",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Casa Firefly Boutique Retreat Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Firefly%20Boutique%20Retreat%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Magdalena - Cahuita, Limón, Costa Rica",
+    "search_name": "Casa Magdalena",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "Casa Magdalena Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Magdalena%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casas Del Mar - Manzanillo, Limón, Costa Rica",
+    "search_name": "Casas Del Mar",
+    "area": "Manzanillo",
+    "category": "vacation_rental",
+    "query": "Casas Del Mar Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casas%20Del%20Mar%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Arbol Jungle Houses - Manzanillo, Limón, Costa Rica",
+    "search_name": "El Arbol Jungle Houses",
+    "area": "Manzanillo",
+    "category": "vacation_rental",
+    "query": "El Arbol Jungle Houses Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Arbol%20Jungle%20Houses%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "El Colibri Rojo - Cahuita, Limón, Costa Rica",
+    "search_name": "El Colibri Rojo",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "El Colibri Rojo Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Colibri%20Rojo%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Jungle Dreamz - Manzanillo, Limón, Costa Rica",
+    "search_name": "Jungle Dreamz",
+    "area": "Manzanillo",
+    "category": "vacation_rental",
+    "query": "Jungle Dreamz Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Jungle%20Dreamz%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Casa de las Flores Hotel - Cahuita, Limón, Costa Rica",
+    "search_name": "La Casa de las Flores Hotel",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "La Casa de las Flores Hotel Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Casa%20de%20las%20Flores%20Hotel%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "La Fundación Cahuita Playing for Change - Cahuita, Limón, Costa Rica",
+    "search_name": "La Fundación Cahuita Playing for Change",
+    "area": "Cahuita",
+    "category": "services",
+    "query": "La Fundación Cahuita Playing for Change Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Fundaci%C3%B3n%20Cahuita%20Playing%20for%20Change%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Nature Observatorio - Manzanillo, Limón, Costa Rica",
+    "search_name": "Nature Observatorio",
+    "area": "Manzanillo",
+    "category": "tour_company",
+    "query": "Nature Observatorio Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Nature%20Observatorio%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "New Caribe Point - Cahuita, Limón, Costa Rica",
+    "search_name": "New Caribe Point",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "New Caribe Point Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=New%20Caribe%20Point%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Oasi Apartments - Cahuita, Limón, Costa Rica",
+    "search_name": "Oasi Apartments",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "Oasi Apartments Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Oasi%20Apartments%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Pangea Lodge - Manzanillo, Limón, Costa Rica",
+    "search_name": "Pangea Lodge",
+    "area": "Manzanillo",
+    "category": "vacation_rental",
+    "query": "Pangea Lodge Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Pangea%20Lodge%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Playa Negra Guesthouse - Cahuita, Limón, Costa Rica",
+    "search_name": "Playa Negra Guesthouse",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Playa Negra Guesthouse Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Playa%20Negra%20Guesthouse%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Riverside Cabins and Houses - Cahuita, Limón, Costa Rica",
+    "search_name": "Riverside Cabins and Houses",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Riverside Cabins and Houses Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Riverside%20Cabins%20and%20Houses%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Se Ua Bed and Breakfast - Manzanillo, Limón, Costa Rica",
+    "search_name": "Se Ua Bed and Breakfast",
+    "area": "Manzanillo",
+    "category": "hotel",
+    "query": "Se Ua Bed and Breakfast Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Se%20Ua%20Bed%20and%20Breakfast%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Secret Garden - Cahuita, Limón, Costa Rica",
+    "search_name": "Secret Garden",
+    "area": "Cahuita",
+    "category": "hostel",
+    "query": "Secret Garden Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Secret%20Garden%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",
+    "search_name": "Soda y Cabinas Kaniki",
+    "area": "Gandoca",
+    "category": "hotel",
+    "query": "Soda y Cabinas Kaniki Gandoca Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Soda%20y%20Cabinas%20Kaniki%20Gandoca%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Suizo Loco Lodge - Cahuita, Limón, Costa Rica",
+    "search_name": "Suizo Loco Lodge",
+    "area": "Cahuita",
+    "category": "hotel",
+    "query": "Suizo Loco Lodge Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Suizo%20Loco%20Lodge%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "TKD Caribe - Cahuita, Limón, Costa Rica",
+    "search_name": "TKD Caribe",
+    "area": "Cahuita",
+    "category": "services",
+    "query": "TKD Caribe Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=TKD%20Caribe%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica",
+    "search_name": "Tarponville Fishing Lodge",
+    "area": "Manzanillo",
+    "category": "hotel",
+    "query": "Tarponville Fishing Lodge Manzanillo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Tarponville%20Fishing%20Lodge%20Manzanillo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Topos Tree House - Cahuita, Limón, Costa Rica",
+    "search_name": "Topos Tree House",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "Topos Tree House Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Topos%20Tree%20House%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Villa Mango - Cahuita, Limón, Costa Rica",
+    "search_name": "Villa Mango",
+    "area": "Cahuita",
+    "category": "vacation_rental",
+    "query": "Villa Mango Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Mango%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Kinawe Cabinas",
+    "search_name": "Kinawe Cabinas",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Kinawe Cabinas Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Kinawe%20Cabinas%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Geckoes Lodge",
+    "search_name": "Geckoes Lodge",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Geckoes Lodge Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Geckoes%20Lodge%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Hotel Punta Cocles",
+    "search_name": "Hotel Punta Cocles",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Hotel Punta Cocles Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Hotel%20Punta%20Cocles%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Naranjo",
+    "search_name": "Casa Naranjo",
+    "area": "Cocles",
+    "category": "hotel",
+    "query": "Casa Naranjo Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Naranjo%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Puerto Viejo de Talamanca",
+    "search_name": "Puerto Viejo de Talamanca",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Puerto Viejo de Talamanca Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Puerto%20Viejo%20de%20Talamanca%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Playa Chiquita Paradise",
+    "search_name": "Playa Chiquita Paradise",
+    "area": "Cocles",
+    "category": "restaurant",
+    "query": "Playa Chiquita Paradise Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Playa%20Chiquita%20Paradise%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Taller Gabriel",
+    "search_name": "Taller Gabriel",
+    "area": "Puerto Viejo",
+    "category": "shopping",
+    "query": "Taller Gabriel Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Taller%20Gabriel%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  }
+]

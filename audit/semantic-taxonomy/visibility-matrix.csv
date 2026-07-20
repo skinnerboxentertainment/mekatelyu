@@ -1,0 +1,739 @@
+key,business_name,area,primary_category,groups,tags,attributes,review_state,conflicts,master_description,maps_parsed,maps_full_text
+cid:5872176730909991811,Amimodo Beach Rooms,Puerto Viejo,hotel,stay,hotel,vacation-rental,accepted_deterministic,,True,True,True
+cid:9649993079907777710,Black Bamboo,Puerto Viejo,hotel,stay,bed-and-breakfast|hotel,gym,accepted_deterministic,,True,True,True
+cid:1614163454683628928,Bungalows Calalú,Puerto Viejo,hotel,stay,hotel,gym|spa,accepted_deterministic,,True,True,True
+cid:11326919937828667471,Cabinas Los Almendros,Puerto Viejo,hotel,stay,cabins|hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:3227485566230734531,Cabinas Guarana,Puerto Viejo,hotel,stay,cabins|hostel|hotel,gym,accepted_deterministic,,True,True,True
+cid:12370139056940041503,Cabinas Jacaranda,Puerto Viejo,hotel,stay,cabins|hotel,gym|laundry|massage|vacation-rental|yoga,accepted_deterministic,,True,True,True
+cid:1111954385529331281,Cabinas Lika,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:13327167442180512504,Cabinas Mitchaelles,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:10951227846186482107,Cabinas Monte Sol,Puerto Viejo,hotel,stay,cabins|hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:13919554959587676121,Cabinas Mor,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:975506958424374718,Cabinas Popular,Puerto Viejo,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:1496101248030016772,Cabinas Talamanca,Puerto Viejo,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:13823455026627310391,Casa Ana Kimba,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:8284218495825622354,Casa Bohö,Puerto Viejo,hotel,stay,bed-and-breakfast|hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:1261667056997797786,La Casa de Rolando,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:1282335974102907594,Casa Dolce Vita,Puerto Viejo,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
+cid:8798809940588504560,Casitas La Playa,Puerto Viejo,hotel,stay,cabins|hotel|vacation-rental,bar|gym,accepted_deterministic,,True,True,True
+cid:4032204592829800059,Chinuk Boutique Hotel,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:17817187932984436803,Conga Boutique Hotel,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:11151339976601146455,Escape Caribeño,Puerto Viejo,hotel,stay,cabins|hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:8353070716309943884,Exotic Lodge,Puerto Viejo,hotel,stay,hotel,bar|cabins|gym,accepted_deterministic,,True,True,True
+cid:16910431421739661204,Family Hotel,Puerto Viejo,hotel,stay,hotel,vacation-rental,accepted_deterministic,,True,True,True
+cid:11938523891103686222,Hostal Cecilia,Puerto Viejo,hotel,stay,hotel,hostel,accepted_deterministic,,True,True,True
+cid:9002517690753030013,Hotel Casa Vito,Puerto Viejo,hotel,stay,cabins|hotel,vacation-rental,accepted_deterministic,,True,True,True
+cid:17030940291864121871,Hotel Infiniti,Puerto Viejo,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:11442698979892556145,Hotel Mandacarú,Puerto Viejo,hotel,stay,hotel,gym|massage|vacation-rental,accepted_deterministic,,True,True,True
+cid:5253894431951431984,Hotel Pura Vida,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:7969394138081997689,Hotel Tropical,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:4424059130614434174,Indalo Hotel Boutique,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:11779773565011173435,Lizard King Hotel,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:7612264151773034204,Maritza Hotel,Puerto Viejo,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:18141110668997261824,Namu Garden Hotel and Spa,Puerto Viejo,hotel,stay|wellness,hotel|spa,bar|cafe|gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:17724938072232701259,Olinca Boutique Hotel,Puerto Viejo,hotel,stay,hotel,bar|gym|spa|vacation-rental,accepted_deterministic,,True,True,True
+cid:5641578059331896840,Sueño Grande Bed and Breakfast,Puerto Viejo,hotel,stay,bed-and-breakfast|hotel,gym,accepted_deterministic,,True,True,True
+cid:11047054352277007542,La Tica y La Gata,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:9701222676819002481,Umami Hotel Garden Spa,Puerto Viejo,hotel,stay|wellness,hotel|spa,bar|gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:6124202353518117731,Yucca Beachfront Hotel,Puerto Viejo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:3301165288581347626,"Banana Azul - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:11219479455997326756,"Cabinas Kuákua - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:17469621114106254322,"Casa Luce - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:13885126780319428127,"Casitas Las Flores - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:11862065950546251000,"Hidden Jungle Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,vacation-rental,accepted_deterministic,,True,False,True
+cid:14996707988450888278,"Hotel One Love - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,hostel|vacation-rental,accepted_deterministic,,True,True,True
+cid:8482617327334657480,"Iguana Lodge - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:8816532573875491055,"Kaya's Place - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,bar|cabins|gym,accepted_deterministic,,True,True,True
+cid:9816532667813567561,"Mecca - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:11649313152541943974,"Olivia del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,bed-and-breakfast|gym,accepted_deterministic,,True,True,True
+cid:4419914265315119799,"Perla Negra Beachfront - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,bed-and-breakfast|hotel,vacation-rental,accepted_deterministic,,True,True,True
+cid:10617292672602655877,"La Prometida - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:7564004912244932325,"Saranda Hotel Boutique - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,bar|gym|spa,accepted_deterministic,,True,True,True
+cid:13462000015508270895,"Sonora Jungle Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,gym|spa,accepted_deterministic,,True,True,True
+cid:2012278593659589679,"Sunshine Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:11115647409204137584,"Villas Allen - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,hotel,stay,hotel|vacation-rental,gym|laundry,accepted_deterministic,,True,True,True
+cid:1284571712904930160,"Azania Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:14224886783313130797,"Bambutel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,cafe|gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:2857032637458926519,"Cabañas Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:13369944886185180649,"Cabinas Ole Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:16161533908681591225,"Caribe Town Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|gym|spa,accepted_deterministic,,True,True,True
+cid:14658668036585456092,"Cariblue Beach and Jungle Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|gym|spa,accepted_deterministic,,True,True,True
+cid:11726717133900260893,"Colina Secreta - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:15457918864809997738,"La Costa de Papito - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|gym|spa,accepted_deterministic,,True,True,True
+cid:811731149839330623,"Los Delfines Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bed-and-breakfast|vacation-rental,accepted_deterministic,,True,True,True
+cid:10932123085080779411,"Hotel Bugabutik - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|laundry|massage,accepted_deterministic,,True,True,True
+cid:12610196440035693725,"La Isla Inn - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,cabins|gym|laundry|vacation-rental,accepted_deterministic,,True,True,True
+cid:1718865423614243627,"Lanna Ban Hotel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:4837747133838124638,"Le Caméléon - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,eat|nightlife|stay,bar|hotel,gym|massage|spa,retained_mixed_use,lodging_with_food_evidence,True,True,True
+cid:8216271918783135936,"La Magia Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,spa,accepted_deterministic,,True,True,True
+cid:15133962780271824116,"La Paz del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:6927648870562475588,"Physis Caribbean Bed & Breakfast - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,bed-and-breakfast|hotel,gym,accepted_deterministic,,True,True,True
+cid:2503861879451247980,"Pipa Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:1359064883656104943,"Relax Natural Village - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,bed-and-breakfast|hotel,gym,accepted_deterministic,,True,True,True
+cid:6009775234321674954,"Satta Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:5273135705751598576,"Casa Merlin Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:8515965990195848246,"Casitas Mar y Luz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel|vacation-rental,cabins|gym,accepted_deterministic,,True,True,True
+cid:10566257576749882719,"Green Jungle House - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:5319096016576692772,"Hotel Aguas Claras - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar|beauty|gym|spa|yoga,accepted_deterministic,,True,True,True
+cid:2789448993779357106,"Hotel Kasha - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar,accepted_deterministic,,True,False,True
+cid:4375569377161762321,"Jaguar Inn Bungalows - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,hostel,accepted_deterministic,,True,True,True
+cid:12131830785097631441,"La Kukula Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar|gym|laundry|vacation-rental,accepted_deterministic,,True,True,True
+cid:12618084244946677516,"Mar Verde Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:7633661990399056727,"Namuwoki Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:17996754399669659267,"El Nido Jungle Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar|cabins|gym,accepted_deterministic,,True,True,True
+cid:11584809782208466783,"Shawandha Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:3078819024997403606,"Tierra de Suenos Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,gym|yoga,accepted_deterministic,,True,True,True
+cid:4964431491684239389,"Tree House Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel,gym|wildlife,accepted_deterministic,,True,True,True
+cid:12050033515189885654,"Villas del Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,hotel,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:5579537716284560393,"Awa Beach Boutique Hotel - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,hotel,stay,hotel,bar|cabins|gym,accepted_deterministic,,True,True,True
+cid:1693592634910607224,"La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,hotel,stay,hotel,wildlife,accepted_deterministic,,True,False,True
+cid:17505879167034120949,"Pachamama Jungle River Lodge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,hotel,stay,hotel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:5826733614696332728,"Cabinas Kinawe - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:6599527260173115828,"Casa Conley Del Mar - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:12922727533389204233,"Hotel Hawa - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,hotel,bar|vacation-rental,accepted_deterministic,,True,True,True
+cid:2005484154619350459,"Orgánico Punta Riel - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:3497932895823071906,"Rancho Tranquilo - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,bed-and-breakfast|hotel,cabins,accepted_deterministic,,True,True,True
+cid:2378802529330389577,"Samasati Yoga and Wellness Retreat - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay|things-to-do|wellness,hotel|yoga,massage|spa|vacation-rental,accepted_deterministic,,True,False,True
+cid:2340777439094833292,"Villa Mena Apartments - Hone Creek, Limón, Costa Rica",Hone Creek,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
+cid:12617501835970240553,Casa Wolaba,Puerto Viejo,hostel,stay,hostel,vacation-rental,accepted_deterministic,,True,True,True
+cid:5201679489523559249,El Clan Hostel,Puerto Viejo,hostel,stay,hostel,bar|hotel|vacation-rental,accepted_deterministic,,True,True,True
+cid:7492180577056289429,Hotel and Hostel Agapi,Puerto Viejo,hostel,stay,hostel|hotel,bar|gym|massage|spa|surf|yoga,accepted_deterministic,,True,True,True
+cid:120276160970090320,Hotel Puerto Viejo,Puerto Viejo,hostel,stay,hostel|hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:13549549945867962662,Kalunay Hostel,Puerto Viejo,hostel,stay,hostel,gym,accepted_deterministic,,True,True,True
+cid:3806869317536833401,Oasis Beachfront Hostel,Puerto Viejo,hostel,stay,hostel,gym|wildlife,accepted_deterministic,,True,True,True
+cid:16584181162103313991,Pagalu Hostel,Puerto Viejo,hostel,stay,hostel,gym,accepted_deterministic,,True,True,True
+cid:2849080077759072513,Rocking J's Hostel,Puerto Viejo,hostel,stay,hostel,bar|gym|surf,accepted_deterministic,,True,True,True
+cid:15012354361205552676,Roots Family Hostel,Puerto Viejo,hostel,stay,hostel,gym,accepted_deterministic,,True,True,True
+cid:13859346082849828188,La Ruka Hostel,Puerto Viejo,hostel,stay,hostel,gym|snorkeling|spa|surf,accepted_deterministic,,True,True,True
+cid:1470909826947842376,Soul Rebel Hostel,Puerto Viejo,hostel,stay,hostel,gym|vacation-rental,accepted_deterministic,,True,True,True
+cid:8557872311475311298,La Tribu,Puerto Viejo,hostel,stay,hostel,,accepted_deterministic,,True,True,True
+cid:8755282126859435083,"Tasty Dayz Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hostel,stay,hostel,bar|gym,accepted_deterministic,,True,True,True
+cid:3101197989157048209,"Yuyo Huelal Totga - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hostel,stay,hostel,vacation-rental,accepted_deterministic,,True,True,True
+cid:18351627144969519384,"Madre Selva Jungle Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hostel,stay,hostel,gym,accepted_deterministic,,True,True,True
+cid:14615341747601449576,"Playa 506 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hostel,stay,hostel,bar|gym,accepted_deterministic,,True,True,True
+cid:15792014508348842214,"Smile Jungle Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hostel,stay,hostel,,accepted_deterministic,,True,True,True
+cid:16910935893526257108,Douglasville Guesthouse,Puerto Viejo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:9201616901711710091,Caribbean Comfort,Puerto Viejo,vacation_rental,stay,vacation-rental,gym|hotel,accepted_deterministic,,True,True,True
+cid:13639343625190683419,Casa Arlecchino,Puerto Viejo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:5833894449865216635,Casa Black Chaini,Puerto Viejo,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:9120865451737148097,Casa Kinkaju,Puerto Viejo,vacation_rental,stay,vacation-rental,hotel,accepted_deterministic,,True,True,True
+cid:10763597126474435006,Coconut Grove Apartamentos,Puerto Viejo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:656242078778664441,Colibri Ecolodge,Puerto Viejo,vacation_rental,stay,ecolodge|vacation-rental,gym,accepted_deterministic,,True,True,True
+record:1db06f905d237e7a,Estrellas Cabinas,Puerto Viejo,vacation_rental,stay,cabins|vacation-rental,,accepted_deterministic,,True,False,False
+cid:1214008658533978760,"Casa Roble de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17566723912022559610,"Villa Abejita - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3772885646337615062,"Villa del Mito - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:7455182900583969326,"Magic Moon Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:7206926578519386455,"Be My Guest Cabinas - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,cabins|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:18318447306973081283,"Blessed House - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:11364781436039210316,"Blossom Paradise Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,yoga,accepted_deterministic,,True,True,True
+cid:7573981416846739723,"Cabinas Cable Talamanca - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,cabins|vacation-rental,,accepted_deterministic,,True,False,True
+cid:265902149135749003,"Caripro Apartments - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9868667004367768507,"Casa Corazon del Mar - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,spa,accepted_deterministic,,True,True,True
+cid:4046132343523405394,"Casa Galim Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:13928153996580431887,"Casa Jeffrey - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:1455817631417694421,"Casa Luna Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:1855638920758597797,"Casa Ocelote - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10476863127556720569,"Casa Selva - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:8382763569328813011,"Casa Theia - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17447691794708739658,"Casita Kreyol - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8689012956679917112,"Las Casitas de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:1768768766083603441,"Casitas Joanna - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:6051193694241034944,"Chimuri Beach Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,yoga,accepted_deterministic,,True,True,True
+cid:6658711880224661769,"Escondido Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:18135263196931927606,"Evia Life Resort - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10376714198650196690,"El Jardin de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10848512872328092857,"The Mimosas Container Homes - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10850457859079273798,"Puerto Viejo Club - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:11323383828584457886,"Sloth House 2 - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:410104999530083035,"Villa Aragon - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8236556478934588728,"Villa Wolaba - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:4076738848493846113,"Villas Ande - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:3491417544238941664,"Villas Banana Verde - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,hotel,accepted_deterministic,,True,True,True
+cid:7675665734638034793,"Villas de la Luz - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:9410436487829075468,"Villas Luna Africana by Palmer - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:13447229575814168735,"Villas Mapache del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2206313602652580226,"Villas Piña - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:4133532355689727929,"Villas Ríos del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:16891468495061021112,"Villas Roca del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12865192766844460074,"Villas Serenidad - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,surf,accepted_deterministic,,True,True,True
+cid:6607101811087559551,"Yoshi's on the Beach - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:11623096819320863549,"Geckoes Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:2659428566815974857,"Alloro Jungle Villas - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:14894693076927745646,"AroCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17887068920973627002,"Azania Oasis - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12667576250238069497,"Casa Ackee - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:16717641602858318859,"Casa Eden Jungle Apartments - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3099661925276096610,"Casa Margarita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8900920815586328050,"Casa Mariposa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,wildlife,accepted_deterministic,,True,True,True
+cid:5659125372219148881,"Casa Modí - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:16930291155158825297,"La Casita de Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:16195237219481974530,"Los Continentes - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:13596874059691247570,"Dano's Cabano - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17610491409749030649,"David Valley Houses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:15662198641513996653,"La Finca Chica - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,bed-and-breakfast|gym|hotel,accepted_deterministic,,True,True,True
+cid:8420081138501081482,"Finca Valeria Treehouses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,bed-and-breakfast|cabins,accepted_deterministic,,True,True,True
+cid:17897655248647644053,"Flor del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:5613050885601789841,"Habitat Vacation Rentals - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:12871095951792514227,"Ocean's Breeze Apartment and Rooms - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3948210368762528971,"Las Palomas - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:5477765746729269238,"La Perla del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:15602414082115305191,"Terrazas del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,bar|gym,accepted_deterministic,,True,True,True
+cid:8441660170222933820,"Treevana - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:11607384494912146716,"El Tucán Feliz - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:2778057777928120817,"Villa Aurora - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3811950339808245976,"Villa Elita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:7902224320478214928,"Villa Laurel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,hotel,accepted_deterministic,,True,False,True
+cid:4271339890778489202,"Villa Rameen - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8862541351972983241,"Villas Lomas del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:11129113619647704846,"Aloki Village - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12754897163013733415,"Angler's Lair - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:14240005590269620796,"Caribbean Courtyard Villa - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:18302181789419942285,"Casa Ambar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:14093799972335896635,"Casa Jungle Love - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9516383767938620040,"Casa Moabi - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:6876276989579196961,"Casa Osos Caribeños - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2489061038640189430,"Casas del Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:11101879544769502565,"Casas La Selvatica - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,laundry,accepted_deterministic,,True,True,True
+cid:5961957804184993948,"Chiquita Escondida - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:5703354943109126310,"Luna Caribeña Village - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,laundry,accepted_deterministic,,True,True,True
+cid:17671006442397185195,"Pura Bali Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17306174628636276319,"Tres Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:386602587240645860,"Up! House - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9838950680602433731,"Uva Blue Jungle Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2579895199015686682,"Villa Cabú - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:15567706438348473704,"Villa Casa Azul y Arena Blanca Apartamentos - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10974417683706909929,"Villa del Mar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:5233367816302543964,"Big Tree Wildlife Refuge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay|things-to-do,vacation-rental|wildlife,,accepted_deterministic,,True,False,True
+cid:15942771352384167456,"Bungalows Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,bar|gym|laundry,accepted_deterministic,,True,True,True
+cid:6374413444850813378,"Casa Cielo - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17194360818099045148,"Casa de la Musa - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2127018088757720546,"Casa De La Trepada - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2878562505584101773,"Casa Matix - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:16462037703900023129,"Casa Viva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,gym|wildlife,accepted_deterministic,,True,True,True
+cid:16775548705300829933,"Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,gym|spa|yoga,accepted_deterministic,,True,True,True
+cid:1074114199983889358,"Ginger and Cacao - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:8905623640105890404,"Olguita's Place - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10207460585524901017,"Our Beachfront Bungalow - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17163510404658526674,"Los Proyectos Moderno - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,wildlife,accepted_deterministic,,True,False,True
+cid:14170683448288584492,"Villa Soleil et Paquerette - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:176499380080555804,"Villas Itaita - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,gym|wildlife,accepted_deterministic,,True,True,True
+cid:6415805193363578026,"Wabi Sabi - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:15727569979150542837,"Finca Don Litos - Hone Creek, Limón, Costa Rica",Hone Creek,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:5114266921704520486,"Villas Diwo - Hone Creek, Limón, Costa Rica",Hone Creek,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:4732141069441829785,Gigi O Restaurant,Puerto Viejo,restaurant,eat,restaurant,bakery|bar|cafe|live-music,accepted_deterministic,,True,True,True
+cid:10844386752467925201,"Tasty Waves Cantina - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar|hostel,accepted_deterministic,,True,True,True
+cid:14941158757917200222,Amimodo Restaurant,Puerto Viejo,restaurant,eat,restaurant,surf,accepted_deterministic,,True,True,True
+cid:3477422119483013906,"Arrecife Hotel y Restaurante - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,restaurant,eat|stay,hotel|restaurant,bar|cabins,retained_mixed_use,restaurant_with_lodging_evidence,True,True,True
+cid:2898935241958549311,"Azul Bar and Grill - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,restaurant,eat|nightlife,bar|restaurant,hotel,accepted_deterministic,,True,True,True
+cid:10536491158093405826,"Beach Break Restaurant - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:1242408439996904931,Cacao Huasi,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:3787124603348818142,Café Gustitos,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:5741623948918730601,Cafe Rico,Puerto Viejo,restaurant,eat,cafe|restaurant,laundry,accepted_deterministic,,True,True,True
+cid:16024433122991526617,Cafe Viejo,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:4666775397025577928,"Casa Rio Restaurant & Bar - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat|nightlife,bar|restaurant,cafe|live-music,accepted_deterministic,,True,True,True
+cid:17125108004029582358,La Casita de Monli,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:2968574655178095232,Chaman Mercadito,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:14914017430472405216,"El Chante de Moncho - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:2449275981368445735,Chile Rojo,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:15977758811209084867,Chill and Cheese Snackbar,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:14967171326255452504,Cocomar Comida Caribeña,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1992524522108535061,Como en la Gloria,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:9034432070677152199,De Gustibus Bakery,Puerto Viejo,restaurant,eat,bakery|restaurant,bar,accepted_deterministic,,True,True,True
+cid:6285696364079021471,La Esquina Boruca Pizzeria,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:6039954764509566896,"Gigi Beach - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11456769578958313273,Grow Beachfront Restaurant,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:3898303194050413799,"GypSea Café - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:17658715504289400300,Hot Rocks,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,live-music,accepted_deterministic,,True,True,True
+cid:16900161777165927286,"Il Fiore Rosso - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:4325961701237139165,Island City Wingz N Tingz,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:13515529363295537137,Joe Snack Point,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:94575443808973745,KOKi Beach,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:9490671975575104119,"La Leyenda de L'Antico Forno en El Establo de Bruce - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17217796188356524660,Lidia's Place,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9175324429067544765,"Lizzie 1872 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:18001671055676159782,Madre Tierra,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:15751918209348819421,McCloud's Munchies,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:14864163845916515215,"Mixta Comida y Cócteles - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:8398495366730310888,Nanku,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:9689238987282057380,"La Nena - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:14004683085019934949,"Otra Vez - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1774712170744498946,"El Pampa Asador - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,restaurant,eat,restaurant,bakery|bar,accepted_deterministic,,True,True,True
+cid:17702928579971376532,La Parada Cafeteria,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:14475003202983918509,Paradise Comida Caribeña,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16671506007035121722,"Pecora Nera - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:16086292581675314185,"Pizzeria Pulcinella - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,hotel,accepted_deterministic,,True,True,True
+cid:4697431774628734956,The Point Smash Burgers,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:2996335063703875502,Port Vell,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15140435167806983758,Puerto Pirata,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:4550404849389797392,"Pura Gula Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16434729007440247088,"Que Quilombo - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17060511891850618747,"El Refugio Grill - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15379756172704945472,"Reggae Chill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:4015454567044906676,Restaurante Bar Tamara,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:7919869702409355075,Restaurante Nema,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:9970954456776975626,Restaurante Riquísimo,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:12004515342485209052,"El Rincon Porteño - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16999591583866751916,Roly Caribbean Food,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1919422794756532278,"La Ruedita - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7269480960058336334,El Sabor Tico,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8353793036632461139,Samurai Fusion,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16977709915965621211,"Selvin's Restaurant and Cabinas - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,restaurant,eat|stay,cabins|restaurant,,retained_mixed_use,restaurant_with_lodging_evidence,True,True,True
+cid:11811768080109070447,El Sendero Beach Club,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:12232799133081119632,SOCA Restaurant,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:10526256393366740216,"Soda Playa Chiquita - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11963087103971381770,Soda Shekiná,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1216870082731283437,"El Sol del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:5800050942790570331,Soulsurfer,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9500835097815952703,"Spicy Coconut - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,bar|vacation-rental,accepted_deterministic,,True,True,True
+cid:12889418516397438139,Stashu's Con Fusion,Puerto Viejo,restaurant,eat,restaurant,live-music,accepted_deterministic,,True,True,True
+cid:18334594677246073631,"Sushi Wave - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:10857452245923386259,Todo Es Posible,Puerto Viejo,restaurant,eat,restaurant,vacation-rental,accepted_deterministic,,True,True,True
+cid:4581732904956358033,"Zaika Bar & Grill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:7459202686588347907,Clan Vibes Club,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:5875257995302760665,"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,bar|hotel,accepted_deterministic,,True,True,True
+cid:14220452903198803816,Green Jaguar Irish Gastro Pub,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,live-music,accepted_deterministic,,True,True,True
+cid:3484755376915308939,Johnny's Place,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:15009365918254941244,Salsa Brava Beach Bar,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:13904096282139076225,7 Ice Creams,Puerto Viejo,restaurant,eat,cafe|restaurant,ice-cream,accepted_deterministic,,True,True,True
+cid:16439982460016547770,"Baya Baya Café - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:3622931891880684663,Bloom Cafe & Donas,Puerto Viejo,restaurant,eat,cafe|restaurant,bar,accepted_deterministic,,True,True,True
+cid:9729510481461644038,BOA Coworking,Puerto Viejo,restaurant,eat,restaurant,bar|cafe,accepted_deterministic,,True,True,True
+cid:3667327054410327456,Bread and Chocolate,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15524106146082438383,Bread What What,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11273521356461778959,"Café del Mar - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:8483815143288546232,Calipso,Puerto Viejo,restaurant,eat,cafe|restaurant,clothing,accepted_deterministic,,True,True,True
+cid:8711730419987475064,"Caribeans Coffee and Chocolate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,yoga,accepted_deterministic,,True,True,True
+cid:7237910231811189422,Como En Mi Casa Art Cafe,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:11995643747907112875,Gelateria Deelite,Puerto Viejo,restaurant,eat,cafe|restaurant,ice-cream,accepted_deterministic,,True,True,True
+cid:17441244772065149373,Iriria Specialty Coffee Shop,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:543073464450059371,Juice for Life Wolaba,Puerto Viejo,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:3766450624092844612,Lulu's Place,Puerto Viejo,restaurant,eat,restaurant,cafe|vacation-rental,accepted_deterministic,,True,True,True
+cid:16388259169975674586,Ocho Nani,Puerto Viejo,restaurant,eat,restaurant,ice-cream,accepted_deterministic,,True,True,True
+cid:1569445318757953644,Pan Pay,Puerto Viejo,restaurant,eat,restaurant,bakery,accepted_deterministic,,True,True,True
+cid:4039924463453362188,Pidiendo Cacao,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:561223372813398582,Sweet Moments,Puerto Viejo,restaurant,eat,cafe|restaurant,bar|ice-cream,accepted_deterministic,,True,True,True
+cid:6004428022633356945,Aloe Boutique,Puerto Viejo,shopping,eat|shopping,cafe|shop,clothing,accepted_deterministic,,True,True,True
+cid:3007132759593543579,Bambu Store,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:14335650359629993448,Cantik at Home,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:8021121814343586580,"Casa Mandala - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,shopping,shopping,shop,cafe|clothing,accepted_deterministic,,True,True,True
+cid:10112276568951936836,DiTown Shop,Puerto Viejo,shopping,shopping,shop,bar|surf,accepted_deterministic,,True,True,True
+cid:12439179219911805867,Luna May,Puerto Viejo,shopping,shopping,clothing|shop,,accepted_deterministic,,True,True,True
+cid:4573919399282068853,Marea Santa,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:1867018045151554137,Naturama Store,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:3589518174440329979,Passion Fruit Store,Puerto Viejo,shopping,shopping,shop|supermarket,clothing,accepted_deterministic,,True,True,True
+cid:4399460039894613264,Reggaeland,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:6498487977379373493,Samoa Boutique,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:11658160512809789635,Tienda Caribe,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:9340938745226350575,"Almacen San Francisco - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:16829552897593145903,"Colono Hone Creek - Hone Creek, Limón, Costa Rica",Hone Creek,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:1686533995954964702,"FerreCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:18282199755586445336,"Cervecera Tierra y Libertad - Hone Creek, Limón, Costa Rica",Hone Creek,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:1270489682697087471,Red Monkey Liquor Store,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:13937010489015814564,Electro Office,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:5802142291987797865,"Flor de China - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,shopping,eat|shopping,cafe|shop|supermarket,,accepted_deterministic,,True,True,True
+cid:9017085322259588567,Librería Caribe,Puerto Viejo,shopping,eat|shopping,bakery|shop,,accepted_deterministic,,True,True,True
+cid:6985913817068423993,"Farmacia Don Manuel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
+cid:1577213594063101362,La Pitaya,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:6465038343017776200,Tienda del Mar,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:7346571536131451543,Wanderlust,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:3462379184645189350,Puerto Viejo Farmers and Artisans Market,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:2440760117286550342,Bio Mercado Puerto Viejo,Puerto Viejo,shopping,shopping,shop,clothing,accepted_deterministic,,True,True,True
+cid:17335728675883934034,Centro de Carnes Canada,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:18223909293549188491,El Diamante,Puerto Viejo,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:12358093494451922122,"El Duende Gourmet - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,shopping,shopping,shop,beauty|supermarket,accepted_deterministic,,True,True,True
+cid:15490944357828439393,Mariscos Mopri,Puerto Viejo,shopping,shopping,shop,banking,accepted_deterministic,,True,True,True
+cid:11042023153703264759,Mercadito Puerto Viejo,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:6016659839329473468,Namú Ecotienda Orgánica,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:17944942059124723912,"Super Banana Gourmet Market - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,shopping,shopping,shop|supermarket,grocery,accepted_deterministic,,True,True,True
+cid:11103674503107555780,"Super Negro Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:17530375863814220827,"Super Negro Hone Creek - Hone Creek, Limón, Costa Rica",Hone Creek,shopping,shopping,shop,supermarket,accepted_deterministic,,True,False,True
+cid:722254835360302817,Value Mart Puerto Viejo,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:8668304854687518026,Automotriz Danny,Puerto Viejo,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:14899315700978366356,"Ecolavacar del Caribe - Hone Creek, Limón, Costa Rica",Hone Creek,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:8404229099084152409,Casa de la Cultura,Puerto Viejo,services,services|shopping,local-service|pharmacy,,accepted_deterministic,,True,True,True
+cid:6459045736382662095,"La Casa del Coral - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:17588446650226285599,"Chamber of Tourism and Commerce Caribe Sur - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:17585168533554979538,"El Puente-The Bridge - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:6745087497030231094,Caribe Dental,Puerto Viejo,services,services|wellness,dental|local-service,,accepted_deterministic,,True,True,True
+cid:331886285113007367,Centro Médico Aruma,Puerto Viejo,services,services,local-service,medical,accepted_deterministic,,True,True,True
+cid:13864196564288057579,Clínica de Especialidades Médicas San Gabriel,Puerto Viejo,services,services|wellness,local-service|medical,pharmacy,accepted_deterministic,,True,True,True
+cid:15014437406187691360,Clínica Dental Yani,Puerto Viejo,services,services|wellness,dental|local-service|medical,,accepted_deterministic,,True,True,True
+cid:8437643615710257437,"Hone Creek Clinic - Hone Creek, Limón, Costa Rica",Hone Creek,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:2511122372422782678,Laboratorio Bioclinic,Puerto Viejo,services,services|shopping,local-service|pharmacy,medical,accepted_deterministic,,True,True,True
+cid:9649342109201810481,"Laboratorio Clínico Leysa - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:1889608973525699671,Lavandería La Estrella,Puerto Viejo,services,services,laundry|local-service,,accepted_deterministic,,True,True,True
+cid:8840035579056537434,Washboard,Puerto Viejo,services,services,laundry|local-service,bar|cafe,accepted_deterministic,,True,True,True
+cid:7766901451570548014,"We Do Laundry - Hone Creek, Limón, Costa Rica",Hone Creek,services,services,laundry|local-service,,accepted_deterministic,,True,False,True
+cid:565813449899308633,Aloha Skincare and Wellness,Puerto Viejo,services,services,local-service,massage|spa,accepted_deterministic,,True,True,True
+cid:3494255912740671382,Ambar Tattoo Space,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:16552705196228924381,Caribe Love Tattoo,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:12833664519499680091,Cosmos Puerto Viejo Tattoo,Puerto Viejo,services,services|wellness,beauty|local-service,,accepted_deterministic,,True,True,True
+cid:6047083801083296069,Earth to Skin,Puerto Viejo,services,services,local-service,yoga,accepted_deterministic,,True,True,True
+cid:12067959796908866585,"Indulgence Spa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services|wellness,local-service|spa,beauty|hotel|massage,accepted_deterministic,,True,True,True
+cid:11573433909437604022,"Kona Wellness Shala - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,yoga,accepted_deterministic,,True,True,True
+cid:5529719550027810747,Mendez Barber Shop,Puerto Viejo,services,services|wellness,beauty|local-service,,accepted_deterministic,,True,True,True
+cid:18191801259759644864,"Octo Salon - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,services,services|wellness,beauty|local-service,spa,accepted_deterministic,,True,True,True
+cid:10525434517969119413,Old Harbour Gym,Puerto Viejo,services,services|wellness,gym|local-service,supermarket,accepted_deterministic,,True,True,True
+cid:13111271524723360984,Pure Jungle Spa,Puerto Viejo,services,services|wellness,local-service|spa,gym|massage,accepted_deterministic,,True,True,True
+cid:15543805518497480345,"Pure Love Liberation - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,massage|yoga,accepted_deterministic,,True,True,True
+cid:1958769090411140405,"Surya Spa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services|wellness,local-service|massage|spa,gym|hotel,accepted_deterministic,,True,True,True
+cid:8317123943686846949,Svastha Yoga & Ayurveda Café,Puerto Viejo,services,eat|services|things-to-do|wellness,cafe|local-service|yoga,hostel,accepted_deterministic,,True,True,True
+cid:3486593641699246622,La Tinta Tropical,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:12543675730712426029,Vol'Air Dance Studio,Puerto Viejo,services,services,local-service,gym|yoga,accepted_deterministic,,True,True,True
+cid:11794143091262296476,Puerto Viejo Dogs,Puerto Viejo,services,services,local-service,medical,accepted_deterministic,,True,True,True
+cid:7240010806083907203,Central de Mascotas,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15400950969629438728,Clínica Veterinaria Arroyo y Solano,Puerto Viejo,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:13987590870242443651,"Clinica Veterinaria Green Vet - Hone Creek, Limón, Costa Rica",Hone Creek,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:13918274438659118327,Ciclo Tuanis,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:8630472141589888435,Puerto Viejo Bike Rentals,Puerto Viejo,services,services,local-service,surf,accepted_deterministic,,True,True,True
+cid:5955362533549979086,"Pura Ride by Ciclo Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:6040828318272438452,Cerrajería Paris,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15750093614330541423,PC Caribe Soluciones Informáticas,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15763192850089670329,"Centro Educativo Playa Chiquita Punta Uva - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,services,services,local-service,,accepted_deterministic,,True,False,True
+cid:938478883870584374,"Proyecto Educativo Semillas de Paz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,services,services,local-service,,accepted_deterministic,,True,False,True
+cid:8716363808718267189,Eñe Spanish Teachers,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:439116677363621136,Spanish by the Sea,Puerto Viejo,services,services,local-service,hostel,accepted_deterministic,,True,True,True
+cid:15049167550943815650,Spanish School Pura Vida,Puerto Viejo,services,services,local-service,hotel,accepted_deterministic,,True,True,True
+cid:14733147586219926929,"Veronica's Place Cooking Class - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15619291854434631434,"Correos de CR - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:4794006171803715674,Elena De Luca Studio,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:11540051154473046732,Puerto Viejo Multicentro,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:8923069820182897353,Sea Breeze Events,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:11736483113495327139,"Black Shack Surf School - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services|things-to-do,local-service|surf,hotel,accepted_deterministic,,True,True,True
+cid:3144025592942935764,"Surf Meds Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services|things-to-do,local-service|surf,,accepted_deterministic,,True,True,True
+cid:14229054643032701360,Surf the Jungle Surf School Adventures,Puerto Viejo,services,services|things-to-do,local-service|surf,,accepted_deterministic,,True,True,True
+cid:1318668082841675164,"Tico Surf and Skate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services|things-to-do,local-service|surf,clothing,accepted_deterministic,,True,True,True
+cid:904701918920547958,"Cacao Trails Bole - Hone Creek, Limón, Costa Rica",Hone Creek,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:13961717934939865032,"Caribe Horse Riding Club - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+record:ed378d000c1b2a2e,"Ceibo Adventure - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,False,False
+cid:16305114679791493305,Exploradores Outdoors,Puerto Viejo,tour_company,things-to-do,kayaking|tour-operator,,accepted_deterministic,,True,True,True
+cid:7972003479335139796,"Finca La Isla Botanical Garden - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:15105583459127739828,"Finca Tierra - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,tour_company,things-to-do,surf|tour-operator,cabins|ecolodge,accepted_deterministic,,True,True,True
+cid:14331531993444532415,"Green Water SUP Tours - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,tour_company,things-to-do,snorkeling|tour-operator,beauty|diving|surf,accepted_deterministic,,True,True,True
+cid:18254971901429379098,Hidden Garden Ethnobotanical Sanctuary,Puerto Viejo,tour_company,things-to-do,tour-operator,wildlife,accepted_deterministic,,True,True,True
+cid:9435208628058025334,"Jaguar Rescue Center - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:3404977970967347049,"Kinkaju Tours - Hone Creek, Limón, Costa Rica",Hone Creek,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:1382996174802571516,"Punta Uva Dive Center - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,tour_company,things-to-do,diving|kayaking|tour-operator,cafe,accepted_deterministic,,True,True,True
+cid:12629937482695022966,"Ride the Rainforest - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+record:731ed5eea22b7496,"Talamanca Chocolate - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,tour_company,things-to-do,tour-operator,bar,accepted_deterministic,,True,False,False
+cid:15441903368463150081,Adobe EasyCar Rent a Car,Puerto Viejo,transport,transport,car-rental|transport,,accepted_deterministic,,True,True,True
+cid:7608545223870319936,Alamo Enterprise Car Rental,Puerto Viejo,transport,transport,car-rental|transport,,accepted_deterministic,,True,True,True
+cid:3254890975301091925,Caribe Shuttle,Puerto Viejo,transport,transport,shuttle|transport,,accepted_deterministic,,True,True,True
+cid:2534048177187130620,Interbus office,Puerto Viejo,tour_company,things-to-do,tour-operator,shuttle,accepted_deterministic,,True,True,True
+cid:4544300389782328912,Puerto Viejo Golf Carts,Puerto Viejo,tour_company,things-to-do,tour-operator,bar|cafe,accepted_deterministic,,True,True,True
+cid:11890875733593568965,ATEC,Puerto Viejo,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:15210314141344220556,Best Travel Puerto Viejo,Puerto Viejo,tour_company,things-to-do,tour-operator,hotel,accepted_deterministic,,True,True,True
+cid:13054634241932126885,"Caribe Fun Tours - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,tour_company,things-to-do,snorkeling|tour-operator,hotel,accepted_deterministic,,True,True,True
+cid:831507804855121720,Gecko Trail Costa Rica,Puerto Viejo,tour_company,things-to-do,tour-operator,shuttle|snorkeling|wildlife,accepted_deterministic,,True,True,True
+cid:14937553679269800467,Caribe Sur Real Estate,Puerto Viejo,real_estate,services,real-estate,,accepted_deterministic,,True,True,True
+cid:4080809972239951323,"Century 21 Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,real_estate,services,real-estate,,accepted_deterministic,,True,True,True
+cid:49080311362860494,Coldwell Banker Caribe,Puerto Viejo,real_estate,services,real-estate,,accepted_deterministic,,True,True,True
+cid:10602615161199468109,RISE Puerto Viejo,Puerto Viejo,real_estate,services,real-estate,,accepted_deterministic,,True,True,True
+cid:8364214958693781126,"Green Property Management - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,real_estate,services,real-estate,,accepted_deterministic,,True,True,True
+cid:11695310561034687807,Farmacia Caribe,Puerto Viejo,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
+cid:3604431449933497569,Puerto Viejo Pharmacy,Puerto Viejo,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
+cid:9205429348892041088,Mega Super,Puerto Viejo,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:15754056459834286605,Old Harbour Supermarket,Puerto Viejo,shopping,shopping,shop|supermarket,gym,accepted_deterministic,,True,True,True
+cid:16057147527426616372,"Pali Supermarket - Hone Creek, Limón, Costa Rica",Hone Creek,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:6712847186866435431,"Super Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:2289992265205374495,"Super Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
+cid:4633778847403409813,"Super SK - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:11028453782334017200,"Servicentro Hone Creek - Hone Creek, Limón, Costa Rica",Hone Creek,services,services,local-service,,accepted_deterministic,,True,False,True
+cid:4409251360524216865,Catholic Church,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:9360864736049190713,"Puerto Viejo Police Station - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:2262025233079404899,Puerto Viejo Police Town Station,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:17219624679350508173,BAC Credomatic ATM,Puerto Viejo,services,services,banking|local-service,,accepted_deterministic,,True,True,True
+cid:6083793639075237056,Banco de Costa Rica Puerto Viejo,Puerto Viejo,services,services,banking|local-service,,accepted_deterministic,,True,True,True
+cid:1353920052832893881,Banco Nacional,Puerto Viejo,services,services,banking|local-service,,accepted_deterministic,,True,True,True
+cid:7826458106781310635,Main Bus Stop,Puerto Viejo,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:5087368109469436,Watuza,Puerto Viejo,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
+cid:3318057307050382237,El Faro 13,Puerto Viejo,hostel,stay,hostel,,accepted_deterministic,,True,False,True
+cid:6172303307990233309,Hotel Los Sueños,Puerto Viejo,hostel,stay,hostel|hotel,,accepted_deterministic,,True,True,True
+cid:7028859976887285327,Villa Bukë,Playa Negra,hostel,stay,hostel|vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:16042642729582706568,Beach Hut,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:13125604731849220414,Mi Casa Hostel y Hotel El Tesoro,Cocles,hotel,stay,hostel|hotel,,accepted_deterministic,,True,True,True
+cid:12957286642440581909,Cabinas Orange Green,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:13263856020028543184,Cabinas Wray,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:317666818352039671,Casa Badawi,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:15386546290359540673,Casa Trinidad,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:6991145958394588637,Casa Tuareg,Puerto Viejo,hotel,stay,hotel,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:564116512944240361,Harmony: Mini Casa Rodante by Aptos Casa Caribe,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+record:8132de7e62d22e35,Hotel Posada Nena,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,False,False
+cid:10103267938150795136,Lapalapa Beach Front Hotel,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:10805419731316352392,Las Mariposas,Playa Chiquita,hotel,stay,hotel,cabins,accepted_deterministic,,True,True,True
+record:c444cddebe7d89af,Paula's and Daniel's Homestay,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,False,False
+cid:1478870326467382969,Totem Hotel Resort & Restaurant,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:5511726850680415410,Vista Verde,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:11076891351201890493,Restaurante Cariblue,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9366602319080449218,Río Negro,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
+cid:13154832338927502648,Jungle Air Parapente,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+record:dbbf9984377cbcc6,Panadería Francés,Cocles,shopping,eat|shopping,bakery|shop,,accepted_deterministic,,True,False,False
+cid:4688760639939900664,Hotel Villas y Glamping M&A,Cocles,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:4171499263891603584,Yerbas Concepto Culinario,Puerto Viejo,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
+cid:4461576710289322066,Abba Home,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1952261552637324801,ALMA Masajes,Playa Negra,wellness,wellness,massage|wellness,spa,accepted_deterministic,,True,True,True
+cid:2436293331676785956,Alojamiento kon-tiky,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12888475778927218100,Api-Rescate,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:13949908967524151461,Ariel Apartment's,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17999916450116929174,Arrecife El Chino,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1672049247961347392,Beach Trail,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:5126079905553228488,Beauty Ritual Spa,Cocles,wellness,services|wellness,beauty|spa|wellness,massage,accepted_deterministic,,True,True,True
+cid:2501817113382200716,BERACA,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11342442517607475672,Blessed Hands Massage Therapy,Playa Negra,wellness,wellness,massage|wellness,spa,accepted_deterministic,,True,True,True
+cid:7864989313907649296,Blue Dreams Hotel,Playa Negra,hotel,stay,hotel,bar,accepted_deterministic,,True,False,True
+cid:7100005996183210934,Buddy's Sloth Crossing,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17729819013080646669,Bugambilia Inn,Playa Negra,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:1705549831231309538,Cabañas KiaMiMi,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:11625884884438770753,Cabina trepazul,Playa Negra,vacation_rental,stay,cabins|vacation-rental,,accepted_deterministic,,True,True,True
+cid:17407111603426783648,Cabinas Bambu,Playa Negra,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:12696769290945837673,Cabinas Yemanya,Playa Negra,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:1099770184487127337,Café Jaguar & Art Gallery,Cocles,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:15075381955885778012,Caribbean Blue Morpho Casitas,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:10446838691217537192,Caribbean Hill Villas,Cocles,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:16346096411354140739,CaribeZen,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:704176135278923927,Casa Alegra,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+record:96e40bdaeb07f7fa,Casa Alegre,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,False
+cid:7547821247784059764,Casa Amma,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:2049439108129397134,Casa Amor,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3140302717225770813,Casa Antorcha,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9228433576839534036,Casa Canopy,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9842399411646961220,Casa Chilamate Day House,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15109859868766777239,Casa del Caribe B&B,Playa Negra,hotel,stay,bed-and-breakfast|hotel,,accepted_deterministic,,True,True,True
+cid:316298798085648093,Casa Lily,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+record:bb308727dee573bf,Casa Miluca,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,False
+cid:1887854985612918255,Casa Miluco,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15130039431868872191,Casa Olingo,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:12261963239237230570,Casa Pallaita,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3067085546718993771,Casa Palliata,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1532267197232448530,Casa Shanti,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1467139456314837512,casa tia zeidy,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11284617851322192684,Casa vacacional happy day beach house,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:14746104939384196054,Casa Vosi,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:6852082090485791353,Casas Sloth & Butterfly,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8515345812121137688,Casita Tucan,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:1201615432871305998,Casitas Batsú,Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17991662797152698167,Casitas del Bosque,Puerto Viejo,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
+cid:14244983452023827203,CHOCORART,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,False,True
+cid:906367207779863842,Cirrus Sky Paragliding CR,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11408791647006779441,Cubali Beach,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7437765293747491582,Doctah Herbalist,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3648769552104707896,Explora Caribe CR,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8690304503274970919,Finca Darai,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:18425416724501171270,FISIOTERAPIA Agustin cuya,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:5112397613028029900,Fruit Houses,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:7062771685360018807,Global Stones finca conservación,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16307257612295998249,Hawaiian Massage,Playa Negra,wellness,wellness,massage|wellness,spa,accepted_deterministic,,True,True,True
+cid:2607119743059473489,Hidden Viewpoint,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:5066811314987255340,Hospedaje Dos Sueños,Puerto Viejo,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
+cid:17548818634857466246,Hotel Rustika Lodge,Puerto Viejo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:2747514405733351427,Iglesia Cristiana Casa De Restauracion,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:9895085162643105852,Izzy Rides CR,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3799140751205186004,Jungalow,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8356543483034618055,Jungla del Caribeño,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7538221567368513085,Kä Luxury Caribbean,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:4776029185661119925,Ka Namu,Playa Negra,restaurant,eat,restaurant,bar,accepted_deterministic,,True,False,True
+cid:5933448960817825235,Katuk,Playa Negra,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
+cid:8155523474538504664,La Caracola,Playa Negra,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:7444463108124902177,LA CHASCONA,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11481951678172081848,La loma de burrito,Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3738318817422763383,La Paloma Studio en Coclès con cocina a,Playa Negra,restaurant,eat,restaurant,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:748324862255207133,Lapaluna,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
+cid:13735728552511903272,Mishka Lodge,Playa Negra,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:14542003755869509189,Nana's Place Beach House,Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17897302561811397380,NAO,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:2630412520630926072,Paraiso Bohemio,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11489327612040758816,Pipa's Beach,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7002874623913647725,Playa Estiven,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8563195775533048594,Pure Life Sanctuary,Cocles,restaurant,eat,restaurant,massage|spa,accepted_deterministic,,True,True,True
+cid:1452058410293289943,Quinta Guarumo,Playa Negra,restaurant,eat,restaurant,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:18016775300084560342,RETIRO VERDE,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:1177355124524067687,Rico Tico Tours,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11653253983798852315,Rio Home,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
+cid:9113640318365374467,River Box Cocles,Playa Negra,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:15407971963095007347,Shenanigans–Eat Drink Dink Drive,Cocles,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
+cid:1386465364860297778,Shenanigans–Fat Drink Dink Drive,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
+cid:4788751592765742715,Siren Sanctuary,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7521506711555171699,Sloth Massage,Puerto Viejo,wellness,wellness,massage|wellness,,accepted_deterministic,,True,True,True
+cid:15397983693551523879,Soda Títeres,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15223674072358364809,Spiral,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:2447883937820760770,Talamanca Organica Cacao & Fine Chocolate,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:6904706285400062631,Talamanca Viewpoint,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7714062364033594701,Tattoo Studio 33,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11842476449595104705,The Amazing Treehouse and Nature,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:10205893883698739713,The Reillder Castillo Project,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:11461817048321802805,TreeTop Mansion,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:4586270756459627380,TRIBU functional training,Puerto Viejo,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:16949465081622523964,Jungalow Tropical Caribeño,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17236719394809389330,"Tropical Getaway ""Casa de Amor",Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:17546489389337086267,"Tropical Getaway ""Dream House""",Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:3600435867559147140,Tubolwak Lodge y Garden,Cocles,hotel,stay,hotel,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:12266159891992406171,Villa Cerise,Playa Negra,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:13333726585970395954,Villa Kandulu,Playa Negra,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:6245678151143547198,Villa Khalú,Puerto Viejo,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:8175642157850375308,Villa Miagoa,Cocles,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:2386454846369082110,Villa Selva Luna,Cocles,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:12295173525332496963,Villa Tropical,Playa Negra,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:3182923119551018499,Villas caranda,Puerto Viejo,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:9839322459254555272,Villas Moonlight,Playa Negra,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:1110138628950468520,Vindas,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:4522237674630690631,"3 Bamboo Ecolodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,ecolodge|hotel,gym,accepted_deterministic,,True,True,True
+cid:6863214499245926667,"Aldina's Guest House - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel|vacation-rental,hostel,accepted_deterministic,,True,True,True
+cid:11188266454666848277,"Almonds and Corals Boutique Hotel - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:10605010078218467955,"Ara Manzanillo - Manzanillo, Limón, Costa Rica",Manzanillo,tour_company,things-to-do,tour-operator,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:730773173410850082,"Aroma Coffee Bar and Breakfast - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:16025283821069438745,"Asante Bistro & Café - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,cafe|restaurant,bar,accepted_deterministic,,True,True,True
+cid:14413272263548243777,"Atlantida Lodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,bar|gym|spa,accepted_deterministic,,True,True,True
+cid:18308537531085424661,"Babilonia - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:17086188142975557626,"Banco de Costa Rica Cahuita - Cahuita, Limón, Costa Rica",Cahuita,services,services,banking|local-service,,accepted_deterministic,,True,True,True
+cid:673532812773709021,"Bendita Comida - Bribri, Limón, Costa Rica",Bribri,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+record:462ebf134e711bbc,"Boca Chica Bar Restaurante y Piscina - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,False,False
+cid:6134891682775153888,"Bohemian Monkey - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:1663157003072952926,"Bomberos Bribri - Bribri, Limón, Costa Rica",Bribri,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:8600435400283546373,"Brigitte's Ranch - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,cabins,accepted_deterministic,,True,True,True
+cid:13905258454095862905,"Bungalow Malú Lodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:15520883439481237827,"Bungalows Ache - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:2126825620796412684,"Bungalows Sloth - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:17217032978777865192,"Cabinas Algebra - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:3940028396006347032,"Cabinas Arrecife - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:12615318204214004945,"Cabinas Caribe Luna - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:11746108272448529029,"Cabinas El Imperio - Sixaola, Limón, Costa Rica",Sixaola,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:16765429282184001872,"Cabinas El Mango - Bribri, Limón, Costa Rica",Bribri,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:15910047007271410898,"Cabinas El Rinconcito - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:994897304144940609,"Cabinas Iguana Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
+cid:17682239826356444978,"Cabinas Jenny - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:16881576397853312303,"Cabinas Nirvana Ecolodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|ecolodge|hotel,,accepted_deterministic,,True,True,True
+cid:12496997589843324576,"Cabinas Palmer Makanda - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:7820493530245767869,"Cabinas Smith - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:11022406936380395131,"Cabinas Surf Side - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay|things-to-do,cabins|hotel|surf,gym,accepted_deterministic,,True,True,True
+cid:12755760628427846358,"Cabinas Tito - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:17823151304931402344,"Cabinas YaMann - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:17472323950177417062,"Cahuita Bus Station - Cahuita, Limón, Costa Rica",Cahuita,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:11302666839265256136,"Cahuita Inn - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:11730759668778876911,"Cahuita Lodge - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:400977826922741375,"Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:11739581266027333241,"Canto del Mar Guest House - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:16920166315638827115,"Caribbean Blue House - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12085822181071781545,"Caribbean Coconut - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:10854532050659240693,"Casa Congo Cahuita - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3377722209033140563,"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:17824185107689877044,"Casa Lucas - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8414754958644261472,"Casa Magdalena - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:13303503940894650235,"Casa Mambo Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:5829604901849171734,"Casa Marcellino - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:8825947300590124587,"Casa Namaitamí - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:15719999190465539169,"Casa Verde Cahuita - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:12705395086028222701,"Casas Del Mar - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:16211630521756150882,"Centro Educativo Complementaria Cahuita - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15813957405519010877,"Chao's Paradise - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:6304189307372846359,"Chile Verde - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:8861421744260324499,"Ciudad Perdida Ecolodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,ecolodge|hotel,gym,accepted_deterministic,,True,True,True
+cid:8625510128460244741,"Clinica Dental OCI Cahuita - Cahuita, Limón, Costa Rica",Cahuita,services,services|wellness,dental|local-service|medical,,accepted_deterministic,,True,True,True
+cid:15931105907700979601,"Clínica de Medicina Integral Bribri - Bribri, Limón, Costa Rica",Bribri,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:528214679408125557,"Colibri Lodge Gandoca - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
+cid:3520970534557309146,"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:9322669409493347402,"Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
+cid:14380415623970739171,"Container House Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:15849146102448801527,"Cool and Calm Cafe - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,cafe|restaurant,bar,accepted_deterministic,,True,True,True
+cid:16408576464930361263,"Coral Vet - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:657883797543242654,"Cruz Roja - Bribri, Limón, Costa Rica",Bribri,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15871299217507782991,"El Arbol Jungle Houses - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:10814072515975103387,"El Colibri Lodge - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:903286394928674373,"El Colibri Rojo - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:15307063167947850855,El Dragón,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8813389579965277531,"El Encanto Hotel - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:9510139176755946037,"Exotico Beach - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,bar|gym,accepted_deterministic,,True,True,True
+cid:4259348950167927907,"Faith Glamping Dome - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:17999991182202754642,"Farmacia Quiribri Cahuita - Cahuita, Limón, Costa Rica",Cahuita,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
+cid:9409071117936930456,"Farmacia San Gabriel - Cahuita, Limón, Costa Rica",Cahuita,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
+cid:1530710866481715684,"Fusión Restaurante - Sixaola, Limón, Costa Rica",Sixaola,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:369095546087240155,"Gandoca Tours - Gandoca, Limón, Costa Rica",Gandoca,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:186463717107051484,"Goddess Garden - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym|spa,accepted_deterministic,,True,True,True
+cid:8586190007161993067,"Green Corner - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9791432593542222900,"Green Lapa's Village - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:444550623725401269,"Hakuna Matata Hostel - Cahuita, Limón, Costa Rica",Cahuita,hostel,stay,hostel,gym,accepted_deterministic,,True,True,True
+cid:7613918281459191152,"Happy House Manzanillo - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:13214603253697214599,"Hotel Boutique D'Angelo - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:353287636532313894,"Hotel Cabinas Nadine - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,cabins|hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:12163838727176411611,"Hotel La Diosa - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:17152278174809306212,"Hotel Los Cielos del Caribe - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:7931758129028338854,"Hungry Lion's Jamaican Restaurant - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:16153266066667852472,"Info Boutique - Cahuita, Limón, Costa Rica",Cahuita,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:17113013417158338712,"Jungle Dreamz - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:918804293272785482,"Kañik Apart Hotel - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:5472805211653745581,"Kenaki Lodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:3403734860617253025,"La Casa Del Mango - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2827143409243576983,"La Casa de las Flores Hotel - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:14444699894257942648,"La Fundación Cahuita Playing for Change - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,False,True
+cid:11801731566865996686,"La Rana De Cahuita - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,gym,accepted_deterministic,,True,True,True
+cid:16726434082337585414,"La Shamana Ecolodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,ecolodge|hotel,spa,accepted_deterministic,,True,True,True
+cid:4188662448855075824,"Lalola Villa - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:7842934647721083510,"Lilan Nature - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:7812100596306456251,"Manzanillo Caribbean Resort - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
+cid:1016397361328131166,"Marfi Inn - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2811947477184958270,"Maxi's Restaurant - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15101902642643077553,"Mayela Public Parking - Sixaola, Limón, Costa Rica",Sixaola,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:5024698566950962619,"Mulata - Cahuita, Limón, Costa Rica",Cahuita,shopping,shopping,shop,,accepted_deterministic,,True,True,True
+cid:315450376753766927,"Nature Observatorio - Manzanillo, Limón, Costa Rica",Manzanillo,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,False,True
+cid:559816337485387828,"New Caribe Point - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:6403317079907227998,"OIJ - Bribri, Limón, Costa Rica",Bribri,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:8808890887876405745,"Oasi Apartments - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:1791381660457758704,"Ocean View Lodge Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:3867328685837116832,"Pangea Lodge - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
+cid:304180330543571100,"Papaya Wildlife Lodge - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay|things-to-do,hotel|vacation-rental|wildlife,,accepted_deterministic,,True,True,True
+cid:3973269979891349390,"Parqueo Sixaola - Sixaola, Limón, Costa Rica",Sixaola,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:936609025929524946,"Passion Fruit Ecolodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,ecolodge|hotel,gym,accepted_deterministic,,True,True,True
+cid:17869478518882169277,"Piscina Natural - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
+cid:640877045685360336,"Pizzeria Cahuita - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:8354222119223173690,"Playa Grande Lodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+cid:9639892766267705924,"Playa Negra Guesthouse - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
+cid:10399984297239881230,"Pura Vida Vegana - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,hotel,accepted_deterministic,,True,True,True
+cid:3224358448323034123,"Redfrogteam Guardianes de la Naturaleza - Bribri, Limón, Costa Rica",Bribri,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:6096810839054830174,"Reggae Bar - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
+cid:3265602198018337523,"Restaurante Bananas - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:10690687264393434328,"Rhodes Island Cabinas - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:5780823649006198050,"Riverside Cabins and Houses - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:5842569498936371106,"Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15469928124041183357,"Se Ua Bed and Breakfast - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,bed-and-breakfast|hotel,,accepted_deterministic,,True,False,True
+cid:13536114438148732247,"Secret Garden - Cahuita, Limón, Costa Rica",Cahuita,hostel,stay,hostel,,accepted_deterministic,,True,False,True
+cid:2791131175093117206,"Shiosai Retreat Cabins - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
+cid:7287083462049763885,"Sloth Sanctuary - Cahuita, Limón, Costa Rica",Cahuita,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:9015241096564614926,"Sobre las Olas by Gondwana - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:12096131897059550769,"Soda Chang - Sixaola, Limón, Costa Rica",Sixaola,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:9935585180743716856,"Soda Kawe - Cahuita, Limón, Costa Rica",Cahuita,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:17548396689353983180,"Soda Marta - Sixaola, Limón, Costa Rica",Sixaola,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:1916707872062639626,"Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,True
+cid:7364638263800075443,"Sport Body Gym - Cahuita, Limón, Costa Rica",Cahuita,services,services|wellness,gym|local-service,,accepted_deterministic,,True,True,True
+cid:8321379610695665456,"Suizo Loco Lodge - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:1491509510148377065,"Super Negro Cahuita - Cahuita, Limón, Costa Rica",Cahuita,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+cid:6639028591976267928,"Super Vaz 2 - Cahuita, Limón, Costa Rica",Cahuita,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
+record:9c9d764aaedaf6ac,"TKD Caribe - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,False,False
+cid:4106444293730751001,"Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay|things-to-do,fishing|hotel,,accepted_deterministic,,True,False,True
+cid:12283987889434351587,"Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica",Sixaola,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:6474159768299184830,"Three Monkeys - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:1215314758681012489,"Topos Tree House - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:15033673071524244619,"Tourist Police - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:4460094513370819167,"Troy's Place - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:14486288414847239493,"Villa Mango - Cahuita, Limón, Costa Rica",Cahuita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
+cid:11172305075992391997,"Wildlife Lodge Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay|things-to-do,hotel|wildlife,gym,accepted_deterministic,,True,True,True
+cid:6252746693553946796,Selina Hostel Puerto Viejo,Puerto Viejo,hostel,stay,hostel,,accepted_deterministic,,True,True,True
+cid:15755761711636582805,Finca Ardilla,Playa Chiquita,hotel,stay,hotel,gym,accepted_deterministic,,True,True,True
+record:bbb4856d838c8dcb,Kinawe Cabinas,Playa Negra,hotel,stay,cabins|hotel,,accepted_deterministic,,True,False,False
+cid:2539549004979561790,El Tucan Jungle Lodge,Cocles,hotel,stay,hotel,bed-and-breakfast,accepted_deterministic,,True,True,True
+cid:6544015151011886307,Hotel Punta Cocles,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:16016558320812834186,Italia Villas,Playa Negra,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
+cid:12507819141188724740,Vago's Place,Playa Chiquita,hotel,stay,hotel,bed-and-breakfast|cabins,accepted_deterministic,,True,True,True
+cid:11804471412549390661,Home Naranjo,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:2274466818806698362,Casa Naranjo,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,False,True
+cid:10843005590817162391,Finca Las Hormigas,Punta Uva,hotel,stay,hotel,,accepted_deterministic,,True,True,True
+cid:241301080670714226,Solo Bueno,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:15140946777442800643,Apetito Express,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+record:6252cece9f9278c5,Puerto Viejo de Talamanca,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,False
+cid:14110719586259786874,El Ranchón,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:911501752511410968,Playa Chiquita Paradise,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
+cid:17352409197230602753,Escuela Këköldi,Punta Uva,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:16375671444582208351,policía,Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:15919102379822575632,Escuela Hone Creek,Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:14849784949452434192,Escuela Patiño,Playa Negra,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:7243082637502018565,Taller Gabriel,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,False,True
+cid:2801042536018135472,Playa Cocles,Playa Negra,tour_company,things-to-do,surf|tour-operator,,accepted_deterministic,,True,True,True

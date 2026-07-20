@@ -1,0 +1,52 @@
+[
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "match",
+    "display_name": "Cabinas Kuákua",
+    "confidence": 0.95,
+    "evidence_summary": "WhatsApp rendered the visible profile identity Cabinas Kuákua.",
+    "record_id": "62ef82ba8ea6a94b",
+    "route": "https://wa.me/50689607794",
+    "screenshot_path": "screenshots/62ef82ba8ea6a94b.jpg"
+  },
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "match",
+    "display_name": "Physis Caribbean",
+    "confidence": 0.95,
+    "evidence_summary": "WhatsApp rendered the visible profile identity Physis Caribbean.",
+    "record_id": "825302b3b4d2d4c8",
+    "route": "https://wa.me/50688664405",
+    "screenshot_path": "screenshots/825302b3b4d2d4c8.jpg"
+  },
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "probable_match",
+    "display_name": "El Nido Jungle Lodge WA",
+    "confidence": 0.75,
+    "evidence_summary": "WhatsApp rendered the visible profile identity El Nido Jungle Lodge WA.",
+    "record_id": "8e45c48d2ae28a29",
+    "route": "https://wa.me/50689152462",
+    "screenshot_path": "screenshots/8e45c48d2ae28a29.jpg"
+  },
+  {
+    "render_state": "business_target_visible",
+    "identity_result": "match",
+    "display_name": "Rancho Tranquilo",
+    "confidence": 0.95,
+    "evidence_summary": "WhatsApp rendered the visible profile identity Rancho Tranquilo.",
+    "record_id": "ef1df3b3651a8c1c",
+    "route": "https://wa.me/50683420647",
+    "screenshot_path": "screenshots/ef1df3b3651a8c1c.jpg"
+  },
+  {
+    "render_state": "target_visible",
+    "identity_result": "unclear",
+    "display_name": "",
+    "confidence": 0.25,
+    "evidence_summary": "WhatsApp rendered only the formatted telephone number; no profile identity was visible.",
+    "record_id": "525c1f76f5018d7e",
+    "route": "https://wa.me/50688918069",
+    "screenshot_path": "screenshots/525c1f76f5018d7e.jpg"
+  }
+]

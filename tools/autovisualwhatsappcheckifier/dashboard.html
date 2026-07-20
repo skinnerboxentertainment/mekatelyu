@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoVisualWhatsAppCheckifier</title>
+<style>
+:root{color-scheme:light;--ink:#17332d;--muted:#60716c;--line:#d7e2de;--green:#087d57;--bg:#f4f7f5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif}
+main{max-width:1050px;margin:auto;padding:28px}.top,.card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px}
+h1{margin:0 0 4px;font-size:1.6rem}.muted{color:var(--muted)}.controls,.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button,a.open,select,input,textarea{font:inherit;border-radius:9px;border:1px solid var(--line);padding:9px 12px}button,a.open{cursor:pointer;background:white;color:var(--ink);text-decoration:none}
+a.open{background:var(--green);color:white;border-color:var(--green)}button.active{outline:3px solid #a7dcca}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:5px;font-size:.88rem;color:var(--muted)}textarea{min-height:76px;resize:vertical}.status{font-weight:650}.warning{color:#8a4b00}.done{opacity:.66}
+@media(max-width:700px){main{padding:12px}.grid{grid-template-columns:1fr}}
+</style>
+<main>
+<section class="top"><h1>AutoVisualWhatsAppCheckifier</h1><p class="muted">Local evidence review. Opens targets without message text. Never sends or updates the directory.</p>
+<div class="controls"><label>Queue<select id="queue"><option value="pilot">Pilot</option><option value="preservation">106 established routes</option><option value="candidates">Phone candidates</option></select></label><span id="progress" class="status"></span><a href="/review" target="_blank">Review visual evidence</a></div></section>
+<section id="card" class="card"><p>Loading queue…</p></section>
+</main>
+<script>
+const $=s=>document.querySelector(s);let queueName='pilot',items=[],attempts=[],index=0,started='';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function load(){queueName=$('#queue').value;const r=await fetch('/api/queue?name='+queueName);const d=await r.json();items=d.items;attempts=d.attempts;index=Math.max(0,items.findIndex(i=>!attempts.some(a=>a.record_id===i.record_id)));if(index<0)index=items.length;render()}
+function render(){const done=new Set(attempts.map(a=>a.record_id));$('#progress').textContent=`${done.size} logged / ${items.length} queued`;if(index>=items.length){$('#card').innerHTML='<h2>Queue complete</h2><p class="muted">No production data was changed.</p>';return}const i=items[index];started=new Date().toISOString();$('#card').innerHTML=`<div class="status">${index+1} of ${items.length}</div><h2>${esc(i.business_name)}</h2><p>${esc(i.area)} · ${esc(i.whatsapp_normalized)} · ${esc(i.source_class)}</p><div class="actions"><a class="open" target="whatsapp-review" rel="noopener" href="${esc(i.route)}">Open WhatsApp target</a><button id="skip">Next without logging</button></div><hr><div class="grid"><label>Rendered state<select id="render"><option value="target_visible">Target visible</option><option value="business_target_visible">Business target visible</option><option value="invalid_or_unavailable">Invalid or unavailable</option><option value="generic_send_page">Generic send page</option><option value="login_required">Login required</option><option value="native_app_handoff">Native app handoff</option><option value="consent_or_interstitial">Consent/interstitial</option><option value="rate_limited_or_challenged">Rate limited/challenged</option><option value="unexpected_page">Unexpected page</option></select></label><label>Identity result<select id="result"><option value="match">Match</option><option value="probable_match">Probable match</option><option value="mismatch">Mismatch</option><option value="unclear" selected>Unclear</option><option value="unavailable">Unavailable</option></select></label><label>Displayed name<input id="name"></label><label>Confidence (0–1)<input id="confidence" type="number" min="0" max="1" step=".05" value="0"></label></div><label>Visible evidence<textarea id="evidence" placeholder="Describe only what is visible on the target surface."></textarea></label><div class="actions"><button id="save">Record and continue</button></div><p class="muted">No message composer interaction is part of this workflow.</p>`;$('#skip').onclick=()=>{index++;render()};$('#save').onclick=save}
+async function save(){alert('A browser-captured PNG is required. Automated review attaches it when recording; manual review should use the evidence workflow.');}
+$('#queue').onchange=load;load();
+</script>
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "record_id": "775fac7e31a69139",
+    "business_name": "Cabinas Guarana",
+    "area": "Puerto Viejo",
+    "whatsapp_normalized": "+50687903340",
+    "route": "https://wa.me/50687903340",
+    "phone": "+506 2750 0244",
+    "website": "",
+    "source_url": "https://www.puertoviejosatellite.com/en/puerto-viejo/cabinas-guarana/",
+    "source_class": "master_explicit",
+    "operating_status": "active"
+  },
+  {
+    "record_id": "238bbd1b2335eb96",
+    "business_name": "Cabinas Jacaranda",
+    "area": "Puerto Viejo",
+    "whatsapp_normalized": "+50661861852",
+    "route": "https://wa.me/50661861852",
+    "phone": "+506 2750-0069",
+    "website": "",
+    "source_url": "https://www.puertoviejosatellite.com/en/puerto-viejo/cabinas-jacaranda/",
+    "source_class": "master_explicit",
+    "operating_status": "active"
+  },
+  {
+    "record_id": "950634b8f4854029",
+    "business_name": "Casa Bohö",
+    "area": "Puerto Viejo",
+    "whatsapp_normalized": "+50687151771",
+    "route": "https://wa.me/50687151771",
+    "phone": "+506 8715 1771",
+    "website": "",
+    "source_url": "https://www.puertoviejosatellite.com/en/puerto-viejo/casa-boho/",
+    "source_class": "master_explicit",
+    "operating_status": "active"
+  },
+  {
+    "record_id": "7ea10a71774a492e",
+    "business_name": "Cariblue Beach and Jungle Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "area": "Cocles",
+    "whatsapp_normalized": "+50683141965",
+    "route": "https://wa.me/50683141965",
+    "phone": "+506 2750 0518",
+    "website": "https://cariblue.com/",
+    "source_url": "https://www.puertoviejosatellite.com/en/cocles/cariblue-beach-and-jungle-resort/",
+    "source_class": "master_explicit",
+    "operating_status": "active"
+  },
+  {
+    "record_id": "96f7aec687a677a5",
+    "business_name": "Mecca - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "area": "Playa Negra",
+    "whatsapp_normalized": "+16198904851",
+    "route": "https://wa.me/16198904851",
+    "phone": "",
+    "website": "",
+    "source_url": "https://www.puertoviejosatellite.com/en/playa-negra/mecca/",
+    "source_class": "master_explicit",
+    "operating_status": "active"
+  },
+  {
+    "record_id": "control-50600000000",
+    "business_name": "IMPOSSIBLE CONTROL",
+    "area": "",
+    "whatsapp_normalized": "+50600000000",
+    "route": "https://wa.me/50600000000",
+    "phone": "",
+    "website": "",
+    "source_url": "",
+    "source_class": "negative_control",
+    "operating_status": "control"
+  }
+]

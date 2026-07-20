@@ -1,19 +1,29 @@
 import csv
 import json
 import hashlib
+import html
 import re
 import os
 import shutil
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote, urlsplit, urlunsplit
+
+import qrcode
+from PIL import Image
+try:
+    from .semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
+except ImportError:  # Direct execution: python paradisio_app/build.py
+    from semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 
 BASE_DIR = Path(__file__).parent
 TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
-OUTPUT_DIR = Path(__file__).resolve().parent.parent / "docs" / "paradisio_app"
+REPO_DIR = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = Path(os.environ.get("PARADISIO_OUTPUT_DIR", REPO_DIR / "release" / "paradisio_app")).resolve()
 CSV_PATH = BASE_DIR.parent / "pv_master_unified.csv"
-MAPS_ENRICH_PATH = OUTPUT_DIR / "data" / "maps_parsed_v3.json"
-CLASSIFIEDS_PATH = BASE_DIR / "data" / "classifieds.json"
+MAPS_ENRICH_PATH = BASE_DIR / "data" / "maps_parsed_v3.json"
+SEMANTIC_TAXONOMY_PATH = BASE_DIR / "data" / "semantic_taxonomy.json"
 LOCALES_DIR = BASE_DIR / "data" / "locales"
 
 
@@ -30,39 +40,18 @@ LOCALES = load_locales()
 LOCALE_NAMES = {lang: data.get("lang.name_en", lang) for lang, data in LOCALES.items()}
 
 
-def load_classifieds():
-    if not CLASSIFIEDS_PATH.exists():
-        return []
-    with open(CLASSIFIEDS_PATH, encoding="utf-8") as f:
-        data = json.load(f)
-    for ad in data:
-        ad.setdefault("area", "Unknown")
-    return data
-
-
-NAV_PAGES = {"directory": "Directory", "classifieds": "Classifieds", "post": "Post Ad"}
-
-# Configure your email here for the claim form
-CLAIM_EMAIL = "skinnerboxentertainment@gmail.com"
-
-# SINPE Móvil payment config — Costa Rica's national mobile payment system
-SINPE_PHONE = "+506 8888 8888"  # TODO: replace with your SINPE Móvil phone number
-SINPE_BANK = "BAC Credomatic"   # Your bank (display only)
-SINPE_NAME = "Oscar Aird / SkinnerBox Entertainment"  # Your name as registered in SINPE
+NAV_PAGES = {"directory": "Directory"}
 
 
 def nav_html(current, depth=0):
     prefix = "../" if depth > 0 else ""
     links = f'<a href="{prefix}index.html" class="site-logo">Paradisio</a>'
     for key, label in NAV_PAGES.items():
-        href = {"directory": f"{prefix}index.html", "classifieds": f"{prefix}classifieds/index.html", "post": "mailto:paradisio@example.com?subject=Post%20ad&body=Category:%0ATitle:%0APrice:%0AArea:%0AContact:%0ADescription:"}.get(key, "#")
+        href = {"directory": f"{prefix}index.html"}.get(key, "#")
         active = "nav-active" if key == current else ""
-        en = {"directory": "Directory", "classifieds": "Board", "post": "Post"}.get(key, label)
-        links += f'<a href="{href}" class="{active}" data-i18n="nav.{key}">{en}</a>'
-    # Language switcher
-    lang_opts = "".join(f'<button class="lang-btn" data-lang="{l}" data-i18n="lang.name_{l}">{LOCALES.get(l,{}).get("lang."+l, l.upper())}</button>' for l in ["en","es","de"])
-    links += f'<span class="lang-switcher">{lang_opts}</span>'
-    return f'<nav class="site-nav">{links}</nav>'
+        en = {"directory": "Directory"}.get(key, label)
+        links += f'<a href="{href}" class="{active}">{en}</a>'
+    return f'<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
 
 
 def load_maps_enrich():
@@ -160,35 +149,54 @@ def compute_id(row):
 def normalize_phone(raw):
     if not raw:
         return ""
-    raw = raw.strip()
-    raw = re.sub(r"[^0-9+]", "", raw)
-    if raw.startswith("+506") and len(raw) == 12:
-        return raw
-    if raw.startswith("506") and len(raw) == 11:
-        return "+" + raw
-    if raw.startswith("+") and len(raw) >= 10:
-        return raw
-    return raw.strip()
+    digits = re.sub(r"\D", "", raw)
+    if len(digits) == 8:
+        digits = "506" + digits
+    if re.fullmatch(r"\d{10,15}", digits):
+        return "+" + digits
+    return ""
+
+
+def safe_external_url(raw):
+    value = (raw or "").strip()
+    if not value:
+        return ""
+    try:
+        parsed = urlsplit(value)
+    except ValueError:
+        return ""
+    if parsed.scheme != "https" or not parsed.netloc:
+        return ""
+    return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, parsed.query, parsed.fragment))
+
+
+def safe_instagram_handle(raw):
+    handle = (raw or "").strip().lstrip("@")
+    return handle if re.fullmatch(r"[A-Za-z0-9._]{1,30}", handle) else ""
 
 
 def has_whatsapp(row):
-    wp = row.get("whatsapp", "").strip()
-    if wp:
-        return normalize_phone(wp)
-    np = row.get("normalized_phone", "").strip()
-    if np:
-        return np
-    p = row.get("phone", "").strip()
-    if p:
-        return normalize_phone(p)
-    return ""
+    """Return an explicit WhatsApp destination in international digits.
+
+    Ordinary phone numbers are deliberately not inferred as WhatsApp-capable.
+    """
+    raw = row.get("whatsapp", "").strip()
+    if not raw:
+        return ""
+    match = re.search(r"(?:phone=|wa\.me/)(\d{8,15})", raw)
+    digits = match.group(1) if match else re.sub(r"\D", "", raw)
+    if len(digits) == 8:
+        digits = "506" + digits
+    if not re.fullmatch(r"\d{10,15}", digits):
+        return ""
+    return "+" + digits
 
 
 def contactability_score(row):
     score = 0
     if has_whatsapp(row): score += 40
     if row.get("phone", "").strip(): score += 30
-    if row.get("instagram_handle", "").strip(): score += 15
+    if safe_instagram_handle(row.get("instagram_handle", "")): score += 15
     if row.get("website", "").strip(): score += 10
     if row.get("facebook_url", "").strip(): score += 5
     return min(score, 100)
@@ -222,18 +230,15 @@ def completeness_score(row):
 
 
 def get_badges(row):
+    if row.get("operating_status", "").strip().lower() in {"closed", "permanently_closed"}:
+        return []
     badges = []
     if has_whatsapp(row): badges.append("WhatsApp")
-    ig = row.get("instagram_handle", "").strip()
+    ig = safe_instagram_handle(row.get("instagram_handle", ""))
     ig_conf = row.get("instagram_confidence", "").strip()
     if ig and ig_conf == "verified": badges.append("Instagram")
     if row.get("booking_url", "").strip(): badges.append("Booking")
-    if row.get("google_maps_cid", "").strip(): badges.append("Map Verified")
-    if row.get("website", "").strip(): badges.append("Has Website")
-    if row.get("phone", "").strip() or row.get("normalized_phone", "").strip(): badges.append("Phone")
-    cs = contactability_score(row)
-    vs = visibility_score(row)
-    if cs + vs > 140: badges.append("Fully Online")
+    if safe_external_url(row.get("website", "")): badges.append("Website")
     return badges
 
 
@@ -244,28 +249,34 @@ def get_intents(category):
         "hostel": ["stay"],
         "restaurant": ["eat"],
         "tour_company": ["tour"],
-        "shopping": ["shop"],
-        "services": ["service"],
+        "shopping": ["shopping"],
+        "services": ["services"],
+        "real_estate": ["services"],
+        "wellness": ["wellness"],
+        "nightlife": ["nightlife"],
+        "transport": ["transport"],
     }
     return mapping.get(category.lower().strip(), ["other"])
 
 
 def get_primary_contact(row):
+    if row.get("operating_status", "").strip().lower() in {"closed", "permanently_closed"}:
+        return {"type": "None", "label": "Closed", "url": ""}
     wp = has_whatsapp(row)
     if wp:
         message = WHATSAPP_TEMPLATE.format(name=row.get("business_name", ""))
         return {
             "type": "WhatsApp",
             "label": "Message on WhatsApp",
-            "url": f"https://wa.me/{wp.lstrip('+')}?text={message}",
+            "url": f"https://wa.me/{wp.lstrip('+')}?text={quote(message)}",
         }
-    phone = row.get("phone", "").strip() or row.get("normalized_phone", "").strip()
+    phone = normalize_phone(row.get("normalized_phone", "") or row.get("phone", ""))
     if phone:
         return {"type": "Call", "label": "Call", "url": f"tel:{phone}"}
-    ig = row.get("instagram_handle", "").strip()
+    ig = safe_instagram_handle(row.get("instagram_handle", ""))
     if ig:
         return {"type": "Instagram", "label": "Instagram DM", "url": f"https://instagram.com/{ig}"}
-    website = row.get("website", "").strip()
+    website = safe_external_url(row.get("website", ""))
     if website:
         return {"type": "Website", "label": "Visit Website", "url": website}
     cid = row.get("google_maps_cid", "").strip()
@@ -279,23 +290,25 @@ def get_primary_contact(row):
 
 
 def get_secondary_links(row):
+    if row.get("operating_status", "").strip().lower() in {"closed", "permanently_closed"}:
+        return []
     links = []
-    phone = row.get("phone", "").strip() or row.get("normalized_phone", "").strip()
+    phone = normalize_phone(row.get("normalized_phone", "") or row.get("phone", ""))
     if phone:
         links.append({"label": "Call", "url": f"tel:{phone}"})
-    ig = row.get("instagram_handle", "").strip()
+    ig = safe_instagram_handle(row.get("instagram_handle", ""))
     if ig:
         links.append({"label": "Instagram", "url": f"https://instagram.com/{ig}"})
-    fb = row.get("facebook_url", "").strip()
+    fb = safe_external_url(row.get("facebook_url", ""))
     if fb:
         links.append({"label": "Facebook", "url": fb})
-    website = row.get("website", "").strip()
+    website = safe_external_url(row.get("website", ""))
     if website:
         links.append({"label": "Website", "url": website})
-    booking = row.get("booking_url", "").strip()
+    booking = safe_external_url(row.get("booking_url", ""))
     if booking:
         links.append({"label": "Booking.com", "url": booking})
-    ta = row.get("tripadvisor_url", "").strip()
+    ta = safe_external_url(row.get("tripadvisor_url", ""))
     if ta:
         links.append({"label": "TripAdvisor", "url": ta})
     cid = row.get("google_maps_cid", "").strip()
@@ -309,6 +322,7 @@ def get_secondary_links(row):
 
 
 MAPS_CACHE = None
+SEMANTIC_CACHE = None
 
 
 def maps_data(cid):
@@ -318,12 +332,24 @@ def maps_data(cid):
     return MAPS_CACHE.get(cid, {})
 
 
+def semantic_data(row):
+    global SEMANTIC_CACHE
+    if SEMANTIC_CACHE is None:
+        if SEMANTIC_TAXONOMY_PATH.exists():
+            with open(SEMANTIC_TAXONOMY_PATH, encoding="utf-8") as handle:
+                SEMANTIC_CACHE = json.load(handle).get("records", {})
+        else:
+            SEMANTIC_CACHE = {}
+    return SEMANTIC_CACHE.get(semantic_key(row)) or classify_record(row)
+
+
 def build_business(row):
     name = clean_display_name(row.get("business_name", "").strip(), row.get("area", "").strip())
     area = row.get("area", "").strip()
     slug = slugify(row.get("business_name", "").strip(), area)
     cid = row.get("google_maps_cid", "").strip()
     enrich = maps_data(cid)
+    semantic = semantic_data(row)
     business = {
         "id": compute_id(row),
         "slug": slug,
@@ -335,15 +361,15 @@ def build_business(row):
         "distance_km": row.get("distance_km", "").strip(),
         "status": row.get("operating_status", "").strip() or "unknown",
         "channels": {
-            "phone": row.get("phone", "").strip(),
-            "phone_normalized": row.get("normalized_phone", "").strip(),
+            "phone": row.get("phone", "").strip() if normalize_phone(row.get("normalized_phone", "") or row.get("phone", "")) else "",
+            "phone_normalized": normalize_phone(row.get("normalized_phone", "") or row.get("phone", "")),
             "whatsapp": has_whatsapp(row),
-            "instagram": row.get("instagram_handle", "").strip(),
+            "instagram": safe_instagram_handle(row.get("instagram_handle", "")),
             "instagram_verified": row.get("instagram_confidence", "").strip() == "verified",
-            "facebook_url": row.get("facebook_url", "").strip(),
-            "website": row.get("website", "").strip(),
-            "booking_url": row.get("booking_url", "").strip(),
-            "tripadvisor_url": row.get("tripadvisor_url", "").strip(),
+            "facebook_url": safe_external_url(row.get("facebook_url", "")),
+            "website": safe_external_url(row.get("website", "")),
+            "booking_url": safe_external_url(row.get("booking_url", "")),
+            "tripadvisor_url": safe_external_url(row.get("tripadvisor_url", "")),
             "google_maps_cid": row.get("google_maps_cid", "").strip(),
             "email": row.get("email", "").strip(),
         },
@@ -355,7 +381,12 @@ def build_business(row):
             "completeness": completeness_score(row),
         },
         "badges": get_badges(row),
-        "intents": get_intents(row.get("category", "").strip()),
+        "intents": semantic["groups"],
+        "discovery_groups": semantic["groups"],
+        "semantic_tags": semantic["tags"],
+        "semantic_attributes": semantic["attributes"],
+        "search_synonyms": semantic["search_synonyms"],
+        "semantic_review_state": semantic["review_state"],
         "description": row.get("description_full", "").strip()[:500],
         "verified_date": row.get("verified_date", "").strip(),
         "claim": {"status": "unclaimed"},
@@ -374,10 +405,123 @@ def build_business(row):
     return business
 
 
+def public_business_summary(biz):
+    """Return only fields needed by the public directory list/map UI."""
+    return {
+        "slug": biz["slug"],
+        "name": biz["name"],
+        "category": biz["category"],
+        "area": biz["area"],
+        "lat": biz["lat"],
+        "lng": biz["lng"],
+        "distance_km": biz["distance_km"],
+        "status": biz["status"],
+        "channels": {
+            "phone": bool(biz["channels"]["phone"]),
+            "whatsapp": bool(biz["channels"]["whatsapp"]),
+            "instagram": bool(biz["channels"]["instagram"]),
+            "website": bool(biz["channels"]["website"]),
+            "booking_url": bool(biz["channels"]["booking_url"]),
+            "google_maps_cid": bool(biz["channels"]["google_maps_cid"]),
+        },
+        "primary_contact": {"type": biz["primary_contact"]["type"], "label": biz["primary_contact"]["label"]},
+        "scores": biz["scores"],
+        "badges": biz["badges"],
+        "intents": biz["intents"],
+        "discovery_groups": biz.get("discovery_groups", biz.get("intents", [])),
+        "semantic_tags": biz.get("semantic_tags", []),
+        "semantic_attributes": biz.get("semantic_attributes", []),
+        "search_synonyms": biz.get("search_synonyms", []),
+        "description": biz["description"],
+        "rating": biz["rating"],
+    }
+
+
+CATEGORY_LABELS = {
+    "hostel": "Hostel",
+    "hotel": "Hotel",
+    "nightlife": "Nightlife",
+    "real_estate": "Real estate",
+    "restaurant": "Restaurant",
+    "services": "Services",
+    "shopping": "Shopping",
+    "tour_company": "Tours",
+    "transport": "Transport",
+    "vacation_rental": "Vacation rental",
+    "wellness": "Wellness",
+}
+
+
+def category_label(category):
+    key = (category or "").strip().lower()
+    return CATEGORY_LABELS.get(key, key.replace("_", " ").title() or "Other")
+
+
+def status_html(status):
+    key = (status or "").strip().lower()
+    labels = {
+        "closed": "Closed",
+        "permanently_closed": "Closed",
+        "needs_verification": "Information needs review",
+    }
+    label = labels.get(key)
+    if not label:
+        return ""
+    return f'<span class="biz-status status-{key}">{label}</span>'
+
+
+PRODUCTION_BASE_URL = "https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app"
+
+
+def generate_profile_qr_codes(businesses):
+    """Generate one print-ready QR image that opens each business profile."""
+    qr_dir = OUTPUT_DIR / "qr"
+    qr_dir.mkdir(parents=True, exist_ok=True)
+    for biz in businesses:
+        profile_url = f"{PRODUCTION_BASE_URL}/businesses/{biz['slug']}.html"
+        qr = qrcode.QRCode(
+            version=None,
+            error_correction=qrcode.constants.ERROR_CORRECT_M,
+            box_size=10,
+            border=2,
+        )
+        qr.add_data(profile_url)
+        qr.make(fit=True)
+        image = qr.make_image(fill_color="#18382b", back_color="#ffffff")
+        image = image.resize((300, 300), Image.Resampling.NEAREST)
+        image.save(qr_dir / f"{biz['slug']}.png", "PNG", dpi=(300, 300))
+
+
+def generate_deployment_wrapper():
+    """Create the minimal repository-site root while preserving the public app URL."""
+    release_root = REPO_DIR / "release"
+    if OUTPUT_DIR.parent != release_root:
+        return
+    root_index = """<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="refresh" content="0; url=paradisio_app/"><link rel="canonical" href="https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/">
+<title>Paradisio — Puerto Viejo Directory</title></head><body><p><a href="paradisio_app/">Open Paradisio</a></p></body></html>"""
+    not_found = """<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="paradisio_app/static/tokens.css"><link rel="stylesheet" href="paradisio_app/static/styles.css">
+<meta name="robots" content="noindex"><title>Page not found — Paradisio</title></head>
+<body><main class="container"><div class="no-results"><h1>Page not found</h1><p>The place you requested is not available.</p><p><a href="paradisio_app/">Return to the Paradisio directory</a></p></div></main></body></html>"""
+    (release_root / "index.html").write_text(root_index, encoding="utf-8")
+    (release_root / "404.html").write_text(not_found, encoding="utf-8")
+    (release_root / ".nojekyll").write_text("", encoding="utf-8")
+    (release_root / "robots.txt").write_text(
+        "User-agent: *\nAllow: /mekatelyu/paradisio_app/\nSitemap: "
+        f"{PRODUCTION_BASE_URL}/sitemap.xml\n",
+        encoding="utf-8",
+    )
+
+
 CAT_SHORTCUTS = [
     ("eat", "Eat", "Comer"),
     ("stay", "Stay", "Hospedarse"),
-    ("tour", "Tours", "Giras"),
+    ("things-to-do", "Things to Do", "Actividades"),
     ("services", "Services", "Servicios"),
     ("shopping", "Shops", "Tiendas"),
     ("wellness", "Wellness", "Bienestar"),
@@ -386,18 +530,11 @@ CAT_SHORTCUTS = [
 ]
 
 
-def cat_grid_html(categories):
-    mapping = {
-        "restaurant": "eat", "hotel": "stay", "hostel": "stay",
-        "vacation_rental": "stay", "tour_company": "tour",
-        "services": "services", "shopping": "shopping",
-        "real_estate": "services",
-        "wellness": "wellness", "nightlife": "nightlife", "transport": "transport",
-    }
+def cat_grid_html(businesses):
     counts = {}
-    for cat_key, count in categories.items():
-        group = mapping.get(cat_key.lower().strip(), "services") if cat_key else "services"
-        counts[group] = counts.get(group, 0) + count
+    for business in businesses:
+        for group in business["discovery_groups"]:
+            counts[group] = counts.get(group, 0) + 1
 
     tiles = ""
     for key, en, es in CAT_SHORTCUTS:
@@ -414,11 +551,8 @@ def render_index_html(businesses, metrics):
     with_cid = metrics["with_cid"]
     date = metrics["generated"]
 
-    categories_json = json.dumps(metrics["categories"])
-    areas_json = json.dumps(metrics["areas"])
-
     nav = nav_html("directory", depth=0)
-    cat_grid = cat_grid_html(metrics["categories"])
+    cat_grid = cat_grid_html(businesses)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -426,57 +560,66 @@ def render_index_html(businesses, metrics):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paradisio — Puerto Viejo Business Board</title>
-<link rel="stylesheet" href="static/tokens.css">
-<link rel="stylesheet" href="static/styles.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
-<script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<meta name="description" content="Find restaurants, stays, tours, shops, and local services across Puerto Viejo and Costa Rica's South Caribbean.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/">
+<meta property="og:title" content="Paradisio — Puerto Viejo Directory">
+<meta property="og:description" content="Find restaurants, stays, tours, shops, and local services across Puerto Viejo and Costa Rica's South Caribbean.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/">
+<link rel="stylesheet" href="static/tokens.css?v={TAXONOMY_VERSION}">
+<link rel="stylesheet" href="static/styles.css?v={TAXONOMY_VERSION}">
+<link rel="stylesheet" href="static/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="static/vendor/leaflet/MarkerCluster.css">
+<link rel="stylesheet" href="static/vendor/leaflet/MarkerCluster.Default.css">
 </head>
 <body>
 {nav}
-<div class="container">
-<div class="masthead">
+<main class="container">
+<header class="masthead">
 <h1>Paradisio</h1>
-<p class="tagline" data-i18n="home.tagline">Find Puerto Viejo businesses with confidence.</p>
-<p class="subtitle"><strong>{total}</strong> <span data-i18n="home.subtitle">local businesses &middot; WhatsApp, Instagram, maps &amp; more</span></p>
-</div>
-{cat_grid}
-<div class="stats-bar">
-<span class="stat"><strong>{total}</strong> <span data-i18n="home.stats_businesses">businesses</span></span>
-<span class="stat"><strong>{with_wp}</strong> <span data-i18n="home.stats_whatsapp">with WhatsApp</span></span>
-<span class="stat"><strong>{with_ig}</strong> <span data-i18n="home.stats_instagram">with Instagram</span></span>
-<span class="stat"><strong>{with_phone}</strong> <span data-i18n="home.stats_phone">with Phone</span></span>
-</div>
-<p class="updated hide-mobile">Updated {date}</p>
+<p class="tagline">Find trusted places across Puerto Viejo and the South Caribbean.</p>
+<p class="subtitle"><strong>{total}</strong> local businesses, stays, and services</p>
+</header>
 <div class="controls">
-<input type="text" id="search" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="Search businesses..." autofocus>
+<label class="sr-only" for="search">Search businesses</label>
+<input type="search" id="search" class="search-input" placeholder="Search by name, type, quality, or area" autofocus>
 <div class="view-toggle">
-<button id="view-list" class="view-btn active" data-i18n="list.view">List</button>
-<button id="view-map" class="view-btn" data-i18n="map.view">Map</button>
+<button id="view-list" class="view-btn active" aria-pressed="true">List</button>
+<button id="view-map" class="view-btn" aria-pressed="false">Map</button>
 </div>
 <div class="filters">
-<select id="category-filter" class="filter-select">
-<option value="" data-i18n="filter.all_categories">All Categories</option>
+<label class="sr-only" for="category-filter">Category</label>
+<select id="category-filter" class="filter-select" aria-label="Category">
+<option value="">All categories</option>
 </select>
-<select id="area-filter" class="filter-select">
-<option value="" data-i18n="filter.all_areas">All Areas</option>
+<label class="sr-only" for="tag-filter">Type or quality</label>
+<select id="tag-filter" class="filter-select" aria-label="Type or quality">
+<option value="">Any type or quality</option>
 </select>
-<select id="channel-filter" class="filter-select">
-<option value="" data-i18n="filter.any_contact">Any Contact</option>
-<option value="whatsapp" data-i18n="filter.has_whatsapp">Has WhatsApp</option>
-<option value="instagram" data-i18n="filter.has_instagram">Has Instagram</option>
-<option value="phone" data-i18n="filter.has_phone">Has Phone</option>
-<option value="website" data-i18n="filter.has_website">Has Website</option>
-<option value="booking" data-i18n="filter.has_booking">Has Booking.com</option>
-<option value="maps" data-i18n="filter.on_maps">On Google Maps</option>
+<label class="sr-only" for="area-filter">Area</label>
+<select id="area-filter" class="filter-select" aria-label="Area">
+<option value="">All areas</option>
 </select>
-<select id="sort-filter" class="filter-select">
-<option value="name" data-i18n="filter.sort_name">Sort: Name</option>
-<option value="contactability" data-i18n="filter.sort_contact">Sort: Best Contact</option>
-<option value="completeness" data-i18n="filter.sort_complete">Sort: Most Complete</option>
+<label class="sr-only" for="channel-filter">Contact method</label>
+<select id="channel-filter" class="filter-select" aria-label="Contact method">
+<option value="">Any contact</option>
+<option value="whatsapp">Has WhatsApp</option>
+<option value="instagram">Has Instagram</option>
+<option value="phone">Has phone</option>
+<option value="website">Has website</option>
+<option value="booking">Has Booking.com</option>
+<option value="maps">On Google Maps</option>
+</select>
+<label class="sr-only" for="sort-filter">Sort results</label>
+<select id="sort-filter" class="filter-select" aria-label="Sort results">
+<option value="name">Sort: Name</option>
+<option value="contactability">Sort: Best contact</option>
+<option value="completeness">Sort: Most complete</option>
 </select>
 </div>
+{cat_grid}
 <div id="stats-line" class="stats-line"></div>
 <div id="filter-chips" class="filter-chips"></div>
 </div>
@@ -486,22 +629,14 @@ def render_index_html(businesses, metrics):
 <div id="load-more" class="load-more"></div>
 <div id="map-container" class="map-view"></div>
 <footer class="footer">
-<p>A Paradisio project &middot; Data from Puerto Viejo Satellite, OSM, Google Maps, Instagram &middot; <a href="claim.html">Claim</a> &middot; <a href="premium.html">Premium</a> &middot; <a href="classifieds/index.html">Classifieds</a></p>
+<p>Paradisio &middot; Puerto Viejo and the South Caribbean &middot; Directory updated {date}</p>
+<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=business_correction.md" target="_blank" rel="noopener">Report incorrect information</a></p>
 </footer>
-</div>
-<script>
-const BUSINESSES = {json.dumps(businesses, ensure_ascii=False)};
-const CATEGORIES = {categories_json};
-const AREAS = {areas_json};
-</script>
-<script>
-const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
-</script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
-<script src="static/i18n.js"></script>
-<script src="static/modes.js"></script>
-<script src="static/app.js"></script>
+</main>
+<script src="static/directory-data.js?v={TAXONOMY_VERSION}"></script>
+<script src="static/vendor/leaflet/leaflet.js"></script>
+<script src="static/vendor/leaflet/leaflet.markercluster.js"></script>
+<script src="static/app.js?v={TAXONOMY_VERSION}"></script>
 </body>
 </html>"""
 
@@ -572,6 +707,22 @@ def biz_amenities(biz):
         return ""
     chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in filtered[:6])
     return f'<div class="amenities">{chips}</div>'
+
+
+def biz_semantic_facets(biz):
+    facets = []
+    primary_tag = PRIMARY_CATEGORY_TAGS.get((biz.get("category") or "").strip().lower())
+    for tag in biz.get("semantic_tags", []) + biz.get("semantic_attributes", []):
+        if tag == primary_tag or tag in facets:
+            continue
+        facets.append(tag)
+    if not facets:
+        return ""
+    chips = " ".join(
+        f'<span class="amenity-chip">{html.escape(TAG_LABELS.get(tag, tag.replace("-", " ").title()))}</span>'
+        for tag in facets[:6]
+    )
+    return f'<div class="amenities semantic-facets" aria-label="Types and qualities">{chips}</div>'
 
 
 def biz_prices(biz):
@@ -873,14 +1024,20 @@ document.getElementById('biz-search').addEventListener('input', function(e) {{
 
 def render_business_html(biz):
     nav = nav_html("directory", depth=1)
+    name = html.escape(str(biz["name"]), quote=True)
+    area = html.escape(str(biz["area"]), quote=True)
+    description = html.escape(str(biz["description"] or "No description available."), quote=False)
     pc = biz["primary_contact"]
+    report_url = html.escape((
+        "https://github.com/skinnerboxentertainment/mekatelyu/issues/new?"
+        f"template=business_correction.md&title={quote('Correction: ' + biz['name'])}"
+    ), quote=True)
     sl = biz["secondary_links"]
-    badges_html = " ".join(f'<span class="badge badge-{b.lower().replace(" ","-")}">{b}</span>' for b in biz["badges"])
+    badges_html = " ".join(f'<span class="badge badge-{b.lower().replace(" ","-")}">{html.escape(b)}</span>' for b in biz["badges"])
     links_html = " ".join(
-        f'<a href="{l["url"]}" class="secondary-link" target="_blank" rel="noopener" data-plausible-event="OutboundClick" data-plausible-channel="{l["label"]}">{l["label"]}</a>'
+        f'<a href="{html.escape(l["url"], quote=True)}" class="secondary-link" target="_blank" rel="noopener">{html.escape(l["label"])}</a>'
         for l in sl
     )
-    scores = biz["scores"]
 
     map_html = ""
     if biz["lat"] and biz["lng"]:
@@ -889,39 +1046,26 @@ def render_business_html(biz):
         cid = biz["channels"]["google_maps_cid"]
         map_url = f"https://www.google.com/maps?cid={cid}" if cid else f"https://www.google.com/maps?q={lat},{lng}"
         map_html = f"""<div class="biz-map">
-<div id="map-{biz['slug']}" class="map-container"></div>
+<div id="map-{biz['slug']}" class="map-container" data-business-map data-lat="{lat}" data-lng="{lng}"></div>
 <p class="map-note"><a href="{map_url}" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
-</div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {{
-    var map = L.map('map-{biz['slug']}', {{ zoomControl: false, attributionControl: false }}).setView([{lat}, {lng}], 15);
-    L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png').addTo(map);
-    L.marker([{lat}, {lng}]).addTo(map);
-}});
-</script>"""
-
-    slug = biz["slug"]
-    qr_img = f"../qr/{slug}.png" if Path(OUTPUT_DIR / "qr" / f"{slug}.png").exists() else None
-
-    qr_section = ""
-    if qr_img:
-        qr_section = f"""<div class="biz-qr">
-<div class="qr-preview">
-<img src="{qr_img}" alt="QR code for {biz['name']}" width="120" height="120" loading="lazy">
-<div class="qr-preview-text">
-<strong>QR code ready</strong>
-<p>Print this QR sticker and put it on your door. Every scan opens your page and WhatsApp.</p>
-<a href="../qr/{slug}.png" class="qr-download-link" download data-plausible-event="QRDownload">Download QR PNG &rarr;</a>
-</div>
-</div>
 </div>"""
 
     channel_type = pc["type"]
-    inline_cta = f"""<div class="biz-main hide-mobile">
+    qr_section = f"""<section class="biz-qr" aria-labelledby="qr-heading">
+<div class="qr-preview">
+<img src="../qr/{biz['slug']}.png" alt="QR code for the {name} Paradisio profile" width="120" height="120" loading="lazy">
+<div class="qr-preview-text">
+<strong id="qr-heading">Share this profile</strong>
+<p>Scan to open this establishment's Paradisio page.</p>
+<a href="../qr/{biz['slug']}.png" class="qr-download-link" download>Download QR code</a>
+</div>
+</div>
+</section>"""
+    inline_cta = "" if channel_type == "None" else f"""<div class="biz-main hide-mobile">
 <a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
 </div>"""
 
-    sticky_cta = f"""<div class="sticky-bar">
+    sticky_cta = "" if channel_type == "None" else f"""<div class="sticky-bar">
 <a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
 {'<a href="tel:' + biz['channels']['phone_normalized'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>' if biz['channels']['phone_normalized'] and pc['type'] != 'Call' else ''}
 {'<a href="https://instagram.com/' + biz['channels']['instagram'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Instagram">IG</a>' if biz['channels']['instagram'] and pc['type'] != 'Instagram' else ''}
@@ -932,43 +1076,37 @@ document.addEventListener('DOMContentLoaded', function() {{
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{biz["name"]} — {biz["area"]} — Paradisio</title>
-<link rel="stylesheet" href="../static/tokens.css">
-<link rel="stylesheet" href="../static/styles.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<meta name="description" content="{biz["name"]} — {biz["category"]} in {biz["area"]}, Puerto Viejo. Contact via WhatsApp, phone, or Instagram.">
-<script>
-const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
-</script>
-<script src="../static/i18n.js"></script>
-<script src="../static/modes.js"></script>
-<script data-goatcounter="https://paradisio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<title>{name} — {area} — Paradisio</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/businesses/{biz['slug']}.html">
+<meta property="og:title" content="{name} — Paradisio">
+<meta property="og:description" content="{name} in {area}. View location and available contact options.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../static/tokens.css?v={TAXONOMY_VERSION}">
+<link rel="stylesheet" href="../static/styles.css?v={TAXONOMY_VERSION}">
+<link rel="stylesheet" href="../static/vendor/leaflet/leaflet.css">
+<script src="../static/vendor/leaflet/leaflet.js"></script>
+<meta name="description" content="{name} — {category_label(biz['category'])} in {area}, Puerto Viejo. View location and available contact options.">
 </head>
 <body>
 {nav}
-<div class="container">
+<main class="container">
 <header class="header biz-header">
 <a href="../index.html" class="back-link">&larr; Back to directory</a>
-<h1>{biz["name"]}</h1>
+<h1>{name}</h1>
 <div class="biz-meta">
-<span class="biz-category">{biz["category"].title()}</span>
-{biz.get("subcategory") and f'<span class="biz-category">{biz["subcategory"]}</span>' or ''}
-<span class="biz-area">{biz["area"]}</span>
-<span class="biz-status status-{biz["status"]}">{biz["status"].title()}</span>
+<span class="biz-category">{category_label(biz["category"])}</span>
+<span class="biz-area">{area}</span>
+{status_html(biz["status"])}
 </div>
 <div class="badge-row">{badges_html}</div>
 {rating_html(biz)}
 {biz_addr(biz)}
 {biz_hours(biz)}
+{biz_semantic_facets(biz)}
 {biz_amenities(biz)}
 {biz_prices(biz)}
-<div class="biz-trust">
-<span class="source-badge">Google Maps verified</span>
-<span class="source-badge">Instagram verified</span>
-<span class="status-badge unclaimed">Unclaimed</span>
-<a href="../premium.html" class="premium-link">Upgrade to Premium &rarr;</a>
-</div>
 {biz_freshness(biz)}
 </header>
 {inline_cta}
@@ -976,23 +1114,16 @@ const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
 <div class="biz-links">{links_html}</div>
 {map_html}
 {qr_section}
-<div class="biz-scores">
-<div class="score-bar"><span class="score-label">Contactability</span><div class="bar"><div class="bar-fill" style="width:{scores["contactability"]}%"></div></div><span class="score-num">{scores["contactability"]}</span></div>
-<div class="score-bar"><span class="score-label">Visibility</span><div class="bar"><div class="bar-fill" style="width:{scores["visibility"]}%"></div></div><span class="score-num">{scores["visibility"]}</span></div>
-<div class="score-bar"><span class="score-label">Completeness</span><div class="bar"><div class="bar-fill" style="width:{scores["completeness"]}%"></div></div><span class="score-num">{scores["completeness"]}</span></div>
-</div>
 <div class="biz-desc">
-<p>{biz["description"] or "No description available."}</p>
-</div>
-<div class="biz-claim">
-<p><strong>Is this your business?</strong></p>
-<a href="../claim.html?biz={biz['slug']}" class="claim-link">Claim or correct this page &rarr;</a>
+<p>{description}</p>
 </div>
 <footer class="footer">
-<p><a href="../index.html">&larr; Back to directory</a></p>
+<p><a href="../index.html">&larr; Back to directory</a> &middot; <a href="{report_url}" target="_blank" rel="noopener">Report incorrect information</a></p>
 </footer>
 </div>
 {sticky_cta}
+</main>
+<script src="../static/detail.js?v={TAXONOMY_VERSION}"></script>
 </body>
 </html>"""
 
@@ -1144,13 +1275,14 @@ const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
 
 
 def main():
+    if OUTPUT_DIR.name != "paradisio_app" or OUTPUT_DIR == REPO_DIR:
+        raise RuntimeError(f"Refusing unsafe output directory: {OUTPUT_DIR}")
+    if OUTPUT_DIR.exists():
+        shutil.rmtree(OUTPUT_DIR)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     biz_dir = OUTPUT_DIR / "businesses"
     biz_dir.mkdir(parents=True, exist_ok=True)
-    (OUTPUT_DIR / "data").mkdir(parents=True, exist_ok=True)
     (OUTPUT_DIR / "static").mkdir(parents=True, exist_ok=True)
-    (OUTPUT_DIR / "screenshots").mkdir(parents=True, exist_ok=True)
-    (OUTPUT_DIR / "screenshots" / "mobile").mkdir(parents=True, exist_ok=True)
 
     if not CSV_PATH.exists():
         print(f"ERROR: CSV not found at {CSV_PATH}")
@@ -1166,43 +1298,11 @@ def main():
     businesses.sort(key=lambda b: b["name"].lower())
     businesses = dedup_slugs(businesses)
 
-    # Load enrichment subcategories to split services into wellness/nightlife/transport
-    enrich_lookup = {}
-    enrich_path = OUTPUT_DIR / "data" / "maps_parsed_v3.json"
-    if enrich_path.exists():
-        with open(enrich_path, encoding="utf-8") as f:
-            for rec in json.load(f):
-                cid = rec.get("cid", "")
-                if cid:
-                    fields = rec.get("fields", {})
-                    sc = fields.get("subcategory", {})
-                    if isinstance(sc, dict):
-                        enrich_lookup[cid] = sc.get("value", "").lower()
-                    elif isinstance(sc, str):
-                        enrich_lookup[cid] = sc.lower()
-
-    SUBCAT_TO_GROUP = {
-        "massage": "wellness", "masajes": "wellness", "yoga": "wellness",
-        "spa": "wellness", "fitness": "wellness", "gym": "wellness",
-        "bar": "nightlife", "cocktail": "nightlife", "brewery": "nightlife",
-        "taxi": "transport", "shuttle": "transport", "transport": "transport",
-        "alquiler": "transport", "rental": "transport",
-    }
-
     categories = {}
     areas = {}
     for b in businesses:
         cat = b["category"] or "Uncategorized"
         ar = b["area"] or "Unknown"
-        # Check subcategory enrichment to split services into wellness/nightlife/transport
-        if cat.lower() == "services":
-            cid = b["channels"].get("google_maps_cid", "")
-            subcat = enrich_lookup.get(cid, "")
-            for kw, group in SUBCAT_TO_GROUP.items():
-                if kw in subcat:
-                    cat = group.title()
-                    b["category"] = cat  # Update business category so filters work
-                    break
         categories[cat] = categories.get(cat, 0) + 1
         areas[ar] = areas.get(ar, 0) + 1
 
@@ -1219,19 +1319,18 @@ def main():
         "with_email": sum(1 for b in businesses if b["channels"]["email"]),
         "categories": {k: v for k, v in sorted(categories.items(), key=lambda x: -x[1])},
         "areas": {k: v for k, v in sorted(areas.items(), key=lambda x: -x[1])},
-        "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "semantic_facets": {
+            tag: sum(1 for b in businesses if tag in b["semantic_tags"] or tag in b["semantic_attributes"])
+            for tag in sorted(TAG_LABELS)
+            if any(tag in b["semantic_tags"] or tag in b["semantic_attributes"] for b in businesses)
+        },
+        "generated": os.environ.get("PARADISIO_BUILD_DATE") or datetime.now().strftime("%Y-%m-%d"),
     }
 
     print(f"Building Paradisio Board — {len(businesses)} businesses")
 
-    data_dir = OUTPUT_DIR / "data"
-    with open(data_dir / "businesses.json", "w", encoding="utf-8") as f:
-        json.dump(businesses, f, ensure_ascii=False, indent=2)
-    print(f"  businesses.json — {len(businesses)} records")
-
-    with open(data_dir / "metrics.json", "w", encoding="utf-8") as f:
-        json.dump(metrics, f, ensure_ascii=False, indent=2)
-    print(f"  metrics.json — {len(metrics)} fields")
+    generate_profile_qr_codes(businesses)
+    print(f"  qr/ — {len(businesses)} profile QR codes")
 
     biz_dir = OUTPUT_DIR / "businesses"
     for biz in businesses:
@@ -1245,71 +1344,44 @@ def main():
         f.write(index_html)
     print(f"  index.html — entry point")
 
-    claim_html = render_claim_page()
-    with open(OUTPUT_DIR / "claim.html", "w", encoding="utf-8") as f:
-        f.write(claim_html)
-    print(f"  claim.html — business claim/correction form")
-
-    premium_html = render_premium_page()
-    with open(OUTPUT_DIR / "premium.html", "w", encoding="utf-8") as f:
-        f.write(premium_html)
-    print(f"  premium.html — premium listing tiers with SINPE payment")
-
-    admin_html = render_admin_page()
-    with open(OUTPUT_DIR / "admin.html", "w", encoding="utf-8") as f:
-        f.write(admin_html)
-    print(f"  admin.html — admin dashboard (God's Eye mode)")
-
-    biz_dash_html = render_biz_dashboard_page(businesses)
-    with open(OUTPUT_DIR / "dashboard.html", "w", encoding="utf-8") as f:
-        f.write(biz_dash_html)
-    print(f"  dashboard.html — business owner dashboard")
-
-    # Generate invoice pages
-    inv_path = BASE_DIR.parent / "paradisio_app" / "invoicing.py"
-    if inv_path.exists():
-        try:
-            import subprocess as _sp
-            _sp.run([sys.executable, str(inv_path), "build"],
-                    cwd=str(BASE_DIR.parent), capture_output=True, timeout=30)
-        except Exception:
-            pass
-
-    # Classifieds
-    classifieds = load_classifieds()
-    if classifieds:
-        cl_dir = OUTPUT_DIR / "classifieds"
-        cl_dir.mkdir(parents=True, exist_ok=True)
-        cl_idx = render_classifieds_index(classifieds)
-        with open(cl_dir / "index.html", "w", encoding="utf-8") as f:
-            f.write(cl_idx)
-        for ad in classifieds:
-            html = render_classified_listing(ad)
-            with open(cl_dir / f"{ad['slug']}.html", "w", encoding="utf-8") as f:
-                f.write(html)
-        print(f"  classifieds/ — {len(classifieds)} listings + index")
-    else:
-        print(f"  classifieds — no data (create paradisio_app/data/classifieds.json)")
+    summaries = [public_business_summary(b) for b in businesses]
+    directory_data = (
+        "const BUSINESSES=" + json.dumps(summaries, ensure_ascii=False, separators=(",", ":")) + ";\n"
+        "const CATEGORIES=" + json.dumps(metrics["categories"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+        "const SEMANTIC_FACETS=" + json.dumps(metrics["semantic_facets"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+        "const SEMANTIC_LABELS=" + json.dumps(TAG_LABELS, ensure_ascii=False, separators=(",", ":")) + ";\n"
+        "const AREAS=" + json.dumps(metrics["areas"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+    )
+    (OUTPUT_DIR / "static" / "directory-data.js").write_text(directory_data, encoding="utf-8")
 
     static_src = STATIC_DIR / "app.js"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "app.js")
-    static_src = STATIC_DIR / "classifieds.js"
+    static_src = STATIC_DIR / "detail.js"
     if static_src.exists():
-        shutil.copy2(static_src, OUTPUT_DIR / "static" / "classifieds.js")
+        shutil.copy2(static_src, OUTPUT_DIR / "static" / "detail.js")
     static_src = STATIC_DIR / "tokens.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "tokens.css")
-    static_src = STATIC_DIR / "i18n.js"
-    if static_src.exists():
-        shutil.copy2(static_src, OUTPUT_DIR / "static" / "i18n.js")
-    static_src = STATIC_DIR / "modes.js"
-    if static_src.exists():
-        shutil.copy2(static_src, OUTPUT_DIR / "static" / "modes.js")
     static_src = STATIC_DIR / "styles.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "styles.css")
-    print(f"  static/ — tokens.css, i18n.js, modes.js, app.js, classifieds.js, styles.css")
+    vendor_src = STATIC_DIR / "vendor"
+    if vendor_src.exists():
+        shutil.copytree(vendor_src, OUTPUT_DIR / "static" / "vendor")
+    print(f"  static/ — directory-data.js, tokens.css, app.js, detail.js, styles.css")
+
+    production_base = "https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app/"
+    urls = [production_base] + [production_base + f"businesses/{b['slug']}.html" for b in businesses]
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap += "".join(f"  <url><loc>{url}</loc></url>\n" for url in urls)
+    sitemap += "</urlset>\n"
+    (OUTPUT_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (OUTPUT_DIR / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {production_base}sitemap.xml\n", encoding="utf-8")
+    print("  robots.txt + sitemap.xml")
+
+    generate_deployment_wrapper()
+    print("  release root — redirect, 404, robots, .nojekyll")
 
     print(f"\nDone. Output: {OUTPUT_DIR}")
 
