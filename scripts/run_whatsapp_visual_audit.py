@@ -15,8 +15,6 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
-from playwright.async_api import async_playwright
-
 try:
     from .autovisual_whatsapp_checkifier import (
         DEFAULT_WORKSPACE, ROOT, attach_screenshot, read_ledger, validate_attempt, write_review_markdown,
@@ -92,6 +90,10 @@ async def capture(page, item: dict, screenshot: Path) -> tuple[list[str], str]:
 
 
 async def run(args) -> int:
+    # Playwright is optional audit tooling. Import it only when running the
+    # browser capture so launch-only CI can test the pure classification logic.
+    from playwright.async_api import async_playwright
+
     workspace = args.workspace.resolve()
     queue = json.loads((workspace / "queues" / f"{args.queue}.json").read_text(encoding="utf-8"))
     completed = {
