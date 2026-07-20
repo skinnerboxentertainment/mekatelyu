@@ -70,7 +70,10 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             if not dependency.exists():
                 errors.append(f"missing vendored dependency: {relative}")
                 continue
-            actual_hash = hashlib.sha256(dependency.read_bytes()).hexdigest()
+            dependency_bytes = dependency.read_bytes()
+            if dependency.suffix in {".css", ".js"}:
+                dependency_bytes = dependency_bytes.replace(b"\r\n", b"\n")
+            actual_hash = hashlib.sha256(dependency_bytes).hexdigest()
             if actual_hash != expected_hash:
                 errors.append(f"vendored dependency hash mismatch: {relative}")
 
