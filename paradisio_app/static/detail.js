@@ -11,7 +11,13 @@
             } else {
                 var map = L.map(mapDiv, { zoomControl: false, attributionControl: false }).setView([lat, lng], 15);
                 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-                L.marker([lat, lng]).addTo(map);
+                var pinIcon = L.divIcon({
+                    html: '<svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg"><path d="M14 0C6.3 0 0 6.3 0 14c0 10.5 14 26 14 26s14-15.5 14-26C28 6.3 21.7 0 14 0zm0 20a6 6 0 110-12 6 6 0 010 12z" fill="#1a5e3e"/><circle cx="14" cy="14" r="4" fill="#fff"/></svg>',
+                    className: "",
+                    iconSize: [28, 40],
+                    iconAnchor: [14, 40],
+                });
+                L.marker([lat, lng], { icon: pinIcon }).addTo(map);
             }
         }
     }
@@ -66,5 +72,14 @@
     var waLink = document.querySelector("[data-share-wa]");
     if (waLink) {
         waLink.href = "https://wa.me/?text=" + encodeURIComponent(document.title + "\n" + window.location.href);
+    }
+
+    var amToggle = document.querySelector("[data-amenities-toggle]");
+    var amSection = document.querySelector("[data-amenities-section]");
+    if (amToggle && amSection) {
+        amToggle.addEventListener("click", function () {
+            var expanded = amSection.classList.toggle("expanded");
+            amToggle.textContent = expanded ? "Show less" : "View all " + amSection.querySelectorAll(".amenity-chip").length + " amenities";
+        });
     }
 })();

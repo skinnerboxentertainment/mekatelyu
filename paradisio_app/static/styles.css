@@ -200,8 +200,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .primary-cta:hover { background: var(--coral-500); }
 
 /* Amenities */
-.amenities { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-1); }
+.amenities-section { margin: var(--space-3) 0; }
+.amenities-heading { display: block; font-size: var(--text-sm); font-weight: 600; color: var(--ink); margin-bottom: var(--space-1); text-transform: uppercase; letter-spacing: 0.03em; }
+.amenities { display: flex; flex-wrap: wrap; gap: var(--space-1); }
 .amenity-chip { font-size: var(--text-xs); padding: 2px 8px; border-radius: var(--radius-pill); background: var(--sand-50); color: var(--jungle-700); border: 1px solid var(--border); }
+.amenities-toggle { display: inline-block; margin-top: var(--space-1); font-size: var(--text-xs); font-weight: 500; color: var(--jungle-700); background: none; border: none; cursor: pointer; padding: 4px 0; font-family: inherit; }
+.amenities-toggle:hover { text-decoration: underline; }
+[data-amenities-section] .amenity-chip:nth-child(n+6) { display: none; }
+[data-amenities-section].expanded .amenity-chip:nth-child(n+6) { display: inline-flex; }
 
 /* Loading / Empty states */
 .loading { text-align: center; padding: var(--space-7) 0; color: var(--faint); font-size: var(--text-base); }
