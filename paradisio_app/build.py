@@ -16,6 +16,81 @@ try:
 except ImportError:  # Direct execution: python paradisio_app/build.py
     from semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 
+AMENITY_MAP = {
+    "wi-fi gratis": "Free Wi-Fi", "wifi": "Free Wi-Fi", "wi-fi": "Free Wi-Fi",
+    "incluye wi-fi": "Free Wi-Fi",
+    "incluye wi-fi y estacionamiento": "Free Wi-Fi \u00b7 Free parking",
+    "incluye desayuno, wi-fi y estacionamiento": "Free breakfast \u00b7 Free Wi-Fi \u00b7 Free parking",
+    "incluye desayuno y estacionamiento": "Free breakfast \u00b7 Free parking",
+    "incluye desayuno": "Free breakfast", "desayuno incluido": "Free breakfast",
+    "desayuno": "Breakfast available", "desayuno pago": "Paid breakfast",
+    "estacionamiento gratuito": "Free parking",
+    "aire acondicionado": "Air conditioning",
+    "se permiten mascotas": "Pet friendly",
+    "accesible": "Wheelchair accessible",
+    "piscina": "Pool", "piscina al aire libre": "Outdoor pool",
+    "piscina cubierta / aire libre": "Indoor/outdoor pool",
+    "gimnasio": "Gym",
+    "transporte desde/hacia el aeropuerto": "Airport shuttle",
+    "cocina en todas las habitaciones": "In-room kitchen",
+    "cocina en algunas habitaciones": "Kitchen in some rooms",
+    "cocina": "Kitchen",
+    "bar": "Bar", "bar restaurante": "Bar & restaurant",
+    "spa": "Spa", "spa de masajes": "Massage spa",
+    "libre de humo": "Smoke-free",
+    "centro de negocios": "Business center",
+    "cocina latinoamericana": "Latin American cuisine",
+    "cocina panasi\u00e1tica": "Pan-Asian cuisine",
+    "bed & breakfast": "Bed & breakfast",
+    "espacio": "Outdoor space", "terraza": "Terrace",
+    "restobar": "Restobar",
+    "incluye desayuno, wifi y estacionamiento": "Free breakfast \u00b7 Free Wi-Fi \u00b7 Free parking",
+    "incluye wifi y estacionamiento": "Free Wi-Fi \u00b7 Free parking",
+    "incluye desayuno y wifi": "Free breakfast \u00b7 Free Wi-Fi",
+    "wifi gratis": "Free Wi-Fi",
+    "incluye desayuno y wi-fi": "Free breakfast \u00b7 Free Wi-Fi",
+}
+
+AMENITY_NOISE = {"puro", "puerto", "chao", "physis", "azul", "espagueti", "beach gym",
+                 "secret garden", "hotel piscina", "el jardin", "restaurante",
+                 "internet", "incluye"}
+
+
+def normalize_amenities(raw_list):
+    normalized = []
+    seen = set()
+    for a in raw_list:
+        key = a.lower().strip()
+        if any(k in key for k in AMENITY_NOISE):
+            continue
+        eng = AMENITY_MAP.get(key)
+        if eng and eng not in seen:
+            normalized.append(eng)
+            seen.add(eng)
+    return normalized
+
+
+def is_auto_description(text):
+    if not text:
+        return True
+    text = text.strip()
+    return len(text) < 100 and re.match(r'^[A-Z][a-zA-Z0-9\s\-\'\u00c0-\u024f]+ is (a|an) ', text.strip(), re.I) is not None
+
+
+def generate_description(row, enrich):
+    cat_label = row.get("category", "").strip().replace("_", " ").title()
+    area = row.get("area", "").strip() or "Puerto Viejo"
+    rating = enrich.get("rating") if enrich else None
+    parts = [f"{cat_label} in {area}."]
+    if rating:
+        parts.append(f"Rated {rating}/5 on Google Maps.")
+    phone = row.get("phone", "").strip()
+    website = row.get("website", "").strip()
+    instagram = row.get("instagram_handle", "").strip()
+    if phone or website or instagram:
+        parts.append("Contact for hours and availability.")
+    return " ".join(parts)
+
 BASE_DIR = Path(__file__).parent
 TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
@@ -387,7 +462,7 @@ def build_business(row):
         "semantic_attributes": semantic["attributes"],
         "search_synonyms": semantic["search_synonyms"],
         "semantic_review_state": semantic["review_state"],
-        "description": row.get("description_full", "").strip()[:500],
+        "description": generate_description(row, enrich) if is_auto_description(row.get("description_full", "")) else row.get("description_full", "").strip()[:500],
         "verified_date": row.get("verified_date", "").strip(),
         "claim": {"status": "unclaimed"},
         "rating": enrich.get("rating"),
@@ -395,7 +470,7 @@ def build_business(row):
         "subcategory": enrich.get("subcategory"),
         "check_in": enrich.get("check_in"),
         "check_out": enrich.get("check_out"),
-        "amenities": enrich.get("amenities", []),
+        "amenities": normalize_amenities(enrich.get("amenities", [])),
         "prices": enrich.get("prices", [])[:3],
         "open_status": enrich.get("open_status"),
         "hours": enrich.get("hours"),
@@ -680,20 +755,7 @@ def biz_amenities(biz):
     am = biz.get("amenities", [])
     if not am:
         return ""
-    # Filter out Maps UI noise and deduplicate
-    noise = {"restaurantes", "hoteles", "bares", "cafes", "farmacias", "estacionamientos",
-             "cosas que hacer", "guardado", "recientes", "transporte publico", "cajeros automaticos"}
-    filtered = []
-    seen = set()
-    for a in am:
-        key = a.lower().strip()
-        if key in noise or key in seen:
-            continue
-        seen.add(key)
-        filtered.append(a)
-    if not filtered:
-        return ""
-    chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in filtered[:6])
+    chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in am[:6])
     return f'<div class="amenities">{chips}</div>'
 
 
