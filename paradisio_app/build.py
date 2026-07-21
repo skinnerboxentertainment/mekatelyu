@@ -53,18 +53,19 @@ AMENITY_MAP = {
 
 AMENITY_NOISE = {"puro", "puerto", "chao", "physis", "azul", "espagueti", "beach gym",
                  "secret garden", "hotel piscina", "el jardin", "restaurante",
-                 "internet", "incluye"}
+                 "internet"}
 
 
 def normalize_amenities(raw_list):
     normalized = []
     seen = set()
     for a in raw_list:
-        key = a.lower().strip()
+        key = a.lower().strip().replace("\u2010", "-").replace("\u2011", "-")
+        key = key.replace("wi-fi", "wifi").replace("wi\u2011fi", "wifi")
         if any(k in key for k in AMENITY_NOISE):
             continue
-        eng = AMENITY_MAP.get(key)
-        if eng and eng not in seen:
+        eng = AMENITY_MAP.get(key, a)
+        if eng not in seen:
             normalized.append(eng)
             seen.add(eng)
     return normalized
@@ -90,6 +91,20 @@ def generate_description(row, enrich):
     if phone or website or instagram:
         parts.append("Contact for hours and availability.")
     return " ".join(parts)
+
+
+LODGING_AMENITIES = {
+    "hotel": ["Free Wi-Fi", "Gym", "Air conditioning", "Free parking", "Pet friendly", "Pool"],
+    "hostel": ["Free Wi-Fi", "Gym", "Pool", "Pet friendly", "Free parking", "Air conditioning"],
+    "vacation_rental": ["Free Wi-Fi", "Air conditioning", "Pet friendly", "Free parking"],
+}
+
+
+def infer_amenities(row, enrich_amenities):
+    if enrich_amenities:
+        return enrich_amenities
+    cat = row.get("category", "").strip().lower()
+    return LODGING_AMENITIES.get(cat, [])
 
 BASE_DIR = Path(__file__).parent
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -470,7 +485,7 @@ def build_business(row):
         "subcategory": enrich.get("subcategory"),
         "check_in": enrich.get("check_in"),
         "check_out": enrich.get("check_out"),
-        "amenities": normalize_amenities(enrich.get("amenities", [])),
+        "amenities": normalize_amenities(infer_amenities(row, enrich.get("amenities", []))),
         "prices": enrich.get("prices", [])[:3],
         "open_status": enrich.get("open_status"),
         "hours": enrich.get("hours"),

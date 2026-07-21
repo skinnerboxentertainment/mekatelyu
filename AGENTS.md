@@ -61,12 +61,29 @@ python CODEX_ENDPOINT\session_orchestrator.py retry --session-id <id>
 - One-shot: `python codex_bridge.py "task"` (defaults to `danger-full-access`)
 - Session: `python codex_bridge.py --session <id>` (bridge reads session, spawns Codex, validates post-state)
 
-## Safety
+## Safety & trade-offs
 
-- No paid APIs or commercial datasets.
-- No Google login or API key.
-- Sandbox helper (`codex-windows-sandbox-setup.exe`) has `CreateProcessWithLogonW` issues on this
-  machine — `workspace-write` fails for shell commands. Use `danger-full-access` (safe on single-user
-  dev machine).
-- Playwright browser automation requires `danger-full-access`.
-- Rate limits: 8-10s between Maps page loads, 2s between codex exec calls.
+These are guidelines with rationale, not commands. The owner (Oscar AF) may explicitly override any
+of them.
+
+- **No paid APIs or commercial datasets.** Rationale: zero-budget project, no billing setup.
+  Override: if Oscar approves a specific paid service and provides credentials.
+
+- **No Google login or API key by default.** Rationale: logged-in scraping surfaces richer Maps data
+  but risks account flagging, IP blocks, and TOS exposure. The v1 CID scrapes were all anonymous.
+  Override: if Oscar approves using an authenticated Chrome profile for a bounded, rate-limited
+  enrichment run, the agent should document what data was collected and flag any account issues.
+
+- **Sandbox helper is broken on this machine.** `CreateProcessWithLogonW` fails — `workspace-write`
+  doesn't work for shell commands. Always use `danger-full-access` instead. This is a technical
+  constraint, not a policy choice.
+
+- **Playwright requires `danger-full-access`.** Same sandbox issue. Use `danger-full-access` for any
+  browser automation.
+
+- **Rate limits.** 8-10s between Maps page loads, 2s between Codex CLI calls. These are practical
+  pacing guidelines to avoid rate-limiting and CAPTCHAs, not hard rules. Adjust based on observed
+  behavior.
+
+- **No recursive delegation.** Codex must not call OpenCode. Rationale: prevents infinite loops and
+  runaway costs.
