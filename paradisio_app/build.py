@@ -1039,26 +1039,50 @@ def render_business_html(biz):
 </div>"""
 
     channel_type = pc["type"]
-    qr_section = f"""<section class="biz-qr" aria-labelledby="qr-heading">
-<div class="qr-preview">
-<img src="../qr/{biz['slug']}.png" alt="QR code for {name} on Whappin Puerto Viejo" width="120" height="120" loading="lazy">
-<div class="qr-preview-text">
-<strong id="qr-heading">Share this profile</strong>
-<p>Scan to open this establishment's Whappin Puerto Viejo page.</p>
+    share_row = f"""<div class="share-row">
+<button class="share-trigger" data-share-trigger>Share this place &#183; <span class="share-icon">&#8600;</span></button>
+</div>
+<div class="share-sheet" data-share-sheet hidden>
+<div class="share-sheet-inner">
+<button class="share-option" data-share-copy>Copy link</button>
+<a href="#" class="share-option" data-share-wa target="_blank" rel="noopener">Share via WhatsApp</a>
+<button class="share-option" data-share-qr>Show QR code</button>
+<button class="share-option share-close" data-share-close>Close</button>
+</div>
+<div class="share-qr" data-share-qr hidden>
+<img src="../qr/{biz['slug']}.png" alt="QR code for {name}" width="200" height="200" loading="lazy">
 <a href="../qr/{biz['slug']}.png" class="qr-download-link" download>Download QR code</a>
-<button class="share-btn" data-share>Share via &hellip;</button>
 </div>
-</div>
-</section>"""
+</div>"""
     inline_cta = "" if channel_type == "None" else f"""<div class="biz-main hide-mobile">
 <a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
 </div>"""
 
-    sticky_cta = "" if channel_type == "None" else f"""<div class="sticky-bar">
-<a href="{pc["url"]}" class="primary-cta" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="{channel_type}">{pc["label"]}</a>
-{'<a href="tel:' + biz['channels']['phone_normalized'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>' if biz['channels']['phone_normalized'] and pc['type'] != 'Call' else ''}
-{'<a href="https://instagram.com/' + biz['channels']['instagram'] + '" class="secondary-btn" data-plausible-event="ContactClick" data-plausible-channel="Instagram">IG</a>' if biz['channels']['instagram'] and pc['type'] != 'Instagram' else ''}
-</div>"""
+    has_coords = bool(biz.get("lat") and biz.get("lng"))
+    maps_url = ""
+    if has_coords:
+        maps_url = f"https://www.google.com/maps/dir/?api=1&destination={biz['lat']},{biz['lng']}"
+    elif biz["channels"].get("google_maps_cid"):
+        maps_url = f"https://www.google.com/maps?cid={biz['channels']['google_maps_cid']}"
+
+    call_ok = bool(biz['channels'].get('phone_normalized'))
+    wa_ok = bool(biz['channels'].get('whatsapp'))
+    show_call = call_ok and pc['type'] != 'Call'
+
+    sticky_actions = ""
+    if maps_url or show_call or True:
+        parts = []
+        if maps_url:
+            parts.append(f'<a href="{maps_url}" class="sticky-directions" target="_blank" rel="noopener">Directions</a>')
+        if show_call:
+            parts.append(f'<a href="tel:{biz["channels"]["phone_normalized"]}" class="sticky-call" data-plausible-event="ContactClick" data-plausible-channel="Call">Call</a>')
+        elif wa_ok:
+            wa_url = biz["channels"]["whatsapp"]
+            if wa_url.startswith("+"):
+                wa_url = "https://wa.me/" + wa_url.lstrip("+")
+            parts.append(f'<a href="{wa_url}" class="sticky-call" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">WhatsApp</a>')
+        parts.append('<button class="sticky-share" data-share-trigger>Share</button>')
+        sticky_actions = f'<div class="sticky-bar">{"".join(parts)}</div>'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1082,7 +1106,7 @@ def render_business_html(biz):
 {nav}
 <main class="container">
 <header class="header biz-header">
-<a href="../index.html" class="back-link">&larr; Back to directory</a>
+<a href="../index.html" class="back-link">&larr; Directory</a>
 <h1>{name}</h1>
 <div class="biz-meta">
 <span class="biz-category">{category_label(biz["category"])}</span>
@@ -1099,18 +1123,18 @@ def render_business_html(biz):
 {biz_freshness(biz)}
 </header>
 {inline_cta}
-<div class="biz-content">
-<div class="biz-links">{links_html}</div>
-{map_html}
-{qr_section}
 <div class="biz-desc">
 <p>{description}</p>
 </div>
-<footer class="footer">
-<p><a href="../index.html">&larr; Back to directory</a> &middot; <a href="{report_url}" target="_blank" rel="noopener">Report incorrect information</a></p>
-</footer>
+<div class="biz-content">
+<div class="biz-links">{links_html}</div>
+{map_html}
+{share_row}
 </div>
-{sticky_cta}
+<footer class="footer">
+<p><a href="{report_url}" target="_blank" rel="noopener">Suggest an edit</a></p>
+</footer>
+{sticky_actions}
 </main>
 <script src="../static/detail.js?v={TAXONOMY_VERSION}"></script>
 </body>
