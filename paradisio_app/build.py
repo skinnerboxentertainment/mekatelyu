@@ -550,7 +550,7 @@ def render_index_html(businesses, metrics):
 <title>Whappin Puerto Viejo</title>
 <meta name="description" content="Find trusted places across Puerto Viejo.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <link rel="canonical" href="https://www.whappin.com/">
 <meta property="og:title" content="Whappin Puerto Viejo">
 <meta property="og:description" content="Find trusted places across Puerto Viejo.">
@@ -1091,7 +1091,7 @@ def render_business_html(biz):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{name} — {area} — Whappin Puerto Viejo</title>
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <link rel="canonical" href="https://www.whappin.com/businesses/{biz['slug']}.html">
 <meta property="og:title" content="{name} — Whappin Puerto Viejo">
 <meta property="og:description" content="{name} in {area}. View location and available contact options.">
