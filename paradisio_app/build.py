@@ -159,7 +159,7 @@ def load_maps_enrich():
             lookup[cid] = r["data"]
     return lookup
 
-WHATSAPP_TEMPLATE = "Hola {name}, vi su pagina en Paradisio. Estan abiertos hoy? Me gustaria saber mas sobre sus servicios. Gracias."
+WHATSAPP_TEMPLATE = "Hi {name}, I found you on Whappin Puerto Viejo. Are you open? I'd like to know more about your services. Thanks."
 
 LOCATION_TOKENS = {"puerto viejo", "limon", "limon", "costa rica", "playa negra", "playa cocles",
                    "playa chiquita", "punta uva", "playa punta uva", "cahuita", "manzanillo",
@@ -735,8 +735,11 @@ def biz_hours(biz):
     os = biz.get("open_status")
     if os:
         clean = os.replace("\u202f", " ").replace("\u00a0", " ").strip()
-        cls = "biz-open" if "abierto" in clean.lower() or "open" in clean.lower() else "biz-closed"
-        parts.append(f'<span class="{cls}">{clean}</span>')
+        lower = clean.lower()
+        is_open = "abierto" in lower or "open" in lower
+        cls = "biz-open" if is_open else "biz-closed"
+        label = "Open" if is_open else "Closed"
+        parts.append(f'<span class="{cls}">{label}</span>')
     hr = biz.get("hours")
     if hr:
         parts.append(f'<span class="biz-hours-line">{hr}</span>')
@@ -755,8 +758,11 @@ def biz_amenities(biz):
     am = biz.get("amenities", [])
     if not am:
         return ""
-    chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in am[:6])
-    return f'<div class="amenities">{chips}</div>'
+    total = len(am)
+    all_chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in am)
+    if total <= 5:
+        return f'<div class="amenities-section"><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div></div>'
+    return f'<div class="amenities-section" data-amenities-section><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div><button class="amenities-toggle" data-amenities-toggle>View all {total} amenities</button></div>'
 
 
 def biz_semantic_facets(biz):
