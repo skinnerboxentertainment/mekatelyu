@@ -708,7 +708,7 @@ def render_index_html(businesses, metrics):
 <div id="map-container" class="map-view"></div>
 <footer class="footer">
 <p>Whappin Puerto Viejo &middot; Directory updated {date}</p>
-<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=business_correction.md" target="_blank" rel="noopener">Report incorrect information</a></p>
+<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md" target="_blank" rel="noopener">Report a problem</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=business_correction.md" target="_blank" rel="noopener">Suggest an edit</a></p>
 </footer>
 </main>
 <script src="static/directory-data.js?v={TAXONOMY_VERSION}"></script>
@@ -1222,7 +1222,7 @@ def render_business_html(biz):
 {share_row}
 </div>
 <footer class="footer">
-<p><a href="{report_url}" target="_blank" rel="noopener">Suggest an edit</a></p>
+<p><a href="{report_url}" target="_blank" rel="noopener">Suggest an edit</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md&title=QA:%20{biz['slug']}" target="_blank" rel="noopener">Report a problem</a></p>
 </footer>
 {sticky_actions}
 </main>
