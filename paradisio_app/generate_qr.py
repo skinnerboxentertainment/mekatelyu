@@ -27,13 +27,13 @@ except ImportError:
     sys.exit(1)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-APP_DIR = PROJECT_ROOT / "docs" / "paradisio_app"
+APP_DIR = PROJECT_ROOT / "release"
 BUSINESSES_JSON = APP_DIR / "data" / "businesses.json"
 QR_DIR = APP_DIR / "qr"
 
 # Production GitHub Pages URL. QR codes encode absolute URLs so phone scanners work.
 # Override with PARADISIO_BASE_URL env var for custom domains or local testing.
-DEFAULT_BASE_URL = "https://skinnerboxentertainment.github.io/mekatelyu/paradisio_app"
+DEFAULT_BASE_URL = "https://www.whappin.com"
 BASE_URL = os.environ.get("PARADISIO_BASE_URL", DEFAULT_BASE_URL)
 
 QR_SIZE = 300  # pixels at 300 DPI = 1 inch
