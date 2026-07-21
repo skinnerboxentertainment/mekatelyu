@@ -711,7 +711,7 @@ def rating_html(biz):
     full = int(r)
     half = "&#189;" if r % 1 >= 0.3 else ""
     stars = "&#9733;" * full + half
-    return f'<div class="biz-rating">{stars} {r}</div>'
+    return f'<div class="biz-rating">{stars} {r} <span class="rating-source">from Google Maps</span></div>'
 
 
 def biz_addr(biz):
@@ -721,10 +721,17 @@ def biz_addr(biz):
         parts.append(a)
     pc = biz.get("plus_code")
     if pc:
-        parts.append(f'<span class="plus-code">{pc}</span>')
+        parts.append(pc)
     if not parts and a:
         parts.append(a)
-    return f'<div class="biz-addr">{" · ".join(parts)}</div>' if parts else ""
+    if not parts:
+        area = biz.get("area", "")
+        if area and area != "Unknown":
+            parts.append(f"{area}, Puerto Viejo")
+    if not parts:
+        return ""
+    label = " \u00b7 ".join(parts)
+    return f'<div class="biz-addr"><span class="addr-label">\U0001f4cd {label}</span> <button class="addr-copy" data-addr-copy>Copy</button></div>'
 
 
 def clean_time(t):
