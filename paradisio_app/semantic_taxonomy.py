@@ -7,7 +7,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 
-TAXONOMY_VERSION = "2026-07-20.1"
+TAXONOMY_VERSION = "2026-07-21.1"
 
 GROUP_LABELS = {
     "stay": "Places to Stay",

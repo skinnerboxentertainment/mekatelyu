@@ -165,8 +165,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* Share */
 .share-row { margin: var(--space-3) 0; }
-.share-trigger { display: inline-block; font-size: var(--text-sm); font-weight: 500; color: var(--jungle-700); background: none; border: none; cursor: pointer; padding: 6px 0; font-family: inherit; }
-.share-trigger:hover { text-decoration: underline; }
+.share-trigger { display: inline-block; padding: 8px 20px; font-size: var(--text-sm); font-weight: 600; color: var(--jungle-700); background: none; border: 1px solid var(--jungle-300); border-radius: var(--radius-md); cursor: pointer; font-family: inherit; }
+.share-trigger:hover { background: var(--jungle-100); }
 .share-icon { font-size: 1.1em; }
 .share-sheet { position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--surface-raised); border-radius: var(--radius-lg) var(--radius-lg) 0 0; box-shadow: 0 -4px 20px rgba(23,33,28,0.15); padding: var(--space-4) var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom, 0px)); animation: slideUp 0.2s ease; }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
@@ -242,7 +242,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .biz-header h1 { font-size: 1.5rem; }
   .map-container { height: 250px; }
   .hide-mobile { display: block; }
-  .sticky-bar { display: none; }
   .biz-main { display: block; }
 }
 
