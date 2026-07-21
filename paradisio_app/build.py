@@ -1046,10 +1046,10 @@ def render_business_html(biz):
 <div class="share-sheet-inner">
 <button class="share-option" data-share-copy>Copy link</button>
 <a href="#" class="share-option" data-share-wa target="_blank" rel="noopener">Share via WhatsApp</a>
-<button class="share-option" data-share-qr>Show QR code</button>
+<button class="share-option" data-share-toggle-qr>Show QR code</button>
 <button class="share-option share-close" data-share-close>Close</button>
 </div>
-<div class="share-qr" data-share-qr hidden>
+<div class="share-qr" data-share-qr-panel hidden>
 <img src="../qr/{biz['slug']}.png" alt="QR code for {name}" width="200" height="200" loading="lazy">
 <a href="../qr/{biz['slug']}.png" class="qr-download-link" download>Download QR code</a>
 </div>

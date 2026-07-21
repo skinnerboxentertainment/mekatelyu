@@ -17,7 +17,7 @@
     }
 
     var sheet = document.querySelector("[data-share-sheet]");
-    var qrBlock = document.querySelector("[data-share-qr]");
+    var qrPanel = document.querySelector("[data-share-qr-panel]");
     var triggers = document.querySelectorAll("[data-share-trigger]");
 
     function toggleSheet(e) {
@@ -25,8 +25,7 @@
         if (!sheet) return;
         var open = sheet.hidden;
         sheet.hidden = !open;
-        if (qrBlock) qrBlock.hidden = true;
-        // Re-trigger all trigger buttons
+        if (qrPanel) qrPanel.hidden = true;
         triggers.forEach(function (t) { t.setAttribute("aria-expanded", String(open)); });
     }
 
@@ -38,7 +37,7 @@
     document.addEventListener("click", function (e) {
         if (sheet && !sheet.hidden && !sheet.contains(e.target) && !e.target.closest("[data-share-trigger]")) {
             sheet.hidden = true;
-            if (qrBlock) qrBlock.hidden = true;
+            if (qrPanel) qrPanel.hidden = true;
             triggers.forEach(function (t) { t.setAttribute("aria-expanded", "false"); });
         }
     });
@@ -57,10 +56,10 @@
         });
     }
 
-    var qrToggle = document.querySelector("[data-share-qr]");
+    var qrToggle = document.querySelector("[data-share-toggle-qr]");
     if (qrToggle) {
         qrToggle.addEventListener("click", function () {
-            if (qrBlock) qrBlock.hidden = !qrBlock.hidden;
+            if (qrPanel) qrPanel.hidden = !qrPanel.hidden;
         });
     }
 
