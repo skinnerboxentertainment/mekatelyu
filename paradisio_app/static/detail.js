@@ -82,4 +82,17 @@
             amToggle.textContent = expanded ? "Show less" : "View all " + amSection.querySelectorAll(".amenity-chip").length + " amenities";
         });
     }
+
+    var addrCopy = document.querySelector("[data-addr-copy]");
+    if (addrCopy) {
+        addrCopy.addEventListener("click", function () {
+            var text = addrCopy.previousElementSibling ? addrCopy.previousElementSibling.textContent.replace(/^\uD83D\uDCCD\s*/, "") : "";
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(function () {
+                    addrCopy.textContent = "Copied!";
+                    setTimeout(function () { addrCopy.textContent = "Copy"; }, 2000);
+                });
+            }
+        });
+    }
 })();

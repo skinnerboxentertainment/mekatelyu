@@ -11,7 +11,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (min-width: 768px) { .container { padding: var(--space-4) var(--space-5); } }
 
 /* Site nav */
-.site-nav { background: var(--jungle-900); padding: var(--space-2) var(--space-4); display: flex; gap: var(--space-1); flex-wrap: wrap; align-items: center; }
+.site-nav { position: sticky; top: 0; z-index: 50; background: var(--jungle-900); padding: var(--space-2) var(--space-4); display: flex; gap: var(--space-1); flex-wrap: wrap; align-items: center; }
 .site-nav .site-logo { color: #fff; font-weight: 700; font-size: var(--text-sm); text-decoration: none; margin-right: auto; }
 .site-nav a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: var(--text-sm); padding: var(--space-1) var(--space-3); border-radius: var(--radius-sm); }
 .site-nav a:hover { color: #fff; background: rgba(255,255,255,0.1); }
@@ -114,7 +114,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .biz-header h1 { font-size: 1.5rem; line-height: var(--leading-tight); }
 .biz-info { margin-bottom: var(--space-3); }
 .biz-rating { font-size: var(--text-base); color: var(--coral-600); margin-top: var(--space-1); }
-.biz-addr { font-size: var(--text-sm); color: var(--muted); margin-top: 2px; }
+.rating-source { font-size: var(--text-xs); color: var(--muted); font-weight: 400; }
+.biz-addr { font-size: var(--text-sm); color: var(--muted); margin-top: 2px; display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.addr-label { white-space: normal; }
+.addr-copy { font-size: var(--text-xs); color: var(--jungle-700); background: none; border: none; cursor: pointer; padding: 2px 6px; font-family: inherit; white-space: nowrap; }
+.addr-copy:hover { text-decoration: underline; }
 .biz-hours { font-size: var(--text-sm); color: var(--muted); margin-top: 2px; }
 .back-link { font-size: var(--text-sm); color: var(--jungle-700); text-decoration: none; display: inline-block; margin-bottom: var(--space-2); padding: var(--space-1) 0; min-height: 36px; line-height: 28px; }
 .biz-meta { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-1); font-size: var(--text-sm); color: var(--muted); }
