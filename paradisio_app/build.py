@@ -1046,6 +1046,7 @@ def render_business_html(biz):
 <strong id="qr-heading">Share this profile</strong>
 <p>Scan to open this establishment's Whappin Puerto Viejo page.</p>
 <a href="../qr/{biz['slug']}.png" class="qr-download-link" download>Download QR code</a>
+<button class="share-btn" data-share>Share via &hellip;</button>
 </div>
 </div>
 </section>"""
