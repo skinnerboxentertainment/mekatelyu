@@ -1,6 +1,6 @@
 # Semantic Taxonomy Census
 
-Taxonomy version: `2026-07-20.1`
+Taxonomy version: `2026-07-21.1`
 
 - Master records indexed: 737
 - Unique semantic keys: 737
