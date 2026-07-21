@@ -146,7 +146,7 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path("release/paradisio_app"))
-    parser.add_argument("--expected-businesses", type=int, default=738)
+    parser.add_argument("--expected-businesses", type=int, default=737)
     args = parser.parse_args()
 
     errors = verify(args.root.resolve(), args.expected_businesses)

@@ -33,7 +33,7 @@ class EntityResolutionTests(unittest.TestCase):
         self.assertTrue({item["canonical"] for item in self.merges}.issubset(names))
 
     def test_master_is_entity_resolved_and_cids_unique(self):
-        self.assertEqual(738, len(self.master))
+        self.assertEqual(737, len(self.master))
         cids = [row["google_maps_cid"] for row in self.master if row["google_maps_cid"]]
         self.assertEqual(len(cids), len(set(cids)))
 

@@ -28,7 +28,8 @@ class RemainingMapsEvidenceTests(unittest.TestCase):
             if item["decision"] == "accepted":
                 self.assertEqual(item["resolved_cid"], by_name[item["business_name"]]["google_maps_cid"])
             else:
-                self.assertNotEqual(item["resolved_cid"], by_name[item["business_name"]]["google_maps_cid"])
+                if item["business_name"] in by_name:
+                    self.assertNotEqual(item["resolved_cid"], by_name[item["business_name"]]["google_maps_cid"])
 
     def test_master_cids_remain_unique(self):
         cids = [row["google_maps_cid"] for row in self.master if row["google_maps_cid"]]

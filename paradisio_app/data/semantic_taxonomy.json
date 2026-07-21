@@ -1,6 +1,6 @@
 {
   "taxonomy_version": "2026-07-20.1",
-  "record_count": 738,
+  "record_count": 737,
   "groups": {
     "stay": "Places to Stay",
     "eat": "Eat & Drink",
@@ -25122,48 +25122,6 @@
         "maps_parsed": true,
         "maps_subcategory": true,
         "maps_full_text": true,
-        "website": false
-      },
-      "conflicts": [],
-      "review_state": "accepted_deterministic",
-      "taxonomy_version": "2026-07-20.1"
-    },
-    "record:96e40bdaeb07f7fa": {
-      "key": "record:96e40bdaeb07f7fa",
-      "business_name": "Casa Alegre",
-      "area": "Playa Negra",
-      "google_maps_cid": "",
-      "primary_category": "restaurant",
-      "groups": [
-        "eat"
-      ],
-      "tags": [
-        "restaurant"
-      ],
-      "attributes": [],
-      "search_synonyms": [
-        "bebidas",
-        "comer",
-        "dining",
-        "drink",
-        "eat",
-        "food",
-        "restaurant",
-        "restaurants"
-      ],
-      "assertions": {
-        "restaurant": {
-          "confidence": 1.0,
-          "source": "master.category",
-          "rule": "primary:restaurant",
-          "evidence": "restaurant"
-        }
-      },
-      "evidence_coverage": {
-        "master_description": true,
-        "maps_parsed": false,
-        "maps_subcategory": false,
-        "maps_full_text": false,
         "website": false
       },
       "conflicts": [],

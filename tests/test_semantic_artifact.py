@@ -20,8 +20,8 @@ class SemanticArtifactTests(unittest.TestCase):
 
     def test_index_has_one_record_per_business(self):
         records = self.index["records"]
-        self.assertEqual(738, self.index["record_count"])
-        self.assertEqual(738, len(records))
+        self.assertEqual(737, self.index["record_count"])
+        self.assertEqual(737, len(records))
         self.assertEqual({semantic_key(row) for row in self.master}, set(records))
 
     def test_primary_categories_are_preserved(self):

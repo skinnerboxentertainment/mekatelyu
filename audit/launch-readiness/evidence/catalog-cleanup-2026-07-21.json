@@ -1,0 +1,15 @@
+[
+  {
+    "action": "removed_duplicate",
+    "removed": "Casa Alegre",
+    "kept": "Casa Alegra",
+    "reason": "Same coordinates (9.6486486,-82.7630898), same area/category \u2014 duplicate row"
+  },
+  {
+    "action": "set_status",
+    "business": "Casa Miluca",
+    "old_status": "",
+    "new_status": "needs_verification",
+    "reason": "No CID; CID attempt resolved to wrong target (Casa Maryluz)"
+  }
+]

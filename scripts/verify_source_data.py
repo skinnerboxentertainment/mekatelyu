@@ -21,8 +21,8 @@ def main() -> int:
     build.dedup_slugs(businesses)
     errors: list[str] = []
 
-    if len(rows) != 738:
-        errors.append(f"expected entity-resolved launch baseline of 738 businesses, found {len(rows)}")
+    if len(rows) != 737:
+        errors.append(f"expected entity-resolved launch baseline of 737 businesses, found {len(rows)}")
     if any(not business["name"].strip() for business in businesses):
         errors.append("blank business name found")
     slugs = [business["slug"] for business in businesses]
