@@ -171,6 +171,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .qr-preview-text strong { display: block; margin-bottom: 2px; }
 .qr-preview-text p { margin-bottom: var(--space-1); color: var(--muted); }
 .qr-download-link { font-weight: 500; color: var(--jungle-700); }
+.share-btn { display: inline-block; margin-top: var(--space-2); padding: 6px 14px; font-size: var(--text-sm); font-weight: 500; color: var(--jungle-700); background: none; border: 1px solid var(--jungle-300); border-radius: var(--radius-sm); cursor: pointer; font-family: inherit; }
+.share-btn:hover { background: var(--jungle-100); }
 @media (max-width: 380px) { .qr-preview { flex-direction: row; gap: var(--space-2); } .qr-preview img { width: 96px; height: 96px; } .qr-preview-text { font-size: var(--text-sm); } .biz-qr { padding: var(--space-3); } }
 
 /* Map */
