@@ -1,0 +1,32 @@
+[
+  {
+    "record_id": "3aad0dddf12c3f72",
+    "route": "https://wa.me/50672059392",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 27"
+  },
+  {
+    "record_id": "62ef82ba8ea6a94b",
+    "route": "https://wa.me/50689607794",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 28"
+  },
+  {
+    "record_id": "825302b3b4d2d4c8",
+    "route": "https://wa.me/50688664405",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 31"
+  },
+  {
+    "record_id": "8e45c48d2ae28a29",
+    "route": "https://wa.me/50689152462",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 33"
+  },
+  {
+    "record_id": "ef1df3b3651a8c1c",
+    "route": "https://wa.me/50683420647",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 34"
+  },
+  {
+    "record_id": "525c1f76f5018d7e",
+    "route": "https://wa.me/50688918069",
+    "error": "Error: Timed out running CDP command \"Page.captureScreenshot\" for tab 35"
+  }
+]

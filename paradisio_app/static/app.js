@@ -6,9 +6,22 @@
     var map = null;
     var markers = null;
     var allMarkers = [];
+    var activeIntent = "";
+    var CATEGORY_LABELS = {
+        hostel: "Hostel", hotel: "Hotel", nightlife: "Nightlife",
+        real_estate: "Real estate", restaurant: "Restaurant", services: "Services",
+        shopping: "Shopping", tour_company: "Tours", transport: "Transport",
+        vacation_rental: "Vacation rental", wellness: "Wellness"
+    };
+
+    function categoryLabel(value) {
+        var key = (value || "").toLowerCase();
+        return CATEGORY_LABELS[key] || key.replace(/_/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+    }
 
     var searchInput = document.getElementById("search");
     var catFilter = document.getElementById("category-filter");
+    var tagFilter = document.getElementById("tag-filter");
     var areaFilter = document.getElementById("area-filter");
     var channelFilter = document.getElementById("channel-filter");
     var sortFilter = document.getElementById("sort-filter");
@@ -25,8 +38,17 @@
         Object.keys(CATEGORIES).sort().forEach(function (c) {
             var opt = document.createElement("option");
             opt.value = c;
-            opt.textContent = c.charAt(0).toUpperCase() + c.slice(1) + " (" + CATEGORIES[c] + ")";
+            opt.textContent = categoryLabel(c) + " (" + CATEGORIES[c] + ")";
             catFilter.appendChild(opt);
+        });
+        tagFilter.innerHTML = '<option value="">Any type or quality</option>';
+        Object.keys(SEMANTIC_FACETS).sort(function (a, b) {
+            return (SEMANTIC_LABELS[a] || a).localeCompare(SEMANTIC_LABELS[b] || b);
+        }).forEach(function (tag) {
+            var opt = document.createElement("option");
+            opt.value = tag;
+            opt.textContent = (SEMANTIC_LABELS[tag] || categoryLabel(tag)) + " (" + SEMANTIC_FACETS[tag] + ")";
+            tagFilter.appendChild(opt);
         });
         areaFilter.innerHTML = '<option value="">All Areas</option>';
         Object.keys(AREAS).sort().forEach(function (a) {
@@ -42,6 +64,7 @@
         var cat = catFilter.value;
         var area = areaFilter.value;
         var ch = channelFilter.value;
+        var tag = tagFilter.value;
 
         if (q) {
             var match = b.name.toLowerCase().includes(q);
@@ -49,9 +72,14 @@
             match = match || (b.area || "").toLowerCase().includes(q);
             match = match || (b.description || "").toLowerCase().includes(q);
             match = match || (b.badges || []).some(function (x) { return x.toLowerCase().includes(q); });
+            match = match || (b.semantic_tags || []).some(function (x) { return x.toLowerCase().includes(q); });
+            match = match || (b.semantic_attributes || []).some(function (x) { return x.toLowerCase().includes(q); });
+            match = match || (b.search_synonyms || []).some(function (x) { return x.toLowerCase().includes(q); });
             if (!match) return false;
         }
         if (cat && b.category !== cat) return false;
+        if (tag && (b.semantic_tags || []).indexOf(tag) === -1 && (b.semantic_attributes || []).indexOf(tag) === -1) return false;
+        if (activeIntent && (b.intents || []).indexOf(activeIntent) === -1) return false;
         if (area && b.area !== area) return false;
         if (ch === "whatsapp" && !b.channels.whatsapp) return false;
         if (ch === "instagram" && !b.channels.instagram) return false;
@@ -79,8 +107,18 @@
     function renderChips() {
         if (!chipsDiv) return;
         var chips = [];
+        if (searchInput.value.trim()) {
+            chips.push('<span class="filter-chip">Search: ' + esc(searchInput.value.trim()) + ' <span class="chip-close" data-clear="search">&times;</span></span>');
+        }
         if (catFilter.value) {
             chips.push('<span class="filter-chip">' + esc(catFilter.options[catFilter.selectedIndex].text.split(" (")[0]) + ' <span class="chip-close" data-clear="category">&times;</span></span>');
+        }
+        if (tagFilter.value) {
+            chips.push('<span class="filter-chip">' + esc(SEMANTIC_LABELS[tagFilter.value] || categoryLabel(tagFilter.value)) + ' <span class="chip-close" data-clear="tag">&times;</span></span>');
+        }
+        if (activeIntent) {
+            var intentNames = { eat: "Eat", stay: "Stay", "things-to-do": "Things to Do", shopping: "Shopping", services: "Services", wellness: "Wellness", nightlife: "Nightlife", transport: "Transport" };
+            chips.push('<span class="filter-chip">' + esc(intentNames[activeIntent] || activeIntent) + ' <span class="chip-close" data-clear="intent">&times;</span></span>');
         }
         if (areaFilter.value) {
             chips.push('<span class="filter-chip">' + esc(areaFilter.value) + ' <span class="chip-close" data-clear="area">&times;</span></span>');
@@ -89,21 +127,23 @@
             var label = channelFilter.options[channelFilter.selectedIndex].text;
             chips.push('<span class="filter-chip">' + esc(label) + ' <span class="chip-close" data-clear="channel">&times;</span></span>');
         }
-        chips.push('<span class="filter-chip clear-all" id="clear-all-filters">Clear all</span>');
+        if (chips.length) chips.push('<span class="filter-chip clear-all" id="clear-all-filters">Clear all</span>');
         chipsDiv.innerHTML = chips.join("");
 
         document.querySelectorAll("[data-clear]").forEach(function (el) {
             el.addEventListener("click", function (e) {
                 e.stopPropagation();
                 var field = this.getAttribute("data-clear");
-                var target = field === "category" ? catFilter : field === "area" ? areaFilter : channelFilter;
+                if (field === "search") { searchInput.value = ""; resetAndRender(); return; }
+                if (field === "intent") { activeIntent = ""; resetAndRender(); return; }
+                var target = field === "category" ? catFilter : field === "tag" ? tagFilter : field === "area" ? areaFilter : channelFilter;
                 if (target) { target.value = ""; target.dispatchEvent(new Event("change")); }
             });
         });
         var clearAll = document.getElementById("clear-all-filters");
         if (clearAll) {
             clearAll.addEventListener("click", function () {
-                catFilter.value = ""; areaFilter.value = ""; channelFilter.value = "";
+                searchInput.value = ""; catFilter.value = ""; tagFilter.value = ""; areaFilter.value = ""; channelFilter.value = ""; activeIntent = "";
                 displayCount = PAGE_SIZE;
                 catFilter.dispatchEvent(new Event("change"));
             });
@@ -115,15 +155,6 @@
             return '<span class="channel-tag ' + x.toLowerCase().replace(/\s+/g, "-") + '">' + x + "</span>";
         }).join("");
 
-        var scores = "";
-        if (b.scores) {
-            scores = '<div class="result-scores">' +
-                '<span class="score-dot">Contact ' + b.scores.contactability + "</span>" +
-                '<span class="score-dot">Visible ' + b.scores.visibility + "</span>" +
-                '<span class="score-dot">Complete ' + b.scores.completeness + "</span>" +
-                "</div>";
-        }
-
         var rating = "";
         if (b.rating) {
             var full = Math.floor(b.rating);
@@ -131,29 +162,16 @@
             rating = '<div class="card-rating">' + "&#9733;".repeat(full) + half + " " + b.rating + "</div>";
         }
 
-        var contactLabel = "";
-        if (b.scores) {
-            var cs = b.scores.contactability;
-            var label = "Limited";
-            if (cs >= 80) label = "Verified";
-            else if (cs >= 60) label = "Strong";
-            else if (cs >= 40) label = "Partial";
-            else if (cs >= 20) label = "Limited";
-            else label = "Missing";
-            contactLabel = '<span class="contact-label ' + label.toLowerCase() + '">' + label + '</span>';
-        }
-
         return '<a href="businesses/' + b.slug + '.html" class="result-card">' +
             '<div class="result-name">' + esc(b.name) + "</div>" +
             rating +
             '<div class="result-meta">' +
-            '<span>' + esc(b.category || "Uncategorized") + "</span>" +
+            '<span>' + esc(categoryLabel(b.category) || "Other") + "</span>" +
             '<span>' + esc(b.area || "Unknown") + "</span>" +
             (b.distance_km ? '<span>' + b.distance_km + " km</span>" : "") +
-            contactLabel +
             "</div>" +
             (badges ? '<div class="result-channels">' + badges + "</div>" : "") +
-            '<div class="result-cta">' + (b.primary_contact ? esc(b.primary_contact.label) : "View") + " &rarr;</div>" +
+            '<div class="result-cta">' + (b.primary_contact && b.primary_contact.type !== "None" ? esc(b.primary_contact.label) : "View details") + " &rarr;</div>" +
             "</a>";
     }
 
@@ -188,14 +206,14 @@
         var shown = filtered.slice(0, displayCount);
         var html = shown.map(renderCard).join("");
         resultsDiv.innerHTML = html;
-        var hasFilter = catFilter.value || areaFilter.value || channelFilter.value;
+        var hasFilter = searchInput.value.trim() || catFilter.value || tagFilter.value || areaFilter.value || channelFilter.value || activeIntent;
         if (hasFilter) {
             statsLine.innerHTML = Math.min(displayCount, total) + " of " + total + ' results &middot; <a href="#" id="clear-stats" style="color:var(--coral-600);text-decoration:none;">Clear filter</a>';
             var clearStats = document.getElementById("clear-stats");
             if (clearStats) {
                 clearStats.addEventListener("click", function (e) {
                     e.preventDefault();
-                    catFilter.value = ""; areaFilter.value = ""; channelFilter.value = "";
+                    searchInput.value = ""; catFilter.value = ""; tagFilter.value = ""; areaFilter.value = ""; channelFilter.value = ""; activeIntent = "";
                     displayCount = PAGE_SIZE;
                     catFilter.dispatchEvent(new Event("change"));
                 });
@@ -208,6 +226,10 @@
 
     function initMap() {
         if (map) return;
+        if (typeof L === "undefined") {
+            mapDiv.innerHTML = '<div class="map-unavailable">Map is temporarily unavailable. Use the list to browse businesses.</div>';
+            return;
+        }
         map = L.map(mapDiv, { zoomControl: true, attributionControl: true }).setView([9.655, -82.753], 13);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 18,
@@ -267,6 +289,8 @@
             mapDiv.classList.add("active");
             viewList.classList.remove("active");
             viewMap.classList.add("active");
+            viewList.setAttribute("aria-pressed", "false");
+            viewMap.setAttribute("aria-pressed", "true");
             initMap();
             setTimeout(function () { map && map.invalidateSize(); }, 100);
             updateMap();
@@ -276,6 +300,8 @@
             mapDiv.classList.remove("active");
             viewList.classList.add("active");
             viewMap.classList.remove("active");
+            viewList.setAttribute("aria-pressed", "true");
+            viewMap.setAttribute("aria-pressed", "false");
             var total = BUSINESSES.filter(matchBusiness).length;
             renderList();
         }
@@ -298,13 +324,11 @@
     document.querySelectorAll(".cat-tile").forEach(function (tile) {
         tile.addEventListener("click", function (e) {
             e.preventDefault();
-            var cat = this.getAttribute("data-category");
-            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "Wellness", "nightlife": "Nightlife", "transport": "Transport" };
-            var mapped = mapping[cat] || cat;
-            if (catFilter) { catFilter.value = mapped; }
+            activeIntent = this.getAttribute("data-category");
+            if (catFilter) { catFilter.value = ""; }
             displayCount = PAGE_SIZE;
             catFilter.dispatchEvent(new Event("change"));
-            document.querySelector(".controls").scrollIntoView({ behavior: "smooth" });
+            document.querySelector("#results").scrollIntoView({ behavior: "smooth" });
         });
     });
 
@@ -312,10 +336,8 @@
     function updateActiveTile() {
         var active = catFilter ? catFilter.value : "";
         document.querySelectorAll(".cat-tile").forEach(function (t) {
-            var mapping = { "eat": "restaurant", "stay": "hotel", "tour": "tour_company", "shopping": "shopping", "wellness": "Wellness", "nightlife": "Nightlife", "transport": "Transport" };
-            var cat = t.getAttribute("data-category");
-            var mapped = mapping[cat] || cat;
-            if (active && mapped === active) {
+            var group = t.getAttribute("data-category");
+            if (activeIntent && group === activeIntent) {
                 t.style.borderColor = "var(--coral-600, #ed744f)";
                 t.style.background = "#fff5f0";
             } else {
@@ -329,6 +351,7 @@
 
     searchInput.addEventListener("input", resetAndRender);
     catFilter.addEventListener("change", resetAndRender);
+    tagFilter.addEventListener("change", resetAndRender);
     areaFilter.addEventListener("change", resetAndRender);
     channelFilter.addEventListener("change", resetAndRender);
     sortFilter.addEventListener("change", resetAndRender);

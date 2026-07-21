@@ -1,0 +1,24 @@
+record_id,business_name,area,old_category,resolved_category,disposition,rationale
+7b654c09fccbd7d0,Adobe EasyCar Rent a Car,Puerto Viejo,tour_company,transport,corrected,Canonical description explicitly identifies car rental.
+d6ae145558fb4265,Alamo Enterprise Car Rental,Puerto Viejo,tour_company,transport,corrected,Canonical description explicitly identifies car rental.
+7710a753828a34e7,ALMA Masajes,Playa Negra,restaurant,wellness,corrected,Business identity and captured amenities identify massage/spa services.
+ee90336671dbbbf8,Alojamiento kon-tiky,Playa Negra,restaurant,vacation_rental,corrected,CID focus identifies private lodging and vacation apartment rental.
+cd06471a794d0486,Ariel Apartment's,Playa Negra,restaurant,vacation_rental,corrected,CID focus explicitly identifies a tourist apartment.
+2ead1f71ff4df2f6,"Arrecife Hotel y Restaurante - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,restaurant,restaurant,retained_mixed_use,Description leads with restaurant/bar and separately confirms cabina rentals.
+1091a843692f7348,Beauty Ritual Spa,Cocles,restaurant,wellness,corrected,CID focus explicitly identifies a health and wellness center/spa.
+0e93a1a7589335bf,Blessed Hands Massage Therapy,Playa Negra,restaurant,wellness,corrected,Business identity and captured amenity identify massage therapy.
+4abe459e33dc0d83,Blue Dreams Hotel,Playa Negra,restaurant,hotel,corrected,Business identity and canonical description explicitly identify a hotel.
+826a7d96182544c9,Cabina trepazul,Playa Negra,restaurant,vacation_rental,corrected,CID focus explicitly identifies lodging.
+a34ee46115962b18,Caribbean Blue Morpho Casitas,Playa Negra,restaurant,vacation_rental,corrected,CID focus identifies hotel/vacation accommodation and rooms.
+aa22e60d7a9c2586,Caribe Shuttle,Puerto Viejo,tour_company,transport,corrected,CID and description explicitly identify shuttle transportation.
+8c12630ad97068c5,Casa del Caribe B&B,Playa Negra,restaurant,hotel,corrected,Business identity and CID focus identify B&B/homestay lodging.
+a666c8b34285c456,Casita Tucan,Cocles,restaurant,hotel,corrected,CID focus explicitly identifies a three-star hotel.
+232fc2293e490a67,Casitas Batsú,Cocles,restaurant,vacation_rental,corrected,CID focus explicitly identifies holiday apartment rental.
+354e8b91aac2a945,Douglas Ville guest house,Playa Negra,restaurant,vacation_rental,corrected,Business identity explicitly identifies a guest house.
+18a222f6c95fb267,Hawaiian Massage,Playa Negra,restaurant,wellness,corrected,CID focus explicitly identifies a massage center.
+d1d2c03d13934d8f,La Casita de Monli,Puerto Viejo,restaurant,restaurant,retained_false_positive,CID and description explicitly identify a seafood restaurant; 'Casita' is its name.
+d97dd07b7772c1f8,"Le Caméléon - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,hotel,hotel,retained_mixed_use,Description clearly identifies a hotel; bar remains a secondary quality.
+1367c59e9d504446,Morpho Casitas,Playa Negra,restaurant,vacation_rental,corrected,Alias/business identity identifies casita accommodation; corroborated by linked Morpho property evidence.
+70732ad211ae19e6,Namu Garden Hotel & Spa,Playa Negra,restaurant,hotel,corrected,Business identity explicitly identifies a hotel with spa as a secondary quality.
+315253323a420cf7,"Selvin's Restaurant and Cabinas - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,restaurant,restaurant,retained_mixed_use,Description leads with restaurant and separately confirms rooms/house for rent.
+9d0651820e9645c6,Sloth Massage,Puerto Viejo,restaurant,wellness,corrected,CID reviews and business identity explicitly describe massage services.

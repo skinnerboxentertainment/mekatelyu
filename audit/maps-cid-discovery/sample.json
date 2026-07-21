@@ -1,0 +1,82 @@
+[
+  {
+    "business_name": "Secret Garden - Cahuita, Limón, Costa Rica",
+    "search_name": "Secret Garden",
+    "area": "Cahuita",
+    "category": "hostel",
+    "query": "Secret Garden Cahuita Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Secret%20Garden%20Cahuita%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Blue Dreams Hotel",
+    "search_name": "Blue Dreams Hotel",
+    "area": "Playa Negra",
+    "category": "hotel",
+    "query": "Blue Dreams Hotel Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Blue%20Dreams%20Hotel%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Cabinas KiAMiMi",
+    "search_name": "Cabinas KiAMiMi",
+    "area": "Puerto Viejo",
+    "category": "hotel",
+    "query": "Cabinas KiAMiMi Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Cabinas%20KiAMiMi%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Café Rico",
+    "search_name": "Café Rico",
+    "area": "Puerto Viejo",
+    "category": "restaurant",
+    "query": "Café Rico Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Rico%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Casa Alegre",
+    "search_name": "Casa Alegre",
+    "area": "Playa Negra",
+    "category": "restaurant",
+    "query": "Casa Alegre Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Alegre%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "We Do Laundry - Hone Creek, Limón, Costa Rica",
+    "search_name": "We Do Laundry",
+    "area": "Hone Creek",
+    "category": "services",
+    "query": "We Do Laundry Hone Creek Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=We%20Do%20Laundry%20Hone%20Creek%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "CHOCORART",
+    "search_name": "CHOCORART",
+    "area": "Puerto Viejo",
+    "category": "shopping",
+    "query": "CHOCORART Puerto Viejo Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=CHOCORART%20Puerto%20Viejo%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Refugio de animales Jaguar",
+    "search_name": "Refugio de animales Jaguar",
+    "area": "Cocles",
+    "category": "tour_company",
+    "query": "Refugio de animales Jaguar Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Refugio%20de%20animales%20Jaguar%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Douglas Ville guest house",
+    "search_name": "Douglas Ville guest house",
+    "area": "Playa Negra",
+    "category": "vacation_rental",
+    "query": "Douglas Ville guest house Playa Negra Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Douglas%20Ville%20guest%20house%20Playa%20Negra%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  },
+  {
+    "business_name": "Habitat Vacation Rentals - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "search_name": "Habitat Vacation Rentals",
+    "area": "Cocles",
+    "category": "vacation_rental",
+    "query": "Habitat Vacation Rentals Cocles Limón Costa Rica",
+    "search_url": "https://www.google.com/maps/search/?api=1&query=Habitat%20Vacation%20Rentals%20Cocles%20Lim%C3%B3n%20Costa%20Rica&hl=en"
+  }
+]

@@ -1,0 +1,5 @@
+canonical,removed_alias,changes,rationale,status
+"Cariblue Beach and Jungle Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Hotel Cariblue,,"Same hotel brand, WhatsApp, Instagram, and official website; alias is a generic CID-less hotel record.",applied
+"Jaguar Rescue Center - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Refugio de animales Jaguar,email:filled|website:filled|tripadvisor_url:filled|tiktok_url:filled,"Bilingual name variants share phone, Instagram, near-identical location, and organization identity; alias is CID-less.",applied
+Douglasville Guesthouse,Douglas Ville guest house,google_maps_cid:transferred,"Near-identical name, same phone, same lodging identity, and nearby coordinates; captured CID is transferred to the richer canonical record.",applied
+Chile Rojo,Chili Rojo,instagram_handle:filled|instagram_url:filled,Spelling variants share phone and identical TripAdvisor identity; the richer CID-bearing record is canonical.,applied
