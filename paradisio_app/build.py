@@ -1377,6 +1377,116 @@ const LOCALE_DATA = {json.dumps(LOCALES, ensure_ascii=False)};
 </html>"""
 
 
+def render_invest_page(metrics):
+    total = metrics["total"]
+    with_cid = metrics["with_cid"]
+    with_wa = metrics["with_whatsapp"]
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invest in Whappin Puerto Viejo</title>
+<meta name="description" content="Support a locally-built business directory for Puerto Viejo, Costa Rica — connecting tourists and locals to every business in town.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="canonical" href="https://www.whappin.com/invest/">
+<link rel="stylesheet" href="../static/tokens.css">
+<link rel="stylesheet" href="../static/styles.css">
+<style>
+.invest-page {{ max-width: 700px; margin: 0 auto; padding: var(--space-6) var(--space-4); }}
+.invest-page h1 {{ font-size: 2rem; color: var(--jungle-900); margin-bottom: var(--space-1); }}
+.invest-page .subtitle {{ font-size: var(--text-lg); color: var(--muted); margin-bottom: var(--space-5); }}
+.invest-page h2 {{ font-size: 1.3rem; color: var(--jungle-800); margin-top: var(--space-6); margin-bottom: var(--space-2); }}
+.invest-page p {{ line-height: var(--leading-loose); margin-bottom: var(--space-2); color: var(--ink); }}
+.invest-page .stat-row {{ display: flex; gap: var(--space-3); flex-wrap: wrap; margin: var(--space-4) 0; }}
+.invest-page .stat {{ flex: 1; min-width: 100px; background: var(--sand-50); padding: var(--space-3); border-radius: var(--radius-md); text-align: center; }}
+.invest-page .stat-num {{ font-size: 1.8rem; font-weight: 700; color: var(--jungle-700); display: block; }}
+.invest-page .stat-label {{ font-size: var(--text-sm); color: var(--muted); }}
+.invest-page .cta-box {{ background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5); margin: var(--space-5) 0; text-align: center; }}
+.invest-page .cta-box h3 {{ margin-bottom: var(--space-2); }}
+.invest-page .btn {{ display: inline-block; padding: var(--space-3) var(--space-5); background: var(--jungle-700); color: #fff; text-decoration: none; border-radius: var(--radius-md); font-weight: 600; margin: var(--space-1); }}
+.invest-page .btn:hover {{ background: var(--jungle-800); }}
+.invest-page .btn-outline {{ background: none; border: 1px solid var(--jungle-300); color: var(--jungle-700); }}
+.invest-page .btn-outline:hover {{ background: var(--jungle-100); }}
+.invest-page .footer {{ margin-top: var(--space-7); padding-top: var(--space-4); border-top: 1px solid var(--border); font-size: var(--text-sm); color: var(--muted); }}
+</style>
+</head>
+<body class="invest-page">
+<h1>Whappin Puerto Viejo</h1>
+<p class="subtitle">A community-built business directory for Puerto Viejo de Talamanca, Costa Rica. We're raising $5,000 to keep building.</p>
+
+<h2>The short version</h2>
+<p>
+Every business in Puerto Viejo deserves to be found. We built the tool that makes it happen — a mobile-first directory with QR codes, WhatsApp routing, Maps integration, and zero infrastructure costs. 737 businesses are already listed. The site is live at <a href="https://www.whappin.com/">whappin.com</a>. Now we want to turn this into something that sustains us while we serve the community.
+</p>
+
+<div class="stat-row">
+<div class="stat"><span class="stat-num">{total}</span><span class="stat-label">Businesses listed</span></div>
+<div class="stat"><span class="stat-num">{with_cid}</span><span class="stat-label">Google Maps IDs</span></div>
+<div class="stat"><span class="stat-num">{with_wa}</span><span class="stat-label">WhatsApp routes</span></div>
+<div class="stat"><span class="stat-num">54</span><span class="stat-label">Tests passing</span></div>
+</div>
+
+<h2>Why this matters</h2>
+<p>
+Puerto Viejo has no central directory. Tourists bounce between Google Maps, TripAdvisor, Facebook, Instagram, and word of mouth. Businesses have no unified digital presence — many don't even have a website. Whappin fixes that: one place, every business, opt-out by default, works on any phone.
+</p>
+<p>
+This is a mitzvah for the community. We want to be good stewards of better awareness for the town — helping tourists find what they need, helping locals promote what they offer, and helping everyone navigate Puerto Viejo with confidence.
+</p>
+
+<h2>What we've built</h2>
+<ul>
+<li>737 entity-resolved business profiles with 34 data fields each</li>
+<li>726 Google Maps CIDs mapped (98% coverage)</li>
+<li>175 validated WhatsApp routes</li>
+<li>One QR code per business — print-ready for doors, menus, counters</li>
+<li>Search, filters, map view, semantic tags, amenity labels</li>
+<li>Self-hosted map tiles, no API keys, zero recurring costs</li>
+<li>Full automated test suite — 54 tests, CI/CD via GitHub Actions</li>
+<li>Live at <a href="https://www.whappin.com/">www.whappin.com</a></li>
+</ul>
+
+<h2>The ask</h2>
+<p>
+<strong>$5,000 by end of 2026.</strong> That covers server-adjacent costs, domain renewal, a proper pitch deck, and — honestly — lets us live on the beach as digital nomads while we build something good for a place we love.
+</p>
+<p>
+In return, you get a front-row seat to a genuine community platform with real traction, real users, and a real moat (the dataset). We'll keep building: premium listings, QR affiliate network, WhatsApp concierge, and eventually porting the scanner to other Costa Rica towns.
+</p>
+
+<div class="cta-box">
+<h3>Interested?</h3>
+<p>File an investor inquiry or send us an email. We'll respond within 48 hours.</p>
+<p>
+<a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=investor-inquiry.md" class="btn" target="_blank" rel="noopener">Submit inquiry</a>
+<a href="mailto:ideaguyinteractive@gmail.com?subject=Investing%20in%20Whappin%20Puerto%20Viejo" class="btn btn-outline" target="_blank" rel="noopener">Email us</a>
+</p>
+</div>
+
+<h2>Use of funds</h2>
+<table style="width:100%; border-collapse: collapse;">
+<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Pitch deck &amp; legal</strong></td><td style="padding:8px 0; text-align:right;">$1,000</td></tr>
+<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Domain &amp; hosting (3 years)</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
+<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>QR affiliate network development</strong></td><td style="padding:8px 0; text-align:right;">$1,500</td></tr>
+<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>WhatsApp concierge MVP</strong></td><td style="padding:8px 0; text-align:right;">$1,000</td></tr>
+<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Scanner port to 2nd town</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
+<tr><td style="padding:8px 0;"><strong>Living expenses (beach + wifi)</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
+</table>
+
+<h2>Team</h2>
+<p>
+Oscar AF — builder, traveler, community organizer. Built the entire platform from scratch: data pipeline, web app, enrichment scripts, CI/CD, audit framework. This project is a labor of love for a town that deserves a better way to connect.
+</p>
+
+<div class="footer">
+<p><a href="https://www.whappin.com/">Whappin Puerto Viejo</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu">GitHub</a> &middot; Built in Costa Rica</p>
+</div>
+</body>
+</html>"""
+
+
 def main():
     if OUTPUT_DIR == REPO_DIR:
         raise RuntimeError(f"Refusing unsafe output directory: {OUTPUT_DIR}")
@@ -1481,6 +1591,11 @@ def main():
     (OUTPUT_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (OUTPUT_DIR / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {PRODUCTION_BASE_URL}/sitemap.xml\n", encoding="utf-8")
     print("  robots.txt + sitemap.xml")
+
+    invest_dir = OUTPUT_DIR / "invest"
+    invest_dir.mkdir(parents=True, exist_ok=True)
+    (invest_dir / "index.html").write_text(render_invest_page(metrics), encoding="utf-8")
+    print("  invest/ — angel investment page")
 
     generate_deployment_wrapper()
     print("  release root — redirect, 404, robots, .nojekyll")
