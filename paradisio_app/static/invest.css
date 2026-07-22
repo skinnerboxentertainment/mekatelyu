@@ -1,0 +1,23 @@
+/* Angel investment page */
+.invest-page { max-width: 700px; margin: 0 auto; padding: var(--space-6) var(--space-4); }
+.invest-page h1 { font-size: 2rem; color: var(--jungle-900); margin-bottom: var(--space-1); }
+.invest-page .subtitle { font-size: var(--text-lg); color: var(--muted); margin-bottom: var(--space-5); }
+.invest-page h2 { font-size: 1.3rem; color: var(--jungle-800); margin-top: var(--space-6); margin-bottom: var(--space-2); }
+.invest-page p { line-height: var(--leading-loose); margin-bottom: var(--space-2); color: var(--ink); }
+.invest-page ul { line-height: var(--leading-loose); margin-bottom: var(--space-3); padding-left: var(--space-4); }
+.invest-page li { margin-bottom: var(--space-1); color: var(--ink); }
+.invest-page a { color: var(--jungle-700); }
+.invest-page .stat-row { display: flex; gap: var(--space-3); flex-wrap: wrap; margin: var(--space-4) 0; }
+.invest-page .stat { flex: 1; min-width: 100px; background: var(--sand-50); padding: var(--space-3); border-radius: var(--radius-md); text-align: center; }
+.invest-page .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--jungle-700); display: block; }
+.invest-page .stat-label { font-size: var(--text-sm); color: var(--muted); }
+.invest-page .cta-box { background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5); margin: var(--space-5) 0; text-align: center; }
+.invest-page .cta-box h3 { margin-bottom: var(--space-2); }
+.invest-page .btn { display: inline-block; padding: var(--space-3) var(--space-5); background: var(--jungle-700); color: #fff; text-decoration: none; border-radius: var(--radius-md); font-weight: 600; margin: var(--space-1); }
+.invest-page .btn:hover { background: var(--jungle-800); }
+.invest-page .btn-outline { background: none; border: 1px solid var(--jungle-300); color: var(--jungle-700); }
+.invest-page .btn-outline:hover { background: var(--jungle-100); }
+.invest-page .funds-table { width: 100%; border-collapse: collapse; margin: var(--space-3) 0; }
+.invest-page .funds-table td { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.invest-page .funds-table td:last-child { text-align: right; font-weight: 600; }
+.invest-page .footer { margin-top: var(--space-7); padding-top: var(--space-4); border-top: 1px solid var(--border); font-size: var(--text-sm); color: var(--muted); }
