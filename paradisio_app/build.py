@@ -1393,91 +1393,71 @@ def render_invest_page(metrics):
 <link rel="canonical" href="https://www.whappin.com/invest/">
 <link rel="stylesheet" href="../static/tokens.css">
 <link rel="stylesheet" href="../static/styles.css">
-<style>
-.invest-page {{ max-width: 700px; margin: 0 auto; padding: var(--space-6) var(--space-4); }}
-.invest-page h1 {{ font-size: 2rem; color: var(--jungle-900); margin-bottom: var(--space-1); }}
-.invest-page .subtitle {{ font-size: var(--text-lg); color: var(--muted); margin-bottom: var(--space-5); }}
-.invest-page h2 {{ font-size: 1.3rem; color: var(--jungle-800); margin-top: var(--space-6); margin-bottom: var(--space-2); }}
-.invest-page p {{ line-height: var(--leading-loose); margin-bottom: var(--space-2); color: var(--ink); }}
-.invest-page .stat-row {{ display: flex; gap: var(--space-3); flex-wrap: wrap; margin: var(--space-4) 0; }}
-.invest-page .stat {{ flex: 1; min-width: 100px; background: var(--sand-50); padding: var(--space-3); border-radius: var(--radius-md); text-align: center; }}
-.invest-page .stat-num {{ font-size: 1.8rem; font-weight: 700; color: var(--jungle-700); display: block; }}
-.invest-page .stat-label {{ font-size: var(--text-sm); color: var(--muted); }}
-.invest-page .cta-box {{ background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5); margin: var(--space-5) 0; text-align: center; }}
-.invest-page .cta-box h3 {{ margin-bottom: var(--space-2); }}
-.invest-page .btn {{ display: inline-block; padding: var(--space-3) var(--space-5); background: var(--jungle-700); color: #fff; text-decoration: none; border-radius: var(--radius-md); font-weight: 600; margin: var(--space-1); }}
-.invest-page .btn:hover {{ background: var(--jungle-800); }}
-.invest-page .btn-outline {{ background: none; border: 1px solid var(--jungle-300); color: var(--jungle-700); }}
-.invest-page .btn-outline:hover {{ background: var(--jungle-100); }}
-.invest-page .footer {{ margin-top: var(--space-7); padding-top: var(--space-4); border-top: 1px solid var(--border); font-size: var(--text-sm); color: var(--muted); }}
-</style>
+<link rel="stylesheet" href="../static/invest.css">
 </head>
 <body class="invest-page">
 <h1>Whappin Puerto Viejo</h1>
 <p class="subtitle">A community-built business directory for Puerto Viejo de Talamanca, Costa Rica. We're raising $5,000 to keep building.</p>
 
-<h2>The short version</h2>
-<p>
-Every business in Puerto Viejo deserves to be found. We built the tool that makes it happen — a mobile-first directory with QR codes, WhatsApp routing, Maps integration, and zero infrastructure costs. 737 businesses are already listed. The site is live at <a href="https://www.whappin.com/">whappin.com</a>. Now we want to turn this into something that sustains us while we serve the community.
-</p>
-
 <div class="stat-row">
 <div class="stat"><span class="stat-num">{total}</span><span class="stat-label">Businesses listed</span></div>
 <div class="stat"><span class="stat-num">{with_cid}</span><span class="stat-label">Google Maps IDs</span></div>
 <div class="stat"><span class="stat-num">{with_wa}</span><span class="stat-label">WhatsApp routes</span></div>
-<div class="stat"><span class="stat-num">54</span><span class="stat-label">Tests passing</span></div>
+<div class="stat"><span class="stat-num">Live</span><span class="stat-label">whappin.com</span></div>
 </div>
 
 <h2>Why this matters</h2>
 <p>
-Puerto Viejo has no central directory. Tourists bounce between Google Maps, TripAdvisor, Facebook, Instagram, and word of mouth. Businesses have no unified digital presence — many don't even have a website. Whappin fixes that: one place, every business, opt-out by default, works on any phone.
+Puerto Viejo has no central directory. Tourists bounce between Google Maps, TripAdvisor, Facebook, Instagram, and word of mouth. Businesses have no unified digital presence — many don't even have a website. Whappin fixes that: one place, every business, opt-out by default, works on any phone, zero infrastructure costs.
 </p>
 <p>
 This is a mitzvah for the community. We want to be good stewards of better awareness for the town — helping tourists find what they need, helping locals promote what they offer, and helping everyone navigate Puerto Viejo with confidence.
 </p>
 
-<h2>What we've built</h2>
+<h2>What we've built so far</h2>
 <ul>
 <li>737 entity-resolved business profiles with 34 data fields each</li>
 <li>726 Google Maps CIDs mapped (98% coverage)</li>
 <li>175 validated WhatsApp routes</li>
 <li>One QR code per business — print-ready for doors, menus, counters</li>
-<li>Search, filters, map view, semantic tags, amenity labels</li>
-<li>Self-hosted map tiles, no API keys, zero recurring costs</li>
-<li>Full automated test suite — 54 tests, CI/CD via GitHub Actions</li>
-<li>Live at <a href="https://www.whappin.com/">www.whappin.com</a></li>
+<li>Full-text search, category/area filters, interactive map, semantic tags</li>
+<li>Mobile-first responsive design — works on any device</li>
+<li>Continuous deployment via GitHub Actions, 54 automated tests</li>
+<li>Live at <a href="https://www.whappin.com/">www.whappin.com</a> — go see it</li>
 </ul>
+
+<h2>The opportunity</h2>
+<p>
+Costa Rica sees 5M+ tourists annually. Puerto Viejo is the Caribbean coast's #2 destination. There is no dominant local directory for any CR town. Whappin is first to market with a complete, verified dataset. The model is replicable to Tamarindo, Manuel Antonio, Santa Teresa, La Fortuna, Monteverde — every town with a tourism economy.
+</p>
 
 <h2>The ask</h2>
 <p>
-<strong>$5,000 by end of 2026.</strong> That covers server-adjacent costs, domain renewal, a proper pitch deck, and — honestly — lets us live on the beach as digital nomads while we build something good for a place we love.
+<strong>$5,000 by end of 2026</strong> — structured as a sponsorship or revenue-share agreement. This covers the next phase of development: premium listing infrastructure, QR affiliate network, WhatsApp concierge tools, and porting the scanner to a second town. We're building something that serves the community and has real revenue potential.
 </p>
-<p>
-In return, you get a front-row seat to a genuine community platform with real traction, real users, and a real moat (the dataset). We'll keep building: premium listings, QR affiliate network, WhatsApp concierge, and eventually porting the scanner to other Costa Rica towns.
-</p>
+
+<p><strong>Use of funds:</strong></p>
+<table class="funds-table">
+<tr><td>QR affiliate network development</td><td>$1,500</td></tr>
+<tr><td>WhatsApp concierge MVP</td><td>$1,000</td></tr>
+<tr><td>Pitch deck, legal, and business setup</td><td>$1,000</td></tr>
+<tr><td>Scanner port to second town</td><td>$500</td></tr>
+<tr><td>Domain, hosting, and operations (3 years)</td><td>$500</td></tr>
+<tr><td>Sustainable living while building</td><td>$500</td></tr>
+</table>
 
 <div class="cta-box">
 <h3>Interested?</h3>
-<p>File an investor inquiry or send us an email. We'll respond within 48 hours.</p>
+<p>Submit an inquiry or send us an email. We'll respond within 48 hours.</p>
 <p>
 <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=investor-inquiry.md" class="btn" target="_blank" rel="noopener">Submit inquiry</a>
 <a href="mailto:ideaguyinteractive@gmail.com?subject=Investing%20in%20Whappin%20Puerto%20Viejo" class="btn btn-outline" target="_blank" rel="noopener">Email us</a>
 </p>
 </div>
 
-<h2>Use of funds</h2>
-<table style="width:100%; border-collapse: collapse;">
-<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Pitch deck &amp; legal</strong></td><td style="padding:8px 0; text-align:right;">$1,000</td></tr>
-<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Domain &amp; hosting (3 years)</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
-<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>QR affiliate network development</strong></td><td style="padding:8px 0; text-align:right;">$1,500</td></tr>
-<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>WhatsApp concierge MVP</strong></td><td style="padding:8px 0; text-align:right;">$1,000</td></tr>
-<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 0;"><strong>Scanner port to 2nd town</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
-<tr><td style="padding:8px 0;"><strong>Living expenses (beach + wifi)</strong></td><td style="padding:8px 0; text-align:right;">$500</td></tr>
-</table>
-
 <h2>Team</h2>
 <p>
-Oscar AF — builder, traveler, community organizer. Built the entire platform from scratch: data pipeline, web app, enrichment scripts, CI/CD, audit framework. This project is a labor of love for a town that deserves a better way to connect.
+Oscar AF — builder, traveler, community organizer. Built the entire platform: data pipeline, web app, enrichment automation, CI/CD, audit framework, and deployment infrastructure. This project is a labor of love for a town that deserves a better way to connect.
 </p>
 
 <div class="footer">
@@ -1576,13 +1556,16 @@ def main():
     static_src = STATIC_DIR / "tokens.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "tokens.css")
+    static_src = STATIC_DIR / "invest.css"
+    if static_src.exists():
+        shutil.copy2(static_src, OUTPUT_DIR / "static" / "invest.css")
     static_src = STATIC_DIR / "styles.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "styles.css")
     vendor_src = STATIC_DIR / "vendor"
     if vendor_src.exists():
         shutil.copytree(vendor_src, OUTPUT_DIR / "static" / "vendor")
-    print(f"  static/ — directory-data.js, tokens.css, app.js, detail.js, styles.css")
+    print(f"  static/ — directory-data.js, tokens.css, invest.css, app.js, detail.js, styles.css")
 
     urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
