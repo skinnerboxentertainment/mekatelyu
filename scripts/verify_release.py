@@ -26,7 +26,7 @@ FORBIDDEN_TEXT = (
     "+506 8888 8888",
 )
 ALLOWED_ROOT_FILES = {".nojekyll", "404.html", "index.html", "robots.txt", "sitemap.xml"}
-ALLOWED_ROOT_DIRS = {"businesses", "qr", "static"}
+ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"}
 
 
 def png_size(path: Path) -> tuple[int, int]:
