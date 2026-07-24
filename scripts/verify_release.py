@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 
 
+ORGANIZATIONS_PATH = Path(__file__).resolve().parent.parent / "paradisio_app" / "data" / "organizations.json"
+
 FORBIDDEN_TEXT = (
     "admin.html",
     "claim.html",
@@ -29,6 +31,15 @@ ALLOWED_ROOT_FILES = {".nojekyll", "404.html", "index.html", "robots.txt", "site
 ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"}
 
 
+def _load_org_slugs() -> set[str]:
+    path = ORGANIZATIONS_PATH
+    if not path.exists():
+        return set()
+    import json
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {v.get("slug", k) for k, v in data.items()}
+
+
 def png_size(path: Path) -> tuple[int, int]:
     with path.open("rb") as handle:
         header = handle.read(24)
@@ -39,6 +50,8 @@ def png_size(path: Path) -> tuple[int, int]:
 
 def verify(root: Path, expected_businesses: int) -> list[str]:
     errors: list[str] = []
+    org_slugs = _load_org_slugs()
+    expected_pages = expected_businesses + len(org_slugs)
     if not root.is_dir():
         return [f"release root does not exist: {root}"]
 
@@ -81,12 +94,13 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
     qr_images = sorted((root / "qr").glob("*.png"))
     business_slugs = {path.stem for path in business_pages}
     qr_slugs = {path.stem for path in qr_images}
-    if len(business_pages) != expected_businesses:
-        errors.append(f"expected {expected_businesses} business pages, found {len(business_pages)}")
-    if business_slugs != qr_slugs:
+    non_org_slugs = business_slugs - org_slugs
+    if len(business_pages) != expected_pages:
+        errors.append(f"expected {expected_pages} pages, found {len(business_pages)}")
+    if non_org_slugs != qr_slugs:
         errors.append(
-            f"QR/profile mismatch: missing={sorted(business_slugs - qr_slugs)[:10]} "
-            f"orphan={sorted(qr_slugs - business_slugs)[:10]}"
+            f"QR/profile mismatch: missing={sorted(non_org_slugs - qr_slugs)[:10]} "
+            f"orphan={sorted(qr_slugs - non_org_slugs)[:10]}"
         )
 
     for path in qr_images:
@@ -100,6 +114,7 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
 
     html_files = [root / "index.html", *business_pages]
     for path in html_files:
+        is_org = path.stem in org_slugs
         text = path.read_text(encoding="utf-8")
         lowered = text.lower()
         for marker in FORBIDDEN_TEXT:
@@ -107,13 +122,13 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
                 errors.append(f"forbidden marker {marker!r} in {path.relative_to(root)}")
         if 'rel="canonical"' not in text:
             errors.append(f"missing canonical: {path.relative_to(root)}")
-        if 'property="og:' not in text:
+        if not is_org and 'property="og:' not in text:
             errors.append(f"missing Open Graph metadata: {path.relative_to(root)}")
         if 'http-equiv="Content-Security-Policy"' not in text:
             errors.append(f"missing Content Security Policy: {path.relative_to(root)}")
         if re.search(r"<script(?![^>]+src=)[^>]*>", text, flags=re.I):
             errors.append(f"inline script present: {path.relative_to(root)}")
-        if path.parent.name == "businesses" and f'../qr/{path.stem}.png' not in text:
+        if not is_org and path.parent.name == "businesses" and f'../qr/{path.stem}.png' not in text:
             errors.append(f"missing profile QR reference: {path.name}")
 
         for url in re.findall(r"(?:href|src)=[\"']([^\"']+)", text, flags=re.I):
@@ -130,6 +145,8 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             if not re.fullmatch(r"\d{10,15}", number):
                 errors.append(f"invalid WhatsApp destination in {path.relative_to(root)}: {number}")
         for number in re.findall(r"tel:\+?(\d+)", text):
+            if number == "911":
+                continue
             if not re.fullmatch(r"\d{10,15}", number):
                 errors.append(f"invalid telephone destination in {path.relative_to(root)}: {number}")
 

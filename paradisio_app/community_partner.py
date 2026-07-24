@@ -282,6 +282,19 @@ def _page_title(org):
     return f"{name} — Community Safety Partner — Whappin Puerto Viejo"
 
 
+def _og_tags(org):
+    name = html.escape(org.get("name", ""))
+    summary = html.escape(org.get("hero", {}).get("summary", ""))
+    slug = html.escape(org["slug"])
+    return f"""
+<meta property="og:title" content="{name} — Community Safety Partner — Whappin Puerto Viejo">
+<meta property="og:description" content="{summary}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.whappin.com/businesses/{slug}.html">
+<meta property="og:site_name" content="Whappin Puerto Viejo">
+<meta name="description" content="{summary}">"""
+
+
 def render_organization_html(org, *, nav_html_func):
     nav = nav_html_func("directory", depth=1)
     title = _page_title(org)
@@ -295,6 +308,7 @@ def render_organization_html(org, *, nav_html_func):
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <link rel="canonical" href="https://www.whappin.com/businesses/{slug}.html">
+{_og_tags(org)}
 <link rel="stylesheet" href="../static/community.css">
 </head>
 <body>
