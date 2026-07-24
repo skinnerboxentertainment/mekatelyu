@@ -1,0 +1,152 @@
+{
+  "caribbean-guard": {
+    "slug": "caribbean-guard",
+    "name": "Caribbean Guard",
+    "entityType": "community_organization",
+    "partnerTier": "community_safety_partner",
+    "partnershipStatus": "proposed",
+    "category": "community_safety",
+    "area": "South Caribbean",
+    "featured": true,
+    "verified": {
+      "status": "public-source-reviewed",
+      "lastReviewed": "2026-07-23",
+      "approvedByOrganization": false
+    },
+    "hero": {
+      "eyebrow": "Proposed Whappin Community Integration",
+      "title": "Caribbean Guard",
+      "tagline": "Building a stronger, safer community in the water.",
+      "summary": "A community-led aquatic-safety organization serving Costa Rica's South Caribbean through lifesaving training, swimming education, patrols, prevention, and emergency-response coordination."
+    },
+    "channels": {
+      "website": "https://www.caribbeanguard.org/",
+      "donate": "https://www.caribbeanguard.org/donar",
+      "phone": null,
+      "whatsapp": null
+    },
+    "emergency": {
+      "mode": "demo",
+      "primaryNumber": "911",
+      "disclaimer": "Whappin does not monitor emergencies or dispatch rescuers. In an emergency, always call 911 first.",
+      "networkSummary": "Caribbean Guard operates a community emergency-alert network of 70+ trained members including lifeguards, surfers, swimmers, fishers, divers, and freedivers. When an emergency is reported, a protocol is activated and nearby qualified community members may respond.",
+      "demoInstructions": "This is a demonstration of a future integration. In production, this would activate Caribbean Guard's emergency-alert network. No alert is actually sent."
+    },
+    "impact": [
+      {
+        "metric": "400+",
+        "label": "People trained or involved",
+        "attribution": "Reported by Caribbean Guard as of September 2024.",
+        "source": "https://www.caribbeanguard.org/nuestro-trabajo"
+      },
+      {
+        "metric": "70+",
+        "label": "Emergency-network members",
+        "attribution": "Reported by Caribbean Guard.",
+        "source": "https://www.caribbeanguard.org/lifesaving-club"
+      },
+      {
+        "metric": "0",
+        "label": "Fatalities during organized patrols",
+        "attribution": "Caribbean Guard's own reported record.",
+        "source": "https://www.caribbeanguard.org/lifesaving-club"
+      }
+    ],
+    "programs": [
+      {
+        "title": "Lifesaving Club",
+        "summary": "Continuing education, lifeguard courses, CPR and first-aid instructor training, swimming-instructor training, junior lifeguard / Nipper training, and ELLIS CPR training.",
+        "audience": "Open to community members interested in water safety",
+        "schedule": "Saturday morning training (location varies with ocean conditions)",
+        "patrolInfo": "Patrols Playa Grande and Playa Chiquita on Sundays, with additional patrols during Easter, holidays, and special dates",
+        "cost": null,
+        "source": "https://www.caribbeanguard.org/lifesaving-club",
+        "confirmWithOrganizer": true
+      },
+      {
+        "title": "Swim Club",
+        "summary": "Free community swim sessions open to all.",
+        "audience": "Open to the community",
+        "schedule": "Punta Uva: Thursdays 7:15 AM | Playa Negra: Tuesdays & Fridays 4:00 PM",
+        "cost": "Free",
+        "source": "https://www.caribbeanguard.org/swim-club",
+        "confirmWithOrganizer": true
+      },
+      {
+        "title": "Swim School",
+        "summary": "Free swimming instruction for local children.",
+        "audience": "Local children",
+        "cost": "Free",
+        "source": "https://www.caribbeanguard.org/swim-club"
+      },
+      {
+        "title": "Programa Playa Organizada",
+        "summary": "Organized Beach Program including red-and-yellow-flag supervised bathing zones, survival lines, drone mapping, rescue stations, emergency plans, rapid-response groups, and CPR/lifeguard training for local workers.",
+        "source": "https://www.caribbeanguard.org/programa-playa-organizada"
+      },
+      {
+        "title": "Emergency-Alert Network",
+        "summary": "A community emergency group of 70+ trained members who may respond when a protocol is activated.",
+        "source": "https://www.caribbeanguard.org/lifesaving-club"
+      }
+    ],
+    "team": [
+      {
+        "name": "Lucas Iturriza",
+        "role": "Founder",
+        "bio": "Co-founded Caribbean Guard in March 2021, organizing community patrols during the Easter swell."
+      },
+      {
+        "name": "Joel Gagg",
+        "role": "Co-founder / BlueYouth & Coral Conservation",
+        "bio": "Collaborated with Lucas Iturriza to organize the first community patrols and expand the initiative."
+      }
+    ],
+    "teamPageUrl": "https://www.caribbeanguard.org/team",
+    "relatedPlaces": [
+      "Playa Grande",
+      "Playa Chiquita",
+      "Punta Uva",
+      "Playa Negra",
+      "Cocles"
+    ],
+    "sources": [
+      {
+        "url": "https://www.caribbeanguard.org/",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["mission", "organizational philosophy"]
+      },
+      {
+        "url": "https://www.caribbeanguard.org/nuestro-trabajo",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["founding history", "impact statistics", "emergency network"]
+      },
+      {
+        "url": "https://www.caribbeanguard.org/lifesaving-club",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["programs", "patrol locations", "Saturday training", "emergency network"]
+      },
+      {
+        "url": "https://www.caribbeanguard.org/swim-club",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["swim club schedule", "swim school"]
+      },
+      {
+        "url": "https://www.caribbeanguard.org/programa-playa-organizada",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["organized beach program"]
+      },
+      {
+        "url": "https://www.caribbeanguard.org/team",
+        "publisher": "Caribbean Guard",
+        "accessed": "2026-07-23",
+        "supports": ["team"]
+      }
+    ]
+  }
+}

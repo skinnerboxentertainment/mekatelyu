@@ -15,6 +15,10 @@ try:
     from .semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 except ImportError:  # Direct execution: python paradisio_app/build.py
     from semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
+try:
+    from .community_partner import load_organizations, render_organization_html, public_org_summary
+except ImportError:
+    from community_partner import load_organizations, render_organization_html, public_org_summary
 
 AMENITY_MAP = {
     "wi-fi gratis": "Free Wi-Fi", "wifi": "Free Wi-Fi", "wi-fi": "Free Wi-Fi",
@@ -1562,10 +1566,13 @@ def main():
     static_src = STATIC_DIR / "styles.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "styles.css")
+    static_src = STATIC_DIR / "community.css"
+    if static_src.exists():
+        shutil.copy2(static_src, OUTPUT_DIR / "static" / "community.css")
     vendor_src = STATIC_DIR / "vendor"
     if vendor_src.exists():
         shutil.copytree(vendor_src, OUTPUT_DIR / "static" / "vendor")
-    print(f"  static/ — directory-data.js, tokens.css, invest.css, app.js, detail.js, styles.css")
+    print(f"  static/ — directory-data.js, tokens.css, invest.css, community.css, app.js, detail.js, styles.css")
 
     urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1579,6 +1586,31 @@ def main():
     invest_dir.mkdir(parents=True, exist_ok=True)
     (invest_dir / "index.html").write_text(render_invest_page(metrics), encoding="utf-8")
     print("  invest/ — angel investment page")
+
+    orgs = load_organizations(BASE_DIR / "data" / "organizations.json")
+    if orgs:
+        org_summaries = []
+        for org in orgs:
+            html = render_organization_html(org, nav_html_func=nav_html)
+            slug = org["slug"]
+            (biz_dir / f"{slug}.html").write_text(html, encoding="utf-8")
+            org_summaries.append(public_org_summary(org))
+            print(f"  businesses/{slug}.html — {org['name']}")
+        summaries.extend(org_summaries)
+        directory_data = (
+            "const BUSINESSES=" + json.dumps(summaries, ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const CATEGORIES=" + json.dumps(metrics["categories"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const SEMANTIC_FACETS=" + json.dumps(metrics["semantic_facets"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const SEMANTIC_LABELS=" + json.dumps(TAG_LABELS, ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const AREAS=" + json.dumps(metrics["areas"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+        )
+        (OUTPUT_DIR / "static" / "directory-data.js").write_text(directory_data, encoding="utf-8")
+        urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses + org_summaries]
+        sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        sitemap += "".join(f"  <url><loc>{url}</loc></url>\n" for url in urls)
+        sitemap += "</urlset>\n"
+        (OUTPUT_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+        print(f"  organizations/ — {len(orgs)} community partners")
 
     generate_deployment_wrapper()
     print("  release root — redirect, 404, robots, .nojekyll")
