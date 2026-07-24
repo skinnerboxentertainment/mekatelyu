@@ -29,6 +29,9 @@ def load_organizations(data_path):
             "team": data.get("team", []),
             "teamPageUrl": data.get("teamPageUrl", ""),
             "relatedPlaces": data.get("relatedPlaces", []),
+            "relatedLabel": data.get("relatedLabel", "Related places"),
+            "relatedNote": data.get("relatedNote", ""),
+            "sourceDisclaimer": data.get("sourceDisclaimer", "Information compiled from public sources. Confirm details directly with the organization."),
             "sources": data.get("sources", []),
         }
         orgs.append(org)
@@ -36,6 +39,20 @@ def load_organizations(data_path):
 
 
 def public_org_summary(org):
+    tier = org.get("partnerTier", "")
+    channels = org.get("channels", {})
+    if tier == "community_safety_partner":
+        badges = ["Community Safety Partner"]
+        intents = ["community"]
+        groups = ["community"]
+        tags = ["community-safety", "nonprofit"]
+        synonyms = ["safety", "lifeguard", "rescue", "beach safety", "emergency"]
+    else:
+        badges = ["Community Organization"]
+        intents = ["community"]
+        groups = ["community"]
+        tags = ["community-organization", "nonprofit"]
+        synonyms = ["community", "culture", "heritage", "afro-caribbean", "organization"]
     return {
         "slug": org["slug"],
         "name": org["name"],
@@ -46,21 +63,21 @@ def public_org_summary(org):
         "distance_km": "",
         "status": "active",
         "channels": {
-            "phone": False,
+            "phone": bool(channels.get("phone")),
             "whatsapp": False,
-            "instagram": False,
-            "website": bool(org["channels"].get("website")),
+            "instagram": bool(channels.get("instagram")),
+            "website": bool(channels.get("website")),
             "booking_url": False,
             "google_maps_cid": False,
         },
         "primary_contact": {"type": "Website", "label": "Visit Website"},
         "scores": {"contactability": 10, "visibility": 10, "completeness": 0},
-        "badges": ["Community Safety Partner"],
-        "intents": ["community"],
-        "discovery_groups": ["community"],
-        "semantic_tags": ["community-safety", "nonprofit"],
+        "badges": badges,
+        "intents": intents,
+        "discovery_groups": groups,
+        "semantic_tags": tags,
         "semantic_attributes": [],
-        "search_synonyms": ["safety", "lifeguard", "rescue", "beach safety", "emergency"],
+        "search_synonyms": synonyms,
         "description": org.get("hero", {}).get("summary", ""),
         "rating": None,
     }
@@ -72,6 +89,14 @@ def _hero_html(org):
     title = html.escape(hero.get("title", ""))
     tagline = html.escape(hero.get("tagline", ""))
     summary = html.escape(hero.get("summary", ""))
+    channels = org.get("channels", {})
+    buttons = ""
+    website = channels.get("website", "")
+    if website:
+        buttons += f'\n    <a href="{html.escape(website, quote=True)}" class="org-btn org-btn-primary" target="_blank" rel="noopener">Visit Website</a>'
+    donate = channels.get("donate", "")
+    if donate:
+        buttons += f'\n    <a href="{html.escape(donate, quote=True)}" class="org-btn org-btn-outline" target="_blank" rel="noopener">Donate</a>'
     return f"""
 <header class="org-header">
   <div class="org-eyebrow">
@@ -80,9 +105,7 @@ def _hero_html(org):
   <h1 class="org-title">{title}</h1>
   <p class="org-tagline">{tagline}</p>
   <p class="org-summary">{summary}</p>
-  <div class="org-actions">
-    <a href="{html.escape(org['channels'].get('website', '#'), quote=True)}" class="org-btn org-btn-primary" target="_blank" rel="noopener">Visit Website</a>
-    <a href="{html.escape(org['channels'].get('donate', '#'), quote=True)}" class="org-btn org-btn-outline" target="_blank" rel="noopener">Donate</a>
+  <div class="org-actions">{buttons}
   </div>
 </header>"""
 
@@ -145,6 +168,8 @@ def _programs_html(org):
 
 def _emergency_html(org):
     em = org.get("emergency", {})
+    if not em:
+        return ""
     mode = em.get("mode", "pending")
     primary = html.escape(em.get("primaryNumber", "911"))
     disclaimer = html.escape(em.get("disclaimer", ""))
@@ -231,11 +256,13 @@ def _related_html(org):
     places = org.get("relatedPlaces", [])
     if not places:
         return ""
+    label = org.get("relatedLabel", "Related places")
+    note = org.get("relatedNote", "")
     items = "".join(f"<li class=\"related-place\">{html.escape(p)}</li>" for p in places)
+    note_html = f'\n  <p class="org-section-note">{html.escape(note)}</p>' if note else ""
     return f"""
 <section class="org-section org-related">
-  <h2 class="org-section-title">Related Beaches</h2>
-  <p class="org-section-note">Caribbean Guard operates in the South Caribbean. Check official sources for current patrol information.</p>
+  <h2 class="org-section-title">{html.escape(label)}</h2>{note_html}
   <ul class="related-list">{items}
   </ul>
 </section>"""
@@ -245,6 +272,7 @@ def _sources_html(org):
     sources = org.get("sources", [])
     if not sources:
         return ""
+    disclaimer = org.get("sourceDisclaimer", "Information compiled from public sources. Confirm details directly with the organization.")
     items = ""
     for s in sources:
         url = html.escape(s.get("url", ""), quote=True)
@@ -255,7 +283,7 @@ def _sources_html(org):
         items += f"<li><a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{url}</a> &mdash; {publisher} &mdash; accessed {accessed}{' &mdash; ' + supports_str if supports_str else ''}</li>"
     return f"""
 <section class="org-section org-sources">
-  <p class="sources-disclaimer">Information compiled from Caribbean Guard's public website. Operational details and schedules may change. Confirm directly with the organization.</p>
+  <p class="sources-disclaimer">{html.escape(disclaimer)}</p>
   <details class="sources-details">
     <summary class="sources-summary">Source references</summary>
     <ul class="sources-list">{items}
@@ -266,28 +294,47 @@ def _sources_html(org):
 
 def _sticky_bar_html(org):
     parts = []
-    parts.append(f"<a href=\"tel:{html.escape(org['emergency'].get('primaryNumber', '911'))}\" class=\"sticky-emergency\">Call 911</a>")
-    website = org["channels"].get("website", "")
+    channels = org.get("channels", {})
+    emergency = org.get("emergency", {})
+    if emergency:
+        primary = html.escape(emergency.get("primaryNumber", "911"))
+        parts.append(f"<a href=\"tel:{primary}\" class=\"sticky-emergency\">Call {primary}</a>")
+    website = channels.get("website", "")
     if website:
         parts.append(f"<a href=\"{html.escape(website, quote=True)}\" class=\"org-sticky-btn\" target=\"_blank\" rel=\"noopener\">Website</a>")
-    donate = org["channels"].get("donate", "")
+    donate = channels.get("donate", "")
     if donate:
         parts.append(f"<a href=\"{html.escape(donate, quote=True)}\" class=\"org-sticky-btn\" target=\"_blank\" rel=\"noopener\">Donate</a>")
-    parts.append("<button class=\"sticky-share\" onclick=\"if(navigator.share)navigator.share({title:'Caribbean Guard',url:window.location.href});else alert('Share: '+window.location.href)\">Share</button>")
+    phone = channels.get("phone", "")
+    if phone:
+        parts.append(f"<a href=\"tel:{html.escape(phone)}\" class=\"org-sticky-btn\" target=\"_blank\">{html.escape(phone)}</a>")
+    if not parts:
+        return ""
+    name = html.escape(org.get("name", "Organization"))
+    parts.append(f"<button class=\"sticky-share\" onclick=\"if(navigator.share)navigator.share({{title:'{name}',url:window.location.href}});else alert('Share: '+window.location.href)\">Share</button>")
     return f"""<div class=\"org-sticky-bar\">{"".join(parts)}</div>"""
+
+
+def _org_label(org):
+    tier = org.get("partnerTier", "")
+    if tier == "community_safety_partner":
+        return "Community Safety Partner"
+    return "Community Organization"
 
 
 def _page_title(org):
     name = html.escape(org.get("name", "Organization"))
-    return f"{name} — Community Safety Partner — Whappin Puerto Viejo"
+    label = _org_label(org)
+    return f"{name} — {label} — Whappin Puerto Viejo"
 
 
 def _og_tags(org):
     name = html.escape(org.get("name", ""))
+    label = _org_label(org)
     summary = html.escape(org.get("hero", {}).get("summary", ""))
     slug = html.escape(org["slug"])
     return f"""
-<meta property="og:title" content="{name} — Community Safety Partner — Whappin Puerto Viejo">
+<meta property="og:title" content="{name} — {label} — Whappin Puerto Viejo">
 <meta property="og:description" content="{summary}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.whappin.com/businesses/{slug}.html">
@@ -320,12 +367,12 @@ def render_organization_html(org, *, nav_html_func):
 {_emergency_html(org)}
 {_programs_html(org)}
 {_team_html(org)}
-{_related_html(org)}
-{_sources_html(org)}
-<footer class="footer">
-<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md" target="_blank" rel="noopener">Report a problem</a></p>
-</footer>
-</main>
-{_sticky_bar_html(org)}
-</body>
-</html>"""
+    {_related_html(org)}
+    {_sources_html(org)}
+    <footer class="footer">
+      <p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md" target="_blank" rel="noopener">Report a problem</a></p>
+    </footer>
+    </main>
+    {_sticky_bar_html(org) if org.get("emergency") or any(org.get("channels", {}).get(k) for k in ("website", "donate", "phone")) else ""}
+    </body>
+    </html>"""
