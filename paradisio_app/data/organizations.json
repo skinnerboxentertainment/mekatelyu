@@ -148,53 +148,5 @@
         "supports": ["team"]
       }
     ]
-  },
-  "atacs": {
-    "slug": "atacs",
-    "name": "ATACS",
-    "entityType": "community_organization",
-    "partnerTier": "community_organization",
-    "partnershipStatus": "proposed",
-    "category": "community_organization",
-    "area": "South Caribbean",
-    "featured": true,
-    "hero": {
-      "eyebrow": "Whappin Community Profile",
-      "title": "ATACS",
-      "tagline": "Asociación Tribal Afrodescendiente del Caribe Sur",
-      "summary": "A South Caribbean community organization working to preserve Afro-Caribbean history and culture, strengthen community participation, and advocate for the rights of Afro-descendant communities in the region."
-    },
-    "channels": {
-      "website": "https://atacspv.org/",
-      "phone": "+50662053254",
-      "email": "atacscr@gmail.com",
-      "facebook": "https://www.facebook.com/ataacs.cr/",
-      "instagram": "https://www.instagram.com/asociacionafro.cr/"
-    },
-    "relatedPlaces": [
-      "Puerto Viejo",
-      "Cahuita",
-      "Cocles",
-      "Hone Creek",
-      "Punta Uva",
-      "Manzanillo"
-    ],
-    "relatedLabel": "Communities",
-    "relatedNote": "Communities connected to ATACS's work across Costa Rica's South Caribbean.",
-    "sourceDisclaimer": "Information compiled from ATACS's public website and the Costa Rican cultural information directory. Contact and organizational details may change. Confirm directly with the organization.",
-    "sources": [
-      {
-        "url": "https://atacspv.org/",
-        "publisher": "ATACS",
-        "accessed": "2026-07-24",
-        "supports": ["mission", "projects", "leadership", "contact"]
-      },
-      {
-        "url": "https://si.cultura.cr/agrupaciones-y-organizaciones/asociacion-tribal-de-asuntos-afrodescendiente-del-caribe-sur-ataacs",
-        "publisher": "Sistema de Información Cultural de Costa Rica",
-        "accessed": "2026-07-24",
-        "supports": ["government classification", "contact", "location"]
-      }
-    ]
   }
 }
