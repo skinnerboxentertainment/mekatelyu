@@ -592,7 +592,7 @@ def generate_deployment_wrapper():
     if OUTPUT_DIR != release_root:
         return
     (release_root / ".nojekyll").write_text("", encoding="utf-8")
-    (release_root / "CNAME").write_text("whappin.com\n", encoding="utf-8")
+    (release_root / "CNAME").write_text("www.whappin.com\n", encoding="utf-8")
     (release_root / "404.html").write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
