@@ -49,8 +49,9 @@ def favicon_html(prefix=""):
 
 AMENITY_MAP = {
     "wi-fi gratis": "Free Wi-Fi", "wifi": "Free Wi-Fi", "wi-fi": "Free Wi-Fi",
-    "incluye wi-fi": "Free Wi-Fi",
+    "incluye wi-fi": "Free Wi-Fi", "incluye wifi": "Free Wi-Fi",
     "incluye wi-fi y estacionamiento": "Free Wi-Fi \u00b7 Free parking",
+    "incluye wifi y estacionamiento": "Free Wi-Fi \u00b7 Free parking",
     "incluye desayuno, wi-fi y estacionamiento": "Free breakfast \u00b7 Free Wi-Fi \u00b7 Free parking",
     "incluye desayuno y estacionamiento": "Free breakfast \u00b7 Free parking",
     "incluye desayuno": "Free breakfast", "desayuno incluido": "Free breakfast",
@@ -771,7 +772,7 @@ def render_index_html(businesses, metrics):
 </header>
 <div class="controls">
 <label class="sr-only" for="search">Search businesses</label>
-<input type="search" id="search" class="search-input" placeholder="Search by name, type, quality, or area" autofocus>
+<input type="search" id="search" class="search-input" placeholder="Search by name, type, quality, or area">
 <div class="view-toggle">
 <button id="view-list" class="view-btn active" aria-pressed="true">List</button>
 <button id="view-map" class="view-btn" aria-pressed="false">Map</button>
@@ -1273,11 +1274,16 @@ def render_business_html(biz):
     show_call = call_ok and pc['type'] != 'Call'
 
     sticky_actions = ""
-    if maps_url or show_call or True:
+    if maps_url or show_call or wa_ok or True:
         parts = []
         if maps_url:
             parts.append(f'<a href="{maps_url}" class="sticky-directions" target="_blank" rel="noopener">{ICONS["Directions"]} Directions</a>')
-        if show_call:
+        if pc['type'] == 'WhatsApp' and wa_ok:
+            wa_url = biz["channels"]["whatsapp"]
+            if wa_url.startswith("+"):
+                wa_url = "https://wa.me/" + wa_url.lstrip("+")
+            parts.append(f'<a href="{wa_url}" class="sticky-call" target="_blank" rel="noopener" data-plausible-event="ContactClick" data-plausible-channel="WhatsApp">{ICONS["WhatsApp"]} WhatsApp</a>')
+        elif show_call:
             parts.append(f'<a href="tel:{biz["channels"]["phone_normalized"]}" class="sticky-call" data-plausible-event="ContactClick" data-plausible-channel="Call">{ICONS["Call"]} Call</a>')
         elif wa_ok:
             wa_url = biz["channels"]["whatsapp"]
@@ -1304,7 +1310,7 @@ def render_business_html(biz):
 <link rel="stylesheet" href="../static/styles.css?v={TAXONOMY_VERSION}">
 <link rel="stylesheet" href="../static/vendor/leaflet/leaflet.css">
 <script src="../static/vendor/leaflet/leaflet.js"></script>
-<meta name="description" content="{name} — {category_label(biz['category'])} in {area}, Puerto Viejo. View location and available contact options.">
+<meta name="description" content="{name} — {category_label(biz['category'])} in {area}. View location and available contact options.">
 </head>
 <body>
 {nav}
@@ -1634,7 +1640,7 @@ def main():
             for tag in sorted(TAG_LABELS)
             if any(tag in b["semantic_tags"] or tag in b["semantic_attributes"] for b in businesses)
         },
-        "generated": os.environ.get("PARADISIO_BUILD_DATE") or datetime.now().strftime("%Y-%m-%d"),
+        "generated": datetime.now().strftime("%Y-%m-%d"),
     }
 
     print(f"Building Whappin Puerto Viejo — {len(businesses)} businesses")

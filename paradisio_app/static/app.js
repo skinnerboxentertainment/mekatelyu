@@ -291,8 +291,9 @@
             viewMap.classList.add("active");
             viewList.setAttribute("aria-pressed", "false");
             viewMap.setAttribute("aria-pressed", "true");
+            mapDiv.scrollIntoView({ behavior: "smooth", block: "start" });
             initMap();
-            setTimeout(function () { map && map.invalidateSize(); }, 100);
+            setTimeout(function () { map && map.invalidateSize(); }, 300);
             updateMap();
         } else {
             resultsDiv.style.display = "";

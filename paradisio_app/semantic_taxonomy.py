@@ -98,6 +98,7 @@ GROUP_SYNONYMS = {
 class TagRule:
     tag: str
     patterns: tuple[str, ...]
+    exclude_categories: tuple[str, ...] = ()
 
 
 TAG_RULES = (
@@ -115,12 +116,18 @@ TAG_RULES = (
     TagRule("bar", (r"\bbar\b", r"\bpub\b", r"\bcocktail(?:s)?\b")),
     TagRule("supermarket", (r"\bsupermarket\b", r"\bsupermercado\b")),
     TagRule("grocery", (r"\bgrocery\b", r"\btienda de comestibles\b")),
-    TagRule("surf", (r"\bsurf(?:ing)?\b", r"\bsurf school\b", r"\bescuela de surf\b")),
-    TagRule("diving", (r"\bscuba\b", r"\bdiv(?:e|ing)\b", r"\bbuceo\b")),
-    TagRule("snorkeling", (r"\bsnorkel(?:ing)?\b",)),
-    TagRule("kayaking", (r"\bkayak(?:ing)?\b",)),
-    TagRule("fishing", (r"\bfishing\b", r"\bpesca\b")),
-    TagRule("wildlife", (r"\bwildlife\b", r"\banimal rescue\b", r"\brescate animal\b")),
+    TagRule("surf", (r"\bsurf(?:ing)?\b", r"\bsurf school\b", r"\bescuela de surf\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
+    TagRule("diving", (r"\bscuba\b", r"\bdiv(?:e|ing)\b", r"\bbuceo\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
+    TagRule("snorkeling", (r"\bsnorkel(?:ing)?\b",),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
+    TagRule("kayaking", (r"\bkayak(?:ing)?\b",),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
+    TagRule("fishing", (r"\bfishing\b", r"\bpesca\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
+    TagRule("wildlife", (r"\bwildlife\b", r"\banimal rescue\b", r"\brescate animal\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness")),
     TagRule("yoga", (r"\byoga\b", r"\bacroyoga\b")),
     TagRule("massage", (r"\bmassage\b", r"\bmasajes?\b")),
     TagRule("spa", (r"\bspa\b",)),
@@ -191,6 +198,8 @@ def classify_record(row: dict[str, str], parsed: dict | None = None) -> dict:
     eligible = ("master_name", "master_description", "maps_subcategory", "maps_cuisine", "maps_amenities")
     for rule in TAG_RULES:
         if rule.tag in assertions:
+            continue
+        if rule.exclude_categories and primary in rule.exclude_categories:
             continue
         for source in eligible:
             text = evidence_sources[source]

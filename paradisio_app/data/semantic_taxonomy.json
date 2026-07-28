@@ -1,5 +1,5 @@
 {
-  "taxonomy_version": "2026-07-21.1",
+  "taxonomy_version": "2026-07-28.1",
   "record_count": 737,
   "groups": {
     "stay": "Places to Stay",
@@ -76,9 +76,7 @@
         "bed-and-breakfast",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -134,10 +132,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -195,7 +190,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -262,9 +256,7 @@
         "hostel",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -329,11 +321,8 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "laundry",
-        "massage",
-        "vacation-rental",
-        "yoga"
+        "vacation-rental"
       ],
       "search_synonyms": [
         "accommodation",
@@ -520,8 +509,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -636,9 +624,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -695,9 +681,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -797,7 +781,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -862,9 +845,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -914,8 +895,7 @@
         "hotel"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -975,8 +955,7 @@
         "vacation-rental"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -1089,9 +1068,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -1142,8 +1119,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -1209,8 +1185,7 @@
       ],
       "attributes": [
         "bar",
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -1436,7 +1411,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -1495,8 +1469,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
-        "massage",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -1561,9 +1533,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -1612,9 +1582,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -1663,9 +1631,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -1714,9 +1680,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -1766,7 +1730,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -1823,13 +1786,11 @@
         "wellness"
       ],
       "tags": [
-        "hotel",
-        "spa"
+        "hotel"
       ],
       "attributes": [
         "bar",
         "cafe",
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -1914,8 +1875,6 @@
       ],
       "attributes": [
         "bar",
-        "gym",
-        "spa",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -1988,9 +1947,7 @@
         "bed-and-breakfast",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2046,9 +2003,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2096,12 +2051,10 @@
         "wellness"
       ],
       "tags": [
-        "hotel",
-        "spa"
+        "hotel"
       ],
       "attributes": [
         "bar",
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -2177,9 +2130,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2229,8 +2180,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -2389,9 +2339,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2557,9 +2505,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2610,8 +2556,7 @@
       ],
       "attributes": [
         "bar",
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -2675,9 +2620,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -2727,8 +2670,7 @@
         "hotel"
       ],
       "attributes": [
-        "bed-and-breakfast",
-        "gym"
+        "bed-and-breakfast"
       ],
       "search_synonyms": [
         "accommodation",
@@ -2845,7 +2787,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -2904,9 +2845,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "spa"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -2970,10 +2909,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -3029,9 +2965,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -3082,7 +3016,6 @@
         "vacation-rental"
       ],
       "attributes": [
-        "gym",
         "laundry"
       ],
       "search_synonyms": [
@@ -3148,8 +3081,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -3208,7 +3140,6 @@
       ],
       "attributes": [
         "cafe",
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -3374,9 +3305,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "spa"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -3441,9 +3370,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "spa"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -3507,9 +3434,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -3559,9 +3484,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "spa"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -3686,8 +3609,7 @@
       ],
       "attributes": [
         "bar",
-        "laundry",
-        "massage"
+        "laundry"
       ],
       "search_synonyms": [
         "accommodation",
@@ -3753,7 +3675,6 @@
       ],
       "attributes": [
         "cabins",
-        "gym",
         "laundry",
         "vacation-rental"
       ],
@@ -3826,9 +3747,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -3880,11 +3799,7 @@
         "bar",
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "massage",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -3972,9 +3887,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -4023,9 +3936,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -4075,9 +3986,7 @@
         "bed-and-breakfast",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -4176,9 +4085,7 @@
         "bed-and-breakfast",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -4235,8 +4142,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4294,7 +4200,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -4354,8 +4259,7 @@
         "vacation-rental"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4420,7 +4324,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -4480,10 +4383,7 @@
       ],
       "attributes": [
         "bar",
-        "beauty",
-        "gym",
-        "spa",
-        "yoga"
+        "beauty"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4665,7 +4565,6 @@
       ],
       "attributes": [
         "bar",
-        "gym",
         "laundry",
         "vacation-rental"
       ],
@@ -4781,8 +4680,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4841,8 +4739,7 @@
       ],
       "attributes": [
         "bar",
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4907,8 +4804,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -4965,10 +4861,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -5024,10 +4917,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -5084,9 +4974,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -5144,8 +5032,7 @@
       ],
       "attributes": [
         "bar",
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -5209,9 +5096,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -5261,7 +5146,6 @@
         "hotel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -5369,9 +5253,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -5580,12 +5462,9 @@
         "wellness"
       ],
       "tags": [
-        "hotel",
-        "yoga"
+        "hotel"
       ],
       "attributes": [
-        "massage",
-        "spa",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -5837,12 +5716,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "massage",
-        "spa",
-        "surf",
-        "yoga"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -5936,8 +5810,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -6001,9 +5874,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6052,10 +5923,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym",
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6111,9 +5979,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6163,9 +6029,7 @@
         "hostel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "surf"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -6229,9 +6093,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6280,12 +6142,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym",
-        "snorkeling",
-        "spa",
-        "surf"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6356,7 +6213,6 @@
         "hostel"
       ],
       "attributes": [
-        "gym",
         "vacation-rental"
       ],
       "search_synonyms": [
@@ -6457,8 +6313,7 @@
         "hostel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -6566,9 +6421,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -6618,8 +6471,7 @@
         "hostel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -6761,7 +6613,6 @@
         "vacation-rental"
       ],
       "attributes": [
-        "gym",
         "hotel"
       ],
       "search_synonyms": [
@@ -7006,9 +6857,7 @@
         "ecolodge",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7283,9 +7132,7 @@
         "cabins",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7341,9 +7188,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7392,9 +7237,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7535,9 +7378,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7889,9 +7730,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -7982,9 +7821,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8201,9 +8038,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8378,9 +8213,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8531,9 +8364,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8624,9 +8455,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8759,9 +8588,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "surf"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -8862,9 +8689,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -9172,9 +8997,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -9435,7 +9258,6 @@
       ],
       "attributes": [
         "bed-and-breakfast",
-        "gym",
         "hotel"
       ],
       "search_synonyms": [
@@ -9685,9 +9507,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -9736,9 +9556,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -9788,8 +9606,7 @@
         "vacation-rental"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -9897,9 +9714,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -10377,9 +10192,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -10957,8 +10770,7 @@
         "things-to-do"
       ],
       "tags": [
-        "vacation-rental",
-        "wildlife"
+        "vacation-rental"
       ],
       "attributes": [],
       "search_synonyms": [
@@ -11017,7 +10829,6 @@
       ],
       "attributes": [
         "bar",
-        "gym",
         "laundry"
       ],
       "search_synonyms": [
@@ -11250,10 +11061,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym",
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -11309,11 +11117,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym",
-        "spa",
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -11502,9 +11306,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -11595,10 +11397,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym",
-        "wildlife"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -11914,9 +11713,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "surf"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -15911,9 +15708,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -16662,8 +16457,7 @@
         "shop"
       ],
       "attributes": [
-        "bar",
-        "surf"
+        "bar"
       ],
       "search_synonyms": [
         "bar",
@@ -19002,10 +18796,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "massage",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
@@ -19184,9 +18975,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
@@ -19230,13 +19019,11 @@
         "wellness"
       ],
       "tags": [
-        "local-service",
-        "spa"
+        "local-service"
       ],
       "attributes": [
         "beauty",
-        "hotel",
-        "massage"
+        "hotel"
       ],
       "search_synonyms": [
         "beauty",
@@ -19307,9 +19094,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
@@ -19407,9 +19192,7 @@
         "beauty",
         "local-service"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "beauty",
         "bienestar",
@@ -19464,7 +19247,6 @@
         "wellness"
       ],
       "tags": [
-        "gym",
         "local-service"
       ],
       "attributes": [
@@ -19524,13 +19306,9 @@
         "wellness"
       ],
       "tags": [
-        "local-service",
-        "spa"
+        "local-service"
       ],
-      "attributes": [
-        "gym",
-        "massage"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bienestar",
         "gym",
@@ -19593,10 +19371,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "massage",
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
@@ -19647,12 +19422,9 @@
         "wellness"
       ],
       "tags": [
-        "local-service",
-        "massage",
-        "spa"
+        "local-service"
       ],
       "attributes": [
-        "gym",
         "hotel"
       ],
       "search_synonyms": [
@@ -19726,8 +19498,7 @@
       ],
       "tags": [
         "cafe",
-        "local-service",
-        "yoga"
+        "local-service"
       ],
       "attributes": [
         "hostel"
@@ -19845,10 +19616,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "gym",
-        "yoga"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "gym",
         "local service",
@@ -20125,9 +19893,7 @@
       "tags": [
         "local-service"
       ],
-      "attributes": [
-        "surf"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
@@ -20683,8 +20449,7 @@
         "things-to-do"
       ],
       "tags": [
-        "local-service",
-        "surf"
+        "local-service"
       ],
       "attributes": [
         "hotel"
@@ -20745,8 +20510,7 @@
         "things-to-do"
       ],
       "tags": [
-        "local-service",
-        "surf"
+        "local-service"
       ],
       "attributes": [],
       "search_synonyms": [
@@ -20798,8 +20562,7 @@
         "things-to-do"
       ],
       "tags": [
-        "local-service",
-        "surf"
+        "local-service"
       ],
       "attributes": [],
       "search_synonyms": [
@@ -20851,8 +20614,7 @@
         "things-to-do"
       ],
       "tags": [
-        "local-service",
-        "surf"
+        "local-service"
       ],
       "attributes": [
         "clothing"
@@ -22357,9 +22119,7 @@
         "shop",
         "supermarket"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "compras",
         "gym",
@@ -23950,9 +23710,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -24099,12 +23857,9 @@
         "wellness"
       ],
       "tags": [
-        "massage",
         "wellness"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bienestar",
         "health",
@@ -24381,12 +24136,9 @@
       ],
       "tags": [
         "beauty",
-        "spa",
         "wellness"
       ],
-      "attributes": [
-        "massage"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "beauty",
         "bienestar",
@@ -24493,12 +24245,9 @@
         "wellness"
       ],
       "tags": [
-        "massage",
         "wellness"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bienestar",
         "health",
@@ -24851,9 +24600,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -26385,12 +26132,9 @@
         "wellness"
       ],
       "tags": [
-        "massage",
         "wellness"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bienestar",
         "health",
@@ -26893,9 +26637,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -27373,10 +27115,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "massage",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -27609,9 +27348,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -27793,7 +27530,6 @@
         "wellness"
       ],
       "tags": [
-        "massage",
         "wellness"
       ],
       "attributes": [],
@@ -28182,9 +27918,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -28853,9 +28587,7 @@
         "ecolodge",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -29176,9 +28908,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym",
-        "spa"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -29558,9 +29288,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -29651,9 +29379,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -29753,9 +29479,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -29812,9 +29536,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -29921,9 +29643,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -30030,9 +29750,7 @@
         "cabins",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -30296,12 +30014,9 @@
       ],
       "tags": [
         "cabins",
-        "hotel",
-        "surf"
+        "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "actividades",
@@ -30511,8 +30226,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -30570,9 +30284,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -30762,9 +30474,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -30981,9 +30691,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -31032,9 +30740,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -31350,9 +31056,7 @@
         "ecolodge",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -31519,8 +31223,7 @@
         "hotel"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -31577,9 +31280,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -31629,8 +31330,7 @@
         "hotel"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -32032,9 +31732,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32084,8 +31782,7 @@
         "hotel"
       ],
       "attributes": [
-        "bar",
-        "gym"
+        "bar"
       ],
       "search_synonyms": [
         "accommodation",
@@ -32142,9 +31839,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32379,10 +32074,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym",
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32522,9 +32214,7 @@
       "tags": [
         "hostel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32616,9 +32306,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32784,9 +32472,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -32976,9 +32662,7 @@
         "hotel",
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -33034,9 +32718,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -33207,9 +32889,7 @@
       "tags": [
         "vacation-rental"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -33259,9 +32939,7 @@
         "ecolodge",
         "hotel"
       ],
-      "attributes": [
-        "spa"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -33411,8 +33089,7 @@
         "hotel"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -33793,9 +33470,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -33894,8 +33569,7 @@
       ],
       "tags": [
         "hotel",
-        "vacation-rental",
-        "wildlife"
+        "vacation-rental"
       ],
       "attributes": [],
       "search_synonyms": [
@@ -33998,9 +33672,7 @@
         "ecolodge",
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -34057,8 +33729,7 @@
         "hotel"
       ],
       "attributes": [
-        "cabins",
-        "gym"
+        "cabins"
       ],
       "search_synonyms": [
         "accommodation",
@@ -34157,9 +33828,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
@@ -35023,7 +34692,6 @@
         "wellness"
       ],
       "tags": [
-        "gym",
         "local-service"
       ],
       "attributes": [],
@@ -35252,7 +34920,6 @@
         "things-to-do"
       ],
       "tags": [
-        "fishing",
         "hotel"
       ],
       "attributes": [],
@@ -35562,12 +35229,9 @@
         "things-to-do"
       ],
       "tags": [
-        "hotel",
-        "wildlife"
+        "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "actividades",
@@ -35671,9 +35335,7 @@
       "tags": [
         "hotel"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "accommodation",
         "alojamiento",
