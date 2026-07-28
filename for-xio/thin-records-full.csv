@@ -1,0 +1,263 @@
+business_name,category,area,phone,whatsapp,instagram,website,cid,rating,amenities,desc_len,auto_desc
+Casa Roble de Playa Negra,vacation_rental,Playa Negra,N,N,Y,Y,Y,3.2,0,379,
+Villas Banana Verde,vacation_rental,Playa Negra,Y,N,N,Y,Y,4.8,0,422,
+Gigi O Restaurant,restaurant,Puerto Viejo,Y,Y,N,Y,Y,4.5,0,141,
+Amimodo Restaurant,restaurant,Puerto Viejo,Y,N,N,N,Y,4.4,0,98,
+Azul Bar and Grill,restaurant,Playa Negra,Y,N,Y,N,Y,4.1,0,302,
+Beach Break Restaurant,restaurant,Cocles,Y,N,Y,N,Y,4.8,0,103,
+Cafe Rico,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.7,0,44,
+Cafe Viejo,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.6,0,74,
+La Casita de Monli,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.5,0,68,
+Chaman Mercadito,restaurant,Puerto Viejo,N,N,Y,N,Y,4.4,0,80,
+Chill and Cheese Snackbar,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.7,0,41,
+Cocomar Comida Caribeña,restaurant,Puerto Viejo,Y,N,N,N,Y,4.7,0,50,
+La Esquina Boruca Pizzeria,restaurant,Puerto Viejo,Y,Y,Y,N,Y,4.3,0,40,
+Gigi Beach,restaurant,Cocles,Y,N,Y,N,Y,4.1,0,166,
+Island City Wingz N Tingz,restaurant,Puerto Viejo,Y,N,N,N,Y,N,0,112,
+Joe Snack Point,restaurant,Puerto Viejo,Y,N,N,N,Y,4.8,0,30,
+La Leyenda de L'Antico Forno en El Establo de Bruce,restaurant,Playa Chiquita,N,N,Y,Y,Y,4.7,0,84,
+Madre Tierra,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.5,0,119,
+McCloud's Munchies,restaurant,Puerto Viejo,N,N,N,N,Y,4.8,0,19,
+Mixta Comida y Cócteles,restaurant,Playa Chiquita,N,N,Y,N,Y,4.8,0,161,
+La Nena,restaurant,Cocles,Y,Y,Y,Y,Y,4.6,0,112,
+Otra Vez,restaurant,Playa Chiquita,Y,N,Y,N,Y,4.7,0,121,
+El Pampa Asador,restaurant,Playa Negra,Y,Y,N,N,Y,4.5,0,40,
+La Parada Cafeteria,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.3,0,160,
+Paradise Comida Caribeña,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.7,0,44,
+Pizzeria Pulcinella,restaurant,Playa Chiquita,Y,N,N,N,Y,4.7,0,125,
+Port Vell,restaurant,Puerto Viejo,Y,Y,Y,Y,Y,4.8,0,305,
+Que Quilombo,restaurant,Playa Chiquita,Y,N,Y,Y,Y,4.7,0,55,
+Restaurante Bar Tamara,restaurant,Puerto Viejo,N,N,Y,Y,Y,4.6,0,251,
+Restaurante Riquísimo,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.4,0,92,
+Roly Caribbean Food,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.6,0,119,
+El Sabor Tico,restaurant,Puerto Viejo,Y,N,N,N,Y,3.6,0,106,
+Selvin's Restaurant and Cabinas,restaurant,Punta Uva,N,N,Y,N,Y,4.4,0,177,
+SOCA Restaurant,restaurant,Puerto Viejo,Y,Y,Y,Y,Y,4.8,0,117,
+Soda Playa Chiquita,restaurant,Playa Chiquita,N,N,Y,Y,Y,3.2,0,76,
+Soda Shekiná,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.6,0,85,
+Clan Vibes Club,restaurant,Puerto Viejo,N,N,Y,N,Y,3.0,0,96,
+Da Lime Beach Club and Restaurant,restaurant,Playa Chiquita,Y,N,Y,Y,Y,4.7,0,132,
+7 Ice Creams,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.9,0,39,
+Bread and Chocolate,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.7,0,171,
+Bread What What,restaurant,Puerto Viejo,Y,N,N,N,Y,4.8,0,48,
+Como En Mi Casa Art Cafe,restaurant,Puerto Viejo,Y,N,Y,Y,Y,4.4,0,59,
+Lulu's Place,restaurant,Puerto Viejo,Y,N,Y,N,Y,5.0,0,211,
+Ocho Nani,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.8,0,131,
+Sweet Moments,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.0,0,26,
+Aloe Boutique,shopping,Puerto Viejo,N,N,Y,N,Y,4.7,0,22,
+Bambu Store,shopping,Puerto Viejo,Y,N,N,N,Y,5.0,0,78,
+Cantik at Home,shopping,Puerto Viejo,N,N,Y,N,Y,1.3,0,34,
+Casa Mandala,shopping,Playa Chiquita,Y,N,Y,N,Y,4.6,0,133,
+DiTown Shop,shopping,Puerto Viejo,Y,N,Y,N,Y,4.7,0,64,
+Luna May,shopping,Puerto Viejo,N,N,Y,N,Y,4.7,0,97,
+Marea Santa,shopping,Puerto Viejo,Y,Y,N,N,Y,4.9,0,47,
+Naturama Store,shopping,Puerto Viejo,Y,Y,Y,N,Y,5.0,0,20,
+Passion Fruit Store,shopping,Puerto Viejo,Y,Y,N,N,Y,3.7,0,31,
+Reggaeland,shopping,Puerto Viejo,Y,N,N,N,Y,4.4,0,29,
+Samoa Boutique,shopping,Puerto Viejo,Y,N,Y,N,Y,4.5,0,78,
+Tienda Caribe,shopping,Puerto Viejo,Y,Y,Y,N,Y,2.8,0,28,
+Almacen San Francisco,shopping,Playa Negra,Y,N,Y,N,Y,4.2,0,47,
+Colono Hone Creek,shopping,Hone Creek,Y,N,N,N,Y,3.8,0,42,
+FerreCocles,shopping,Cocles,Y,N,Y,N,Y,4.2,0,30,
+Cervecera Tierra y Libertad,shopping,Hone Creek,Y,N,Y,N,Y,4.8,0,147,
+Red Monkey Liquor Store,shopping,Puerto Viejo,Y,N,Y,N,Y,4.9,0,21,
+Electro Office,shopping,Puerto Viejo,Y,Y,Y,N,Y,3.0,0,73,
+Librería Caribe,shopping,Puerto Viejo,Y,N,N,N,Y,4.7,0,34,
+Farmacia Don Manuel,shopping,Cocles,Y,Y,Y,N,Y,3.8,0,174,
+La Pitaya,shopping,Puerto Viejo,N,N,Y,N,Y,5.0,0,191,
+Tienda del Mar,shopping,Puerto Viejo,Y,N,Y,N,Y,4.3,0,112,
+Wanderlust,shopping,Puerto Viejo,N,N,Y,N,Y,4.7,0,40,
+Puerto Viejo Farmers and Artisans Market,shopping,Puerto Viejo,Y,N,Y,N,Y,4.5,0,214,
+Bio Mercado Puerto Viejo,shopping,Puerto Viejo,Y,N,N,N,Y,4.8,0,100,
+Centro de Carnes Canada,shopping,Puerto Viejo,Y,N,Y,N,Y,4.7,0,41,
+El Diamante,shopping,Puerto Viejo,Y,N,Y,N,Y,4.0,0,67,
+El Duende Gourmet,shopping,Playa Chiquita,Y,N,Y,N,Y,4.3,0,91,
+Mariscos Mopri,shopping,Puerto Viejo,Y,Y,Y,Y,Y,4.2,0,223,
+Mercadito Puerto Viejo,shopping,Puerto Viejo,Y,N,Y,N,Y,3.3,0,42,
+Namú Ecotienda Orgánica,shopping,Puerto Viejo,Y,Y,N,N,Y,4.9,0,52,
+Super Banana Gourmet Market,shopping,Playa Negra,N,N,Y,N,Y,4.4,0,87,
+Super Negro Cocles,shopping,Cocles,N,N,N,N,Y,4.7,0,77,
+Super Negro Hone Creek,shopping,Hone Creek,Y,N,N,N,Y,N,0,61,
+Value Mart Puerto Viejo,shopping,Puerto Viejo,Y,N,Y,N,Y,3.6,0,44,
+Automotriz Danny,services,Puerto Viejo,Y,N,Y,N,Y,4.6,0,116,
+Ecolavacar del Caribe,services,Hone Creek,Y,N,N,N,Y,3.8,0,97,
+Casa de la Cultura,services,Puerto Viejo,Y,N,Y,N,Y,4.5,0,104,
+La Casa del Coral,services,Cocles,N,N,N,Y,Y,5.0,0,60,
+Chamber of Tourism and Commerce Caribe Sur,services,Playa Negra,Y,N,Y,N,Y,4.2,0,96,
+El Puente-The Bridge,services,Playa Negra,Y,N,Y,N,Y,4.8,0,207,
+Centro Médico Aruma,services,Puerto Viejo,Y,Y,Y,N,Y,4.3,0,283,
+Clínica de Especialidades Médicas San Gabriel,services,Puerto Viejo,Y,Y,N,N,Y,3.8,0,226,
+Clínica Dental Yani,services,Puerto Viejo,Y,Y,Y,N,Y,3.0,0,38,
+Hone Creek Clinic,services,Hone Creek,Y,N,Y,N,Y,3.6,0,38,
+Laboratorio Bioclinic,services,Puerto Viejo,Y,Y,Y,N,Y,3.9,0,53,
+Laboratorio Clínico Leysa,services,Playa Negra,Y,N,Y,N,Y,5.0,0,199,
+We Do Laundry,services,Hone Creek,Y,N,Y,Y,Y,N,0,85,
+Caribe Love Tattoo,services,Puerto Viejo,Y,Y,Y,N,Y,4.9,0,77,
+Earth to Skin,services,Puerto Viejo,N,N,Y,N,Y,4.5,0,247,
+Kona Wellness Shala,services,Cocles,Y,Y,Y,N,Y,4.9,0,59,
+Pure Love Liberation,services,Cocles,Y,N,N,N,Y,N,0,415,
+Svastha Yoga & Ayurveda Café,services,Puerto Viejo,Y,N,Y,N,Y,N,0,254,
+Puerto Viejo Dogs,services,Puerto Viejo,Y,Y,Y,N,Y,5.0,0,500,
+Ciclo Tuanis,services,Puerto Viejo,Y,N,Y,N,Y,3.9,0,64,
+Puerto Viejo Bike Rentals,services,Puerto Viejo,Y,N,Y,N,Y,4.6,0,111,
+Pura Ride by Ciclo Cocles,services,Cocles,Y,Y,Y,N,Y,4.1,0,275,
+Centro Educativo Playa Chiquita Punta Uva,services,Playa Chiquita,Y,N,N,Y,Y,N,0,373,
+Proyecto Educativo Semillas de Paz,services,Playa Chiquita,Y,Y,N,N,Y,N,0,330,
+Veronica's Place Cooking Class,services,Cocles,Y,N,Y,N,Y,5.0,0,236,
+Sea Breeze Events,services,Puerto Viejo,N,N,Y,Y,Y,3.7,0,57,
+Black Shack Surf School,services,Cocles,Y,N,N,N,Y,4.9,0,425,
+Surf Meds Caribe,services,Cocles,Y,N,N,Y,Y,4.8,0,132,
+Surf the Jungle Surf School Adventures,services,Puerto Viejo,Y,Y,N,Y,Y,4.9,0,295,
+Tico Surf and Skate,services,Cocles,Y,N,Y,N,Y,4.4,0,75,
+Caribe Horse Riding Club,tour_company,Cocles,Y,Y,Y,N,Y,4.8,0,468,
+Ceibo Adventure,tour_company,Playa Chiquita,Y,N,N,Y,N,N,0,444,
+Finca Tierra,tour_company,Cocles,Y,N,Y,N,Y,5.0,0,80,
+Green Water SUP Tours,tour_company,Punta Uva,Y,Y,Y,N,Y,4.4,0,330,
+Kinkaju Tours,tour_company,Hone Creek,Y,N,N,N,Y,5.0,0,102,
+Punta Uva Dive Center,tour_company,Punta Uva,Y,Y,Y,Y,Y,4.4,0,185,
+Ride the Rainforest,tour_company,Playa Chiquita,Y,Y,Y,N,Y,4.8,0,328,
+Talamanca Chocolate,tour_company,Playa Negra,Y,Y,N,N,N,N,0,257,
+Adobe EasyCar Rent a Car,transport,Puerto Viejo,Y,Y,Y,N,Y,4.8,0,192,
+Alamo Enterprise Car Rental,transport,Puerto Viejo,Y,N,Y,N,Y,4.3,0,158,
+Puerto Viejo Golf Carts,tour_company,Puerto Viejo,Y,Y,Y,Y,Y,N,0,281,
+ATEC,tour_company,Puerto Viejo,Y,Y,Y,Y,Y,4.7,0,294,
+Best Travel Puerto Viejo,tour_company,Puerto Viejo,Y,N,Y,N,Y,4.1,0,210,
+Caribe Fun Tours,tour_company,Playa Negra,Y,N,Y,Y,Y,4.2,0,125,
+Gecko Trail,tour_company,Puerto Viejo,Y,Y,Y,Y,Y,N,0,432,
+Caribe Sur Real Estate,real_estate,Puerto Viejo,Y,Y,N,N,Y,4.0,0,139,
+Century 21 Caribe,real_estate,Playa Chiquita,Y,N,N,Y,Y,4.3,0,117,
+Coldwell Banker Caribe,real_estate,Puerto Viejo,Y,Y,Y,N,Y,5.0,0,75,
+RISE Puerto Viejo,real_estate,Puerto Viejo,Y,Y,N,N,Y,4.9,0,130,
+Green Property Management,real_estate,Playa Chiquita,Y,N,Y,N,Y,N,0,353,
+Farmacia Caribe,shopping,Puerto Viejo,Y,N,Y,N,Y,4.3,0,89,Y
+Puerto Viejo Pharmacy,shopping,Puerto Viejo,Y,N,N,N,Y,3.8,0,64,
+Mega Super,shopping,Puerto Viejo,N,N,Y,N,Y,3.9,0,48,
+Super Cocles,shopping,Cocles,N,N,Y,N,Y,4.5,0,106,
+Super Punta Uva,shopping,Punta Uva,N,N,Y,N,Y,4.3,0,114,
+Servicentro Hone Creek,services,Hone Creek,N,N,Y,N,Y,N,0,99,
+Catholic Church,services,Puerto Viejo,N,N,Y,N,Y,5.0,0,21,
+Puerto Viejo Police Station,services,Playa Negra,Y,N,N,N,Y,N,0,372,
+Puerto Viejo Police Town Station,services,Puerto Viejo,N,N,Y,N,Y,5.0,0,182,
+BAC Credomatic ATM,services,Puerto Viejo,N,N,Y,N,Y,2.7,0,84,
+Banco de Costa Rica Puerto Viejo,services,Puerto Viejo,Y,N,N,N,Y,2.7,0,107,
+Banco Nacional,services,Puerto Viejo,Y,N,Y,N,Y,3.5,0,86,
+Watuza,restaurant,Puerto Viejo,N,N,Y,Y,Y,4.9,0,64,
+Río Negro,restaurant,Cocles,Y,N,N,Y,Y,N,0,57,Y
+Jungle Air Parapente,shopping,Puerto Viejo,Y,N,N,Y,Y,4.2,0,89,Y
+Panadería Francés,shopping,Cocles,Y,N,Y,N,N,N,0,55,Y
+Yerbas Concepto Culinario,restaurant,Puerto Viejo,N,N,Y,Y,Y,4.8,0,80,
+Abba Home,restaurant,Puerto Viejo,Y,N,Y,Y,Y,5.0,7,91,Y
+Alojamiento kon-tiky,vacation_rental,Playa Negra,Y,N,N,N,Y,5.0,4,95,Y
+Api-Rescate,restaurant,Cocles,N,N,N,N,Y,4.6,0,49,Y
+Ariel Apartment's,vacation_rental,Playa Negra,Y,N,N,Y,Y,4.5,4,95,Y
+Arrecife El Chino,restaurant,Puerto Viejo,N,N,N,N,Y,4.9,0,55,Y
+Beach Trail,restaurant,Playa Negra,N,N,N,N,Y,5.0,0,54,Y
+BERACA,restaurant,Puerto Viejo,Y,N,Y,N,Y,4.7,0,55,
+Buddy's Sloth Crossing,restaurant,Puerto Viejo,N,N,Y,N,Y,5.0,0,91,Y
+Cabina trepazul,vacation_rental,Playa Negra,Y,N,Y,N,Y,5.0,4,95,Y
+Caribbean Blue Morpho Casitas,vacation_rental,Playa Negra,Y,Y,N,Y,Y,5.0,2,95,Y
+CaribeZen,restaurant,Playa Negra,Y,N,Y,Y,Y,N,0,62,Y
+Casa Alegra,restaurant,Playa Negra,N,N,N,N,Y,4.8,0,54,Y
+Casa Amma,restaurant,Playa Negra,Y,N,N,N,Y,4.6,0,90,Y
+Casa Amor,restaurant,Playa Negra,Y,N,N,N,Y,4.6,2,90,Y
+Casa Antorcha,restaurant,Cocles,Y,N,N,N,Y,4.5,0,85,Y
+Casa Canopy,restaurant,Cocles,N,N,N,N,Y,4.8,5,49,Y
+Casa Chilamate Day House,restaurant,Playa Negra,Y,N,Y,Y,Y,4.5,2,90,Y
+Casa Lily,restaurant,Cocles,N,N,N,N,Y,4.5,0,49,Y
+Casa Miluca,restaurant,Playa Negra,Y,N,N,N,N,N,0,62,Y
+Casa Miluco,restaurant,Playa Negra,N,N,N,N,Y,N,0,26,Y
+Casa Olingo,restaurant,Playa Negra,Y,N,N,N,Y,4.6,0,90,Y
+Casa Pallaita,restaurant,Playa Negra,N,N,N,Y,Y,4.8,5,90,Y
+Casa Palliata,restaurant,Playa Negra,N,N,N,Y,Y,4.3,0,90,Y
+Casa Shanti,restaurant,Cocles,N,N,N,N,Y,N,0,21,Y
+casa tia zeidy,restaurant,Playa Negra,Y,Y,N,N,Y,4.9,0,90,Y
+Casa vacacional happy day beach house,restaurant,Puerto Viejo,Y,N,N,N,Y,3.0,0,91,Y
+Casa Vosi,restaurant,Playa Negra,N,N,N,N,Y,4.5,0,54,Y
+Casas Sloth & Butterfly,restaurant,Playa Negra,N,N,N,N,Y,4.3,0,56,
+Casita Tucan,hotel,Cocles,N,N,N,N,Y,4.1,6,44,Y
+Casitas Batsú,vacation_rental,Cocles,Y,N,N,Y,Y,3.9,4,90,Y
+CHOCORART,shopping,Puerto Viejo,Y,Y,N,Y,Y,N,0,37,
+Cirrus Sky Paragliding CR,restaurant,Playa Negra,Y,Y,N,Y,Y,5.0,0,90,Y
+Cubali Beach,restaurant,Playa Negra,N,N,N,N,Y,N,0,26,Y
+Doctah Herbalist,restaurant,Cocles,Y,Y,N,N,Y,5.0,0,85,Y
+Explora Caribe CR,restaurant,Playa Negra,Y,N,N,N,Y,4.0,0,90,Y
+Finca Darai,restaurant,Cocles,N,N,N,N,Y,N,0,21,Y
+FISIOTERAPIA Agustin cuya,restaurant,Cocles,Y,Y,N,Y,Y,5.0,0,85,Y
+Global Stones finca conservación,restaurant,Cocles,N,N,N,N,Y,4.3,0,49,Y
+Hidden Viewpoint,restaurant,Playa Negra,Y,N,N,N,Y,5.0,0,90,Y
+Iglesia Cristiana Casa De Restauracion,restaurant,Cocles,N,N,N,N,Y,4.5,0,85,Y
+Izzy Rides CR,restaurant,Cocles,Y,N,N,Y,Y,5.0,0,85,Y
+Jungalow,restaurant,Puerto Viejo,N,N,N,N,Y,4.0,0,55,Y
+Jungla del Caribeño,restaurant,Playa Negra,Y,N,Y,N,Y,4.7,1,90,Y
+Kä Luxury Caribbean,restaurant,Playa Negra,N,N,N,N,Y,5.0,0,54,Y
+Ka Namu,restaurant,Playa Negra,Y,Y,N,N,Y,N,0,62,Y
+Katuk,restaurant,Playa Negra,N,N,N,Y,Y,4.9,0,53,
+La Caracola,restaurant,Playa Negra,Y,N,N,N,Y,4.4,4,90,Y
+LA CHASCONA,restaurant,Playa Negra,Y,N,N,N,Y,3.0,0,90,Y
+La loma de burrito,restaurant,Playa Chiquita,N,N,Y,N,Y,3.5,1,93,Y
+La Paloma Studio en Coclès con cocina a,restaurant,Playa Negra,Y,N,Y,N,Y,4.9,4,90,Y
+Lapaluna,restaurant,Puerto Viejo,N,N,Y,N,Y,N,0,36,
+Nana's Place Beach House,restaurant,Playa Chiquita,Y,Y,N,N,Y,5.0,0,93,Y
+NAO,restaurant,Playa Negra,Y,N,Y,N,Y,5.0,1,90,Y
+Paraiso Bohemio,restaurant,Puerto Viejo,N,N,N,N,Y,5.0,0,55,Y
+Pipa's Beach,restaurant,Puerto Viejo,N,N,N,N,Y,5.0,0,55,Y
+Playa Estiven,restaurant,Playa Negra,N,N,N,N,Y,5.0,0,54,Y
+Pure Life Sanctuary,restaurant,Cocles,N,N,N,Y,Y,5.0,3,85,Y
+Quinta Guarumo,restaurant,Playa Negra,N,N,Y,N,Y,5.0,2,90,Y
+RETIRO VERDE,restaurant,Cocles,Y,N,N,Y,Y,4.3,3,85,Y
+Rico Tico Tours,restaurant,Puerto Viejo,Y,Y,N,N,Y,4.6,0,77,
+Rio Home,restaurant,Playa Negra,Y,N,N,Y,Y,N,0,63,
+River Box Cocles,restaurant,Playa Negra,Y,Y,Y,N,Y,5.0,4,90,Y
+Shenanigans–Eat Drink Dink Drive,restaurant,Cocles,Y,N,N,Y,Y,4.6,0,80,
+Shenanigans–Fat Drink Dink Drive,restaurant,Playa Negra,N,N,N,N,Y,N,0,60,
+Siren Sanctuary,restaurant,Cocles,N,N,Y,Y,Y,5.0,0,85,Y
+Sloth Massage,wellness,Puerto Viejo,Y,N,N,N,Y,5.0,0,56,
+Soda Títeres,restaurant,Cocles,Y,N,N,Y,Y,4.8,0,74,
+Spiral,restaurant,Puerto Viejo,N,N,N,N,Y,5.0,0,55,Y
+Talamanca Organica Cacao & Fine Chocolate,restaurant,Cocles,Y,N,N,N,Y,N,0,74,
+Talamanca Viewpoint,restaurant,Puerto Viejo,N,N,N,N,Y,4.7,0,55,Y
+Tattoo Studio 33,restaurant,Puerto Viejo,N,N,N,N,Y,5.0,0,49,
+The Amazing Treehouse and Nature,restaurant,Playa Negra,Y,Y,N,N,Y,5.0,0,60,
+The Reillder Castillo Project,restaurant,Puerto Viejo,Y,N,N,Y,Y,5.0,1,91,Y
+TreeTop Mansion,restaurant,Playa Negra,Y,N,N,Y,Y,4.6,0,90,Y
+TRIBU functional training,restaurant,Puerto Viejo,Y,N,N,N,Y,5.0,3,91,Y
+Jungalow Tropical Caribeño,restaurant,Cocles,N,N,N,N,Y,5.0,0,49,Y
+"Tropical Getaway ""Dream House""",restaurant,Playa Negra,N,N,N,N,Y,N,0,63,
+Vindas,restaurant,Playa Negra,N,N,Y,N,Y,4.5,1,90,Y
+Asante Bistro & Café,restaurant,Cahuita,Y,N,Y,N,Y,4.8,0,104,
+Banco de Costa Rica Cahuita,services,Cahuita,Y,N,N,N,Y,2.9,0,91,
+Boca Chica Bar Restaurante y Piscina,restaurant,Cahuita,N,N,N,Y,N,N,0,93,
+Bomberos Bribri,services,Bribri,Y,N,Y,N,Y,4.0,0,70,
+Cahuita Bus Station,tour_company,Cahuita,Y,N,N,N,Y,3.1,0,95,
+Centro Educativo Complementaria Cahuita,services,Cahuita,Y,N,N,Y,Y,N,0,106,
+Clinica Dental OCI Cahuita,services,Cahuita,Y,Y,N,N,Y,4.8,0,93,
+Clínica de Medicina Integral Bribri,services,Bribri,Y,Y,N,N,Y,5.0,0,100,
+Coral Vet,services,Cahuita,Y,N,Y,N,Y,4.7,0,76,
+Cruz Roja,services,Bribri,Y,N,N,Y,Y,4.8,0,64,
+Farmacia Quiribri Cahuita,shopping,Cahuita,Y,N,N,N,Y,2.8,0,90,
+Fusión Restaurante,restaurant,Sixaola,Y,Y,N,N,Y,N,0,75,
+Gandoca Tours,tour_company,Gandoca,Y,Y,Y,N,Y,N,0,89,
+Info Boutique,shopping,Cahuita,Y,N,N,N,Y,3.6,0,83,
+La Fundación Cahuita Playing for Change,services,Cahuita,Y,Y,Y,N,Y,N,0,96,
+Mayela Public Parking,services,Sixaola,Y,N,N,N,Y,4.1,0,88,
+Mulata,shopping,Cahuita,Y,Y,Y,N,Y,5.0,0,71,
+Nature Observatorio,tour_company,Manzanillo,Y,Y,Y,Y,Y,N,0,101,
+OIJ,services,Bribri,Y,N,N,Y,Y,4.5,0,58,
+Redfrogteam Guardianes de la Naturaleza,tour_company,Bribri,Y,Y,N,N,Y,4.9,0,113,
+Roberto's Restaurant and Tours,restaurant,Cahuita,N,N,N,N,Y,4.5,0,111,
+Sloth Sanctuary,tour_company,Cahuita,Y,N,Y,N,Y,4.3,0,91,
+Sobre las Olas by Gondwana,restaurant,Cahuita,Y,N,N,N,Y,4.2,0,102,
+Soda Kawe,restaurant,Cahuita,Y,N,N,N,Y,4.4,0,89,
+TKD Caribe,services,Cahuita,Y,N,N,N,N,N,0,67,
+Terminal de Buses Sixaola,services,Sixaola,N,N,N,N,Y,3.6,0,82,
+Tourist Police,services,Cahuita,N,N,N,N,Y,4.4,0,71,
+Apetito Express,restaurant,Playa Negra,Y,N,N,N,Y,4.5,0,90,Y
+Puerto Viejo de Talamanca,restaurant,Playa Negra,Y,N,N,Y,N,N,0,62,Y
+El Ranchón,restaurant,Playa Negra,Y,N,N,N,Y,4.1,0,90,Y
+Playa Chiquita Paradise,restaurant,Cocles,Y,N,N,Y,Y,N,0,57,Y
+Escuela Këköldi,services,Punta Uva,N,N,N,N,Y,4.7,0,48,
+policía,services,Playa Negra,Y,N,N,N,Y,4.0,0,40,
+Escuela Hone Creek,services,Playa Negra,Y,N,N,N,Y,3.7,0,51,
+Escuela Patiño,services,Playa Negra,N,N,N,N,Y,3.7,0,57,
+Taller Gabriel,shopping,Puerto Viejo,Y,N,N,Y,Y,N,0,61,Y
+Playa Cocles,tour_company,Playa Negra,N,N,N,N,Y,4.7,0,64,
