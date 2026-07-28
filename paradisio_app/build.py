@@ -38,6 +38,15 @@ def link_with_icon(label, url, icon_key=None, cls="secondary-link"):
     icon = ICONS.get(icon_key or label, "")
     return f'<a href="{html.escape(url, quote=True)}" class="{cls}" target="_blank" rel="noopener">{icon} {html.escape(label)}</a>'
 
+def favicon_html(prefix=""):
+    p = prefix + ("/" if prefix and not prefix.endswith("/") else "")
+    return (
+        f'<link rel="icon" type="image/x-icon" href="{p}static/favicon.ico">'
+        f'<link rel="icon" type="image/png" sizes="32x32" href="{p}static/favicon-32x32.png">'
+        f'<link rel="icon" type="image/png" sizes="16x16" href="{p}static/favicon-16x16.png">'
+        f'<link rel="apple-touch-icon" href="{p}static/apple-touch-icon.png">'
+    )
+
 AMENITY_MAP = {
     "wi-fi gratis": "Free Wi-Fi", "wifi": "Free Wi-Fi", "wi-fi": "Free Wi-Fi",
     "incluye wi-fi": "Free Wi-Fi",
@@ -688,6 +697,7 @@ def generate_deployment_wrapper():
     (release_root / "CNAME").write_text("www.whappin.com\n", encoding="utf-8")
     (release_root / "404.html").write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <link rel="stylesheet" href="static/tokens.css"><link rel="stylesheet" href="static/styles.css">
 <meta name="robots" content="noindex"><title>Page not found — Whappin Puerto Viejo</title></head>
@@ -735,6 +745,7 @@ def render_index_html(businesses, metrics):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Whappin Puerto Viejo</title>
 <meta name="description" content="Find trusted places across Puerto Viejo.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -927,6 +938,7 @@ def render_premium_page():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Premium Listings — Paradisio</title>
 <link rel="stylesheet" href="static/tokens.css">
 <link rel="stylesheet" href="static/styles.css">
@@ -996,6 +1008,7 @@ def render_claim_page():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Claim Your Business — Paradisio</title>
 <link rel="stylesheet" href="static/tokens.css">
 <link rel="stylesheet" href="static/styles.css">
@@ -1079,6 +1092,7 @@ def render_admin_page():
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Admin Dashboard — Paradisio</title>
 <link rel="stylesheet" href="static/tokens.css">
 <link rel="stylesheet" href="static/styles.css">
@@ -1146,6 +1160,7 @@ def render_biz_dashboard_page(businesses):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Business Dashboard — Paradisio</title>
 <link rel="stylesheet" href="static/tokens.css">
 <link rel="stylesheet" href="static/styles.css">
@@ -1277,6 +1292,7 @@ def render_business_html(biz):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html("..")}
 <title>{name} — {area} — Whappin Puerto Viejo</title>
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
@@ -1372,6 +1388,7 @@ def render_classifieds_index(ads):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Classifieds — Paradisio Puerto Viejo</title>
 <link rel="stylesheet" href="../static/tokens.css">
 <link rel="stylesheet" href="../static/styles.css">
@@ -1439,6 +1456,7 @@ def render_classified_listing(ad):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>{ad["title"]} — Paradisio Classifieds</title>
 <link rel="stylesheet" href="../static/tokens.css">
 <link rel="stylesheet" href="../static/styles.css">
@@ -1484,6 +1502,7 @@ def render_invest_page(metrics):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{favicon_html()}
 <title>Invest in Whappin Puerto Viejo</title>
 <meta name="description" content="Support a locally-built business directory for Puerto Viejo, Costa Rica — connecting tourists and locals to every business in town.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -1663,10 +1682,11 @@ def main():
     static_src = STATIC_DIR / "community.css"
     if static_src.exists():
         shutil.copy2(static_src, OUTPUT_DIR / "static" / "community.css")
-    vendor_src = STATIC_DIR / "vendor"
-    if vendor_src.exists():
-        shutil.copytree(vendor_src, OUTPUT_DIR / "static" / "vendor")
-    print(f"  static/ — directory-data.js, tokens.css, invest.css, community.css, app.js, detail.js, styles.css")
+    for fav in ["favicon.ico", "favicon-16x16.png", "favicon-32x32.png", "apple-touch-icon.png"]:
+        src = STATIC_DIR / fav
+        if src.exists():
+            shutil.copy2(src, OUTPUT_DIR / "static" / fav)
+    print(f"  static/ — directory-data.js, tokens.css, invest.css, community.css, app.js, detail.js, styles.css, favicons")
 
     urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1709,6 +1729,9 @@ def main():
     generate_deployment_wrapper()
     print("  release root — redirect, 404, robots, .nojekyll")
 
+    fav_root = STATIC_DIR / "favicon.ico"
+    if fav_root.exists():
+        shutil.copy2(fav_root, OUTPUT_DIR / "favicon.ico")
     print(f"\nDone. Output: {OUTPUT_DIR}")
 
 
