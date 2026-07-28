@@ -106,7 +106,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .load-more-end { font-size: var(--text-sm); color: var(--faint); padding: var(--space-2) 0; }
 
 /* Footer */
-.footer { text-align: center; padding: var(--space-6) 0; font-size: var(--text-sm); color: var(--faint); }
+.footer { text-align: center; padding: var(--space-6) 0 80px; font-size: var(--text-sm); color: var(--faint); }
 .footer a { color: var(--jungle-700); }
 
 /* Business page */

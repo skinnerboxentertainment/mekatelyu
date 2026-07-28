@@ -57,13 +57,69 @@ AMENITY_MAP = {
 
 AMENITY_NOISE = {"puro", "puerto", "chao", "physis", "azul", "espagueti", "beach gym",
                  "secret garden", "hotel piscina", "el jardin", "restaurante",
-                 "internet"}
+                 "cahuita", "lim\u00f3n", "manzanillo", "cocles", "bribri", "sixaola",
+                 "gandoca", "internet"}
+
+AMENITY_VALID_RE = re.compile(
+    r"^(wi[-\s]?fi|wifi|internet"
+    r"|incluye\s"
+    r"|estacionamiento\s(gratuito|pago)"
+    r"|aire\s*acondicionado"
+    r"|air\s*conditioning"
+    r"|piscina"
+    r"|pool(\s|$)"
+    r"|desayuno"
+    r"|breakfast"
+    r"|gimnasio(\s|$)"
+    r"|gym(\s|$)"
+    r"|(se\s)?permite[n]?\s*mascotas"
+    r"|aceptan?\s*mascotas"
+    r"|pet\s*friendly"
+    r"|accesibl"
+    r"|wheelchair"
+    r"|transporte\s*desde"
+    r"|airport\s*shuttle"
+    r"|cocina"
+    r"|kitchen"
+    r"|bar(\s|$)"
+    r"|restobar"
+    r"|spa(\s|$)"
+    r"|libre\s*de\s*humo"
+    r"|smoke[-\s]?free"
+    r"|centro\s*de\s*negocios"
+    r"|business\s*center"
+    r"|bed\s*&\s*breakfast"
+    r"|b\s*&\s*b"
+    r"|espacio(\s|$)"
+    r"|outdoor\s*space"
+    r"|terraza(\s|$)"
+    r"|terrace(\s|$)"
+    r"|acceso\s*a\s*la\s*playa"
+    r"|beach\s*access"
+    r"|pago\s*sin\s*contacto"
+    r"|contactless\s*payment"
+    r")", re.IGNORECASE
+)
+
+
+def _is_valid_amenity(text):
+    if not text or not text.strip():
+        return False
+    if text.strip().lower() in AMENITY_NOISE:
+        return False
+    if re.search(r"^\d{5}$", text.strip()):
+        return False
+    if re.search(r"\.(com|cr|net|org)$", text.strip(), re.IGNORECASE):
+        return False
+    return bool(AMENITY_VALID_RE.search(text.strip()))
 
 
 def normalize_amenities(raw_list):
     normalized = []
     seen = set()
     for a in raw_list:
+        if not _is_valid_amenity(a):
+            continue
         key = a.lower().strip().replace("\u2010", "-").replace("\u2011", "-")
         key = key.replace("wi-fi", "wifi").replace("wi\u2011fi", "wifi")
         if any(k in key for k in AMENITY_NOISE):
@@ -98,9 +154,9 @@ def generate_description(row, enrich):
 
 
 LODGING_AMENITIES = {
-    "hotel": ["Free Wi-Fi", "Gym", "Air conditioning", "Free parking", "Pet friendly", "Pool"],
-    "hostel": ["Free Wi-Fi", "Gym", "Pool", "Pet friendly", "Free parking", "Air conditioning"],
-    "vacation_rental": ["Free Wi-Fi", "Air conditioning", "Pet friendly", "Free parking"],
+    "hotel": ["Free Wi-Fi", "Gym"],
+    "hostel": ["Free Wi-Fi", "Gym"],
+    "vacation_rental": ["Free Wi-Fi"],
 }
 
 
