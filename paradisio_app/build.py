@@ -55,10 +55,23 @@ AMENITY_MAP = {
     "incluye desayuno y wi-fi": "Free breakfast \u00b7 Free Wi-Fi",
 }
 
-AMENITY_NOISE = {"puro", "puerto", "chao", "physis", "azul", "espagueti", "beach gym",
-                 "secret garden", "hotel piscina", "el jardin", "restaurante",
-                 "cahuita", "lim\u00f3n", "manzanillo", "cocles", "bribri", "sixaola",
-                 "gandoca", "internet"}
+AMENITY_NOISE = {
+    # Location names leaking into amenity fields
+    "cahuita", "lim\u00f3n", "limon", "manzanillo", "cocles", "bribri", "sixaola",
+    "gandoca", "hone creek", "puerto viejo", "costa rica",
+    "playa negra", "playa cocles", "punta uva", "playa chiquita",
+    # Generic business-name spills (audit top removals)
+    "puro", "puerto", "chao", "physis", "azul", "espagueti", "beach gym",
+    "secret garden", "hotel piscina", "el jardin", "restaurante",
+    "pure jungle spa", "puerto viejo club villas & pool",
+    "puerto pirata tiki bar", "hotel piscina natural",
+    "el jardin de playa negra", "chao's bar restaurant",
+    "physis caribbean bed & breakfast hotel",
+    "azul bar & grill", "barrita de chocolate",
+    "casa rio restaurant + bar", "reggae bar",
+    "centro de mascotas pto viejo y veterinario",
+    "jhosmar gym", "secret garden",
+}
 
 AMENITY_VALID_RE = re.compile(
     r"^(wi[-\s]?fi|wifi|internet"
@@ -105,13 +118,19 @@ AMENITY_VALID_RE = re.compile(
 def _is_valid_amenity(text):
     if not text or not text.strip():
         return False
-    if text.strip().lower() in AMENITY_NOISE:
+    t = text.strip()
+    key = t.lower()
+    if key in AMENITY_NOISE:
         return False
-    if re.search(r"^\d{5}$", text.strip()):
+    if re.search(r"^\d{5}$", t):
         return False
-    if re.search(r"\.(com|cr|net|org)$", text.strip(), re.IGNORECASE):
+    if re.search(r"\.(com|cr|net|org)$", t, re.IGNORECASE):
         return False
-    return bool(AMENITY_VALID_RE.search(text.strip()))
+    if re.search(r"^https?://", t, re.IGNORECASE):
+        return False
+    if re.match(r"^\w+\.\w+$", t):
+        return False
+    return bool(AMENITY_VALID_RE.search(t))
 
 
 def normalize_amenities(raw_list):
