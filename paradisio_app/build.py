@@ -1686,7 +1686,13 @@ def main():
         src = STATIC_DIR / fav
         if src.exists():
             shutil.copy2(src, OUTPUT_DIR / "static" / fav)
-    print(f"  static/ — directory-data.js, tokens.css, invest.css, community.css, app.js, detail.js, styles.css, favicons")
+    vendor_src = STATIC_DIR / "vendor"
+    if vendor_src.exists():
+        dst = OUTPUT_DIR / "static" / "vendor"
+        if dst.exists():
+            shutil.rmtree(dst)
+        shutil.copytree(vendor_src, dst)
+    print(f"  static/ — directory-data.js, tokens.css, invest.css, community.css, app.js, detail.js, styles.css, favicons, vendor/")
 
     urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

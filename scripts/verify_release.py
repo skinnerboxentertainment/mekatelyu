@@ -27,7 +27,7 @@ FORBIDDEN_TEXT = (
     "unpkg.com",
     "+506 8888 8888",
 )
-ALLOWED_ROOT_FILES = {".nojekyll", "CNAME", "404.html", "index.html", "robots.txt", "sitemap.xml"}
+ALLOWED_ROOT_FILES = {".nojekyll", "CNAME", "404.html", "index.html", "robots.txt", "sitemap.xml", "favicon.ico"}
 ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"}
 
 
