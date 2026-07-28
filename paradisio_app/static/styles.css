@@ -277,6 +277,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .sticky-share { font-size: var(--text-xs); padding: var(--space-3) var(--space-2); }
 }
 
+.secondary-link svg,
+.primary-cta svg,
+.sticky-directions svg,
+.sticky-call svg,
+.sticky-share svg {
+  vertical-align: middle;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+.sticky-directions svg,
+.sticky-call svg,
+.sticky-share svg {
+  display: block;
+  margin: 0 auto 2px;
+}
+.primary-cta svg {
+  margin-right: 6px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
