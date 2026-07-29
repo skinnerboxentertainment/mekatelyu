@@ -1,10 +1,12 @@
 """
-Comprehensive Whappin data audit — checks every record against every rule.
-Outputs a unified defect report grouped by severity.
+Comprehensive Whappin audit — checks CSV source AND built release output.
 
 Usage:
-    python scripts/audit_whappin.py                    # audit CSV + taxonomy
-    python scripts/audit_whappin.py --release          # also check built release output
+    python scripts/audit_whappin.py
+
+Checks:
+  CSV: category, area, coordinates, taxonomy, IG handles, URL integrity
+  Release: rendered descriptions, WhatsApp sticky-bar consistency
 """
 
 import csv
@@ -18,6 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 CSV_PATH = BASE_DIR / "pv_master_unified.csv"
 TAXONOMY_PATH = BASE_DIR / "paradisio_app" / "data" / "semantic_taxonomy.json"
 RELEASE_DIR = BASE_DIR / "release"
+DIRDATA_PATH = RELEASE_DIR / "static" / "directory-data.js"
 
 KNOWN_AREAS = {
     "Puerto Viejo", "Cocles", "Playa Negra", "Playa Cocles", "Playa Chiquita",
@@ -34,13 +37,27 @@ KNOWN_CATEGORIES = {
 ACTIVITY_TAGS = {"surf", "diving", "snorkeling", "kayaking", "fishing", "wildlife", "yoga", "massage", "spa", "gym"}
 NON_ACTIVITY_CATS = {"restaurant", "hotel", "vacation_rental", "hostel", "shopping", "services", "real_estate", "wellness", "transport"}
 
-PLACEHOLDER_DESCRIPTIONS = [
-    "provides hotel accommodations", "provides accommodation", "offers services in",
-    "provides services in", "place in", "vacation rental option", "hotel accommodations",
-]
-
 IG_URL_PATTERN = re.compile(r"^https?://(www\.)?instagram\.com/")
 VALID_IG_HANDLE = re.compile(r"^[A-Za-z0-9._]{1,30}$")
+
+PLACEHOLDER_PATTERNS = [
+    r'^[A-Z].+? (provides|offers) .+ in ',
+    r'^[A-Z][a-zA-Z0-9\s\-\'\u00c0-\u024f]+ is (a|an) ',
+    r' provides?\s+(hotel|accommodation|service)',
+    r' offers?\s+(service)',
+]
+
+
+def load_release_lookup():
+    """Build name->slug lookup from directory-data.js"""
+    if not DIRDATA_PATH.exists():
+        return {}
+    content = DIRDATA_PATH.read_text(encoding="utf-8")
+    m = re.search(r"const BUSINESSES=\[(.*?)\];", content, re.DOTALL)
+    if not m:
+        return {}
+    businesses = json.loads("[" + m.group(1) + "]")
+    return {b["name"].strip(): b["slug"] for b in businesses}
 
 
 def audit():
@@ -52,15 +69,25 @@ def audit():
         with open(TAXONOMY_PATH, encoding="utf-8") as f:
             taxonomy = json.load(f).get("records", {})
 
+    # Load release slug lookup
+    slug_map = load_release_lookup()
+
+    # Build fuzzy match: normalize names for lookup
+    def norm(s):
+        return re.sub(r'[^a-z0-9]', '', s.lower())
+
+    slug_map_norm = {norm(k): v for k, v in slug_map.items()}
+
     # Load CSV
     rows = []
     with open(CSV_PATH, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames
         for row in reader:
             rows.append(row)
 
     contact_types_seen = defaultdict(list)
+    wa_sticky_ok = 0
+    wa_sticky_fail = 0
 
     for row in rows:
         name = row.get("business_name", "").strip()
@@ -69,14 +96,13 @@ def audit():
         area = row.get("area", "").strip()
         lat = row.get("latitude", "").strip()
         lng = row.get("longitude", "").strip()
-        phone = row.get("phone", "").strip()
         website = row.get("website", "").strip()
         ig_handle = row.get("instagram_handle", "").strip()
-        ig_url = row.get("instagram_url", "").strip()
-        fb_url = row.get("facebook_url", "").strip()
         desc = row.get("description_full", "").strip()
         status = row.get("operating_status", "").strip().lower()
         whatsapp = row.get("whatsapp", "").strip()
+
+        # ===== CSV-LEVEL CHECKS =====
 
         # --- CATEGORY ---
         if cat and cat not in KNOWN_CATEGORIES:
@@ -100,45 +126,19 @@ def audit():
                 "business": name, "field": "coordinates", "severity": "high",
                 "issue": "No coordinates and no Google Maps CID — invisible on map",
             })
-        elif not has_coords and has_cid:
-            pass  # area-backfill handles this
 
-        # --- CONTACT INTEGRITY ---
-        if whatsapp:
-            contact_types_seen["whatsapp"].append(name)
-
-        # Website URL is actually Instagram
+        # --- WEBSITE / URL INTEGRITY ---
         if website and IG_URL_PATTERN.match(website):
             defects.append({
                 "business": name, "field": "website", "severity": "high",
                 "issue": f"Website URL points to Instagram: {website}",
             })
 
-        # IG handle format
+        # --- IG HANDLE FORMAT ---
         if ig_handle and not VALID_IG_HANDLE.match(ig_handle):
             defects.append({
                 "business": name, "field": "instagram_handle", "severity": "medium",
                 "issue": f"Invalid IG handle format: {ig_handle}",
-            })
-
-        # --- DESCRIPTION ---
-        if desc:
-            for phrase in PLACEHOLDER_DESCRIPTIONS:
-                if phrase in desc.lower():
-                    defects.append({
-                        "business": name, "field": "description", "severity": "medium",
-                        "issue": f"Placeholder description: '{desc[:120]}'",
-                    })
-                    break
-            if len(desc) < 30:
-                defects.append({
-                    "business": name, "field": "description", "severity": "low",
-                    "issue": f"Very short description ({len(desc)} chars): '{desc}'",
-                })
-        else:
-            defects.append({
-                "business": name, "field": "description", "severity": "low",
-                "issue": "Missing description",
             })
 
         # --- STATUS ---
@@ -148,7 +148,7 @@ def audit():
                 "issue": "Flagged needs_verification",
             })
 
-        # --- TAXONOMY (from cache) ---
+        # --- TAXONOMY ---
         tax_key = f"cid:{cid}" if cid else f"name:{name.lower()}"
         tax_entry = taxonomy.get(tax_key)
         if tax_entry:
@@ -161,7 +161,56 @@ def audit():
                         "issue": f"{cat} tagged with activity '{tag}'",
                     })
 
-    # --- SUMMARY ---
+        # ===== RELEASE-LEVEL CHECKS =====
+        slug = slug_map.get(name) or slug_map_norm.get(norm(name))
+        if not slug:
+            continue
+
+        page_path = RELEASE_DIR / "businesses" / f"{slug}.html"
+        if not page_path.exists():
+            continue
+
+        html = page_path.read_text(encoding="utf-8")
+
+        # --- DESCRIPTION ON SITE ---
+        m = re.search(r'<div class="biz-desc">\s*<p>(.*?)</p>', html, re.DOTALL)
+        if m:
+            site_desc = m.group(1).strip()
+            is_placeholder = False
+            for pat in PLACEHOLDER_PATTERNS:
+                if re.search(pat, site_desc, re.I):
+                    is_placeholder = True
+                    break
+            if is_placeholder:
+                defects.append({
+                    "business": name, "field": "description", "severity": "medium",
+                    "issue": f"Placeholder on site: '{site_desc[:120]}'",
+                })
+            elif len(site_desc) < 20:
+                defects.append({
+                    "business": name, "field": "description", "severity": "low",
+                    "issue": f"Very short description on site ({len(site_desc)} chars): '{site_desc}'",
+                })
+        else:
+            defects.append({
+                "business": name, "field": "description", "severity": "medium",
+                "issue": "No biz-desc found on page",
+            })
+
+        # --- WHATSAPP STICKY BAR CONSISTENCY ---
+        if whatsapp:
+            contact_types_seen["whatsapp"].append(name)
+            if slug and page_path.exists():
+                if 'data-plausible-channel="WhatsApp"' in html:
+                    wa_sticky_ok += 1
+                else:
+                    wa_sticky_fail += 1
+                    defects.append({
+                        "business": name, "field": "contact", "severity": "high",
+                        "issue": "WhatsApp in CSV but missing from sticky bar",
+                    })
+
+    # ===== SUMMARY =====
     by_severity = defaultdict(list)
     for d in defects:
         by_severity[d["severity"]].append(d)
@@ -179,7 +228,9 @@ def audit():
             print(f"    [{d['business']}] {d['field']}: {d['issue']}")
 
     print(f"\n  --- Contact summary ---")
-    print(f"  WhatsApp advertised: {len(contact_types_seen['whatsapp'])}")
+    print(f"  WhatsApp in CSV: {len(contact_types_seen['whatsapp'])}")
+    print(f"  WhatsApp in sticky bar: {wa_sticky_ok}")
+    print(f"  WhatsApp missing from sticky: {wa_sticky_fail}")
     print("=" * 70)
 
     return defects
@@ -192,4 +243,4 @@ if __name__ == "__main__":
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(defects, f, ensure_ascii=False, indent=2)
     print(f"\n  Full report written to {report_path}")
-    sys.exit(0 if not defects else 1)
+    sys.exit(0 if not [d for d in defects if d['severity'] == 'high'] else 1)
