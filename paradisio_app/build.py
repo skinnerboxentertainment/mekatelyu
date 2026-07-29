@@ -178,25 +178,57 @@ def normalize_amenities(raw_list):
     return normalized
 
 
+PLACEHOLDER_PATTERNS = [
+    r'^[A-Z][a-zA-Z0-9\s\-\'\u00c0-\u024f]+ is (a|an) ',
+    r' provides?\s+(hotel|accommodation|service)',
+    r' offers?\s+(service)',
+    r'^[A-Z].+? (provides|offers) .+ in (Puerto Viejo|Cocles|Cahuita|Manzanillo)',
+]
+
 def is_auto_description(text):
     if not text:
         return True
     text = text.strip()
-    return len(text) < 100 and re.match(r'^[A-Z][a-zA-Z0-9\s\-\'\u00c0-\u024f]+ is (a|an) ', text.strip(), re.I) is not None
+    if len(text) < 100:
+        return True
+    for pat in PLACEHOLDER_PATTERNS:
+        if re.search(pat, text, re.I):
+            return True
+    return False
 
 
 def generate_description(row, enrich):
     cat_label = row.get("category", "").strip().replace("_", " ").title()
     area = row.get("area", "").strip() or "Puerto Viejo"
     rating = enrich.get("rating") if enrich else None
+
+    # Try to build a richer description from available data
+    name = row.get("business_name", "").strip()
+    # Strip location suffix from name for cleaner display
+    short_name = re.sub(r'\s*[-–—]\s*(Puerto Viejo|Cocles|Cahuita|Manzanillo|Playa \w+|Punta Uva|Hone Creek|Bribri|Sixaola|Gandoca).*$', '', name, flags=re.I).strip()
+
     parts = [f"{cat_label} in {area}."]
     if rating:
         parts.append(f"Rated {rating}/5 on Google Maps.")
-    phone = row.get("phone", "").strip()
-    website = row.get("website", "").strip()
+    else:
+        # Add a signal about data freshness
+        verified = row.get("verified_date", "").strip()[:7] if row.get("verified_date") else ""
+        if verified:
+            parts.append(f"Listed since {verified}.")
+
+    # Add amenity highlights if available
+    if row.get("phone") or row.get("normalized_phone"):
+        parts.append("Phone available.")
     instagram = row.get("instagram_handle", "").strip()
-    if phone or website or instagram:
-        parts.append("Contact for hours and availability.")
+    if instagram:
+        parts.append("Active on Instagram.")
+    whatsapp = row.get("whatsapp", "").strip()
+    if whatsapp:
+        parts.append("Accepts WhatsApp inquiries.")
+    email = row.get("email", "").strip()
+    if email:
+        parts.append("Email available.")
+
     return " ".join(parts)
 
 
