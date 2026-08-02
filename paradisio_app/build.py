@@ -1318,9 +1318,11 @@ def biz_attributes(biz):
     blocks = _render_expanded_groups(model["groups"])
     expanded = (
         f'<details class="details-disclosure">'
-        f'<summary><span class="when-closed">View all {model["totalCount"]} details</span>'
-        f'<span class="when-open">View fewer details</span></summary>'
-        f'<div class="details-groups">{chr(10).join(blocks)}</div>'
+        f'<summary>'
+        f'<span class="when-closed">View all {model["totalCount"]} details <span class="chevron" aria-hidden="true">&#9660;</span></span>'
+        f'<span class="when-open">View fewer details <span class="chevron" aria-hidden="true">&#9650;</span></span>'
+        f'</summary>'
+        f'<div class="details-groups" id="details-groups">{chr(10).join(blocks)}</div>'
         f'</details>'
     )
     return (

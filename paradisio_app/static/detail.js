@@ -95,4 +95,27 @@
             }
         });
     }
+
+    // Details disclosure: toggle the section state so the summary chips hide
+    // while expanded, and return focus to the control + scroll back to the
+    // Details heading when the user collapses a long section.
+    var detailsEl = document.querySelector(".details-disclosure");
+    if (detailsEl) {
+        var section = detailsEl.closest(".attributes-section");
+        var heading = document.getElementById("details-heading");
+        var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        detailsEl.addEventListener("toggle", function () {
+            if (section) {
+                section.classList.toggle("is-expanded", detailsEl.open);
+            }
+            if (!detailsEl.open) {
+                var summary = detailsEl.querySelector("summary");
+                if (summary && section) {
+                    summary.focus({ preventScroll: true });
+                    var target = heading || section;
+                    target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+                }
+            }
+        });
+    }
 })();
