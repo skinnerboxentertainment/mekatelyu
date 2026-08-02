@@ -118,4 +118,144 @@
             }
         });
     }
+
+    // --- Open-now badge (bulletproof client-side time) ---
+    // Computes the current date/time in the business's timezone using Intl with
+    // an explicit timeZone (immune to the visitor's device timezone), syncs the
+    // clock against the server's Date header when possible (immune to wrong
+    // device clocks), and handles overnight schedules. On staleness or
+    // uncertainty it demotes the claim to "Hours as listed".
+    var hoursSection = document.querySelector(".hours-section");
+    if (hoursSection) {
+        var payload = (function () {
+            try { return JSON.parse(hoursSection.getAttribute("data-hours-payload")); }
+            catch (e) { return null; }
+        })();
+        var badge = hoursSection.querySelector("[data-hours-opennow]");
+        if (payload && badge) {
+            var WEEKDAYS = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+            var timezone = payload.timezone || "America/Costa_Rica";
+            var capturedAt = payload.capturedAt ? new Date(payload.capturedAt) : null;
+            var weekly = payload.weekly || {};
+
+            // Resolve "now" as { dayIndex (0=Sunday), minutes } in the target TZ.
+            function nowInTimezone(instant, tz) {
+                var parts = new Intl.DateTimeFormat("en-US", {
+                    timeZone: tz,
+                    weekday: "short",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false,
+                }).formatToParts(instant);
+                var get = function (type) {
+                    var p = parts.filter(function (x) { return x.type === type; })[0];
+                    return p ? p.value : "";
+                };
+                var dow = get("weekday").toLowerCase();
+                var dayIndex = WEEKDAYS.indexOf(dow);
+                var hour = parseInt(get("hour"), 10) % 24; // guard "24"
+                var minute = parseInt(get("minute"), 10);
+                if (isNaN(hour) || isNaN(minute)) return null;
+                return { dayIndex: dayIndex, minutes: hour * 60 + minute };
+            }
+
+            function toMinutes(t) {
+                var m = String(t || "").match(/^(\d{1,2}):(\d{2})$/);
+                if (!m) return null;
+                return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+            }
+
+            function isOpenAt(dayIndex, minutes) {
+                // Check today's schedule plus the prior day's overnight periods.
+                var today = weekly[WEEKDAYS[dayIndex]];
+                var yesterday = weekly[WEEKDAYS[(dayIndex + 6) % 7]];
+
+                // Yesterday's overnight period spills into today (minutes < closes).
+                if (yesterday && !yesterday.closed) {
+                    if (yesterday.open24Hours) return true;
+                    var yp = yesterday.periods || [];
+                    for (var k = 0; k < yp.length; k++) {
+                        if (yp[k].closesNextDay) {
+                            var yc = toMinutes(yp[k].closes);
+                            if (yc !== null && minutes < yc) return true;
+                        }
+                    }
+                }
+
+                // Today's own schedule.
+                if (!today || today.closed) return false;
+                if (today.open24Hours) return true;
+                var periods = today.periods || [];
+                for (var j = 0; j < periods.length; j++) {
+                    var p = periods[j];
+                    var opens = toMinutes(p.opens);
+                    var closes = toMinutes(p.closes);
+                    if (opens === null || closes === null) continue;
+                    if (p.closesNextDay) {
+                        // open from opens until midnight (then handled by next day)
+                        if (minutes >= opens) return true;
+                    } else if (minutes >= opens && minutes < closes) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            function fmtClose(dayIndex) {
+                var ds = weekly[WEEKDAYS[dayIndex]];
+                if (!ds) return "";
+                if (ds.closed) return "Closed today";
+                if (ds.open24Hours) return "Open 24 hours";
+                var p = (ds.periods || [])[0];
+                if (!p) return "";
+                return "until " + p.closes;
+            }
+
+            function renderBadge(instant) {
+                var now = nowInTimezone(instant, timezone);
+                if (!now) { badge.textContent = "Hours as listed"; return; }
+                // Staleness: schedule captured more than 21 days ago.
+                var stale = false;
+                if (capturedAt && !isNaN(capturedAt.getTime())) {
+                    var ageDays = (Date.now() - capturedAt.getTime()) / 86400000;
+                    if (ageDays > 21) stale = true;
+                }
+                var hasAllDays = Object.keys(weekly).length >= 7;
+                if (stale || !hasAllDays) {
+                    badge.textContent = "Hours as listed";
+                    return;
+                }
+                var open = isOpenAt(now.dayIndex, now.minutes);
+                if (open) {
+                    badge.textContent = "Open now";
+                    badge.classList.remove("is-closed");
+                } else {
+                    badge.textContent = "Closed now · " + fmtClose(now.dayIndex);
+                    badge.classList.add("is-closed");
+                }
+            }
+
+            // Trusted-clock sync: read the server Date header (same-origin).
+            var trusted = null;
+            fetch("./favicon.ico", { method: "HEAD", cache: "no-store" })
+                .then(function (r) { trusted = r.headers.get("date"); })
+                .catch(function () { trusted = null; })
+                .then(function () {
+                    var tick = function () {
+                        if (trusted) {
+                            var serverTime = new Date(trusted).getTime();
+                            var drift = Date.now() - serverTime;
+                            renderBadge(new Date(Date.now() - drift));
+                        } else {
+                            renderBadge(new Date());
+                        }
+                    };
+                    tick();
+                    setInterval(tick, 60000);
+                    document.addEventListener("visibilitychange", function () {
+                        if (!document.hidden) tick();
+                    });
+                });
+        }
+    }
 })();

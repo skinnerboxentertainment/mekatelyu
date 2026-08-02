@@ -32,7 +32,20 @@ Usage:
 """
 import argparse
 import json
+import re
 from pathlib import Path
+
+WEEKDAYS = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+]
+
+
+def clean_display_day(value):
+    """Reduce a raw displayDay to the weekday plus any holiday parenthetical."""
+    if not value:
+        return value
+    m = re.match(r"^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)(\([^)]*\))?", value, re.I)
+    return m.group(0) if m else value
 
 
 def main() -> int:
@@ -57,6 +70,13 @@ def main() -> int:
         weekly = rec.get("weeklyHours") or {}
         if not weekly:
             continue
+        # Clean raw displayDay values (strip the repeated row/cell text).
+        cleaned = {}
+        for day, sched in weekly.items():
+            entry = dict(sched)
+            if isinstance(entry.get("displayDay"), str):
+                entry["displayDay"] = clean_display_day(entry["displayDay"])
+            cleaned[day] = entry
         cid = rec.get("googleCid")
         if not cid:
             continue
@@ -68,7 +88,7 @@ def main() -> int:
             "capturedAt": rec.get("capturedAt", ""),
             "timezone": "America/Costa_Rica",
             "completeness": rec.get("hoursCompleteness", "partial"),
-            "weeklyHours": weekly,
+            "weeklyHours": cleaned,
             "specialHours": rec.get("specialHours") or [],
         }
 

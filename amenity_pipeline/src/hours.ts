@@ -164,7 +164,9 @@ export function parseWeekdayLabel(label: string): string | null {
  */
 export function parseDayRow(rowText: string): DaySchedule {
   const rawRow = rowText.trim().replace(/\s{2,}/g, " ");
-  const dayLabel = rawRow.split(/[\d:]/)[0]!.trim();
+  // Extract the leading weekday label: "Tuesday" or "Sunday (Virgen de los Ángeles)".
+  const labelMatch = rawRow.match(/^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)(\([^)]*\))?/i);
+  const dayLabel = (labelMatch ? labelMatch[0] : "").trim();
   const day = parseWeekdayLabel(dayLabel);
   if (!day) throw new HoursParseError(`Unrecognized weekday in row: ${rowText}`);
 

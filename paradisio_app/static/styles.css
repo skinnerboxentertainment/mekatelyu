@@ -265,6 +265,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .details-group-list { grid-template-columns: 1fr; }
 }
 
+/* Hours (verified weekly schedule) */
+.hours-section { margin: var(--space-3) 0; padding-top: var(--space-2); border-top: 1px solid var(--border); }
+.hours-section .section-heading { font-size: var(--text-sm); font-weight: 600; color: var(--ink); margin-bottom: var(--space-1); text-transform: uppercase; letter-spacing: 0.03em; }
+.hours-source { font-size: var(--text-xs); color: var(--muted); margin: 0 0 var(--space-2); }
+.hours-tz { margin-left: 0.5rem; opacity: 0.75; }
+.hours-opennow { font-size: var(--text-sm); font-weight: 600; color: var(--jungle-700); margin: 0 0 var(--space-1); }
+.hours-opennow.is-closed { color: var(--coral-600); }
+.hours-table { width: 100%; border-collapse: collapse; }
+.hours-row { border-bottom: 1px solid var(--border); }
+.hours-row:last-child { border-bottom: none; }
+.hours-day { font-size: var(--text-sm); font-weight: 500; color: var(--ink); padding: 0.35rem 0.5rem 0.35rem 0; width: 40%; white-space: nowrap; }
+.hours-time { font-size: var(--text-sm); color: var(--ink); padding: 0.35rem 0; }
+.hours-unknown { color: var(--muted); font-style: italic; }
+.hours-disclosure { margin-top: var(--space-1); }
+.hours-disclosure summary {
+  cursor: pointer; font-size: var(--text-sm); font-weight: 500; color: var(--jungle-700);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-pill);
+  padding: 0.35rem 0.9rem; min-height: 44px; display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: inherit; line-height: 1.2;
+}
+.hours-disclosure summary:hover { border-color: var(--jungle-700); }
+.hours-disclosure summary:focus-visible { outline: 2px solid var(--jungle-700); outline-offset: 2px; }
+.hours-disclosure summary::-webkit-details-marker { display: none; }
+.hours-disclosure summary .chevron { font-size: 0.8em; opacity: 0.75; }
+.hours-disclosure .when-open { display: none; }
+.hours-disclosure[open] .when-closed { display: none; }
+.hours-disclosure[open] .when-open { display: inline; }
+.hours-disclosure .hours-table { margin-top: var(--space-2); padding-bottom: 5rem; }
+
 /* Loading / Empty states */
 .loading { text-align: center; padding: var(--space-7) 0; color: var(--faint); font-size: var(--text-base); }
 .no-results { text-align: center; padding: var(--space-7) 0; color: var(--muted); font-size: var(--text-base); }

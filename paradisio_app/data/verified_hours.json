@@ -9,7 +9,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -52,7 +52,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -109,7 +109,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -215,7 +215,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -321,7 +321,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -338,7 +338,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -421,7 +421,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -503,7 +503,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -521,7 +521,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -551,7 +551,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -621,7 +621,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -664,7 +664,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -721,7 +721,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -738,14 +738,14 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -815,7 +815,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -845,7 +845,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -915,7 +915,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -958,7 +958,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -1015,7 +1015,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1071,7 +1071,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Closed Thursday, Closed, Copy open hours",
+        "displayDay": "Thursday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -1115,7 +1115,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1132,7 +1132,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -1215,7 +1215,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1321,7 +1321,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1427,7 +1427,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1622,7 +1622,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1639,7 +1639,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -1722,7 +1722,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1828,7 +1828,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -1934,7 +1934,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2040,7 +2040,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2057,7 +2057,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2140,7 +2140,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2157,7 +2157,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2240,7 +2240,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2257,7 +2257,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2340,7 +2340,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2446,7 +2446,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2476,7 +2476,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2546,7 +2546,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2563,7 +2563,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2646,7 +2646,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2676,14 +2676,14 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2740,7 +2740,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2757,7 +2757,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -2840,7 +2840,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2946,7 +2946,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -2989,7 +2989,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3046,7 +3046,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3063,7 +3063,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3146,7 +3146,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3163,7 +3163,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3246,7 +3246,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3352,7 +3352,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3382,14 +3382,14 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3446,7 +3446,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3552,7 +3552,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3582,7 +3582,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3741,7 +3741,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3784,7 +3784,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -3841,7 +3841,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3947,7 +3947,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -3990,7 +3990,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -4047,7 +4047,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4116,7 +4116,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -4129,7 +4129,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -4153,7 +4153,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4259,7 +4259,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4315,7 +4315,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Closed Thursday, Closed, Copy open hours",
+        "displayDay": "Thursday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -4359,7 +4359,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4376,14 +4376,14 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -4542,7 +4542,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4648,7 +4648,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4754,7 +4754,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4771,21 +4771,21 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -4842,7 +4842,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4885,7 +4885,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -4942,7 +4942,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -4959,7 +4959,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -5042,7 +5042,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5148,7 +5148,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5254,7 +5254,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5271,7 +5271,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -5354,7 +5354,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5460,7 +5460,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5566,7 +5566,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5596,14 +5596,14 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -5749,7 +5749,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5766,14 +5766,14 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -5843,7 +5843,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -5949,7 +5949,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6060,7 +6060,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6090,7 +6090,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -6160,7 +6160,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6266,7 +6266,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6461,7 +6461,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6478,7 +6478,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -6561,7 +6561,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6591,7 +6591,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -6661,7 +6661,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6767,7 +6767,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6873,7 +6873,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -6903,7 +6903,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -6973,7 +6973,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7079,7 +7079,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7096,7 +7096,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -7179,7 +7179,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7285,7 +7285,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7391,7 +7391,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7497,7 +7497,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7692,7 +7692,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7798,7 +7798,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -7904,7 +7904,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8010,7 +8010,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8116,7 +8116,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8222,7 +8222,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8328,7 +8328,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8434,7 +8434,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8540,7 +8540,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8557,7 +8557,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -8735,7 +8735,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8841,7 +8841,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -8947,7 +8947,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9053,7 +9053,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9159,7 +9159,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9354,7 +9354,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9460,7 +9460,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9566,7 +9566,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9672,7 +9672,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9778,35 +9778,35 @@
     "weeklyHours": {
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Closed Thursday, Closed, Copy open hours",
+        "displayDay": "Thursday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Closed Friday, Closed, Copy open hours",
+        "displayDay": "Friday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -9837,7 +9837,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -9943,7 +9943,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10049,7 +10049,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10155,7 +10155,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10261,7 +10261,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10367,7 +10367,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10562,7 +10562,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10668,7 +10668,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10774,7 +10774,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10880,7 +10880,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -10986,7 +10986,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -11092,7 +11092,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11109,7 +11109,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11122,7 +11122,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11135,7 +11135,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11148,7 +11148,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11161,7 +11161,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11174,7 +11174,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11300,7 +11300,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -11346,7 +11346,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -11429,7 +11429,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -11601,7 +11601,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -11619,7 +11619,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11636,7 +11636,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11649,7 +11649,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11662,7 +11662,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11675,7 +11675,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11688,7 +11688,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11701,7 +11701,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11725,7 +11725,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11742,7 +11742,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11755,7 +11755,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11768,7 +11768,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11781,7 +11781,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11794,7 +11794,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11807,7 +11807,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11920,7 +11920,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11937,7 +11937,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11950,7 +11950,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11963,7 +11963,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11976,7 +11976,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -11989,7 +11989,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12002,7 +12002,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12115,7 +12115,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -12251,7 +12251,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -12446,7 +12446,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12463,7 +12463,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12476,7 +12476,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12489,7 +12489,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12502,7 +12502,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12515,7 +12515,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12528,7 +12528,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -12552,7 +12552,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -12836,7 +12836,7 @@
     "weeklyHours": {
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -13008,7 +13008,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -13381,7 +13381,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -13487,7 +13487,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13504,7 +13504,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13517,7 +13517,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13530,7 +13530,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13543,7 +13543,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13556,7 +13556,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13569,7 +13569,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -13593,7 +13593,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -14144,7 +14144,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -14250,7 +14250,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -14356,7 +14356,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -14527,7 +14527,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -14699,7 +14699,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -14782,7 +14782,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -14865,7 +14865,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -14972,7 +14972,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15054,7 +15054,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -15137,7 +15137,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -15155,7 +15155,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15261,7 +15261,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15367,7 +15367,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15397,7 +15397,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -15467,7 +15467,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15573,7 +15573,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15679,7 +15679,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15785,7 +15785,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -15980,7 +15980,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16010,21 +16010,21 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Closed Thursday, Closed, Copy open hours",
+        "displayDay": "Thursday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -16068,7 +16068,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16239,7 +16239,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -16257,7 +16257,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16363,7 +16363,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16469,7 +16469,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16486,7 +16486,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16499,7 +16499,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16512,7 +16512,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16525,7 +16525,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16538,7 +16538,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16551,7 +16551,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -16575,7 +16575,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16681,7 +16681,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16787,7 +16787,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16893,7 +16893,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -16999,7 +16999,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17194,7 +17194,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17300,7 +17300,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17406,7 +17406,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17690,7 +17690,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17796,7 +17796,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -17902,7 +17902,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18008,7 +18008,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18114,7 +18114,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18220,7 +18220,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18326,7 +18326,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18432,7 +18432,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18538,7 +18538,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -18644,7 +18644,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18661,7 +18661,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18674,7 +18674,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18687,7 +18687,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18700,7 +18700,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18713,7 +18713,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18726,7 +18726,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18750,7 +18750,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18767,7 +18767,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18780,7 +18780,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18793,7 +18793,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18806,7 +18806,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18819,7 +18819,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18832,7 +18832,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -18921,7 +18921,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19004,7 +19004,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19022,7 +19022,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19052,7 +19052,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19122,7 +19122,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19228,7 +19228,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19334,7 +19334,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19440,7 +19440,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19611,7 +19611,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19629,7 +19629,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19735,7 +19735,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -19817,7 +19817,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19835,7 +19835,7 @@
     "weeklyHours": {
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Closed Monday, Closed, Copy open hours",
+        "displayDay": "Monday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -19918,7 +19918,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20024,7 +20024,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20130,7 +20130,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20147,7 +20147,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20160,7 +20160,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20173,7 +20173,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20186,7 +20186,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20199,7 +20199,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20212,7 +20212,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20236,7 +20236,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20342,7 +20342,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20537,7 +20537,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20643,7 +20643,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -20749,7 +20749,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20766,7 +20766,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20779,7 +20779,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20792,7 +20792,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20805,7 +20805,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20818,7 +20818,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20831,7 +20831,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20855,7 +20855,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20872,7 +20872,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20885,7 +20885,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20898,7 +20898,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20911,7 +20911,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20924,7 +20924,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20937,7 +20937,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -20961,7 +20961,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -21067,7 +21067,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -21238,7 +21238,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -21256,7 +21256,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -21362,7 +21362,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -21418,7 +21418,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Closed Thursday, Closed, Copy open hours",
+        "displayDay": "Thursday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -21462,7 +21462,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -21633,7 +21633,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -21740,7 +21740,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21757,7 +21757,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21770,7 +21770,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21783,7 +21783,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21796,7 +21796,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21809,7 +21809,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21822,7 +21822,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -21911,7 +21911,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -21929,7 +21929,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22100,7 +22100,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -22296,7 +22296,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22402,7 +22402,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22597,7 +22597,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22703,7 +22703,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22809,7 +22809,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22915,7 +22915,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -22945,7 +22945,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -23104,7 +23104,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23210,7 +23210,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23316,7 +23316,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23422,7 +23422,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23439,7 +23439,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23452,7 +23452,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23465,7 +23465,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23478,7 +23478,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23491,7 +23491,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23504,7 +23504,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -23528,7 +23528,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23634,7 +23634,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23740,7 +23740,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23846,7 +23846,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -23886,7 +23886,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -23976,7 +23976,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24082,7 +24082,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24188,7 +24188,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24231,7 +24231,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -24288,7 +24288,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24394,7 +24394,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24500,7 +24500,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24695,7 +24695,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24801,7 +24801,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -24907,7 +24907,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24924,7 +24924,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24937,7 +24937,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24950,7 +24950,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24963,7 +24963,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24976,7 +24976,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -24989,7 +24989,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25013,7 +25013,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -25043,14 +25043,14 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Closed Wednesday, Closed, Copy open hours",
+        "displayDay": "Wednesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -25107,7 +25107,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -25137,7 +25137,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Closed Tuesday, Closed, Copy open hours",
+        "displayDay": "Tuesday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -25207,7 +25207,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25224,7 +25224,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25237,7 +25237,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25250,7 +25250,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25263,7 +25263,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25276,7 +25276,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25289,7 +25289,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25378,7 +25378,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -25485,7 +25485,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25502,7 +25502,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25515,7 +25515,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25528,7 +25528,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25541,7 +25541,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25554,7 +25554,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25567,7 +25567,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -25591,7 +25591,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -25786,7 +25786,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -25892,7 +25892,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -25998,7 +25998,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26104,7 +26104,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26210,7 +26210,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26316,7 +26316,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26333,7 +26333,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26346,7 +26346,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26359,7 +26359,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26372,7 +26372,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26385,7 +26385,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26398,7 +26398,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26422,7 +26422,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26528,7 +26528,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26699,7 +26699,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Closed Saturday, Closed, Copy open hours",
+        "displayDay": "Saturday",
         "closed": true,
         "open24Hours": false,
         "periods": []
@@ -26717,7 +26717,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26734,7 +26734,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26747,7 +26747,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26760,7 +26760,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26773,7 +26773,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26786,7 +26786,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26799,7 +26799,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -26823,7 +26823,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -26929,7 +26929,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -27035,7 +27035,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27052,7 +27052,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27065,7 +27065,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27078,7 +27078,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27091,7 +27091,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27104,7 +27104,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27117,7 +27117,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27141,7 +27141,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles)",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": false,
         "periods": [
@@ -27247,7 +27247,7 @@
     "weeklyHours": {
       "sunday": {
         "day": "sunday",
-        "displayDay": "Sunday (Virgen de los Ángeles) Open",
+        "displayDay": "Sunday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27264,7 +27264,7 @@
       },
       "monday": {
         "day": "monday",
-        "displayDay": "Monday Open",
+        "displayDay": "Monday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27277,7 +27277,7 @@
       },
       "tuesday": {
         "day": "tuesday",
-        "displayDay": "Tuesday Open",
+        "displayDay": "Tuesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27290,7 +27290,7 @@
       },
       "wednesday": {
         "day": "wednesday",
-        "displayDay": "Wednesday Open",
+        "displayDay": "Wednesday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27303,7 +27303,7 @@
       },
       "thursday": {
         "day": "thursday",
-        "displayDay": "Thursday Open",
+        "displayDay": "Thursday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27316,7 +27316,7 @@
       },
       "friday": {
         "day": "friday",
-        "displayDay": "Friday Open",
+        "displayDay": "Friday",
         "closed": false,
         "open24Hours": true,
         "periods": [
@@ -27329,7 +27329,7 @@
       },
       "saturday": {
         "day": "saturday",
-        "displayDay": "Saturday Open",
+        "displayDay": "Saturday",
         "closed": false,
         "open24Hours": true,
         "periods": [

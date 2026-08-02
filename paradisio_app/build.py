@@ -263,8 +263,18 @@ CSV_PATH = BASE_DIR.parent / "pv_master_unified.csv"
 MAPS_ENRICH_PATH = BASE_DIR / "data" / "maps_parsed_v3.json"
 VERIFIED_AMENITIES_PATH = BASE_DIR / "data" / "verified_amenities.json"
 VERIFIED_ATTRIBUTES_PATH = BASE_DIR / "data" / "verified_attributes.json"
+VERIFIED_HOURS_PATH = BASE_DIR / "data" / "verified_hours.json"
 SEMANTIC_TAXONOMY_PATH = BASE_DIR / "data" / "semantic_taxonomy.json"
 LOCALES_DIR = BASE_DIR / "data" / "locales"
+
+
+def load_verified_hours():
+    """Load the verified operating-hours lookup (CID-keyed) from the pipeline."""
+    path = VERIFIED_HOURS_PATH
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def load_verified_attributes():
@@ -599,6 +609,7 @@ MAPS_CACHE = None
 SEMANTIC_CACHE = None
 VERIFIED_AMENITIES_CACHE = None
 VERIFIED_ATTRIBUTES_CACHE = None
+VERIFIED_HOURS_CACHE = None
 
 
 def maps_data(cid):
@@ -622,6 +633,13 @@ def verified_attribute_data(cid):
     return VERIFIED_ATTRIBUTES_CACHE.get(cid, {})
 
 
+def verified_hour_data(cid):
+    global VERIFIED_HOURS_CACHE
+    if VERIFIED_HOURS_CACHE is None:
+        VERIFIED_HOURS_CACHE = load_verified_hours()
+    return VERIFIED_HOURS_CACHE.get(cid, {})
+
+
 def semantic_data(row):
     global SEMANTIC_CACHE
     if SEMANTIC_CACHE is None:
@@ -641,6 +659,7 @@ def build_business(row):
     enrich = maps_data(cid)
     verified_amenities = verified_amenity_data(cid)
     verified_attributes = verified_attribute_data(cid)
+    verified_hours = verified_hour_data(cid)
     semantic = semantic_data(row)
     business = {
         "id": compute_id(row),
@@ -692,6 +711,12 @@ def build_business(row):
         "attribute_meta": {
             "capturedAt": verified_attributes.get("capturedAt", ""),
             "detectedGoogleName": verified_attributes.get("detectedGoogleName"),
+        },
+        "weekly_hours": verified_hours.get("weeklyHours", {}),
+        "hours_meta": {
+            "capturedAt": verified_hours.get("capturedAt", ""),
+            "timezone": verified_hours.get("timezone", "America/Costa_Rica"),
+            "completeness": verified_hours.get("completeness", "partial"),
         },
         "prices": enrich.get("prices", [])[:3],
         "open_status": enrich.get("open_status"),
@@ -984,6 +1009,125 @@ def biz_hours(biz):
     elif co:
         parts.append(f'<span class="biz-check">Out {co}</span>')
     return f'<div class="biz-hours">{", ".join(parts)}</div>' if parts else ""
+
+
+WEEKDAY_DISPLAY_ORDER = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+WEEKDAY_SHORT = {
+    "monday": "Mon", "tuesday": "Tue", "wednesday": "Wed", "thursday": "Thu",
+    "friday": "Fri", "saturday": "Sat", "sunday": "Sun",
+}
+
+
+def _fmt_period(period):
+    """Format a time period as '10 AM – 10:30 PM'."""
+    def fmt(t):
+        try:
+            h, m = t.split(":")
+            h = int(h)
+            suffix = "AM" if h < 12 else "PM"
+            hh = h % 12
+            if hh == 0:
+                hh = 12
+            if m == "00":
+                return f"{hh} {suffix}"
+            return f"{hh}:{m} {suffix}"
+        except Exception:
+            return t
+    opens = fmt(period.get("opens", ""))
+    closes = fmt(period.get("closes", ""))
+    if period.get("closesNextDay"):
+        closes += " (next day)"
+    return f"{opens} – {closes}"
+
+
+def _fmt_day_schedule(day_sched):
+    """Return the human-readable schedule text for one day."""
+    if day_sched.get("closed"):
+        return "Closed"
+    if day_sched.get("open24Hours"):
+        return "Open 24 hours"
+    periods = day_sched.get("periods", [])
+    if not periods:
+        return "Closed"
+    return " · ".join(_fmt_period(p) for p in periods)
+
+
+def biz_hours_weekly(biz):
+    """Render the verified weekly Hours section (progressive disclosure)."""
+    weekly = biz.get("weekly_hours") or {}
+    meta = biz.get("hours_meta") or {}
+    if not weekly:
+        return ""
+
+    captured_at = (meta.get("capturedAt") or "")[:7]  # YYYY-MM
+    timezone = meta.get("timezone", "America/Costa_Rica")
+    completeness = meta.get("completeness", "partial")
+
+    rows = []
+    for day in WEEKDAY_DISPLAY_ORDER:
+        ds = weekly.get(day)
+        if ds is None:
+            rows.append(
+                f'<tr class="hours-row"><td class="hours-day">{WEEKDAY_SHORT[day]}</td>'
+                f'<td class="hours-time hours-unknown">No hours listed</td></tr>'
+            )
+            continue
+        label = (ds.get("displayDay") or WEEKDAY_SHORT[day])
+        text = _fmt_day_schedule(ds)
+        rows.append(
+            f'<tr class="hours-row"><td class="hours-day">{html.escape(label)}</td>'
+            f'<td class="hours-time">{html.escape(text)}</td></tr>'
+        )
+
+    table = (
+        '<table class="hours-table">'
+        + "".join(rows)
+        + "</table>"
+    )
+
+    # Compact schedule payload for the client-side open-now computation.
+    import json as _json
+    client_payload = _json.dumps({
+        "timezone": timezone,
+        "capturedAt": meta.get("capturedAt", ""),
+        "weekly": weekly,
+    }, ensure_ascii=False, separators=(",", ":"))
+
+    provenance_parts = ["From Google Maps"]
+    if captured_at:
+        provenance_parts.append(f"Captured {captured_at}")
+    if completeness == "partial":
+        provenance_parts.append("some days unavailable")
+    provenance = (
+        f'<p class="hours-source">{" · ".join(provenance_parts)}'
+        f'<span class="hours-tz">{timezone}</span></p>'
+    )
+
+    heading = '<h2 class="section-heading" id="hours-heading">Hours</h2>'
+    # Open-now badge container populated by the client-side script.
+    badge = '<p class="hours-opennow" data-hours-opennow aria-live="polite"></p>'
+    body = f'{badge}{table}'
+
+    # <= 4 rows shown directly; otherwise collapse behind a disclosure.
+    if len(weekly) <= 4:
+        return (
+            f'<section class="hours-section" aria-labelledby="hours-heading" '
+            f'data-hours-payload="{html.escape(client_payload, quote=True)}">'
+            f'{heading}{provenance}{body}</section>'
+        )
+
+    collapsed = (
+        f'<details class="hours-disclosure">'
+        f'<summary><span class="when-closed">View full week <span class="chevron" aria-hidden="true">&#9660;</span></span>'
+        f'<span class="when-open">View less <span class="chevron" aria-hidden="true">&#9650;</span></span></summary>'
+        f'{body}'
+        f'</details>'
+    )
+    return (
+        f'<section class="hours-section" aria-labelledby="hours-heading" '
+        f'data-hours-payload="{html.escape(client_payload, quote=True)}">'
+        f'{heading}{provenance}{collapsed}</section>'
+    )
 
 
 def biz_amenities(biz):
@@ -1772,6 +1916,7 @@ def render_business_html(biz):
 {rating_html(biz)}
 {biz_addr(biz)}
 {biz_hours(biz)}
+{biz_hours_weekly(biz)}
 {biz_semantic_facets(biz)}
 {biz_amenities(biz)}
 {biz_attributes(biz)}
