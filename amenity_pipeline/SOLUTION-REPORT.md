@@ -217,6 +217,19 @@ provenance, storing attribute groups as rows
 
 ## 9. Attribute display concern — READ BEFORE VISUAL REVIEW (2026-08-02)
 
+**RESOLVED 2026-08-02** — progressive-disclosure Details section implemented per
+the adapted Codex proposal (see `ProposedAmenitiesAttributesCleanup.md` and the
+commit for §9's predecessor). Current behavior:
+- ≤8 attrs: show all, no disclosure.
+- 9–20 attrs: 6-chip summary + "View all N details".
+- 21+ attrs: 8-chip summary + "View all N details".
+- Expanded view: native `<details>` → quiet grouped lists (2-col desktop).
+- Category + attribute-level ranking; within-group dedup + conservative aliases
+  (e.g. "Wi-Fi"→"Free Wi-Fi"); provenance "From Google Maps · Captured YYYY-MM".
+- List cards unchanged.
+
+The analysis below (from the original concern) is retained for context.
+
 **Deployed state:** About attributes are now live on whappin.com. 345 records
 carry attribute groups, and some restaurants show **40–67 chips** spread across
 up to 15 groups (Accessibility, Service options, Highlights, Popular for,

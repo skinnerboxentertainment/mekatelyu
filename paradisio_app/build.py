@@ -689,6 +689,10 @@ def build_business(row):
         "check_out": enrich.get("check_out"),
         "amenities": infer_amenities(row, enrich.get("amenities", []), verified_amenities),
         "attributes": verified_attributes.get("attributes", []),
+        "attribute_meta": {
+            "capturedAt": verified_attributes.get("capturedAt", ""),
+            "detectedGoogleName": verified_attributes.get("detectedGoogleName"),
+        },
         "prices": enrich.get("prices", [])[:3],
         "open_status": enrich.get("open_status"),
         "hours": enrich.get("hours"),
@@ -1012,55 +1016,328 @@ ATTRIBUTE_GROUP_LABELS = {
     "Pets": "Pets",
     "Booking options": "Booking options",
     "Location summary": "Location summary",
+    "Essential info": "Essential info",
+    "Hotel details": "Hotel details",
+    "Room features": "Room features",
 }
 
-ATTRIBUTE_GROUP_ORDER = [
-    "From the business",
-    "Accessibility",
-    "Service options",
-    "Highlights",
-    "Popular for",
-    "Offerings",
-    "Dining options",
-    "Amenities",
-    "Atmosphere",
-    "Crowd",
-    "Planning",
-    "Payments",
-    "Children",
-    "Parking",
-    "Pets",
-    "Booking options",
-    "Location summary",
-]
+# Category-aware group priority. Groups not listed fall after these.
+ATTRIBUTE_GROUP_PRIORITY = {
+    "restaurant": [
+        "Accessibility",
+        "Service options",
+        "Offerings",
+        "Dining options",
+        "Highlights",
+        "Planning",
+        "Parking",
+    ],
+    "shopping": [
+        "Accessibility",
+        "Service options",
+        "Offerings",
+        "Planning",
+        "Payments",
+        "Parking",
+    ],
+    "services": [
+        "Accessibility",
+        "Service options",
+        "Planning",
+        "Amenities",
+        "Payments",
+        "Parking",
+    ],
+    "tour_company": [
+        "Accessibility",
+        "Service options",
+        "Planning",
+        "Children",
+        "Amenities",
+        "Parking",
+    ],
+    "wellness": [
+        "Accessibility",
+        "Service options",
+        "Planning",
+        "Amenities",
+        "Payments",
+        "Parking",
+    ],
+    "transport": [
+        "Accessibility",
+        "Service options",
+        "Amenities",
+        "Payments",
+        "Parking",
+    ],
+    "real_estate": [
+        "Accessibility",
+        "Service options",
+        "Planning",
+        "Parking",
+    ],
+    "hotel": [
+        "Accessibility",
+        "Essential info",
+        "Hotel details",
+        "Room features",
+        "Parking",
+        "Planning",
+    ],
+    "hostel": [
+        "Accessibility",
+        "Essential info",
+        "Hotel details",
+        "Parking",
+        "Planning",
+    ],
+    "vacation_rental": [
+        "Accessibility",
+        "Essential info",
+        "Hotel details",
+        "Room features",
+        "Parking",
+        "Planning",
+    ],
+}
+
+# Attributes always prioritized in the summary (regardless of group).
+ATTRIBUTE_HIGHLIGHT = {
+    "Wheelchair-accessible entrance",
+    "Wheelchair-accessible car park",
+    "Wheelchair-accessible seating",
+    "Wheelchair-accessible toilet",
+    "Outdoor seating",
+    "Delivery",
+    "Takeaway",
+    "Dine-in",
+    "Vegan options",
+    "Vegetarian options",
+    "Free Wi-Fi",
+    "Wi-Fi",
+    "Accepts reservations",
+    "Accepts bookings",
+    "Free parking",
+    "Free parking lot",
+    "On-site parking",
+    "Breakfast",
+    "Pet-friendly",
+    "Dogs allowed",
+    "Live music",
+}
+
+# Attributes treated as low-value for the summary (kept in expanded view).
+ATTRIBUTE_LOW_VALUE = {
+    "Casual",
+    "Cosy",
+    "Groups",
+    "Tourists",
+    "Credit cards",
+    "Debit cards",
+    "NFC mobile payments",
+    "Good for kids",
+}
+
+# Volume thresholds for the Details summary.
+DETAILS_EXPANSION_THRESHOLD = 8  # at/below this: show all, no disclosure
+DETAILS_SUMMARY_LIMIT = 6  # summary size for 9-20 records
+DETAILS_LARGE_SUMMARY_LIMIT = 8  # summary size for 21+ records
+
+# Conservative display aliases (exact same concept). Version-controlled.
+ATTRIBUTE_DISPLAY_ALIASES = {
+    ("Wi-Fi", "Free Wi-Fi"): "Free Wi-Fi",
+    ("Parking", "Free parking"): "Free parking",
+}
 
 
-def biz_attributes(biz):
-    groups = biz.get("attributes") or []
-    if not groups:
-        return ""
-    # Sort groups by preferred order, unknown groups last.
-    order = {g: i for i, g in enumerate(ATTRIBUTE_GROUP_ORDER)}
-    groups = sorted(
-        groups,
-        key=lambda g: order.get(g.get("group", ""), len(order)),
-    )
-    blocks = []
+def _presentation_key(value):
+    return " ".join(value.split()).casefold()
+
+
+def _clean_group(groups):
+    """Deduplicate within each group and collapse exact aliases.
+
+    Returns a list of {group, label, items} in display order, with within-group
+    duplicates removed and aliased values consolidated.
+    """
+    clean = []
+    seen_keys = set()
     for g in groups:
         name = g.get("group", "")
         items = [it for it in g.get("items", []) if it and it.strip()]
         if not items:
             continue
-        label = ATTRIBUTE_GROUP_LABELS.get(name, name)
-        chips = " ".join(f'<span class="attr-chip">{html.escape(it)}</span>' for it in items)
-        blocks.append(
-            f'<div class="attr-group"><h3 class="attr-group-heading">{html.escape(label)}</h3>'
-            f'<div class="attr-items">{chips}</div></div>'
-        )
-    if not blocks:
+        # within-group dedup + alias consolidation
+        deduped = []
+        seen = set()
+        for it in items:
+            key = _presentation_key(it)
+            # If this value is the non-preferred half of an alias pair whose
+            # preferred half is already shown, skip it (e.g. "Wi-Fi" when
+            # "Free Wi-Fi" is present).
+            replaced = False
+            for (a, b), display in ATTRIBUTE_DISPLAY_ALIASES.items():
+                if key == _presentation_key(a) and _presentation_key(b) in seen:
+                    replaced = True
+                    break
+                if key == _presentation_key(b) and _presentation_key(a) in seen:
+                    replaced = True
+                    break
+            if replaced:
+                continue
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(it)
+        if not deduped:
+            continue
+        clean.append({
+            "group": name,
+            "label": ATTRIBUTE_GROUP_LABELS.get(name, name),
+            "items": deduped,
+        })
+        seen_keys.add(name)
+    return clean
+
+
+def _group_order(category, group_names):
+    priority = ATTRIBUTE_GROUP_PRIORITY.get((category or "").lower(), [])
+    order = {name: i for i, name in enumerate(priority)}
+    return sorted(group_names, key=lambda n: order.get(n, len(priority)))
+
+
+def _rank_summary_items(clean_groups, category, limit):
+    """Select the top attributes for the collapsed summary.
+
+    Scores each attribute by group priority + highlight/low-value signals, with
+    a per-group cap of 2 in the first pass, then fills remaining slots. Returns
+    a list of {group, label, value}.
+    """
+    group_order = {name: i for i, name in enumerate(_group_order(category, [g["group"] for g in clean_groups]))}
+    candidates = []
+    for g in clean_groups:
+        gi = group_order.get(g["group"], 999)
+        for it in g["items"]:
+            score = 50 + gi * -10  # earlier group wins
+            if it in ATTRIBUTE_HIGHLIGHT:
+                score += 40
+            if it in ATTRIBUTE_LOW_VALUE:
+                score -= 30
+            candidates.append((score, g["group"], g["label"], it))
+    candidates.sort(key=lambda c: (-c[0], c[1]))
+
+    # First pass: at most 2 per group.
+    chosen = []
+    per_group = {}
+    for score, group, label, value in candidates:
+        if per_group.get(group, 0) >= 2:
+            continue
+        chosen.append((group, label, value))
+        per_group[group] = per_group.get(group, 0) + 1
+        if len(chosen) >= limit:
+            return chosen
+    # Second pass: fill remaining from what's left.
+    for score, group, label, value in candidates:
+        if any(v == value and g == group for g, _, v in chosen):
+            continue
+        chosen.append((group, label, value))
+        if len(chosen) >= limit:
+            break
+    return chosen
+
+
+def build_attribute_display_model(biz):
+    """Build the presentation model for the Details section.
+
+    Returns None when there is nothing worth showing.
+    """
+    raw_groups = biz.get("attributes") or []
+    if not raw_groups:
+        return None
+    clean = _clean_group(raw_groups)
+    if not clean:
+        return None
+
+    category = (biz.get("category") or "").lower()
+    total = sum(len(g["items"]) for g in clean)
+    group_names = [g["group"] for g in clean]
+    ordered_names = _group_order(category, group_names)
+    ordered = sorted(
+        clean,
+        key=lambda g: ordered_names.index(g["group"]) if g["group"] in ordered_names else len(ordered_names),
+    )
+
+    if total <= DETAILS_EXPANSION_THRESHOLD:
+        return {
+            "totalCount": total,
+            "collapsed": False,
+            "summary": None,
+            "groups": ordered,
+        }
+
+    limit = DETAILS_LARGE_SUMMARY_LIMIT if total > 20 else DETAILS_SUMMARY_LIMIT
+    summary = _rank_summary_items(ordered, category, limit)
+    return {
+        "totalCount": total,
+        "collapsed": True,
+        "summary": [{"group": g, "label": l, "value": v} for g, l, v in summary],
+        "groups": ordered,
+    }
+
+
+def biz_attributes(biz):
+    model = build_attribute_display_model(biz)
+    if model is None:
         return ""
-    heading = '<h2 class="section-heading">Details</h2>'
-    return f'<section class="attributes-section">{heading}<div class="attr-groups">{chr(10).join(blocks)}</div></section>'
+    meta = biz.get("attribute_meta") or {}
+    captured_at = (meta.get("capturedAt") or "")[:7]  # YYYY-MM
+    provenance = "From Google Maps"
+    if captured_at:
+        provenance += f" · Captured {captured_at}"
+    provenance_html = (
+        f'<p class="details-source">'
+        f'From <a href="https://www.google.com/maps?cid={html.escape(biz.get("google_maps_cid", ""))}" target="_blank" rel="noopener">Google Maps</a>'
+        + (f" · Captured {html.escape(captured_at)}" if captured_at else "")
+        + "</p>"
+    )
+    heading = '<h2 class="section-heading" id="details-heading">Details</h2>'
+
+    if not model["collapsed"]:
+        blocks = _render_expanded_groups(model["groups"])
+        return f'<section class="attributes-section" aria-labelledby="details-heading">{heading}{provenance_html}<div class="attr-groups">{chr(10).join(blocks)}</div></section>'
+
+    # Collapsed: summary chips + native <details> disclosure.
+    summary_chips = " ".join(
+        f'<span class="attr-chip">{html.escape(v)}</span>' for _, _, v in model["summary"]
+    )
+    summary = (
+        f'<div class="details-summary" aria-label="Highlighted details">'
+        f'{summary_chips}</div>'
+    )
+    blocks = _render_expanded_groups(model["groups"])
+    expanded = (
+        f'<details class="details-disclosure">'
+        f'<summary><span class="when-closed">View all {model["totalCount"]} details</span>'
+        f'<span class="when-open">View fewer details</span></summary>'
+        f'<div class="details-groups">{chr(10).join(blocks)}</div>'
+        f'</details>'
+    )
+    return (
+        f'<section class="attributes-section" aria-labelledby="details-heading">'
+        f'{heading}{provenance_html}{summary}{expanded}</section>'
+    )
+
+
+def _render_expanded_groups(groups):
+    blocks = []
+    for g in groups:
+        items = "".join(f'<li>{html.escape(it)}</li>' for it in g["items"])
+        blocks.append(
+            f'<div class="attr-group"><h3 class="attr-group-heading">{html.escape(g["label"])}</h3>'
+            f'<ul class="details-group-list">{items}</ul></div>'
+        )
+    return blocks
 
 
 def biz_semantic_facets(biz):
