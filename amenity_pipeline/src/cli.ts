@@ -18,7 +18,7 @@ Options:
   --cid          Google Maps CID to smoke-test (string).
   --name         Source listing name for identity check (default "Test Listing").
   --category     Source category (default "hotel").
-  --mode         "amenities" (default, hotel matrix) or "about" (non-lodging attributes).
+  --mode         "amenities" (default), "about" (non-lodging attributes), or "hours".
   --input        Path to JSON or JSONL listings file.
   --out          Output directory (default "./output").
   --limit        Process at most N records from the input (dry-run option).
@@ -100,7 +100,7 @@ export async function main(argv: string[]): Promise<number> {
     limit,
     headless,
     concurrency,
-    mode: (values.mode as "amenities" | "about" | undefined),
+    mode: (values.mode as "amenities" | "about" | "hours" | undefined),
     jitterMs: jitterBase ? [jitterBase * 1000, jitterBase * 1500] : undefined,
     profileDir: values.profile,
     onProgress: () => {}, // runBatch renders + writes status.json itself
@@ -139,7 +139,7 @@ async function runOne(
     try {
       const record = await processListing(context, listing, writer.getEvidenceDir(), {
         headless,
-        mode: mode as "amenities" | "about",
+        mode: mode as "amenities" | "about" | "hours",
       });
       await writer.appendResult(record);
       console.log(JSON.stringify(record, null, 2));

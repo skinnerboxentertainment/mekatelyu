@@ -10,6 +10,10 @@
   "scripts": {
     "amenities:one": "tsx src/cli.ts one",
     "amenities:batch": "tsx src/cli.ts batch",
+    "about:one": "tsx src/cli.ts one --mode about",
+    "about:batch": "tsx src/cli.ts batch --mode about",
+    "hours:one": "tsx src/cli.ts one --mode hours",
+    "hours:batch": "tsx src/cli.ts batch --mode hours",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"

@@ -2,20 +2,28 @@ import { randomUUID } from "node:crypto";
 import { chromium, type Browser, type BrowserContext, type Page } from "playwright";
 import { namesMatch } from "./identity.js";
 import { parseAmenities, type Amenity } from "./parse.js";
+import { parseHoursAria, validateWeeklySchedule } from "./hours.js";
 import type { Listing } from "./input.js";
 
 export const EXTRACTOR_VERSION = "google-maps-amenities-v2";
 export const EXTRACTOR_VERSION_ABOUT = "google-maps-about-attributes-v1";
+export const EXTRACTOR_VERSION_HOURS = "google-maps-hours-v1";
 
 export type PageStatus =
   | "success_expanded"
   | "success_inline"
   | "success_attributes"
+  | "success_hours"
   | "amenities_not_applicable"
   | "amenities_not_exposed"
   | "attributes_not_exposed"
+  | "hours_not_exposed"
+  | "hours_expansion_failed"
+  | "hours_parse_failed"
   | "page_inconclusive"
   | "business_closed"
+  | "business_permanently_closed"
+  | "business_temporarily_closed"
   | "place_identity_mismatch"
   | "place_not_loaded"
   | "consent_required"
@@ -51,12 +59,15 @@ export type ExtractedRecord = {
   resolvedUrl: string;
   capturedAt: string;
   status: PageStatus;
-  operatingStatus: "open" | "permanently_closed" | "unknown" | null;
+  operatingStatus: "open" | "permanently_closed" | "temporarily_closed" | "unknown" | null;
   amenitiesExpanded: boolean;
   amenityCount: number;
   amenities: Amenity[];
   attributes: AboutGroup[];
   attributeCount: number;
+  hoursExpanded: boolean;
+  hoursCompleteness: "complete" | "partial" | "unknown";
+  weeklyHours: unknown;
   metadata: PageMetadata;
   ariaSnapshotPath: string | null;
   screenshotPath: string | null;
@@ -68,8 +79,8 @@ export type ExtractedRecord = {
 export type ExtractOptions = {
   headless?: boolean;
   minDelayMs?: number;
-  /** "amenities" (lodging hotel matrix) or "about" (non-lodging attributes). */
-  mode?: "amenities" | "about";
+  /** "amenities" (lodging hotel matrix), "about" (non-lodging attributes), or "hours". */
+  mode?: "amenities" | "about" | "hours";
 };
 
 export type AboutGroup = {
@@ -412,6 +423,98 @@ export async function extractAboutAttributesFromPage(page: Page): Promise<{
   };
 }
 
+export class HoursNotExposedError extends Error {
+  constructor(public readonly ariaSnapshot: string) {
+    super("No weekly operating-hours control exposed");
+  }
+}
+export class HoursExpansionFailedError extends Error {
+  constructor(public readonly ariaSnapshot: string) {
+    super("Hours control found but expansion could not be verified");
+  }
+}
+export class HoursParseFailedError extends Error {
+  constructor(public readonly ariaSnapshot: string) {
+    super("Hours rows present but could not be parsed into a weekly schedule");
+  }
+}
+
+/**
+ * Extract weekly operating hours from a place panel.
+ *
+ * Detects the "Show open hours for the week" control, expands it if needed,
+ * and parses the resulting weekday rows from the ARIA snapshot.
+ */
+export async function extractHoursFromPage(page: Page): Promise<{
+  hoursExpanded: boolean;
+  completeness: "complete" | "partial";
+  parsed: import("./hours.js").ParsedHours;
+  ariaSnapshot: string;
+  metadata: PageMetadata;
+}> {
+  const main = page.getByRole("main");
+
+  const hoursControl = main.getByRole("button", {
+    name: /(Show open hours for the week|See more hours)/i,
+  });
+
+  // The hours control can render slightly after the place panel. Retry briefly.
+  let count = await hoursControl.count().catch(() => 0);
+  if (count === 0) {
+    for (let i = 0; i < 4 && count === 0; i++) {
+      await page.waitForTimeout(700);
+      count = await hoursControl.count().catch(() => 0);
+    }
+  }
+
+  if (count === 0) {
+    const snap = await main.ariaSnapshot().catch(() => "");
+    throw new HoursNotExposedError(snap);
+  }
+  if (count !== 1) {
+    const snap = await main.ariaSnapshot().catch(() => "");
+    throw new HoursNotExposedError(snap);
+  }
+
+  let expanded = (await hoursControl.getAttribute("aria-expanded")) === "true";
+  if (!expanded) {
+    await hoursControl.click().catch(() => {});
+    await page.waitForTimeout(1200);
+    expanded = (await hoursControl.getAttribute("aria-expanded")) === "true";
+    // Fallback verification: rows visible in the main snapshot.
+    if (!expanded) {
+      const check = await main.ariaSnapshot();
+      expanded = /row ".*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)/.test(check);
+    }
+  }
+
+  if (!expanded) {
+    const snap = await main.ariaSnapshot().catch(() => "");
+    throw new HoursExpansionFailedError(snap);
+  }
+
+  const ariaSnapshot = await main.ariaSnapshot();
+  const parsed = parseHoursAria(ariaSnapshot);
+
+  if (Object.keys(parsed.weekly).length === 0) {
+    throw new HoursParseFailedError(ariaSnapshot);
+  }
+
+  try {
+    validateWeeklySchedule(parsed.weekly);
+  } catch (err) {
+    throw new HoursParseFailedError(ariaSnapshot);
+  }
+
+  return {
+    hoursExpanded: true,
+    completeness: parsed.completeness,
+    parsed,
+    ariaSnapshot,
+    metadata: buildMetadata(page.url(), ariaSnapshot, "absent", "unknown"),
+  };
+}
+
 export class MapsBrowser {
   private browser: Browser | null = null;
   private persistentContext: BrowserContext | null = null;
@@ -511,6 +614,9 @@ export async function processListing(
     amenities: [],
     attributes: [],
     attributeCount: 0,
+    hoursExpanded: false,
+    hoursCompleteness: "unknown",
+    weeklyHours: null,
     metadata: {
       limitedView: false,
       hasBookingUi: false,
@@ -579,7 +685,7 @@ export async function processListing(
 
     if (
       detectedGoogleName !== null &&
-      !namesMatch(listing.name, detectedGoogleName, mode === "about")
+      !namesMatch(listing.name, detectedGoogleName, mode !== "amenities")
     ) {
       record.status = "place_identity_mismatch";
       record.error = `Detected name "${detectedGoogleName}" does not match "${listing.name}"`;
@@ -597,6 +703,19 @@ export async function processListing(
 
         if (record.status !== "business_closed" && record.status !== "place_identity_mismatch") {
           record.status = "success_attributes";
+        }
+      } else if (mode === "hours") {
+        const result = await extractHoursFromPage(page);
+        record.hoursExpanded = result.hoursExpanded;
+        record.hoursCompleteness = result.completeness;
+        record.weeklyHours = result.parsed.weekly;
+        record.metadata = result.metadata;
+
+        const ariaPath = await writeEvidence(evidenceDir, listingId, "aria", result.ariaSnapshot);
+        record.ariaSnapshotPath = ariaPath;
+
+        if (record.status !== "business_closed" && record.status !== "place_identity_mismatch") {
+          record.status = "success_hours";
         }
       } else {
         const result = await extractAmenitiesFromPage(page);
@@ -617,6 +736,18 @@ export async function processListing(
 
       if (record.status === "business_closed") {
         // Closed + nothing extractable → business_closed (already set).
+      } else if (err instanceof HoursNotExposedError) {
+        record.status = "hours_not_exposed";
+        record.metadata = buildMetadata(
+          page.url(),
+          (err as HoursNotExposedError).ariaSnapshot,
+          "absent",
+          "unknown",
+        );
+      } else if (err instanceof HoursExpansionFailedError) {
+        record.status = "hours_expansion_failed";
+      } else if (err instanceof HoursParseFailedError) {
+        record.status = "hours_parse_failed";
       } else if (err instanceof AmenitiesNotExposedError) {
         record.status = mode === "about" ? "attributes_not_exposed" : "amenities_not_exposed";
         record.metadata = buildMetadata(

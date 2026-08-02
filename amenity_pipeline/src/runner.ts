@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
-import { MapsBrowser, processListing, EXTRACTOR_VERSION, EXTRACTOR_VERSION_ABOUT, isLodgingCategory } from "./extract.js";
+import { MapsBrowser, processListing, EXTRACTOR_VERSION, EXTRACTOR_VERSION_ABOUT, EXTRACTOR_VERSION_HOURS, isLodgingCategory } from "./extract.js";
 import type { Listing } from "./input.js";
 import { EvidenceWriter } from "./evidence.js";
 import { ProgressTracker, type StatusSnapshot } from "./status.js";
@@ -13,8 +13,8 @@ export type BatchOptions = {
   concurrency?: number;
   jitterMs?: [number, number];
   retries?: number;
-  /** Extraction mode: "amenities" (default) or "about" (non-lodging attributes). */
-  mode?: "amenities" | "about";
+  /** Extraction mode: "amenities" (default), "about", or "hours". */
+  mode?: "amenities" | "about" | "hours";
   /** Persistent browser profile dir (signed-in session) to reuse. */
   profileDir?: string;
   /** Called after every record for live status. */
@@ -65,7 +65,8 @@ export async function runBatch(opts: BatchOptions): Promise<BatchStats> {
 
   const checkpoint = await loadCheckpoint(checkpointPath);
   const retryCounts = new Map<string, number>();
-  const extractorVersion = mode === "about" ? EXTRACTOR_VERSION_ABOUT : EXTRACTOR_VERSION;
+  const extractorVersion =
+    mode === "about" ? EXTRACTOR_VERSION_ABOUT : mode === "hours" ? EXTRACTOR_VERSION_HOURS : EXTRACTOR_VERSION;
 
   const tracker = new ProgressTracker(listings.length, outputDir, extractorVersion);
 
@@ -134,6 +135,7 @@ export async function runBatch(opts: BatchOptions): Promise<BatchStats> {
               record.status === "success_expanded" ||
               record.status === "success_inline" ||
               record.status === "success_attributes" ||
+              record.status === "success_hours" ||
               record.status === "amenities_not_applicable"
             ) {
               checkpoint[listing.listingId] = extractorVersion;
@@ -156,7 +158,8 @@ export async function runBatch(opts: BatchOptions): Promise<BatchStats> {
           if (
             r.record.status === "success_expanded" ||
             r.record.status === "success_inline" ||
-            r.record.status === "success_attributes"
+            r.record.status === "success_attributes" ||
+            r.record.status === "success_hours"
           ) {
             stats.succeeded += 1;
           } else if (r.record.status === "amenities_not_applicable") {
@@ -185,6 +188,7 @@ function isNoAmenity(status: string): boolean {
   return (
     status === "amenities_not_exposed" ||
     status === "attributes_not_exposed" ||
+    status === "hours_not_exposed" ||
     status === "page_inconclusive"
   );
 }

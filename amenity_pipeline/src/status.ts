@@ -32,11 +32,17 @@ const ALL_STATUSES: PageStatus[] = [
   "success_expanded",
   "success_inline",
   "success_attributes",
+  "success_hours",
   "amenities_not_applicable",
   "amenities_not_exposed",
   "attributes_not_exposed",
+  "hours_not_exposed",
+  "hours_expansion_failed",
+  "hours_parse_failed",
   "page_inconclusive",
   "business_closed",
+  "business_permanently_closed",
+  "business_temporarily_closed",
   "place_identity_mismatch",
   "place_not_loaded",
   "consent_required",
@@ -52,12 +58,15 @@ const FAIL_STATUSES: PageStatus[] = [
   "captcha_or_traffic_block",
   "navigation_failed",
   "extraction_failed",
+  "hours_expansion_failed",
+  "hours_parse_failed",
 ];
 
-/** Expected outcomes: business reached, but no amenity/attribute data exposed. */
+/** Expected outcomes: business reached, but no amenity/attribute/hours data exposed. */
 const NO_AMENITY_STATUSES: PageStatus[] = [
   "amenities_not_exposed",
   "attributes_not_exposed",
+  "hours_not_exposed",
   "page_inconclusive",
 ];
 
@@ -145,7 +154,10 @@ export class ProgressTracker {
       0,
     );
     const succeeded =
-      this.counts.success_expanded + this.counts.success_inline + this.counts.success_attributes;
+      this.counts.success_expanded +
+      this.counts.success_inline +
+      this.counts.success_attributes +
+      this.counts.success_hours;
 
     return {
       extractorVersion: this.version,
