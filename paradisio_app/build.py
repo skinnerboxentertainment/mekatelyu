@@ -1309,7 +1309,7 @@ def biz_attributes(biz):
 
     # Collapsed: summary chips + native <details> disclosure.
     summary_chips = " ".join(
-        f'<span class="attr-chip">{html.escape(v)}</span>' for _, _, v in model["summary"]
+        f'<span class="attr-chip">{html.escape(item["value"])}</span>' for item in model["summary"]
     )
     summary = (
         f'<div class="details-summary" aria-label="Highlighted details">'
