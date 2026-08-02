@@ -215,16 +215,83 @@ provenance, storing attribute groups as rows
 
 ---
 
-## 9. Open items / decisions for the next agent
+## 9. Attribute display concern — READ BEFORE VISUAL REVIEW (2026-08-02)
 
-1. **Site integration of About attributes** — new section, provenance labeling,
-   group→display mapping, category-specific group ordering.
-2. **Review the final about run output** for quality before merging.
-3. **Decide whether to keep the legacy OCR enrichment** for rating/address/etc.
+**Deployed state:** About attributes are now live on whappin.com. 345 records
+carry attribute groups, and some restaurants show **40–67 chips** spread across
+up to 15 groups (Accessibility, Service options, Highlights, Popular for,
+Offerings, Dining options, Amenities, Atmosphere, Crowd, Planning, Payments,
+Children, Parking, Pets, …). Total captured: **5,748 attribute entries**.
+
+**The concern (owner observation):** this is a LOT of detail and is **flooding
+the listing pages**. On a mobile-first directory, a page with 60+ chips reads as
+visual noise rather than useful information. The current renderer (`biz_attributes`
+in `paradisio_app/build.py`) shows **every** attribute group fully expanded, with
+no collapse, truncation, or category-aware prioritization.
+
+This is a **display-layer problem only** — the data model already stores groups
+as named, structured fields, so any presentation fix requires no re-extraction.
+
+### What Codex should evaluate (including visual inspection of live pages)
+
+1. **Volume/balance** — is 5,748 attributes across 345 pages the right amount,
+   or should we surface less? Compare a high-count restaurant page
+   (e.g. El Sol del Caribe, 67 attrs) against a low-count one on both desktop and
+   mobile.
+2. **Collapse strategy** — reuse the existing Amenities truncation pattern
+   ("View all N") vs. per-group collapse vs. a "Details" expander that hides
+   everything by default.
+3. **Group prioritization** — should we surface only 2–3 most relevant groups
+   per category (restaurants: Offerings + Service options + Payments; skip
+   Atmosphere/Crowd), and de-emphasize the rest?
+4. **Provenance labeling** — should attributes show "From Google" / source
+   attribution, per Google's data policies?
+5. **List-vs-detail** — should the home/list cards show a few highlights while
+   the dedicated business page shows everything?
+6. **Interaction cost** — touch targets, accordion behavior, and whether chips
+   are even the right component for 60 items (vs. a table or grouped list).
+7. **Category-specific ordering/labels** — the current group order is a global
+   preference list; per-category order may read better.
+8. **Empty/partial states** — how it looks when a page has only 1–2 attributes
+   (looks sparse next to a 60-chip neighbor).
+
+Owner has explicitly said **do not change the display yet** — this is a
+documentation + review request. Codex should produce its own observations,
+ideally backed by visual inspection of the live pages, before we decide on an
+approach.
+
+### Live pages to inspect
+
+High-count (flood risk):
+- https://www.whappin.com/businesses/el-sol-del-caribe-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html (67)
+- https://www.whappin.com/businesses/green-jaguar-irish-gastro-pub-puerto-viejo.html (62)
+- https://www.whappin.com/businesses/hot-rocks-puerto-viejo.html (61)
+
+Amenities + attributes (both sections):
+- https://www.whappin.com/businesses/bohemian-monkey-cahuita-lim-n-costa-rica-cahuita.html
+- https://www.whappin.com/businesses/cabinas-cable-talamanca-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+
+Amenities only (no flood risk):
+- https://www.whappin.com/businesses/3-bamboo-ecolodge-cahuita-lim-n-costa-rica-cahuita.html
+
+Sparse attributes:
+- https://www.whappin.com/businesses/7-ice-creams-puerto-viejo.html (18)
+- https://www.whappin.com/businesses/alamo-enterprise-car-rental-puerto-viejo.html (17)
+
+---
+
+## 10. Open items / decisions for the next agent
+
+1. ~~**Site integration of About attributes**~~ — **DONE** (Details section live;
+   see §9 for the new display concern).
+2. **Attribute display redesign** — resolve the flooding concern in §9 before
+   further polish.
+3. **Review the final about run output** for quality before merging.
+4. **Decide whether to keep the legacy OCR enrichment** for rating/address/etc.
    (we only removed its *amenity* use, not its other fields).
-4. **Google data reality:** ~42% of lodging and some non-lodging have no
+5. **Google data reality:** ~42% of lodging and some non-lodging have no
    enrichment data. Accept as-is, or pursue Places API (paid, requires
    CID→Place-ID mapping, storage/attribution review) for a bounded pass.
-5. **The signed-in throwaway profile** may get flagged under sustained use;
+6. **The signed-in throwaway profile** may get flagged under sustained use;
    rotation strategy if we do large future runs.
-6. **Amenity/attribute freshness** — captured data has no re-crawl schedule.
+7. **Amenity/attribute freshness** — captured data has no re-crawl schedule.
