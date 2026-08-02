@@ -28,6 +28,8 @@ profiles/
 # Signed-in local Maps browser state; never commit cookies, tokens, history, or caches.
 audit/maps-cid-discovery/chrome-profile/
 audit/maps-cid-discovery/signed-profile/
+# Amenity pipeline signed-in profile (throwaway auth)
+amenity_pipeline/profiles/
 # Stealth screenshots
 stealth_screenshots/
 # Temp files

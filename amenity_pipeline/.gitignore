@@ -1,0 +1,14 @@
+node_modules/
+dist/
+evidence/
+*.log
+coverage/
+
+# Generated / run artifacts — never commit
+output/
+output-about/
+profiles/
+run-batch.cmd
+run-about.cmd
+run.pid
+*-listings.jsonl

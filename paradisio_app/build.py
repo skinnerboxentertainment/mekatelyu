@@ -232,18 +232,27 @@ def generate_description(row, enrich):
     return " ".join(parts)
 
 
-LODGING_AMENITIES = {
-    "hotel": ["Free Wi-Fi", "Gym"],
-    "hostel": ["Free Wi-Fi", "Gym"],
-    "vacation_rental": ["Free Wi-Fi"],
-}
+def infer_amenities(row, enrich_amenities, verified_amenities):
+    """Resolve the amenity list for a business.
 
-
-def infer_amenities(row, enrich_amenities):
-    if enrich_amenities:
-        return enrich_amenities
-    cat = row.get("category", "").strip().lower()
-    return LODGING_AMENITIES.get(cat, [])
+    Priority:
+      1. Verified amenity data from the amenity pipeline (evidence-backed).
+         These names are already normalized and validated upstream, so they
+         bypass the legacy OCR filter entirely.
+      2. Legacy OCR enrichment (maps_parsed_v3) — coarser, unverified.
+      3. Nothing. We do NOT inject statistical defaults, because doing so
+         fabricates amenities businesses may not actually offer.
+    """
+    cid = row.get("google_maps_cid", "").strip()
+    if verified_amenities:
+        available = verified_amenities.get("availableNames", [])
+        if available:
+            return [a for a in available if a and a.strip()]
+    # Legacy OCR enrichment (maps_parsed_v3) is intentionally NOT used for
+    # amenities: it is coarse, Spanish, and unverified, and has been shown to
+    # attribute amenities to the wrong businesses. Amenities come only from
+    # evidence-backed verified data. No statistical defaults are injected.
+    return []
 
 BASE_DIR = Path(__file__).parent
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -252,8 +261,44 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = Path(os.environ.get("PARADISIO_OUTPUT_DIR", REPO_DIR / "release")).resolve()
 CSV_PATH = BASE_DIR.parent / "pv_master_unified.csv"
 MAPS_ENRICH_PATH = BASE_DIR / "data" / "maps_parsed_v3.json"
+VERIFIED_AMENITIES_PATH = BASE_DIR / "data" / "verified_amenities.json"
+VERIFIED_ATTRIBUTES_PATH = BASE_DIR / "data" / "verified_attributes.json"
 SEMANTIC_TAXONOMY_PATH = BASE_DIR / "data" / "semantic_taxonomy.json"
 LOCALES_DIR = BASE_DIR / "data" / "locales"
+
+
+def load_verified_attributes():
+    """Load the verified About-attributes lookup (CID-keyed) from the pipeline.
+
+    Returns a dict of {cid: {"attributes": [{"group": ..., "items": [...]}]}}.
+    """
+    path = VERIFIED_ATTRIBUTES_PATH
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_verified_amenities():
+    """Load the verified amenity lookup (CID-keyed) from the amenity pipeline.
+
+    Returns a dict of {cid: {"availableNames": [...], "unavailableNames": [...]}}.
+    """
+    path = VERIFIED_AMENITIES_PATH
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    result = {}
+    for cid, rec in data.items():
+        if not cid:
+            continue
+        result[cid] = {
+            "availableNames": rec.get("availableNames", []),
+            "unavailableNames": rec.get("unavailableNames", []),
+            "sourceName": rec.get("sourceName", ""),
+        }
+    return result
 
 
 def load_locales():
@@ -552,6 +597,8 @@ def get_secondary_links(row):
 
 MAPS_CACHE = None
 SEMANTIC_CACHE = None
+VERIFIED_AMENITIES_CACHE = None
+VERIFIED_ATTRIBUTES_CACHE = None
 
 
 def maps_data(cid):
@@ -559,6 +606,20 @@ def maps_data(cid):
     if MAPS_CACHE is None:
         MAPS_CACHE = load_maps_enrich()
     return MAPS_CACHE.get(cid, {})
+
+
+def verified_amenity_data(cid):
+    global VERIFIED_AMENITIES_CACHE
+    if VERIFIED_AMENITIES_CACHE is None:
+        VERIFIED_AMENITIES_CACHE = load_verified_amenities()
+    return VERIFIED_AMENITIES_CACHE.get(cid, {})
+
+
+def verified_attribute_data(cid):
+    global VERIFIED_ATTRIBUTES_CACHE
+    if VERIFIED_ATTRIBUTES_CACHE is None:
+        VERIFIED_ATTRIBUTES_CACHE = load_verified_attributes()
+    return VERIFIED_ATTRIBUTES_CACHE.get(cid, {})
 
 
 def semantic_data(row):
@@ -578,6 +639,8 @@ def build_business(row):
     slug = slugify(row.get("business_name", "").strip(), area)
     cid = row.get("google_maps_cid", "").strip()
     enrich = maps_data(cid)
+    verified_amenities = verified_amenity_data(cid)
+    verified_attributes = verified_attribute_data(cid)
     semantic = semantic_data(row)
     business = {
         "id": compute_id(row),
@@ -624,7 +687,8 @@ def build_business(row):
         "subcategory": enrich.get("subcategory"),
         "check_in": enrich.get("check_in"),
         "check_out": enrich.get("check_out"),
-        "amenities": normalize_amenities(infer_amenities(row, enrich.get("amenities", []))),
+        "amenities": infer_amenities(row, enrich.get("amenities", []), verified_amenities),
+        "attributes": verified_attributes.get("attributes", []),
         "prices": enrich.get("prices", [])[:3],
         "open_status": enrich.get("open_status"),
         "hours": enrich.get("hours"),
@@ -927,6 +991,76 @@ def biz_amenities(biz):
     if total <= 5:
         return f'<div class="amenities-section"><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div></div>'
     return f'<div class="amenities-section" data-amenities-section><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div><button class="amenities-toggle" data-amenities-toggle>View all {total} amenities</button></div>'
+
+
+# Preferred group order + label map for About attributes.
+ATTRIBUTE_GROUP_LABELS = {
+    "From the business": "From the business",
+    "Accessibility": "Accessibility",
+    "Service options": "Service options",
+    "Highlights": "Highlights",
+    "Popular for": "Popular for",
+    "Offerings": "Offerings",
+    "Dining options": "Dining options",
+    "Amenities": "Amenities",
+    "Atmosphere": "Atmosphere",
+    "Crowd": "Crowd",
+    "Planning": "Planning",
+    "Payments": "Payments",
+    "Children": "Children",
+    "Parking": "Parking",
+    "Pets": "Pets",
+    "Booking options": "Booking options",
+    "Location summary": "Location summary",
+}
+
+ATTRIBUTE_GROUP_ORDER = [
+    "From the business",
+    "Accessibility",
+    "Service options",
+    "Highlights",
+    "Popular for",
+    "Offerings",
+    "Dining options",
+    "Amenities",
+    "Atmosphere",
+    "Crowd",
+    "Planning",
+    "Payments",
+    "Children",
+    "Parking",
+    "Pets",
+    "Booking options",
+    "Location summary",
+]
+
+
+def biz_attributes(biz):
+    groups = biz.get("attributes") or []
+    if not groups:
+        return ""
+    # Sort groups by preferred order, unknown groups last.
+    order = {g: i for i, g in enumerate(ATTRIBUTE_GROUP_ORDER)}
+    groups = sorted(
+        groups,
+        key=lambda g: order.get(g.get("group", ""), len(order)),
+    )
+    blocks = []
+    for g in groups:
+        name = g.get("group", "")
+        items = [it for it in g.get("items", []) if it and it.strip()]
+        if not items:
+            continue
+        label = ATTRIBUTE_GROUP_LABELS.get(name, name)
+        chips = " ".join(f'<span class="attr-chip">{html.escape(it)}</span>' for it in items)
+        blocks.append(
+            f'<div class="attr-group"><h3 class="attr-group-heading">{html.escape(label)}</h3>'
+            f'<div class="attr-items">{chips}</div></div>'
+        )
+    if not blocks:
+        return ""
+    heading = '<h2 class="section-heading">Details</h2>'
+    return f'<section class="attributes-section">{heading}<div class="attr-groups">{chr(10).join(blocks)}</div></section>'
 
 
 def biz_semantic_facets(biz):
@@ -1361,6 +1495,7 @@ def render_business_html(biz):
 {biz_hours(biz)}
 {biz_semantic_facets(biz)}
 {biz_amenities(biz)}
+{biz_attributes(biz)}
 {biz_prices(biz)}
 {biz_freshness(biz)}
 </header>
