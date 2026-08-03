@@ -142,11 +142,13 @@
                     var p = parts.filter(function (x) { return x.type === type; })[0];
                     return p ? p.value : "";
                 };
-                var dow = get("weekday").toLowerCase();
-                var dayIndex = WEEKDAYS.indexOf(dow);
+                // Intl weekday:"short" yields "Sun"/"Mon"; normalize to WEEKDAYS keys.
+                var SHORT_DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+                var dow = get("weekday").toLowerCase().slice(0, 3);
+                var dayIndex = SHORT_DAYS.indexOf(dow);
                 var hour = parseInt(get("hour"), 10) % 24; // guard "24"
                 var minute = parseInt(get("minute"), 10);
-                if (isNaN(hour) || isNaN(minute)) return null;
+                if (isNaN(hour) || isNaN(minute) || dayIndex < 0) return null;
                 return { dayIndex: dayIndex, minutes: hour * 60 + minute };
             }
 
