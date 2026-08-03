@@ -74,15 +74,6 @@
         waLink.href = "https://wa.me/?text=" + encodeURIComponent(document.title + "\n" + window.location.href);
     }
 
-    var amToggle = document.querySelector("[data-amenities-toggle]");
-    var amSection = document.querySelector("[data-amenities-section]");
-    if (amToggle && amSection) {
-        amToggle.addEventListener("click", function () {
-            var expanded = amSection.classList.toggle("expanded");
-            amToggle.textContent = expanded ? "Show less" : "View all " + amSection.querySelectorAll(".amenity-chip").length + " amenities";
-        });
-    }
-
     var addrCopy = document.querySelector("[data-addr-copy]");
     if (addrCopy) {
         addrCopy.addEventListener("click", function () {

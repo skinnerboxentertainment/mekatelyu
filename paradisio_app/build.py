@@ -1027,6 +1027,24 @@ WEEKDAY_SHORT = {
     "monday": "Mon", "tuesday": "Tue", "wednesday": "Wed", "thursday": "Thu",
     "friday": "Fri", "saturday": "Sat", "sunday": "Sun",
 }
+WEEKDAY_FULL = {
+    "monday": "Monday", "tuesday": "Tuesday", "wednesday": "Wednesday", "thursday": "Thursday",
+    "friday": "Friday", "saturday": "Saturday", "sunday": "Sunday",
+}
+
+MONTH_NAMES = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
+
+
+def _friendly_month(ym: str) -> str:
+    """Convert 'YYYY-MM' to 'Month YYYY' (e.g. '2026-08' -> 'August 2026')."""
+    try:
+        year, month = ym.split("-")
+        return f"{MONTH_NAMES[int(month) - 1]} {year}"
+    except Exception:
+        return ym
 
 
 def _fmt_period(period):
@@ -1079,11 +1097,11 @@ def biz_hours_weekly(biz):
         ds = weekly.get(day)
         if ds is None:
             rows.append(
-                f'<tr class="hours-row"><td class="hours-day">{WEEKDAY_SHORT[day]}</td>'
-                f'<td class="hours-time hours-unknown">No hours listed</td></tr>'
+                f'<tr class="hours-row"><td class="hours-day">{WEEKDAY_FULL[day]}</td>'
+                f'<td class="hours-time hours-unknown">Not listed</td></tr>'
             )
             continue
-        label = (ds.get("displayDay") or WEEKDAY_SHORT[day])
+        label = (ds.get("displayDay") or WEEKDAY_FULL[day])
         text = _fmt_day_schedule(ds)
         rows.append(
             f'<tr class="hours-row"><td class="hours-day">{html.escape(label)}</td>'
@@ -1106,12 +1124,12 @@ def biz_hours_weekly(biz):
 
     provenance_parts = ["From Google Maps"]
     if captured_at:
-        provenance_parts.append(f"Captured {captured_at}")
+        provenance_parts.append(f"Updated {_friendly_month(captured_at)}")
     if completeness == "partial":
         provenance_parts.append("some days unavailable")
     provenance = (
-        f'<p class="hours-source">{" · ".join(provenance_parts)}'
-        f'<span class="hours-tz">{timezone}</span></p>'
+        f'<p class="hours-source">{" · ".join(provenance_parts)}</p>'
+        f'<p class="hours-tz">Costa Rica time</p>'
     )
 
     heading = '<h2 class="section-heading" id="hours-heading">Hours</h2>'
@@ -1128,7 +1146,7 @@ def biz_hours_weekly(biz):
         )
 
     collapsed = (
-        f'<details class="hours-disclosure">'
+        f'<details class="disclosure hours-disclosure">'
         f'<summary><span class="when-closed">View full week <span class="chevron" aria-hidden="true">&#9660;</span></span>'
         f'<span class="when-open">View less <span class="chevron" aria-hidden="true">&#9650;</span></span></summary>'
         f'{body}'
@@ -1149,7 +1167,19 @@ def biz_amenities(biz):
     all_chips = " ".join(f'<span class="amenity-chip">{a}</span>' for a in am)
     if total <= 5:
         return f'<div class="amenities-section"><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div></div>'
-    return f'<div class="amenities-section" data-amenities-section><strong class="amenities-heading">Amenities</strong><div class="amenities">{all_chips}</div><button class="amenities-toggle" data-amenities-toggle>View all {total} amenities</button></div>'
+    # >5 amenities: collapse behind a native <details> disclosure, consistent
+    # with Hours and Details.
+    expanded = (
+        f'<details class="disclosure amenities-disclosure">'
+        f'<summary><span class="when-closed">View all {total} amenities <span class="chevron" aria-hidden="true">&#9660;</span></span>'
+        f'<span class="when-open">View fewer amenities <span class="chevron" aria-hidden="true">&#9650;</span></span></summary>'
+        f'<div class="amenities">{all_chips}</div>'
+        f'</details>'
+    )
+    return (
+        f'<div class="amenities-section">'
+        f'<strong class="amenities-heading">Amenities</strong>{expanded}</div>'
+    )
 
 
 # Preferred group order + label map for About attributes.
@@ -1447,13 +1477,10 @@ def biz_attributes(biz):
         return ""
     meta = biz.get("attribute_meta") or {}
     captured_at = (meta.get("capturedAt") or "")[:7]  # YYYY-MM
-    provenance = "From Google Maps"
-    if captured_at:
-        provenance += f" · Captured {captured_at}"
     provenance_html = (
         f'<p class="details-source">'
         f'From <a href="https://www.google.com/maps?cid={html.escape(biz.get("google_maps_cid", ""))}" target="_blank" rel="noopener">Google Maps</a>'
-        + (f" · Captured {html.escape(captured_at)}" if captured_at else "")
+        + (f" · Updated {html.escape(_friendly_month(captured_at))}" if captured_at else "")
         + "</p>"
     )
     heading = '<h2 class="section-heading" id="details-heading">Details</h2>'
@@ -1472,7 +1499,7 @@ def biz_attributes(biz):
     )
     blocks = _render_expanded_groups(model["groups"])
     expanded = (
-        f'<details class="details-disclosure">'
+        f'<details class="disclosure details-disclosure">'
         f'<summary>'
         f'<span class="when-closed">View all {model["totalCount"]} details <span class="chevron" aria-hidden="true">&#9660;</span></span>'
         f'<span class="when-open">View fewer details <span class="chevron" aria-hidden="true">&#9650;</span></span>'
@@ -1923,12 +1950,12 @@ def render_business_html(biz):
 <span class="biz-area">{area}</span>
 {status_html(biz["status"])}
 </div>
+{biz_semantic_facets(biz)}
 <div class="badge-row">{badges_html}</div>
 {rating_html(biz)}
 {biz_addr(biz)}
 {biz_hours(biz)}
 {biz_hours_weekly(biz)}
-{biz_semantic_facets(biz)}
 {biz_amenities(biz)}
 {biz_attributes(biz)}
 {biz_prices(biz)}
@@ -2351,3 +2378,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
