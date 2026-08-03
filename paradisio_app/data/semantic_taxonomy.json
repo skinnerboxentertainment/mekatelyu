@@ -22143,12 +22143,9 @@
         "shop",
         "supermarket"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "compras",
-        "gym",
         "shop",
         "shopping",
         "shops",
@@ -22168,12 +22165,6 @@
           "source": "master.name",
           "rule": "explicit:supermarket",
           "evidence": "supermarket"
-        },
-        "gym": {
-          "confidence": 0.9,
-          "source": "maps.amenities",
-          "rule": "explicit:gym",
-          "evidence": "gimnasio"
         }
       },
       "evidence_coverage": {
@@ -26679,9 +26670,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -26689,7 +26678,6 @@
         "drink",
         "eat",
         "food",
-        "gym",
         "restaurant",
         "restaurants"
       ],
@@ -26699,12 +26687,6 @@
           "source": "master.category",
           "rule": "primary:restaurant",
           "evidence": "restaurant"
-        },
-        "gym": {
-          "confidence": 0.9,
-          "source": "maps.amenities",
-          "rule": "explicit:gym",
-          "evidence": "gimnasio"
         }
       },
       "evidence_coverage": {
@@ -27395,9 +27377,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -27405,7 +27385,6 @@
         "drink",
         "eat",
         "food",
-        "gym",
         "restaurant",
         "restaurants"
       ],
@@ -27415,12 +27394,6 @@
           "source": "master.category",
           "rule": "primary:restaurant",
           "evidence": "restaurant"
-        },
-        "gym": {
-          "confidence": 0.9,
-          "source": "maps.amenities",
-          "rule": "explicit:gym",
-          "evidence": "gym"
         }
       },
       "evidence_coverage": {
@@ -27968,9 +27941,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -27978,7 +27949,6 @@
         "drink",
         "eat",
         "food",
-        "gym",
         "restaurant",
         "restaurants"
       ],
@@ -27988,12 +27958,6 @@
           "source": "master.category",
           "rule": "primary:restaurant",
           "evidence": "restaurant"
-        },
-        "gym": {
-          "confidence": 0.9,
-          "source": "maps.amenities",
-          "rule": "explicit:gym",
-          "evidence": "gym"
         }
       },
       "evidence_coverage": {
@@ -31348,9 +31312,7 @@
       "tags": [
         "restaurant"
       ],
-      "attributes": [
-        "gym"
-      ],
+      "attributes": [],
       "search_synonyms": [
         "bebidas",
         "comer",
@@ -31358,7 +31320,6 @@
         "drink",
         "eat",
         "food",
-        "gym",
         "restaurant",
         "restaurants"
       ],
@@ -31368,12 +31329,6 @@
           "source": "master.category",
           "rule": "primary:restaurant",
           "evidence": "restaurant"
-        },
-        "gym": {
-          "confidence": 0.9,
-          "source": "maps.amenities",
-          "rule": "explicit:gym",
-          "evidence": "gimnasio"
         }
       },
       "evidence_coverage": {

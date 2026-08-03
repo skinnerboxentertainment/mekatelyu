@@ -68,7 +68,7 @@ Taxonomy version: `2026-08-02.1`
 
 ## Most common evidence-backed attributes
 
-- `gym`: 142
+- `gym`: 137
 - `bar`: 78
 - `vacation-rental`: 32
 - `spa`: 24

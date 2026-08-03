@@ -434,7 +434,7 @@ cid:8364214958693781126,"Green Property Management - Playa Chiquita, Puerto Viej
 cid:11695310561034687807,Farmacia Caribe,Puerto Viejo,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
 cid:3604431449933497569,Puerto Viejo Pharmacy,Puerto Viejo,shopping,services|shopping,pharmacy|shop,,accepted_deterministic,,True,True,True
 cid:9205429348892041088,Mega Super,Puerto Viejo,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
-cid:15754056459834286605,Old Harbour Supermarket,Puerto Viejo,shopping,shopping,shop|supermarket,gym,accepted_deterministic,,True,True,True
+cid:15754056459834286605,Old Harbour Supermarket,Puerto Viejo,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
 cid:16057147527426616372,"Pali Supermarket - Hone Creek, Limón, Costa Rica",Hone Creek,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
 cid:6712847186866435431,"Super Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,shopping,shopping,shop,supermarket,accepted_deterministic,,True,True,True
 cid:2289992265205374495,"Super Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,shopping,shopping,shop|supermarket,,accepted_deterministic,,True,True,True
@@ -533,7 +533,7 @@ cid:8356543483034618055,Jungla del Caribeño,Playa Negra,restaurant,eat,restaura
 cid:7538221567368513085,Kä Luxury Caribbean,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:4776029185661119925,Ka Namu,Playa Negra,restaurant,eat,restaurant,bar,accepted_deterministic,,True,False,True
 cid:5933448960817825235,Katuk,Playa Negra,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
-cid:8155523474538504664,La Caracola,Playa Negra,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:8155523474538504664,La Caracola,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:7444463108124902177,LA CHASCONA,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:11481951678172081848,La loma de burrito,Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:3738318817422763383,La Paloma Studio en Coclès con cocina a,Playa Negra,restaurant,eat,restaurant,bed-and-breakfast,accepted_deterministic,,True,True,True
@@ -549,7 +549,7 @@ cid:1452058410293289943,Quinta Guarumo,Playa Negra,restaurant,eat,restaurant,bed
 cid:18016775300084560342,RETIRO VERDE,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:1177355124524067687,Rico Tico Tours,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:11653253983798852315,Rio Home,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
-cid:9113640318365374467,River Box Cocles,Playa Negra,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:9113640318365374467,River Box Cocles,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:15407971963095007347,Shenanigans–Eat Drink Dink Drive,Cocles,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
 cid:1386465364860297778,Shenanigans–Fat Drink Dink Drive,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
 cid:4788751592765742715,Siren Sanctuary,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
@@ -562,7 +562,7 @@ cid:7714062364033594701,Tattoo Studio 33,Puerto Viejo,restaurant,eat,restaurant,
 cid:11842476449595104705,The Amazing Treehouse and Nature,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:10205893883698739713,The Reillder Castillo Project,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:11461817048321802805,TreeTop Mansion,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:4586270756459627380,TRIBU functional training,Puerto Viejo,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:4586270756459627380,TRIBU functional training,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:16949465081622523964,Jungalow Tropical Caribeño,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:17236719394809389330,"Tropical Getaway ""Casa de Amor",Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
 cid:17546489389337086267,"Tropical Getaway ""Dream House""",Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
@@ -630,7 +630,7 @@ cid:8861421744260324499,"Ciudad Perdida Ecolodge - Cahuita, Limón, Costa Rica",
 cid:8625510128460244741,"Clinica Dental OCI Cahuita - Cahuita, Limón, Costa Rica",Cahuita,services,services|wellness,dental|local-service|medical,,accepted_deterministic,,True,True,True
 cid:15931105907700979601,"Clínica de Medicina Integral Bribri - Bribri, Limón, Costa Rica",Bribri,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
 cid:528214679408125557,"Colibri Lodge Gandoca - Gandoca, Limón, Costa Rica",Gandoca,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
-cid:3520970534557309146,"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,restaurant,gym,accepted_deterministic,,True,True,True
+cid:3520970534557309146,"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:9322669409493347402,"Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
 cid:14380415623970739171,"Container House Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,True,True
 cid:15849146102448801527,"Cool and Calm Cafe - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,cafe|restaurant,bar,accepted_deterministic,,True,True,True

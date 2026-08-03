@@ -85,6 +85,25 @@ class SemanticTaxonomyTests(unittest.TestCase):
         self.assertIn("medical", result["attributes"])
         self.assertEqual(["services"], result["groups"])
 
+    def test_restaurant_with_scraped_gym_amenity_is_not_tagged_gym(self):
+        # Regression: River Box Cocles had scraped gym names ("Beach Gym",
+        # "Jhosmar Gym") in its amenity field. Restaurants must not be tagged
+        # gym from unreliable amenity data.
+        parsed = {"fields": {"amenities": {"value": ["Gimnasio", "Beach Gym", "Jhosmar Gym"]}}}
+        result = classify_record(row("River Box Cocles", "restaurant"), parsed)
+        self.assertNotIn("gym", result["tags"] + result["attributes"])
+
+    def test_shopping_with_scraped_gym_amenity_is_not_tagged_gym(self):
+        parsed = {"fields": {"amenities": {"value": ["Gimnasio", "accesibles"]}}}
+        result = classify_record(row("Old Harbour Supermarket", "shopping"), parsed)
+        self.assertNotIn("gym", result["tags"] + result["attributes"])
+
+    def test_services_business_with_real_gym_keeps_tag(self):
+        # Spas / services businesses may legitimately have a gym; do not block.
+        parsed = {"fields": {"amenities": {"value": ["Gimnasio"]}}}
+        result = classify_record(row("Surya Spa", "services"), parsed)
+        self.assertIn("gym", result["attributes"])
+
 
 if __name__ == "__main__":
     unittest.main()
