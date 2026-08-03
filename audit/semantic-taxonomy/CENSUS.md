@@ -1,6 +1,6 @@
 # Semantic Taxonomy Census
 
-Taxonomy version: `2026-07-21.1`
+Taxonomy version: `2026-08-02.1`
 
 - Master records indexed: 737
 - Unique semantic keys: 737
@@ -16,15 +16,15 @@ Taxonomy version: `2026-07-21.1`
 - maps_parsed: 658/737
 - maps_subcategory: 511/737
 - master_description: 737/737
-- website: 182/737
+- website: 172/737
 
 ## Discovery coverage
 
 - Places to Stay (`stay`): 373
 - Eat & Drink (`eat`): 197
-- Things to Do (`things-to-do`): 38
+- Things to Do (`things-to-do`): 29
 - Shopping (`shopping`): 56
-- Wellness (`wellness`): 26
+- Wellness (`wellness`): 25
 - Services (`services`): 92
 - Nightlife (`nightlife`): 13
 - Transport (`transport`): 3
@@ -43,9 +43,8 @@ Taxonomy version: `2026-07-21.1`
 - `bar`: 13
 - `supermarket`: 12
 - `bed-and-breakfast`: 9
-- `medical`: 8
 - `pharmacy`: 7
-- `surf`: 7
+- `medical`: 7
 - `spa`: 6
 - `ecolodge`: 6
 - `massage`: 5
@@ -53,7 +52,6 @@ Taxonomy version: `2026-07-21.1`
 - `wellness`: 5
 - `beauty`: 4
 - `banking`: 4
-- `wildlife`: 3
 - `bakery`: 3
 - `dental`: 3
 - `laundry`: 3
@@ -61,12 +59,12 @@ Taxonomy version: `2026-07-21.1`
 - `yoga`: 2
 - `gym`: 2
 - `kayaking`: 2
+- `surf`: 2
 - `snorkeling`: 2
 - `car-rental`: 2
 - `clothing`: 1
 - `diving`: 1
 - `shuttle`: 1
-- `fishing`: 1
 
 ## Most common evidence-backed attributes
 
@@ -83,21 +81,21 @@ Taxonomy version: `2026-07-21.1`
 - `yoga`: 12
 - `supermarket`: 10
 - `laundry`: 9
-- `wildlife`: 9
-- `surf`: 8
 - `hostel`: 7
 - `live-music`: 5
 - `beauty`: 4
 - `ice-cream`: 4
 - `bakery`: 3
 - `medical`: 3
-- `snorkeling`: 2
+- `wildlife`: 2
 - `shuttle`: 2
 - `banking`: 1
 - `grocery`: 1
 - `pharmacy`: 1
 - `ecolodge`: 1
 - `diving`: 1
+- `surf`: 1
+- `snorkeling`: 1
 
 ## Safety interpretation
 
