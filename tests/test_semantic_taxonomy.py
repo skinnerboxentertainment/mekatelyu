@@ -62,6 +62,29 @@ class SemanticTaxonomyTests(unittest.TestCase):
         result = classify_record(row("La Casita de Monli", "restaurant", "Fresh seafood restaurant."))
         self.assertEqual(["eat"], result["groups"])
 
+    def test_car_clinic_subcategory_is_not_classified_as_medical(self):
+        # Regression: Automotriz Danny's stale Maps subcategory was "Car Clinic",
+        # which the medical rule wrongly matched. "Car Clinic" is an auto-repair
+        # shop, not a medical clinic.
+        parsed = {"fields": {"subcategory": {"value": "Auto repair shop"}}}
+        result = classify_record(row("Automotriz Danny", "services"), parsed)
+        self.assertNotIn("medical", result["tags"])
+        self.assertIn("local-service", result["tags"])
+        self.assertEqual(["services"], result["groups"])
+
+    def test_real_clinic_still_classified_as_medical(self):
+        # Guard against over-correction: genuine medical clinics must keep the tag.
+        parsed = {"fields": {"subcategory": {"value": "Clinica KLO"}}}
+        result = classify_record(row("Hone Creek Clinic", "services"), parsed)
+        self.assertIn("medical", result["tags"])
+
+    def test_medical_keyword_in_description_keeps_attribute(self):
+        # Description-derived identity becomes an attribute (not a tag), so the
+        # medical signal is preserved without overriding the primary category.
+        result = classify_record(row("Salud Total", "services", "Medical clinic with doctors."))
+        self.assertIn("medical", result["attributes"])
+        self.assertEqual(["services"], result["groups"])
+
 
 if __name__ == "__main__":
     unittest.main()

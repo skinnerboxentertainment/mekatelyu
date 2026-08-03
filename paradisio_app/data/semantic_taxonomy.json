@@ -18014,24 +18014,17 @@
       "google_maps_cid": "8668304854687518026",
       "primary_category": "services",
       "groups": [
-        "services",
-        "wellness"
+        "services"
       ],
       "tags": [
-        "local-service",
-        "medical"
+        "local-service"
       ],
       "attributes": [],
       "search_synonyms": [
-        "bienestar",
-        "health",
         "local service",
         "local services",
-        "medical",
-        "salud",
         "services",
-        "servicios",
-        "wellness"
+        "servicios"
       ],
       "assertions": {
         "local-service": {
@@ -18039,12 +18032,6 @@
           "source": "master.category",
           "rule": "primary:services",
           "evidence": "services"
-        },
-        "medical": {
-          "confidence": 0.9,
-          "source": "maps.subcategory",
-          "rule": "explicit:medical",
-          "evidence": "clinic"
         }
       },
       "evidence_coverage": {
