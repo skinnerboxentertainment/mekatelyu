@@ -19756,14 +19756,14 @@
         "local-service"
       ],
       "attributes": [
-        "medical"
+        "veterinary"
       ],
       "search_synonyms": [
         "local service",
         "local services",
-        "medical",
         "services",
-        "servicios"
+        "servicios",
+        "veterinary"
       ],
       "assertions": {
         "local-service": {
@@ -19772,11 +19772,11 @@
           "rule": "primary:services",
           "evidence": "services"
         },
-        "medical": {
+        "veterinary": {
           "confidence": 0.92,
           "source": "master.description",
-          "rule": "explicit:medical",
-          "evidence": "clínica"
+          "rule": "explicit:veterinary",
+          "evidence": "veterinaria"
         }
       },
       "evidence_coverage": {
@@ -19800,14 +19800,19 @@
         "services"
       ],
       "tags": [
-        "local-service"
+        "local-service",
+        "pet-care"
       ],
-      "attributes": [],
+      "attributes": [
+        "veterinary"
+      ],
       "search_synonyms": [
         "local service",
         "local services",
+        "pet care",
         "services",
-        "servicios"
+        "servicios",
+        "veterinary"
       ],
       "assertions": {
         "local-service": {
@@ -19815,6 +19820,18 @@
           "source": "master.category",
           "rule": "primary:services",
           "evidence": "services"
+        },
+        "veterinary": {
+          "confidence": 0.9,
+          "source": "maps.amenities",
+          "rule": "explicit:veterinary",
+          "evidence": "veterinario"
+        },
+        "pet-care": {
+          "confidence": 0.96,
+          "source": "master.name",
+          "rule": "explicit:pet-care",
+          "evidence": "mascotas"
         }
       },
       "evidence_coverage": {
@@ -19835,24 +19852,24 @@
       "google_maps_cid": "15400950969629438728",
       "primary_category": "services",
       "groups": [
-        "services",
-        "wellness"
+        "services"
       ],
       "tags": [
         "local-service",
-        "medical"
+        "veterinary"
       ],
-      "attributes": [],
+      "attributes": [
+        "medical",
+        "pet-care"
+      ],
       "search_synonyms": [
-        "bienestar",
-        "health",
         "local service",
         "local services",
         "medical",
-        "salud",
+        "pet care",
         "services",
         "servicios",
-        "wellness"
+        "veterinary"
       ],
       "assertions": {
         "local-service": {
@@ -19861,11 +19878,23 @@
           "rule": "primary:services",
           "evidence": "services"
         },
-        "medical": {
+        "veterinary": {
           "confidence": 0.96,
           "source": "master.name",
+          "rule": "explicit:veterinary",
+          "evidence": "veterinaria"
+        },
+        "pet-care": {
+          "confidence": 0.9,
+          "source": "maps.amenities",
+          "rule": "explicit:pet-care",
+          "evidence": "mascotas"
+        },
+        "medical": {
+          "confidence": 0.92,
+          "source": "master.description",
           "rule": "explicit:medical",
-          "evidence": "clínica"
+          "evidence": "clinic"
         }
       },
       "evidence_coverage": {
@@ -19886,24 +19915,22 @@
       "google_maps_cid": "13987590870242443651",
       "primary_category": "services",
       "groups": [
-        "services",
-        "wellness"
+        "services"
       ],
       "tags": [
         "local-service",
-        "medical"
+        "veterinary"
       ],
-      "attributes": [],
+      "attributes": [
+        "pet-care"
+      ],
       "search_synonyms": [
-        "bienestar",
-        "health",
         "local service",
         "local services",
-        "medical",
-        "salud",
+        "pet care",
         "services",
         "servicios",
-        "wellness"
+        "veterinary"
       ],
       "assertions": {
         "local-service": {
@@ -19912,11 +19939,17 @@
           "rule": "primary:services",
           "evidence": "services"
         },
-        "medical": {
+        "veterinary": {
           "confidence": 0.96,
           "source": "master.name",
-          "rule": "explicit:medical",
-          "evidence": "clinica"
+          "rule": "explicit:veterinary",
+          "evidence": "veterinaria"
+        },
+        "pet-care": {
+          "confidence": 0.9,
+          "source": "maps.amenities",
+          "rule": "explicit:pet-care",
+          "evidence": "mascotas"
         }
       },
       "evidence_coverage": {
@@ -31512,14 +31545,16 @@
         "services"
       ],
       "tags": [
-        "local-service"
+        "local-service",
+        "veterinary"
       ],
       "attributes": [],
       "search_synonyms": [
         "local service",
         "local services",
         "services",
-        "servicios"
+        "servicios",
+        "veterinary"
       ],
       "assertions": {
         "local-service": {
@@ -31527,6 +31562,12 @@
           "source": "master.category",
           "rule": "primary:services",
           "evidence": "services"
+        },
+        "veterinary": {
+          "confidence": 0.96,
+          "source": "master.name",
+          "rule": "explicit:veterinary",
+          "evidence": "vet"
         }
       },
       "evidence_coverage": {

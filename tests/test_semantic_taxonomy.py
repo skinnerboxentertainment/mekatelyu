@@ -104,6 +104,23 @@ class SemanticTaxonomyTests(unittest.TestCase):
         result = classify_record(row("Surya Spa", "services"), parsed)
         self.assertIn("gym", result["attributes"])
 
+    def test_veterinary_clinic_is_not_medical(self):
+        # "Clínica Veterinaria" is an animal clinic, not human medical.
+        result = classify_record(row("Clínica Veterinaria Arroyo y Solano", "services"))
+        self.assertIn("veterinary", result["tags"])
+        self.assertNotIn("medical", result["tags"])
+        self.assertNotIn("wellness", result["groups"])
+
+    def test_human_clinic_still_medical(self):
+        result = classify_record(row("Clínica de Especialidades Médicas San Gabriel", "services"))
+        self.assertIn("medical", result["tags"])
+        self.assertNotIn("veterinary", result["tags"])
+
+    def test_pet_care_business_gets_pet_care_attribute(self):
+        result = classify_record(row("Puerto Viejo Dogs", "services", "Dog grooming and boarding."))
+        self.assertIn("pet-care", result["attributes"])
+        self.assertNotIn("medical", result["tags"])
+
 
 if __name__ == "__main__":
     unittest.main()

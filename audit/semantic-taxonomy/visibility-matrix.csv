@@ -381,10 +381,10 @@ cid:1958769090411140405,"Surya Spa - Playa Cocles, Puerto Viejo, Limón, Costa R
 cid:8317123943686846949,Svastha Yoga & Ayurveda Café,Puerto Viejo,services,eat|services|things-to-do|wellness,cafe|local-service|yoga,hostel,accepted_deterministic,,True,True,True
 cid:3486593641699246622,La Tinta Tropical,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
 cid:12543675730712426029,Vol'Air Dance Studio,Puerto Viejo,services,services,local-service,gym|yoga,accepted_deterministic,,True,True,True
-cid:11794143091262296476,Puerto Viejo Dogs,Puerto Viejo,services,services,local-service,medical,accepted_deterministic,,True,True,True
-cid:7240010806083907203,Central de Mascotas,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
-cid:15400950969629438728,Clínica Veterinaria Arroyo y Solano,Puerto Viejo,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
-cid:13987590870242443651,"Clinica Veterinaria Green Vet - Hone Creek, Limón, Costa Rica",Hone Creek,services,services|wellness,local-service|medical,,accepted_deterministic,,True,True,True
+cid:11794143091262296476,Puerto Viejo Dogs,Puerto Viejo,services,services,local-service,veterinary,accepted_deterministic,,True,True,True
+cid:7240010806083907203,Central de Mascotas,Puerto Viejo,services,services,local-service|pet-care,veterinary,accepted_deterministic,,True,True,True
+cid:15400950969629438728,Clínica Veterinaria Arroyo y Solano,Puerto Viejo,services,services,local-service|veterinary,medical|pet-care,accepted_deterministic,,True,True,True
+cid:13987590870242443651,"Clinica Veterinaria Green Vet - Hone Creek, Limón, Costa Rica",Hone Creek,services,services,local-service|veterinary,pet-care,accepted_deterministic,,True,True,True
 cid:13918274438659118327,Ciclo Tuanis,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
 cid:8630472141589888435,Puerto Viejo Bike Rentals,Puerto Viejo,services,services,local-service,,accepted_deterministic,,True,True,True
 cid:5955362533549979086,"Pura Ride by Ciclo Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,services,services,local-service,,accepted_deterministic,,True,True,True
@@ -634,7 +634,7 @@ cid:3520970534557309146,"Colores Restaurant and Beach Lounge - Manzanillo, Limó
 cid:9322669409493347402,"Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,cabins|gym,accepted_deterministic,,True,True,True
 cid:14380415623970739171,"Container House Cahuita - Cahuita, Limón, Costa Rica",Cahuita,hotel,stay,hotel,,accepted_deterministic,,True,True,True
 cid:15849146102448801527,"Cool and Calm Cafe - Manzanillo, Limón, Costa Rica",Manzanillo,restaurant,eat,cafe|restaurant,bar,accepted_deterministic,,True,True,True
-cid:16408576464930361263,"Coral Vet - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service,,accepted_deterministic,,True,True,True
+cid:16408576464930361263,"Coral Vet - Cahuita, Limón, Costa Rica",Cahuita,services,services,local-service|veterinary,,accepted_deterministic,,True,True,True
 cid:657883797543242654,"Cruz Roja - Bribri, Limón, Costa Rica",Bribri,services,services,local-service,,accepted_deterministic,,True,True,True
 cid:15871299217507782991,"El Arbol Jungle Houses - Manzanillo, Limón, Costa Rica",Manzanillo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,True
 cid:10814072515975103387,"El Colibri Lodge - Manzanillo, Limón, Costa Rica",Manzanillo,hotel,stay,hotel,,accepted_deterministic,,True,True,True

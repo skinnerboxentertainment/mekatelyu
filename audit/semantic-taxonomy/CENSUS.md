@@ -24,7 +24,7 @@ Taxonomy version: `2026-08-02.1`
 - Eat & Drink (`eat`): 197
 - Things to Do (`things-to-do`): 29
 - Shopping (`shopping`): 56
-- Wellness (`wellness`): 25
+- Wellness (`wellness`): 23
 - Services (`services`): 92
 - Nightlife (`nightlife`): 13
 - Transport (`transport`): 3
@@ -44,9 +44,9 @@ Taxonomy version: `2026-08-02.1`
 - `supermarket`: 12
 - `bed-and-breakfast`: 9
 - `pharmacy`: 7
-- `medical`: 7
 - `spa`: 6
 - `ecolodge`: 6
+- `medical`: 5
 - `massage`: 5
 - `real-estate`: 5
 - `wellness`: 5
@@ -55,6 +55,7 @@ Taxonomy version: `2026-08-02.1`
 - `bakery`: 3
 - `dental`: 3
 - `laundry`: 3
+- `veterinary`: 3
 - `transport`: 3
 - `yoga`: 2
 - `gym`: 2
@@ -63,6 +64,7 @@ Taxonomy version: `2026-08-02.1`
 - `snorkeling`: 2
 - `car-rental`: 2
 - `clothing`: 1
+- `pet-care`: 1
 - `diving`: 1
 - `shuttle`: 1
 
@@ -87,6 +89,8 @@ Taxonomy version: `2026-08-02.1`
 - `ice-cream`: 4
 - `bakery`: 3
 - `medical`: 3
+- `veterinary`: 2
+- `pet-care`: 2
 - `wildlife`: 2
 - `shuttle`: 2
 - `banking`: 1

@@ -59,6 +59,7 @@ TAG_LABELS = {
     "gym": "Gym", "shop": "Shop", "clothing": "Clothing", "pharmacy": "Pharmacy",
     "supermarket": "Supermarket", "local-service": "Local Service", "real-estate": "Real Estate",
     "laundry": "Laundry", "medical": "Medical", "dental": "Dental", "beauty": "Beauty",
+    "veterinary": "Veterinary", "pet-care": "Pet Care",
     "banking": "Banking", "nightlife": "Nightlife", "live-music": "Live Music",
     "transport": "Transport", "shuttle": "Shuttle", "taxi": "Taxi", "car-rental": "Car Rental",
 }
@@ -77,6 +78,7 @@ TAG_GROUPS = {
     "supermarket": ("shopping",), "local-service": ("services",), "real-estate": ("services",),
     "laundry": ("services",), "medical": ("services", "wellness"),
     "dental": ("services", "wellness"), "beauty": ("services", "wellness"),
+    "veterinary": ("services",), "pet-care": ("services",),
     "banking": ("services",), "nightlife": ("nightlife",), "live-music": ("nightlife",),
     "transport": ("transport",), "shuttle": ("transport",), "taxi": ("transport",),
     "car-rental": ("transport",),
@@ -137,7 +139,13 @@ TAG_RULES = (
     TagRule("pharmacy", (r"\bpharmacy\b", r"\bfarmacia\b")),
     TagRule("real-estate", (r"\breal estate\b", r"\bbienes ra[ií]ces\b", r"\binmobiliaria\b")),
     TagRule("laundry", (r"\blaundry\b", r"\blavander[ií]a\b")),
-    TagRule("medical", (r"\bmedical\b", r"\bclinic(?:a)?\b", r"\bcl[ií]nica\b", r"\bdoctor(?:s)?\b")),
+    TagRule("veterinary", (r"\bveterinari[ao]\b", r"\bvet clinic\b", r"\bvet\b", r"\bveterinary\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping")),
+    TagRule("pet-care", (r"\bpet care\b", r"\bgrooming\b", r"\bmascotas?\b", r"\bdog (?:grooming|boarding|daycare)\b", r"\bgroomer\b"),
+            exclude_categories=("restaurant", "hotel", "vacation_rental", "hostel", "shopping")),
+    # The clinic/doctor patterns must not fire on veterinary clinics
+    # ("clínica veterinaria" = animal clinic, not human medical).
+    TagRule("medical", (r"\bmedical\b", r"\bclinic(?:a)?\b(?!\s*veterinari)", r"\bcl[ií]nica\b(?!\s*veterinari)", r"\bdoctor(?:s)?\b")),
     TagRule("dental", (r"\bdent(?:al|ist)\b", r"\bdentista\b", r"\bodontolog")),
     TagRule("beauty", (r"\bbeauty\b", r"\bsalon\b", r"\bsal[oó]n\b", r"\bbarber")),
     TagRule("banking", (r"\bbank\b", r"\bbanco\b", r"\batm\b", r"\bcajero\b")),
