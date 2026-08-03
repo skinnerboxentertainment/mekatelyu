@@ -201,37 +201,92 @@
                 return false;
             }
 
-            function fmtClose(dayIndex) {
-                var ds = weekly[WEEKDAYS[dayIndex]];
-                if (!ds) return "";
-                if (ds.closed) return "Closed today";
-                if (ds.open24Hours) return "Open 24 hours";
-                var p = (ds.periods || [])[0];
-                if (!p) return "";
-                return "until " + p.closes;
+            function fmtClock(t) {
+                var m = String(t || "").match(/^(\d{1,2}):(\d{2})$/);
+                if (!m) return "";
+                var h = parseInt(m[1], 10) % 24;
+                var min = m[2];
+                var suffix = h < 12 ? "AM" : "PM";
+                var hh = h % 12;
+                if (hh === 0) hh = 12;
+                return hh + ":" + min + " " + suffix;
+            }
+
+            // Build the current status text for a given day/time. Returns null
+            // when today is not listed (no claim). Never emits a dangling sep.
+            function computeStatus(dayIndex, minutes) {
+                var today = weekly[WEEKDAYS[dayIndex]];
+                var yesterday = weekly[WEEKDAYS[(dayIndex + 6) % 7]];
+                if (!today) return { text: "Hours unavailable today", open: false };
+                if (today.closed) return { text: "Closed today", open: false };
+                if (today.open24Hours) return { text: "Open 24 hours", open: true };
+
+                var periods = today.periods || [];
+                var open = isOpenAt(dayIndex, minutes);
+                if (open) {
+                    // Open due to yesterday's overnight spillover?
+                    if (yesterday && !yesterday.closed) {
+                        for (var y = 0; y < (yesterday.periods || []).length; y++) {
+                            var yp = yesterday.periods[y];
+                            var yc = toMinutes(yp.closes);
+                            if (yp.closesNextDay && yc !== null && minutes < yc) {
+                                return { text: "Open · Closes today at " + fmtClock(yp.closes), open: true };
+                            }
+                        }
+                    }
+                    // Find the active period's close time.
+                    var closeText = "";
+                    for (var i = 0; i < periods.length; i++) {
+                        var o = toMinutes(periods[i].opens);
+                        var c = toMinutes(periods[i].closes);
+                        if (o === null || c === null) continue;
+                        var openNow = periods[i].closesNextDay ? minutes >= o : (minutes >= o && minutes < c);
+                        if (openNow) {
+                            if (periods[i].closesNextDay) closeText = "tomorrow at " + fmtClock(periods[i].closes);
+                            else closeText = "at " + fmtClock(periods[i].closes);
+                            break;
+                        }
+                    }
+                    return { text: closeText ? "Open · Closes " + closeText : "Open now", open: true };
+                }
+                // Closed: find today's next opening.
+                var nextOpen = "";
+                for (var j = 0; j < periods.length; j++) {
+                    if (minutes < toMinutes(periods[j].opens)) {
+                        nextOpen = "at " + fmtClock(periods[j].opens);
+                        break;
+                    }
+                }
+                return { text: nextOpen ? "Closed · Opens " + nextOpen : "Closed", open: false };
             }
 
             function renderBadge(instant) {
                 var now = nowInTimezone(instant, timezone);
-                if (!now) { badge.textContent = "Hours as listed"; return; }
+                var headerEl = document.querySelector("[data-verified-status]");
+                if (!now) {
+                    badge.textContent = "Hours as listed";
+                    if (headerEl) headerEl.textContent = "Hours as listed";
+                    return;
+                }
                 // Staleness: schedule captured more than 21 days ago.
                 var stale = false;
                 if (capturedAt && !isNaN(capturedAt.getTime())) {
                     var ageDays = (Date.now() - capturedAt.getTime()) / 86400000;
                     if (ageDays > 21) stale = true;
                 }
-                var hasAllDays = Object.keys(weekly).length >= 7;
-                if (stale || !hasAllDays) {
+                if (stale) {
                     badge.textContent = "Hours as listed";
+                    if (headerEl) headerEl.textContent = "Hours as listed";
                     return;
                 }
-                var open = isOpenAt(now.dayIndex, now.minutes);
-                if (open) {
-                    badge.textContent = "Open now";
-                    badge.classList.remove("is-closed");
-                } else {
-                    badge.textContent = "Closed now · " + fmtClose(now.dayIndex);
-                    badge.classList.add("is-closed");
+                var status = computeStatus(now.dayIndex, now.minutes);
+                badge.textContent = status.text;
+                if (status.open) badge.classList.remove("is-closed");
+                else badge.classList.add("is-closed");
+                // Populate the header status placeholder with the same result.
+                if (headerEl) {
+                    headerEl.textContent = status.text;
+                    headerEl.className = status.open ? "biz-open" : "biz-closed";
                 }
             }
 

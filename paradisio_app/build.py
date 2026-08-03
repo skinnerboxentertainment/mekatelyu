@@ -989,14 +989,18 @@ def clean_time(t):
 
 def biz_hours(biz):
     parts = []
-    os = biz.get("open_status")
+    # When verified weekly hours exist, the legacy open_status is suppressed:
+    # the Hours section + client-side open-now computation is the source of
+    # truth (prevents "Open" header vs "Closed now" contradictions).
+    has_verified = bool(biz.get("weekly_hours"))
+    os = None if has_verified else biz.get("open_status")
     if os:
         clean = os.replace("\u202f", " ").replace("\u00a0", " ").strip()
         lower = clean.lower()
         is_open = "abierto" in lower or "open" in lower
         cls = "biz-open" if is_open else "biz-closed"
         label = "Open" if is_open else "Closed"
-        parts.append(f'<span class="{cls}">{label}</span>')
+        parts.append(f'<span class="{cls}" data-legacy-status>{label}</span>')
     hr = biz.get("hours")
     if hr:
         parts.append(f'<span class="biz-hours-line">{hr}</span>')
@@ -1008,7 +1012,14 @@ def biz_hours(biz):
         parts.append(f'<span class="biz-check">In {ci}</span>')
     elif co:
         parts.append(f'<span class="biz-check">Out {co}</span>')
-    return f'<div class="biz-hours">{", ".join(parts)}</div>' if parts else ""
+
+    # With verified hours, provide a placeholder the client fills with the
+    # live status (Open now / Closed · Opens at...). Otherwise the legacy status.
+    if has_verified:
+        parts = ['<span class="biz-status-placeholder" data-verified-status></span>']
+    if not parts:
+        return ""
+    return f'<div class="biz-hours">{"".join(parts)}</div>'
 
 
 WEEKDAY_DISPLAY_ORDER = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
