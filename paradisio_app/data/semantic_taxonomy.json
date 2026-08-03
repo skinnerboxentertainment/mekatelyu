@@ -27967,30 +27967,35 @@
       "business_name": "TRIBU functional training",
       "area": "Puerto Viejo",
       "google_maps_cid": "4586270756459627380",
-      "primary_category": "restaurant",
+      "primary_category": "services",
       "groups": [
-        "eat"
+        "services"
       ],
       "tags": [
-        "restaurant"
+        "local-service"
       ],
-      "attributes": [],
+      "attributes": [
+        "gym"
+      ],
       "search_synonyms": [
-        "bebidas",
-        "comer",
-        "dining",
-        "drink",
-        "eat",
-        "food",
-        "restaurant",
-        "restaurants"
+        "gym",
+        "local service",
+        "local services",
+        "services",
+        "servicios"
       ],
       "assertions": {
-        "restaurant": {
+        "local-service": {
           "confidence": 1.0,
           "source": "master.category",
-          "rule": "primary:restaurant",
-          "evidence": "restaurant"
+          "rule": "primary:services",
+          "evidence": "services"
+        },
+        "gym": {
+          "confidence": 0.92,
+          "source": "master.description",
+          "rule": "explicit:gym",
+          "evidence": "fitness"
         }
       },
       "evidence_coverage": {
