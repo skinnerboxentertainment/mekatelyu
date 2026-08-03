@@ -1,0 +1,399 @@
+{
+  "generatedAt": "2026-08-02T19:07:50.296341",
+  "totalBusinesses": 737,
+  "errorCount": 0,
+  "warningCount": 64,
+  "errors": [],
+  "warnings": [
+    {
+      "listingId": "yuyo-huelal-totga-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Yuyo Huelal Totga: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "casas-del-caribe-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Casas del Caribe: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "grow-beachfront-restaurant-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Grow Beachfront Restaurant: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "que-quilombo-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Que Quilombo: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "la-ruedita-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "La Ruedita: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "zaika-bar-grill-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Zaika Bar & Grill: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "boa-coworking-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "BOA Coworking: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cantik-at-home-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Cantik at Home: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "almacen-san-francisco-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Almacen San Francisco: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "librer-a-caribe-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Librería Caribe: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "puerto-viejo-farmers-and-artisans-market-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "description_hours_conflict",
+      "descriptionClaim": "mentions Thursday while verified schedule lists it as closed",
+      "verifiedHours": "closed",
+      "action": "human_review"
+    },
+    {
+      "listingId": "puerto-viejo-farmers-and-artisans-market-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Puerto Viejo Farmers and Artisans Market: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "nam-ecotienda-org-nica-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Namú Ecotienda Orgánica: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "automotriz-danny-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "description_hours_conflict",
+      "descriptionClaim": "open daily / 24-7",
+      "detail": "verified Monday is not 24h",
+      "action": "human_review"
+    },
+    {
+      "listingId": "automotriz-danny-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "description_hours_conflict",
+      "descriptionClaim": "Sunday described as closed but verified schedule lists it open",
+      "verifiedHours": "open",
+      "action": "human_review"
+    },
+    {
+      "listingId": "casa-de-la-cultura-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Casa de la Cultura: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "la-casa-del-coral-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "La Casa del Coral: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "chamber-of-tourism-and-commerce-caribe-sur-playa-negra-puerto-viejo-lim-n-costa-",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Chamber of Tourism and Commerce Caribe Sur: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "el-puente-the-bridge-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "El Puente-The Bridge: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "caribe-dental-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Caribe Dental: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cl-nica-dental-yani-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Clínica Dental Yani: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "laboratorio-bioclinic-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Laboratorio Bioclinic: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "washboard-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Washboard: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "ambar-tattoo-space-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Ambar Tattoo Space: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "caribe-love-tattoo-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Caribe Love Tattoo: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cosmos-puerto-viejo-tattoo-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Cosmos Puerto Viejo Tattoo: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "indulgence-spa-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Indulgence Spa: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "mendez-barber-shop-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Mendez Barber Shop: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "octo-salon-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Octo Salon: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "old-harbour-gym-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Old Harbour Gym: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "la-tinta-tropical-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "La Tinta Tropical: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "vol-air-dance-studio-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Vol'Air Dance Studio: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "puerto-viejo-dogs-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Puerto Viejo Dogs: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "central-de-mascotas-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Central de Mascotas: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cl-nica-veterinaria-arroyo-y-solano-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Clínica Veterinaria Arroyo y Solano: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cerrajer-a-paris-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Cerrajería Paris: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "pc-caribe-soluciones-inform-ticas-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "PC Caribe Soluciones Informáticas: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "centro-educativo-playa-chiquita-punta-uva-playa-chiquita-puerto-viejo-lim-n-cost",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Centro Educativo Playa Chiquita Punta Uva: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "proyecto-educativo-semillas-de-paz-playa-chiquita-puerto-viejo-lim-n-costa-rica-",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Proyecto Educativo Semillas de Paz: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "e-e-spanish-teachers-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Eñe Spanish Teachers: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "spanish-by-the-sea-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Spanish by the Sea: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "correos-de-cr-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Correos de CR: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "caribe-horse-riding-club-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Caribe Horse Riding Club: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "hidden-garden-ethnobotanical-sanctuary-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Hidden Garden Ethnobotanical Sanctuary: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "atec-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "ATEC: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "century-21-caribe-playa-chiquita-puerto-viejo-lim-n-costa-rica-playa-chiquita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Century 21 Caribe: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "coldwell-banker-caribe-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Coldwell Banker Caribe: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "banco-de-costa-rica-puerto-viejo-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Banco de Costa Rica Puerto Viejo: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "banco-nacional-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Banco Nacional: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "chocorart-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "CHOCORART: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "fisioterapia-agustin-cuya-cocles",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "FISIOTERAPIA Agustin cuya: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "river-box-cocles-playa-negra",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "River Box Cocles: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "tribu-functional-training-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "TRIBU functional training: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "banco-de-costa-rica-cahuita-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Banco de Costa Rica Cahuita: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "bendita-comida-bribri-lim-n-costa-rica-bribri",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Bendita Comida: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "centro-educativo-complementaria-cahuita-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Centro Educativo Complementaria Cahuita: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "clinica-dental-oci-cahuita-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Clinica Dental OCI Cahuita: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "cl-nica-de-medicina-integral-bribri-bribri-lim-n-costa-rica-bribri",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Clínica de Medicina Integral Bribri: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "colores-restaurant-and-beach-lounge-manzanillo-lim-n-costa-rica-manzanillo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Colores Restaurant and Beach Lounge: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "farmacia-quiribri-cahuita-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Farmacia Quiribri Cahuita: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "la-fundaci-n-cahuita-playing-for-change-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "La Fundación Cahuita Playing for Change: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "sport-body-gym-cahuita-lim-n-costa-rica-cahuita",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Sport Body Gym: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "escuela-pati-o-playa-negra",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Escuela Patiño: 6 of 7 days listed; missing Sunday"
+    },
+    {
+      "listingId": "taller-gabriel-puerto-viejo",
+      "severity": "WARNING",
+      "issue": "partial_schedule",
+      "detail": "Taller Gabriel: 6 of 7 days listed; missing Sunday"
+    }
+  ]
+}
