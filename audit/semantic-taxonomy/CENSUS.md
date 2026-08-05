@@ -1,6 +1,6 @@
 # Semantic Taxonomy Census
 
-Taxonomy version: `2026-08-02.1`
+Taxonomy version: `2026-08-02.2`
 
 - Master records indexed: 737
 - Unique semantic keys: 737
@@ -16,40 +16,40 @@ Taxonomy version: `2026-08-02.1`
 - maps_parsed: 658/737
 - maps_subcategory: 511/737
 - master_description: 737/737
-- website: 172/737
+- website: 167/737
 
 ## Discovery coverage
 
-- Places to Stay (`stay`): 373
-- Eat & Drink (`eat`): 196
-- Things to Do (`things-to-do`): 29
-- Shopping (`shopping`): 56
-- Wellness (`wellness`): 23
-- Services (`services`): 93
+- Places to Stay (`stay`): 391
+- Eat & Drink (`eat`): 169
+- Things to Do (`things-to-do`): 34
+- Shopping (`shopping`): 57
+- Wellness (`wellness`): 25
+- Services (`services`): 94
 - Nightlife (`nightlife`): 13
 - Transport (`transport`): 3
 
 ## Most common specific tags
 
 - `hotel`: 212
-- `restaurant`: 190
-- `vacation-rental`: 172
-- `local-service`: 82
-- `shop`: 54
+- `vacation-rental`: 190
+- `restaurant`: 163
+- `local-service`: 83
+- `shop`: 55
 - `cabins`: 46
-- `tour-operator`: 27
+- `tour-operator`: 32
 - `hostel`: 25
 - `cafe`: 21
 - `bar`: 13
 - `supermarket`: 12
 - `bed-and-breakfast`: 9
 - `pharmacy`: 7
+- `wellness`: 7
 - `spa`: 6
 - `ecolodge`: 6
 - `medical`: 5
 - `massage`: 5
 - `real-estate`: 5
-- `wellness`: 5
 - `beauty`: 4
 - `banking`: 4
 - `bakery`: 3

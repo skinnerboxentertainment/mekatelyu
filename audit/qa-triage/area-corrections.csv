@@ -1,0 +1,5 @@
+ticket,business_name,old_area,new_area,rationale
+#50,Casa Lily,Cocles,Playa Chiquita,Xio QA: located at Playa Chiquita (not Cocles).
+#46,Casa Canopy,Cocles,Playa Chiquita,Xio QA: located at Playa Chiquita (not Cocles).
+#39,Café Jaguar & Art Gallery,Cocles,Playa Chiquita,Xio QA: located at Playa Chiquita (not Cocles).
+#55,Casa Olingo,Playa Negra,Cocles,Xio QA: located in Cocles (not Playa Negra).

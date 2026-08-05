@@ -290,7 +290,7 @@ cid:12889418516397438139,Stashu's Con Fusion,Puerto Viejo,restaurant,eat,restaur
 cid:18334594677246073631,"Sushi Wave - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
 cid:10857452245923386259,Todo Es Posible,Puerto Viejo,restaurant,eat,restaurant,vacation-rental,accepted_deterministic,,True,True,True
 cid:4581732904956358033,"Zaika Bar & Grill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
-cid:7459202686588347907,Clan Vibes Club,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
+cid:7459202686588347907,Clan Vibes Club,Puerto Viejo,services,services,local-service,bar,accepted_deterministic,,True,True,True
 cid:5875257995302760665,"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,bar|hotel,accepted_deterministic,,True,True,True
 cid:14220452903198803816,Green Jaguar Irish Gastro Pub,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,live-music,accepted_deterministic,,True,True,True
 cid:3484755376915308939,Johnny's Place,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
@@ -471,51 +471,51 @@ cid:13154832338927502648,Jungle Air Parapente,Puerto Viejo,shopping,shopping,sho
 record:dbbf9984377cbcc6,Panadería Francés,Cocles,shopping,eat|shopping,bakery|shop,,accepted_deterministic,,True,False,False
 cid:4688760639939900664,Hotel Villas y Glamping M&A,Cocles,vacation_rental,stay,hotel|vacation-rental,gym,accepted_deterministic,,True,True,True
 cid:4171499263891603584,Yerbas Concepto Culinario,Puerto Viejo,restaurant,eat,restaurant,cafe,accepted_deterministic,,True,True,True
-cid:4461576710289322066,Abba Home,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:4461576710289322066,Abba Home,Puerto Viejo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:1952261552637324801,ALMA Masajes,Playa Negra,wellness,wellness,massage|wellness,spa,accepted_deterministic,,True,True,True
 cid:2436293331676785956,Alojamiento kon-tiky,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
-cid:12888475778927218100,Api-Rescate,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:12888475778927218100,Api-Rescate,Cocles,shopping,shopping,shop,,accepted_deterministic,,True,True,True
 cid:13949908967524151461,Ariel Apartment's,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
-cid:17999916450116929174,Arrecife El Chino,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:1672049247961347392,Beach Trail,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:17999916450116929174,Arrecife El Chino,Puerto Viejo,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:1672049247961347392,Beach Trail,Playa Negra,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
 cid:5126079905553228488,Beauty Ritual Spa,Cocles,wellness,services|wellness,beauty|spa|wellness,massage,accepted_deterministic,,True,True,True
 cid:2501817113382200716,BERACA,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:11342442517607475672,Blessed Hands Massage Therapy,Playa Negra,wellness,wellness,massage|wellness,spa,accepted_deterministic,,True,True,True
 cid:7864989313907649296,Blue Dreams Hotel,Playa Negra,hotel,stay,hotel,bar,accepted_deterministic,,True,False,True
-cid:7100005996183210934,Buddy's Sloth Crossing,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:7100005996183210934,Buddy's Sloth Crossing,Puerto Viejo,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
 cid:17729819013080646669,Bugambilia Inn,Playa Negra,hotel,stay,hotel,,accepted_deterministic,,True,True,True
 cid:1705549831231309538,Cabañas KiaMiMi,Puerto Viejo,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
 cid:11625884884438770753,Cabina trepazul,Playa Negra,vacation_rental,stay,cabins|vacation-rental,,accepted_deterministic,,True,True,True
 cid:17407111603426783648,Cabinas Bambu,Playa Negra,hotel,stay,cabins|hotel,,accepted_deterministic,,True,True,True
 cid:12696769290945837673,Cabinas Yemanya,Playa Negra,hotel,stay,cabins|hotel,gym,accepted_deterministic,,True,True,True
-cid:1099770184487127337,Café Jaguar & Art Gallery,Cocles,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
+cid:1099770184487127337,Café Jaguar & Art Gallery,Playa Chiquita,restaurant,eat,cafe|restaurant,,accepted_deterministic,,True,True,True
 cid:15075381955885778012,Caribbean Blue Morpho Casitas,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:10446838691217537192,Caribbean Hill Villas,Cocles,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,True,True
-cid:16346096411354140739,CaribeZen,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:704176135278923927,Casa Alegra,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:7547821247784059764,Casa Amma,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:2049439108129397134,Casa Amor,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:3140302717225770813,Casa Antorcha,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:9228433576839534036,Casa Canopy,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:9842399411646961220,Casa Chilamate Day House,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:16346096411354140739,CaribeZen,Playa Negra,wellness,wellness,wellness,,accepted_deterministic,,True,True,True
+cid:704176135278923927,Casa Alegra,Playa Negra,wellness,wellness,wellness,,accepted_deterministic,,True,True,True
+cid:7547821247784059764,Casa Amma,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:2049439108129397134,Casa Amor,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3140302717225770813,Casa Antorcha,Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9228433576839534036,Casa Canopy,Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:9842399411646961220,Casa Chilamate Day House,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:15109859868766777239,Casa del Caribe B&B,Playa Negra,hotel,stay,bed-and-breakfast|hotel,,accepted_deterministic,,True,True,True
-cid:316298798085648093,Casa Lily,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-record:bb308727dee573bf,Casa Miluca,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,False,False
-cid:1887854985612918255,Casa Miluco,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:15130039431868872191,Casa Olingo,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:12261963239237230570,Casa Pallaita,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:3067085546718993771,Casa Palliata,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:1532267197232448530,Casa Shanti,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:1467139456314837512,casa tia zeidy,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:11284617851322192684,Casa vacacional happy day beach house,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:14746104939384196054,Casa Vosi,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:6852082090485791353,Casas Sloth & Butterfly,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:316298798085648093,Casa Lily,Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+record:bb308727dee573bf,Casa Miluca,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,False,False
+cid:1887854985612918255,Casa Miluco,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:15130039431868872191,Casa Olingo,Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:12261963239237230570,Casa Pallaita,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:3067085546718993771,Casa Palliata,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:1532267197232448530,Casa Shanti,Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:1467139456314837512,casa tia zeidy,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:11284617851322192684,Casa vacacional happy day beach house,Puerto Viejo,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:14746104939384196054,Casa Vosi,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
+cid:6852082090485791353,Casas Sloth & Butterfly,Playa Negra,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:8515345812121137688,Casita Tucan,Cocles,hotel,stay,hotel,,accepted_deterministic,,True,True,True
 cid:1201615432871305998,Casitas Batsú,Cocles,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:17991662797152698167,Casitas del Bosque,Puerto Viejo,hotel,stay,hotel|vacation-rental,,accepted_deterministic,,True,False,True
 cid:14244983452023827203,CHOCORART,Puerto Viejo,shopping,shopping,shop,,accepted_deterministic,,True,False,True
-cid:906367207779863842,Cirrus Sky Paragliding CR,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
-cid:11408791647006779441,Cubali Beach,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:906367207779863842,Cirrus Sky Paragliding CR,Playa Negra,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
+cid:11408791647006779441,Cubali Beach,Playa Negra,tour_company,things-to-do,tour-operator,,accepted_deterministic,,True,True,True
 cid:7437765293747491582,Doctah Herbalist,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:3648769552104707896,Explora Caribe CR,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:8690304503274970919,Finca Darai,Cocles,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
@@ -539,7 +539,7 @@ cid:11481951678172081848,La loma de burrito,Playa Chiquita,restaurant,eat,restau
 cid:3738318817422763383,La Paloma Studio en Coclès con cocina a,Playa Negra,restaurant,eat,restaurant,bed-and-breakfast,accepted_deterministic,,True,True,True
 cid:748324862255207133,Lapaluna,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,False,True
 cid:13735728552511903272,Mishka Lodge,Playa Negra,hotel,stay,hotel,,accepted_deterministic,,True,True,True
-cid:14542003755869509189,Nana's Place Beach House,Playa Chiquita,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
+cid:14542003755869509189,Nana's Place Beach House,Playa Chiquita,vacation_rental,stay,vacation-rental,,accepted_deterministic,,True,True,True
 cid:17897302561811397380,NAO,Playa Negra,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:2630412520630926072,Paraiso Bohemio,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True
 cid:11489327612040758816,Pipa's Beach,Puerto Viejo,restaurant,eat,restaurant,,accepted_deterministic,,True,True,True

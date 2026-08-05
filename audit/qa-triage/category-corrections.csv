@@ -1,0 +1,28 @@
+ticket,business_name,area,old_category,new_category,disposition,rationale
+#25,Abba Home,Puerto Viejo,restaurant,vacation_rental,corrected,Xio QA: vacation rental listed under restaurant category; expected lodging.
+#43,Casa Amor,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#42,Casa Alegra,Playa Negra,restaurant,wellness,corrected,Xio QA: not a restaurant; expected wellness category.
+#44,Casa Antorcha,Cocles,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#45,Casa Canopy,Cocles,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental. Area also corrected (see area-corrections.csv).
+#48,Casa Chilamate Day House,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#57,Casa Lily,Cocles,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental. Area also corrected.
+#58,Casa Miluca,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental. Duplicate flag in #61 still to resolve.
+#53,Casa Miluco,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#54,Casa Olingo,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental. Area also corrected.
+#60,Casa Pallaita,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#62,Casa Shanti,Cocles,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#64,casa tia zeidy,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#65,Casa vacacional happy day beach house,Puerto Viejo,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#66,Casa Vosi,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+#67,Casas Sloth & Butterfly,Playa Negra,restaurant,vacation_rental,corrected,Xio QA: not a restaurant; expected vacation rental.
+sweep,Casa Amma,Playa Negra,restaurant,vacation_rental,corrected,Sweep: same Casa-* vacation-rental pattern as QA-flagged records; not yet QA-reviewed.
+sweep,Casa Palliata,Playa Negra,restaurant,vacation_rental,corrected,Sweep: same Casa-* vacation-rental pattern as QA-flagged records; not yet QA-reviewed.
+sweep,Nana's Place Beach House,Playa Chiquita,restaurant,vacation_rental,corrected,Sweep: beach house rental identified by name; not yet QA-reviewed.
+#74,Clan Vibes Club,Puerto Viejo,restaurant,services,corrected,Xio QA: night club, not a restaurant. No nightclub category exists; services is the closest fit.
+#37,Buddy's Sloth Crossing,Puerto Viejo,restaurant,tour_company,corrected,Xio QA: tourist attraction (sloth crossing), not a restaurant.
+#72,Cirrus Sky Paragliding CR,Playa Negra,restaurant,tour_company,corrected,Xio QA: not a restaurant; paragliding activity company.
+#41,CaribeZen,Playa Negra,restaurant,wellness,corrected,Xio QA: not a restaurant; wellness center.
+#27,Api-Rescate,Cocles,restaurant,shopping,corrected,Xio QA: not a restaurant; sells honey (producer/shop).
+#29,Arrecife El Chino,Puerto Viejo,restaurant,tour_company,retained_reference_point,Owner decision: keep listing. Xio flagged not-a-restaurant/reference point; recategorized to attractions bucket per dataset precedent (Gecko Trail, Nature Observatorio). Coral reef/surf break.
+#32,Beach Trail,Playa Negra,restaurant,tour_company,retained_reference_point,Owner decision: keep listing. Xio flagged Trail/not-a-restaurant; recategorized to attractions bucket per precedent.
+#77,Cubali Beach,Playa Negra,restaurant,tour_company,retained_reference_point,Owner decision: keep listing. Xio flagged not-a-restaurant/road; recategorized to attractions bucket per precedent.

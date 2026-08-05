@@ -1,0 +1,4 @@
+ticket,business_name,cid,decision,rationale
+#29,Arrecife El Chino,17999916450116929174,keep_recategorized,Xio did NOT request deletion (flagged "reference point"). Owner decision: keep. Recategorized restaurant -> tour_company. Coral reef / surf break in front of Puerto Viejo.
+#32,Beach Trail,1672049247961347392,keep_recategorized,Xio did NOT request deletion (flagged "Trail"). Owner decision: keep. Recategorized restaurant -> tour_company. Walking trail.
+#76,#77,Cubali Beach,11408791647006779441,keep_recategorized,Xio did NOT request deletion (flagged "road / not a restaurant"). Owner decision: keep. Recategorized restaurant -> tour_company. Beach/road reference.
