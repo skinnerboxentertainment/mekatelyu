@@ -16316,27 +16316,17 @@
       "google_maps_cid": "6004428022633356945",
       "primary_category": "shopping",
       "groups": [
-        "eat",
         "shopping"
       ],
       "tags": [
-        "cafe",
         "shop"
       ],
       "attributes": [
         "clothing"
       ],
       "search_synonyms": [
-        "bebidas",
-        "café",
         "clothing",
-        "comer",
         "compras",
-        "dining",
-        "drink",
-        "eat",
-        "food",
-        "restaurants",
         "shop",
         "shopping",
         "shops",
@@ -16349,12 +16339,6 @@
           "source": "master.category",
           "rule": "primary:shopping",
           "evidence": "shopping"
-        },
-        "cafe": {
-          "confidence": 0.9,
-          "source": "maps.cuisine",
-          "rule": "explicit:cafe",
-          "evidence": "cafetería"
         },
         "clothing": {
           "confidence": 0.92,

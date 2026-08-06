@@ -21,7 +21,7 @@ Taxonomy version: `2026-08-02.2`
 ## Discovery coverage
 
 - Places to Stay (`stay`): 391
-- Eat & Drink (`eat`): 170
+- Eat & Drink (`eat`): 169
 - Things to Do (`things-to-do`): 34
 - Shopping (`shopping`): 57
 - Wellness (`wellness`): 25
@@ -39,7 +39,7 @@ Taxonomy version: `2026-08-02.2`
 - `cabins`: 46
 - `tour-operator`: 32
 - `hostel`: 25
-- `cafe`: 21
+- `cafe`: 20
 - `bar`: 13
 - `supermarket`: 12
 - `bed-and-breakfast`: 9

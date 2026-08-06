@@ -421,11 +421,6 @@
         "value": "Tienda Caribe",
         "confidence": 0.6,
         "evidence": "Tienda Caribe"
-      },
-      "cuisine": {
-        "value": "Cafetería",
-        "confidence": 0.6,
-        "evidence": "Cafetería"
       }
     },
     "inferred_category": null,
