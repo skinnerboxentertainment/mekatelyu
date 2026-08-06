@@ -21,12 +21,12 @@ Taxonomy version: `2026-08-02.2`
 ## Discovery coverage
 
 - Places to Stay (`stay`): 391
-- Eat & Drink (`eat`): 169
+- Eat & Drink (`eat`): 170
 - Things to Do (`things-to-do`): 34
 - Shopping (`shopping`): 57
 - Wellness (`wellness`): 25
-- Services (`services`): 94
-- Nightlife (`nightlife`): 13
+- Services (`services`): 93
+- Nightlife (`nightlife`): 14
 - Transport (`transport`): 3
 
 ## Most common specific tags
@@ -34,7 +34,7 @@ Taxonomy version: `2026-08-02.2`
 - `hotel`: 212
 - `vacation-rental`: 190
 - `restaurant`: 163
-- `local-service`: 83
+- `local-service`: 82
 - `shop`: 55
 - `cabins`: 46
 - `tour-operator`: 32
@@ -63,6 +63,7 @@ Taxonomy version: `2026-08-02.2`
 - `surf`: 2
 - `snorkeling`: 2
 - `car-rental`: 2
+- `nightlife`: 1
 - `clothing`: 1
 - `pet-care`: 1
 - `diving`: 1

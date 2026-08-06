@@ -290,7 +290,7 @@ cid:12889418516397438139,Stashu's Con Fusion,Puerto Viejo,restaurant,eat,restaur
 cid:18334594677246073631,"Sushi Wave - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True
 cid:10857452245923386259,Todo Es Posible,Puerto Viejo,restaurant,eat,restaurant,vacation-rental,accepted_deterministic,,True,True,True
 cid:4581732904956358033,"Zaika Bar & Grill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,restaurant,eat|nightlife,bar|restaurant,,accepted_deterministic,,True,True,True
-cid:7459202686588347907,Clan Vibes Club,Puerto Viejo,services,services,local-service,bar,accepted_deterministic,,True,True,True
+cid:7459202686588347907,Clan Vibes Club,Puerto Viejo,nightlife,eat|nightlife,nightlife,bar,accepted_deterministic,,True,True,True
 cid:5875257995302760665,"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,restaurant,eat,restaurant,bar|hotel,accepted_deterministic,,True,True,True
 cid:14220452903198803816,Green Jaguar Irish Gastro Pub,Puerto Viejo,restaurant,eat|nightlife,bar|restaurant,live-music,accepted_deterministic,,True,True,True
 cid:3484755376915308939,Johnny's Place,Puerto Viejo,restaurant,eat,restaurant,bar,accepted_deterministic,,True,True,True

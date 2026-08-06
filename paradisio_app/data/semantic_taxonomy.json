@@ -15080,29 +15080,37 @@
       "business_name": "Clan Vibes Club",
       "area": "Puerto Viejo",
       "google_maps_cid": "7459202686588347907",
-      "primary_category": "services",
+      "primary_category": "nightlife",
       "groups": [
-        "services"
+        "eat",
+        "nightlife"
       ],
       "tags": [
-        "local-service"
+        "nightlife"
       ],
       "attributes": [
         "bar"
       ],
       "search_synonyms": [
         "bar",
-        "local service",
-        "local services",
-        "services",
-        "servicios"
+        "bars",
+        "bebidas",
+        "comer",
+        "dining",
+        "drink",
+        "eat",
+        "evening",
+        "food",
+        "nightlife",
+        "restaurants",
+        "vida nocturna"
       ],
       "assertions": {
-        "local-service": {
+        "nightlife": {
           "confidence": 1.0,
           "source": "master.category",
-          "rule": "primary:services",
-          "evidence": "services"
+          "rule": "primary:nightlife",
+          "evidence": "nightlife"
         },
         "bar": {
           "confidence": 0.92,
