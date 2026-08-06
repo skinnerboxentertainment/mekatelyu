@@ -1,6 +1,6 @@
 {
   "taxonomy_version": "2026-08-02.2",
-  "record_count": 737,
+  "record_count": 736,
   "groups": {
     "stay": "Places to Stay",
     "eat": "Eat & Drink",
@@ -34680,56 +34680,6 @@
         "master_description": true,
         "maps_parsed": true,
         "maps_subcategory": true,
-        "maps_full_text": true,
-        "website": false
-      },
-      "conflicts": [],
-      "review_state": "accepted_deterministic",
-      "taxonomy_version": "2026-08-02.2"
-    },
-    "cid:1916707872062639626": {
-      "key": "cid:1916707872062639626",
-      "business_name": "Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",
-      "area": "Gandoca",
-      "google_maps_cid": "1916707872062639626",
-      "primary_category": "hotel",
-      "groups": [
-        "stay"
-      ],
-      "tags": [
-        "cabins",
-        "hotel"
-      ],
-      "attributes": [],
-      "search_synonyms": [
-        "accommodation",
-        "alojamiento",
-        "cabins",
-        "hospedaje",
-        "hotel",
-        "lodging",
-        "places to stay",
-        "stay",
-        "stays"
-      ],
-      "assertions": {
-        "hotel": {
-          "confidence": 1.0,
-          "source": "master.category",
-          "rule": "primary:hotel",
-          "evidence": "hotel"
-        },
-        "cabins": {
-          "confidence": 0.96,
-          "source": "master.name",
-          "rule": "explicit:cabins",
-          "evidence": "cabinas"
-        }
-      },
-      "evidence_coverage": {
-        "master_description": true,
-        "maps_parsed": false,
-        "maps_subcategory": false,
         "maps_full_text": true,
         "website": false
       },

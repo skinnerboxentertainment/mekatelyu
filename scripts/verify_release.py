@@ -163,7 +163,7 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path("release"))
-    parser.add_argument("--expected-businesses", type=int, default=737)
+    parser.add_argument("--expected-businesses", type=int, default=736)
     args = parser.parse_args()
 
     errors = verify(args.root.resolve(), args.expected_businesses)

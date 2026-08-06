@@ -2,25 +2,25 @@
 
 Taxonomy version: `2026-08-02.2`
 
-- Master records indexed: 737
-- Unique semantic keys: 737
-- Records not awaiting review: 737
+- Master records indexed: 736
+- Unique semantic keys: 736
+- Records not awaiting review: 736
 - Unresolved review queue: 0
 
-- Existing CID captures not linked to a current master CID: 0
+- Existing CID captures not linked to a current master CID: 1
 - Master records without linked full CID text: 11
 
 ## Evidence coverage
 
-- maps_full_text: 726/737
-- maps_parsed: 658/737
-- maps_subcategory: 511/737
-- master_description: 737/737
-- website: 167/737
+- maps_full_text: 725/736
+- maps_parsed: 658/736
+- maps_subcategory: 511/736
+- master_description: 736/736
+- website: 167/736
 
 ## Discovery coverage
 
-- Places to Stay (`stay`): 391
+- Places to Stay (`stay`): 390
 - Eat & Drink (`eat`): 169
 - Things to Do (`things-to-do`): 34
 - Shopping (`shopping`): 57
@@ -31,12 +31,12 @@ Taxonomy version: `2026-08-02.2`
 
 ## Most common specific tags
 
-- `hotel`: 212
+- `hotel`: 211
 - `vacation-rental`: 190
 - `restaurant`: 163
 - `local-service`: 82
 - `shop`: 55
-- `cabins`: 46
+- `cabins`: 45
 - `tour-operator`: 32
 - `hostel`: 25
 - `cafe`: 20

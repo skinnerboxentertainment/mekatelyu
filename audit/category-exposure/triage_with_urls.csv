@@ -1,0 +1,53 @@
+decision,suggested_group,business_name,area,url
+ADD,eat,"Kaya's Place - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,https://www.whappin.com/businesses/kaya-s-place-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+ADD,eat,"Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",Gandoca,https://www.whappin.com/businesses/soda-y-cabinas-kaniki-gandoca-lim-n-costa-rica-gandoca.html
+ADD,eat,Totem Hotel Resort & Restaurant,Cocles,https://www.whappin.com/businesses/totem-hotel-resort-restaurant-cocles.html
+REVIEW,nightlife,"Asante Bistro & Café - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/asante-bistro-caf-cahuita-lim-n-costa-rica-cahuita.html
+ADD,nightlife,"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",Manzanillo,https://www.whappin.com/businesses/colores-restaurant-and-beach-lounge-manzanillo-lim-n-costa-rica-manzanillo.html
+ADD,nightlife,"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",Playa Chiquita,https://www.whappin.com/businesses/da-lime-beach-club-and-restaurant-playa-chiquita-puerto-viejo-lim-n-costa-rica-p.html
+ADD,nightlife,"El Refugio Grill - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,https://www.whappin.com/businesses/el-refugio-grill-playa-punta-uva-puerto-viejo-lim-n-costa-rica-punta-uva.html
+ADD,nightlife,El Sendero Beach Club,Puerto Viejo,https://www.whappin.com/businesses/el-sendero-beach-club-puerto-viejo.html
+ADD,nightlife,"Tasty Waves Cantina - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,https://www.whappin.com/businesses/tasty-waves-cantina-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html
+REVIEW,nightlife,Vol'Air Dance Studio,Puerto Viejo,https://www.whappin.com/businesses/vol-air-dance-studio-puerto-viejo.html
+ADD,services,Taller Gabriel,Puerto Viejo,https://www.whappin.com/businesses/taller-gabriel-puerto-viejo.html
+ADD,services,Tattoo Studio 33,Puerto Viejo,https://www.whappin.com/businesses/tattoo-studio-33-puerto-viejo.html
+SKIP,shopping,"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/casa-firefly-boutique-retreat-cahuita-lim-n-costa-rica-cahuita.html
+ADD,shopping,De Gustibus Bakery,Puerto Viejo,https://www.whappin.com/businesses/de-gustibus-bakery-puerto-viejo.html
+ADD,shopping,Iriria Specialty Coffee Shop,Puerto Viejo,https://www.whappin.com/businesses/iriria-specialty-coffee-shop-puerto-viejo.html
+ADD,shopping,Mendez Barber Shop,Puerto Viejo,https://www.whappin.com/businesses/mendez-barber-shop-puerto-viejo.html
+SKIP,stay,La Casita de Monli,Puerto Viejo,https://www.whappin.com/businesses/la-casita-de-monli-puerto-viejo.html
+REVIEW,stay,The Amazing Treehouse and Nature,Playa Negra,https://www.whappin.com/businesses/the-amazing-treehouse-and-nature-playa-negra.html
+ADD,things-to-do,"Big Tree Wildlife Refuge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,https://www.whappin.com/businesses/big-tree-wildlife-refuge-playa-punta-uva-puerto-viejo-lim-n-costa-rica-punta-uva.html
+ADD,things-to-do,"Black Shack Surf School - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,https://www.whappin.com/businesses/black-shack-surf-school-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html
+REVIEW,things-to-do,"Cabinas Surf Side - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/cabinas-surf-side-cahuita-lim-n-costa-rica-cahuita.html
+REVIEW,things-to-do,"Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/cahuita-national-park-hotel-cahuita-lim-n-costa-rica-cahuita.html
+REVIEW,things-to-do,Casa Canopy,Playa Chiquita,https://www.whappin.com/businesses/casa-canopy-playa-chiquita.html
+ADD,things-to-do,"La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,https://www.whappin.com/businesses/la-ceiba-nature-reserve-playa-punta-uva-puerto-viejo-lim-n-costa-rica-punta-uva.html
+REVIEW,things-to-do,"Papaya Wildlife Lodge - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/papaya-wildlife-lodge-cahuita-lim-n-costa-rica-cahuita.html
+ADD,things-to-do,Rico Tico Tours,Puerto Viejo,https://www.whappin.com/businesses/rico-tico-tours-puerto-viejo.html
+ADD,things-to-do,"Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/roberto-s-restaurant-and-tours-cahuita-lim-n-costa-rica-cahuita.html
+ADD,things-to-do,Spanish School Pura Vida,Puerto Viejo,https://www.whappin.com/businesses/spanish-school-pura-vida-puerto-viejo.html
+ADD,things-to-do,"Surf Meds Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,https://www.whappin.com/businesses/surf-meds-caribe-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html
+ADD,things-to-do,Surf the Jungle Surf School Adventures,Puerto Viejo,https://www.whappin.com/businesses/surf-the-jungle-surf-school-adventures-puerto-viejo.html
+ADD,things-to-do,"Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica",Manzanillo,https://www.whappin.com/businesses/tarponville-fishing-lodge-manzanillo-lim-n-costa-rica-manzanillo.html
+ADD,things-to-do,"Tico Surf and Skate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,https://www.whappin.com/businesses/tico-surf-and-skate-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html
+ADD,things-to-do,Vol'Air Dance Studio,Puerto Viejo,https://www.whappin.com/businesses/vol-air-dance-studio-puerto-viejo.html
+REVIEW,things-to-do,"Wildlife Lodge Cahuita - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/wildlife-lodge-cahuita-cahuita-lim-n-costa-rica-cahuita.html
+ADD,transport,"Cahuita Bus Station - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/cahuita-bus-station-cahuita-lim-n-costa-rica-cahuita.html
+ADD,transport,Main Bus Stop,Puerto Viejo,https://www.whappin.com/businesses/main-bus-stop-puerto-viejo.html
+ADD,transport,Puerto Viejo Golf Carts,Puerto Viejo,https://www.whappin.com/businesses/puerto-viejo-golf-carts-puerto-viejo.html
+ADD,transport,"Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica",Sixaola,https://www.whappin.com/businesses/terminal-de-buses-sixaola-sixaola-lim-n-costa-rica-sixaola.html
+ADD,wellness,Aloha Skincare and Wellness,Puerto Viejo,https://www.whappin.com/businesses/aloha-skincare-and-wellness-puerto-viejo.html
+SKIP,wellness,Ambar Tattoo Space,Puerto Viejo,https://www.whappin.com/businesses/ambar-tattoo-space-puerto-viejo.html
+ADD,wellness,"Blossom Paradise Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,https://www.whappin.com/businesses/blossom-paradise-retreat-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+SKIP,wellness,Caribe Love Tattoo,Puerto Viejo,https://www.whappin.com/businesses/caribe-love-tattoo-puerto-viejo.html
+ADD,wellness,"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",Cahuita,https://www.whappin.com/businesses/casa-firefly-boutique-retreat-cahuita-lim-n-costa-rica-cahuita.html
+ADD,wellness,"Chimuri Beach Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,https://www.whappin.com/businesses/chimuri-beach-retreat-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+ADD,wellness,"Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",Punta Uva,https://www.whappin.com/businesses/dragonfly-beach-retreat-playa-punta-uva-puerto-viejo-lim-n-costa-rica-punta-uva.html
+ADD,wellness,"Escondido Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,https://www.whappin.com/businesses/escondido-retreat-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+ADD,wellness,FISIOTERAPIA Agustin cuya,Cocles,https://www.whappin.com/businesses/fisioterapia-agustin-cuya-cocles.html
+ADD,wellness,"Kona Wellness Shala - Playa Cocles, Puerto Viejo, Limón, Costa Rica",Cocles,https://www.whappin.com/businesses/kona-wellness-shala-playa-cocles-puerto-viejo-lim-n-costa-rica-cocles.html
+ADD,wellness,"Shiosai Retreat Cabins - Gandoca, Limón, Costa Rica",Gandoca,https://www.whappin.com/businesses/shiosai-retreat-cabins-gandoca-lim-n-costa-rica-gandoca.html
+ADD,wellness,"Sonora Jungle Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",Playa Negra,https://www.whappin.com/businesses/sonora-jungle-retreat-playa-negra-puerto-viejo-lim-n-costa-rica-playa-negra.html
+ADD,wellness,TRIBU functional training,Puerto Viejo,https://www.whappin.com/businesses/tribu-functional-training-puerto-viejo.html
+SKIP,wellness,Tattoo Studio 33,Puerto Viejo,https://www.whappin.com/businesses/tattoo-studio-33-puerto-viejo.html
