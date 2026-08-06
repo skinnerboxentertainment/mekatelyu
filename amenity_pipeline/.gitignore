@@ -7,8 +7,10 @@ coverage/
 # Generated / run artifacts — never commit
 output/
 output-about/
+output-hours/
 profiles/
 run-batch.cmd
 run-about.cmd
+run-hours.cmd
 run.pid
 *-listings.jsonl

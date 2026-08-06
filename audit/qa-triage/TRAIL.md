@@ -184,7 +184,15 @@ Verified, documented on the issue, and closed as confirmed-correct.
 - **Batch 3:** name-mismatch + duplicate tickets — reassign to Xio for clarification (data already verified correct)
 - **Batch 4:** 5 empty tickets — reassign to Xio requesting issue details
 
-## Hold state
+## Deploy state
 
-All changes are local and **uncommitted** per owner decision ("verify locally, hold commits for review").
-The release artifact has been rebuilt locally; nothing has been pushed or deployed.
+Committed as `6649ff95`, pushed to `master`, CI "Launch readiness" green, and
+auto-deployed to whappin.com on 2026-08-05. Fixes verified live.
+
+## GitHub closure (2026-08-05)
+
+All resolved tickets were commented (per-ticket fix summary + commit `6649ff95` +
+live verification) and **closed** on GitHub so Xio can see each fix. 48 tickets
+closed this pass. Remaining open (5) are awaiting Xio's clarification: #22, #56,
+#59, #70, #71.
+

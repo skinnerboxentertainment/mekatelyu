@@ -1,0 +1,206 @@
+[
+  {
+    "business": "Physis Caribbean Bed & Breakfast - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: pcb&b"
+  },
+  {
+    "business": "Oasis Beachfront Hostel",
+    "field": "description",
+    "severity": "medium",
+    "issue": "Placeholder on site: 'Located 30 sec walk from Salsa Brava beach, offers dormitory and private rooms with a shared bathroom or camping right o'"
+  },
+  {
+    "business": "Clínica de Especialidades Médicas San Gabriel",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: clnica_de_especialidades_mdicas_san_gabriel_cr"
+  },
+  {
+    "business": "Proyecto Educativo Semillas de Paz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: proyecto_educativo_semillas_de_paz_cr"
+  },
+  {
+    "business": "Eñe Spanish Teachers",
+    "field": "description",
+    "severity": "medium",
+    "issue": "Placeholder on site: 'A group of qualified, independent teachers, operating in the whole Puerto Viejo area, offers Spanish Classes in the quie'"
+  },
+  {
+    "business": "Finca La Isla Botanical Garden - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: finca_la_isla_botanical_garden_cr"
+  },
+  {
+    "business": "Hidden Garden Ethnobotanical Sanctuary",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: hiddengardenethnobotanicalsanctuary"
+  },
+  {
+    "business": "Banco de Costa Rica Puerto Viejo",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: banco_de_costa_rica_puerto_viejo"
+  },
+  {
+    "business": "Watuza",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "El Faro 13",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Hotel Los Sueños",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Villa Bukë",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Beach Hut",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Mi Casa Hostel y Hotel El Tesoro",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: mi_casa_hostel_y_hotel_el_tesoro"
+  },
+  {
+    "business": "Mi Casa Hostel y Hotel El Tesoro",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Cabinas Orange Green",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Cabinas Wray",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Casa Badawi",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Casa Trinidad",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Casa Tuareg",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Harmony: Mini Casa Rodante by Aptos Casa Caribe",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: harmony_mini_casa_rodante_by_aptos_casa_caribe"
+  },
+  {
+    "business": "Harmony: Mini Casa Rodante by Aptos Casa Caribe",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Hotel Posada Nena",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Las Mariposas",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Paula's and Daniel's Homestay",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Vista Verde",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Restaurante Cariblue",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Río Negro",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Jungle Air Parapente",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Panadería Francés",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Hotel Villas y Glamping M&A",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Yerbas Concepto Culinario",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Casa Miluca",
+    "field": "status",
+    "severity": "low",
+    "issue": "Flagged needs_verification"
+  },
+  {
+    "business": "Iglesia Cristiana Casa De Restauracion",
+    "field": "instagram_handle",
+    "severity": "medium",
+    "issue": "Invalid IG handle format: iglesiacristianacasaderestauracion"
+  }
+]
