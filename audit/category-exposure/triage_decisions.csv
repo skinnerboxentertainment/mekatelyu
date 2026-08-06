@@ -1,0 +1,53 @@
+decision,suggested_group,business_name,category,current_groups,matched_field,matched_label,evidence,rationale
+REVIEW,nightlife,"Asante Bistro & Café - Cahuita, Limón, Costa Rica",restaurant,eat,cuisine,cocktail,«Cocktail»,Bistro/café with cocktail cuisine — could host evening scene; owner confirms
+ADD,nightlife,"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",restaurant,eat,name,lounge,"Colores Restaurant and Beach «Lounge» - Manzanillo, Limón, Costa Rica","""Lounge"" in name + restaurant = beach lounge venue"
+ADD,nightlife,"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,eat,name,beach club,"Da Lime «Beach Club» and Restaurant - Playa Chiquita, Puerto...",Beach club + restaurant
+ADD,nightlife,"El Refugio Grill - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",restaurant,eat,name,grill house,"El Refugio «Grill» - Playa Punta Uva, Puerto Viejo, Limón,...",Grill venue
+ADD,nightlife,El Sendero Beach Club,restaurant,eat,name,beach club,El Sendero «Beach Club»,Beach club
+ADD,nightlife,"Tasty Waves Cantina - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,eat,name,cantina,"Tasty Waves «Cantina» - Playa Cocles, Puerto Viejo, Limón, Co...",Cantina venue
+REVIEW,nightlife,Vol'Air Dance Studio,services,services,name,dancing,Vol'Air «Dance» Studio,Dance studio — classes vs. dance nights; owner confirms
+ADD,eat,"Kaya's Place - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,stay,cuisine,restaurant,«Restaurante» mexicano,Onsite restaurant (cuisine: Restaurante mexicano)
+ADD,eat,"Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",hotel,stay,name,food service,"«Soda» y Cabinas Kaniki - Gandoca, Limón, Cost...",Soda = eatery + cabinas (genuinely both)
+ADD,eat,Totem Hotel Resort & Restaurant,hotel,stay,name,restaurant,Totem Hotel Resort & «Restaurant»,Restaurant in name
+SKIP,stay,La Casita de Monli,restaurant,eat,name,vacation rental,La «Casita» de Monli,"""Casita"" is a diminutive, not lodging evidence"
+REVIEW,stay,The Amazing Treehouse and Nature,restaurant,eat,name,rooms/resort,The Amazing «Treehouse» and Nature,Treehouse nature venue with food — lodging? owner confirms
+ADD,things-to-do,"Big Tree Wildlife Refuge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,stay,name,wildlife,"Big Tree «Wildlife» Refuge - Playa Punta Uva, Puerto Viejo,...",Wildlife refuge
+ADD,things-to-do,"Black Shack Surf School - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,services,name,surf,"Black Shack «Surf» School - Playa Cocles, Puerto Viejo, Li...",Surf school
+REVIEW,things-to-do,"Cabinas Surf Side - Cahuita, Limón, Costa Rica",hotel,stay,name,surf,"Cabinas «Surf» Side - Cahuita, Limón, Costa Rica","""Surf Side"" = location, not activity; owner confirms"
+REVIEW,things-to-do,"Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",hotel,stay,name,hiking/nature,"Cahuita «National Park» Hotel - Cahuita, Limón, Costa Rica",Hotel at the park — not itself an activity; owner confirms
+REVIEW,things-to-do,Casa Canopy,vacation_rental,stay,name,adventure,Casa «Canopy»,Canopy may imply zipline/outdoor; owner confirms
+ADD,things-to-do,"La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",hotel,stay,name,hiking/nature,"La Ceiba «Nature Reserve» - Playa Punta Uva, Puerto Viejo, Limón,...",Nature reserve
+REVIEW,things-to-do,"Papaya Wildlife Lodge - Cahuita, Limón, Costa Rica",vacation_rental,stay,name,wildlife,"Papaya «Wildlife» Lodge - Cahuita, Limón, Costa Rica",Lodge named Wildlife — attraction or location? owner confirms
+ADD,things-to-do,Rico Tico Tours,restaurant,eat,name,tours,Rico Tico «Tours»,Tours in name
+ADD,things-to-do,"Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica",restaurant,eat,name,tours,"Roberto's Restaurant and «Tours» - Cahuita, Limón, Costa Rica",Tours in name
+ADD,things-to-do,Spanish School Pura Vida,services,services,name,classes,Spanish «School» Pura Vida,School/classes
+ADD,things-to-do,"Surf Meds Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,services,name,surf,"«Surf» Meds Caribe - Playa Cocles, Puerto Viej...",Surf
+ADD,things-to-do,Surf the Jungle Surf School Adventures,services,services,name,surf,«Surf» the Jungle Surf School Adventures,Surf school
+ADD,things-to-do,"Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica",hotel,stay,name,fishing,"Tarponville «Fishing» Lodge - Manzanillo, Limón, Costa Rica",Fishing lodge
+ADD,things-to-do,"Tico Surf and Skate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,services,name,surf,"Tico «Surf» and Skate - Playa Cocles, Puerto Viejo,...",Surf/skate
+ADD,things-to-do,Vol'Air Dance Studio,services,services,name,classes,Vol'Air «Dance Studio»,Dance studio = classes
+REVIEW,things-to-do,"Wildlife Lodge Cahuita - Cahuita, Limón, Costa Rica",hotel,stay,name,wildlife,"«Wildlife» Lodge Cahuita - Cahuita, Limón, Costa R...",Lodge named Wildlife — attraction or location? owner confirms
+SKIP,shopping,"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",hotel,stay,name,shop/store,"Casa Firefly «Boutique» Retreat - Cahuita, Limón, Costa Rica","""Boutique retreat"" = lodging, not a shop"
+ADD,shopping,De Gustibus Bakery,restaurant,eat,name,goods,De Gustibus «Bakery»,Bakery sells goods
+ADD,shopping,Iriria Specialty Coffee Shop,restaurant,eat,name,shop/store,Iriria Specialty Coffee «Shop»,Coffee shop = retail + eat
+ADD,shopping,Mendez Barber Shop,services,services|wellness,name,shop/store,Mendez Barber «Shop»,Barber shop retail
+ADD,services,Taller Gabriel,shopping,shopping,name,repair/auto,«Taller» Gabriel,Taller = repair workshop
+ADD,services,Tattoo Studio 33,restaurant,eat,name,personal care,«Tattoo» Studio 33,Tattoo = personal care
+ADD,wellness,Aloha Skincare and Wellness,services,services,name,spa/massage,Aloha Skincare and «Wellness»,Skincare + wellness
+SKIP,wellness,Ambar Tattoo Space,services,services,name,beauty,Ambar «Tattoo» Space,"Tattoo = services, not wellness"
+ADD,wellness,"Blossom Paradise Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,stay,name,sanctuary,"Blossom Paradise «Retreat» - Playa Negra, Puerto Viejo, Limón, Cos...",Retreat
+SKIP,wellness,Caribe Love Tattoo,services,services,name,beauty,Caribe Love «Tattoo»,"Tattoo = services, not wellness"
+ADD,wellness,"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",hotel,stay,name,sanctuary,"Casa Firefly Boutique «Retreat» - Cahuita, Limón, Costa Rica",Retreat
+ADD,wellness,"Chimuri Beach Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,stay,name,sanctuary,"Chimuri Beach «Retreat» - Playa Negra, Puerto Viejo, Limón, Cos...",Retreat
+ADD,wellness,"Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,stay,name,sanctuary,"Dragonfly Beach «Retreat» - Playa Punta Uva, Puerto Viejo, Limón,...",Retreat
+ADD,wellness,"Escondido Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,stay,name,sanctuary,"Escondido «Retreat» - Playa Negra, Puerto Viejo, Limón, Cos...",Retreat
+ADD,wellness,FISIOTERAPIA Agustin cuya,restaurant,eat,name,mind-body,«FISIOTERAPIA» Agustin cuya,Physiotherapy
+ADD,wellness,"Kona Wellness Shala - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,services,name,spa/massage,"Kona «Wellness» Shala - Playa Cocles, Puerto Viejo, Lim...",Wellness shala
+ADD,wellness,"Shiosai Retreat Cabins - Gandoca, Limón, Costa Rica",hotel,stay,name,sanctuary,"Shiosai «Retreat» Cabins - Gandoca, Limón, Costa Rica",Retreat
+ADD,wellness,"Sonora Jungle Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,stay,name,sanctuary,"Sonora Jungle «Retreat» - Playa Negra, Puerto Viejo, Limón, Cos...",Retreat
+ADD,wellness,TRIBU functional training,services,services,name,fitness,TRIBU functional «training»,Fitness
+SKIP,wellness,Tattoo Studio 33,restaurant,eat,name,beauty,«Tattoo» Studio 33,"Tattoo = services, not wellness"
+ADD,transport,"Cahuita Bus Station - Cahuita, Limón, Costa Rica",tour_company,things-to-do,name,bus,"Cahuita «Bus» Station - Cahuita, Limón, Costa Rica",Bus station
+ADD,transport,Main Bus Stop,tour_company,things-to-do,name,bus,Main «Bus» Stop,Bus stop
+ADD,transport,Puerto Viejo Golf Carts,tour_company,things-to-do,name,car rental,Puerto Viejo «Golf Carts»,Golf cart rental
+ADD,transport,"Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica",services,services,name,bus,"«Terminal» de Buses Sixaola - Sixaola, Limón, Cost...",Bus terminal

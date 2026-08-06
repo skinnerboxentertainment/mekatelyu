@@ -1,0 +1,738 @@
+business_name,category,area,google_maps_cid,group_nightlife,group_eat,group_stay,group_things-to-do,group_shopping,group_services,group_wellness,group_transport,current_groups,potential_groups
+Amimodo Beach Rooms,hotel,Puerto Viejo,5872176730909991811,,context,current,,,,,,stay,stay
+Black Bamboo,hotel,Puerto Viejo,9649993079907777710,,context,current,,,,,,stay,stay
+Bungalows Calalú,hotel,Puerto Viejo,1614163454683628928,,context,current,,,,context,,stay,stay
+Cabinas Los Almendros,hotel,Puerto Viejo,11326919937828667471,,,current,,,,,,stay,stay
+Cabinas Guarana,hotel,Puerto Viejo,3227485566230734531,,,current,,,,,,stay,stay
+Cabinas Jacaranda,hotel,Puerto Viejo,12370139056940041503,,context,current,context,,context,context,,stay,stay
+Cabinas Lika,hotel,Puerto Viejo,1111954385529331281,,,current,,,,,,stay,stay
+Cabinas Mitchaelles,hotel,Puerto Viejo,13327167442180512504,,,current,context,,,,,stay,stay
+Cabinas Monte Sol,hotel,Puerto Viejo,10951227846186482107,context,context,current,,,,,,stay,stay
+Cabinas Mor,hotel,Puerto Viejo,13919554959587676121,,,current,,,,,,stay,stay
+Cabinas Popular,hotel,Puerto Viejo,975506958424374718,,,current,,,,,,stay,stay
+Cabinas Talamanca,hotel,Puerto Viejo,1496101248030016772,,context,current,,,,,,stay,stay
+Casa Ana Kimba,hotel,Puerto Viejo,13823455026627310391,,,current,,,,,,stay,stay
+Casa Bohö,hotel,Puerto Viejo,8284218495825622354,,,current,,,,,,stay,stay
+La Casa de Rolando,hotel,Puerto Viejo,1261667056997797786,,context,current,,,,,,stay,stay
+Casa Dolce Vita,hotel,Puerto Viejo,1282335974102907594,,context,current,,,,,,stay,stay
+Casitas La Playa,hotel,Puerto Viejo,8798809940588504560,,context,current,,,,,,stay,stay
+Chinuk Boutique Hotel,hotel,Puerto Viejo,4032204592829800059,,context,current,,,,,,stay,stay
+Conga Boutique Hotel,hotel,Puerto Viejo,17817187932984436803,,context,current,,,,,,stay,stay
+Escape Caribeño,hotel,Puerto Viejo,11151339976601146455,context,,current,,,,,,stay,stay
+Exotic Lodge,hotel,Puerto Viejo,8353070716309943884,context,context,current,,,,,,stay,stay
+Family Hotel,hotel,Puerto Viejo,16910431421739661204,,,current,,,,,,stay,stay
+Hostal Cecilia,hotel,Puerto Viejo,11938523891103686222,,context,current,,,,,,stay,stay
+Hotel Casa Vito,hotel,Puerto Viejo,9002517690753030013,,context,current,,,,,,stay,stay
+Hotel Infiniti,hotel,Puerto Viejo,17030940291864121871,,context,current,,,,,,stay,stay
+Hotel Mandacarú,hotel,Puerto Viejo,11442698979892556145,,context,current,,,context,context,,stay,stay
+Hotel Pura Vida,hotel,Puerto Viejo,5253894431951431984,,,current,,,,,,stay,stay
+Hotel Tropical,hotel,Puerto Viejo,7969394138081997689,,,current,,,,,,stay,stay
+Indalo Hotel Boutique,hotel,Puerto Viejo,4424059130614434174,,,current,,,,,,stay,stay
+Lizard King Hotel,hotel,Puerto Viejo,11779773565011173435,,,current,,,,,,stay,stay
+Maritza Hotel,hotel,Puerto Viejo,7612264151773034204,,context,current,,,,,,stay,stay
+Namu Garden Hotel and Spa,hotel,Puerto Viejo,18141110668997261824,context,context,current,,,,current,,stay|wellness,stay|wellness
+Olinca Boutique Hotel,hotel,Puerto Viejo,17724938072232701259,,context,current,context,,,,,stay,stay
+Sueño Grande Bed and Breakfast,hotel,Puerto Viejo,5641578059331896840,,context,current,,,,,,stay,stay
+La Tica y La Gata,hotel,Puerto Viejo,11047054352277007542,,context,current,,,,,,stay,stay
+Umami Hotel Garden Spa,hotel,Puerto Viejo,9701222676819002481,,context,current,,,,current,,stay|wellness,stay|wellness
+Yucca Beachfront Hotel,hotel,Puerto Viejo,6124202353518117731,,context,current,,,,,,stay,stay
+"Banana Azul - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,3301165288581347626,context,context,current,context,,,,,stay,stay
+"Cabinas Kuákua - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,11219479455997326756,context,context,current,,,,,,stay,stay
+"Casa Luce - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,17469621114106254322,,context,current,,,,,,stay,stay
+"Casitas Las Flores - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,13885126780319428127,,context,current,,,,,,stay,stay
+"Hidden Jungle Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,11862065950546251000,,context,current,,,,,,stay,stay
+"Hotel One Love - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,14996707988450888278,,,current,,,,,,stay,stay
+"Iguana Lodge - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,8482617327334657480,,context,current,,,,,,stay,stay
+"Kaya's Place - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,8816532573875491055,context,suggested,current,,context,,,,stay,eat|stay
+"Mecca - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,9816532667813567561,,,current,,context,,,,stay,stay
+"Olivia del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,11649313152541943974,,context,current,,,,,,stay,stay
+"Perla Negra Beachfront - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,4419914265315119799,,,current,context,,,,,stay,stay
+"La Prometida - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,10617292672602655877,,,current,,,,,,stay,stay
+"Saranda Hotel Boutique - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,7564004912244932325,context,context,current,,,,,,stay,stay
+"Sonora Jungle Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,13462000015508270895,,context,current,,,,suggested,,stay,stay|wellness
+"Sunshine Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,2012278593659589679,,,current,,,,,,stay,stay
+"Villas Allen - Playa Negra, Puerto Viejo, Limón, Costa Rica",hotel,Playa Negra,11115647409204137584,,context,current,context,,context,,,stay,stay
+"Azania Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,1284571712904930160,context,context,current,,,,,,stay,stay
+"Bambutel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,14224886783313130797,,context,current,context,,,,,stay,stay
+"Cabañas Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,2857032637458926519,,,current,,,,,,stay,stay
+"Cabinas Ole Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,13369944886185180649,,context,current,,,,,,stay,stay
+"Caribe Town Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,16161533908681591225,context,context,current,,,context,context,,stay,stay
+"Cariblue Beach and Jungle Resort - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,14658668036585456092,context,context,current,,,,context,,stay,stay
+"Colina Secreta - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,11726717133900260893,,context,current,,,,,,stay,stay
+"La Costa de Papito - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,15457918864809997738,,context,current,,,,context,,stay,stay
+"Los Delfines Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,811731149839330623,,,current,,,,,,stay,stay
+"Hotel Bugabutik - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,10932123085080779411,context,,current,,,context,context,,stay,stay
+"La Isla Inn - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,12610196440035693725,,,current,,,context,,,stay,stay
+"Lanna Ban Hotel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,1718865423614243627,,,current,,,,,,stay,stay
+"Le Caméléon - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,4837747133838124638,current,current,current,,,,context,,eat|nightlife|stay,eat|nightlife|stay
+"La Magia Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,8216271918783135936,,context,current,,,,context,,stay,stay
+"La Paz del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,15133962780271824116,,context,current,,,,,,stay,stay
+"Physis Caribbean Bed & Breakfast - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,6927648870562475588,context,,current,,,,,,stay,stay
+"Pipa Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,2503861879451247980,,context,current,,,,,,stay,stay
+"Relax Natural Village - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,1359064883656104943,,context,current,,,,,,stay,stay
+"Satta Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hotel,Cocles,6009775234321674954,,,current,,,,,,stay,stay
+"Casa Merlin Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,5273135705751598576,,context,current,,,,,,stay,stay
+"Casitas Mar y Luz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,8515965990195848246,,context,current,,,,,,stay,stay
+"Green Jungle House - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,10566257576749882719,context,context,current,context,,,,,stay,stay
+"Hotel Aguas Claras - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,5319096016576692772,context,context,current,context,,context,context,,stay,stay
+"Hotel Kasha - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,2789448993779357106,context,context,current,,,,,,stay,stay
+"Jaguar Inn Bungalows - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,4375569377161762321,,,current,context,,,,,stay,stay
+"La Kukula Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,12131830785097631441,context,context,current,context,,context,,,stay,stay
+"Mar Verde Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,12618084244946677516,,,current,,,,,,stay,stay
+"Namuwoki Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,7633661990399056727,,context,current,,,,,,stay,stay
+"El Nido Jungle Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,17996754399669659267,context,context,current,,,,,,stay,stay
+"Shawandha Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,11584809782208466783,,context,current,,,,,,stay,stay
+"Tierra de Suenos Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,3078819024997403606,,,current,context,,context,context,,stay,stay
+"Tree House Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,4964431491684239389,,,current,context,,,,,stay,stay
+"Villas del Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",hotel,Playa Chiquita,12050033515189885654,,context,current,,,,,,stay,stay
+"Awa Beach Boutique Hotel - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",hotel,Punta Uva,5579537716284560393,context,,current,,,,,,stay,stay
+"La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",hotel,Punta Uva,1693592634910607224,,,current,suggested,,,,,stay,stay|things-to-do
+"Pachamama Jungle River Lodge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",hotel,Punta Uva,17505879167034120949,,context,current,,,,,,stay,stay
+"Cabinas Kinawe - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,5826733614696332728,,,current,,,,,,stay,stay
+"Casa Conley Del Mar - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,6599527260173115828,,context,current,,,,,,stay,stay
+"Hotel Hawa - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,12922727533389204233,context,context,current,,,,,,stay,stay
+"Orgánico Punta Riel - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,2005484154619350459,,,current,,,,,,stay,stay
+"Rancho Tranquilo - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,3497932895823071906,,,current,,,,,,stay,stay
+"Samasati Yoga and Wellness Retreat - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,2378802529330389577,,context,current,current,,context,current,,stay|things-to-do|wellness,stay|things-to-do|wellness
+"Villa Mena Apartments - Hone Creek, Limón, Costa Rica",hotel,Hone Creek,2340777439094833292,,context,current,,,,,,stay,stay
+Casa Wolaba,hostel,Puerto Viejo,12617501835970240553,,context,current,,,,,,stay,stay
+El Clan Hostel,hostel,Puerto Viejo,5201679489523559249,context,context,current,,,,,,stay,stay
+Hotel and Hostel Agapi,hostel,Puerto Viejo,7492180577056289429,context,context,current,context,,context,context,,stay,stay
+Hotel Puerto Viejo,hostel,Puerto Viejo,120276160970090320,,,current,,,,,,stay,stay
+Kalunay Hostel,hostel,Puerto Viejo,13549549945867962662,,context,current,,,,,,stay,stay
+Oasis Beachfront Hostel,hostel,Puerto Viejo,3806869317536833401,,context,current,context,,,,,stay,stay
+Pagalu Hostel,hostel,Puerto Viejo,16584181162103313991,,context,current,,,,,,stay,stay
+Rocking J's Hostel,hostel,Puerto Viejo,2849080077759072513,context,context,current,context,,context,,,stay,stay
+Roots Family Hostel,hostel,Puerto Viejo,15012354361205552676,,,current,,,,,,stay,stay
+La Ruka Hostel,hostel,Puerto Viejo,13859346082849828188,,context,current,context,,,,,stay,stay
+Soul Rebel Hostel,hostel,Puerto Viejo,1470909826947842376,,context,current,,,,,,stay,stay
+La Tribu,hostel,Puerto Viejo,8557872311475311298,,context,current,,context,,,,stay,stay
+"Tasty Dayz Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hostel,Cocles,8755282126859435083,context,context,current,,,,,,stay,stay
+"Yuyo Huelal Totga - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hostel,Cocles,3101197989157048209,,,current,,,,,,stay,stay
+"Madre Selva Jungle Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hostel,Cocles,18351627144969519384,,context,current,,,,,,stay,stay
+"Playa 506 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hostel,Cocles,14615341747601449576,context,context,current,,,,,,stay,stay
+"Smile Jungle Hostel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",hostel,Cocles,15792014508348842214,,context,current,,,,,,stay,stay
+Douglasville Guesthouse,vacation_rental,Puerto Viejo,16910935893526257108,,,current,,,,,,stay,stay
+Caribbean Comfort,vacation_rental,Puerto Viejo,9201616901711710091,,,current,,,,,,stay,stay
+Casa Arlecchino,vacation_rental,Puerto Viejo,13639343625190683419,,context,current,,,,,,stay,stay
+Casa Black Chaini,vacation_rental,Puerto Viejo,5833894449865216635,,context,current,,,,,,stay,stay
+Casa Kinkaju,vacation_rental,Puerto Viejo,9120865451737148097,,context,current,,,,,,stay,stay
+Coconut Grove Apartamentos,vacation_rental,Puerto Viejo,10763597126474435006,,context,current,,,,,,stay,stay
+Colibri Ecolodge,vacation_rental,Puerto Viejo,656242078778664441,,,current,,,,,,stay,stay
+Estrellas Cabinas,vacation_rental,Puerto Viejo,,,,current,,,,,,stay,stay
+"Casa Roble de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,1214008658533978760,,context,current,,,,,,stay,stay
+"Villa Abejita - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,17566723912022559610,context,context,current,,,,,,stay,stay
+"Villa del Mito - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,3772885646337615062,context,context,current,,,,,,stay,stay
+"Magic Moon Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,7455182900583969326,,context,current,,,,,,stay,stay
+"Be My Guest Cabinas - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,7206926578519386455,,,current,,,,,,stay,stay
+"Blessed House - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,18318447306973081283,,context,current,,,,,,stay,stay
+"Blossom Paradise Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,11364781436039210316,,context,current,context,,,suggested,,stay,stay|wellness
+"Cabinas Cable Talamanca - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,7573981416846739723,,context,current,,,,,,stay,stay
+"Caripro Apartments - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,265902149135749003,,,current,,,,,,stay,stay
+"Casa Corazon del Mar - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,9868667004367768507,,context,current,,,,context,,stay,stay
+"Casa Galim Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,4046132343523405394,,context,current,,,,,,stay,stay
+"Casa Jeffrey - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,13928153996580431887,,context,current,,,,,,stay,stay
+"Casa Luna Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,1455817631417694421,,context,current,,,,,,stay,stay
+"Casa Ocelote - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,1855638920758597797,,context,current,,,,,,stay,stay
+"Casa Selva - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,10476863127556720569,,,current,,,,context,,stay,stay
+"Casa Theia - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,8382763569328813011,,context,current,,,,,,stay,stay
+"Casita Kreyol - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,17447691794708739658,,context,current,,,,,,stay,stay
+"Las Casitas de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,8689012956679917112,,context,current,,,,,,stay,stay
+"Casitas Joanna - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,1768768766083603441,,context,current,,,,,,stay,stay
+"Chimuri Beach Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,6051193694241034944,,,current,context,,context,suggested,,stay,stay|wellness
+"Escondido Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,6658711880224661769,,context,current,,,,suggested,,stay,stay|wellness
+"Evia Life Resort - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,18135263196931927606,,,current,,,,,,stay,stay
+"El Jardin de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,10376714198650196690,,,current,,,,,,stay,stay
+"The Mimosas Container Homes - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,10848512872328092857,,context,current,,,,,,stay,stay
+"Puerto Viejo Club - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,10850457859079273798,,,current,,,,,,stay,stay
+"Sloth House 2 - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,11323383828584457886,,context,current,,,,,,stay,stay
+"Villa Aragon - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,410104999530083035,,context,current,,,,,,stay,stay
+"Villa Wolaba - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,8236556478934588728,,,current,,,,,,stay,stay
+"Villas Ande - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,4076738848493846113,,,current,,,,,,stay,stay
+"Villas Banana Verde - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,3491417544238941664,context,context,current,,,context,,,stay,stay
+"Villas de la Luz - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,7675665734638034793,,context,current,,,,,,stay,stay
+"Villas Luna Africana by Palmer - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,9410436487829075468,,,current,,,,,,stay,stay
+"Villas Mapache del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,13447229575814168735,,context,current,,,,,,stay,stay
+"Villas Piña - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,2206313602652580226,,context,current,,,,,,stay,stay
+"Villas Ríos del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,4133532355689727929,,context,current,,,,,,stay,stay
+"Villas Roca del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,16891468495061021112,,,current,,,,,,stay,stay
+"Villas Serenidad - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,12865192766844460074,,context,current,context,,,,,stay,stay
+"Yoshi's on the Beach - Playa Negra, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Negra,6607101811087559551,,context,current,,,,,,stay,stay
+"Geckoes Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,11623096819320863549,,context,current,,,,,,stay,stay
+"Alloro Jungle Villas - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,2659428566815974857,,context,current,,,,,,stay,stay
+"AroCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,14894693076927745646,,,current,,,,,,stay,stay
+"Azania Oasis - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,17887068920973627002,,context,current,,,,,,stay,stay
+"Casa Ackee - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,12667576250238069497,,context,current,,,,,,stay,stay
+"Casa Eden Jungle Apartments - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,16717641602858318859,,,current,,,,,,stay,stay
+"Casa Margarita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,3099661925276096610,,,current,,,,,,stay,stay
+"Casa Mariposa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,8900920815586328050,,context,current,context,,,,,stay,stay
+"Casa Modí - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,5659125372219148881,,,current,,,,,,stay,stay
+"La Casita de Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,16930291155158825297,,,current,,,,,,stay,stay
+"Los Continentes - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,16195237219481974530,,context,current,,,,,,stay,stay
+"Dano's Cabano - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,13596874059691247570,,context,current,,,,,,stay,stay
+"David Valley Houses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,17610491409749030649,,context,current,,,,,,stay,stay
+"La Finca Chica - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,15662198641513996653,,context,current,,,,,,stay,stay
+"Finca Valeria Treehouses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,8420081138501081482,,,current,,,,,,stay,stay
+"Flor del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,17897655248647644053,,,current,,,,,,stay,stay
+"Habitat Vacation Rentals - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,5613050885601789841,,,current,,,context,,,stay,stay
+"Ocean's Breeze Apartment and Rooms - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,12871095951792514227,,,current,,,,,,stay,stay
+"Las Palomas - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,3948210368762528971,,,current,,context,,,,stay,stay
+"La Perla del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,5477765746729269238,,,current,,,,,,stay,stay
+"Terrazas del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,15602414082115305191,,context,current,,,,,,stay,stay
+"Treevana - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,8441660170222933820,,,current,,,,,,stay,stay
+"El Tucán Feliz - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,11607384494912146716,,,current,,,,,,stay,stay
+"Villa Aurora - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,2778057777928120817,,context,current,,,,,,stay,stay
+"Villa Elita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,3811950339808245976,,context,current,,,,,,stay,stay
+"Villa Laurel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,7902224320478214928,context,context,current,,,,,,stay,stay
+"Villa Rameen - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,4271339890778489202,,context,current,,,,,,stay,stay
+"Villas Lomas del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",vacation_rental,Cocles,8862541351972983241,,context,current,,,,,,stay,stay
+"Aloki Village - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,11129113619647704846,,context,current,,,,,,stay,stay
+"Angler's Lair - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,12754897163013733415,,context,current,,,,,,stay,stay
+"Caribbean Courtyard Villa - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,14240005590269620796,,,current,,,,,,stay,stay
+"Casa Ambar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,18302181789419942285,,context,current,,,,,,stay,stay
+"Casa Jungle Love - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,14093799972335896635,,context,current,,context,,,,stay,stay
+"Casa Moabi - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,9516383767938620040,,context,current,,,,,,stay,stay
+"Casa Osos Caribeños - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,6876276989579196961,,context,current,,,,,,stay,stay
+"Casas del Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,2489061038640189430,,,current,context,,,,,stay,stay
+"Casas La Selvatica - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,11101879544769502565,,context,current,,,context,,context,stay,stay
+"Chiquita Escondida - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,5961957804184993948,,context,current,,,context,,,stay,stay
+"Luna Caribeña Village - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,5703354943109126310,,context,current,,,context,,,stay,stay
+"Pura Bali Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,17671006442397185195,,context,current,,,,,,stay,stay
+"Tres Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,17306174628636276319,,context,current,,,,,,stay,stay
+"Up! House - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,386602587240645860,,context,current,,,,,,stay,stay
+"Uva Blue Jungle Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,9838950680602433731,,context,current,,context,,,,stay,stay
+"Villa Cabú - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,2579895199015686682,,context,current,,,,,,stay,stay
+"Villa Casa Azul y Arena Blanca Apartamentos - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,15567706438348473704,,context,current,,,,,,stay,stay
+"Villa del Mar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",vacation_rental,Playa Chiquita,10974417683706909929,,context,current,,,,,,stay,stay
+"Big Tree Wildlife Refuge - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,5233367816302543964,,,current,suggested,,,,,stay,stay|things-to-do
+"Bungalows Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,15942771352384167456,,context,current,,,context,,,stay,stay
+"Casa Cielo - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,6374413444850813378,,context,current,,,,,,stay,stay
+"Casa de la Musa - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,17194360818099045148,,context,current,,,,,,stay,stay
+"Casa De La Trepada - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,2127018088757720546,,context,current,,,,,,stay,stay
+"Casa Matix - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,2878562505584101773,,context,current,,,,,,stay,stay
+"Casa Viva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,16462037703900023129,,context,current,context,,,,,stay,stay
+"Dragonfly Beach Retreat - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,16775548705300829933,,context,current,context,,,suggested,,stay,stay|wellness
+"Ginger and Cacao - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,1074114199983889358,,context,current,,,,,,stay,stay
+"Olguita's Place - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,8905623640105890404,,context,current,,,,,,stay,stay
+"Our Beachfront Bungalow - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,10207460585524901017,,context,current,,,,,,stay,stay
+"Los Proyectos Moderno - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,17163510404658526674,,context,current,context,,,,,stay,stay
+"Villa Soleil et Paquerette - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,14170683448288584492,,,current,,,,,,stay,stay
+"Villas Itaita - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,176499380080555804,,,current,context,,,,,stay,stay
+"Wabi Sabi - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",vacation_rental,Punta Uva,6415805193363578026,,context,current,,,,,,stay,stay
+"Finca Don Litos - Hone Creek, Limón, Costa Rica",vacation_rental,Hone Creek,15727569979150542837,,context,current,,,,,,stay,stay
+"Villas Diwo - Hone Creek, Limón, Costa Rica",vacation_rental,Hone Creek,5114266921704520486,,context,current,,,,,,stay,stay
+Gigi O Restaurant,restaurant,Puerto Viejo,4732141069441829785,context,current,,,context,,,,eat,eat
+"Tasty Waves Cantina - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,10844386752467925201,suggested,current,context,,,,,,eat,eat|nightlife
+Amimodo Restaurant,restaurant,Puerto Viejo,14941158757917200222,,current,context,context,,,,,eat,eat
+"Arrecife Hotel y Restaurante - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",restaurant,Punta Uva,3477422119483013906,context,current,current,,,,,,eat|stay,eat|stay
+"Azul Bar and Grill - Playa Negra, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Negra,2898935241958549311,current,current,context,,,context,,,eat|nightlife,eat|nightlife
+"Beach Break Restaurant - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,10536491158093405826,context,current,,,,,,,eat,eat
+Cacao Huasi,restaurant,Puerto Viejo,1242408439996904931,context,current,,context,,context,,,eat,eat
+Café Gustitos,restaurant,Puerto Viejo,3787124603348818142,,current,,,,,,,eat,eat
+Cafe Rico,restaurant,Puerto Viejo,5741623948918730601,,current,,,,context,,,eat,eat
+Cafe Viejo,restaurant,Puerto Viejo,16024433122991526617,,current,,,,,,,eat,eat
+"Casa Rio Restaurant & Bar - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,4666775397025577928,current,current,,,,,,,eat|nightlife,eat|nightlife
+La Casita de Monli,restaurant,Puerto Viejo,17125108004029582358,,current,suggested,,,,,,eat,eat|stay
+Chaman Mercadito,restaurant,Puerto Viejo,2968574655178095232,context,current,,,,,,,eat,eat
+"El Chante de Moncho - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,14914017430472405216,,current,,,,,,,eat,eat
+Chile Rojo,restaurant,Puerto Viejo,2449275981368445735,context,current,,,context,,,,eat,eat
+Chill and Cheese Snackbar,restaurant,Puerto Viejo,15977758811209084867,,current,,,,,,,eat,eat
+Cocomar Comida Caribeña,restaurant,Puerto Viejo,14967171326255452504,,current,,,,,,,eat,eat
+Como en la Gloria,restaurant,Puerto Viejo,1992524522108535061,,current,,,,,,,eat,eat
+De Gustibus Bakery,restaurant,Puerto Viejo,9034432070677152199,,current,,,suggested,,,,eat,eat|shopping
+La Esquina Boruca Pizzeria,restaurant,Puerto Viejo,6285696364079021471,,current,,,,,,,eat,eat
+"Gigi Beach - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,6039954764509566896,context,current,,,,context,,,eat,eat
+Grow Beachfront Restaurant,restaurant,Puerto Viejo,11456769578958313273,context,current,,,,,,,eat,eat
+"GypSea Café - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,3898303194050413799,,current,,,,,,,eat,eat
+Hot Rocks,restaurant,Puerto Viejo,17658715504289400300,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Il Fiore Rosso - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,16900161777165927286,,current,,,,,,,eat,eat
+Island City Wingz N Tingz,restaurant,Puerto Viejo,4325961701237139165,,current,,,,,,,eat,eat
+Joe Snack Point,restaurant,Puerto Viejo,13515529363295537137,,current,,,,,,,eat,eat
+KOKi Beach,restaurant,Puerto Viejo,94575443808973745,context,current,,,,,,,eat,eat
+"La Leyenda de L'Antico Forno en El Establo de Bruce - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,9490671975575104119,,current,,,,,,,eat,eat
+Lidia's Place,restaurant,Puerto Viejo,17217796188356524660,,current,,,,,,,eat,eat
+"Lizzie 1872 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,9175324429067544765,,current,,,,,,,eat,eat
+Madre Tierra,restaurant,Puerto Viejo,18001671055676159782,context,current,,,,,,,eat,eat
+McCloud's Munchies,restaurant,Puerto Viejo,15751918209348819421,,current,,,,,,,eat,eat
+"Mixta Comida y Cócteles - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,14864163845916515215,context,current,,,,,,,eat,eat
+Nanku,restaurant,Puerto Viejo,8398495366730310888,context,current,,,,,,,eat,eat
+"La Nena - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,9689238987282057380,,current,,,,,,,eat,eat
+"Otra Vez - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,14004683085019934949,,current,,,,,,,eat,eat
+"El Pampa Asador - Playa Negra, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Negra,1774712170744498946,,current,,,context,,,,eat,eat
+La Parada Cafeteria,restaurant,Puerto Viejo,17702928579971376532,,current,,,context,,,context,eat,eat
+Paradise Comida Caribeña,restaurant,Puerto Viejo,14475003202983918509,,current,,,,,,,eat,eat
+"Pecora Nera - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,16671506007035121722,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Pizzeria Pulcinella - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,16086292581675314185,,current,context,,,,,,eat,eat
+The Point Smash Burgers,restaurant,Puerto Viejo,4697431774628734956,,current,,,,,,,eat,eat
+Port Vell,restaurant,Puerto Viejo,2996335063703875502,,current,,,,,,,eat,eat
+Puerto Pirata,restaurant,Puerto Viejo,15140435167806983758,context,current,,,,,,,eat,eat
+"Pura Gula Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,4550404849389797392,,current,,,,context,,,eat,eat
+"Que Quilombo - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,16434729007440247088,,current,,,,,,,eat,eat
+"El Refugio Grill - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",restaurant,Punta Uva,17060511891850618747,suggested,current,,,,,,,eat,eat|nightlife
+"Reggae Chill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,15379756172704945472,context,current,,,,,,,eat,eat
+Restaurante Bar Tamara,restaurant,Puerto Viejo,4015454567044906676,current,current,,,,,,,eat|nightlife,eat|nightlife
+Restaurante Nema,restaurant,Puerto Viejo,7919869702409355075,current,current,,,,,,,eat|nightlife,eat|nightlife
+Restaurante Riquísimo,restaurant,Puerto Viejo,9970954456776975626,,current,,,,,,,eat,eat
+"El Rincon Porteño - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,12004515342485209052,context,current,,,,,,,eat,eat
+Roly Caribbean Food,restaurant,Puerto Viejo,16999591583866751916,,current,,,,,,context,eat,eat
+"La Ruedita - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,1919422794756532278,,current,,,,,,,eat,eat
+El Sabor Tico,restaurant,Puerto Viejo,7269480960058336334,,current,,,,,,,eat,eat
+Samurai Fusion,restaurant,Puerto Viejo,8353793036632461139,,current,,,,,,,eat,eat
+"Selvin's Restaurant and Cabinas - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",restaurant,Punta Uva,16977709915965621211,,current,current,,,,,,eat|stay,eat|stay
+El Sendero Beach Club,restaurant,Puerto Viejo,11811768080109070447,suggested,current,,,,,,,eat,eat|nightlife
+SOCA Restaurant,restaurant,Puerto Viejo,12232799133081119632,context,current,,,,,,,eat,eat
+"Soda Playa Chiquita - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,10526256393366740216,,current,,,,,,,eat,eat
+Soda Shekiná,restaurant,Puerto Viejo,11963087103971381770,,current,,,,,,,eat,eat
+"El Sol del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,1216870082731283437,,current,,,,,,,eat,eat
+Soulsurfer,restaurant,Puerto Viejo,5800050942790570331,,current,,,,,,,eat,eat
+"Spicy Coconut - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,9500835097815952703,,current,context,,context,,,,eat,eat
+Stashu's Con Fusion,restaurant,Puerto Viejo,12889418516397438139,context,current,,,,,,,eat,eat
+"Sushi Wave - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,18334594677246073631,context,current,context,,,,,,eat,eat
+Todo Es Posible,restaurant,Puerto Viejo,10857452245923386259,,current,context,,,,,,eat,eat
+"Zaika Bar & Grill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,4581732904956358033,current,current,,,,,,,eat|nightlife,eat|nightlife
+Clan Vibes Club,nightlife,Puerto Viejo,7459202686588347907,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",restaurant,Playa Chiquita,5875257995302760665,suggested,current,context,,,,,,eat,eat|nightlife
+Green Jaguar Irish Gastro Pub,restaurant,Puerto Viejo,14220452903198803816,current,current,,,,,,,eat|nightlife,eat|nightlife
+Johnny's Place,restaurant,Puerto Viejo,3484755376915308939,context,current,,,,,,,eat,eat
+Salsa Brava Beach Bar,restaurant,Puerto Viejo,15009365918254941244,current,current,,context,,context,,,eat|nightlife,eat|nightlife
+7 Ice Creams,restaurant,Puerto Viejo,13904096282139076225,,current,,,context,,,,eat,eat
+"Baya Baya Café - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,16439982460016547770,,current,,,,,,,eat,eat
+Bloom Cafe & Donas,restaurant,Puerto Viejo,3622931891880684663,context,current,,,context,,,,eat,eat
+BOA Coworking,restaurant,Puerto Viejo,9729510481461644038,context,current,,,,,,,eat,eat
+Bread and Chocolate,restaurant,Puerto Viejo,3667327054410327456,,current,,,,,,,eat,eat
+Bread What What,restaurant,Puerto Viejo,15524106146082438383,,current,,,,,,,eat,eat
+"Café del Mar - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,11273521356461778959,,current,,,context,,,,eat,eat
+Calipso,restaurant,Puerto Viejo,8483815143288546232,,current,,,context,,,,eat,eat
+"Caribeans Coffee and Chocolate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",restaurant,Cocles,8711730419987475064,,current,context,context,,,context,,eat,eat
+Como En Mi Casa Art Cafe,restaurant,Puerto Viejo,7237910231811189422,,current,,,,,,,eat,eat
+Gelateria Deelite,restaurant,Puerto Viejo,11995643747907112875,,current,,,context,,,,eat,eat
+Iriria Specialty Coffee Shop,restaurant,Puerto Viejo,17441244772065149373,,current,,,suggested,,,,eat,eat|shopping
+Juice for Life Wolaba,restaurant,Puerto Viejo,543073464450059371,,current,,,,,,,eat,eat
+Lulu's Place,restaurant,Puerto Viejo,3766450624092844612,,current,context,,context,,,,eat,eat
+Ocho Nani,restaurant,Puerto Viejo,16388259169975674586,,current,,,context,,,,eat,eat
+Pan Pay,restaurant,Puerto Viejo,1569445318757953644,,current,,,context,,,,eat,eat
+Pidiendo Cacao,restaurant,Puerto Viejo,4039924463453362188,,current,,,,,,,eat,eat
+Sweet Moments,restaurant,Puerto Viejo,561223372813398582,context,current,,,context,,,,eat,eat
+Aloe Boutique,shopping,Puerto Viejo,6004428022633356945,,,,,current,,,,shopping,shopping
+Bambu Store,shopping,Puerto Viejo,3007132759593543579,,,,,current,,,,shopping,shopping
+Cantik at Home,shopping,Puerto Viejo,14335650359629993448,,,,,current,,,,shopping,shopping
+"Casa Mandala - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",shopping,Playa Chiquita,8021121814343586580,,context,,,current,,,,shopping,shopping
+DiTown Shop,shopping,Puerto Viejo,10112276568951936836,context,context,,context,current,,,,shopping,shopping
+Luna May,shopping,Puerto Viejo,12439179219911805867,,,,,current,,,,shopping,shopping
+Marea Santa,shopping,Puerto Viejo,4573919399282068853,,,,,current,,,,shopping,shopping
+Naturama Store,shopping,Puerto Viejo,1867018045151554137,,,,,current,,,,shopping,shopping
+Passion Fruit Store,shopping,Puerto Viejo,3589518174440329979,,,,,current,,,,shopping,shopping
+Reggaeland,shopping,Puerto Viejo,4399460039894613264,,,,,current,,,,shopping,shopping
+Samoa Boutique,shopping,Puerto Viejo,6498487977379373493,,,,,current,,,,shopping,shopping
+Tienda Caribe,shopping,Puerto Viejo,11658160512809789635,,,,,current,,,,shopping,shopping
+"Almacen San Francisco - Playa Negra, Puerto Viejo, Limón, Costa Rica",shopping,Playa Negra,9340938745226350575,,,,,current,,,,shopping,shopping
+"Colono Hone Creek - Hone Creek, Limón, Costa Rica",shopping,Hone Creek,16829552897593145903,,,,,current,,,,shopping,shopping
+"FerreCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",shopping,Cocles,1686533995954964702,,,,,current,,,,shopping,shopping
+"Cervecera Tierra y Libertad - Hone Creek, Limón, Costa Rica",shopping,Hone Creek,18282199755586445336,context,,,context,current,,,,shopping,shopping
+Red Monkey Liquor Store,shopping,Puerto Viejo,1270489682697087471,,,,,current,,,,shopping,shopping
+Electro Office,shopping,Puerto Viejo,13937010489015814564,,,,,current,context,,,shopping,shopping
+"Flor de China - Playa Negra, Puerto Viejo, Limón, Costa Rica",shopping,Playa Negra,5802142291987797865,,current,,,current,,,,eat|shopping,eat|shopping
+Librería Caribe,shopping,Puerto Viejo,9017085322259588567,,current,,context,current,context,,,eat|shopping,eat|shopping
+"Farmacia Don Manuel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",shopping,Cocles,6985913817068423993,,,,,current,current,,,services|shopping,services|shopping
+La Pitaya,shopping,Puerto Viejo,1577213594063101362,,,,,current,,,,shopping,shopping
+Tienda del Mar,shopping,Puerto Viejo,6465038343017776200,,,,,current,,,,shopping,shopping
+Wanderlust,shopping,Puerto Viejo,7346571536131451543,,,,,current,,,,shopping,shopping
+Puerto Viejo Farmers and Artisans Market,shopping,Puerto Viejo,3462379184645189350,,,,,current,,,,shopping,shopping
+Bio Mercado Puerto Viejo,shopping,Puerto Viejo,2440760117286550342,,,,,current,,,,shopping,shopping
+Centro de Carnes Canada,shopping,Puerto Viejo,17335728675883934034,,,,,current,,,,shopping,shopping
+El Diamante,shopping,Puerto Viejo,18223909293549188491,,,,,current,,,,shopping,shopping
+"El Duende Gourmet - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",shopping,Playa Chiquita,12358093494451922122,,,,,current,context,,,shopping,shopping
+Mariscos Mopri,shopping,Puerto Viejo,15490944357828439393,,context,,,current,context,,,shopping,shopping
+Mercadito Puerto Viejo,shopping,Puerto Viejo,11042023153703264759,,,,,current,,,,shopping,shopping
+Namú Ecotienda Orgánica,shopping,Puerto Viejo,6016659839329473468,,,,,current,,,,shopping,shopping
+"Super Banana Gourmet Market - Playa Negra, Puerto Viejo, Limón, Costa Rica",shopping,Playa Negra,17944942059124723912,,context,,,current,,,,shopping,shopping
+"Super Negro Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",shopping,Cocles,11103674503107555780,,,,,current,,,,shopping,shopping
+"Super Negro Hone Creek - Hone Creek, Limón, Costa Rica",shopping,Hone Creek,17530375863814220827,,,,,current,,,,shopping,shopping
+Value Mart Puerto Viejo,shopping,Puerto Viejo,722254835360302817,,,,,current,,,,shopping,shopping
+Automotriz Danny,services,Puerto Viejo,8668304854687518026,,,,,,current,,,services,services
+"Ecolavacar del Caribe - Hone Creek, Limón, Costa Rica",services,Hone Creek,14899315700978366356,,,,,,current,,,services,services
+Casa de la Cultura,services,Puerto Viejo,8404229099084152409,,,,context,current,current,,,services|shopping,services|shopping
+"La Casa del Coral - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,6459045736382662095,,,,,,current,,,services,services
+"Chamber of Tourism and Commerce Caribe Sur - Playa Negra, Puerto Viejo, Limón, Costa Rica",services,Playa Negra,17588446650226285599,,,,,,current,,,services,services
+"El Puente-The Bridge - Playa Negra, Puerto Viejo, Limón, Costa Rica",services,Playa Negra,17585168533554979538,,,,,,current,,,services,services
+Caribe Dental,services,Puerto Viejo,6745087497030231094,,,,,,current,current,,services|wellness,services|wellness
+Centro Médico Aruma,services,Puerto Viejo,331886285113007367,,,,,,current,,,services,services
+Clínica de Especialidades Médicas San Gabriel,services,Puerto Viejo,13864196564288057579,,,,,context,current,current,,services|wellness,services|wellness
+Clínica Dental Yani,services,Puerto Viejo,15014437406187691360,,,,,,current,current,,services|wellness,services|wellness
+"Hone Creek Clinic - Hone Creek, Limón, Costa Rica",services,Hone Creek,8437643615710257437,,,,,,current,current,,services|wellness,services|wellness
+Laboratorio Bioclinic,services,Puerto Viejo,2511122372422782678,,,,,current,current,,,services|shopping,services|shopping
+"Laboratorio Clínico Leysa - Playa Negra, Puerto Viejo, Limón, Costa Rica",services,Playa Negra,9649342109201810481,,,,,,current,,,services,services
+Lavandería La Estrella,services,Puerto Viejo,1889608973525699671,,,,,,current,,,services,services
+Washboard,services,Puerto Viejo,8840035579056537434,context,context,,,,current,,,services,services
+"We Do Laundry - Hone Creek, Limón, Costa Rica",services,Hone Creek,7766901451570548014,,,,,,current,,,services,services
+Aloha Skincare and Wellness,services,Puerto Viejo,565813449899308633,,,,,,current,suggested,,services,services|wellness
+Ambar Tattoo Space,services,Puerto Viejo,3494255912740671382,,,,,,current,suggested,,services,services|wellness
+Caribe Love Tattoo,services,Puerto Viejo,16552705196228924381,,,,,,current,suggested,,services,services|wellness
+Cosmos Puerto Viejo Tattoo,services,Puerto Viejo,12833664519499680091,,,,,,current,current,,services|wellness,services|wellness
+Earth to Skin,services,Puerto Viejo,6047083801083296069,,,,context,,current,context,,services,services
+"Indulgence Spa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,12067959796908866585,,,context,,,current,current,,services|wellness,services|wellness
+"Kona Wellness Shala - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,11573433909437604022,,,,context,,current,suggested,,services,services|wellness
+Mendez Barber Shop,services,Puerto Viejo,5529719550027810747,,,,,suggested,current,current,,services|wellness,services|shopping|wellness
+"Octo Salon - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",services,Playa Chiquita,18191801259759644864,,,,,,current,current,,services|wellness,services|wellness
+Old Harbour Gym,services,Puerto Viejo,10525434517969119413,,,,,context,current,current,,services|wellness,services|wellness
+Pure Jungle Spa,services,Puerto Viejo,13111271524723360984,,,,,,current,current,,services|wellness,services|wellness
+"Pure Love Liberation - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,15543805518497480345,,,,context,,current,context,,services,services
+"Surya Spa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,1958769090411140405,,,context,,,current,current,,services|wellness,services|wellness
+Svastha Yoga & Ayurveda Café,services,Puerto Viejo,8317123943686846949,,current,context,current,,current,current,,eat|services|things-to-do|wellness,eat|services|things-to-do|wellness
+La Tinta Tropical,services,Puerto Viejo,3486593641699246622,,,,,,current,,,services,services
+Vol'Air Dance Studio,services,Puerto Viejo,12543675730712426029,suggested,,,suggested,,current,context,,services,nightlife|services|things-to-do
+Puerto Viejo Dogs,services,Puerto Viejo,11794143091262296476,,,,,,current,,,services,services
+Central de Mascotas,services,Puerto Viejo,7240010806083907203,,,,,,current,,,services,services
+Clínica Veterinaria Arroyo y Solano,services,Puerto Viejo,15400950969629438728,,,,,,current,,,services,services
+"Clinica Veterinaria Green Vet - Hone Creek, Limón, Costa Rica",services,Hone Creek,13987590870242443651,,,,,,current,,,services,services
+Ciclo Tuanis,services,Puerto Viejo,13918274438659118327,,,,context,,current,,,services,services
+Puerto Viejo Bike Rentals,services,Puerto Viejo,8630472141589888435,,,,context,,current,,,services,services
+"Pura Ride by Ciclo Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,5955362533549979086,,,,context,,current,,,services,services
+Cerrajería Paris,services,Puerto Viejo,6040828318272438452,,,,,,current,,,services,services
+PC Caribe Soluciones Informáticas,services,Puerto Viejo,15750093614330541423,,,,,,current,,,services,services
+"Centro Educativo Playa Chiquita Punta Uva - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",services,Playa Chiquita,15763192850089670329,,,,context,,current,,,services,services
+"Proyecto Educativo Semillas de Paz - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",services,Playa Chiquita,938478883870584374,,,,context,,current,,,services,services
+Eñe Spanish Teachers,services,Puerto Viejo,8716363808718267189,,,,context,,current,,,services,services
+Spanish by the Sea,services,Puerto Viejo,439116677363621136,,,context,context,,current,,,services,services
+Spanish School Pura Vida,services,Puerto Viejo,15049167550943815650,,,context,suggested,,current,,,services,services|things-to-do
+"Veronica's Place Cooking Class - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,14733147586219926929,,,,context,,current,,,services,services
+"Correos de CR - Playa Negra, Puerto Viejo, Limón, Costa Rica",services,Playa Negra,15619291854434631434,,,,,,current,,,services,services
+Elena De Luca Studio,services,Puerto Viejo,4794006171803715674,,,,,,current,,,services,services
+Puerto Viejo Multicentro,services,Puerto Viejo,11540051154473046732,,,context,,,current,,,services,services
+Sea Breeze Events,services,Puerto Viejo,8923069820182897353,,,,,,current,,,services,services
+"Black Shack Surf School - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,11736483113495327139,,,context,suggested,,current,,,services,services|things-to-do
+"Surf Meds Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,3144025592942935764,,,,suggested,,current,,,services,services|things-to-do
+Surf the Jungle Surf School Adventures,services,Puerto Viejo,14229054643032701360,,,,suggested,,current,,,services,services|things-to-do
+"Tico Surf and Skate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",services,Cocles,1318668082841675164,,,,suggested,context,current,,,services,services|things-to-do
+"Cacao Trails Bole - Hone Creek, Limón, Costa Rica",tour_company,Hone Creek,904701918920547958,,,,current,,,,,things-to-do,things-to-do
+"Caribe Horse Riding Club - Playa Cocles, Puerto Viejo, Limón, Costa Rica",tour_company,Cocles,13961717934939865032,,,,current,,context,,,things-to-do,things-to-do
+"Ceibo Adventure - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Chiquita,,,,,current,,,,,things-to-do,things-to-do
+Exploradores Outdoors,tour_company,Puerto Viejo,16305114679791493305,,,,current,,,,,things-to-do,things-to-do
+"Finca La Isla Botanical Garden - Playa Negra, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Negra,7972003479335139796,,,,current,,,,,things-to-do,things-to-do
+"Finca Tierra - Playa Cocles, Puerto Viejo, Limón, Costa Rica",tour_company,Cocles,15105583459127739828,,,context,current,,,,,things-to-do,things-to-do
+"Green Water SUP Tours - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",tour_company,Punta Uva,14331531993444532415,,,,current,,context,context,,things-to-do,things-to-do
+Hidden Garden Ethnobotanical Sanctuary,tour_company,Puerto Viejo,18254971901429379098,,,,current,,,context,,things-to-do,things-to-do
+"Jaguar Rescue Center - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Chiquita,9435208628058025334,,,,current,,,,,things-to-do,things-to-do
+"Kinkaju Tours - Hone Creek, Limón, Costa Rica",tour_company,Hone Creek,3404977970967347049,,,,current,,,,,things-to-do,things-to-do
+"Punta Uva Dive Center - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",tour_company,Punta Uva,1382996174802571516,,context,,current,,,,,things-to-do,things-to-do
+"Ride the Rainforest - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Chiquita,12629937482695022966,,,,current,,,,,things-to-do,things-to-do
+"Talamanca Chocolate - Playa Negra, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Negra,,context,,,current,,,,,things-to-do,things-to-do
+Adobe EasyCar Rent a Car,transport,Puerto Viejo,15441903368463150081,,,,,,,,current,transport,transport
+Alamo Enterprise Car Rental,transport,Puerto Viejo,7608545223870319936,,,,,,,,current,transport,transport
+Caribe Shuttle,transport,Puerto Viejo,3254890975301091925,,,,,,context,,current,transport,transport
+Interbus office,tour_company,Puerto Viejo,2534048177187130620,,,,current,,,,context,things-to-do,things-to-do
+Puerto Viejo Golf Carts,tour_company,Puerto Viejo,4544300389782328912,context,context,,current,,,,suggested,things-to-do,things-to-do|transport
+ATEC,tour_company,Puerto Viejo,11890875733593568965,,,,current,context,,,,things-to-do,things-to-do
+Best Travel Puerto Viejo,tour_company,Puerto Viejo,15210314141344220556,,,context,current,,,,context,things-to-do,things-to-do
+"Caribe Fun Tours - Playa Negra, Puerto Viejo, Limón, Costa Rica",tour_company,Playa Negra,13054634241932126885,,,context,current,,,,,things-to-do,things-to-do
+Gecko Trail Costa Rica,tour_company,Puerto Viejo,831507804855121720,,,,current,,,,context,things-to-do,things-to-do
+Caribe Sur Real Estate,real_estate,Puerto Viejo,14937553679269800467,,,,,,current,,,services,services
+"Century 21 Caribe - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",real_estate,Playa Chiquita,4080809972239951323,,,,,,current,,,services,services
+Coldwell Banker Caribe,real_estate,Puerto Viejo,49080311362860494,,,,,,current,,,services,services
+RISE Puerto Viejo,real_estate,Puerto Viejo,10602615161199468109,,,,,,current,,,services,services
+"Green Property Management - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",real_estate,Playa Chiquita,8364214958693781126,,,,,,current,,,services,services
+Farmacia Caribe,shopping,Puerto Viejo,11695310561034687807,,,,,current,current,,,services|shopping,services|shopping
+Puerto Viejo Pharmacy,shopping,Puerto Viejo,3604431449933497569,,,,,current,current,,,services|shopping,services|shopping
+Mega Super,shopping,Puerto Viejo,9205429348892041088,,,,,current,,,,shopping,shopping
+Old Harbour Supermarket,shopping,Puerto Viejo,15754056459834286605,,,,,current,,,,shopping,shopping
+"Pali Supermarket - Hone Creek, Limón, Costa Rica",shopping,Hone Creek,16057147527426616372,,,,,current,,,,shopping,shopping
+"Super Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",shopping,Cocles,6712847186866435431,,,,,current,,,,shopping,shopping
+"Super Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",shopping,Punta Uva,2289992265205374495,,,,,current,,,,shopping,shopping
+"Super SK - Playa Negra, Puerto Viejo, Limón, Costa Rica",shopping,Playa Negra,4633778847403409813,,,,,current,,,,shopping,shopping
+"Servicentro Hone Creek - Hone Creek, Limón, Costa Rica",services,Hone Creek,11028453782334017200,,,,,,current,,,services,services
+Catholic Church,services,Puerto Viejo,4409251360524216865,,,,,,current,,,services,services
+"Puerto Viejo Police Station - Playa Negra, Puerto Viejo, Limón, Costa Rica",services,Playa Negra,9360864736049190713,,,,,,current,,,services,services
+Puerto Viejo Police Town Station,services,Puerto Viejo,2262025233079404899,,,,,,current,,,services,services
+BAC Credomatic ATM,services,Puerto Viejo,17219624679350508173,,,,,context,current,,,services,services
+Banco de Costa Rica Puerto Viejo,services,Puerto Viejo,6083793639075237056,,,,,,current,,,services,services
+Banco Nacional,services,Puerto Viejo,1353920052832893881,,,,,,current,,,services,services
+Main Bus Stop,tour_company,Puerto Viejo,7826458106781310635,,,,current,,,,suggested,things-to-do,things-to-do|transport
+Watuza,restaurant,Puerto Viejo,5087368109469436,,current,,,,,,,eat,eat
+El Faro 13,hostel,Puerto Viejo,3318057307050382237,,,current,,,,,,stay,stay
+Hotel Los Sueños,hostel,Puerto Viejo,6172303307990233309,,,current,,,,,,stay,stay
+Villa Bukë,hostel,Playa Negra,7028859976887285327,,,current,,,,,,stay,stay
+Beach Hut,hotel,Puerto Viejo,16042642729582706568,,,current,,,,,,stay,stay
+Mi Casa Hostel y Hotel El Tesoro,hotel,Cocles,13125604731849220414,,,current,,,,,,stay,stay
+Cabinas Orange Green,hotel,Puerto Viejo,12957286642440581909,,,current,,,,,,stay,stay
+Cabinas Wray,hotel,Puerto Viejo,13263856020028543184,,,current,,,,,,stay,stay
+Casa Badawi,hotel,Puerto Viejo,317666818352039671,,,current,,,,,,stay,stay
+Casa Trinidad,hotel,Puerto Viejo,15386546290359540673,,,current,,,,,,stay,stay
+Casa Tuareg,hotel,Puerto Viejo,6991145958394588637,,,current,,,,,,stay,stay
+Harmony: Mini Casa Rodante by Aptos Casa Caribe,hotel,Puerto Viejo,564116512944240361,,,current,,,,,,stay,stay
+Hotel Posada Nena,hotel,Puerto Viejo,,,,current,,,,,,stay,stay
+Lapalapa Beach Front Hotel,hotel,Cocles,10103267938150795136,,,current,,,,,,stay,stay
+Las Mariposas,hotel,Playa Chiquita,10805419731316352392,,,current,,,,,,stay,stay
+Paula's and Daniel's Homestay,hotel,Puerto Viejo,,,,current,,,,,,stay,stay
+Totem Hotel Resort & Restaurant,hotel,Cocles,1478870326467382969,,suggested,current,,,,,,stay,eat|stay
+Vista Verde,hotel,Puerto Viejo,5511726850680415410,,,current,,,,,,stay,stay
+Restaurante Cariblue,restaurant,Cocles,11076891351201890493,,current,,,,,,,eat,eat
+Río Negro,restaurant,Cocles,9366602319080449218,,current,,,,,,,eat,eat
+Jungle Air Parapente,shopping,Puerto Viejo,13154832338927502648,,,,,current,,,,shopping,shopping
+Panadería Francés,shopping,Cocles,,,current,,,current,,,,eat|shopping,eat|shopping
+Hotel Villas y Glamping M&A,vacation_rental,Cocles,4688760639939900664,,,current,,,,,,stay,stay
+Yerbas Concepto Culinario,restaurant,Puerto Viejo,4171499263891603584,,current,,,,,,,eat,eat
+Abba Home,vacation_rental,Puerto Viejo,4461576710289322066,,,current,,,,,,stay,stay
+ALMA Masajes,wellness,Playa Negra,1952261552637324801,,,,,,context,current,,wellness,wellness
+Alojamiento kon-tiky,vacation_rental,Playa Negra,2436293331676785956,,,current,,,,,,stay,stay
+Api-Rescate,shopping,Cocles,12888475778927218100,,,,,current,,,,shopping,shopping
+Ariel Apartment's,vacation_rental,Playa Negra,13949908967524151461,,,current,,,,,,stay,stay
+Arrecife El Chino,tour_company,Puerto Viejo,17999916450116929174,,,,current,,,,,things-to-do,things-to-do
+Beach Trail,tour_company,Playa Negra,1672049247961347392,,,,current,,,,,things-to-do,things-to-do
+Beauty Ritual Spa,wellness,Cocles,5126079905553228488,,,,,,current,current,,services|wellness,services|wellness
+BERACA,restaurant,Puerto Viejo,2501817113382200716,,current,,,,,,,eat,eat
+Blessed Hands Massage Therapy,wellness,Playa Negra,11342442517607475672,,,,,,context,current,,wellness,wellness
+Blue Dreams Hotel,hotel,Playa Negra,7864989313907649296,context,,current,,,,,,stay,stay
+Buddy's Sloth Crossing,tour_company,Puerto Viejo,7100005996183210934,,,,current,,,,,things-to-do,things-to-do
+Bugambilia Inn,hotel,Playa Negra,17729819013080646669,,,current,,,,,,stay,stay
+Cabañas KiaMiMi,hotel,Puerto Viejo,1705549831231309538,,,current,,,,,,stay,stay
+Cabina trepazul,vacation_rental,Playa Negra,11625884884438770753,,,current,,,,,,stay,stay
+Cabinas Bambu,hotel,Playa Negra,17407111603426783648,,,current,,,,,,stay,stay
+Cabinas Yemanya,hotel,Playa Negra,12696769290945837673,,,current,,,,,,stay,stay
+Café Jaguar & Art Gallery,restaurant,Playa Chiquita,1099770184487127337,,current,,,,,,,eat,eat
+Caribbean Blue Morpho Casitas,vacation_rental,Playa Negra,15075381955885778012,,,current,,,,,,stay,stay
+Caribbean Hill Villas,hotel,Cocles,10446838691217537192,,,current,,,,,,stay,stay
+CaribeZen,wellness,Playa Negra,16346096411354140739,,,,,,context,current,,wellness,wellness
+Casa Alegra,wellness,Playa Negra,704176135278923927,,,,,,context,current,,wellness,wellness
+Casa Amma,vacation_rental,Playa Negra,7547821247784059764,,,current,,,,,,stay,stay
+Casa Amor,vacation_rental,Playa Negra,2049439108129397134,,,current,,,,,,stay,stay
+Casa Antorcha,vacation_rental,Cocles,3140302717225770813,,,current,,,,,,stay,stay
+Casa Canopy,vacation_rental,Playa Chiquita,9228433576839534036,,,current,suggested,,,,,stay,stay|things-to-do
+Casa Chilamate Day House,vacation_rental,Playa Negra,9842399411646961220,,,current,,,,,,stay,stay
+Casa del Caribe B&B,hotel,Playa Negra,15109859868766777239,,,current,,,,,,stay,stay
+Casa Lily,vacation_rental,Playa Chiquita,316298798085648093,,,current,,,,,,stay,stay
+Casa Miluca,vacation_rental,Playa Negra,,,,current,,,,,,stay,stay
+Casa Miluco,vacation_rental,Playa Negra,1887854985612918255,,,current,,,,,,stay,stay
+Casa Olingo,vacation_rental,Cocles,15130039431868872191,,,current,,,,,,stay,stay
+Casa Pallaita,vacation_rental,Playa Negra,12261963239237230570,,,current,,,,,,stay,stay
+Casa Palliata,vacation_rental,Playa Negra,3067085546718993771,,,current,,,,,,stay,stay
+Casa Shanti,vacation_rental,Cocles,1532267197232448530,,,current,,,,,,stay,stay
+casa tia zeidy,vacation_rental,Playa Negra,1467139456314837512,,,current,,,,,,stay,stay
+Casa vacacional happy day beach house,vacation_rental,Puerto Viejo,11284617851322192684,,,current,,,,,,stay,stay
+Casa Vosi,vacation_rental,Playa Negra,14746104939384196054,,,current,,,,,,stay,stay
+Casas Sloth & Butterfly,vacation_rental,Playa Negra,6852082090485791353,,,current,,,,,,stay,stay
+Casita Tucan,hotel,Cocles,8515345812121137688,,,current,,,,,,stay,stay
+Casitas Batsú,vacation_rental,Cocles,1201615432871305998,,,current,,,,,,stay,stay
+Casitas del Bosque,hotel,Puerto Viejo,17991662797152698167,,,current,,,,,,stay,stay
+CHOCORART,shopping,Puerto Viejo,14244983452023827203,,,,,current,,,,shopping,shopping
+Cirrus Sky Paragliding CR,tour_company,Playa Negra,906367207779863842,,,,current,,,,,things-to-do,things-to-do
+Cubali Beach,tour_company,Playa Negra,11408791647006779441,,,,current,,,,,things-to-do,things-to-do
+Doctah Herbalist,restaurant,Cocles,7437765293747491582,,current,,,,,,,eat,eat
+Explora Caribe CR,restaurant,Playa Negra,3648769552104707896,,current,,,,,,,eat,eat
+Finca Darai,restaurant,Cocles,8690304503274970919,,current,,,,,,,eat,eat
+FISIOTERAPIA Agustin cuya,restaurant,Cocles,18425416724501171270,,current,,,,,suggested,,eat,eat|wellness
+Fruit Houses,hotel,Cocles,5112397613028029900,,,current,,,,,,stay,stay
+Global Stones finca conservación,restaurant,Cocles,7062771685360018807,,current,,,,,,,eat,eat
+Hawaiian Massage,wellness,Playa Negra,16307257612295998249,,,,,,context,current,,wellness,wellness
+Hidden Viewpoint,restaurant,Playa Negra,2607119743059473489,,current,,,,,,,eat,eat
+Hospedaje Dos Sueños,hotel,Puerto Viejo,5066811314987255340,,,current,,,,,,stay,stay
+Hotel Rustika Lodge,hotel,Puerto Viejo,17548818634857466246,,,current,,,,,,stay,stay
+Iglesia Cristiana Casa De Restauracion,restaurant,Cocles,2747514405733351427,,current,,,,,,,eat,eat
+Izzy Rides CR,restaurant,Cocles,9895085162643105852,,current,,,,,,,eat,eat
+Jungalow,restaurant,Puerto Viejo,3799140751205186004,,current,,,,,,,eat,eat
+Jungla del Caribeño,restaurant,Playa Negra,8356543483034618055,,current,,,,,,,eat,eat
+Kä Luxury Caribbean,restaurant,Playa Negra,7538221567368513085,,current,,,,,,,eat,eat
+Ka Namu,restaurant,Playa Negra,4776029185661119925,context,current,,,,,,,eat,eat
+Katuk,restaurant,Playa Negra,5933448960817825235,,current,,,,,,,eat,eat
+La Caracola,restaurant,Playa Negra,8155523474538504664,,current,,,,,,,eat,eat
+LA CHASCONA,restaurant,Playa Negra,7444463108124902177,,current,,,,,,,eat,eat
+La loma de burrito,restaurant,Playa Chiquita,11481951678172081848,,current,,,,,,,eat,eat
+La Paloma Studio en Coclès con cocina a,restaurant,Playa Negra,3738318817422763383,,current,,,,,,,eat,eat
+Lapaluna,restaurant,Puerto Viejo,748324862255207133,,current,,,,,,,eat,eat
+Mishka Lodge,hotel,Playa Negra,13735728552511903272,,,current,,,,,,stay,stay
+Nana's Place Beach House,vacation_rental,Playa Chiquita,14542003755869509189,,,current,,,,,,stay,stay
+NAO,restaurant,Playa Negra,17897302561811397380,,current,,,,,,,eat,eat
+Paraiso Bohemio,restaurant,Puerto Viejo,2630412520630926072,,current,,,,,,,eat,eat
+Pipa's Beach,restaurant,Puerto Viejo,11489327612040758816,,current,,,,,,,eat,eat
+Playa Estiven,restaurant,Playa Negra,7002874623913647725,,current,,,,,,,eat,eat
+Pure Life Sanctuary,restaurant,Cocles,8563195775533048594,,current,,,,,,,eat,eat
+Quinta Guarumo,restaurant,Playa Negra,1452058410293289943,,current,,,,,,,eat,eat
+RETIRO VERDE,restaurant,Cocles,18016775300084560342,,current,,,,,,,eat,eat
+Rico Tico Tours,restaurant,Puerto Viejo,1177355124524067687,,current,,suggested,,,,,eat,eat|things-to-do
+Rio Home,restaurant,Playa Negra,11653253983798852315,,current,,,,,,,eat,eat
+River Box Cocles,restaurant,Playa Negra,9113640318365374467,,current,,,,,,,eat,eat
+Shenanigans–Eat Drink Dink Drive,restaurant,Cocles,15407971963095007347,,current,,,,,,,eat,eat
+Shenanigans–Fat Drink Dink Drive,restaurant,Playa Negra,1386465364860297778,,current,,,,,,,eat,eat
+Siren Sanctuary,restaurant,Cocles,4788751592765742715,,current,,,,,,,eat,eat
+Sloth Massage,wellness,Puerto Viejo,7521506711555171699,,,,,,context,current,,wellness,wellness
+Soda Títeres,restaurant,Cocles,15397983693551523879,,current,,,,,,,eat,eat
+Spiral,restaurant,Puerto Viejo,15223674072358364809,,current,,,,,,,eat,eat
+Talamanca Organica Cacao & Fine Chocolate,restaurant,Cocles,2447883937820760770,,current,,,,,,,eat,eat
+Talamanca Viewpoint,restaurant,Puerto Viejo,6904706285400062631,,current,,,,,,,eat,eat
+Tattoo Studio 33,restaurant,Puerto Viejo,7714062364033594701,,current,,,,suggested,suggested,,eat,eat|services|wellness
+The Amazing Treehouse and Nature,restaurant,Playa Negra,11842476449595104705,,current,suggested,,,,,,eat,eat|stay
+The Reillder Castillo Project,restaurant,Puerto Viejo,10205893883698739713,,current,,,,,,,eat,eat
+TreeTop Mansion,restaurant,Playa Negra,11461817048321802805,,current,,,,,,,eat,eat
+TRIBU functional training,services,Puerto Viejo,4586270756459627380,,,,context,,current,suggested,,services,services|wellness
+Jungalow Tropical Caribeño,restaurant,Cocles,16949465081622523964,,current,,,,,,,eat,eat
+"Tropical Getaway ""Casa de Amor",hotel,Cocles,17236719394809389330,,,current,,,,,,stay,stay
+"Tropical Getaway ""Dream House""",restaurant,Playa Negra,17546489389337086267,,current,,,,,,,eat,eat
+Tubolwak Lodge y Garden,hotel,Cocles,3600435867559147140,,,current,,,,,,stay,stay
+Villa Cerise,hotel,Playa Negra,12266159891992406171,,,current,,,,,,stay,stay
+Villa Kandulu,hotel,Playa Negra,13333726585970395954,,,current,,,,,,stay,stay
+Villa Khalú,hotel,Puerto Viejo,6245678151143547198,,,current,,,,,,stay,stay
+Villa Miagoa,hotel,Cocles,8175642157850375308,,,current,,,,,,stay,stay
+Villa Selva Luna,hotel,Cocles,2386454846369082110,,,current,,,,,,stay,stay
+Villa Tropical,hotel,Playa Negra,12295173525332496963,,,current,,,,,,stay,stay
+Villas caranda,hotel,Puerto Viejo,3182923119551018499,,,current,,,,,,stay,stay
+Villas Moonlight,hotel,Playa Negra,9839322459254555272,,,current,,,,,,stay,stay
+Vindas,restaurant,Playa Negra,1110138628950468520,,current,,,,,,,eat,eat
+"3 Bamboo Ecolodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,4522237674630690631,,,current,,,,,,stay,stay
+"Aldina's Guest House - Cahuita, Limón, Costa Rica",hotel,Cahuita,6863214499245926667,,,current,,,,,,stay,stay
+"Almonds and Corals Boutique Hotel - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,11188266454666848277,,,current,,,,,,stay,stay
+"Ara Manzanillo - Manzanillo, Limón, Costa Rica",tour_company,Manzanillo,10605010078218467955,,,,current,,,,,things-to-do,things-to-do
+"Aroma Coffee Bar and Breakfast - Cahuita, Limón, Costa Rica",restaurant,Cahuita,730773173410850082,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Asante Bistro & Café - Cahuita, Limón, Costa Rica",restaurant,Cahuita,16025283821069438745,suggested,current,,,,,,,eat,eat|nightlife
+"Atlantida Lodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,14413272263548243777,,,current,,,,,,stay,stay
+"Babilonia - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,18308537531085424661,,,current,,,,,,stay,stay
+"Banco de Costa Rica Cahuita - Cahuita, Limón, Costa Rica",services,Cahuita,17086188142975557626,,,,,,current,,,services,services
+"Bendita Comida - Bribri, Limón, Costa Rica",restaurant,Bribri,673532812773709021,,current,,,,,,,eat,eat
+"Boca Chica Bar Restaurante y Piscina - Cahuita, Limón, Costa Rica",restaurant,Cahuita,,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Bohemian Monkey - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,6134891682775153888,,,current,,,,,,stay,stay
+"Bomberos Bribri - Bribri, Limón, Costa Rica",services,Bribri,1663157003072952926,,,,,,current,,,services,services
+"Brigitte's Ranch - Cahuita, Limón, Costa Rica",hotel,Cahuita,8600435400283546373,,,current,,,,,,stay,stay
+"Bungalow Malú Lodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,13905258454095862905,,,current,,,,,,stay,stay
+"Bungalows Ache - Cahuita, Limón, Costa Rica",hotel,Cahuita,15520883439481237827,,,current,,,,,,stay,stay
+"Bungalows Sloth - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,2126825620796412684,,,current,,,,,,stay,stay
+"Cabinas Algebra - Cahuita, Limón, Costa Rica",hotel,Cahuita,17217032978777865192,,,current,,,,,,stay,stay
+"Cabinas Arrecife - Cahuita, Limón, Costa Rica",hotel,Cahuita,3940028396006347032,,,current,,,,,,stay,stay
+"Cabinas Caribe Luna - Cahuita, Limón, Costa Rica",hotel,Cahuita,12615318204214004945,,,current,,,,,,stay,stay
+"Cabinas El Imperio - Sixaola, Limón, Costa Rica",hotel,Sixaola,11746108272448529029,,,current,,,,,,stay,stay
+"Cabinas El Mango - Bribri, Limón, Costa Rica",hotel,Bribri,16765429282184001872,,,current,,,,,,stay,stay
+"Cabinas El Rinconcito - Gandoca, Limón, Costa Rica",hotel,Gandoca,15910047007271410898,,,current,,,,,,stay,stay
+"Cabinas Iguana Cahuita - Cahuita, Limón, Costa Rica",hotel,Cahuita,994897304144940609,,,current,,,,,,stay,stay
+"Cabinas Jenny - Cahuita, Limón, Costa Rica",hotel,Cahuita,17682239826356444978,,,current,,,,,,stay,stay
+"Cabinas Nirvana Ecolodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,16881576397853312303,,,current,,,,,,stay,stay
+"Cabinas Palmer Makanda - Cahuita, Limón, Costa Rica",hotel,Cahuita,12496997589843324576,,,current,,,,,,stay,stay
+"Cabinas Smith - Cahuita, Limón, Costa Rica",hotel,Cahuita,7820493530245767869,,,current,,,,,,stay,stay
+"Cabinas Surf Side - Cahuita, Limón, Costa Rica",hotel,Cahuita,11022406936380395131,,,current,suggested,,,,,stay,stay|things-to-do
+"Cabinas Tito - Cahuita, Limón, Costa Rica",hotel,Cahuita,12755760628427846358,,,current,,,,,,stay,stay
+"Cabinas YaMann - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,17823151304931402344,,,current,,,,,,stay,stay
+"Cahuita Bus Station - Cahuita, Limón, Costa Rica",tour_company,Cahuita,17472323950177417062,,,,current,,,,suggested,things-to-do,things-to-do|transport
+"Cahuita Inn - Cahuita, Limón, Costa Rica",hotel,Cahuita,11302666839265256136,,,current,,,,,,stay,stay
+"Cahuita Lodge - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,11730759668778876911,,,current,,,,,,stay,stay
+"Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",hotel,Cahuita,400977826922741375,,,current,suggested,,,,,stay,stay|things-to-do
+"Canto del Mar Guest House - Gandoca, Limón, Costa Rica",hotel,Gandoca,11739581266027333241,,,current,,,,,,stay,stay
+"Caribbean Blue House - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,16920166315638827115,,,current,,,,,,stay,stay
+"Caribbean Coconut - Cahuita, Limón, Costa Rica",hotel,Cahuita,12085822181071781545,,,current,,,,,,stay,stay
+"Casa Congo Cahuita - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,10854532050659240693,,,current,,,,,,stay,stay
+"Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",hotel,Cahuita,3377722209033140563,,,current,,suggested,,suggested,,stay,shopping|stay|wellness
+"Casa Lucas - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,17824185107689877044,,,current,,,,,,stay,stay
+"Casa Magdalena - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,8414754958644261472,,,current,,,,,,stay,stay
+"Casa Mambo Cahuita - Cahuita, Limón, Costa Rica",hotel,Cahuita,13303503940894650235,,,current,,,,,,stay,stay
+"Casa Marcellino - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,5829604901849171734,,,current,,,,,,stay,stay
+"Casa Namaitamí - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,8825947300590124587,,,current,,,,,,stay,stay
+"Casa Verde Cahuita - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,15719999190465539169,,,current,,,,,,stay,stay
+"Casas Del Mar - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,12705395086028222701,,,current,,,,,,stay,stay
+"Centro Educativo Complementaria Cahuita - Cahuita, Limón, Costa Rica",services,Cahuita,16211630521756150882,,,,,,current,,,services,services
+"Chao's Paradise - Cahuita, Limón, Costa Rica",restaurant,Cahuita,15813957405519010877,context,current,,,,,,,eat,eat
+"Chile Verde - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,6304189307372846359,,,current,,,,,,stay,stay
+"Ciudad Perdida Ecolodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,8861421744260324499,,,current,,,,,,stay,stay
+"Clinica Dental OCI Cahuita - Cahuita, Limón, Costa Rica",services,Cahuita,8625510128460244741,,,,,,current,current,,services|wellness,services|wellness
+"Clínica de Medicina Integral Bribri - Bribri, Limón, Costa Rica",services,Bribri,15931105907700979601,,,,,,current,current,,services|wellness,services|wellness
+"Colibri Lodge Gandoca - Gandoca, Limón, Costa Rica",hotel,Gandoca,528214679408125557,,,current,,,,,,stay,stay
+"Colores Restaurant and Beach Lounge - Manzanillo, Limón, Costa Rica",restaurant,Manzanillo,3520970534557309146,suggested,current,,,,,,,eat,eat|nightlife
+"Congo Bongo EcoVillage - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,9322669409493347402,,,current,,,,,,stay,stay
+"Container House Cahuita - Cahuita, Limón, Costa Rica",hotel,Cahuita,14380415623970739171,,,current,,,,,,stay,stay
+"Cool and Calm Cafe - Manzanillo, Limón, Costa Rica",restaurant,Manzanillo,15849146102448801527,,current,,,,,,,eat,eat
+"Coral Vet - Cahuita, Limón, Costa Rica",services,Cahuita,16408576464930361263,,,,,,current,,,services,services
+"Cruz Roja - Bribri, Limón, Costa Rica",services,Bribri,657883797543242654,,,,,,current,,,services,services
+"El Arbol Jungle Houses - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,15871299217507782991,,,current,,,,,,stay,stay
+"El Colibri Lodge - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,10814072515975103387,,,current,,,,,,stay,stay
+"El Colibri Rojo - Cahuita, Limón, Costa Rica",hotel,Cahuita,903286394928674373,,,current,,,,,,stay,stay
+El Dragón,restaurant,Puerto Viejo,15307063167947850855,,current,,,,,,,eat,eat
+"El Encanto Hotel - Cahuita, Limón, Costa Rica",hotel,Cahuita,8813389579965277531,,,current,,,,,,stay,stay
+"Exotico Beach - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,9510139176755946037,,,current,,,,,,stay,stay
+"Faith Glamping Dome - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,4259348950167927907,,,current,,,,,,stay,stay
+"Farmacia Quiribri Cahuita - Cahuita, Limón, Costa Rica",shopping,Cahuita,17999991182202754642,,,,,current,current,,,services|shopping,services|shopping
+"Farmacia San Gabriel - Cahuita, Limón, Costa Rica",shopping,Cahuita,9409071117936930456,,,,,current,current,,,services|shopping,services|shopping
+"Fusión Restaurante - Sixaola, Limón, Costa Rica",restaurant,Sixaola,1530710866481715684,,current,,,,,,,eat,eat
+"Gandoca Tours - Gandoca, Limón, Costa Rica",tour_company,Gandoca,369095546087240155,,,,current,,,,,things-to-do,things-to-do
+"Goddess Garden - Cahuita, Limón, Costa Rica",hotel,Cahuita,186463717107051484,,,current,,,,,,stay,stay
+"Green Corner - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,8586190007161993067,,,current,,,,,,stay,stay
+"Green Lapa's Village - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,9791432593542222900,,,current,,,,,,stay,stay
+"Hakuna Matata Hostel - Cahuita, Limón, Costa Rica",hostel,Cahuita,444550623725401269,,,current,,,,,,stay,stay
+"Happy House Manzanillo - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,7613918281459191152,,,current,,,,,,stay,stay
+"Hotel Boutique D'Angelo - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,13214603253697214599,,,current,,,,,,stay,stay
+"Hotel Cabinas Nadine - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,353287636532313894,,,current,,,,,,stay,stay
+"Hotel La Diosa - Cahuita, Limón, Costa Rica",hotel,Cahuita,12163838727176411611,,,current,,,,,,stay,stay
+"Hotel Los Cielos del Caribe - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,17152278174809306212,,,current,,,,,,stay,stay
+"Hungry Lion's Jamaican Restaurant - Cahuita, Limón, Costa Rica",restaurant,Cahuita,7931758129028338854,context,current,,,,,,,eat,eat
+"Info Boutique - Cahuita, Limón, Costa Rica",shopping,Cahuita,16153266066667852472,,,,,current,,,,shopping,shopping
+"Jungle Dreamz - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,17113013417158338712,,,current,,,,,,stay,stay
+"Kañik Apart Hotel - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,918804293272785482,,,current,,,,,,stay,stay
+"Kenaki Lodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,5472805211653745581,,,current,,,,,,stay,stay
+"La Casa Del Mango - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,3403734860617253025,,,current,,,,,,stay,stay
+"La Casa de las Flores Hotel - Cahuita, Limón, Costa Rica",hotel,Cahuita,2827143409243576983,,,current,,,,,,stay,stay
+"La Fundación Cahuita Playing for Change - Cahuita, Limón, Costa Rica",services,Cahuita,14444699894257942648,,,,,,current,,,services,services
+"La Rana De Cahuita - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,11801731566865996686,,,current,,,,,,stay,stay
+"La Shamana Ecolodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,16726434082337585414,,,current,,,,,,stay,stay
+"Lalola Villa - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,4188662448855075824,,,current,,,,,,stay,stay
+"Lilan Nature - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,7842934647721083510,,,current,,,,,,stay,stay
+"Manzanillo Caribbean Resort - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,7812100596306456251,,,current,,,,,,stay,stay
+"Marfi Inn - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,1016397361328131166,,,current,,,,,,stay,stay
+"Maxi's Restaurant - Manzanillo, Limón, Costa Rica",restaurant,Manzanillo,2811947477184958270,,current,,,,,,,eat,eat
+"Mayela Public Parking - Sixaola, Limón, Costa Rica",services,Sixaola,15101902642643077553,,,,,,current,,,services,services
+"Mulata - Cahuita, Limón, Costa Rica",shopping,Cahuita,5024698566950962619,,,,,current,,,,shopping,shopping
+"Nature Observatorio - Manzanillo, Limón, Costa Rica",tour_company,Manzanillo,315450376753766927,,,,current,,,,,things-to-do,things-to-do
+"New Caribe Point - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,559816337485387828,,,current,,,,,,stay,stay
+"OIJ - Bribri, Limón, Costa Rica",services,Bribri,6403317079907227998,,,,,,current,,,services,services
+"Oasi Apartments - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,8808890887876405745,,,current,,,,,,stay,stay
+"Ocean View Lodge Cahuita - Cahuita, Limón, Costa Rica",hotel,Cahuita,1791381660457758704,,,current,,,,,,stay,stay
+"Pangea Lodge - Manzanillo, Limón, Costa Rica",vacation_rental,Manzanillo,3867328685837116832,,,current,,,,,,stay,stay
+"Papaya Wildlife Lodge - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,304180330543571100,,,current,suggested,,,,,stay,stay|things-to-do
+"Parqueo Sixaola - Sixaola, Limón, Costa Rica",services,Sixaola,3973269979891349390,,,,,,current,,,services,services
+"Passion Fruit Ecolodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,936609025929524946,,,current,,,,,,stay,stay
+"Piscina Natural - Cahuita, Limón, Costa Rica",hotel,Cahuita,17869478518882169277,,,current,,,,,,stay,stay
+"Pizzeria Cahuita - Cahuita, Limón, Costa Rica",restaurant,Cahuita,640877045685360336,,current,,,,,,,eat,eat
+"Playa Grande Lodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,8354222119223173690,,,current,,,,,,stay,stay
+"Playa Negra Guesthouse - Cahuita, Limón, Costa Rica",hotel,Cahuita,9639892766267705924,,,current,,,,,,stay,stay
+"Pura Vida Vegana - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,10399984297239881230,,,current,,,,,,stay,stay
+"Redfrogteam Guardianes de la Naturaleza - Bribri, Limón, Costa Rica",tour_company,Bribri,3224358448323034123,,,,current,,,,,things-to-do,things-to-do
+"Reggae Bar - Cahuita, Limón, Costa Rica",restaurant,Cahuita,6096810839054830174,current,current,,,,,,,eat|nightlife,eat|nightlife
+"Restaurante Bananas - Cahuita, Limón, Costa Rica",restaurant,Cahuita,3265602198018337523,,current,,,,,,,eat,eat
+"Rhodes Island Cabinas - Cahuita, Limón, Costa Rica",hotel,Cahuita,10690687264393434328,,,current,,,,,,stay,stay
+"Riverside Cabins and Houses - Cahuita, Limón, Costa Rica",hotel,Cahuita,5780823649006198050,,,current,,,,,,stay,stay
+"Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica",restaurant,Cahuita,5842569498936371106,,current,,suggested,,,,,eat,eat|things-to-do
+"Se Ua Bed and Breakfast - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,15469928124041183357,,,current,,,,,,stay,stay
+"Secret Garden - Cahuita, Limón, Costa Rica",hostel,Cahuita,13536114438148732247,,,current,,,,,,stay,stay
+"Shiosai Retreat Cabins - Gandoca, Limón, Costa Rica",hotel,Gandoca,2791131175093117206,,,current,,,,suggested,,stay,stay|wellness
+"Sloth Sanctuary - Cahuita, Limón, Costa Rica",tour_company,Cahuita,7287083462049763885,,,,current,,,,,things-to-do,things-to-do
+"Sobre las Olas by Gondwana - Cahuita, Limón, Costa Rica",restaurant,Cahuita,9015241096564614926,,current,,,,,,,eat,eat
+"Soda Chang - Sixaola, Limón, Costa Rica",restaurant,Sixaola,12096131897059550769,,current,,,,,,,eat,eat
+"Soda Kawe - Cahuita, Limón, Costa Rica",restaurant,Cahuita,9935585180743716856,,current,,,,,,,eat,eat
+"Soda Marta - Sixaola, Limón, Costa Rica",restaurant,Sixaola,17548396689353983180,,current,,,,,,,eat,eat
+"Soda y Cabinas Kaniki - Gandoca, Limón, Costa Rica",hotel,Gandoca,1916707872062639626,,suggested,current,,,,,,stay,eat|stay
+"Sport Body Gym - Cahuita, Limón, Costa Rica",services,Cahuita,7364638263800075443,,,,,,current,current,,services|wellness,services|wellness
+"Suizo Loco Lodge - Cahuita, Limón, Costa Rica",hotel,Cahuita,8321379610695665456,,,current,,,,,,stay,stay
+"Super Negro Cahuita - Cahuita, Limón, Costa Rica",shopping,Cahuita,1491509510148377065,,,,,current,,,,shopping,shopping
+"Super Vaz 2 - Cahuita, Limón, Costa Rica",shopping,Cahuita,6639028591976267928,,,,,current,,,,shopping,shopping
+"TKD Caribe - Cahuita, Limón, Costa Rica",services,Cahuita,,,,,,,current,,,services,services
+"Tarponville Fishing Lodge - Manzanillo, Limón, Costa Rica",hotel,Manzanillo,4106444293730751001,,,current,suggested,,,,,stay,stay|things-to-do
+"Terminal de Buses Sixaola - Sixaola, Limón, Costa Rica",services,Sixaola,12283987889434351587,,,,,,current,,suggested,services,services|transport
+"Three Monkeys - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,6474159768299184830,,,current,,,,,,stay,stay
+"Topos Tree House - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,1215314758681012489,,,current,,,,,,stay,stay
+"Tourist Police - Cahuita, Limón, Costa Rica",services,Cahuita,15033673071524244619,,,,,,current,,,services,services
+"Troy's Place - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,4460094513370819167,,,current,,,,,,stay,stay
+"Villa Mango - Cahuita, Limón, Costa Rica",vacation_rental,Cahuita,14486288414847239493,,,current,,,,,,stay,stay
+"Wildlife Lodge Cahuita - Cahuita, Limón, Costa Rica",hotel,Cahuita,11172305075992391997,,,current,suggested,,,,,stay,stay|things-to-do
+Selina Hostel Puerto Viejo,hostel,Puerto Viejo,6252746693553946796,,,current,,,,,,stay,stay
+Finca Ardilla,hotel,Playa Chiquita,15755761711636582805,,,current,,,,,,stay,stay
+Kinawe Cabinas,hotel,Playa Negra,,,,current,,,,,,stay,stay
+El Tucan Jungle Lodge,hotel,Cocles,2539549004979561790,,,current,,,,,,stay,stay
+Hotel Punta Cocles,hotel,Cocles,6544015151011886307,,,current,,,,,,stay,stay
+Italia Villas,hotel,Playa Negra,16016558320812834186,,,current,,,,,,stay,stay
+Vago's Place,hotel,Playa Chiquita,12507819141188724740,,,current,,,,,,stay,stay
+Home Naranjo,hotel,Cocles,11804471412549390661,,,current,,,,,,stay,stay
+Casa Naranjo,hotel,Cocles,2274466818806698362,,,current,,,,,,stay,stay
+Finca Las Hormigas,hotel,Punta Uva,10843005590817162391,,,current,,,,,,stay,stay
+Solo Bueno,restaurant,Playa Negra,241301080670714226,,current,,,,,,,eat,eat
+Apetito Express,restaurant,Playa Negra,15140946777442800643,,current,,,,,,,eat,eat
+Puerto Viejo de Talamanca,restaurant,Playa Negra,,,current,,,,,,,eat,eat
+El Ranchón,restaurant,Playa Negra,14110719586259786874,,current,,,,,,,eat,eat
+Playa Chiquita Paradise,restaurant,Cocles,911501752511410968,,current,,,,,,,eat,eat
+Escuela Këköldi,services,Punta Uva,17352409197230602753,,,,,,current,,,services,services
+policía,services,Playa Negra,16375671444582208351,,,,,,current,,,services,services
+Escuela Hone Creek,services,Playa Negra,15919102379822575632,,,,,,current,,,services,services
+Escuela Patiño,services,Playa Negra,14849784949452434192,,,,,,current,,,services,services
+Taller Gabriel,shopping,Puerto Viejo,7243082637502018565,,,,,current,suggested,,,shopping,services|shopping
+Playa Cocles,tour_company,Playa Negra,2801042536018135472,,,,current,,,,,things-to-do,things-to-do
