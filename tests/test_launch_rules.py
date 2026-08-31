@@ -60,11 +60,10 @@ class LaunchPresentationRulesTest(unittest.TestCase):
         })
         self.assertIn("services", business["discovery_groups"])
 
-    def test_only_actionable_statuses_are_presented(self):
-        self.assertEqual(build.status_html("active"), "")
-        self.assertEqual(build.status_html("unknown"), "")
-        self.assertIn("Information needs review", build.status_html("needs_verification"))
-        self.assertIn("Closed", build.status_html("closed"))
+    # Status presentation moved from build.status_html to viewmodels.status_label
+    # when markup was split out of the generator. The rule — only actionable
+    # statuses are shown to a reader — is asserted against its new home in
+    # tests/test_viewmodels.py::CategoryAndStatusTest.
 
     def test_invalid_external_url_is_removed(self):
         self.assertEqual(build.safe_external_url("https:///broken.example"), "")

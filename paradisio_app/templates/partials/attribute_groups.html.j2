@@ -1,0 +1,4 @@
+{#- The expanded About attributes, grouped. Shared by the collapsed and
+    uncollapsed arrangements of the Details section. -#}
+{% for group in page.attributes.groups %}<div class="attr-group"><h3 class="attr-group-heading">{{ group.label }}</h3><ul class="details-group-list">{% for item in group['items'] %}<li>{{ item }}</li>{% endfor %}</ul></div>{% if not loop.last %}
+{% endif %}{% endfor %}

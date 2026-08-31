@@ -5,6 +5,7 @@ description = "Whappin Puerto Viejo — a verified, opt-out business directory f
 requires-python = ">=3.11"
 dependencies = [
     "qrcode[pil]==8.2",
+    "jinja2==3.1.6",
     "pillow==12.3.0",
 ]
 
