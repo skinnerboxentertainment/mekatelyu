@@ -361,3 +361,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* How we know this — provenance disclosure */
+.provenance-disclosure { margin-top: 10px; }
+.provenance-disclosure summary { font-size: 0.85em; color: var(--muted); cursor: pointer; }
+.provenance-list { margin: 8px 0 4px; padding-left: 18px; font-size: 0.85em; color: var(--muted); }
+.provenance-list li { margin-bottom: 3px; }
+.provenance-correct { margin: 4px 0 0; font-size: 0.85em; }
+.lang-switch { margin-left: auto; display: inline-flex; gap: 8px; align-items: center; }
+.lang-switch .lang-current { font-weight: 600; }
+.lang-switch .lang-option { opacity: 0.75; }
+.lang-switch .lang-option:hover { opacity: 1; }

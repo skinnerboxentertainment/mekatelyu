@@ -11,11 +11,12 @@ import qrcode
 from PIL import Image
 
 try:
-    from . import domain, i18n, viewmodels
+    from . import domain, i18n, provenance, viewmodels
     from .semantic_taxonomy import TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 except ImportError:  # Direct execution: python paradisio_app/build.py
     import domain
     import i18n
+    import provenance
     import viewmodels
     from semantic_taxonomy import TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 try:
@@ -359,6 +360,16 @@ def get_secondary_links(row):
     return links
 
 
+PROVENANCE_INDEX = None
+
+
+def provenance_index():
+    global PROVENANCE_INDEX
+    if PROVENANCE_INDEX is None:
+        PROVENANCE_INDEX = provenance.ProvenanceIndex()
+    return PROVENANCE_INDEX
+
+
 MAPS_CACHE = None
 SEMANTIC_CACHE = None
 VERIFIED_AMENITIES_CACHE = None
@@ -455,6 +466,7 @@ def build_business(row):
         "description_facts": description_facts(row, enrich) if is_auto_description(row.get("description_full", "")) else None,
         "description": row.get("description_full", "").strip()[:500],
         "verified_date": row.get("verified_date", "").strip(),
+        "provenance_summary": provenance_index().summary(row),
         "claim": {"status": "unclaimed"},
         "rating": enrich.get("rating"),
         "maps_address": enrich.get("address"),

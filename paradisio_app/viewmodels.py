@@ -89,11 +89,17 @@ def status_label(status: str | None, t=None) -> str:
     return STATUS_LABELS[key]
 
 
-def friendly_month(year_month: str) -> str:
-    """'2026-08' -> 'August 2026'."""
+def friendly_month(year_month: str, t=None) -> str:
+    """'2026-08' -> 'August 2026', in the page's language."""
     try:
         year, month = year_month.split("-")
-        return f"{MONTH_NAMES[int(month) - 1]} {year}"
+        index = int(month)
+        name = MONTH_NAMES[index - 1]
+        if t is not None:
+            translated = t(f"month.{index:02d}")
+            if translated != f"month.{index:02d}":
+                name = translated
+        return f"{name} {year}"
     except (ValueError, IndexError):
         return year_month
 
@@ -226,7 +232,7 @@ def weekly_hours(biz: dict, t=None) -> dict | None:
 
     provenance = [t("biz.hours_from_maps") if t else "From Google Maps"]
     if captured_at:
-        month = friendly_month(captured_at)
+        month = friendly_month(captured_at, t)
         provenance.append(t("biz.hours_updated", month=month) if t else f"Updated {month}")
     if meta.get("completeness", "partial") == "partial":
         provenance.append(t("biz.hours_partial") if t else "some days unavailable")
@@ -440,7 +446,7 @@ def attributes(biz: dict, t=None) -> dict | None:
         "total": total,
         "groups": ordered,
         "cid": biz.get("google_maps_cid", ""),
-        "updated": (t("biz.updated_month", month=friendly_month(captured_at)) if t else f"Updated {friendly_month(captured_at)}") if captured_at else "",
+        "updated": (t("biz.updated_month", month=friendly_month(captured_at, t)) if t else f"Updated {friendly_month(captured_at)}") if captured_at else "",
         "collapsed": total > DETAILS_EXPANSION_THRESHOLD,
         "summary": None,
     }
@@ -575,6 +581,32 @@ def localise_links(links: list[dict], t=None) -> list[dict]:
     return out
 
 
+def provenance_lines(biz: dict, t=None) -> list[str]:
+    """Reader-facing statements about how this listing was established.
+
+    Deliberately short and non-technical: a visitor wants to know whether to
+    trust what they are reading, not to audit the pipeline. The full record is
+    available through scripts/explain.py.
+    """
+    def say(key, fallback, **params):
+        return t(key, **params) if t else fallback.format(**params)
+
+    prov = biz.get("provenance_summary") or {}
+    lines = []
+    if prov.get("verified_date"):
+        lines.append(say("prov.confirmed", "Listing last confirmed {date}", date=prov["verified_date"]))
+    if prov.get("google_captured"):
+        month = friendly_month(prov["google_captured"][:7], t)
+        lines.append(say("prov.maps", "Details read from Google Maps in {date}", date=month))
+    if prov.get("instagram_confidence") == "verified":
+        lines.append(say("prov.instagram", "Instagram account checked against the live profile"))
+    if prov.get("coordinate_source"):
+        lines.append(say("prov.coordinates", "Location from {source}", source=prov["coordinate_source"]))
+    if not lines:
+        lines.append(say("prov.no_evidence", "This listing has not been re-checked recently."))
+    return lines
+
+
 def business_page(biz: dict, taxonomy_version: str, t=None) -> dict:
     """The complete model for one business page."""
     return {
@@ -599,5 +631,6 @@ def business_page(biz: dict, taxonomy_version: str, t=None) -> dict:
         "secondary_links": localise_links(biz.get("secondary_links") or [], t),
         "sticky_actions": sticky_actions(biz, t),
         "map": map_links(biz)["embed"],
+        "provenance": provenance_lines(biz, t),
         "taxonomy_version": taxonomy_version,
     }

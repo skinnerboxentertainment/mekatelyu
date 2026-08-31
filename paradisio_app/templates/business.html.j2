@@ -95,6 +95,9 @@
 {%- if page.freshness %}
 <div class="biz-freshness">{{ page.freshness }}</div>
 {%- endif %}
+{%- if page.provenance %}
+<details class="disclosure provenance-disclosure"><summary><span class="when-closed">{{ t("prov.heading") }} <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">{{ t("prov.heading") }} <span class="chevron" aria-hidden="true">&#9650;</span></span></summary><ul class="provenance-list">{% for line in page.provenance %}<li>{{ line }}</li>{% endfor %}</ul><p class="provenance-correct"><a href="{{ report_url }}" target="_blank" rel="noopener">{{ t("prov.correct_it") }}</a></p></details>
+{%- endif %}
 </header>
 {%- if page.primary_contact.type != 'None' %}
 <div class="biz-main hide-mobile">
