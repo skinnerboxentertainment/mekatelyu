@@ -268,6 +268,23 @@ SEMANTIC_TAXONOMY_PATH = BASE_DIR / "data" / "semantic_taxonomy.json"
 LOCALES_DIR = BASE_DIR / "data" / "locales"
 
 
+def build_date():
+    """Return the build date stamped into the output.
+
+    Reads PARADISIO_BUILD_DATE so a rebuild of unchanged inputs is byte-identical
+    across days, which is what makes golden-output comparison possible. Falls back
+    to today when unset. An unparseable value fails closed rather than silently
+    reintroducing a nondeterministic stamp.
+    """
+    raw = os.environ.get("PARADISIO_BUILD_DATE", "").strip()
+    if not raw:
+        return datetime.now().strftime("%Y-%m-%d")
+    try:
+        return datetime.strptime(raw, "%Y-%m-%d").strftime("%Y-%m-%d")
+    except ValueError:
+        raise SystemExit(f"PARADISIO_BUILD_DATE must be YYYY-MM-DD, got: {raw!r}")
+
+
 def load_verified_hours():
     """Load the verified operating-hours lookup (CID-keyed) from the pipeline."""
     path = VERIFIED_HOURS_PATH
@@ -313,7 +330,7 @@ def load_verified_amenities():
 
 def load_locales():
     locales = {}
-    for path in LOCALES_DIR.glob("*.json"):
+    for path in sorted(LOCALES_DIR.glob("*.json")):
         lang = path.stem
         with open(path, encoding="utf-8") as f:
             locales[lang] = json.load(f)
@@ -2269,7 +2286,7 @@ def main():
             for tag in sorted(TAG_LABELS)
             if any(tag in b["semantic_tags"] or tag in b["semantic_attributes"] for b in businesses)
         },
-        "generated": datetime.now().strftime("%Y-%m-%d"),
+        "generated": build_date(),
     }
 
     print(f"Building Whappin Puerto Viejo — {len(businesses)} businesses")

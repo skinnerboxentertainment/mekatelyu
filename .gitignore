@@ -44,3 +44,6 @@ audit/whatsapp-checkifier/*-progress.json
 audit/whatsapp-checkifier/*-errors.jsonl
 audit/whatsapp-checkifier/*-live-*.json
 audit/whatsapp-checkifier/server.*.log
+
+# scratch build outputs from golden comparison
+.build-*/
