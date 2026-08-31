@@ -1,5 +1,4 @@
 import csv
-import hashlib
 import html
 import json
 import os
@@ -7,14 +6,16 @@ import re
 import shutil
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import quote, urlsplit, urlunsplit
+from urllib.parse import quote
 
 import qrcode
 from PIL import Image
 
 try:
+    from . import domain
     from .semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 except ImportError:  # Direct execution: python paradisio_app/build.py
+    import domain
     from semantic_taxonomy import PRIMARY_CATEGORY_TAGS, TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 try:
     from .community_partner import load_organizations, public_org_summary, render_organization_html
@@ -231,46 +232,16 @@ def load_maps_enrich():
 
 WHATSAPP_TEMPLATE = "Hi {name}, I found you on Whappin Puerto Viejo. Are you open? I'd like to know more about your services. Thanks."
 
-LOCATION_TOKENS = {"puerto viejo", "limon", "costa rica", "playa negra", "playa cocles",
-                   "playa chiquita", "punta uva", "playa punta uva", "cahuita", "manzanillo",
-                   "hone creek", "bribri", "sixaola", "gandoca", "cocles"}
-
-
-def clean_display_name(raw_name, area):
-    name = raw_name.strip()
-    if not name:
-        return name
-    # If name has " - " separator, check if right side is location info
-    if " - " in name:
-        left, right = name.split(" - ", 1)
-        # If the right side contains location tokens or is the area, strip it
-        right_lower = right.lower()
-        if any(t in right_lower for t in LOCATION_TOKENS) or area.lower() in right_lower:
-            name = left.strip()
-            # Re-check for nested " - " in the remaining name
-            if " - " in name:
-                left2, right2 = name.split(" - ", 1)
-                if any(t in right2.lower() for t in LOCATION_TOKENS) or area.lower() in right2.lower():
-                    name = left2.strip()
-    # Strip trailing "Costa Rica" after removing dash section
-    name = re.sub(r"[,–—\- ]*Costa Rica$", "", name, flags=re.IGNORECASE).strip()
-    # Strip trailing location suffixes via comma split
-    parts = re.split(r"\s*,\s*", name)
-    if len(parts) > 1:
-        suffix = parts[-1].strip().lower()
-        if suffix in LOCATION_TOKENS or suffix == area.lower():
-            name = ",".join(parts[:-1]).strip()
-    # Clean any remaining trailing separators
-    name = re.sub(r"[\s,–—-]+$", "", name).strip()
-    return name if name else raw_name.strip()
-
-
-def slugify(name, area):
-    s = f"{name}-{area}"
-    s = s.lower().strip()
-    s = re.sub(r"[^a-z0-9]+", "-", s)
-    s = s.strip("-")
-    return s[:80]
+# The contact-safety and naming rules now live in domain.py, so every surface
+# that publishes a route goes through the same validation. These names are kept
+# as the module's public API: existing tests and scripts bind to build.* and the
+# behaviour is identical.
+LOCATION_TOKENS = domain.LOCATION_TOKENS
+clean_display_name = domain.clean_display_name
+slugify = domain.slugify
+normalize_phone = domain.normalize_phone
+safe_external_url = domain.safe_external_url
+safe_instagram_handle = domain.safe_instagram_handle
 
 
 def dedup_slugs(businesses):
@@ -287,37 +258,9 @@ def dedup_slugs(businesses):
 
 
 def compute_id(row):
-    raw = f"{row.get('business_name','')}|{row.get('google_maps_cid','')}|{row.get('phone','')}"
-    return hashlib.md5(raw.encode()).hexdigest()[:12]
-
-
-def normalize_phone(raw):
-    if not raw:
-        return ""
-    digits = re.sub(r"\D", "", raw)
-    if len(digits) == 8:
-        digits = "506" + digits
-    if re.fullmatch(r"\d{10,15}", digits):
-        return "+" + digits
-    return ""
-
-
-def safe_external_url(raw):
-    value = (raw or "").strip()
-    if not value:
-        return ""
-    try:
-        parsed = urlsplit(value)
-    except ValueError:
-        return ""
-    if parsed.scheme != "https" or not parsed.netloc:
-        return ""
-    return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, parsed.query, parsed.fragment))
-
-
-def safe_instagram_handle(raw):
-    handle = (raw or "").strip().lstrip("@")
-    return handle if re.fullmatch(r"[A-Za-z0-9._]{1,30}", handle) else ""
+    return domain.record_id(
+        row.get("business_name", ""), row.get("google_maps_cid", ""), row.get("phone", "")
+    )
 
 
 def has_whatsapp(row):
@@ -325,16 +268,7 @@ def has_whatsapp(row):
 
     Ordinary phone numbers are deliberately not inferred as WhatsApp-capable.
     """
-    raw = row.get("whatsapp", "").strip()
-    if not raw:
-        return ""
-    match = re.search(r"(?:phone=|wa\.me/)(\d{8,15})", raw)
-    digits = match.group(1) if match else re.sub(r"\D", "", raw)
-    if len(digits) == 8:
-        digits = "506" + digits
-    if not re.fullmatch(r"\d{10,15}", digits):
-        return ""
-    return "+" + digits
+    return domain.explicit_whatsapp(row.get("whatsapp", ""))
 
 
 def contactability_score(row):
