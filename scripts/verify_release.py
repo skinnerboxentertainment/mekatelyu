@@ -27,7 +27,11 @@ FORBIDDEN_TEXT = (
     "+506 8888 8888",
 )
 ALLOWED_ROOT_FILES = {".nojekyll", "CNAME", "404.html", "index.html", "robots.txt", "sitemap.xml", "favicon.ico"}
-ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"}
+# Language trees sit beside the English one; English stays un-prefixed so the
+# printed QR codes keep working.
+ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"} | {
+    lang for lang in ("es", "de") 
+}
 
 
 def _load_org_slugs() -> set[str]:
@@ -127,7 +131,7 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             errors.append(f"missing Content Security Policy: {path.relative_to(root)}")
         if re.search(r"<script(?![^>]+src=)[^>]*>", text, flags=re.I):
             errors.append(f"inline script present: {path.relative_to(root)}")
-        if not is_org and path.parent.name == "businesses" and f'../qr/{path.stem}.png' not in text:
+        if not is_org and path.parent.name == "businesses" and f'qr/{path.stem}.png' not in text:
             errors.append(f"missing profile QR reference: {path.name}")
 
         for url in re.findall(r"(?:href|src)=[\"']([^\"']+)", text, flags=re.I):
@@ -136,7 +140,12 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             if url.startswith("http://"):
                 errors.append(f"insecure external URL in {path.relative_to(root)}: {url}")
                 continue
-            local = (path.parent / url.split("#", 1)[0].split("?", 1)[0]).resolve()
+            target = url.split("#", 1)[0].split("?", 1)[0]
+            if not target:
+                continue
+            # Language switch links are root-absolute, so they resolve from the
+            # release root rather than from the page's own directory.
+            local = (root / target.lstrip("/")).resolve() if target.startswith("/") else (path.parent / target).resolve()
             if not local.exists():
                 errors.append(f"broken internal reference in {path.relative_to(root)}: {url}")
 
@@ -152,9 +161,10 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
     index_size = (root / "index.html").stat().st_size
     if index_size > 100_000:
         errors.append(f"index.html exceeds 100 KB budget: {index_size} bytes")
-    data_size = (root / "static" / "directory-data.js").stat().st_size
-    if data_size > 700_000:
-        errors.append(f"directory-data.js exceeds 700 KB budget: {data_size} bytes")
+    for payload in sorted((root / "static").glob("directory-data-*.js")):
+        size = payload.stat().st_size
+        if size > 700_000:
+            errors.append(f"{payload.name} exceeds 700 KB budget: {size} bytes")
 
     return errors
 

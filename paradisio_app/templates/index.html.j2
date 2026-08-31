@@ -1,0 +1,91 @@
+{#- The directory home page. -#}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="{{ asset_prefix }}static/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="{{ asset_prefix }}static/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="{{ asset_prefix }}static/favicon-16x16.png"><link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
+<title>{{ t("site.title") }}</title>
+<meta name="description" content="{{ t("site.description") }}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<link rel="canonical" href="{{ canonical }}">
+{%- for alt in alternates %}
+<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url }}">
+{%- endfor %}
+<meta property="og:title" content="{{ t("site.title") }}">
+<meta property="og:description" content="{{ t("site.description") }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ canonical }}">
+<link rel="stylesheet" href="{{ asset_prefix }}static/tokens.css?v={{ taxonomy_version }}">
+<link rel="stylesheet" href="{{ asset_prefix }}static/styles.css?v={{ taxonomy_version }}">
+<link rel="stylesheet" href="{{ asset_prefix }}static/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="{{ asset_prefix }}static/vendor/leaflet/MarkerCluster.css">
+<link rel="stylesheet" href="{{ asset_prefix }}static/vendor/leaflet/MarkerCluster.Default.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Primary navigation"><a href="index.html" class="site-logo">Whappin Puerto Viejo</a><a href="index.html" class="nav-active">{{ t("nav.back_to_directory") }}</a>{% include "partials/language_switch.html.j2" %}</nav>
+<main class="container">
+<header class="masthead">
+<h1>{{ t("site.title") }}</h1>
+<p class="tagline">{{ t("site.powered_by") }}</p>
+<p class="subtitle">{{ t("site.description") }}</p>
+</header>
+<div class="controls">
+<label class="sr-only" for="search">{{ t("home.search_label") }}</label>
+<input type="search" id="search" class="search-input" placeholder="{{ t('home.search_hint') }}">
+<div class="view-toggle">
+<button id="view-list" class="view-btn active" aria-pressed="true">{{ t("list.view") }}</button>
+<button id="view-map" class="view-btn" aria-pressed="false">{{ t("map.view") }}</button>
+</div>
+<div class="filters">
+<label class="sr-only" for="category-filter">{{ t("filter.category") }}</label>
+<select id="category-filter" class="filter-select" aria-label="{{ t('filter.category') }}">
+<option value="">{{ t("filter.all_categories") }}</option>
+</select>
+<label class="sr-only" for="tag-filter">{{ t("filter.type_quality") }}</label>
+<select id="tag-filter" class="filter-select" aria-label="{{ t('filter.type_quality') }}">
+<option value="">{{ t("filter.any_type") }}</option>
+</select>
+<label class="sr-only" for="area-filter">{{ t("filter.area") }}</label>
+<select id="area-filter" class="filter-select" aria-label="{{ t('filter.area') }}">
+<option value="">{{ t("filter.all_areas") }}</option>
+</select>
+<label class="sr-only" for="channel-filter">{{ t("filter.contact_method") }}</label>
+<select id="channel-filter" class="filter-select" aria-label="{{ t('filter.contact_method') }}">
+<option value="">{{ t("filter.any_contact") }}</option>
+<option value="whatsapp">{{ t("filter.has_whatsapp") }}</option>
+<option value="instagram">{{ t("filter.has_instagram") }}</option>
+<option value="phone">{{ t("filter.has_phone") }}</option>
+<option value="website">{{ t("filter.has_website") }}</option>
+<option value="booking">{{ t("filter.has_booking") }}</option>
+<option value="maps">{{ t("filter.on_maps") }}</option>
+</select>
+<label class="sr-only" for="sort-filter">{{ t("filter.sort_results") }}</label>
+<select id="sort-filter" class="filter-select" aria-label="{{ t('filter.sort_results') }}">
+<option value="name">{{ t("filter.sort_name") }}</option>
+<option value="contactability">{{ t("filter.sort_contact") }}</option>
+<option value="completeness">{{ t("filter.sort_complete") }}</option>
+</select>
+</div>
+<div class="cat-grid">{% for tile in category_tiles %}<a href="#" class="cat-tile" data-category="{{ tile.key }}"><div>{{ tile.label }}</div><span class="cat-count">{{ tile.count }} {{ t("home.cat_count") }}</span></a>{% endfor %}</div>
+<div id="stats-line" class="stats-line"></div>
+<div id="filter-chips" class="filter-chips"></div>
+</div>
+<div id="results" class="results">
+<div class="loading">{{ t("results.loading") }}</div>
+</div>
+<div id="load-more" class="load-more"></div>
+<div id="map-container" class="map-view"></div>
+<footer class="footer">
+<p>{{ t("site.title") }} &middot; {{ t("footer.updated", date=generated) }}</p>
+<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md" target="_blank" rel="noopener">{{ t("footer.report_problem") }}</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=business_correction.md" target="_blank" rel="noopener">{{ t("footer.suggest_edit") }}</a></p>
+</footer>
+</main>
+<script src="{{ asset_prefix }}static/ui-{{ lang }}.js?v={{ taxonomy_version }}"></script>
+<script src="{{ asset_prefix }}static/directory-data-{{ lang }}.js?v={{ taxonomy_version }}"></script>
+<script src="{{ asset_prefix }}static/vendor/leaflet/leaflet.js"></script>
+<script src="{{ asset_prefix }}static/vendor/leaflet/leaflet.markercluster.js"></script>
+<script src="{{ asset_prefix }}static/app.js?v={{ taxonomy_version }}"></script>
+</body>
+</html>

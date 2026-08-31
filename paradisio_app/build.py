@@ -11,10 +11,11 @@ import qrcode
 from PIL import Image
 
 try:
-    from . import domain, viewmodels
+    from . import domain, i18n, viewmodels
     from .semantic_taxonomy import TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 except ImportError:  # Direct execution: python paradisio_app/build.py
     import domain
+    import i18n
     import viewmodels
     from semantic_taxonomy import TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 try:
@@ -36,15 +37,6 @@ ICONS = {
     "Email": '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>',
 }
 
-def favicon_html(prefix=""):
-    p = prefix + ("/" if prefix and not prefix.endswith("/") else "")
-    return (
-        f'<link rel="icon" type="image/x-icon" href="{p}static/favicon.ico">'
-        f'<link rel="icon" type="image/png" sizes="32x32" href="{p}static/favicon-32x32.png">'
-        f'<link rel="icon" type="image/png" sizes="16x16" href="{p}static/favicon-16x16.png">'
-        f'<link rel="apple-touch-icon" href="{p}static/apple-touch-icon.png">'
-    )
-
 PLACEHOLDER_PATTERNS = [
     r'^[A-Z][a-zA-Z0-9\s\-\'\u00c0-\u024f]+ is (a|an) ',
     r' provides?\s+(hotel|accommodation|service)',
@@ -61,34 +53,36 @@ def is_auto_description(text):
     return any(re.search(pat, text, re.I) for pat in PLACEHOLDER_PATTERNS)
 
 
-def generate_description(row, enrich):
-    cat_label = row.get("category", "").strip().replace("_", " ").title()
-    area = row.get("area", "").strip() or "Puerto Viejo"
-    rating = enrich.get("rating") if enrich else None
+def description_facts(row, enrich):
+    """The ingredients of an auto-written description, as data.
 
-    parts = [f"{cat_label} in {area}."]
+    Returned as (key, params) pairs rather than a finished sentence so the
+    description can be rendered in whichever language the page is being built
+    for. Descriptions written by a business are never touched — only the ones
+    this generator composes itself.
+    """
+    # The category is carried as its key, not as an English label, so the
+    # sentence can be composed in the language of the page being built.
+    facts = [("desc.category_in_area", {
+        "category_key": row.get("category", "").strip(),
+        "area": row.get("area", "").strip() or "Puerto Viejo",
+    })]
+    rating = enrich.get("rating") if enrich else None
     if rating:
-        parts.append(f"Rated {rating}/5 on Google Maps.")
+        facts.append(("desc.rated", {"rating": rating}))
     else:
-        # Add a signal about data freshness
         verified = row.get("verified_date", "").strip()[:7] if row.get("verified_date") else ""
         if verified:
-            parts.append(f"Listed since {verified}.")
-
-    # Add amenity highlights if available
+            facts.append(("desc.listed_since", {"month": verified}))
     if row.get("phone") or row.get("normalized_phone"):
-        parts.append("Phone available.")
-    instagram = row.get("instagram_handle", "").strip()
-    if instagram:
-        parts.append("Active on Instagram.")
-    whatsapp = row.get("whatsapp", "").strip()
-    if whatsapp:
-        parts.append("Accepts WhatsApp inquiries.")
-    email = row.get("email", "").strip()
-    if email:
-        parts.append("Email available.")
-
-    return " ".join(parts)
+        facts.append(("desc.phone", {}))
+    if row.get("instagram_handle", "").strip():
+        facts.append(("desc.instagram", {}))
+    if row.get("whatsapp", "").strip():
+        facts.append(("desc.whatsapp", {}))
+    if row.get("email", "").strip():
+        facts.append(("desc.email", {}))
+    return facts
 
 
 def infer_amenities(row, enrich_amenities, verified_amenities):
@@ -180,20 +174,6 @@ def load_verified_amenities():
             "sourceName": rec.get("sourceName", ""),
         }
     return result
-
-
-NAV_PAGES = {"directory": "Directory"}
-
-
-def nav_html(current, depth=0):
-    prefix = "../" if depth > 0 else ""
-    links = f'<a href="{prefix}index.html" class="site-logo">Whappin Puerto Viejo</a>'
-    for key, label in NAV_PAGES.items():
-        href = {"directory": f"{prefix}index.html"}.get(key, "#")
-        active = "nav-active" if key == current else ""
-        en = {"directory": "Directory"}.get(key, label)
-        links += f'<a href="{href}" class="{active}">{en}</a>'
-    return f'<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
 
 
 def load_maps_enrich():
@@ -472,7 +452,8 @@ def build_business(row):
         "semantic_attributes": semantic["attributes"],
         "search_synonyms": semantic["search_synonyms"],
         "semantic_review_state": semantic["review_state"],
-        "description": generate_description(row, enrich) if is_auto_description(row.get("description_full", "")) else row.get("description_full", "").strip()[:500],
+        "description_facts": description_facts(row, enrich) if is_auto_description(row.get("description_full", "")) else None,
+        "description": row.get("description_full", "").strip()[:500],
         "verified_date": row.get("verified_date", "").strip(),
         "claim": {"status": "unclaimed"},
         "rating": enrich.get("rating"),
@@ -501,12 +482,13 @@ def build_business(row):
     return business
 
 
-def public_business_summary(biz):
+def public_business_summary(biz, t=None):
     """Return only fields needed by the public directory list/map UI."""
     return {
         "slug": biz["slug"],
         "name": biz["name"],
         "category": biz["category"],
+        "category_label": viewmodels.category_label(biz["category"], t),
         "area": biz["area"],
         "lat": biz["lat"],
         "lng": biz["lng"],
@@ -528,7 +510,7 @@ def public_business_summary(biz):
         "semantic_tags": biz.get("semantic_tags", []),
         "semantic_attributes": biz.get("semantic_attributes", []),
         "search_synonyms": biz.get("search_synonyms", []),
-        "description": biz["description"],
+        "description": viewmodels.describe(biz, t),
         "rating": biz["rating"],
     }
 
@@ -553,6 +535,7 @@ def category_label(category):
     return CATEGORY_LABELS.get(key, key.replace("_", " ").title() or "Other")
 
 
+DEFAULT_LANGUAGE = "en"
 PRODUCTION_BASE_URL = "https://www.whappin.com"
 
 
@@ -582,132 +565,20 @@ def generate_deployment_wrapper():
         return
     (release_root / ".nojekyll").write_text("", encoding="utf-8")
     (release_root / "CNAME").write_text("www.whappin.com\n", encoding="utf-8")
-    (release_root / "404.html").write_text(f"""<!DOCTYPE html>
+    (release_root / "404.html").write_text("""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-{favicon_html()}
+<link rel="icon" type="image/x-icon" href="../static/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"><link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <link rel="stylesheet" href="static/tokens.css"><link rel="stylesheet" href="static/styles.css">
 <meta name="robots" content="noindex"><title>Page not found — Whappin Puerto Viejo</title></head>
 <body><main class="container"><div class="no-results"><h1>Page not found</h1><p>The place you requested is not available.</p><p><a href="./">Return to the directory</a></p></div></main></body></html>""", encoding="utf-8")
 
 
-CAT_SHORTCUTS = [
-    ("eat", "Eat", "Comer"),
-    ("stay", "Stay", "Hospedarse"),
-    ("things-to-do", "Things to Do", "Actividades"),
-    ("services", "Services", "Servicios"),
-    ("shopping", "Shops", "Tiendas"),
-    ("wellness", "Wellness", "Bienestar"),
-    ("nightlife", "Nightlife", "Vida Nocturna"),
-    ("transport", "Transport", "Transporte"),
+CAT_SHORTCUT_KEYS = [
+    ("eat", "eat"), ("stay", "stay"), ("things-to-do", "tour"), ("services", "services"),
+    ("shopping", "shopping"), ("wellness", "wellness"), ("nightlife", "nightlife"),
+    ("transport", "transport"),
 ]
-
-
-def cat_grid_html(businesses):
-    counts = {}
-    for business in businesses:
-        for group in business["discovery_groups"]:
-            counts[group] = counts.get(group, 0) + 1
-
-    tiles = ""
-    for key, en, _es in CAT_SHORTCUTS:
-        c = counts.get(key, 0)
-        tiles += f'<a href="#" class="cat-tile" data-category="{key}"><div data-i18n="home.cat_{key}">{en}</div><span class="cat-count">{c} businesses</span></a>'
-    return f'<div class="cat-grid">{tiles}</div>'
-
-
-def render_index_html(businesses, metrics):
-    date = metrics["generated"]
-
-    nav = nav_html("directory", depth=0)
-    cat_grid = cat_grid_html(businesses)
-
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{favicon_html()}
-<title>Whappin Puerto Viejo</title>
-<meta name="description" content="Find trusted places across Puerto Viejo.">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
-<link rel="canonical" href="https://www.whappin.com/">
-<meta property="og:title" content="Whappin Puerto Viejo">
-<meta property="og:description" content="Find trusted places across Puerto Viejo.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.whappin.com/">
-<link rel="stylesheet" href="static/tokens.css?v={TAXONOMY_VERSION}">
-<link rel="stylesheet" href="static/styles.css?v={TAXONOMY_VERSION}">
-<link rel="stylesheet" href="static/vendor/leaflet/leaflet.css">
-<link rel="stylesheet" href="static/vendor/leaflet/MarkerCluster.css">
-<link rel="stylesheet" href="static/vendor/leaflet/MarkerCluster.Default.css">
-</head>
-<body>
-{nav}
-<main class="container">
-<header class="masthead">
-<h1>Whappin Puerto Viejo</h1>
-<p class="tagline">Powered by Paradisio</p>
-<p class="subtitle">Find trusted places across Puerto Viejo.</p>
-</header>
-<div class="controls">
-<label class="sr-only" for="search">Search businesses</label>
-<input type="search" id="search" class="search-input" placeholder="Search by name, type, quality, or area">
-<div class="view-toggle">
-<button id="view-list" class="view-btn active" aria-pressed="true">List</button>
-<button id="view-map" class="view-btn" aria-pressed="false">Map</button>
-</div>
-<div class="filters">
-<label class="sr-only" for="category-filter">Category</label>
-<select id="category-filter" class="filter-select" aria-label="Category">
-<option value="">All categories</option>
-</select>
-<label class="sr-only" for="tag-filter">Type or quality</label>
-<select id="tag-filter" class="filter-select" aria-label="Type or quality">
-<option value="">Any type or quality</option>
-</select>
-<label class="sr-only" for="area-filter">Area</label>
-<select id="area-filter" class="filter-select" aria-label="Area">
-<option value="">All areas</option>
-</select>
-<label class="sr-only" for="channel-filter">Contact method</label>
-<select id="channel-filter" class="filter-select" aria-label="Contact method">
-<option value="">Any contact</option>
-<option value="whatsapp">Has WhatsApp</option>
-<option value="instagram">Has Instagram</option>
-<option value="phone">Has phone</option>
-<option value="website">Has website</option>
-<option value="booking">Has Booking.com</option>
-<option value="maps">On Google Maps</option>
-</select>
-<label class="sr-only" for="sort-filter">Sort results</label>
-<select id="sort-filter" class="filter-select" aria-label="Sort results">
-<option value="name">Sort: Name</option>
-<option value="contactability">Sort: Best contact</option>
-<option value="completeness">Sort: Most complete</option>
-</select>
-</div>
-{cat_grid}
-<div id="stats-line" class="stats-line"></div>
-<div id="filter-chips" class="filter-chips"></div>
-</div>
-<div id="results" class="results">
-<div class="loading">Loading directory...</div>
-</div>
-<div id="load-more" class="load-more"></div>
-<div id="map-container" class="map-view"></div>
-<footer class="footer">
-<p>Whappin Puerto Viejo &middot; Directory updated {date}</p>
-<p><a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md" target="_blank" rel="noopener">Report a problem</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=business_correction.md" target="_blank" rel="noopener">Suggest an edit</a></p>
-</footer>
-</main>
-<script src="static/directory-data.js?v={TAXONOMY_VERSION}"></script>
-<script src="static/vendor/leaflet/leaflet.js"></script>
-<script src="static/vendor/leaflet/leaflet.markercluster.js"></script>
-<script src="static/app.js?v={TAXONOMY_VERSION}"></script>
-</body>
-</html>"""
 
 
 _JINJA_ENV = None
@@ -734,14 +605,46 @@ def jinja_env():
     return _JINJA_ENV
 
 
-def render_business_html(biz):
-    page = viewmodels.business_page(biz, TAXONOMY_VERSION)
+def render_index_html(businesses, metrics, language=DEFAULT_LANGUAGE):
+    t = i18n.translator(language)
+    counts = {}
+    for business in businesses:
+        for group in business["discovery_groups"]:
+            counts[group] = counts.get(group, 0) + 1
+    tiles = [
+        {"key": key, "label": t(f"home.cat_{i18n_key}"), "count": counts.get(key, 0)}
+        for key, i18n_key in CAT_SHORTCUT_KEYS
+    ]
+    prefix = t.path_prefix
+    return jinja_env().get_template("index.html.j2").render(
+        t=t,
+        lang=language,
+        languages=i18n.language_switch_links("index.html", language),
+        alternates=i18n.alternate_links("", PRODUCTION_BASE_URL),
+        canonical=f"{PRODUCTION_BASE_URL}/{prefix}",
+        asset_prefix="../" if prefix else "",
+        category_tiles=tiles,
+        generated=metrics["generated"],
+        taxonomy_version=TAXONOMY_VERSION,
+    )
+
+def render_business_html(biz, language=DEFAULT_LANGUAGE):
+    t = i18n.translator(language)
+    page = viewmodels.business_page(biz, TAXONOMY_VERSION, t)
     report_url = (
         "https://github.com/skinnerboxentertainment/mekatelyu/issues/new?"
         f"template=business_correction.md&title={quote('Correction: ' + biz['name'])}"
     )
+    page_path = f"businesses/{biz['slug']}.html"
     return jinja_env().get_template("business.html.j2").render(
-        page=page, icons=ICONS, report_url=report_url
+        page=page, icons=ICONS, report_url=report_url,
+        t=t, lang=language,
+        languages=i18n.language_switch_links(page_path, language),
+        alternates=i18n.alternate_links(page_path, PRODUCTION_BASE_URL),
+        canonical=f"{PRODUCTION_BASE_URL}/{t.path_prefix}{page_path}",
+        # static/ and qr/ are shared at the site root; a language-prefixed tree
+        # sits one level deeper, so it needs an extra step up.
+        asset_prefix="../" if t.is_default else "../../",
     )
 
 
@@ -754,7 +657,7 @@ def render_invest_page(metrics):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{favicon_html()}
+<link rel="icon" type="image/x-icon" href="../static/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"><link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
 <title>Invest in Whappin Puerto Viejo</title>
 <meta name="description" content="Support a locally-built business directory for Puerto Viejo, Costa Rica — connecting tourists and locals to every business in town.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -894,27 +797,60 @@ def main():
     generate_profile_qr_codes(businesses)
     print(f"  qr/ — {len(businesses)} profile QR codes")
 
-    biz_dir = OUTPUT_DIR / "businesses"
-    for biz in businesses:
-        page_html = render_business_html(biz)
-        with open(biz_dir / f"{biz['slug']}.html", "w", encoding="utf-8") as f:
-            f.write(page_html)
-    print(f"  businesses/ — {len(businesses)} pages")
+    # One page tree per language. English is un-prefixed and keeps the existing
+    # URLs, because 736 printed QR codes point at /businesses/<slug>.html and
+    # those stickers are already on doors around town.
+    languages = i18n.available_languages()
+    for language in languages:
+        root = OUTPUT_DIR if language == DEFAULT_LANGUAGE else OUTPUT_DIR / language
+        pages_dir = root / "businesses"
+        pages_dir.mkdir(parents=True, exist_ok=True)
+        for biz in businesses:
+            page_html = render_business_html(biz, language)
+            with open(pages_dir / f"{biz['slug']}.html", "w", encoding="utf-8") as f:
+                f.write(page_html)
+        with open(root / "index.html", "w", encoding="utf-8") as f:
+            f.write(render_index_html(businesses, metrics, language))
+        label = "" if language == DEFAULT_LANGUAGE else f"{language}/"
+        print(f"  {label}businesses/ — {len(businesses)} pages + index ({language})")
 
-    index_html = render_index_html(businesses, metrics)
-    with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
-        f.write(index_html)
-    print("  index.html — entry point")
+    def directory_payload(language, extra_summaries=()):
+        """The client payload for one language.
 
-    summaries = [public_business_summary(b) for b in businesses]
-    directory_data = (
-        "const BUSINESSES=" + json.dumps(summaries, ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "const CATEGORIES=" + json.dumps(metrics["categories"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "const SEMANTIC_FACETS=" + json.dumps(metrics["semantic_facets"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "const SEMANTIC_LABELS=" + json.dumps(TAG_LABELS, ensure_ascii=False, separators=(",", ":")) + ";\n"
-        "const AREAS=" + json.dumps(metrics["areas"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-    )
-    (OUTPUT_DIR / "static" / "directory-data.js").write_text(directory_data, encoding="utf-8")
+        Result cards and the text search read from this, so a single English
+        payload would leave search results and descriptions in English on a
+        Spanish page even though the surrounding chrome is translated.
+        """
+        translate = i18n.translator(language)
+        built = [public_business_summary(b, translate) for b in businesses]
+        built.extend(extra_summaries)
+        body = (
+            "const BUSINESSES=" + json.dumps(built, ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const CATEGORIES=" + json.dumps(metrics["categories"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const SEMANTIC_FACETS=" + json.dumps(metrics["semantic_facets"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const SEMANTIC_LABELS=" + json.dumps(TAG_LABELS, ensure_ascii=False, separators=(",", ":")) + ";\n"
+            "const AREAS=" + json.dumps(metrics["areas"], ensure_ascii=False, separators=(",", ":")) + ";\n"
+        )
+        return built, body
+
+    def write_directory_payloads(extra_summaries=()):
+        written = None
+        for language in i18n.available_languages():
+            built, body = directory_payload(language, extra_summaries)
+            if language == DEFAULT_LANGUAGE:
+                written = built
+            (OUTPUT_DIR / "static" / f"directory-data-{language}.js").write_text(body, encoding="utf-8")
+        return written
+
+    write_directory_payloads()
+
+    # Per-language UI strings for the client scripts. A separate file per
+    # language rather than an inline block, because the CSP allows only
+    # 'self' scripts — an inline <script> would be blocked.
+    for language in i18n.available_languages():
+        strings = i18n.load_strings(language)
+        payload = "const UI_STRINGS=" + json.dumps(strings, ensure_ascii=False, separators=(",", ":")) + ";\n"
+        (OUTPUT_DIR / "static" / f"ui-{language}.js").write_text(payload, encoding="utf-8")
 
     static_src = STATIC_DIR / "app.js"
     if static_src.exists():
@@ -963,20 +899,14 @@ def main():
     if orgs:
         org_summaries = []
         for org in orgs:
-            html = render_organization_html(org, nav_html_func=nav_html)
+            html = render_organization_html(org)
             slug = org["slug"]
             (biz_dir / f"{slug}.html").write_text(html, encoding="utf-8")
             org_summaries.append(public_org_summary(org))
             print(f"  businesses/{slug}.html — {org['name']}")
-        summaries.extend(org_summaries)
-        directory_data = (
-            "const BUSINESSES=" + json.dumps(summaries, ensure_ascii=False, separators=(",", ":")) + ";\n"
-            "const CATEGORIES=" + json.dumps(metrics["categories"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-            "const SEMANTIC_FACETS=" + json.dumps(metrics["semantic_facets"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-            "const SEMANTIC_LABELS=" + json.dumps(TAG_LABELS, ensure_ascii=False, separators=(",", ":")) + ";\n"
-            "const AREAS=" + json.dumps(metrics["areas"], ensure_ascii=False, separators=(",", ":")) + ";\n"
-        )
-        (OUTPUT_DIR / "static" / "directory-data.js").write_text(directory_data, encoding="utf-8")
+        # Rewrite every language's payload so community partners appear in the
+        # directory listing alongside businesses.
+        write_directory_payloads(org_summaries)
         urls = [PRODUCTION_BASE_URL + "/"] + [PRODUCTION_BASE_URL + f"/businesses/{b['slug']}.html" for b in businesses + org_summaries]
         sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         sitemap += "".join(f"  <url><loc>{url}</loc></url>\n" for url in urls)

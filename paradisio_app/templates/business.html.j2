@@ -7,29 +7,32 @@
   on remembering html.escape() at each of several dozen interpolation sites.
 -#}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="../static/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png"><link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
+<link rel="icon" type="image/x-icon" href="{{ asset_prefix }}static/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="{{ asset_prefix }}static/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="{{ asset_prefix }}static/favicon-16x16.png"><link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
 <title>{{ page.name }} — {{ page.area }} — Whappin Puerto Viejo</title>
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org; connect-src 'self' https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
-<link rel="canonical" href="https://www.whappin.com/businesses/{{ page.slug }}.html">
+<link rel="canonical" href="{{ canonical }}">
+{%- for alt in alternates %}
+<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url }}">
+{%- endfor %}
 <meta property="og:title" content="{{ page.name }} — Whappin Puerto Viejo">
-<meta property="og:description" content="{{ page.name }} in {{ page.area }}. View location and available contact options.">
+<meta property="og:description" content="{{ page.name }} · {{ page.area }}">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="../static/tokens.css?v={{ page.taxonomy_version }}">
-<link rel="stylesheet" href="../static/styles.css?v={{ page.taxonomy_version }}">
-<link rel="stylesheet" href="../static/vendor/leaflet/leaflet.css">
-<script src="../static/vendor/leaflet/leaflet.js"></script>
-<meta name="description" content="{{ page.name }} — {{ page.category_label }} in {{ page.area }}. View location and available contact options.">
+<link rel="stylesheet" href="{{ asset_prefix }}static/tokens.css?v={{ page.taxonomy_version }}">
+<link rel="stylesheet" href="{{ asset_prefix }}static/styles.css?v={{ page.taxonomy_version }}">
+<link rel="stylesheet" href="{{ asset_prefix }}static/vendor/leaflet/leaflet.css">
+<script src="{{ asset_prefix }}static/vendor/leaflet/leaflet.js"></script>
+<meta name="description" content="{{ page.name }} — {{ page.category_label }} · {{ page.area }}">
 </head>
 <body>
-<nav class="site-nav" aria-label="Primary navigation"><a href="../index.html" class="site-logo">Whappin Puerto Viejo</a><a href="../index.html" class="nav-active">Directory</a></nav>
+<nav class="site-nav" aria-label="Primary navigation"><a href="../index.html" class="site-logo">Whappin Puerto Viejo</a><a href="../index.html" class="nav-active">{{ t("nav.back_to_directory") }}</a>{% include "partials/language_switch.html.j2" %}</nav>
 <main class="container">
 <header class="header biz-header">
-<a href="../index.html" class="back-link">&larr; Directory</a>
+<a href="../index.html" class="back-link">&larr; {{ t("nav.back_to_directory") }}</a>
 <h1>{{ page.name }}</h1>
 <div class="biz-meta">
 <span class="biz-category">{{ page.category_label }}</span>
@@ -39,14 +42,14 @@
 {%- endif %}
 </div>
 {%- if page.facets %}
-<div class="amenities semantic-facets" aria-label="Types and qualities">{% for facet in page.facets %}<span class="amenity-chip">{{ facet }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div>
+<div class="amenities semantic-facets" aria-label="{{ t('biz.types_qualities') }}">{% for facet in page.facets %}<span class="amenity-chip">{{ facet }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div>
 {%- endif %}
 <div class="badge-row">{% for badge in page.badges %}<span class="badge badge-{{ badge.lower().replace(' ', '-') }}">{{ badge }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div>
 {%- if page.rating %}
 <div class="biz-rating">{{ '★' * page.rating.full_stars }}{% if page.rating.half_star %}&#189;{% endif %} {{ page.rating.value }} <span class="rating-source">{{ page.rating.source }}</span></div>
 {%- endif %}
 {%- if page.address %}
-<div class="biz-addr"><span class="addr-label">&#128205; {{ page.address }}</span> <button class="addr-copy" data-addr-copy>Copy</button></div>
+<div class="biz-addr"><span class="addr-label">&#128205; {{ page.address }}</span> <button class="addr-copy" data-addr-copy>{{ t("biz.copy") }}</button></div>
 {%- endif %}
 {%- if page.hours_header.mode == 'verified_placeholder' %}
 <div class="biz-hours"><span class="biz-status-placeholder" data-verified-status></span></div>
@@ -59,18 +62,18 @@
 {%- endif %}
 {%- if page.weekly_hours %}
 {%- set wh = page.weekly_hours %}
-<section class="hours-section" aria-labelledby="hours-heading" data-hours-payload="{{ wh.payload_json }}"><h2 class="section-heading" id="hours-heading">Hours</h2><p class="hours-source">{{ wh.provenance | join(' · ') }}</p><p class="hours-tz">Costa Rica time</p>
+<section class="hours-section" aria-labelledby="hours-heading" data-hours-payload="{{ wh.payload_json }}"><h2 class="section-heading" id="hours-heading">{{ t("biz.hours") }}</h2><p class="hours-source">{{ wh.provenance | join(' · ') }}</p><p class="hours-tz">{{ t("biz.hours_timezone") }}</p>
 {%- if wh.collapsed %}
-<details class="disclosure hours-disclosure"><summary><span class="when-closed">View full week <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">View less <span class="chevron" aria-hidden="true">&#9650;</span></span></summary>{% include 'partials/hours_table.html.j2' %}</details>
+<details class="disclosure hours-disclosure"><summary><span class="when-closed">{{ t("biz.hours_view_week") }} <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">{{ t("biz.hours_view_less") }} <span class="chevron" aria-hidden="true">&#9650;</span></span></summary>{% include 'partials/hours_table.html.j2' %}</details>
 {%- else %}
 {% include 'partials/hours_table.html.j2' %}
 {%- endif %}
 </section>
 {%- endif %}
 {%- if page.amenities %}
-<div class="amenities-section"><strong class="amenities-heading">Amenities</strong>
+<div class="amenities-section"><strong class="amenities-heading">{{ t("biz.amenities") }}</strong>
 {%- if page.amenities.collapsed %}
-<details class="disclosure amenities-disclosure"><summary><span class="when-closed">View all {{ page.amenities.total }} amenities <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">View fewer amenities <span class="chevron" aria-hidden="true">&#9650;</span></span></summary><div class="amenities">{% for item in page.amenities['items'] %}<span class="amenity-chip">{{ item }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div></details>
+<details class="disclosure amenities-disclosure"><summary><span class="when-closed">{{ t("biz.amenities_all", n=page.amenities.total) }} <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">{{ t("biz.amenities_less") }} <span class="chevron" aria-hidden="true">&#9650;</span></span></summary><div class="amenities">{% for item in page.amenities['items'] %}<span class="amenity-chip">{{ item }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div></details>
 {%- else %}
 <div class="amenities">{% for item in page.amenities['items'] %}<span class="amenity-chip">{{ item }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div>
 {%- endif %}
@@ -78,9 +81,9 @@
 {%- endif %}
 {%- if page.attributes %}
 {%- set attrs = page.attributes %}
-<section class="attributes-section" aria-labelledby="details-heading"><h2 class="section-heading" id="details-heading">Details</h2><p class="details-source">From <a href="https://www.google.com/maps?cid={{ attrs.cid }}" target="_blank" rel="noopener">Google Maps</a>{% if attrs.updated %} · Updated {{ attrs.updated }}{% endif %}</p>
+<section class="attributes-section" aria-labelledby="details-heading"><h2 class="section-heading" id="details-heading">{{ t("biz.details") }}</h2><p class="details-source">{{ t("biz.details_from") }} <a href="https://www.google.com/maps?cid={{ attrs.cid }}" target="_blank" rel="noopener">Google Maps</a>{% if attrs.updated %} · {{ attrs.updated }}{% endif %}</p>
 {%- if attrs.collapsed %}
-<div class="details-summary" aria-label="Highlighted details">{% for value in attrs.summary %}<span class="attr-chip">{{ value }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div><details class="disclosure details-disclosure"><summary><span class="when-closed">View all {{ attrs.total }} details <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">View fewer details <span class="chevron" aria-hidden="true">&#9650;</span></span></summary><div class="details-groups" id="details-groups">{% include 'partials/attribute_groups.html.j2' %}</div></details>
+<div class="details-summary" aria-label="{{ t('biz.details_highlight') }}">{% for value in attrs.summary %}<span class="attr-chip">{{ value }}</span>{% if not loop.last %} {% endif %}{% endfor %}</div><details class="disclosure details-disclosure"><summary><span class="when-closed">{{ t("biz.details_view_all", n=attrs.total) }} <span class="chevron" aria-hidden="true">&#9660;</span></span><span class="when-open">{{ t("biz.details_view_less") }} <span class="chevron" aria-hidden="true">&#9650;</span></span></summary><div class="details-groups" id="details-groups">{% include 'partials/attribute_groups.html.j2' %}</div></details>
 {%- else %}
 <div class="attr-groups">{% include 'partials/attribute_groups.html.j2' %}</div>
 {%- endif %}
@@ -102,31 +105,31 @@
 <p>{{ page.description }}</p>
 </div>
 <div class="biz-content">
-<div class="biz-links">{% for link in page.secondary_links %}<a href="{{ link.url }}" class="secondary-link" target="_blank" rel="noopener">{{ icons.get(link.label, '') | safe }} {{ link.label }}</a>{% if not loop.last %} {% endif %}{% endfor %}</div>
+<div class="biz-links">{% for link in page.secondary_links %}<a href="{{ link.url }}" class="secondary-link" target="_blank" rel="noopener">{{ icons.get(link.label, '') | safe }} {{ link.display | default(link.label) }}</a>{% if not loop.last %} {% endif %}{% endfor %}</div>
 {%- if page.map %}
 <div class="biz-map">
 <div id="map-{{ page.slug }}" class="map-container" data-business-map data-lat="{{ page.map.lat }}" data-lng="{{ page.map.lng }}"></div>
-<p class="map-note"><a href="{{ page.map.open_url }}" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+<p class="map-note"><a href="{{ page.map.open_url }}" target="_blank" rel="noopener">{{ t("biz.open_maps_arrow") }} &rarr;</a></p>
 </div>
 {%- endif %}
 <div class="share-row">
-<button class="share-trigger" data-share-trigger>Share this place &#183; <span class="share-icon">&#8600;</span></button>
+<button class="share-trigger" data-share-trigger>{{ t("biz.share_this") }} &#183; <span class="share-icon">&#8600;</span></button>
 </div>
 <div class="share-sheet" data-share-sheet hidden>
 <div class="share-sheet-inner">
-<button class="share-option" data-share-copy>Copy link</button>
-<a href="#" class="share-option" data-share-wa target="_blank" rel="noopener">Share via WhatsApp</a>
-<button class="share-option" data-share-toggle-qr>Show QR code</button>
-<button class="share-option share-close" data-share-close>Close</button>
+<button class="share-option" data-share-copy>{{ t("biz.share_copy_link") }}</button>
+<a href="#" class="share-option" data-share-wa target="_blank" rel="noopener">{{ t("biz.share_whatsapp") }}</a>
+<button class="share-option" data-share-toggle-qr>{{ t("biz.share_show_qr") }}</button>
+<button class="share-option share-close" data-share-close>{{ t("biz.share_close") }}</button>
 </div>
 <div class="share-qr" data-share-qr-panel hidden>
-<img src="../qr/{{ page.slug }}.png" alt="QR code for {{ page.name }}" width="200" height="200" loading="lazy">
-<a href="../qr/{{ page.slug }}.png" class="qr-download-link" download>Download QR code</a>
+<img src="{{ asset_prefix }}qr/{{ page.slug }}.png" alt="{{ t('biz.qr_alt', name=page.name) }}" width="200" height="200" loading="lazy">
+<a href="{{ asset_prefix }}qr/{{ page.slug }}.png" class="qr-download-link" download>{{ t("biz.share_download_qr") }}</a>
 </div>
 </div>
 </div>
 <footer class="footer">
-<p><a href="{{ report_url }}" target="_blank" rel="noopener">Suggest an edit</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md&title=QA:%20{{ page.slug }}" target="_blank" rel="noopener">Report a problem</a></p>
+<p><a href="{{ report_url }}" target="_blank" rel="noopener">{{ t("footer.suggest_edit") }}</a> &middot; <a href="https://github.com/skinnerboxentertainment/mekatelyu/issues/new?template=qa-feedback.md&title=QA:%20{{ page.slug }}" target="_blank" rel="noopener">{{ t("footer.report_problem") }}</a></p>
 </footer>
 <div class="sticky-bar">
 {%- for action in page.sticky_actions -%}
@@ -144,6 +147,7 @@
 {%- endfor -%}
 </div>
 </main>
-<script src="../static/detail.js?v={{ page.taxonomy_version }}"></script>
+<script src="{{ asset_prefix }}static/ui-{{ lang }}.js?v={{ page.taxonomy_version }}"></script>
+<script src="{{ asset_prefix }}static/detail.js?v={{ page.taxonomy_version }}"></script>
 </body>
 </html>

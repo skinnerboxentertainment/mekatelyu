@@ -1,0 +1,3 @@
+{#- Language switcher. Root-absolute links so the same partial works from the
+    site root and from businesses/ without depth arithmetic. -#}
+<span class="lang-switch" role="group" aria-label="{{ t('nav.language') }}">{% for option in languages %}{% if option.current %}<span class="lang-current" aria-current="true" lang="{{ option.lang }}">{{ option.name }}</span>{% else %}<a href="{{ option.url }}" class="lang-option" lang="{{ option.lang }}" hreflang="{{ option.lang }}">{{ option.name }}</a>{% endif %}{% endfor %}</span>

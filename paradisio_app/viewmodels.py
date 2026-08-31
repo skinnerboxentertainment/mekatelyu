@@ -62,19 +62,31 @@ DETAILS_LARGE_SUMMARY_LIMIT = 8   # summary size for 21+
 AMENITY_EXPANSION_THRESHOLD = 5   # above this, collapse behind a disclosure
 
 
-def category_label(category: str | None) -> str:
+def category_label(category: str | None, t=None) -> str:
     key = (category or "").strip().lower()
+    if t is not None:
+        translated = t(f"category.{key}") if key else t("category.other")
+        if translated != f"category.{key}":
+            return translated
     return CATEGORY_LABELS.get(key, key.replace("_", " ").title() or "Other")
 
 
-def status_label(status: str | None) -> str:
+def status_label(status: str | None, t=None) -> str:
     """Return a reader-facing status, or "" when there is nothing to say.
 
     `active` and `unknown` deliberately produce nothing: a badge saying "active"
     is noise, and one saying "unknown" undermines records that are simply
     unremarkable.
     """
-    return STATUS_LABELS.get((status or "").strip().lower(), "")
+    key = (status or "").strip().lower()
+    if key not in STATUS_LABELS:
+        return ""
+    if t is not None:
+        lookup = "status.closed" if key in ("closed", "permanently_closed") else f"status.{key}"
+        translated = t(lookup)
+        if translated != lookup:
+            return translated
+    return STATUS_LABELS[key]
 
 
 def friendly_month(year_month: str) -> str:
@@ -90,7 +102,7 @@ def friendly_month(year_month: str) -> str:
 # Header sections
 # ---------------------------------------------------------------------------
 
-def rating(biz: dict) -> dict | None:
+def rating(biz: dict, t=None) -> dict | None:
     value = biz.get("rating")
     if value is None:
         return None
@@ -99,7 +111,7 @@ def rating(biz: dict) -> dict | None:
         "value": value,
         "full_stars": full,
         "half_star": value % 1 >= 0.3,
-        "source": "from Google Maps",
+        "source": t("biz.rating_source") if t else "from Google Maps",
     }
 
 
@@ -180,18 +192,19 @@ def _format_period(period: dict) -> str:
     return f"{clock(period.get('opens', ''))} – {closes}"
 
 
-def format_day_schedule(day: dict) -> str:
+def format_day_schedule(day: dict, t=None) -> str:
+    closed = t("biz.hours_closed") if t else "Closed"
     if day.get("closed"):
-        return "Closed"
+        return closed
     if day.get("open24Hours"):
-        return "Open 24 hours"
+        return t("biz.hours_open_24") if t else "Open 24 hours"
     periods = day.get("periods", [])
     if not periods:
-        return "Closed"
+        return closed
     return " · ".join(_format_period(period) for period in periods)
 
 
-def weekly_hours(biz: dict) -> dict | None:
+def weekly_hours(biz: dict, t=None) -> dict | None:
     """The verified week, plus the payload the client uses for 'open now'."""
     weekly = biz.get("weekly_hours") or {}
     if not weekly:
@@ -203,19 +216,20 @@ def weekly_hours(biz: dict) -> dict | None:
     for day in WEEKDAY_DISPLAY_ORDER:
         schedule = weekly.get(day)
         if schedule is None:
-            rows.append({"day": WEEKDAY_FULL[day], "text": "Not listed", "unknown": True})
+            rows.append({"day": WEEKDAY_FULL[day], "text": t("biz.hours_not_listed") if t else "Not listed", "unknown": True})
         else:
             rows.append({
                 "day": schedule.get("displayDay") or WEEKDAY_FULL[day],
-                "text": format_day_schedule(schedule),
+                "text": format_day_schedule(schedule, t),
                 "unknown": False,
             })
 
-    provenance = ["From Google Maps"]
+    provenance = [t("biz.hours_from_maps") if t else "From Google Maps"]
     if captured_at:
-        provenance.append(f"Updated {friendly_month(captured_at)}")
+        month = friendly_month(captured_at)
+        provenance.append(t("biz.hours_updated", month=month) if t else f"Updated {month}")
     if meta.get("completeness", "partial") == "partial":
-        provenance.append("some days unavailable")
+        provenance.append(t("biz.hours_partial") if t else "some days unavailable")
 
     # Serialised here rather than in the template. Jinja's `tojson` filter does
     # not escape double quotes — it targets <script> blocks — so using it inside
@@ -251,7 +265,7 @@ def amenities(biz: dict) -> dict | None:
     }
 
 
-def semantic_facets(biz: dict, limit: int = 6) -> list[str]:
+def semantic_facets(biz: dict, t=None, limit: int = 6) -> list[str]:
     """Type and quality chips, excluding the one implied by the category."""
     primary = PRIMARY_CATEGORY_TAGS.get((biz.get("category") or "").strip().lower())
     facets: list[str] = []
@@ -259,12 +273,19 @@ def semantic_facets(biz: dict, limit: int = 6) -> list[str]:
         if tag == primary or tag in facets:
             continue
         facets.append(tag)
-    return [TAG_LABELS.get(tag, tag.replace("-", " ").title()) for tag in facets[:limit]]
+    labels = []
+    for tag in facets[:limit]:
+        default = TAG_LABELS.get(tag, tag.replace("-", " ").title())
+        labels.append(t(f"tag.{tag}") if t and t(f"tag.{tag}") != f"tag.{tag}" else default)
+    return labels
 
 
-def freshness(biz: dict) -> str:
+def freshness(biz: dict, t=None) -> str:
     verified = biz.get("verified_date", "")
-    return f"Data captured {verified[:10]}" if verified else ""
+    if not verified:
+        return ""
+    date = verified[:10]
+    return t("biz.captured", date=date) if t else f"Data captured {date}"
 
 
 # ---------------------------------------------------------------------------
@@ -396,7 +417,7 @@ def rank_summary_items(groups: list[dict], category: str, limit: int) -> list[tu
     return chosen
 
 
-def attributes(biz: dict) -> dict | None:
+def attributes(biz: dict, t=None) -> dict | None:
     """The Details section, or None when there is nothing worth showing."""
     raw = biz.get("attributes") or []
     if not raw:
@@ -419,7 +440,7 @@ def attributes(biz: dict) -> dict | None:
         "total": total,
         "groups": ordered,
         "cid": biz.get("google_maps_cid", ""),
-        "updated": friendly_month(captured_at) if captured_at else "",
+        "updated": (t("biz.updated_month", month=friendly_month(captured_at)) if t else f"Updated {friendly_month(captured_at)}") if captured_at else "",
         "collapsed": total > DETAILS_EXPANSION_THRESHOLD,
         "summary": None,
     }
@@ -457,7 +478,7 @@ def map_links(biz: dict) -> dict:
     return {"embed": embed, "directions": directions}
 
 
-def sticky_actions(biz: dict) -> list[dict]:
+def sticky_actions(biz: dict, t=None) -> list[dict]:
     """The bottom bar. Share is always present; the rest only when routable."""
     channels = biz.get("channels") or {}
     primary = biz.get("primary_contact") or {}
@@ -465,7 +486,8 @@ def sticky_actions(biz: dict) -> list[dict]:
 
     directions = map_links(biz)["directions"]
     if directions:
-        actions.append({"kind": "directions", "icon": "Directions", "label": "Directions", "url": directions})
+        actions.append({"kind": "directions", "icon": "Directions",
+                        "label": t("biz.directions") if t else "Directions", "url": directions})
 
     whatsapp = channels.get("whatsapp") or ""
     phone = channels.get("phone_normalized") or ""
@@ -475,39 +497,107 @@ def sticky_actions(biz: dict) -> list[dict]:
         actions.append({"kind": "call", "icon": "WhatsApp", "label": "WhatsApp",
                         "url": whatsapp_link(whatsapp), "channel": "WhatsApp", "external": True})
     elif show_call:
-        actions.append({"kind": "call", "icon": "Call", "label": "Call",
+        actions.append({"kind": "call", "icon": "Call", "label": t("biz.call") if t else "Call",
                         "url": f"tel:{phone}", "channel": "Call", "external": False})
     elif whatsapp:
         actions.append({"kind": "call", "icon": "WhatsApp", "label": "WhatsApp",
                         "url": whatsapp_link(whatsapp), "channel": "WhatsApp", "external": True})
 
-    actions.append({"kind": "share", "icon": "Share", "label": "Share"})
+    actions.append({"kind": "share", "icon": "Share", "label": t("biz.share") if t else "Share"})
     return actions
 
 
-def business_page(biz: dict, taxonomy_version: str) -> dict:
+def describe(biz: dict, t=None) -> str:
+    """The page's description.
+
+    A description the business wrote is shown as written. One this generator
+    composed is rebuilt in the page's language from its recorded facts.
+    """
+    facts = biz.get("description_facts")
+    if facts:
+        rendered = []
+        for key, params in facts:
+            resolved = dict(params)
+            if "category_key" in resolved:
+                resolved["category"] = category_label(resolved.pop("category_key"), t)
+            rendered.append(_EN_DESCRIPTION[key].format(**resolved) if t is None else t(key, **resolved))
+        return " ".join(rendered)
+    written = biz.get("description")
+    if written:
+        return written
+    return t("biz.no_description") if t else "No description available."
+
+
+_EN_DESCRIPTION = {
+    "desc.category_in_area": "{category} in {area}.",
+    "desc.rated": "Rated {rating}/5 on Google Maps.",
+    "desc.listed_since": "Listed since {month}.",
+    "desc.phone": "Phone available.",
+    "desc.instagram": "Active on Instagram.",
+    "desc.whatsapp": "Accepts WhatsApp inquiries.",
+    "desc.email": "Email available.",
+}
+
+
+CONTACT_LABEL_KEYS = {
+    "WhatsApp": "biz.whatsapp",
+    "Call": "biz.call",
+    "Instagram": "biz.instagram_dm",
+    "Website": "biz.website",
+    "Map": "biz.open_in_maps",
+    "None": "biz.no_contact",
+}
+
+SECONDARY_LABEL_KEYS = {"Call": "biz.call", "Website": "biz.website"}
+
+
+def localise_contact(contact: dict, t=None) -> dict:
+    """Translate a contact action's label without touching its target."""
+    if not t or not contact:
+        return contact
+    key = CONTACT_LABEL_KEYS.get(contact.get("type"))
+    if not key:
+        return contact
+    translated = t(key)
+    if translated == key:
+        return contact
+    return {**contact, "label": translated}
+
+
+def localise_links(links: list[dict], t=None) -> list[dict]:
+    if not t:
+        return links
+    out = []
+    for link in links:
+        key = SECONDARY_LABEL_KEYS.get(link.get("label"))
+        translated = t(key) if key else None
+        out.append({**link, "display": translated} if translated and translated != key else {**link, "display": link["label"]})
+    return out
+
+
+def business_page(biz: dict, taxonomy_version: str, t=None) -> dict:
     """The complete model for one business page."""
     return {
         "slug": biz["slug"],
         "name": biz["name"],
         "area": biz["area"],
-        "category_label": category_label(biz.get("category")),
+        "category_label": category_label(biz.get("category"), t),
         "status": biz.get("status", ""),
-        "status_label": status_label(biz.get("status")),
-        "description": biz.get("description") or "No description available.",
+        "status_label": status_label(biz.get("status"), t),
+        "description": describe(biz, t),
         "badges": biz.get("badges", []),
-        "facets": semantic_facets(biz),
-        "rating": rating(biz),
+        "facets": semantic_facets(biz, t),
+        "rating": rating(biz, t),
         "address": address(biz),
         "hours_header": hours_header(biz),
-        "weekly_hours": weekly_hours(biz),
+        "weekly_hours": weekly_hours(biz, t),
         "amenities": amenities(biz),
-        "attributes": attributes(biz),
+        "attributes": attributes(biz, t),
         "prices": (biz.get("prices") or [])[:3],
-        "freshness": freshness(biz),
-        "primary_contact": biz.get("primary_contact") or {},
-        "secondary_links": biz.get("secondary_links") or [],
-        "sticky_actions": sticky_actions(biz),
+        "freshness": freshness(biz, t),
+        "primary_contact": localise_contact(biz.get("primary_contact") or {}, t),
+        "secondary_links": localise_links(biz.get("secondary_links") or [], t),
+        "sticky_actions": sticky_actions(biz, t),
         "map": map_links(biz)["embed"],
         "taxonomy_version": taxonomy_version,
     }
