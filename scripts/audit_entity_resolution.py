@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import csv
-import json
 import math
 import re
 import unicodedata
@@ -12,7 +11,6 @@ from difflib import SequenceMatcher
 from itertools import combinations
 from pathlib import Path
 from urllib.parse import urlparse
-
 
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "pv_master_unified.csv"

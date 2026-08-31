@@ -4,7 +4,6 @@ Generates scan targets at z16 (all areas) and z17 (dense commercial areas).
 Filters out ocean cells using a simple land approximation.
 """
 import csv
-import json
 import math
 
 ORIGIN_LAT, ORIGIN_LON = 9.6554, -82.7533
@@ -105,7 +104,7 @@ def main():
     dense_targets = [t for t in targets if t["zone"] == "dense"]
     standard_targets = [t for t in targets if t["zone"] == "standard"]
 
-    print(f"Grid generation complete:")
+    print("Grid generation complete:")
     print(f"  Total land targets within 5 km: {len(targets)}")
     print(f"  Z16 targets (all land):         {len(z16_targets)}")
     print(f"  Z17 targets (dense zones only):  {len(z17_targets)}")
@@ -133,15 +132,15 @@ def main():
                 "priority": i,
             })
 
-    print(f"\nWritten:")
+    print("\nWritten:")
     print(f"  neighborhood_scanner/scan_grid.csv ({len(targets)} targets)")
-    print(f"  neighborhood_scanner/scan_targets.csv (prioritized)")
+    print("  neighborhood_scanner/scan_targets.csv (prioritized)")
 
     # Show sample
-    print(f"\nSample targets (dense zones, first 5):")
+    print("\nSample targets (dense zones, first 5):")
     for t in dense_targets[:5]:
         print(f"  {t['latitude']},{t['longitude']} [z16+z17]")
-    print(f"\nSample targets (standard zones, first 5):")
+    print("\nSample targets (standard zones, first 5):")
     for t in standard_targets[:5]:
         print(f"  {t['latitude']},{t['longitude']} [z16]")
 

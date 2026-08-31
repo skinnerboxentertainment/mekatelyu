@@ -1,7 +1,6 @@
 import html
 import json
 from pathlib import Path
-from urllib.parse import quote
 
 
 def load_organizations(data_path):

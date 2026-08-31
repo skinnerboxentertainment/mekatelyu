@@ -8,7 +8,6 @@ import hashlib
 import json
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / "pv_master_unified.csv"
 AUDIT = ROOT / "audit" / "maps-cid-discovery"
@@ -72,7 +71,7 @@ def main() -> int:
         accepted = name in ACCEPT; cid = item["resolved_cid"]
         if accepted:
             shot = AUDIT / item["screenshot"]
-            if not cid.isdigit() or cid in existing and existing[cid] != name:
+            if not cid.isdigit() or (cid in existing and existing[cid] != name):
                 raise SystemExit(f"CID collision or invalid CID: {name}")
             if not shot.is_file() or hashlib.sha256(shot.read_bytes()).hexdigest() != item["screenshot_sha256"]:
                 raise SystemExit(f"screenshot evidence failed: {name}")

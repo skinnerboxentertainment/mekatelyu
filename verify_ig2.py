@@ -7,10 +7,10 @@ Only working profiles lack this text.
 
 import csv
 import json
-import re
-import time
-import httpx
 import os
+import time
+
+import httpx
 
 INPUT_CSV = "pv_within_5km_clean.csv"
 OUTPUT_CSV = "pv_within_5km_verified.csv"
@@ -161,7 +161,7 @@ def main():
     final_with_ig = sum(1 for r in rows if r.get("instagram_handle"))
 
     print(f"\n{'='*50}", flush=True)
-    print(f"VERIFICATION COMPLETE", flush=True)
+    print("VERIFICATION COMPLETE", flush=True)
     print(f"{'='*50}", flush=True)
     print(f"  Checked:   {len(targets)}", flush=True)
     print(f"  Kept:      {kept}", flush=True)

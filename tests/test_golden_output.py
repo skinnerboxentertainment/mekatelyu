@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.golden_manifest import (  # noqa: E402
+from scripts.golden_manifest import (
     FIXTURE_DIR,
     FIXTURES,
     MANIFEST_PATH,

@@ -2,7 +2,6 @@ import argparse
 import json
 import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -11,9 +10,6 @@ from CODEX_ENDPOINT import session_lib as sl
 from CODEX_ENDPOINT.session_schema import (
     Session,
     SessionState,
-    SessionStatus,
-    AgentName,
-    EntryType,
     derive_display_fields,
 )
 
@@ -195,7 +191,7 @@ def cmd_status(args):
                 print(f"    Artifact:  {apath}")
 
     if raw.get("error"):
-        print(f"\n  Error:")
+        print("\n  Error:")
         print(f"    Code:    {raw['error'].get('code', '?')}")
         print(f"    Message: {raw['error'].get('message', '')[:200]}")
 

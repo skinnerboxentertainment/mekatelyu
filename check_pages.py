@@ -1,4 +1,6 @@
-import json, sys
+import json
+import sys
+
 d = json.load(sys.stdin)
 print(f"Status: {d.get('status')}")
 print(f"URL: {d.get('html_url')}")

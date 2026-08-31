@@ -6,7 +6,6 @@ import csv
 import hashlib
 import json
 from collections import Counter
-from pathlib import Path
 
 from autovisual_whatsapp_checkifier import DEFAULT_WORKSPACE, read_ledger
 

@@ -1,8 +1,7 @@
 import time
-import httpx
-from datetime import datetime
-from typing import Optional
 from urllib.parse import urljoin
+
+import httpx
 
 from .schema import ListingStore
 
@@ -48,7 +47,7 @@ class Fetcher:
     def _to_absolute(self, path: str) -> str:
         return urljoin(self.base_url, path)
 
-    def fetch(self, url: str, force: bool = False) -> Optional[str]:
+    def fetch(self, url: str, force: bool = False) -> str | None:
         full_url = self._to_absolute(url)
 
         if not force:

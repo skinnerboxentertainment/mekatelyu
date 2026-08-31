@@ -1,6 +1,7 @@
 """Resolve affiliate-wrapped URLs to real websites in the master dataset."""
-import csv, re
-from urllib.parse import unquote, urlparse, urlunparse
+import csv
+import re
+from urllib.parse import unquote, urlparse
 
 AFFILIATE_DOMAINS = {
     'anrdoezrs.net', 'kqzyfj.com', 'dpbolvw.net', 'tkqlhce.com',

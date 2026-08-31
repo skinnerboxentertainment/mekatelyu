@@ -3,17 +3,23 @@
 Full crawl: all categories from puertoviejosatellite.com.
 """
 
-import sys, os, time
+import os
+import sys
+import time
 from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from pvscraper import (
-    ListingStore, Fetcher, Enumerator, ListingParser,
-    Normalizer, Pipeline, Auditor,
+    Auditor,
+    Enumerator,
+    Fetcher,
+    ListingParser,
+    ListingStore,
+    Normalizer,
 )
-from pvscraper.schema import SCHEMA_SQL
 from pvscraper.enumerator import CATEGORY_PAGES
+from pvscraper.schema import SCHEMA_SQL
 
 DB_PATH = "pvscraper_full.db"
 

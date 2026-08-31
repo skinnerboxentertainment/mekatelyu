@@ -1,5 +1,3 @@
-from collections import Counter
-from typing import Optional
 from .schema import ListingStore
 
 
@@ -92,7 +90,7 @@ class Auditor:
 
         return report
 
-    def print_report(self, report: Optional[dict] = None):
+    def print_report(self, report: dict | None = None):
         if report is None:
             report = self.report()
 
@@ -103,11 +101,11 @@ class Auditor:
         print(f"Categories: {report['by_category']}")
         print(f"Areas: {report['by_area']}")
         print(f"Statuses: {report['by_status']}")
-        print(f"\n--- Instagram Coverage ---")
+        print("\n--- Instagram Coverage ---")
         print(f"  Overall: {report['instagram_coverage']['total']} ({report['instagram_coverage']['percentage']}%)")
         for cat, data in report['instagram_coverage']['by_category'].items():
             print(f"  {cat}: {data['with_instagram']}/{data['total']} ({data['pct']}%)")
-        print(f"\n--- Missing Fields ---")
+        print("\n--- Missing Fields ---")
         for field, data in report['missing_fields'].items():
             print(f"  {field}: {data['missing']} missing ({data['pct']}%)")
         print(f"\nParser warnings: {report['parser_warnings']['total']} ({report['parser_warnings']['percentage']}%)")

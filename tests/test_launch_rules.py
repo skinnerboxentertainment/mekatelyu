@@ -44,7 +44,21 @@ class LaunchPresentationRulesTest(unittest.TestCase):
         self.assertEqual(build.category_label("tour_company"), "Tours")
         self.assertEqual(build.category_label("vacation_rental"), "Vacation rental")
         self.assertEqual(build.category_label("real_estate"), "Real estate")
-        self.assertEqual(build.get_intents("real_estate"), ["services"])
+
+    def test_real_estate_is_discoverable_under_services(self):
+        """Exercise the live grouping path.
+
+        This previously asserted on build.get_intents, a helper the renderer had
+        stopped calling — discovery groups now come from the semantic taxonomy.
+        Asserting through build_business keeps the guarantee attached to the code
+        that actually runs.
+        """
+        business = build.build_business({
+            "business_name": "Example Realty",
+            "category": "real_estate",
+            "area": "Puerto Viejo",
+        })
+        self.assertIn("services", business["discovery_groups"])
 
     def test_only_actionable_statuses_are_presented(self):
         self.assertEqual(build.status_html("active"), "")

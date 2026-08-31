@@ -212,7 +212,7 @@ class ReviewHandler(BaseHTTPRequestHandler):
         self.send_response(status); self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(data))); self.end_headers(); self.wfile.write(data)
 
-    def do_GET(self) -> None:  # noqa: N802
+    def do_GET(self) -> None:
         if self.path in {"/", "/index.html"}:
             data = self.dashboard.read_bytes(); self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(data)))
@@ -237,7 +237,7 @@ class ReviewHandler(BaseHTTPRequestHandler):
             return self._json(200, {"name": queue_name, "items": queue, "attempts": ledger})
         self._json(404, {"error": "not found"})
 
-    def do_POST(self) -> None:  # noqa: N802
+    def do_POST(self) -> None:
         if self.path != "/api/attempt": return self._json(404, {"error": "not found"})
         try:
             length = int(self.headers.get("Content-Length", "0"))

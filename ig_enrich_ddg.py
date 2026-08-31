@@ -8,8 +8,8 @@ import csv
 import json
 import re
 import time
+
 import httpx
-import urllib.parse
 
 INPUT_CSV = "pv_within_5km_enriched.csv"
 OUTPUT_CSV = "pv_within_5km_enriched2.csv"
@@ -147,7 +147,7 @@ def main():
 
     # Summary
     print(f"\n{'='*50}", flush=True)
-    print(f"DUCKDUCKGO IG ENRICHMENT RESULTS", flush=True)
+    print("DUCKDUCKGO IG ENRICHMENT RESULTS", flush=True)
     print(f"{'='*50}", flush=True)
     print(f"  Searched:   {searched_count}", flush=True)
     print(f"  Found new:  {found_count}", flush=True)

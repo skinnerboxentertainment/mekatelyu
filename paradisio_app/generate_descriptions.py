@@ -31,7 +31,6 @@ AMENITY_MAP = {
     "Incluye desayuno, Wi-Fi y estacionamiento": "breakfast, Wi-Fi, and parking included",
     "Incluye desayuno y estacionamiento": "breakfast and parking included",
     "Bar": "a bar",
-    "Se permiten mascotas": "pet-friendly",
     "cocina": "kitchen access",
     "Cocina latinoamericana": "kitchen access",
     "Libre de humo": "non-smoking",

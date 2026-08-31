@@ -1,10 +1,10 @@
-import unittest
 import sys
+import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.validate_publication_consistency import check_weekly_schedule, check_description_hours, check_taxonomy_type
+from scripts.validate_publication_consistency import check_description_hours, check_taxonomy_type, check_weekly_schedule
 
 
 def business(**kw):

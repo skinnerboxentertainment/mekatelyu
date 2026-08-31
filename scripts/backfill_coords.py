@@ -8,7 +8,6 @@ uses known town-center coordinates.
 """
 
 import csv
-import json
 from collections import defaultdict
 from pathlib import Path
 

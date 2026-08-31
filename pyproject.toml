@@ -1,0 +1,138 @@
+[project]
+name = "whappin"
+version = "0.1.0"
+description = "Whappin Puerto Viejo — a verified, opt-out business directory for Costa Rica's South Caribbean."
+requires-python = ">=3.11"
+dependencies = [
+    "qrcode[pil]==8.2",
+    "pillow==12.3.0",
+]
+
+[project.optional-dependencies]
+# Local QA tooling. Not required to build or verify the production artifact.
+audit = ["playwright==1.55.0"]
+dev = ["ruff==0.14.2", "mypy==1.18.2"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["paradisio_app"]
+
+# ---------------------------------------------------------------------------
+# Lint and format
+# ---------------------------------------------------------------------------
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [
+    "release",
+    "docs",
+    "archive",
+    "amenity_pipeline",
+    "tests/golden",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes — unused imports and names, the check that would have
+            # caught the 467 lines of dead code years ago
+    "I",    # import ordering
+    "UP",   # pyupgrade
+    "B",    # bugbear
+    "C4",   # comprehensions
+    "SIM",  # simplify
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "E501",   # line length is enforced by the formatter, not the linter
+    "B008",   # function call in default arg — used deliberately in a few CLIs
+    "SIM108", # ternary-instead-of-if hurts readability in the render paths
+    "E701",   # `if cond: score += 40` is the deliberate idiom in the scoring
+    "E702",   # functions; collapsing it there costs more than it buys
+    "E741",   # single-letter names appear in tight numeric/parse helpers
+    "RUF001", # Spanish and business names legitimately contain look-alike glyphs
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests may shadow and re-import freely.
+"tests/*" = ["F401", "F811"]
+
+# Legacy acquisition tooling. These are operational scrapers written against a
+# moving target, with no test coverage and their own conventions. They are held
+# to correctness rules (F, B) but not to style or modernisation, and Leg 5 of
+# the programme consolidates them behind one acquisition contract — at which
+# point these exemptions should be deleted, not extended.
+"scripts/*" = ["UP", "SIM", "E402", "E722", "F841", "B007", "C4", "B904", "RUF"]
+"stealth_search.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"stealth_auth_search.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"website_crawl.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"crossref_osm.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"geofilter.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"ig_enrich.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"ig_enrich_ddg.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"verify_ig2.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"generate_report.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"codex_bridge.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"build_targets.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"run_pilot.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"tag_ig_guesses.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"export_csv.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"check_pages.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+# These modules adjust sys.path before importing project code, so their imports
+# legitimately sit below that setup (E402).
+"CODEX_ENDPOINT/*" = ["UP", "SIM", "E722", "F841", "B007", "C4", "B904", "RUF", "E402"]
+"neighborhood_scanner/*" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF", "E402"]
+"pvscraper/*" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+
+# Enrichment helpers inside the app package, superseded by the verified-data
+# pipeline and slated for the same Leg 5 consolidation.
+"paradisio_app/maps_enrich.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/maps_enrich_v2.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/maps_enrich_report.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/parse_maps_v3.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/generate_descriptions.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/generate_qr.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/capture_mobile.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/audit_entries.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+"paradisio_app/invoicing.py" = ["UP", "SIM", "E722", "F841", "B007", "C4", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# ---------------------------------------------------------------------------
+# Types
+# ---------------------------------------------------------------------------
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+no_implicit_optional = true
+check_untyped_defs = true
+exclude = "^(release|docs|archive|amenity_pipeline|tests/golden)/"
+
+# The generator is untyped today and is rewritten in Leg 1's later phases.
+# It is deliberately not held to strict typing until the typed domain model
+# lands, so that mypy stays useful rather than noisy in the meantime.
+[[tool.mypy.overrides]]
+module = ["paradisio_app.build", "paradisio_app.*"]
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = ["qrcode.*", "PIL.*"]
+ignore_missing_imports = true
+
+# ---------------------------------------------------------------------------
+# Tests
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+# The golden build tests take ~60s; keep them visible rather than hidden.
+addopts = "-ra"

@@ -10,7 +10,6 @@ import struct
 import sys
 from pathlib import Path
 
-
 ORGANIZATIONS_PATH = Path(__file__).resolve().parent.parent / "paradisio_app" / "data" / "organizations.json"
 
 FORBIDDEN_TEXT = (

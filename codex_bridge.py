@@ -3,19 +3,16 @@ import os
 import subprocess
 import sys
 import time
-import uuid
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from CODEX_ENDPOINT import session_lib as sl
 from CODEX_ENDPOINT.session_schema import (
+    AgentName,
     Session,
     SessionState,
-    AgentName,
-    EntryType,
-    validate_transition,
-    validate_paths,
     derive_display_fields,
+    validate_paths,
 )
 
 CODEX_EXECUTABLE = Path(
@@ -197,7 +194,7 @@ def handle_session(args) -> dict:
 
     spath = sl.session_path(session_id)
     if not sl.is_path_contained(spath, sl.SESSION_DIR):
-        return {"status": "error", "error": f"Session path not contained in SESSION_DIR", "exit_code": 1, "id": sl.bridge_run_id()}
+        return {"status": "error", "error": "Session path not contained in SESSION_DIR", "exit_code": 1, "id": sl.bridge_run_id()}
 
     try:
         raw = sl.read_session(spath)

@@ -4,15 +4,12 @@ Uses real installed Chrome with persistent profile for human-like browsing.
 """
 import csv
 import json
-import os
 import random
 import re
-import sys
+import subprocess
 import time
 from datetime import datetime
 from pathlib import Path
-
-import subprocess
 
 from playwright.sync_api import sync_playwright
 
@@ -136,7 +133,7 @@ def search_and_resolve(page, name, lat_hint="", lon_hint=""):
         # Light CAPTCHA check (less common on Maps, but still possible)
         if detect_captcha(page):
             result["error"] = "CAPTCHA or unusual traffic detected"
-            log(f"  CAPTCHA detected — stopping session")
+            log("  CAPTCHA detected — stopping session")
             return result
 
         # If a single place resolved, Maps redirects to /place/ URL automatically
@@ -144,7 +141,7 @@ def search_and_resolve(page, name, lat_hint="", lon_hint=""):
 
         # If still on /search/ URL, try clicking the first result
         if "/search/" in final_url:
-            log(f"  Search results page — trying first result")
+            log("  Search results page — trying first result")
             first_result = page.query_selector('a[href*="/place/"]')
             if first_result:
                 try:
@@ -189,9 +186,7 @@ def search_and_resolve(page, name, lat_hint="", lon_hint=""):
             result["confidence"] = "low"
             if not result["error"]:
                 result["error"] = f"Outside PV zone: {result['latitude']},{result['longitude']}"
-        elif has_cid or (has_coords and in_zone):
-            result["confidence"] = "medium"
-        elif "/place/" in final_url:
+        elif has_cid or (has_coords and in_zone) or "/place/" in final_url:
             result["confidence"] = "medium"
         else:
             result["confidence"] = "low"
@@ -354,7 +349,7 @@ def main():
         log(f"With CID:   {with_cid}")
         if captcha_hit:
             log("⚠️  CAPTCHA hit — session stopped early")
-            log(f"Recommend waiting 12-24h before next session")
+            log("Recommend waiting 12-24h before next session")
         else:
             log(f"Session complete. Rest {REST_MINUTES} min before next.")
             log(f"Remaining: {len(remaining) - len(batch)}")

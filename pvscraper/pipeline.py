@@ -1,7 +1,7 @@
 from .enumerator import Enumerator
 from .fetcher import Fetcher
-from .parser import ListingParser
 from .normalizer import Normalizer
+from .parser import ListingParser
 from .schema import ListingStore
 
 

@@ -5,7 +5,6 @@ Generate comprehensive HTML report from the final enriched dataset.
 import csv
 import json
 import math
-from collections import defaultdict, Counter
 from datetime import datetime
 
 INPUT_CSV = "pv_within_5km_verified.csv"
@@ -217,7 +216,7 @@ tr:hover {{ background: #f8f9fa; }}
 <td><div class="progress"><div class="progress-fill" style="width:{bar_width}%;background:{color}"></div></div></td>
 </tr>\n"""
 
-    html += f"""</table>
+    html += """</table>
 </div>
 
 <div class="card">
@@ -303,7 +302,7 @@ tr:hover {{ background: #f8f9fa; }}
         cat = r.get("category", "")
         area = r.get("area", "")
         ig = r.get("instagram_handle", "") or ""
-        ig_display = f'<span class="ig-badge ig-yes">Yes</span>' if ig else f'<span class="ig-badge ig-no">No</span>'
+        ig_display = '<span class="ig-badge ig-yes">Yes</span>' if ig else '<span class="ig-badge ig-no">No</span>'
         phone = (r.get("normalized_phone") or r.get("phone") or "")[:18]
         fb = "Yes" if r.get("facebook_url") else ""
         dist = r.get("distance_km", "")

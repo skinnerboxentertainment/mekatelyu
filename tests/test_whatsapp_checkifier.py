@@ -4,7 +4,13 @@ import unittest
 from pathlib import Path
 
 from scripts.autovisual_whatsapp_checkifier import (
-    attach_screenshot, build_queues, prepare, record_batch, safe_route, select_pilot, validate_attempt,
+    attach_screenshot,
+    build_queues,
+    prepare,
+    record_batch,
+    safe_route,
+    select_pilot,
+    validate_attempt,
 )
 
 

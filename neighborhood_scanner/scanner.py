@@ -5,11 +5,9 @@ takes screenshots, deduplicates against known dataset.
 """
 import csv
 import json
-import os
 import re
 import sys
 import time
-import uuid
 from pathlib import Path
 
 # Fix console encoding for Windows
@@ -22,6 +20,7 @@ if str(_root) not in sys.path:
     sys.path.insert(0, str(_root))
 
 from playwright.sync_api import sync_playwright
+
 from neighborhood_scanner.dedup import DedupEngine
 
 BASE_DIR = Path(__file__).parent.parent
@@ -369,7 +368,7 @@ class MapsScanner:
 
         total_new = len(self.discoveries)
         print(f"\n{'='*50}")
-        print(f"SCAN COMPLETE")
+        print("SCAN COMPLETE")
         print(f"{'='*50}")
         print(f"  Targets scanned: {len(self.results)}")
         print(f"  New discoveries: {total_new}")

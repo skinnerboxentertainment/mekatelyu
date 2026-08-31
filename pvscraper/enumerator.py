@@ -1,6 +1,5 @@
-import re
-from typing import Iterator, Optional
 from urllib.parse import urljoin, urlparse
+
 from bs4 import BeautifulSoup
 
 from .fetcher import Fetcher
@@ -103,7 +102,7 @@ class Enumerator:
 
         return urls
 
-    def _is_listing_url(self, url: str) -> Optional[str]:
+    def _is_listing_url(self, url: str) -> str | None:
         """Check if a URL points to a PVS business listing page.
         Returns the cleaned URL or None."""
         parsed = urlparse(url)

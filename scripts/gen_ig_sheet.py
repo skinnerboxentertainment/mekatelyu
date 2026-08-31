@@ -14,7 +14,8 @@ Columns:
   K: Notes
 """
 
-import csv, json
+import csv
+import json
 from pathlib import Path
 
 REPORT = Path("ig_triage_report.json")
