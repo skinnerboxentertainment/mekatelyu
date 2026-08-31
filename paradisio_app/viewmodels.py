@@ -604,6 +604,11 @@ def provenance_lines(biz: dict, t=None) -> list[str]:
         lines.append(say("prov.coordinates", "Location from {source}", source=prov["coordinate_source"]))
     if not lines:
         lines.append(say("prov.no_evidence", "This listing has not been re-checked recently."))
+    # Said inside the disclosure rather than as a banner. 60% of records are
+    # stale today; a warning on three pages in five is noise people learn to
+    # ignore, which would defeat the point of saying anything at all.
+    if biz.get("freshness_state") in ("stale", "unknown"):
+        lines.append(say("prov.may_be_stale", "Some of this may have changed since it was last checked."))
     return lines
 
 

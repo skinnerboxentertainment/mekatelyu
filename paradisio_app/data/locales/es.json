@@ -215,6 +215,7 @@
   "prov.heading": "Cómo lo sabemos",
   "prov.instagram": "Cuenta de Instagram verificada en el perfil real",
   "prov.maps": "Detalles leídos de Google Maps en {date}",
+  "prov.may_be_stale": "Parte de esta información puede haber cambiado desde la última verificación.",
   "prov.no_evidence": "Esta ficha no se ha vuelto a verificar recientemente.",
   "results.load_more": "Cargar {count} más ({remaining} restantes)",
   "results.loading": "Cargando directorio...",

@@ -215,6 +215,7 @@
   "prov.heading": "How we know this",
   "prov.instagram": "Instagram account checked against the live profile",
   "prov.maps": "Details read from Google Maps in {date}",
+  "prov.may_be_stale": "Some of this may have changed since it was last checked.",
   "prov.no_evidence": "This listing has not been re-checked recently.",
   "results.load_more": "Load {count} more ({remaining} remaining)",
   "results.loading": "Loading directory...",

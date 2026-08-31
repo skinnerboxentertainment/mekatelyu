@@ -11,10 +11,11 @@ import qrcode
 from PIL import Image
 
 try:
-    from . import domain, i18n, provenance, viewmodels
+    from . import domain, freshness, i18n, provenance, viewmodels
     from .semantic_taxonomy import TAG_LABELS, TAXONOMY_VERSION, classify_record, semantic_key
 except ImportError:  # Direct execution: python paradisio_app/build.py
     import domain
+    import freshness
     import i18n
     import provenance
     import viewmodels
@@ -467,6 +468,9 @@ def build_business(row):
         "description": row.get("description_full", "").strip()[:500],
         "verified_date": row.get("verified_date", "").strip(),
         "provenance_summary": provenance_index().summary(row),
+        "freshness_state": freshness.assess(
+            row, provenance_index().capture_dates(row.get("google_maps_cid", "").strip())
+        ).worst,
         "claim": {"status": "unclaimed"},
         "rating": enrich.get("rating"),
         "maps_address": enrich.get("address"),
@@ -861,7 +865,13 @@ def main():
     # 'self' scripts — an inline <script> would be blocked.
     for language in i18n.available_languages():
         strings = i18n.load_strings(language)
-        payload = "const UI_STRINGS=" + json.dumps(strings, ensure_ascii=False, separators=(",", ":")) + ";\n"
+        payload = (
+            "const UI_STRINGS=" + json.dumps(strings, ensure_ascii=False, separators=(",", ":")) + ";\n"
+            # The client's staleness threshold comes from the freshness policy,
+            # so the two cannot drift apart into disagreeing about when a
+            # schedule stops being trustworthy.
+            f"const LIVE_STATUS_MAX_AGE_DAYS={freshness.LIVE_STATUS_MAX_AGE_DAYS};\n"
+        )
         (OUTPUT_DIR / "static" / f"ui-{language}.js").write_text(payload, encoding="utf-8")
 
     static_src = STATIC_DIR / "app.js"

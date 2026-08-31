@@ -60,6 +60,12 @@ jobs:
       - name: Verify release artifact
         run: python scripts/verify_release.py
 
+      # Reports on catalogue health rather than gating on it: staleness is a
+      # backlog to work through, not a reason to block a deploy. Printed so a
+      # sharp drop is visible in the run log.
+      - name: Report catalogue health
+        run: python scripts/quality_report.py
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

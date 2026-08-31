@@ -276,7 +276,10 @@
                 var stale = false;
                 if (capturedAt && !isNaN(capturedAt.getTime())) {
                     var ageDays = (Date.now() - capturedAt.getTime()) / 86400000;
-                    if (ageDays > 21) stale = true;
+                    // Threshold comes from the build so the client and the
+                    // freshness policy cannot drift apart.
+                    var maxAge = (typeof LIVE_STATUS_MAX_AGE_DAYS !== "undefined") ? LIVE_STATUS_MAX_AGE_DAYS : 21;
+                    if (ageDays > maxAge) stale = true;
                 }
                 if (stale) {
                     badge.textContent = t("biz.hours_as_listed", "Hours as listed");

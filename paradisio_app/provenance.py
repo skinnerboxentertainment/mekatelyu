@@ -223,6 +223,13 @@ class ProvenanceIndex:
             + self.semantics(row)
         )
 
+    def capture_dates(self, cid: str) -> dict[str, str]:
+        """Capture timestamps per aspect, for the freshness assessment."""
+        if not cid:
+            return {}
+        pairs = (("amenities", self.amenities), ("attributes", self.attributes), ("hours", self.hours))
+        return {aspect: record.get("capturedAt", "") for aspect, store in pairs if (record := store.get(cid))}
+
     def summary(self, row: dict) -> dict:
         """A compact model for the page's 'how we know this' disclosure."""
         cid = row.get("google_maps_cid", "").strip()

@@ -1,0 +1,2289 @@
+{
+  "generated": "2026-08-31",
+  "records": 736,
+  "coverage": {
+    "google_maps_cid": 725,
+    "latitude": 736,
+    "phone": 598,
+    "whatsapp": 175,
+    "instagram_handle": 443,
+    "facebook_url": 354,
+    "website": 167,
+    "email": 72,
+    "booking_url": 170,
+    "tripadvisor_url": 66
+  },
+  "coverage_pct": {
+    "google_maps_cid": 98.5,
+    "latitude": 100.0,
+    "phone": 81.2,
+    "whatsapp": 23.8,
+    "instagram_handle": 60.2,
+    "facebook_url": 48.1,
+    "website": 22.7,
+    "email": 9.8,
+    "booking_url": 23.1,
+    "tripadvisor_url": 9.0
+  },
+  "freshness": {
+    "aging": 124,
+    "stale": 446,
+    "fresh": 60,
+    "unknown": 106
+  },
+  "freshness_by_aspect": {
+    "amenities": {
+      "fresh": 212
+    },
+    "attributes": {
+      "fresh": 345
+    },
+    "contact": {
+      "fresh": 319,
+      "stale": 178,
+      "aging": 133,
+      "unknown": 106
+    },
+    "coordinates": {
+      "fresh": 736
+    },
+    "hours": {
+      "fresh": 272
+    },
+    "identity": {
+      "fresh": 319,
+      "stale": 178,
+      "aging": 133,
+      "unknown": 106
+    },
+    "instagram": {
+      "fresh": 557,
+      "stale": 93,
+      "unknown": 85,
+      "aging": 1
+    },
+    "operating_status": {
+      "aging": 124,
+      "stale": 446,
+      "fresh": 60,
+      "unknown": 106
+    }
+  },
+  "operating_status": {
+    "active": 709,
+    "closed": 4,
+    "needs_verification": 23
+  },
+  "review_backlog": 23,
+  "reverification_queue_size": 673,
+  "reverification_queue": [
+    {
+      "business": "Banco de Costa Rica Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "17086188142975557626",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bendita Comida - Bribri, Limón, Costa Rica",
+      "cid": "673532812773709021",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas El Imperio - Sixaola, Limón, Costa Rica",
+      "cid": "11746108272448529029",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Smith - Cahuita, Limón, Costa Rica",
+      "cid": "7820493530245767869",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cahuita Bus Station - Cahuita, Limón, Costa Rica",
+      "cid": "17472323950177417062",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cahuita National Park Hotel - Cahuita, Limón, Costa Rica",
+      "cid": "400977826922741375",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Canto del Mar Guest House - Gandoca, Limón, Costa Rica",
+      "cid": "11739581266027333241",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribbean Blue House - Cahuita, Limón, Costa Rica",
+      "cid": "16920166315638827115",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Magdalena - Cahuita, Limón, Costa Rica",
+      "cid": "8414754958644261472",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Verde Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "15719999190465539169",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Clinica Dental OCI Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "8625510128460244741",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Container House Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "14380415623970739171",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cruz Roja - Bribri, Limón, Costa Rica",
+      "cid": "657883797543242654",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Farmacia San Gabriel - Cahuita, Limón, Costa Rica",
+      "cid": "9409071117936930456",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Fusión Restaurante - Sixaola, Limón, Costa Rica",
+      "cid": "1530710866481715684",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Hungry Lion's Jamaican Restaurant - Cahuita, Limón, Costa Rica",
+      "cid": "7931758129028338854",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Info Boutique - Cahuita, Limón, Costa Rica",
+      "cid": "16153266066667852472",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Jungle Dreamz - Manzanillo, Limón, Costa Rica",
+      "cid": "17113013417158338712",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "OIJ - Bribri, Limón, Costa Rica",
+      "cid": "6403317079907227998",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Piscina Natural - Cahuita, Limón, Costa Rica",
+      "cid": "17869478518882169277",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Se Ua Bed and Breakfast - Manzanillo, Limón, Costa Rica",
+      "cid": "15469928124041183357",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Soda Marta - Sixaola, Limón, Costa Rica",
+      "cid": "17548396689353983180",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Mango - Cahuita, Limón, Costa Rica",
+      "cid": "14486288414847239493",
+      "priority": 175,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Boca Chica Bar Restaurante y Piscina - Cahuita, Limón, Costa Rica",
+      "cid": "",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pura Vida Vegana - Cahuita, Limón, Costa Rica",
+      "cid": "10399984297239881230",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Rhodes Island Cabinas - Cahuita, Limón, Costa Rica",
+      "cid": "10690687264393434328",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Roberto's Restaurant and Tours - Cahuita, Limón, Costa Rica",
+      "cid": "5842569498936371106",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Soda Chang - Sixaola, Limón, Costa Rica",
+      "cid": "12096131897059550769",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Super Vaz 2 - Cahuita, Limón, Costa Rica",
+      "cid": "6639028591976267928",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Tourist Police - Cahuita, Limón, Costa Rica",
+      "cid": "15033673071524244619",
+      "priority": 170,
+      "stale": [
+        "contact",
+        "identity",
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Alamo Enterprise Car Rental",
+      "cid": "7608545223870319936",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Almacen San Francisco - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9340938745226350575",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "AroCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14894693076927745646",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Azania Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1284571712904930160",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Azania Oasis - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17887068920973627002",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Azul Bar and Grill - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2898935241958549311",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bambutel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14224886783313130797",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Be My Guest Cabinas - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "7206926578519386455",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Beach Break Restaurant - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "10536491158093405826",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Blossom Paradise Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "11364781436039210316",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bomberos Bribri - Bribri, Limón, Costa Rica",
+      "cid": "1663157003072952926",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bungalows Calalú",
+      "cid": "1614163454683628928",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabañas Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2857032637458926519",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas El Rinconcito - Gandoca, Limón, Costa Rica",
+      "cid": "15910047007271410898",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Kuákua - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "11219479455997326756",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Ole Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "13369944886185180649",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Palmer Makanda - Cahuita, Limón, Costa Rica",
+      "cid": "12496997589843324576",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cacao Trails Bole - Hone Creek, Limón, Costa Rica",
+      "cid": "904701918920547958",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cahuita Lodge - Cahuita, Limón, Costa Rica",
+      "cid": "11730759668778876911",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribbean Courtyard Villa - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14240005590269620796",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribe Fun Tours - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "13054634241932126885",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribe Horse Riding Club - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "13961717934939865032",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribeans Coffee and Chocolate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8711730419987475064",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caripro Apartments - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "265902149135749003",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Ackee - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "12667576250238069497",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Conley Del Mar - Hone Creek, Limón, Costa Rica",
+      "cid": "6599527260173115828",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Corazon del Mar - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9868667004367768507",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Galim Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "4046132343523405394",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Margarita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3099661925276096610",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Moabi - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9516383767938620040",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Osos Caribeños - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6876276989579196961",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa de la Musa - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17194360818099045148",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casas La Selvatica - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "11101879544769502565",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casitas Joanna - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1768768766083603441",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cervecera Tierra y Libertad - Hone Creek, Limón, Costa Rica",
+      "cid": "18282199755586445336",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Chamber of Tourism and Commerce Caribe Sur - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17588446650226285599",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Chao's Paradise - Cahuita, Limón, Costa Rica",
+      "cid": "15813957405519010877",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Chimuri Beach Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6051193694241034944",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Ciudad Perdida Ecolodge - Cahuita, Limón, Costa Rica",
+      "cid": "8861421744260324499",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Colono Hone Creek - Hone Creek, Limón, Costa Rica",
+      "cid": "16829552897593145903",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Coral Vet - Cahuita, Limón, Costa Rica",
+      "cid": "16408576464930361263",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Da Lime Beach Club and Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5875257995302760665",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Dano's Cabano - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "13596874059691247570",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Duende Gourmet - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "12358093494451922122",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Jardin de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "10376714198650196690",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Nido Jungle Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17996754399669659267",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Puente-The Bridge - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17585168533554979538",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Refugio Grill - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17060511891850618747",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "El Sol del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1216870082731283437",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Electro Office",
+      "cid": "13937010489015814564",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Family Hotel",
+      "cid": "16910431421739661204",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Farmacia Don Manuel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6985913817068423993",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "FerreCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1686533995954964702",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Finca Don Litos - Hone Creek, Limón, Costa Rica",
+      "cid": "15727569979150542837",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Finca La Isla Botanical Garden - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "7972003479335139796",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Finca Tierra - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "15105583459127739828",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Finca Valeria Treehouses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8420081138501081482",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Flor del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17897655248647644053",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Green Water SUP Tours - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14331531993444532415",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "GypSea Café - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3898303194050413799",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Hone Creek Clinic - Hone Creek, Limón, Costa Rica",
+      "cid": "8437643615710257437",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Hotel Bugabutik - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "10932123085080779411",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Hotel Kasha - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2789448993779357106",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Hotel One Love - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14996707988450888278",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Jaguar Rescue Center - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9435208628058025334",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Kaya's Place - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8816532573875491055",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Ceiba Nature Reserve - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1693592634910607224",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Costa de Papito - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "15457918864809997738",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Perla del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5477765746729269238",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Laboratorio Clínico Leysa - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9649342109201810481",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Las Casitas de Playa Negra - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8689012956679917112",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Las Palomas - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3948210368762528971",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Los Continentes - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "16195237219481974530",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Luna Caribeña Village - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5703354943109126310",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Namuwoki Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "7633661990399056727",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Octo Salon - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "18191801259759644864",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Olguita's Place - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8905623640105890404",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pali Supermarket - Hone Creek, Limón, Costa Rica",
+      "cid": "16057147527426616372",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pecora Nera - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "16671506007035121722",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pipa Lodge - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2503861879451247980",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Playa 506 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14615341747601449576",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Puerto Viejo Police Station - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9360864736049190713",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Punta Uva Dive Center - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1382996174802571516",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pura Gula Restaurant - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "4550404849389797392",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pura Ride by Ciclo Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5955362533549979086",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pure Love Liberation - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "15543805518497480345",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Que Quilombo - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "16434729007440247088",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Reggae Chill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "15379756172704945472",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Ride the Rainforest - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "12629937482695022966",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Samasati Yoga and Wellness Retreat - Hone Creek, Limón, Costa Rica",
+      "cid": "2378802529330389577",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Samurai Fusion",
+      "cid": "8353793036632461139",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "closed"
+    },
+    {
+      "business": "Sloth House 2 - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "11323383828584457886",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Spanish by the Sea",
+      "cid": "439116677363621136",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Sport Body Gym - Cahuita, Limón, Costa Rica",
+      "cid": "7364638263800075443",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Sunshine Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2012278593659589679",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Super SK - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "4633778847403409813",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Surf Meds Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3144025592942935764",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Surya Spa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1958769090411140405",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Sweet Moments",
+      "cid": "561223372813398582",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Talamanca Chocolate - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Tico Surf and Skate - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1318668082841675164",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Tierra de Suenos Lodge - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3078819024997403606",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Up! House - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "386602587240645860",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Uva Blue Jungle Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9838950680602433731",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Veronica's Place Cooking Class - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14733147586219926929",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Aragon - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "410104999530083035",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Aurora - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2778057777928120817",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Elita - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3811950339808245976",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Laurel - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "7902224320478214928",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Mena Apartments - Hone Creek, Limón, Costa Rica",
+      "cid": "2340777439094833292",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Soleil et Paquerette - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "14170683448288584492",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa del Mar - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "10974417683706909929",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Allen - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "11115647409204137584",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Banana Verde - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3491417544238941664",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Itaita - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "176499380080555804",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Lomas del Caribe - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8862541351972983241",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Mapache del Caribe - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "13447229575814168735",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Yoshi's on the Beach - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6607101811087559551",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Yuyo Huelal Totga - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "3101197989157048209",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Zaika Bar & Grill - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "4581732904956358033",
+      "priority": 165,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa De La Trepada - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2127018088757720546",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Eden Jungle Apartments - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "16717641602858318859",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Firefly Boutique Retreat - Cahuita, Limón, Costa Rica",
+      "cid": "3377722209033140563",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Luna Beach House - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1455817631417694421",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Mariposa - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8900920815586328050",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Modí - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5659125372219148881",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Ocelote - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "1855638920758597797",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Theia - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8382763569328813011",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casita Kreyol - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17447691794708739658",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Correos de CR - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "15619291854434631434",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "David Valley Houses - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17610491409749030649",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Escondido Retreat - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6658711880224661769",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Flor de China - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "5802142291987797865",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Casa del Coral - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6459045736382662095",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Casita de Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "16930291155158825297",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "La Leyenda de L'Antico Forno en El Establo de Bruce - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9490671975575104119",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Lizzie 1872 - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "9175324429067544765",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Los Proyectos Moderno - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17163510404658526674",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Puerto Viejo Police Town Station",
+      "cid": "2262025233079404899",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Pura Bali Villas - Playa Chiquita, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17671006442397185195",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Super Banana Gourmet Market - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "17944942059124723912",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Super Cocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "6712847186866435431",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Super Punta Uva - Playa Punta Uva, Puerto Viejo, Limón, Costa Rica",
+      "cid": "2289992265205374495",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "The Mimosas Container Homes - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "10848512872328092857",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Treevana - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "8441660170222933820",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villa Rameen - Playa Cocles, Puerto Viejo, Limón, Costa Rica",
+      "cid": "4271339890778489202",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas Serenidad - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "12865192766844460074",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Villas de la Luz - Playa Negra, Puerto Viejo, Limón, Costa Rica",
+      "cid": "7675665734638034793",
+      "priority": 160,
+      "stale": [
+        "contact",
+        "identity",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Aldina's Guest House - Cahuita, Limón, Costa Rica",
+      "cid": "6863214499245926667",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Almonds and Corals Boutique Hotel - Manzanillo, Limón, Costa Rica",
+      "cid": "11188266454666848277",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Ara Manzanillo - Manzanillo, Limón, Costa Rica",
+      "cid": "10605010078218467955",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Atlantida Lodge - Cahuita, Limón, Costa Rica",
+      "cid": "14413272263548243777",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bohemian Monkey - Cahuita, Limón, Costa Rica",
+      "cid": "6134891682775153888",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Brigitte's Ranch - Cahuita, Limón, Costa Rica",
+      "cid": "8600435400283546373",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Bungalows Ache - Cahuita, Limón, Costa Rica",
+      "cid": "15520883439481237827",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Arrecife - Cahuita, Limón, Costa Rica",
+      "cid": "3940028396006347032",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Caribe Luna - Cahuita, Limón, Costa Rica",
+      "cid": "12615318204214004945",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Iguana Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "994897304144940609",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Nirvana Ecolodge - Cahuita, Limón, Costa Rica",
+      "cid": "16881576397853312303",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Surf Side - Cahuita, Limón, Costa Rica",
+      "cid": "11022406936380395131",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas Tito - Cahuita, Limón, Costa Rica",
+      "cid": "12755760628427846358",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cabinas YaMann - Manzanillo, Limón, Costa Rica",
+      "cid": "17823151304931402344",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Cahuita Inn - Cahuita, Limón, Costa Rica",
+      "cid": "11302666839265256136",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Caribbean Coconut - Cahuita, Limón, Costa Rica",
+      "cid": "12085822181071781545",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Mambo Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "13303503940894650235",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Marcellino - Cahuita, Limón, Costa Rica",
+      "cid": "5829604901849171734",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Casa Namaitamí - Cahuita, Limón, Costa Rica",
+      "cid": "8825947300590124587",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Centro Educativo Complementaria Cahuita - Cahuita, Limón, Costa Rica",
+      "cid": "16211630521756150882",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Chile Verde - Manzanillo, Limón, Costa Rica",
+      "cid": "6304189307372846359",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    },
+    {
+      "business": "Clínica de Medicina Integral Bribri - Bribri, Limón, Costa Rica",
+      "cid": "15931105907700979601",
+      "priority": 115,
+      "stale": [
+        "instagram",
+        "operating_status"
+      ],
+      "status": "active"
+    }
+  ]
+}

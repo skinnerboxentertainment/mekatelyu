@@ -215,6 +215,7 @@
   "prov.heading": "Woher wir das wissen",
   "prov.instagram": "Instagram-Konto am echten Profil geprüft",
   "prov.maps": "Details von Google Maps gelesen im {date}",
+  "prov.may_be_stale": "Einiges davon kann sich seit der letzten Prüfung geändert haben.",
   "prov.no_evidence": "Dieser Eintrag wurde kürzlich nicht überprüft.",
   "results.load_more": "{count} mehr laden ({remaining} übrig)",
   "results.loading": "Verzeichnis wird geladen...",
