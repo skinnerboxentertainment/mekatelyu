@@ -20,4 +20,6 @@ run.pid
 # the re-verification queue on every run. The distilled result is committed as
 # paradisio_app/data/verified_status.json instead.
 sweep.jsonl
-output-sweep/
+# Any run directory, however it was named. Listing them one by one let
+# output-probe/ through on 2026-09-05.
+output*/
