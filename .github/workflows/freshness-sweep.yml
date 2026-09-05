@@ -69,7 +69,12 @@ jobs:
           cache: pip
 
       - name: Install build dependencies
-        run: python -m pip install -r requirements-launch.txt
+        # requirements-launch.txt is deliberately the minimal production set and
+        # carries no test runner, so the verification step below needs pytest
+        # asked for explicitly.
+        run: |
+          python -m pip install -r requirements-launch.txt
+          python -m pip install pytest
 
       - name: Set up Node
         uses: actions/setup-node@v4

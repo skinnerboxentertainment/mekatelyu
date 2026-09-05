@@ -29,13 +29,25 @@ from pathlib import Path
 # CONCLUSIVE in export_verified_status.py — if they drift, the sweep could
 # report success while the exporter stores nothing.
 CONCLUSIVE = frozenset({
+    # Read cleanly, section present.
     "success_expanded",
     "success_inline",
     "success_attributes",
     "success_hours",
+    # The place told us it is shut. That is a reading, not a failure.
     "business_closed",
     "business_permanently_closed",
     "business_temporarily_closed",
+    # The page loaded and we identified the place, but the amenities, attributes
+    # or hours section was absent or would not parse. Irrelevant here: we are
+    # capturing operating status and identity, both of which were read. Measured
+    # on 2026-09-05, treating these as failures threw away 6 of 10 usable reads.
+    "amenities_not_applicable",
+    "amenities_not_exposed",
+    "attributes_not_exposed",
+    "hours_not_exposed",
+    "hours_expansion_failed",
+    "hours_parse_failed",
 })
 
 # Outcomes that specifically indicate we were turned away rather than that the

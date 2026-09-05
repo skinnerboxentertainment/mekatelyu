@@ -47,14 +47,14 @@ def load_rows() -> list[dict]:
 
 
 def captures_for(index: ProvenanceIndex, cid: str) -> dict[str, str]:
-    if not cid:
-        return {}
-    out = {}
-    for aspect, store in (("amenities", index.amenities), ("attributes", index.attributes), ("hours", index.hours)):
-        record = store.get(cid)
-        if record:
-            out[aspect] = record.get("capturedAt", "")
-    return out
+    """Delegate to the provenance index rather than re-listing the stores.
+
+    This used to hardcode amenities, attributes and hours. When operating status
+    and identity gained capture dates, the report kept reading the old three and
+    silently reported no improvement after a sweep that had in fact refreshed
+    eleven records. One lookup, one place.
+    """
+    return index.capture_dates(cid)
 
 
 def build_report(rows: list[dict], today: date) -> dict:

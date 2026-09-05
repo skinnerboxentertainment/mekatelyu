@@ -44,13 +44,25 @@ KNOWN_STATUSES = frozenset({"open", "permanently_closed", "temporarily_closed", 
 # other status means we did not get a clean look, so nothing is recorded — a
 # failed check must never masquerade as a fresh one.
 CONCLUSIVE = frozenset({
+    # Read cleanly, section present.
     "success_expanded",
     "success_inline",
     "success_attributes",
     "success_hours",
+    # The place told us it is shut. That is a reading, not a failure.
     "business_closed",
     "business_permanently_closed",
     "business_temporarily_closed",
+    # The page loaded and we identified the place, but the amenities, attributes
+    # or hours section was absent or would not parse. Irrelevant here: we are
+    # capturing operating status and identity, both of which were read. Measured
+    # on 2026-09-05, treating these as failures threw away 6 of 10 usable reads.
+    "amenities_not_applicable",
+    "amenities_not_exposed",
+    "attributes_not_exposed",
+    "hours_not_exposed",
+    "hours_expansion_failed",
+    "hours_parse_failed",
 })
 
 
@@ -108,11 +120,20 @@ def build_index(records: list[dict]) -> tuple[dict, dict]:
         operating = record.get("operatingStatus")
         if operating not in KNOWN_STATUSES:
             operating = None
+        detected = record.get("detectedGoogleName")
+
+        # Belt and braces: a page status in the conclusive set is not on its own
+        # proof we read anything. Without a name or a status there is nothing to
+        # date, and dating an aspect we did not read is the one outcome worse
+        # than leaving it stale.
+        if not detected and operating is None:
+            counts["inconclusive"] += 1
+            continue
 
         store[cid] = {
             "listingId": record.get("listingId", ""),
             "sourceName": record.get("sourceName", ""),
-            "detectedGoogleName": record.get("detectedGoogleName"),
+            "detectedGoogleName": detected,
             "capturedAt": captured,
             "operatingStatus": operating,
             "pageStatus": page_status,

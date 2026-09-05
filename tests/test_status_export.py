@@ -14,7 +14,7 @@ from typing import ClassVar
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from paradisio_app import freshness
-from scripts.export_verified_status import build_index
+from scripts.export_verified_status import CONCLUSIVE, build_index
 
 
 def record(**over):
@@ -186,6 +186,86 @@ class SweepActuallyRefreshes(unittest.TestCase):
         captured = {"identity": "2019-01-01T00:00:00Z", "operating_status": "2019-01-01T00:00:00Z"}
         assessment = freshness.assess(self.STALE_ROW, captured, today)
         self.assertEqual(assessment.worst, freshness.STALE)
+
+class SectionAbsentIsStillAGoodRead(unittest.TestCase):
+    """A missing amenities section is not a failed check.
+
+    Measured in CI on 2026-09-05: of ten records, four returned
+    `success_attributes` and six `attributes_not_exposed` — and every one of the
+    six still carried a detected name and an operating status. Treating them as
+    failures threw away 60% of a sweep's usable yield for no safety benefit.
+    """
+
+    def test_a_missing_section_still_dates_status_and_identity(self):
+        for status in ("attributes_not_exposed", "amenities_not_exposed",
+                       "hours_not_exposed", "amenities_not_applicable"):
+            store, _ = build_index([record(status=status)])
+            self.assertIn("111", store, f"{status} was discarded despite a clean read")
+            self.assertEqual(store["111"]["operatingStatus"], "open")
+
+    def test_a_read_with_neither_name_nor_status_is_not_stored(self):
+        """Belt and braces: never date an aspect we did not actually read."""
+        store, counts = build_index([
+            record(status="attributes_not_exposed", detectedGoogleName=None, operatingStatus=None),
+        ])
+        self.assertEqual(store, {})
+        self.assertEqual(counts["inconclusive"], 1)
+
+    def test_being_turned_away_is_still_never_a_read(self):
+        """Widening the conclusive set must not have let a block through."""
+        for blocked in ("consent_required", "captcha_or_traffic_block",
+                        "navigation_failed", "place_not_loaded",
+                        "place_identity_mismatch", "extraction_failed"):
+            store, _ = build_index([record(status=blocked)])
+            self.assertEqual(store, {}, f"{blocked} was treated as a successful read")
+
+
+class TheTwoConclusiveSetsAgree(unittest.TestCase):
+    """The sweep reporter and the exporter must classify identically.
+
+    They live in different files and are easy to update singly. If they drift,
+    the sweep reports success while the exporter silently stores nothing — a
+    green run that refreshed no data, which is the failure mode hardest to
+    notice from the outside.
+    """
+
+    def test_they_are_the_same_set(self):
+        from scripts.sweep_outcome import CONCLUSIVE as REPORTER
+
+        self.assertEqual(
+            CONCLUSIVE, REPORTER,
+            "sweep_outcome.py and export_verified_status.py disagree about what "
+            "counts as a successful read",
+        )
+
+
+class TheReportSeesEveryAspect(unittest.TestCase):
+    """The quality report must not keep its own list of evidence stores.
+
+    It did, and the list was stale: after a sweep refreshed eleven records the
+    report still showed the old numbers, because `captures_for` named amenities,
+    attributes and hours explicitly and knew nothing about the status store. The
+    sweep worked; the instrument measuring it did not.
+    """
+
+    def test_report_lookup_matches_the_provenance_index(self):
+        from paradisio_app.provenance import ProvenanceIndex
+        from scripts.quality_report import captures_for
+
+        index = ProvenanceIndex()
+        index.status = {"777": {"capturedAt": "2026-09-05T10:00:00Z"}}
+        self.assertEqual(captures_for(index, "777"), index.capture_dates("777"))
+
+    def test_a_status_capture_reaches_the_report(self):
+        from paradisio_app.provenance import ProvenanceIndex
+        from scripts.quality_report import captures_for
+
+        index = ProvenanceIndex()
+        index.status = {"777": {"capturedAt": "2026-09-05T10:00:00Z"}}
+        captures = captures_for(index, "777")
+        self.assertIn("operating_status", captures)
+        self.assertIn("identity", captures)
+
 
 if __name__ == "__main__":
     unittest.main()
