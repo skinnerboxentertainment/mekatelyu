@@ -30,6 +30,13 @@ on:
         required: false
         default: true
 
+  # Label a pull request `test-sweep` to run one dry sweep against it. This
+  # exists because workflow_dispatch only works from the default branch, so
+  # without it the loop could not be proven until after it was merged — which
+  # is the wrong order for the one assumption the whole design rests on.
+  pull_request:
+    types: [labeled]
+
   # To start the loop, uncomment this and record the date it first runs.
   # schedule:
   #   - cron: "17 8 * * *"   # 08:17 UTC daily = 02:17 in Costa Rica, off-peak
@@ -44,6 +51,11 @@ concurrency:
 
 jobs:
   sweep:
+    # A labelled pull request runs a dry sweep; everything else must be an
+    # explicit button press. Never on a plain push.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' && github.event.label.name == 'test-sweep')
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -71,7 +83,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Choose the batch
-        run: python scripts/build_sweep_input.py --limit "${{ inputs.limit || 10 }}" --out amenity_pipeline/sweep.jsonl
+        run: python scripts/build_sweep_input.py --limit "${{ github.event.inputs.limit || 10 }}" --out amenity_pipeline/sweep.jsonl
 
       - name: Re-read those places
         id: sweep
@@ -98,7 +110,7 @@ jobs:
           python scripts/verify_source_data.py
 
       - name: Open a pull request with the refreshed evidence
-        if: steps.outcome.outputs.usable == 'true' && inputs.dry_run != true
+        if: steps.outcome.outputs.usable == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: freshness/sweep
