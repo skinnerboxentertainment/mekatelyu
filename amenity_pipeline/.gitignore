@@ -14,3 +14,10 @@ run-about.cmd
 run-hours.cmd
 run.pid
 *-listings.jsonl
+
+# Sweep working files. The run output carries ARIA snapshots and screenshots
+# (evidence, sometimes of pages that failed), and the input is regenerated from
+# the re-verification queue on every run. The distilled result is committed as
+# paradisio_app/data/verified_status.json instead.
+sweep.jsonl
+output-sweep/

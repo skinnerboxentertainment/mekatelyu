@@ -28,16 +28,39 @@ from datetime import date, datetime
 # Days after which a fact stops being presented as current. Set per aspect,
 # because these things change at genuinely different rates: a restaurant's hours
 # shift with the season, its coordinates never move.
+# A threshold of None means the aspect does not age: it is shown with an honest
+# "last confirmed" label but never drives the staleness verdict. That is right
+# for facts nothing re-checks, because a metric that counts un-refreshable data
+# as decaying measures the calendar rather than the catalogue.
 POLICY_DAYS = {
     "hours": 60,
     "amenities": 180,
     "attributes": 180,
     "identity": 365,          # name, category, area
     "operating_status": 180,  # the costliest thing to get wrong
-    "contact": 365,           # phone and WhatsApp routes
-    "instagram": 180,
+    "contact": None,          # label-only by owner decision, 2026-09-05
+    "instagram": None,        # label-only by owner decision, 2026-09-05
     "coordinates": None,      # places do not move
 }
+
+# OWNER DECISION, 2026-09-05, with the arithmetic that drove it.
+#
+# The owner chose that contact routes and Instagram handles are never
+# auto-re-verified: re-checking 306 phone and WhatsApp routes at scale exercises
+# real businesses' numbers, which is not worth the freshness points.
+#
+# Left counting toward staleness, those two aspects made P1 unreachable rather
+# than merely harder. Measured on 2026-09-05, with every refreshable aspect
+# assumed captured that day, the ceiling on "fresh" records was 60/736 = 8.2%
+# and reached 0.0% within three months, because the frozen dates only age. A
+# 95% bar against a 0% ceiling is not a demanding standard, it is a broken one.
+#
+# Treating them as non-ageing restores the ceiling to 736/736 = 100% while the
+# sweep runs, and — this is the part that matters — it still decays to 0% if the
+# sweep stops. So the number continues to measure the thing P1 exists to
+# measure: whether the catalogue stays true without being tended.
+#
+# The 95% threshold therefore stands unchanged.
 
 # Within this fraction of the threshold a fact is "aging": still shown as
 # current, but queued for re-checking before it expires.
@@ -127,13 +150,20 @@ def assess(row: dict, captures: dict[str, str], today: date | None = None) -> As
     """Assess a record.
 
     `captures` carries the capture timestamps from the verified sidecars, keyed
-    by aspect (``hours``, ``amenities``, ``attributes``).
+    by aspect (``hours``, ``amenities``, ``attributes``, ``identity``,
+    ``operating_status``).
+
+    Identity and operating status prefer a capture when a sweep has re-read the
+    place, and fall back to the CSV's `verified_date` when it has not. Without
+    that fallback a never-swept record would look unknown rather than old;
+    without the preference, a sweep could re-read a place and change nothing,
+    which is what happened before the status sidecar existed.
     """
     today = today or date.today()
     verified = row.get("verified_date", "")
     sources = {
-        "identity": verified,
-        "operating_status": verified,
+        "identity": captures.get("identity") or verified,
+        "operating_status": captures.get("operating_status") or verified,
         "contact": verified,
         "instagram": row.get("ig_verify_date") or row.get("instagram_enrich_date") or verified,
         "coordinates": verified,

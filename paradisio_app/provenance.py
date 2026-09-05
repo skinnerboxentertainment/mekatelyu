@@ -102,6 +102,10 @@ class ProvenanceIndex:
         self.amenities = _load("verified_amenities.json")
         self.attributes = _load("verified_attributes.json")
         self.hours = _load("verified_hours.json")
+        # Operating status and place identity, re-read from Maps on each sweep.
+        # Without this store both aspects fall back to the CSV's verified_date,
+        # which nothing has written since the original crawl.
+        self.status = _load("verified_status.json")
         taxonomy = _load("semantic_taxonomy.json")
         self.taxonomy = taxonomy.get("records", {})
         self.taxonomy_version = taxonomy.get("taxonomy_version", "")
@@ -227,7 +231,15 @@ class ProvenanceIndex:
         """Capture timestamps per aspect, for the freshness assessment."""
         if not cid:
             return {}
-        pairs = (("amenities", self.amenities), ("attributes", self.attributes), ("hours", self.hours))
+        pairs = (
+            ("amenities", self.amenities),
+            ("attributes", self.attributes),
+            ("hours", self.hours),
+            # One sweep re-reads the place page, so a single capture dates both
+            # what Google calls it and whether it says the place is still open.
+            ("identity", self.status),
+            ("operating_status", self.status),
+        )
         return {aspect: record.get("capturedAt", "") for aspect, store in pairs if (record := store.get(cid))}
 
     def summary(self, row: dict) -> dict:
@@ -235,7 +247,7 @@ class ProvenanceIndex:
         cid = row.get("google_maps_cid", "").strip()
         captured = [
             record.get("capturedAt", "")[:10]
-            for store in (self.amenities, self.attributes, self.hours)
+            for store in (self.amenities, self.attributes, self.hours, self.status)
             if (record := store.get(cid))
         ]
         return {

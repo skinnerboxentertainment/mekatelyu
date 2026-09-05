@@ -1,0 +1,132 @@
+# Re-verification sweep — the loop that keeps the catalogue true.
+#
+# DISABLED BY DEFAULT, by owner decision on 2026-09-05. The schedule below is
+# commented out, so this workflow only ever runs when someone presses the button
+# (Actions -> Freshness sweep -> Run workflow). To start the loop, uncomment the
+# schedule block and merge; that date is also when gate 4's ninety-day clock
+# starts, so it is worth recording.
+#
+# The sweep is deliberately small and self-directing: it asks the quality report
+# which records are closest to expiring and re-reads only those, worst first. A
+# nightly batch of forty keeps 736 records inside their policy window without
+# ever running a full crawl.
+#
+# It opens a pull request rather than committing to master. Data changes get
+# reviewed like any other change, and a sweep that goes wrong is a PR nobody
+# merges rather than a bad deploy.
+
+name: Freshness sweep
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many records to re-read this sweep"
+        required: false
+        default: "10"
+      dry_run:
+        description: "Read and report, but open no pull request"
+        type: boolean
+        required: false
+        default: true
+
+  # To start the loop, uncomment this and record the date it first runs.
+  # schedule:
+  #   - cron: "17 8 * * *"   # 08:17 UTC daily = 02:17 in Costa Rica, off-peak
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: freshness-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install build dependencies
+        run: python -m pip install -r requirements-launch.txt
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pipeline dependencies
+        working-directory: amenity_pipeline
+        run: |
+          npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Choose the batch
+        run: python scripts/build_sweep_input.py --limit "${{ inputs.limit || 10 }}" --out amenity_pipeline/sweep.jsonl
+
+      - name: Re-read those places
+        id: sweep
+        working-directory: amenity_pipeline
+        continue-on-error: true
+        run: npm run amenities:batch -- --input sweep.jsonl --out ./output-sweep
+
+      - name: Report what the sweep actually got
+        id: outcome
+        run: python scripts/sweep_outcome.py --results amenity_pipeline/output-sweep/amenities.jsonl
+
+      - name: Fold the results into the evidence store
+        if: steps.outcome.outputs.usable == 'true'
+        run: |
+          python scripts/export_verified_status.py \
+            --results amenity_pipeline/output-sweep/amenities.jsonl \
+            --out paradisio_app/data/verified_status.json \
+            --merge
+
+      - name: Verify nothing broke
+        if: steps.outcome.outputs.usable == 'true'
+        run: |
+          python -m pytest tests -q
+          python scripts/verify_source_data.py
+
+      - name: Open a pull request with the refreshed evidence
+        if: steps.outcome.outputs.usable == 'true' && inputs.dry_run != true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: freshness/sweep
+          title: "Freshness sweep — refreshed evidence"
+          commit-message: |
+            Freshness sweep: refresh operating status and identity
+
+            Automated re-read of the most-expiring records. Evidence only; any
+            change to a business's operating status in the canonical CSV is a
+            separate, reviewed step.
+          body: |
+            Automated re-verification sweep.
+
+            ${{ steps.outcome.outputs.summary }}
+
+            This refreshes captured evidence. It does not change the canonical
+            CSV — status corrections go through `scripts/apply_status_corrections.py`
+            under the usual dry-run and archive discipline.
+          labels: freshness
+
+      - name: Fail loudly if the sweep could not read anything
+        if: steps.outcome.outputs.usable != 'true'
+        run: |
+          echo "The sweep produced no usable captures."
+          echo "${{ steps.outcome.outputs.summary }}"
+          echo ""
+          echo "This is the failure mode flagged before the loop was built:"
+          echo "Google blocks datacenter IP ranges far more aggressively than"
+          echo "residential ones. If this persists, the options are a self-hosted"
+          echo "runner or accepting a lower freshness ceiling with honest labels."
+          exit 1
