@@ -10,8 +10,16 @@ import struct
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from paradisio_app import surfaces  # noqa: E402
+
 ORGANIZATIONS_PATH = Path(__file__).resolve().parent.parent / "paradisio_app" / "data" / "organizations.json"
 
+# Defence in depth, not the control. The primary control is the surface
+# declaration in paradisio_app/surfaces.py: every emitted file must be claimed
+# by a declared surface, so an undeclared one fails by name. This list stays
+# because a declared surface could still link out to something removed, which
+# is a different mistake and worth catching separately.
 FORBIDDEN_TEXT = (
     "admin.html",
     "claim.html",
@@ -70,10 +78,26 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
         if "url=paradisio_app/" not in wrapper:
             errors.append("deployment root does not preserve the /paradisio_app/ public URL")
 
-    root_entries = {path.name for path in root.iterdir()}
-    unexpected = root_entries - ALLOWED_ROOT_FILES - ALLOWED_ROOT_DIRS
-    if unexpected:
-        errors.append(f"unexpected release-root entries: {sorted(unexpected)}")
+    # The declaration must be coherent before it is trusted to police anything.
+    errors.extend(f"surface declaration: {problem}" for problem in surfaces.declaration_problems())
+
+    # Every emitted file must belong to a declared surface. This is the control
+    # that replaced the forbidden-keyword scan: an undeclared file fails here by
+    # name, whether or not anyone anticipated it.
+    undeclared = []
+    for path in sorted(root.rglob("*")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root).as_posix()
+        if surfaces.find_surface(relative) is None:
+            undeclared.append(relative)
+    if undeclared:
+        shown = ", ".join(undeclared[:12])
+        extra = f" (+{len(undeclared) - 12} more)" if len(undeclared) > 12 else ""
+        errors.append(
+            f"{len(undeclared)} released file(s) belong to no declared surface: {shown}{extra}. "
+            f"Declare them in paradisio_app/surfaces.py, or stop emitting them."
+        )
 
     vendor_root = root / "static" / "vendor"
     manifest_path = vendor_root / "manifest.json"

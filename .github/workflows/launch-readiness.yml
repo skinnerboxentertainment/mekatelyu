@@ -60,6 +60,13 @@ jobs:
       - name: Verify release artifact
         run: python scripts/verify_release.py
 
+      # Payment may buy presentation. It may never buy position or inclusion.
+      # This gate exists before any revenue mechanism does, deliberately: asking
+      # whether something already built happens to be fair is a much weaker
+      # question than refusing to build anything that is not.
+      - name: Verify directory neutrality
+        run: python scripts/verify_neutrality.py
+
       # Reports on catalogue health rather than gating on it: staleness is a
       # backlog to work through, not a reason to block a deploy. Printed so a
       # sharp drop is visible in the run log.
