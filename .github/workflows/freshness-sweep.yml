@@ -108,11 +108,27 @@ jobs:
             --out paradisio_app/data/verified_status.json \
             --merge
 
+      # A refresh is supposed to change the pages. The golden manifest exists to
+      # catch output changes nobody intended, so after a sweep it has to be
+      # re-recorded rather than treated as a failure — otherwise every
+      # successful sweep fails the gate that is meant to protect it. Recording
+      # first means the suite below still checks the manifest is self-consistent,
+      # and the pull request carries the page diff for review.
+      - name: Re-record the golden manifest for the refreshed data
+        if: steps.outcome.outputs.usable == 'true'
+        run: python scripts/golden_manifest.py write
+
       - name: Verify nothing broke
         if: steps.outcome.outputs.usable == 'true'
         run: |
           python -m pytest tests -q
           python scripts/verify_source_data.py
+
+      - name: Show which pages the refresh changed
+        if: steps.outcome.outputs.usable == 'true'
+        run: |
+          echo "Pages changed by this sweep:"
+          git diff --stat -- tests/golden/ || true
 
       - name: Open a pull request with the refreshed evidence
         if: steps.outcome.outputs.usable == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run != 'true'
