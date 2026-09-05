@@ -127,3 +127,65 @@ class BuildDeterminismTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FreshnessIsPinnedToTheBuildDate(unittest.TestCase):
+    """Freshness must age against the injected build date, not the wall clock.
+
+    This is the defect that `test_two_builds_with_a_pinned_date_are_identical`
+    cannot see: both of its builds run on the same real day, so a freshness
+    state derived from `date.today()` is identical in both and the comparison
+    passes while the output is still a function of when it was built. The
+    manifest then rots on a day nobody touched the code.
+
+    The discriminating property is that moving the pinned date must move the
+    assessment. Under the defect it did not: freshness ignored the pin.
+    """
+
+    def _state(self, pinned):
+        import csv
+        import importlib
+        import os
+
+        from paradisio_app import build as build_mod
+
+        previous = os.environ.get("PARADISIO_BUILD_DATE")
+        os.environ["PARADISIO_BUILD_DATE"] = pinned
+        try:
+            importlib.reload(build_mod)
+            with build_mod.CSV_PATH.open(encoding="utf-8-sig", newline="") as handle:
+                row = next(iter(csv.DictReader(handle)))
+            return build_mod.build_business(row)["freshness_state"]
+        finally:
+            if previous is None:
+                os.environ.pop("PARADISIO_BUILD_DATE", None)
+            else:
+                os.environ["PARADISIO_BUILD_DATE"] = previous
+            importlib.reload(build_mod)
+
+    def test_build_today_follows_the_pin(self):
+        import importlib
+        import os
+
+        from paradisio_app import build as build_mod
+
+        previous = os.environ.get("PARADISIO_BUILD_DATE")
+        os.environ["PARADISIO_BUILD_DATE"] = "2026-08-01"
+        try:
+            importlib.reload(build_mod)
+            self.assertEqual(build_mod.build_today().isoformat(), "2026-08-01")
+        finally:
+            if previous is None:
+                os.environ.pop("PARADISIO_BUILD_DATE", None)
+            else:
+                os.environ["PARADISIO_BUILD_DATE"] = previous
+            importlib.reload(build_mod)
+
+    def test_moving_the_pin_moves_the_freshness_state(self):
+        near = self._state("2026-08-01")
+        far = self._state("2031-08-01")
+        self.assertNotEqual(
+            near, far,
+            "freshness ignored the pinned build date; it is reading the wall "
+            "clock, which puts nondeterminism back into the emitted pages",
+        )

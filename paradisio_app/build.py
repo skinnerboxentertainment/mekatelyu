@@ -135,6 +135,18 @@ def build_date():
         raise SystemExit(f"PARADISIO_BUILD_DATE must be YYYY-MM-DD, got: {raw!r}") from None
 
 
+def build_today():
+    """The build date as a `date`, for anything that ages a record.
+
+    Freshness must be judged against the *injected* build date, never the wall
+    clock. Assessing against `date.today()` puts the wall clock back into the
+    emitted HTML: as records cross their staleness thresholds the rendered
+    provenance text changes, and the golden manifest breaks on a day nobody
+    touched the code. This is the same guarantee `build_date()` gives the footer.
+    """
+    return datetime.strptime(build_date(), "%Y-%m-%d").date()
+
+
 def load_verified_hours():
     """Load the verified operating-hours lookup (CID-keyed) from the pipeline."""
     path = VERIFIED_HOURS_PATH
@@ -469,7 +481,9 @@ def build_business(row):
         "verified_date": row.get("verified_date", "").strip(),
         "provenance_summary": provenance_index().summary(row),
         "freshness_state": freshness.assess(
-            row, provenance_index().capture_dates(row.get("google_maps_cid", "").strip())
+            row,
+            provenance_index().capture_dates(row.get("google_maps_cid", "").strip()),
+            today=build_today(),
         ).worst,
         "claim": {"status": "unclaimed"},
         "rating": enrich.get("rating"),
