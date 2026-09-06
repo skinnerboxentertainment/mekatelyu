@@ -5,7 +5,6 @@ Saves screenshots to docs/paradisio_app/screenshots/mobile/ for Codex visual rev
 
 import asyncio
 import json
-import os
 import sys
 from pathlib import Path
 

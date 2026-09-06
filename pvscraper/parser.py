@@ -1,7 +1,7 @@
 import re
 from datetime import datetime
-from typing import Optional
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import parse_qs, urlparse
+
 from bs4 import BeautifulSoup
 
 from .schema import BusinessListing
@@ -168,7 +168,7 @@ class ListingParser:
                     links.append((href, txt))
         return links
 
-    def _extract_category(self, soup: BeautifulSoup) -> Optional[str]:
+    def _extract_category(self, soup: BeautifulSoup) -> str | None:
         """Extract category from breadcrumb links."""
         crumbs = self._extract_breadcrumb_links(soup)
         for href, txt in crumbs:
@@ -191,7 +191,7 @@ class ListingParser:
                 return "real_estate"
         return None
 
-    def _extract_area(self, soup: BeautifulSoup) -> Optional[str]:
+    def _extract_area(self, soup: BeautifulSoup) -> str | None:
         """Extract area from breadcrumb or page content."""
         known_areas = {
             "puerto-viejo": "Puerto Viejo",
@@ -213,7 +213,7 @@ class ListingParser:
                     return name
         return None
 
-    def _area_from_url(self, url: str) -> Optional[str]:
+    def _area_from_url(self, url: str) -> str | None:
         path = urlparse(url).path.strip("/")
         parts = path.split("/")
         if len(parts) >= 2:
@@ -221,7 +221,7 @@ class ListingParser:
             return " ".join(word.capitalize() for word in slug.split("-"))
         return None
 
-    def _extract_phone(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_phone(self, content: BeautifulSoup) -> str | None:
         """Phone number from page text."""
         text = content.get_text()
 
@@ -237,7 +237,7 @@ class ListingParser:
                 return phones[0].strip()
         return None
 
-    def _extract_website(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_website(self, content: BeautifulSoup) -> str | None:
         """Website link from the listing details area."""
         for a in content.find_all("a", href=True):
             h = a["href"]
@@ -260,7 +260,7 @@ class ListingParser:
                     return h
         return None
 
-    def _extract_google_maps_cid(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_google_maps_cid(self, content: BeautifulSoup) -> str | None:
         """Extract Google Maps CID from 'Get directions' link."""
         for a in content.find_all("a", href=True):
             h = a["href"]
@@ -276,7 +276,7 @@ class ListingParser:
                     return qs["cid"][0]
         return None
 
-    def _extract_instagram(self, content: BeautifulSoup) -> Optional[dict]:
+    def _extract_instagram(self, content: BeautifulSoup) -> dict | None:
         """Extract Instagram handle+URL from Listing Details area."""
         # Find instagram.com links
         for a in content.find_all("a", href=True):
@@ -292,14 +292,14 @@ class ListingParser:
                 return {"handle": handle, "url": h}
         return None
 
-    def _extract_facebook(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_facebook(self, content: BeautifulSoup) -> str | None:
         for a in content.find_all("a", href=True):
             h = a["href"]
             if "facebook.com" in h.lower() and "sharer" not in h.lower():
                 return h
         return None
 
-    def _extract_description(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_description(self, content: BeautifulSoup) -> str | None:
         # Look for paragraph text after the H1/business name
         # On PVS, the short description is often between the H1 and "Listing Details"
         heading = content.find(["h2", "h3"], string=re.compile(r"Listing Details", re.I))
@@ -312,7 +312,7 @@ class ListingParser:
                     return txt[:2000]
         return None
 
-    def _extract_rating(self, content: BeautifulSoup) -> Optional[float]:
+    def _extract_rating(self, content: BeautifulSoup) -> float | None:
         rating_text = content.find(string=re.compile(r"Average rating[: ]\d+", re.I))
         if rating_text:
             match = re.search(r"(\d+\.?\d*)", str(rating_text))
@@ -323,7 +323,7 @@ class ListingParser:
                     pass
         return None
 
-    def _extract_price(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_price(self, content: BeautifulSoup) -> str | None:
         price_img = content.find(
             "img", src=lambda s: s and "green-dollar" in s.lower()
         )
@@ -334,7 +334,7 @@ class ListingParser:
                 return txt
         return None
 
-    def _extract_verified_date(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_verified_date(self, content: BeautifulSoup) -> str | None:
         verified_text = content.find(
             string=re.compile(r"Verified\s*\d{4}-\d{2}-\d{2}", re.I)
         )
@@ -361,7 +361,7 @@ class ListingParser:
             return "closed"
         return "active"
 
-    def _extract_alternate_names(self, content: BeautifulSoup) -> Optional[str]:
+    def _extract_alternate_names(self, content: BeautifulSoup) -> str | None:
         text = content.get_text()
         patterns = [
             r"previously\s+called\s+([^\.]+)",

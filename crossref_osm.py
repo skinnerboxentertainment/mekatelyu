@@ -6,7 +6,6 @@ Produces: both, OSM only, PVS only, with confidence scores.
 import csv
 import json
 import re
-import math
 from collections import defaultdict
 
 PVS_CSV = "pv_within_5km.csv"

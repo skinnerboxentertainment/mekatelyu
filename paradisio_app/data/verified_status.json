@@ -1,0 +1,101 @@
+{
+  "10536491158093405826": {
+    "capturedAt": "2026-09-05T14:04:39.128Z",
+    "detectedGoogleName": "Beach Break Bar & Restaurant",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "beach-break-restaurant-playa-cocles-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Beach Break Restaurant - Playa Cocles, Puerto Viejo, Limón, Costa Rica"
+  },
+  "1284571712904930160": {
+    "capturedAt": "2026-09-05T14:03:48.845Z",
+    "detectedGoogleName": "Azania Bungalows",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "azania-bungalows-playa-cocles-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "attributes_not_exposed",
+    "sourceName": "Azania Bungalows - Playa Cocles, Puerto Viejo, Limón, Costa Rica"
+  },
+  "14224886783313130797": {
+    "capturedAt": "2026-09-05T14:04:14.859Z",
+    "detectedGoogleName": "Bambutel",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "bambutel-playa-cocles-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "attributes_not_exposed",
+    "sourceName": "Bambutel - Playa Cocles, Puerto Viejo, Limón, Costa Rica"
+  },
+  "14894693076927745646": {
+    "capturedAt": "2026-09-05T13:47:02.910Z",
+    "detectedGoogleName": "AroCocles",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "arococles-playa-cocles-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "AroCocles - Playa Cocles, Puerto Viejo, Limón, Costa Rica"
+  },
+  "17086188142975557626": {
+    "capturedAt": "2026-09-05T14:04:22.639Z",
+    "detectedGoogleName": "Banco de Costa Rica Cahuita",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "banco-de-costa-rica-cahuita-cahuita-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Banco de Costa Rica Cahuita - Cahuita, Limón, Costa Rica"
+  },
+  "17887068920973627002": {
+    "capturedAt": "2026-09-05T14:04:00.569Z",
+    "detectedGoogleName": "Azania Oasis",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "azania-oasis-playa-cocles-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "attributes_not_exposed",
+    "sourceName": "Azania Oasis - Playa Cocles, Puerto Viejo, Limón, Costa Rica"
+  },
+  "2898935241958549311": {
+    "capturedAt": "2026-09-05T14:04:05.930Z",
+    "detectedGoogleName": "Azul Bar & Grill",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "azul-bar-and-grill-playa-negra-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Azul Bar and Grill - Playa Negra, Puerto Viejo, Limón, Costa Rica"
+  },
+  "673532812773709021": {
+    "capturedAt": "2026-09-05T14:04:45.545Z",
+    "detectedGoogleName": "BENDITA COMIDA",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "bendita-comida-bribri-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Bendita Comida - Bribri, Limón, Costa Rica"
+  },
+  "7206926578519386455": {
+    "capturedAt": "2026-09-05T14:04:31.336Z",
+    "detectedGoogleName": "Be My Guest Cabinas",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "be-my-guest-cabinas-playa-negra-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "attributes_not_exposed",
+    "sourceName": "Be My Guest Cabinas - Playa Negra, Puerto Viejo, Limón, Costa Rica"
+  },
+  "7608545223870319936": {
+    "capturedAt": "2026-09-05T13:46:46.591Z",
+    "detectedGoogleName": "Alamo Rent A Car",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "alamo-enterprise-car-rental",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Alamo Enterprise Car Rental"
+  },
+  "9340938745226350575": {
+    "capturedAt": "2026-09-05T13:46:55.396Z",
+    "detectedGoogleName": "Almacén San Francisco Puerto Viejo",
+    "extractorVersion": "google-maps-amenities-v2",
+    "listingId": "almacen-san-francisco-playa-negra-puerto-viejo-limón-costa-rica",
+    "operatingStatus": "open",
+    "pageStatus": "success_attributes",
+    "sourceName": "Almacen San Francisco - Playa Negra, Puerto Viejo, Limón, Costa Rica"
+  }
+}

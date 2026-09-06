@@ -1,4 +1,17 @@
 (function () {
+    // UI strings are injected by static/ui-<lang>.js, which each page loads
+    // before this file. The fallback keeps the directory working if that file
+    // is ever missing rather than rendering blank controls.
+    var T = (typeof UI_STRINGS !== "undefined") ? UI_STRINGS : {};
+    function t(key, fallback, params) {
+        var text = T[key] || fallback;
+        if (params) {
+            Object.keys(params).forEach(function (k) {
+                text = text.replace("{" + k + "}", params[k]);
+            });
+        }
+        return text;
+    }
     var PAGE_SIZE = 50;
     var filtered = [];
     var displayCount = PAGE_SIZE;
@@ -8,10 +21,13 @@
     var allMarkers = [];
     var activeIntent = "";
     var CATEGORY_LABELS = {
-        hostel: "Hostel", hotel: "Hotel", nightlife: "Nightlife",
-        real_estate: "Real estate", restaurant: "Restaurant", services: "Services",
-        shopping: "Shopping", tour_company: "Tours", transport: "Transport",
-        vacation_rental: "Vacation rental", wellness: "Wellness"
+        hostel: t("category.hostel", "Hostel"), hotel: t("category.hotel", "Hotel"),
+        nightlife: t("category.nightlife", "Nightlife"), real_estate: t("category.real_estate", "Real estate"),
+        restaurant: t("category.restaurant", "Restaurant"), services: t("category.services", "Services"),
+        shopping: t("category.shopping", "Shopping"), tour_company: t("category.tour_company", "Tours"),
+        transport: t("category.transport", "Transport"),
+        vacation_rental: t("category.vacation_rental", "Vacation rental"),
+        wellness: t("category.wellness", "Wellness")
     };
 
     function categoryLabel(value) {
@@ -34,14 +50,14 @@
     var viewMap = document.getElementById("view-map");
 
     function populateFilters() {
-        catFilter.innerHTML = '<option value="">All Categories</option>';
+        catFilter.innerHTML = '<option value="">' + esc(t("filter.all_categories", "All Categories")) + '</option>';
         Object.keys(CATEGORIES).sort().forEach(function (c) {
             var opt = document.createElement("option");
             opt.value = c;
             opt.textContent = categoryLabel(c) + " (" + CATEGORIES[c] + ")";
             catFilter.appendChild(opt);
         });
-        tagFilter.innerHTML = '<option value="">Any type or quality</option>';
+        tagFilter.innerHTML = '<option value="">' + esc(t("filter.any_type", "Any type or quality")) + '</option>';
         Object.keys(SEMANTIC_FACETS).sort(function (a, b) {
             return (SEMANTIC_LABELS[a] || a).localeCompare(SEMANTIC_LABELS[b] || b);
         }).forEach(function (tag) {
@@ -50,7 +66,7 @@
             opt.textContent = (SEMANTIC_LABELS[tag] || categoryLabel(tag)) + " (" + SEMANTIC_FACETS[tag] + ")";
             tagFilter.appendChild(opt);
         });
-        areaFilter.innerHTML = '<option value="">All Areas</option>';
+        areaFilter.innerHTML = '<option value="">' + esc(t("filter.all_areas", "All Areas")) + '</option>';
         Object.keys(AREAS).sort().forEach(function (a) {
             var opt = document.createElement("option");
             opt.value = a;
@@ -108,7 +124,7 @@
         if (!chipsDiv) return;
         var chips = [];
         if (searchInput.value.trim()) {
-            chips.push('<span class="filter-chip">Search: ' + esc(searchInput.value.trim()) + ' <span class="chip-close" data-clear="search">&times;</span></span>');
+            chips.push('<span class="filter-chip">' + esc(t("ui.search_chip", "Search: {q}", { q: searchInput.value.trim() })) + ' <span class="chip-close" data-clear="search">&times;</span></span>');
         }
         if (catFilter.value) {
             chips.push('<span class="filter-chip">' + esc(catFilter.options[catFilter.selectedIndex].text.split(" (")[0]) + ' <span class="chip-close" data-clear="category">&times;</span></span>');
@@ -117,7 +133,7 @@
             chips.push('<span class="filter-chip">' + esc(SEMANTIC_LABELS[tagFilter.value] || categoryLabel(tagFilter.value)) + ' <span class="chip-close" data-clear="tag">&times;</span></span>');
         }
         if (activeIntent) {
-            var intentNames = { eat: "Eat", stay: "Stay", "things-to-do": "Things to Do", shopping: "Shopping", services: "Services", wellness: "Wellness", nightlife: "Nightlife", transport: "Transport" };
+            var intentNames = { eat: t("group.eat", "Eat"), stay: t("group.stay", "Stay"), "things-to-do": t("group.things-to-do", "Things to Do"), shopping: t("group.shopping", "Shopping"), services: t("group.services", "Services"), wellness: t("group.wellness", "Wellness"), nightlife: t("group.nightlife", "Nightlife"), transport: t("group.transport", "Transport") };
             chips.push('<span class="filter-chip">' + esc(intentNames[activeIntent] || activeIntent) + ' <span class="chip-close" data-clear="intent">&times;</span></span>');
         }
         if (areaFilter.value) {
@@ -127,7 +143,7 @@
             var label = channelFilter.options[channelFilter.selectedIndex].text;
             chips.push('<span class="filter-chip">' + esc(label) + ' <span class="chip-close" data-clear="channel">&times;</span></span>');
         }
-        if (chips.length) chips.push('<span class="filter-chip clear-all" id="clear-all-filters">Clear all</span>');
+        if (chips.length) chips.push('<span class="filter-chip clear-all" id="clear-all-filters">' + esc(t("ui.clear_all", "Clear all")) + '</span>');
         chipsDiv.innerHTML = chips.join("");
 
         document.querySelectorAll("[data-clear]").forEach(function (el) {
@@ -171,7 +187,7 @@
             (b.distance_km ? '<span>' + b.distance_km + " km</span>" : "") +
             "</div>" +
             (badges ? '<div class="result-channels">' + badges + "</div>" : "") +
-            '<div class="result-cta">' + (b.primary_contact && b.primary_contact.type !== "None" ? esc(b.primary_contact.label) : "View details") + " &rarr;</div>" +
+            '<div class="result-cta">' + (b.primary_contact && b.primary_contact.type !== "None" ? esc(b.primary_contact.label) : esc(t("ui.view_details", "View details"))) + " &rarr;</div>" +
             "</a>";
     }
 
@@ -179,11 +195,11 @@
         if (!loadMoreDiv) return;
         var remaining = total - displayCount;
         if (remaining <= 0) {
-            loadMoreDiv.innerHTML = '<div class="load-more-end">Showing all ' + total + ' results.</div>';
+            loadMoreDiv.innerHTML = '<div class="load-more-end">' + esc(t("ui.showing_all", "Showing all {total} results.", { total: total })) + '</div>';
             return;
         }
         var showing = Math.min(displayCount, total);
-        loadMoreDiv.innerHTML = '<div class="load-more-bar"><span class="load-more-text">Showing ' + showing + ' of ' + total + '</span><button class="load-more-btn" id="load-more-btn">Load ' + Math.min(remaining, PAGE_SIZE) + ' more (' + remaining + ' remaining)</button></div>';
+        loadMoreDiv.innerHTML = '<div class="load-more-bar"><span class="load-more-text">' + esc(t("ui.showing_of", "Showing {shown} of {total}", { shown: showing, total: total })) + '</span><button class="load-more-btn" id="load-more-btn">' + esc(t("ui.load_more", "Load {n} more ({remaining} remaining)", { n: Math.min(remaining, PAGE_SIZE), remaining: remaining })) + '</button></div>';
         document.getElementById("load-more-btn").addEventListener("click", function () {
             displayCount += PAGE_SIZE;
             renderList();
@@ -197,8 +213,8 @@
         renderChips();
 
         if (total === 0) {
-            resultsDiv.innerHTML = '<div class="no-results">No businesses match your filters. Try a different search.</div>';
-            statsLine.textContent = "0 results";
+            resultsDiv.innerHTML = '<div class="no-results">' + esc(t("results.no_results", "No businesses match your filters. Try a different search.")) + '</div>';
+            statsLine.textContent = t("ui.zero_results", "0 results");
             if (loadMoreDiv) loadMoreDiv.innerHTML = "";
             return;
         }
@@ -208,7 +224,7 @@
         resultsDiv.innerHTML = html;
         var hasFilter = searchInput.value.trim() || catFilter.value || tagFilter.value || areaFilter.value || channelFilter.value || activeIntent;
         if (hasFilter) {
-            statsLine.innerHTML = Math.min(displayCount, total) + " of " + total + ' results &middot; <a href="#" id="clear-stats" style="color:var(--coral-600);text-decoration:none;">Clear filter</a>';
+            statsLine.innerHTML = esc(t("results.showing", "{shown} of {total} results", { shown: Math.min(displayCount, total), total: total })) + ' &middot; <a href="#" id="clear-stats" style="color:var(--coral-600);text-decoration:none;">' + esc(t("ui.clear_filter", "Clear filter")) + '</a>';
             var clearStats = document.getElementById("clear-stats");
             if (clearStats) {
                 clearStats.addEventListener("click", function (e) {
@@ -219,7 +235,7 @@
                 });
             }
         } else {
-            statsLine.textContent = Math.min(displayCount, total) + " of " + total + " results";
+            statsLine.textContent = t("results.showing", "{shown} of {total} results", { shown: Math.min(displayCount, total), total: total });
         }
         renderLoadMore(total);
     }
@@ -227,7 +243,7 @@
     function initMap() {
         if (map) return;
         if (typeof L === "undefined") {
-            mapDiv.innerHTML = '<div class="map-unavailable">Map is temporarily unavailable. Use the list to browse businesses.</div>';
+            mapDiv.innerHTML = '<div class="map-unavailable">' + esc(t("map.unavailable", "Map is temporarily unavailable. Use the list to browse businesses.")) + '</div>';
             return;
         }
         map = L.map(mapDiv, { zoomControl: true, attributionControl: true }).setView([9.655, -82.753], 13);
@@ -278,7 +294,7 @@
             var group = L.featureGroup(visible);
             map.fitBounds(group.getBounds().pad(0.1));
         }
-        statsLine.textContent = visible.length + " of " + BUSINESSES.length + " on map";
+        statsLine.textContent = t("ui.on_map", "{shown} of {total} on map", { shown: visible.length, total: BUSINESSES.length });
     }
 
     function switchView(view) {

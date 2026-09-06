@@ -527,12 +527,12 @@ def main():
             audit["warnings"].extend(parsed["warnings"])
 
     # Print summary before converting Counters
-    print(f"\nField coverage:")
+    print("\nField coverage:")
     for field, count in audit["field_coverage"].most_common():
         print(f"  {field:20s}: {count}/{audit['extracted']}")
 
     if audit["inferred_categories"]:
-        print(f"\nInferred categories (for records with blank master category):")
+        print("\nInferred categories (for records with blank master category):")
         for cat, count in audit["inferred_categories"].most_common():
             print(f"  {cat:20s}: {count}")
 
@@ -551,7 +551,7 @@ def main():
     print(f"Written: {AUDIT.name}")
 
     if audit["inferred_categories"]:
-        print(f"\nInferred categories (for records with blank master category):")
+        print("\nInferred categories (for records with blank master category):")
         for cat, count in audit["inferred_categories"].items():
             print(f"  {cat:20s}: {count}")
 

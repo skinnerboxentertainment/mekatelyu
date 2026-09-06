@@ -1,5 +1,5 @@
 """Build the stealth search target CSV — 134 grid names first, then 31 OSM, then 100 PVS."""
-import csv, re
+import csv
 
 GRID_CSV = "grid_discoveries_ig_enriched.csv"
 OSM_CSV = "pv_within_5km_verified_additions_enriched.csv"

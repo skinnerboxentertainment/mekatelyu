@@ -8,7 +8,6 @@ import math
 import re
 import sqlite3
 from collections import defaultdict
-from urllib.parse import urlparse
 
 DB_PATH = "pvscraper_full.db"
 OUTPUT_FILTERED = "pv_within_5km.csv"
@@ -236,14 +235,14 @@ def main():
             excluded.append(record)
 
     print(f"\n{'='*50}")
-    print(f"Geofilter Results")
+    print("Geofilter Results")
     print(f"{'='*50}")
     print(f"  Within 5 km:  {len(filtered)}")
     print(f"  Excluded:     {len(excluded)}")
     print(f"  Total:        {total}")
 
     # Summary by area
-    print(f"\nBy area:")
+    print("\nBy area:")
     area_counts = defaultdict(lambda: {"pass": 0, "fail": 0, "total": 0})
     for r in filtered:
         area_counts[r["area"]]["pass"] += 1
@@ -256,7 +255,7 @@ def main():
         print(f"  {area:20s}: {c['pass']:3d} in / {c['fail']:3d} out (of {c['total']})")
 
     # Summary by category
-    print(f"\nBy category (within 5 km):")
+    print("\nBy category (within 5 km):")
     cat_counts = defaultdict(int)
     for r in filtered:
         cat_counts[r["category"]] += 1

@@ -1,10 +1,9 @@
 import json
 import os
 import re
-import sys
 import time
 import uuid
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 CODEX_ENDPOINT = Path(__file__).parent.resolve()
@@ -53,7 +52,7 @@ def read_session(path: Path) -> dict | None:
     if not path.exists():
         return None
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError) as e:
         corrupt_path = CORRUPT_DIR / f"{path.stem}.{int(time.time())}.json"
@@ -65,7 +64,7 @@ def read_session(path: Path) -> dict | None:
         bak = path.with_suffix(".bak")
         if bak.exists():
             try:
-                with open(bak, "r", encoding="utf-8") as f:
+                with open(bak, encoding="utf-8") as f:
                     return json.load(f)
             except (json.JSONDecodeError, OSError):
                 pass
@@ -93,7 +92,7 @@ def write_session_atomic(data: dict, path: Path):
             f.write(content)
             f.flush()
             os.fsync(f.fileno())
-        with open(tmp_path, "r", encoding="utf-8") as f:
+        with open(tmp_path, encoding="utf-8") as f:
             json.load(f)
         if path.exists():
             import shutil
@@ -120,24 +119,24 @@ def lock_path(session_id: str) -> Path:
 def acquire_lock(session_id: str, purpose: str = "bridge_spawn", timeout_sec: int = 300) -> bool:
     ensure_dirs()
     lpath = lock_path(session_id)
-    expires_at = datetime.now(timezone.utc).timestamp() + timeout_sec + LOCK_TTL_GRACE
+    expires_at = datetime.now(UTC).timestamp() + timeout_sec + LOCK_TTL_GRACE
     lock_data = {
         "session_id": session_id,
         "pid": os.getpid(),
         "hostname": os.uname().nodename if hasattr(os, "uname") else os.environ.get("COMPUTERNAME", "unknown"),
-        "acquired_at": datetime.now(timezone.utc).isoformat(),
-        "expires_at": datetime.fromtimestamp(expires_at, tz=timezone.utc).isoformat(),
+        "acquired_at": datetime.now(UTC).isoformat(),
+        "expires_at": datetime.fromtimestamp(expires_at, tz=UTC).isoformat(),
         "purpose": purpose,
     }
     retry_delays = [0.1, 0.2, 0.4, 0.8, 1.5, 3.0]
     for delay in retry_delays:
         if lpath.exists():
             try:
-                with open(lpath, "r", encoding="utf-8") as f:
+                with open(lpath, encoding="utf-8") as f:
                     existing = json.load(f)
                 exp = existing.get("expires_at", "")
                 exp_ts = datetime.fromisoformat(exp).timestamp() if exp else 0
-                if exp_ts > datetime.now(timezone.utc).timestamp() + 30:
+                if exp_ts > datetime.now(UTC).timestamp() + 30:
                     time.sleep(delay)
                     continue
             except (json.JSONDecodeError, OSError, ValueError):
@@ -159,7 +158,7 @@ def release_lock(session_id: str):
     lpath = lock_path(session_id)
     try:
         if lpath.exists():
-            with open(lpath, "r", encoding="utf-8") as f:
+            with open(lpath, encoding="utf-8") as f:
                 existing = json.load(f)
             if existing.get("pid") == os.getpid():
                 lpath.unlink()
@@ -188,4 +187,4 @@ def task_references_dir(session_id: str) -> Path:
 
 
 def utcnow() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(UTC).isoformat()

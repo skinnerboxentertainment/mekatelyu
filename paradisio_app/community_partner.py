@@ -1,7 +1,6 @@
 import html
 import json
 from pathlib import Path
-from urllib.parse import quote
 
 
 def load_organizations(data_path):
@@ -342,8 +341,18 @@ def _og_tags(org):
 <meta name="description" content="{summary}">"""
 
 
-def render_organization_html(org, *, nav_html_func):
-    nav = nav_html_func("directory", depth=1)
+# The site navigation is a fixed fragment now that markup lives in templates;
+# the organisation page keeps its own copy rather than depending on a helper
+# that the generator no longer exposes.
+ORG_NAV = (
+    '<nav class="site-nav" aria-label="Primary navigation">'
+    '<a href="../index.html" class="site-logo">Whappin Puerto Viejo</a>'
+    '<a href="../index.html" class="nav-active">Directory</a></nav>'
+)
+
+
+def render_organization_html(org):
+    nav = ORG_NAV
     title = _page_title(org)
     slug = html.escape(org["slug"])
     return f"""<!DOCTYPE html>

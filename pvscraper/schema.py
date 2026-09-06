@@ -1,36 +1,34 @@
-import sqlite3
 import json
-from dataclasses import dataclass, field, asdict
+import sqlite3
+from dataclasses import asdict, dataclass, field
 from datetime import datetime
-from pathlib import Path
-from typing import Optional
 
 
 @dataclass
 class BusinessListing:
     url: str
-    category: Optional[str] = None
-    area: Optional[str] = None
-    business_name: Optional[str] = None
-    alternate_names: Optional[str] = None
-    phone: Optional[str] = None
-    website: Optional[str] = None
-    google_maps_cid: Optional[str] = None
-    instagram_handle: Optional[str] = None
-    instagram_url: Optional[str] = None
-    facebook_url: Optional[str] = None
-    description: Optional[str] = None
-    rating: Optional[float] = None
-    price_range: Optional[str] = None
-    verified_date: Optional[str] = None
+    category: str | None = None
+    area: str | None = None
+    business_name: str | None = None
+    alternate_names: str | None = None
+    phone: str | None = None
+    website: str | None = None
+    google_maps_cid: str | None = None
+    instagram_handle: str | None = None
+    instagram_url: str | None = None
+    facebook_url: str | None = None
+    description: str | None = None
+    rating: float | None = None
+    price_range: str | None = None
+    verified_date: str | None = None
     operating_status: str = "active"
-    raw_html_path: Optional[str] = None
-    retrieved_at: Optional[str] = None
+    raw_html_path: str | None = None
+    retrieved_at: str | None = None
     parser_version: str = "0.1"
-    http_status: Optional[int] = None
-    extraction_warnings: Optional[str] = None
-    normalized_phone: Optional[str] = None
-    normalized_instagram: Optional[str] = None
+    http_status: int | None = None
+    extraction_warnings: str | None = None
+    normalized_phone: str | None = None
+    normalized_instagram: str | None = None
     created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())
     updated_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())
 
@@ -91,7 +89,7 @@ CREATE INDEX IF NOT EXISTS idx_listings_status ON listings(operating_status);
 class ListingStore:
     def __init__(self, db_path: str = "pvscraper.db"):
         self.db_path = db_path
-        self._conn: Optional[sqlite3.Connection] = None
+        self._conn: sqlite3.Connection | None = None
 
     def connect(self):
         if self._conn is None:
@@ -116,7 +114,7 @@ class ListingStore:
         ).fetchone()
         return row is not None
 
-    def html_cached(self, url: str) -> Optional[str]:
+    def html_cached(self, url: str) -> str | None:
         row = self.conn().execute(
             "SELECT html FROM raw_html_cache WHERE url = ?", (url,)
         ).fetchone()

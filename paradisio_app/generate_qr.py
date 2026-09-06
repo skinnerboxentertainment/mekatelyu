@@ -15,7 +15,7 @@ from pathlib import Path
 
 try:
     import qrcode
-    from qrcode.image.styledpil import StyledPilImage
+    from qrcode.image.styledpil import StyledPilImage  # noqa: F401  probes the [pil] extra
 except ImportError:
     print("ERROR: qrcode not installed. Run: pip install qrcode[pil]")
     sys.exit(1)
@@ -195,9 +195,9 @@ def main():
     if errors:
         print(f"  Errors:       {errors}")
     if not BASE_URL:
-        print(f"\nNOTE: No BASE_URL set. QR codes use relative paths.")
-        print(f"      Set PARADISIO_BASE_URL env var for production URLs.")
-        print(f"      Example: PARADISIO_BASE_URL=https://example.com/paradisio_app")
+        print("\nNOTE: No BASE_URL set. QR codes use relative paths.")
+        print("      Set PARADISIO_BASE_URL env var for production URLs.")
+        print("      Example: PARADISIO_BASE_URL=https://example.com/paradisio_app")
 
 
 if __name__ == "__main__":

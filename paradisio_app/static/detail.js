@@ -1,13 +1,24 @@
 (function () {
+    // UI strings injected by static/ui-<lang>.js, loaded before this file.
+    var T = (typeof UI_STRINGS !== "undefined") ? UI_STRINGS : {};
+    function t(key, fallback, params) {
+        var text = T[key] || fallback;
+        if (params) {
+            Object.keys(params).forEach(function (k) {
+                text = text.replace("{" + k + "}", params[k]);
+            });
+        }
+        return text;
+    }
     var mapDiv = document.querySelector("[data-business-map]");
     if (mapDiv) {
         if (typeof L === "undefined") {
-            mapDiv.innerHTML = '<p class="map-unavailable">Map is temporarily unavailable. Use the Google Maps link below.</p>';
+            mapDiv.innerHTML = t("biz.map_unavailable", "Map is temporarily unavailable. Use the Google Maps link below.");
         } else {
             var lat = Number(mapDiv.getAttribute("data-lat"));
             var lng = Number(mapDiv.getAttribute("data-lng"));
             if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
-                mapDiv.innerHTML = '<p class="map-unavailable">Location coordinates are unavailable.</p>';
+                mapDiv.innerHTML = t("biz.no_coords", "Location coordinates are unavailable.");
             } else {
                 var map = L.map(mapDiv, { zoomControl: false, attributionControl: false }).setView([lat, lng], 15);
                 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
@@ -53,11 +64,11 @@
         copyBtn.addEventListener("click", function () {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(window.location.href).then(function () {
-                    copyBtn.textContent = "Link copied!";
-                    setTimeout(function () { copyBtn.textContent = "Copy link"; }, 2000);
+                    copyBtn.textContent = t("biz.share_link_copied", "Link copied!");
+                    setTimeout(function () { copyBtn.textContent = t("biz.share_copy_link", "Copy link"); }, 2000);
                 });
             } else {
-                copyBtn.textContent = "Copy failed";
+                copyBtn.textContent = t("ui.copy_failed", "Copy failed");
             }
         });
     }
@@ -80,8 +91,8 @@
             var text = addrCopy.previousElementSibling ? addrCopy.previousElementSibling.textContent.replace(/^\uD83D\uDCCD\s*/, "") : "";
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text).then(function () {
-                    addrCopy.textContent = "Copied!";
-                    setTimeout(function () { addrCopy.textContent = "Copy"; }, 2000);
+                    addrCopy.textContent = t("biz.copied", "Copied!");
+                    setTimeout(function () { addrCopy.textContent = t("biz.copy", "Copy"); }, 2000);
                 });
             }
         });
@@ -210,9 +221,9 @@
             function computeStatus(dayIndex, minutes) {
                 var today = weekly[WEEKDAYS[dayIndex]];
                 var yesterday = weekly[WEEKDAYS[(dayIndex + 6) % 7]];
-                if (!today) return { text: "Hours unavailable today", open: false };
-                if (today.closed) return { text: "Closed today", open: false };
-                if (today.open24Hours) return { text: "Open 24 hours", open: true };
+                if (!today) return { text: t("biz.hours_unavailable_today", "Hours unavailable today"), open: false };
+                if (today.closed) return { text: t("biz.hours_closed_today", "Closed today"), open: false };
+                if (today.open24Hours) return { text: t("biz.hours_open_24", "Open 24 hours"), open: true };
 
                 var periods = today.periods || [];
                 var open = isOpenAt(dayIndex, minutes);
@@ -223,7 +234,7 @@
                             var yp = yesterday.periods[y];
                             var yc = toMinutes(yp.closes);
                             if (yp.closesNextDay && yc !== null && minutes < yc) {
-                                return { text: "Open · Closes today at " + fmtClock(yp.closes), open: true };
+                                return { text: t("biz.hours_open_closes_today", "Open · Closes today at {time}", { time: fmtClock(yp.closes) }), open: true };
                             }
                         }
                     }
@@ -235,41 +246,44 @@
                         if (o === null || c === null) continue;
                         var openNow = periods[i].closesNextDay ? minutes >= o : (minutes >= o && minutes < c);
                         if (openNow) {
-                            if (periods[i].closesNextDay) closeText = "tomorrow at " + fmtClock(periods[i].closes);
-                            else closeText = "at " + fmtClock(periods[i].closes);
+                            if (periods[i].closesNextDay) closeText = t("biz.hours_open_closes_tomorrow", "Open · Closes tomorrow at {time}", { time: fmtClock(periods[i].closes) });
+                            else closeText = t("biz.hours_open_closes_at", "Open · Closes at {time}", { time: fmtClock(periods[i].closes) });
                             break;
                         }
                     }
-                    return { text: closeText ? "Open · Closes " + closeText : "Open now", open: true };
+                    return { text: closeText || t("biz.hours_open_now", "Open now"), open: true };
                 }
                 // Closed: find today's next opening.
                 var nextOpen = "";
                 for (var j = 0; j < periods.length; j++) {
                     if (minutes < toMinutes(periods[j].opens)) {
-                        nextOpen = "at " + fmtClock(periods[j].opens);
+                        nextOpen = t("biz.hours_closed_opens_at", "Closed · Opens at {time}", { time: fmtClock(periods[j].opens) });
                         break;
                     }
                 }
-                return { text: nextOpen ? "Closed · Opens " + nextOpen : "Closed", open: false };
+                return { text: nextOpen || t("biz.hours_closed", "Closed"), open: false };
             }
 
             function renderBadge(instant) {
                 var now = nowInTimezone(instant, timezone);
                 var headerEl = document.querySelector("[data-verified-status]");
                 if (!now) {
-                    badge.textContent = "Hours as listed";
-                    if (headerEl) headerEl.textContent = "Hours as listed";
+                    badge.textContent = t("biz.hours_as_listed", "Hours as listed");
+                    if (headerEl) headerEl.textContent = t("biz.hours_as_listed", "Hours as listed");
                     return;
                 }
                 // Staleness: schedule captured more than 21 days ago.
                 var stale = false;
                 if (capturedAt && !isNaN(capturedAt.getTime())) {
                     var ageDays = (Date.now() - capturedAt.getTime()) / 86400000;
-                    if (ageDays > 21) stale = true;
+                    // Threshold comes from the build so the client and the
+                    // freshness policy cannot drift apart.
+                    var maxAge = (typeof LIVE_STATUS_MAX_AGE_DAYS !== "undefined") ? LIVE_STATUS_MAX_AGE_DAYS : 21;
+                    if (ageDays > maxAge) stale = true;
                 }
                 if (stale) {
-                    badge.textContent = "Hours as listed";
-                    if (headerEl) headerEl.textContent = "Hours as listed";
+                    badge.textContent = t("biz.hours_as_listed", "Hours as listed");
+                    if (headerEl) headerEl.textContent = t("biz.hours_as_listed", "Hours as listed");
                     return;
                 }
                 var status = computeStatus(now.dayIndex, now.minutes);

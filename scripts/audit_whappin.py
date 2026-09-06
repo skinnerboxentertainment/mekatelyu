@@ -227,7 +227,7 @@ def audit():
         for d in items:
             print(f"    [{d['business']}] {d['field']}: {d['issue']}")
 
-    print(f"\n  --- Contact summary ---")
+    print("\n  --- Contact summary ---")
     print(f"  WhatsApp in CSV: {len(contact_types_seen['whatsapp'])}")
     print(f"  WhatsApp in sticky bar: {wa_sticky_ok}")
     print(f"  WhatsApp missing from sticky: {wa_sticky_fail}")

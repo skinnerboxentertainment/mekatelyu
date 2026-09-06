@@ -4,11 +4,9 @@ Opens each known business CID, extracts nearby business names from the sidebar.
 """
 import csv
 import json
-import os
 import re
 import sys
 import time
-import uuid
 from pathlib import Path
 
 if sys.platform == "win32":
@@ -19,6 +17,7 @@ if str(_root) not in sys.path:
     sys.path.insert(0, str(_root))
 
 from playwright.sync_api import sync_playwright
+
 from neighborhood_scanner.dedup import DedupEngine
 
 BASE_DIR = Path(__file__).parent.parent

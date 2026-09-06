@@ -10,9 +10,8 @@ import csv
 import json
 import re
 import time
-import urllib.request
 import urllib.parse
-from collections import defaultdict
+import urllib.request
 
 INPUT_CSV = "pv_within_5km.csv"
 OUTPUT_CSV = "pv_within_5km_enriched.csv"
@@ -182,7 +181,7 @@ def main():
     total_new = strategy1_found + strategy2_found
     final_with_ig = sum(1 for r in rows if r.get("instagram_handle"))
     print(f"\n{'='*50}", flush=True)
-    print(f"ENRICHMENT RESULTS", flush=True)
+    print("ENRICHMENT RESULTS", flush=True)
     print(f"{'='*50}", flush=True)
     print(f"  New Instagram found:            {total_new}", flush=True)
     print(f"  Final with Instagram:           {final_with_ig} ({final_with_ig/len(rows)*100:.1f}%)", flush=True)

@@ -5,10 +5,8 @@ Checkpoint-saved after each search — safe to Ctrl+C at any time.
 """
 import csv
 import json
-import os
 import random
 import re
-import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -117,13 +115,13 @@ def search_and_resolve(page, name):
 
         if detect_captcha(page):
             result["error"] = "CAPTCHA or unusual traffic detected"
-            log(f"  CAPTCHA detected — stopping session")
+            log("  CAPTCHA detected — stopping session")
             return result
 
         final_url = page.url
 
         if "/search/" in final_url:
-            log(f"  Search results page — trying first result")
+            log("  Search results page — trying first result")
             first_result = page.query_selector('a[href*="/place/"]')
             if first_result:
                 try:
@@ -164,9 +162,7 @@ def search_and_resolve(page, name):
             result["confidence"] = "low"
             if not result["error"]:
                 result["error"] = f"Outside PV zone: {result['latitude']},{result['longitude']}"
-        elif has_cid or (has_coords and in_zone):
-            result["confidence"] = "medium"
-        elif "/place/" in final_url:
+        elif has_cid or (has_coords and in_zone) or "/place/" in final_url:
             result["confidence"] = "medium"
         else:
             result["confidence"] = "low"

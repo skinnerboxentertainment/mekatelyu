@@ -3,7 +3,6 @@ OCR-based name extraction from Google Maps screenshots.
 Uses PaddleOCR if available, falls back to basic pixel analysis.
 """
 import subprocess
-import sys
 
 
 def check_ocr_available():
@@ -36,7 +35,7 @@ def extract_text_paddle(image_path):
                 if confidence and confidence > 0.5 and text and len(text.strip()) > 2:
                     texts.append((text.strip(), confidence, bbox))
         return texts
-    except Exception as e:
+    except Exception:
         return []
 
 
@@ -56,7 +55,7 @@ def extract_text_tesseract(image_path):
                 y = data["top"][i]
                 texts.append((text, conf / 100.0, (x, y, x + data["width"][i], y + data["height"][i])))
         return texts
-    except Exception as e:
+    except Exception:
         return []
 
 

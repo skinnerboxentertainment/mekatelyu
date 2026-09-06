@@ -5,7 +5,6 @@ from pathlib import Path
 
 from paradisio_app.semantic_taxonomy import semantic_key
 
-
 ROOT = Path(__file__).resolve().parent.parent
 
 

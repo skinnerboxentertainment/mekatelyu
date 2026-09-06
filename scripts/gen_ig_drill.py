@@ -1,5 +1,5 @@
 """Generate a standalone HTML drill-down page for IG handle verification."""
-import json, html
+import json
 from pathlib import Path
 
 REPORT = Path("ig_triage_report.json")

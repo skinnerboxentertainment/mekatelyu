@@ -17,11 +17,19 @@ from pathlib import Path
 
 try:
     from .autovisual_whatsapp_checkifier import (
-        DEFAULT_WORKSPACE, ROOT, attach_screenshot, read_ledger, validate_attempt, write_review_markdown,
+        DEFAULT_WORKSPACE,
+        attach_screenshot,
+        read_ledger,
+        validate_attempt,
+        write_review_markdown,
     )
 except ImportError:  # Direct script execution.
     from autovisual_whatsapp_checkifier import (
-        DEFAULT_WORKSPACE, ROOT, attach_screenshot, read_ledger, validate_attempt, write_review_markdown,
+        DEFAULT_WORKSPACE,
+        attach_screenshot,
+        read_ledger,
+        validate_attempt,
+        write_review_markdown,
     )
 
 

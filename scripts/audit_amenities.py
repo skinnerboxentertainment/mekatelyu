@@ -8,12 +8,12 @@ Usage:
     python scripts/audit_amenities.py
 """
 
+import csv
 import json
 import re
-import csv
 import sys
-from pathlib import Path
 from collections import Counter
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ENRICH_PATH = BASE_DIR / "paradisio_app" / "data" / "maps_parsed_v3.json"
@@ -181,21 +181,21 @@ def main():
           f"({(len(all_raw) - len(all_clean)) / len(all_raw) * 100:.0f}%)")
     print(f"  Records with any junk:   {len(detail_rows)}")
 
-    print(f"\n  --- Top 15 raw amenities (BEFORE) ---")
+    print("\n  --- Top 15 raw amenities (BEFORE) ---")
     for name, count in raw_counts.most_common(15):
         print(f"    {name:40s} {count:>4d}")
 
     if removed_counts:
-        print(f"\n  --- Top 15 removed (junk filtered out) ---")
+        print("\n  --- Top 15 removed (junk filtered out) ---")
         for name, count in removed_counts.most_common(15):
             print(f"    {name:40s} {count:>4d}")
 
-    print(f"\n  --- Top 15 clean amenities (AFTER) ---")
+    print("\n  --- Top 15 clean amenities (AFTER) ---")
     for name, count in clean_counts.most_common(15):
         print(f"    {name:40s} {count:>4d}")
 
     if detail_rows:
-        print(f"\n  --- Sample records with removals (first 10) ---")
+        print("\n  --- Sample records with removals (first 10) ---")
         for row in detail_rows[:10]:
             print(f"    {row['business'] or '(no name)'} [{row['category']}]")
             print(f"      KEPT:   {row['kept']}")
@@ -212,7 +212,7 @@ def main():
         writer.writeheader()
         writer.writerows(detail_rows)
 
-    print(f"  --- Summary ---")
+    print("  --- Summary ---")
     print(f"  Full detail report: {REPORT_PATH}")
     print(f"  Businesses affected:   {len(detail_rows)}")
 
@@ -233,15 +233,15 @@ def main():
                     lodging_fallback += 1
 
     if lodging_fallback:
-        print(f"\n  --- LODGING FALLBACK ---")
+        print("\n  --- LODGING FALLBACK ---")
         print(f"  Note: {lodging_fallback} lodging businesses have no CID or no enrich data.")
-        print(f"  They'd get guessed amenities from LODGING_AMENITIES:")
-        print(f"    hotel:           Free Wi-Fi, Gym, Air conditioning, Free parking, Pet friendly, Pool")
-        print(f"    hostel:          Free Wi-Fi, Gym, Pool, Pet friendly, Free parking, Air conditioning")
-        print(f"    vacation_rental: Free Wi-Fi, Air conditioning, Pet friendly, Free parking")
+        print("  They'd get guessed amenities from LODGING_AMENITIES:")
+        print("    hotel:           Free Wi-Fi, Gym, Air conditioning, Free parking, Pet friendly, Pool")
+        print("    hostel:          Free Wi-Fi, Gym, Pool, Pet friendly, Free parking, Air conditioning")
+        print("    vacation_rental: Free Wi-Fi, Air conditioning, Pet friendly, Free parking")
 
     if not detail_rows and not lodging_fallback:
-        print(f"\n  [OK] No issues found - amenity data is clean!")
+        print("\n  [OK] No issues found - amenity data is clean!")
     else:
         print(f"\n  [!]  {len(detail_rows)} records have junk amenities that would be filtered.")
         if lodging_fallback:

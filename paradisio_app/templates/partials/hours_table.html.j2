@@ -1,0 +1,3 @@
+{#- The open-now badge plus the verified week. Included in both the collapsed
+    and expanded arrangements so the two stay identical. -#}
+<p class="hours-opennow" data-hours-opennow aria-live="polite"></p><table class="hours-table">{% for row in page.weekly_hours.rows %}<tr class="hours-row"><td class="hours-day">{{ row.day }}</td><td class="hours-time{% if row.unknown %} hours-unknown{% endif %}">{{ row.text }}</td></tr>{% endfor %}</table>

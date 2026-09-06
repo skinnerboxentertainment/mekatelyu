@@ -33,7 +33,22 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements-launch.txt
 
-      - name: Run launch-rule tests
+      - name: Install lint tooling
+        run: python -m pip install ruff==0.14.2
+
+      - name: Lint
+        run: python -m ruff check .
+
+      # NOTE: `ruff format --check` is deliberately not a gate yet. Applying the
+      # formatter today rewrites 82 files, which would bury the reviewable content
+      # of the current refactor in whitespace. The generator is also being split
+      # into templates, so formatting it now is churn paid twice. Turn this on at
+      # the end of that split, as a single isolated commit.
+
+      # Includes the golden-output tests, which rebuild the site and assert every
+      # emitted file matches tests/golden/manifest.sha256. They pin the build date
+      # themselves, so they stay stable across days and across runners.
+      - name: Run launch-rule and golden-output tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
 
       - name: Verify source-data invariants
@@ -44,6 +59,19 @@ jobs:
 
       - name: Verify release artifact
         run: python scripts/verify_release.py
+
+      # Payment may buy presentation. It may never buy position or inclusion.
+      # This gate exists before any revenue mechanism does, deliberately: asking
+      # whether something already built happens to be fair is a much weaker
+      # question than refusing to build anything that is not.
+      - name: Verify directory neutrality
+        run: python scripts/verify_neutrality.py
+
+      # Reports on catalogue health rather than gating on it: staleness is a
+      # backlog to work through, not a reason to block a deploy. Printed so a
+      # sharp drop is visible in the run log.
+      - name: Report catalogue health
+        run: python scripts/quality_report.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

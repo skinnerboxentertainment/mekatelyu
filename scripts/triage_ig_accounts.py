@@ -7,9 +7,10 @@ import csv
 import json
 import re
 import time
-import httpx
-from pathlib import Path
 from collections import Counter
+from pathlib import Path
+
+import httpx
 
 MASTER_CSV = Path("pv_master_unified.csv")
 OUTPUT_REPORT = Path("ig_triage_report.json")
@@ -202,7 +203,7 @@ def main():
             print(f"  [T1] @{r['handle']:30s} {r['business_name'][:30]:30s} posts:{r['post_count'] or '?'}")
             shown += 1
 
-    print(f"\nAlive tier-2 candidates:")
+    print("\nAlive tier-2 candidates:")
     shown = 0
     for r in results:
         if r["alive"] and r["signal_tier"] == 2 and shown < 20:

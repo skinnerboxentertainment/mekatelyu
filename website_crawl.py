@@ -3,13 +3,10 @@ Visit 191 websites from the master dataset, extract social links:
 Instagram, Facebook, WhatsApp, Booking.com, TikTok, YouTube, Twitter, email.
 """
 import csv
-import json
+import random
 import re
 import time
-import random
-from datetime import datetime
 from pathlib import Path
-from urllib.parse import urlparse, urljoin
 
 import httpx
 

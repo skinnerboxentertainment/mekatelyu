@@ -10,8 +10,7 @@ Usage:
   python invoicing.py build                                        Generate invoice HTML pages
 """
 import json
-import sys
-from datetime import datetime, date
+from datetime import date, datetime
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
@@ -72,7 +71,7 @@ def cmd_create(args):
     print(f"Created {inv['invoice_id']} — {name} ({TIERS[tier]['label']})")
     print(f"  Amount: ${inv['amount_usd']} USD / ₡{inv['amount_crc']:,} CRC")
     print(f"  Status: {inv['status']}")
-    print(f"  Payment options: SINPE Móvil or Cash (CRC)")
+    print("  Payment options: SINPE Móvil or Cash (CRC)")
     print(f"  Invoice page: invoices/{inv['invoice_id']}.html")
 
 
@@ -137,7 +136,7 @@ def cmd_report(args):
     cash_count = sum(1 for i in invoices if i["status"] == "paid" and i.get("payment_method") == "cash")
 
     print(f"\n{'='*50}")
-    print(f"  PARADISIO — REVENUE REPORT")
+    print("  PARADISIO — REVENUE REPORT")
     print(f"{'='*50}")
     print(f"  Date:     {date.today().isoformat()}")
     print(f"  Total invoices:  {len(invoices)}")

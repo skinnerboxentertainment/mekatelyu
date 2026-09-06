@@ -32,8 +32,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR / "paradisio_app"))
 
-from semantic_taxonomy import GROUP_LABELS, TAXONOMY_VERSION  # noqa: E402
 from build import maps_data, semantic_data  # noqa: E402
+from semantic_taxonomy import GROUP_LABELS, TAXONOMY_VERSION  # noqa: E402
 
 CSV_PATH = BASE_DIR / "pv_master_unified.csv"
 OUT_DIR = BASE_DIR / "audit" / "category-exposure"

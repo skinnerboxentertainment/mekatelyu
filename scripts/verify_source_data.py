@@ -36,7 +36,7 @@ def main() -> int:
     if duplicate_cids:
         errors.append(f"duplicate Google Maps CIDs remain: {duplicate_cids}")
 
-    for row, business in zip(rows, [build.build_business(row) for row in rows]):
+    for row, business in zip(rows, [build.build_business(row) for row in rows], strict=True):
         if business["category"] != row.get("category", "").strip():
             errors.append(f"semantic enrichment rewrote primary category: {business['name']}")
         if not business["discovery_groups"]:

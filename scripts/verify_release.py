@@ -10,9 +10,16 @@ import struct
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from paradisio_app import surfaces  # noqa: E402
 
 ORGANIZATIONS_PATH = Path(__file__).resolve().parent.parent / "paradisio_app" / "data" / "organizations.json"
 
+# Defence in depth, not the control. The primary control is the surface
+# declaration in paradisio_app/surfaces.py: every emitted file must be claimed
+# by a declared surface, so an undeclared one fails by name. This list stays
+# because a declared surface could still link out to something removed, which
+# is a different mistake and worth catching separately.
 FORBIDDEN_TEXT = (
     "admin.html",
     "claim.html",
@@ -28,7 +35,11 @@ FORBIDDEN_TEXT = (
     "+506 8888 8888",
 )
 ALLOWED_ROOT_FILES = {".nojekyll", "CNAME", "404.html", "index.html", "robots.txt", "sitemap.xml", "favicon.ico"}
-ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"}
+# Language trees sit beside the English one; English stays un-prefixed so the
+# printed QR codes keep working.
+ALLOWED_ROOT_DIRS = {"businesses", "invest", "qr", "static"} | {
+    lang for lang in ("es", "de") 
+}
 
 
 def _load_org_slugs() -> set[str]:
@@ -67,10 +78,26 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
         if "url=paradisio_app/" not in wrapper:
             errors.append("deployment root does not preserve the /paradisio_app/ public URL")
 
-    root_entries = {path.name for path in root.iterdir()}
-    unexpected = root_entries - ALLOWED_ROOT_FILES - ALLOWED_ROOT_DIRS
-    if unexpected:
-        errors.append(f"unexpected release-root entries: {sorted(unexpected)}")
+    # The declaration must be coherent before it is trusted to police anything.
+    errors.extend(f"surface declaration: {problem}" for problem in surfaces.declaration_problems())
+
+    # Every emitted file must belong to a declared surface. This is the control
+    # that replaced the forbidden-keyword scan: an undeclared file fails here by
+    # name, whether or not anyone anticipated it.
+    undeclared = []
+    for path in sorted(root.rglob("*")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root).as_posix()
+        if surfaces.find_surface(relative) is None:
+            undeclared.append(relative)
+    if undeclared:
+        shown = ", ".join(undeclared[:12])
+        extra = f" (+{len(undeclared) - 12} more)" if len(undeclared) > 12 else ""
+        errors.append(
+            f"{len(undeclared)} released file(s) belong to no declared surface: {shown}{extra}. "
+            f"Declare them in paradisio_app/surfaces.py, or stop emitting them."
+        )
 
     vendor_root = root / "static" / "vendor"
     manifest_path = vendor_root / "manifest.json"
@@ -128,7 +155,7 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             errors.append(f"missing Content Security Policy: {path.relative_to(root)}")
         if re.search(r"<script(?![^>]+src=)[^>]*>", text, flags=re.I):
             errors.append(f"inline script present: {path.relative_to(root)}")
-        if not is_org and path.parent.name == "businesses" and f'../qr/{path.stem}.png' not in text:
+        if not is_org and path.parent.name == "businesses" and f'qr/{path.stem}.png' not in text:
             errors.append(f"missing profile QR reference: {path.name}")
 
         for url in re.findall(r"(?:href|src)=[\"']([^\"']+)", text, flags=re.I):
@@ -137,7 +164,12 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
             if url.startswith("http://"):
                 errors.append(f"insecure external URL in {path.relative_to(root)}: {url}")
                 continue
-            local = (path.parent / url.split("#", 1)[0].split("?", 1)[0]).resolve()
+            target = url.split("#", 1)[0].split("?", 1)[0]
+            if not target:
+                continue
+            # Language switch links are root-absolute, so they resolve from the
+            # release root rather than from the page's own directory.
+            local = (root / target.lstrip("/")).resolve() if target.startswith("/") else (path.parent / target).resolve()
             if not local.exists():
                 errors.append(f"broken internal reference in {path.relative_to(root)}: {url}")
 
@@ -153,9 +185,10 @@ def verify(root: Path, expected_businesses: int) -> list[str]:
     index_size = (root / "index.html").stat().st_size
     if index_size > 100_000:
         errors.append(f"index.html exceeds 100 KB budget: {index_size} bytes")
-    data_size = (root / "static" / "directory-data.js").stat().st_size
-    if data_size > 700_000:
-        errors.append(f"directory-data.js exceeds 700 KB budget: {data_size} bytes")
+    for payload in sorted((root / "static").glob("directory-data-*.js")):
+        size = payload.stat().st_size
+        if size > 700_000:
+            errors.append(f"{payload.name} exceeds 700 KB budget: {size} bytes")
 
     return errors
 

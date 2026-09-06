@@ -7,7 +7,6 @@ import asyncio
 import json
 import re
 import sys
-import time
 from datetime import datetime
 from pathlib import Path
 
@@ -257,7 +256,7 @@ async def main():
             completed.add(cid)
             total_done += 1
 
-            status = "OK" if result["success"] else f"FAIL"
+            status = "OK" if result["success"] else "FAIL"
             rating = result["data"]["rating"] if result["success"] and result["data"] else "-"
             tl = result["text_length"] if result["success"] else 0
             log(f"  [{total_done}/{total}] {name[:40]:40s} rating={rating}  text={tl}  {status}")

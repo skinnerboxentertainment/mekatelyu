@@ -2,7 +2,6 @@
 
 import csv
 import sqlite3
-from datetime import datetime
 
 DB = "pvscraper_full.db"
 OUTPUT = "pv_businesses_export.csv"

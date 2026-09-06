@@ -2,11 +2,9 @@
 QA Audit — reads every entry, flags issues, outputs action list.
 Read-only. No modifications.
 """
-import csv
 import json
-import re
-from pathlib import Path
 from collections import Counter
+from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
 MASTER_CSV = BASE / "pv_master_unified.csv"
@@ -169,15 +167,15 @@ def audit_entry(biz, enrich_subcat):
         if any(kw in sc_lower for kw in ["masajes", "massage", "spa", "yoga"]):
             if cat.lower() not in ("services", "Wellness", "wellness"):
                 issues.append(f"Subcategory '{subcat}' suggests Wellness but category is '{cat}'")
-                fixes.append(f"Change category to 'Wellness'")
+                fixes.append("Change category to 'Wellness'")
         if any(kw in sc_lower for kw in ["taxi", "shuttle"]):
             if cat.lower() not in ("services", "Transport", "transport"):
                 issues.append(f"Subcategory '{subcat}' suggests Transport but category is '{cat}'")
-                fixes.append(f"Change category to 'Transport'")
+                fixes.append("Change category to 'Transport'")
         if any(kw in sc_lower for kw in ["bar", "cocktail"]):
             if cat.lower() not in ("Nightlife", "nightlife", "restaurant"):
                 issues.append(f"Subcategory '{subcat}' suggests Nightlife/Bar but category is '{cat}'")
-                fixes.append(f"Change category to 'Nightlife' or 'restaurant'")
+                fixes.append("Change category to 'Nightlife' or 'restaurant'")
 
     # 6. Duplicate check runs at report level, not per-entry
 
@@ -256,7 +254,7 @@ def main():
     OUTPUT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print(f"\n{'='*60}")
-    print(f"  QA AUDIT COMPLETE")
+    print("  QA AUDIT COMPLETE")
     print(f"{'='*60}")
     print(f"  Total entries:     {report['summary']['total_entries']}")
     print(f"  With issues:       {report['summary']['entries_with_issues']}")
